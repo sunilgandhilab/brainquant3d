@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+cython = "==0.29.12"
+numpy = "*"
+pyyaml = "*"
+scipy = "*"
+opencv-python = "*"
+tifffile = "*"
+scikit-image = "*"
+pandas = "*"
+ants = "*"
+h5py = "*"
+vtk = "*"
+anytree = "*"
+
+[requires]
+python_version = "3.6"

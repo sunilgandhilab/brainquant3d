@@ -1,0 +1,19 @@
+# log
+logs/
+*.log
+
+# compiled
+*.so
+*.pyc
+*.pyo
+__pycache__/
+
+# config
+ClearMap.conf
+
+# builds
+*.egg-info
+build/
+dist/
+/include/core/
+/include/imgproc/
