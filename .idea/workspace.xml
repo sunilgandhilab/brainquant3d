@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -279,7 +278,7 @@
       <workItem from="1568856999871" duration="348000" />
       <workItem from="1568868078797" duration="21020000" />
       <workItem from="1569349569151" duration="4550000" />
-      <workItem from="1569356174254" duration="27000" />
+      <workItem from="1569356174254" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="Initial working version">
       <created>1564718739417</created>
@@ -519,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569354563042</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fixed lib">
+      <created>1569356220525</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1569356220525</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +560,8 @@
     <MESSAGE value="fixed setup.py" />
     <MESSAGE value="debugging setup.py" />
     <MESSAGE value="modified dependency ssetup" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified dependency ssetup" />
+    <MESSAGE value="fixed lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed lib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

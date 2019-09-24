@@ -55,7 +55,7 @@ if USE_CYTHON:
                   sources=["clearmap3/image_filters/filters/label/_label.pyx"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join("clearmap3/.lib", f) for f in os.listdir("lib")],
+                  extra_link_args=[os.path.join("clearmap3/.lib", f) for f in os.listdir("clearmap3/.lib")],
                 extra_compile_args=['-R"$ORIGIN/../../../.lib"']
                   ),
         Extension("clearmap3.image_filters.filters.label._threshold",
@@ -99,7 +99,7 @@ else:
                   sources=["clearmap3/image_filters/filters/label/_label.cpp"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join("clearmap3/.lib", f) for f in os.listdir("lib")],
+                  extra_link_args=[os.path.join("clearmap3/.lib", f) for f in os.listdir("clearmap3/.lib")],
                   extra_compile_args=['-R"$ORIGIN/../../../.lib"']
                   ),
         Extension("clearmap3.image_filters.filters.label._threshold",
