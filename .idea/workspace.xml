@@ -4,17 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="fixed lib">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/_voxelization.c" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/analysis/_voxelization.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/_background_subtraction.c" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/_background_subtraction.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_label.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_label.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/overlap.c" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/overlap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.c" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -288,7 +279,7 @@
       <workItem from="1568856999871" duration="348000" />
       <workItem from="1568868078797" duration="21020000" />
       <workItem from="1569349569151" duration="4550000" />
-      <workItem from="1569356174254" duration="14908000" />
+      <workItem from="1569356174254" duration="15276000" />
     </task>
     <task id="LOCAL-00001" summary="Initial working version">
       <created>1564718739417</created>
@@ -556,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569357152571</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fixed lib">
+      <created>1569374097930</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1569374097930</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

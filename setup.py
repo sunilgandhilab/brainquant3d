@@ -139,39 +139,33 @@ class install(_install):
         dest = Path(pkgutil.get_loader('clearmap3').path).parent / '.external'
 
 
-         print('installing elastik')
-         url = 'https://github.com/SuperElastix/elastix/releases/download/4.9.0/elastix-4.9.0' \
-               '-linux.tar.bz2'
-         tmp = Path(url).name
-         sink = dest / 'elastix-4.9.0-linux'
-         with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
-             shutil.copyfileobj(response, out_file)
-             tar = tarfile.open(tmp, "r:bz2")
-             tar.extractall(sink)
-             tar.close()
+        print('installing elastik')
+        url = 'https://github.com/SuperElastix/elastix/releases/download/4.9.0/elastix-4.9.0' \
+        '-linux.tar.bz2'
+        tmp = Path(url).name
+        sink = dest / 'elastix-4.9.0-linux'
+        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+            shutil.copyfileobj(response, out_file)
+            tar = tarfile.open(tmp, "r:bz2")
+            tar.extractall(sink)
+            tar.close()
 
-         import ipdb; ipdb.set_trace()
+        print('installing ilastik')
+        url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
+        tmp = Path(url).name
 
-         print('installing ilastik')
-         url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
-         tmp = Path(url).name
+        sink = dest / 'ilastik-1.3.2post1-Linux'
+        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+            shutil.copyfileobj(response, out_file)
+            tar = tarfile.open(tmp, "r:bz2")
+            tar.extractall(sink)
+            tar.close()
 
-         sink = dest / 'ilastik-1.3.2post1-Linux'
-         with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
-             shutil.copyfileobj(response, out_file)
-             tar = tarfile.open(tmp, "r:bz2")
-             tar.extractall(sink)
-             tar.close()
-
-         # install antspy
-         if sys.platform == 'linux':
-         pip.main(['install',
-                 "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36"
-                 "-cp36m-linux_x86_64.whl"])
-         if sys.platform == 'darwin':
-            pip.main(['install',
-                "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m"
-                "-macosx_10_7_x86_64.whl"])
+        # install antspy
+        if sys.platform == 'linux':
+            pip.main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
+        if sys.platform == 'darwin':
+            pip.main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
 
 
 cmdclass['install'] = install
