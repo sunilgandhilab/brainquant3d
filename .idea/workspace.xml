@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -281,7 +278,7 @@
       <workItem from="1568856999871" duration="348000" />
       <workItem from="1568868078797" duration="21020000" />
       <workItem from="1569349569151" duration="4550000" />
-      <workItem from="1569356174254" duration="19015000" />
+      <workItem from="1569356174254" duration="20201000" />
     </task>
     <task id="LOCAL-00001" summary="Initial working version">
       <created>1564718739417</created>
@@ -563,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569374476035</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fully working setup.py">
+      <created>1569430105355</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1569430105355</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +603,8 @@
     <MESSAGE value="debugging setup.py" />
     <MESSAGE value="modified dependency ssetup" />
     <MESSAGE value="fixed lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed lib" />
+    <MESSAGE value="fully working setup.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="fully working setup.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -640,6 +645,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1569376705295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1569431872327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>
