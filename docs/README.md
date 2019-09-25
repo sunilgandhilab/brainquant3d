@@ -1,6 +1,6 @@
 # Install:
 ```
-pip3 install --process-dependency-links --user 
+pip3 install --user 
 ```
 
 # To generate html from docs:
