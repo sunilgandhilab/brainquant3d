@@ -16,6 +16,7 @@ from pathlib import Path
 from setuptools import setup
 from setuptools import find_packages
 from setuptools.command.install import install as _install
+from distutils.core import setup
 from distutils.extension import Extension
 
 from clearmap3._version import __version__
@@ -55,7 +56,9 @@ if USE_CYTHON:
                   sources=["clearmap3/image_filters/filters/label/_label.pyx"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join("clearmap3/.lib", f) for f in os.listdir("clearmap3/.lib")],
+                  extra_link_args=[os.path.join('clearmap3/.lib', f) for f in os.listdir(
+                      'clearmap3/.lib')],
+                  runtime_library_dirs=['$ORIGIN/../../../.lib']
                   ),
         Extension("clearmap3.image_filters.filters.label._threshold",
                   sources=["clearmap3/image_filters/filters/label/_threshold.pyx"],
@@ -98,7 +101,9 @@ else:
                   sources=["clearmap3/image_filters/filters/label/_label.cpp"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join("clearmap3/.lib", f) for f in os.listdir("clearmap3/.lib")],
+                  extra_link_args=[os.path.join('clearmap3/.lib', f) for f in os.listdir(
+                      'clearmap3/.lib')],
+                  runtime_library_dirs=['$ORIGIN/../../../.lib']
                   ),
         Extension("clearmap3.image_filters.filters.label._threshold",
                   sources=["clearmap3/image_filters/filters/label/_threshold.cpp"],
@@ -133,31 +138,40 @@ class install(_install):
         # get external programs required by package to install directory. they are in folders
         dest = Path(pkgutil.get_loader('clearmap3').path).parent / '.external'
 
-        url = 'https://github.com/SuperElastix/elastix/releases/download/4.9.0/elastix-4.9.0-linux.tar.bz2'
-        tmp = Path(url).name
-        sink = dest / 'elastix-4.9.0-linux'
-        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
-            shutil.copyfileobj(response, out_file)
-            tar = tarfile.open(tmp, "r:bz2")
-            tar.extractall(sink)
-            tar.close()
 
-        url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
-        tmp = Path(url).name
-        sink = dest / 'ilastik-1.3.2post1-Linux'
-        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
-            shutil.copyfileobj(response, out_file)
-            tar = tarfile.open(tmp, "r:bz2")
-            tar.extractall(sink)
-            tar.close()
+         print('installing elastik')
+         url = 'https://github.com/SuperElastix/elastix/releases/download/4.9.0/elastix-4.9.0' \
+               '-linux.tar.bz2'
+         tmp = Path(url).name
+         sink = dest / 'elastix-4.9.0-linux'
+         with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+             shutil.copyfileobj(response, out_file)
+             tar = tarfile.open(tmp, "r:bz2")
+             tar.extractall(sink)
+             tar.close()
 
-        # install antspy
-        if sys.platform == 'linux':
+         import ipdb; ipdb.set_trace()
+
+         print('installing ilastik')
+         url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
+         tmp = Path(url).name
+
+         sink = dest / 'ilastik-1.3.2post1-Linux'
+         with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+             shutil.copyfileobj(response, out_file)
+             tar = tarfile.open(tmp, "r:bz2")
+             tar.extractall(sink)
+             tar.close()
+
+         # install antspy
+         if sys.platform == 'linux':
+         pip.main(['install',
+                 "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36"
+                 "-cp36m-linux_x86_64.whl"])
+         if sys.platform == 'darwin':
             pip.main(['install',
-                "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
-        if sys.platform == 'darwin':
-            pip.main(['install',
-                "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
+                "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m"
+                "-macosx_10_7_x86_64.whl"])
 
 
 cmdclass['install'] = install

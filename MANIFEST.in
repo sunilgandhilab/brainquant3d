@@ -1,3 +1,3 @@
 include clearmap3/default.conf
 include clearmap3/utils/logger_default.conf
-graft lib
+graft clearmap3/.lib
