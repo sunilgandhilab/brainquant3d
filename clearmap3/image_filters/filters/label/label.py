@@ -53,8 +53,10 @@ class Label(FilterBase):
     def _generate_output(self):
         # label return count
 
-
         if self.sigmas:
+            if self.input.ndim != len(self.sigmas):
+                raise ValueError('sigmas must have same length as image dimensions')
+
             # Smooth image
             self.log.verbose('Smoothing image.')
             self.input[:] = gaussian_filter(self.input, sigma=self.sigmas)

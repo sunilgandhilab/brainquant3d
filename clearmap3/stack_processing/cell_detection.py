@@ -89,12 +89,16 @@ def process_flow(source,
 
     argdata = [(flow, source, overlap_chunks[i], unique_chunks[i], temp_dir) for i in
                range(len(overlap_chunks))]
+    try:
+        if processes == 1:
+            results = [processSubStack(*arg) for arg in argdata]
+        else:
+            pool = Pool(processes=processes, maxtasksperchild=1)
+            results = pool.starmap(processSubStack, argdata)
+    except Exception as err:
+        shutil.rmtree(temp_dir, ignore_errors=True)
+        raise err
 
-    if processes == 1:
-        results = [processSubStack(*arg) for arg in argdata]
-    else:
-        pool = Pool(processes=processes, maxtasksperchild=1)
-        results = pool.starmap(processSubStack, argdata)
 
     results = join_points(results, unique_chunks)
 

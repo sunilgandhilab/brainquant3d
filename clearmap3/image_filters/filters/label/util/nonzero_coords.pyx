@@ -5,10 +5,7 @@ import sys
 
 cimport numpy as cnp
 cimport cython
-
-from libc.stdlib cimport malloc, free
 from posix.mman cimport *
-from posix.types cimport off_t, mode_t
 
 ctypedef cnp.int32_t DTYPE_t
 
@@ -33,12 +30,13 @@ def nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):
     cdef int i = 0
 
     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:
-        mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)
+        mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,
+                                      image_fd.fileno(), 0)
 
         for z in range(zmax):
             for y in range(ymax):
                 for x in range(xmax):
-                    idx = (z * ymax * xmax) + (y * xmax) + x
+                    idx = (z * ymax * xmax) + (y * xmax) + x + image.offset
                     image_val = mmap_image[idx]
                     if image_val != 0: # If value is nonzero, record the coordinate
                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))

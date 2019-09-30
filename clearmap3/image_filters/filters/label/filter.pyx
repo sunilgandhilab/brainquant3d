@@ -1,6 +1,5 @@
 import numpy as np
 cimport numpy as np
-cimport cython
 
 from libcpp cimport bool
 from libcpp.map cimport map

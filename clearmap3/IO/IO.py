@@ -487,8 +487,10 @@ def writeData(sink, data, **kwargs):
         array, str or None: data or file name of the written data
     See Also:
         :func:`readData`
-    """ 
-   
+    """
+    if isinstance(sink, Path):
+        sink = sink.as_posix()
+
     if sink is None: # dont write but return the data
         log.debug('writeData recieved sink of None')
         return data

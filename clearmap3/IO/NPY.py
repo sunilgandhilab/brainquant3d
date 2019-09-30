@@ -20,7 +20,7 @@ Example:
 
 import os
 import shutil
-import numpy
+import numpy as np
 
 import clearmap3.IO as io
 import imp
@@ -29,28 +29,28 @@ import logging
 log = logging.getLogger(__name__)
 
 def writePoints(filename, data, returnMemmap = False, **args):
-    numpy.save(filename, data)
+    np.save(filename, data)
     if returnMemmap:
-        data = numpy.load(filename, mmap_mode='r+')
+        data = np.load(filename, mmap_mode='r+')
         return data
     else:
         return filename
 
 
 def readPoints(filename, **args):
-    data = numpy.load(filename, mmap_mode='r+')
+    data = np.load(filename, mmap_mode='r+')
     return io.pointsToRange(data, **args)
 
 def writeData(filename, data, returnMemmap = False, **args):
 
-    numpy.save(filename, data)
+    np.save(filename, data)
     if returnMemmap:
-        data = numpy.load(filename, mmap_mode='r+')
+        data = np.load(filename, mmap_mode='r+')
         return data
     else:
         return filename
 
 
 def readData(filename, **args):
-    data = numpy.load(filename, mmap_mode='r+')
+    data = np.load(filename, mmap_mode='r+')
     return io.pointsToRange(data, **args)

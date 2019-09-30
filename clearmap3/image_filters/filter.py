@@ -63,7 +63,7 @@ class FilterBase(ABC):
     Attributes:
         input (array or memmap): Required input. Image to pass through filter.
         output (array): Filter result.
-
+        cleanup (bool): delete temp data folder.
         temp_dir (bool): temp dir for processing. Set to True for function to create own path.
         name (str): name of filter class.
         log (logger): logger instance to be used for filter
@@ -71,9 +71,9 @@ class FilterBase(ABC):
 
     def __init__(self, temp_dir = False):
 
-        self.input   = None
+        self.input    = None
         self.output   = None
-
+        self.cleanup  = False
         self.subStack = None
 
         self.temp_dir = temp_dir
@@ -128,7 +128,7 @@ class FilterBase(ABC):
                 self.del_temp_dir()
             raise err
 
-        if self.temp_dir:
+        if self.temp_dir and self.cleanup:
             self.del_temp_dir()
         timer.log_elapsed()
 

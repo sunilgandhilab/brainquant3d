@@ -15,8 +15,6 @@ import numpy as np
 from libc.math cimport sqrt
 
 from posix.mman cimport *
-from libcpp cimport bool
-
 cimport numpy as cnp
 cimport cython
 
@@ -141,29 +139,53 @@ def watershed_3d(image,
     ############################# MMAP Files #############################
     image_fd = open(image.filename, 'r+b')
     cdef long image_length = np.prod(image.shape)
-    cdef unsigned short *mmapped_image = <unsigned short *> mmap(NULL, image_length * sizeof(unsigned short), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)
+    cdef unsigned short *mmapped_image = <unsigned short *> mmap(NULL,
+                                                                 image_length * sizeof(unsigned short),
+                                                                 PROT_READ,
+                                                                 MAP_SHARED,
+                                                                 image_fd.fileno(),
+                                                                 0)
 
     marker_fd = open(marker_locations.filename, 'r+b')
     cdef long marker_length = np.prod(marker_locations.shape)
-    cdef long *mmapped_marker_locations = <long *> mmap(NULL, marker_length * sizeof(long), PROT_READ, MAP_SHARED, marker_fd.fileno(), 0)
+    cdef long *mmapped_marker_locations = <long *> mmap(NULL,
+                                                        marker_length * sizeof(long),
+                                                        PROT_READ,
+                                                        MAP_SHARED,
+                                                        marker_fd.fileno(),
+                                                        0)
 
     mask_fd = open(mask.filename, 'r+b')
     cdef long mask_length = np.prod(mask.shape)
-    cdef unsigned char *mmapped_mask = <unsigned char *> mmap(NULL, mask_length * sizeof(unsigned char), PROT_READ, MAP_SHARED, mask_fd.fileno(), mask.offset)
+    cdef unsigned char *mmapped_mask = <unsigned char *> mmap(NULL,
+                                                              mask_length * sizeof(unsigned char),
+                                                              PROT_READ,
+                                                              MAP_SHARED,
+                                                              mask_fd.fileno(),
+                                                              0)
     cdef unsigned char[::1] memview_mask = <unsigned char[:mask_length]> mmapped_mask
 
     output_fd = open(output.filename, 'r+b')
     cdef long output_length = np.prod(output.shape)
-    cdef DTYPE_INT32_t *mmapped_output = <DTYPE_INT32_t *> mmap(NULL, output_length * sizeof(DTYPE_INT32_t), PROT_READ|PROT_WRITE, MAP_SHARED, output_fd.fileno(), output.offset)
+    cdef DTYPE_INT32_t *mmapped_output = <DTYPE_INT32_t *> mmap(NULL,
+                                                                output_length * sizeof(DTYPE_INT32_t),
+                                                                PROT_READ|PROT_WRITE,
+                                                                MAP_SHARED,
+                                                                output_fd.fileno(),
+                                                                0)
     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output_length]> mmapped_output
     ######################################################################
 
     cdef long factor = -1 if invert else 1
 
+    cdef long im_offset   = image.offset
+    cdef long mask_offset = mask.offset
+    cdef long out_offset  = output.offset
+
     with nogil:
         for i in range(marker_length):
             index = mmapped_marker_locations[i]
-            elem.value = factor * mmapped_image[index]
+            elem.value = factor * mmapped_image[index + im_offset]
             elem.age = 0
             elem.index = index
             elem.source = index
@@ -181,7 +203,7 @@ def watershed_3d(image,
                 # applies: we can only observe that all neighbors have been labeled
                 # as the pixel comes off the heap. Trying to do so at push time
                 # is a bug.
-                if mmapped_output[elem.index] and elem.index != elem.source:
+                if mmapped_output[elem.index + out_offset] and elem.index != elem.source:
                     # non-marker, already visited from another neighbor
                     continue
                 if wsl:
@@ -191,23 +213,23 @@ def watershed_3d(image,
                     #if _diff_neighbors(mmapped_output, structure, mmapped_mask, elem.index):
                     if _diff_neighbors(memview_output, structure, memview_mask, elem.index):
                         continue
-                mmapped_output[elem.index] = mmapped_output[elem.source]
+                mmapped_output[elem.index + out_offset] = mmapped_output[elem.source + out_offset]
 
             for i in range(nneighbors):
                 # get the flattened address of the neighbor
                 neighbor_index = structure[i] + elem.index
 
-                if not mmapped_mask[neighbor_index]:
+                if not mmapped_mask[neighbor_index + mask_offset]:
                     # this branch includes basin boundaries, aka watershed lines
                     # neighbor is not in mask
                     continue
 
-                if mmapped_output[neighbor_index]:
+                if mmapped_output[neighbor_index + out_offset]:
                     # pre-labeled neighbor is not added to the queue.
                     continue
 
                 age += 1
-                new_elem.value = factor * mmapped_image[neighbor_index]
+                new_elem.value = factor * mmapped_image[neighbor_index + im_offset]
                 if compact:
                     new_elem.value += (compactness *
                                        _euclid_dist(neighbor_index, elem.source,
@@ -219,7 +241,7 @@ def watershed_3d(image,
                     # lower cost later.
                     # This results in a very significant performance gain, see:
                     # https://github.com/scikit-image/scikit-image/issues/2636
-                    mmapped_output[neighbor_index] = mmapped_output[elem.index]
+                    mmapped_output[neighbor_index + out_offset] = mmapped_output[elem.index + out_offset]
                 new_elem.age = age
                 new_elem.index = neighbor_index
                 new_elem.source = elem.source

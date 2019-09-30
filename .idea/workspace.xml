@@ -4,8 +4,26 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="ilastik filter now removes extra chanels&#10;io now writes to Path()&#10;fixed offset issues in label filters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/IO/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/IO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/IO/NPY.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/NPY.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/ilastik.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/ilastik.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_label.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/overlap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/threshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/threshold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +296,7 @@
       <workItem from="1568856999871" duration="348000" />
       <workItem from="1568868078797" duration="21020000" />
       <workItem from="1569349569151" duration="4550000" />
-      <workItem from="1569356174254" duration="20201000" />
+      <workItem from="1569356174254" duration="88601000" />
     </task>
     <task id="LOCAL-00001" summary="Initial working version">
       <created>1564718739417</created>
@@ -567,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569430105355</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fixed ilastik path">
+      <created>1569432436425</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1569432436425</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +629,8 @@
     <MESSAGE value="modified dependency ssetup" />
     <MESSAGE value="fixed lib" />
     <MESSAGE value="fully working setup.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fully working setup.py" />
+    <MESSAGE value="fixed ilastik path" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed ilastik path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -634,6 +660,16 @@
           <line>16</line>
           <option name="timeStamp" value="144" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/clearmap3/image_filters/filters/label/threshold.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -645,6 +681,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1569431872327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1569868671523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

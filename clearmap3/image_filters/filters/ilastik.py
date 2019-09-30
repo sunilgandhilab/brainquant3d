@@ -21,7 +21,7 @@ import clearmap3.IO as io
 from clearmap3 import config
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase
-
+from clearmap3.utils.files import unique_temp_dir
 
 class PixelClassification(FilterBase):
     """Run ilastik pixel classification in headless mode using a trained project file. Output will be a probabilty mask
@@ -112,31 +112,29 @@ class PixelClassification(FilterBase):
     def _generate_output(self):
 
         self._initialize_Ilastik()
+
         #create temp npy
+        input_fn = str((self.temp_dir / Path(self.input.filename).stem).with_suffix('.npy'))
+        # T because io.writeData not transpose for npy files
+        io.writeData(input_fn, self.input.T)
+        output_fn = str(self.temp_dir / 'out_prelim.npy')
 
-        input = str(Path(self.input.filename).with_suffix('.npy'))
-        # T because io.writeData not transpose fo rnpy files
-        io.writeData(input, self.input.T)
-
-        output = self.temp_dir / 'out.npy'
-        ilinp = self._filename_to_input_arg(input)
-        ilout = self._filename_to_output_arg(output)
+        ilinp = self._filename_to_input_arg(input_fn)
+        ilout = self._filename_to_output_arg(output_fn)
         cmd_args = f'--project="{self.project}" {ilout} {ilinp}'
         self.run_headless(cmd_args)
 
-        output = io.readData(output)
-        ndims = len(self.input.shape)
+        output = io.readData(output_fn)
+        output_chan = self.temp_dir / 'out.npy'
         # transpose to restore input dimensionality
-        if ndims == 2:
-            output = output[...,self.output_channel].T
-        elif ndims == 3:
-            output = output[..., self.output_channel].T
-        else:
-            raise RuntimeError('TODO: TEST DIMENSIONALITY FOR NESCESSARY TRASPOSES')
-        return output
+        output_chan = io.writeData(output_chan,
+                                    output[..., self.output_channel].T,
+                                    returnMemmap=True)
+
+        return output_chan
 
     def _validate_input(self):
         if not isinstance(self.input, np.memmap):
-            raise RuntimeError('Input must be a memory mapped array')
+            raise RuntimeError('Ilastik input must be a memory mapped array')
 
 filter_manager.add_filter(PixelClassification())

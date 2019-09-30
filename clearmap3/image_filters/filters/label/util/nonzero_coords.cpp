@@ -631,7 +631,6 @@ static CYTHON_INLINE float __PYX_NAN() {
 #include <stdio.h>
 #include "numpy/arrayobject.h"
 #include "numpy/ufuncobject.h"
-#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/mman.h>
 #ifdef _OPENMP
@@ -1094,8 +1093,8 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":13
- * from posix.types cimport off_t, mode_t
+/* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":10
+ * from posix.mman cimport *
  * 
  * ctypedef cnp.int32_t DTYPE_t             # <<<<<<<<<<<<<<
  * 
@@ -1677,9 +1676,6 @@ static CYTHON_INLINE size_t __Pyx_PyInt_As_size_t(PyObject *);
 static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *);
 
 /* CIntFromPy.proto */
-static CYTHON_INLINE off_t __Pyx_PyInt_As_off_t(PyObject *);
-
-/* CIntFromPy.proto */
 static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *);
 
 /* FastTypeChecks.proto */
@@ -1732,8 +1728,6 @@ static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, char *, char *, int *); /*proto*/
 
 /* Module declarations from 'cython' */
-
-/* Module declarations from 'libc.stdlib' */
 
 /* Module declarations from 'posix.types' */
 
@@ -1873,7 +1867,7 @@ static PyObject *__pyx_tuple__9;
 static PyObject *__pyx_codeobj__10;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":17
+/* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
@@ -1914,11 +1908,11 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_14non
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_coords_filename)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("nonzero_coords", 1, 2, 2, 1); __PYX_ERR(0, 17, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("nonzero_coords", 1, 2, 2, 1); __PYX_ERR(0, 14, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "nonzero_coords") < 0)) __PYX_ERR(0, 17, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "nonzero_coords") < 0)) __PYX_ERR(0, 14, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -1931,13 +1925,13 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_14non
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("nonzero_coords", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 17, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("nonzero_coords", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 14, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util.nonzero_coords.nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 17, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 14, __pyx_L1_error)
   __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_nonzero_coords(__pyx_self, __pyx_v_image, __pyx_v_coords_filename);
 
   /* function exit code */
@@ -1981,7 +1975,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
   PyObject *__pyx_t_12 = NULL;
   size_t __pyx_t_13;
   int __pyx_t_14;
-  off_t __pyx_t_15;
+  long __pyx_t_15;
   long __pyx_t_16;
   long __pyx_t_17;
   long __pyx_t_18;
@@ -2003,11 +1997,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
   __pyx_pybuffernd_image.rcbuffer = &__pyx_pybuffer_image;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_image.rcbuffer->pybuffer, (PyObject*)__pyx_v_image, &__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 17, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_image.rcbuffer->pybuffer, (PyObject*)__pyx_v_image, &__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 14, __pyx_L1_error)
   }
   __pyx_pybuffernd_image.diminfo[0].strides = __pyx_pybuffernd_image.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_image.diminfo[0].shape = __pyx_pybuffernd_image.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_image.diminfo[1].strides = __pyx_pybuffernd_image.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_image.diminfo[1].shape = __pyx_pybuffernd_image.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_image.diminfo[2].strides = __pyx_pybuffernd_image.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_image.diminfo[2].shape = __pyx_pybuffernd_image.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":22
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":19
  * 
  *     # Expects an image of type int32
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -2016,7 +2010,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":23
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":20
  *     # Expects an image of type int32
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -2025,7 +2019,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":24
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":21
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -2034,22 +2028,22 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":29
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":26
  *     cdef DTYPE_t image_val
  * 
  *     byteorder = sys.byteorder             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_t *mmap_image
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_byteorder = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":33
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":30
  *     cdef DTYPE_t *mmap_image
  * 
  *     cdef int i = 0             # <<<<<<<<<<<<<<
@@ -2058,15 +2052,15 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":35
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":32
  *     cdef int i = 0
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:             # <<<<<<<<<<<<<<
- *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)
- * 
+ *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,
+ *                                       image_fd.fileno(), 0)
  */
   /*with:*/ {
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_coords_filename);
     __Pyx_GIVEREF(__pyx_v_coords_filename);
@@ -2074,12 +2068,12 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
     __Pyx_INCREF(__pyx_kp_u_w_b);
     __Pyx_GIVEREF(__pyx_kp_u_w_b);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_kp_u_w_b);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L3_error)
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L3_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -2093,7 +2087,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
     }
     __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L3_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L3_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = __pyx_t_2;
@@ -2111,9 +2105,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
           __pyx_v_coords_fd = __pyx_t_4;
           __pyx_t_4 = 0;
           /*with:*/ {
-            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_filename); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_filename); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
-            __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L7_error)
+            __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_GIVEREF(__pyx_t_4);
             PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4);
@@ -2121,12 +2115,12 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
             __Pyx_GIVEREF(__pyx_n_u_rb);
             PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_n_u_rb);
             __pyx_t_4 = 0;
-            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-            __pyx_t_9 = __Pyx_PyObject_LookupSpecial(__pyx_t_4, __pyx_n_s_exit); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 35, __pyx_L7_error)
+            __pyx_t_9 = __Pyx_PyObject_LookupSpecial(__pyx_t_4, __pyx_n_s_exit); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 32, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_9);
-            __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_4, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L13_error)
+            __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_4, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L13_error)
             __Pyx_GOTREF(__pyx_t_2);
             __pyx_t_5 = NULL;
             if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2140,7 +2134,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
             }
             __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
             __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L13_error)
+            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L13_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
             __pyx_t_2 = __pyx_t_1;
@@ -2158,24 +2152,32 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                   __pyx_v_image_fd = __pyx_t_2;
                   __pyx_t_2 = 0;
 
-                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":36
+                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":33
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:
- *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)             # <<<<<<<<<<<<<<
+ *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,             # <<<<<<<<<<<<<<
+ *                                       image_fd.fileno(), 0)
  * 
- *         for z in range(zmax):
  */
-                  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L17_error)
+                  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L17_error)
                   __Pyx_GOTREF(__pyx_t_2);
-                  __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L17_error)
+                  __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 33, __pyx_L17_error)
                   __Pyx_GOTREF(__pyx_t_4);
-                  __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L17_error)
+                  __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L17_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
                   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-                  __pyx_t_13 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_13 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L17_error)
+                  __pyx_t_13 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_13 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 33, __pyx_L17_error)
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_image_fd, __pyx_n_s_fileno); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L17_error)
+
+                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":34
+ *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:
+ *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,
+ *                                       image_fd.fileno(), 0)             # <<<<<<<<<<<<<<
+ * 
+ *         for z in range(zmax):
+ */
+                  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_image_fd, __pyx_n_s_fileno); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L17_error)
                   __Pyx_GOTREF(__pyx_t_4);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -2189,73 +2191,87 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                   }
                   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L17_error)
+                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L17_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-                  __pyx_t_14 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_14 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L17_error)
+                  __pyx_t_14 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_14 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 34, __pyx_L17_error)
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L17_error)
-                  __Pyx_GOTREF(__pyx_t_1);
-                  __pyx_t_15 = __Pyx_PyInt_As_off_t(__pyx_t_1); if (unlikely((__pyx_t_15 == ((off_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L17_error)
-                  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                  __pyx_v_mmap_image = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_DTYPE_t *)mmap(NULL, __pyx_t_13, PROT_READ, MAP_SHARED, __pyx_t_14, __pyx_t_15));
 
-                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":38
- *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)
+                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":33
+ * 
+ *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:
+ *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,             # <<<<<<<<<<<<<<
+ *                                       image_fd.fileno(), 0)
+ * 
+ */
+                  __pyx_v_mmap_image = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_DTYPE_t *)mmap(NULL, __pyx_t_13, PROT_READ, MAP_SHARED, __pyx_t_14, 0));
+
+                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":36
+ *                                       image_fd.fileno(), 0)
  * 
  *         for z in range(zmax):             # <<<<<<<<<<<<<<
  *             for y in range(ymax):
  *                 for x in range(xmax):
  */
-                  __pyx_t_16 = __pyx_v_zmax;
-                  __pyx_t_17 = __pyx_t_16;
-                  for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
-                    __pyx_v_z = __pyx_t_18;
+                  __pyx_t_15 = __pyx_v_zmax;
+                  __pyx_t_16 = __pyx_t_15;
+                  for (__pyx_t_17 = 0; __pyx_t_17 < __pyx_t_16; __pyx_t_17+=1) {
+                    __pyx_v_z = __pyx_t_17;
 
-                    /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":39
+                    /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":37
  * 
  *         for z in range(zmax):
  *             for y in range(ymax):             # <<<<<<<<<<<<<<
  *                 for x in range(xmax):
- *                     idx = (z * ymax * xmax) + (y * xmax) + x
+ *                     idx = (z * ymax * xmax) + (y * xmax) + x + image.offset
  */
-                    __pyx_t_19 = __pyx_v_ymax;
-                    __pyx_t_20 = __pyx_t_19;
-                    for (__pyx_t_21 = 0; __pyx_t_21 < __pyx_t_20; __pyx_t_21+=1) {
-                      __pyx_v_y = __pyx_t_21;
+                    __pyx_t_18 = __pyx_v_ymax;
+                    __pyx_t_19 = __pyx_t_18;
+                    for (__pyx_t_20 = 0; __pyx_t_20 < __pyx_t_19; __pyx_t_20+=1) {
+                      __pyx_v_y = __pyx_t_20;
 
-                      /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":40
+                      /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":38
  *         for z in range(zmax):
  *             for y in range(ymax):
  *                 for x in range(xmax):             # <<<<<<<<<<<<<<
- *                     idx = (z * ymax * xmax) + (y * xmax) + x
+ *                     idx = (z * ymax * xmax) + (y * xmax) + x + image.offset
  *                     image_val = mmap_image[idx]
  */
-                      __pyx_t_22 = __pyx_v_xmax;
-                      __pyx_t_23 = __pyx_t_22;
-                      for (__pyx_t_24 = 0; __pyx_t_24 < __pyx_t_23; __pyx_t_24+=1) {
-                        __pyx_v_x = __pyx_t_24;
+                      __pyx_t_21 = __pyx_v_xmax;
+                      __pyx_t_22 = __pyx_t_21;
+                      for (__pyx_t_23 = 0; __pyx_t_23 < __pyx_t_22; __pyx_t_23+=1) {
+                        __pyx_v_x = __pyx_t_23;
 
-                        /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":41
+                        /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":39
  *             for y in range(ymax):
  *                 for x in range(xmax):
- *                     idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
+ *                     idx = (z * ymax * xmax) + (y * xmax) + x + image.offset             # <<<<<<<<<<<<<<
  *                     image_val = mmap_image[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate
  */
-                        __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
+                        __pyx_t_1 = __Pyx_PyInt_From_long(((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L17_error)
+                        __Pyx_GOTREF(__pyx_t_1);
+                        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L17_error)
+                        __Pyx_GOTREF(__pyx_t_4);
+                        __pyx_t_2 = PyNumber_Add(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L17_error)
+                        __Pyx_GOTREF(__pyx_t_2);
+                        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+                        __pyx_t_24 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_24 == (long)-1) && PyErr_Occurred())) __PYX_ERR(0, 39, __pyx_L17_error)
+                        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+                        __pyx_v_idx = __pyx_t_24;
 
-                        /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":42
+                        /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":40
  *                 for x in range(xmax):
- *                     idx = (z * ymax * xmax) + (y * xmax) + x
+ *                     idx = (z * ymax * xmax) + (y * xmax) + x + image.offset
  *                     image_val = mmap_image[idx]             # <<<<<<<<<<<<<<
  *                     if image_val != 0: # If value is nonzero, record the coordinate
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))
  */
                         __pyx_v_image_val = (__pyx_v_mmap_image[__pyx_v_idx]);
 
-                        /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":43
- *                     idx = (z * ymax * xmax) + (y * xmax) + x
+                        /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":41
+ *                     idx = (z * ymax * xmax) + (y * xmax) + x + image.offset
  *                     image_val = mmap_image[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate             # <<<<<<<<<<<<<<
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))
@@ -2264,35 +2280,35 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                         __pyx_t_25 = ((__pyx_v_image_val != 0) != 0);
                         if (__pyx_t_25) {
 
-                          /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":44
+                          /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":42
  *                     image_val = mmap_image[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))             # <<<<<<<<<<<<<<
  *                         i += 1
  * 
  */
-                          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_coords_fd, __pyx_n_s_write); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L17_error)
+                          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_coords_fd, __pyx_n_s_write); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L17_error)
                           __Pyx_GOTREF(__pyx_t_4);
-                          __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_v_idx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L17_error)
-                          __Pyx_GOTREF(__pyx_t_2);
-                          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_to_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L17_error)
+                          __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v_idx); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L17_error)
+                          __Pyx_GOTREF(__pyx_t_1);
+                          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_to_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 42, __pyx_L17_error)
                           __Pyx_GOTREF(__pyx_t_5);
-                          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-                          __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L17_error)
-                          __Pyx_GOTREF(__pyx_t_2);
+                          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                          __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L17_error)
+                          __Pyx_GOTREF(__pyx_t_1);
                           __Pyx_INCREF(__pyx_int_8);
                           __Pyx_GIVEREF(__pyx_int_8);
-                          PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_int_8);
+                          PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_int_8);
                           __Pyx_INCREF(__pyx_v_byteorder);
                           __Pyx_GIVEREF(__pyx_v_byteorder);
-                          PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_byteorder);
-                          __pyx_t_26 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 44, __pyx_L17_error)
+                          PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_byteorder);
+                          __pyx_t_26 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 42, __pyx_L17_error)
                           __Pyx_GOTREF(__pyx_t_26);
-                          if (PyDict_SetItem(__pyx_t_26, __pyx_n_s_signed, Py_True) < 0) __PYX_ERR(0, 44, __pyx_L17_error)
-                          __pyx_t_27 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_26); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 44, __pyx_L17_error)
+                          if (PyDict_SetItem(__pyx_t_26, __pyx_n_s_signed, Py_True) < 0) __PYX_ERR(0, 42, __pyx_L17_error)
+                          __pyx_t_27 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_1, __pyx_t_26); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 42, __pyx_L17_error)
                           __Pyx_GOTREF(__pyx_t_27);
                           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-                          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+                          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                           __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
                           __pyx_t_26 = NULL;
                           if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -2304,15 +2320,15 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                               __Pyx_DECREF_SET(__pyx_t_4, function);
                             }
                           }
-                          __pyx_t_1 = (__pyx_t_26) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_26, __pyx_t_27) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_27);
+                          __pyx_t_2 = (__pyx_t_26) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_26, __pyx_t_27) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_27);
                           __Pyx_XDECREF(__pyx_t_26); __pyx_t_26 = 0;
                           __Pyx_DECREF(__pyx_t_27); __pyx_t_27 = 0;
-                          if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 44, __pyx_L17_error)
-                          __Pyx_GOTREF(__pyx_t_1);
+                          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L17_error)
+                          __Pyx_GOTREF(__pyx_t_2);
                           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-                          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-                          /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":45
+                          /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":43
  *                     if image_val != 0: # If value is nonzero, record the coordinate
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))
  *                         i += 1             # <<<<<<<<<<<<<<
@@ -2321,8 +2337,8 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
  */
                           __pyx_v_i = (__pyx_v_i + 1);
 
-                          /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":43
- *                     idx = (z * ymax * xmax) + (y * xmax) + x
+                          /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":41
+ *                     idx = (z * ymax * xmax) + (y * xmax) + x + image.offset
  *                     image_val = mmap_image[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate             # <<<<<<<<<<<<<<
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))
@@ -2333,12 +2349,12 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                     }
                   }
 
-                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":35
+                  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":32
  *     cdef int i = 0
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:             # <<<<<<<<<<<<<<
- *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)
- * 
+ *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,
+ *                                       image_fd.fileno(), 0)
  */
                 }
                 __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -2354,30 +2370,30 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                 __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
                 /*except:*/ {
                   __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util.nonzero_coords.nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
-                  if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_4, &__pyx_t_27) < 0) __PYX_ERR(0, 35, __pyx_L19_except_error)
-                  __Pyx_GOTREF(__pyx_t_1);
+                  if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_4, &__pyx_t_27) < 0) __PYX_ERR(0, 32, __pyx_L19_except_error)
+                  __Pyx_GOTREF(__pyx_t_2);
                   __Pyx_GOTREF(__pyx_t_4);
                   __Pyx_GOTREF(__pyx_t_27);
-                  __pyx_t_26 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_4, __pyx_t_27); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 35, __pyx_L19_except_error)
+                  __pyx_t_26 = PyTuple_Pack(3, __pyx_t_2, __pyx_t_4, __pyx_t_27); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 32, __pyx_L19_except_error)
                   __Pyx_GOTREF(__pyx_t_26);
                   __pyx_t_28 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_26, NULL);
                   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
                   __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
-                  if (unlikely(!__pyx_t_28)) __PYX_ERR(0, 35, __pyx_L19_except_error)
+                  if (unlikely(!__pyx_t_28)) __PYX_ERR(0, 32, __pyx_L19_except_error)
                   __Pyx_GOTREF(__pyx_t_28);
                   __pyx_t_25 = __Pyx_PyObject_IsTrue(__pyx_t_28);
                   __Pyx_DECREF(__pyx_t_28); __pyx_t_28 = 0;
-                  if (__pyx_t_25 < 0) __PYX_ERR(0, 35, __pyx_L19_except_error)
+                  if (__pyx_t_25 < 0) __PYX_ERR(0, 32, __pyx_L19_except_error)
                   __pyx_t_29 = ((!(__pyx_t_25 != 0)) != 0);
                   if (__pyx_t_29) {
-                    __Pyx_GIVEREF(__pyx_t_1);
+                    __Pyx_GIVEREF(__pyx_t_2);
                     __Pyx_GIVEREF(__pyx_t_4);
                     __Pyx_XGIVEREF(__pyx_t_27);
-                    __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_4, __pyx_t_27);
-                    __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_27 = 0; 
-                    __PYX_ERR(0, 35, __pyx_L19_except_error)
+                    __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_4, __pyx_t_27);
+                    __pyx_t_2 = 0; __pyx_t_4 = 0; __pyx_t_27 = 0; 
+                    __PYX_ERR(0, 32, __pyx_L19_except_error)
                   }
-                  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+                  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
                   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
                   __Pyx_XDECREF(__pyx_t_27); __pyx_t_27 = 0;
                   goto __pyx_L18_exception_handled;
@@ -2401,7 +2417,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
                 if (__pyx_t_9) {
                   __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple_, NULL);
                   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-                  if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 35, __pyx_L7_error)
+                  if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 32, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_12);
                   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
                 }
@@ -2429,32 +2445,32 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util.nonzero_coords.nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_27, &__pyx_t_4, &__pyx_t_1) < 0) __PYX_ERR(0, 35, __pyx_L9_except_error)
+          if (__Pyx_GetException(&__pyx_t_27, &__pyx_t_4, &__pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_27);
           __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_26 = PyTuple_Pack(3, __pyx_t_27, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 35, __pyx_L9_except_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_26 = PyTuple_Pack(3, __pyx_t_27, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 32, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_26);
           __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_26, NULL);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
-          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 35, __pyx_L9_except_error)
+          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 32, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_9);
           __pyx_t_29 = __Pyx_PyObject_IsTrue(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (__pyx_t_29 < 0) __PYX_ERR(0, 35, __pyx_L9_except_error)
+          if (__pyx_t_29 < 0) __PYX_ERR(0, 32, __pyx_L9_except_error)
           __pyx_t_25 = ((!(__pyx_t_29 != 0)) != 0);
           if (__pyx_t_25) {
             __Pyx_GIVEREF(__pyx_t_27);
             __Pyx_GIVEREF(__pyx_t_4);
-            __Pyx_XGIVEREF(__pyx_t_1);
-            __Pyx_ErrRestoreWithState(__pyx_t_27, __pyx_t_4, __pyx_t_1);
-            __pyx_t_27 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0; 
-            __PYX_ERR(0, 35, __pyx_L9_except_error)
+            __Pyx_XGIVEREF(__pyx_t_2);
+            __Pyx_ErrRestoreWithState(__pyx_t_27, __pyx_t_4, __pyx_t_2);
+            __pyx_t_27 = 0; __pyx_t_4 = 0; __pyx_t_2 = 0; 
+            __PYX_ERR(0, 32, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_27); __pyx_t_27 = 0;
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           goto __pyx_L8_exception_handled;
         }
         __pyx_L9_except_error:;
@@ -2476,7 +2492,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
         if (__pyx_t_3) {
           __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple_, NULL);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 35, __pyx_L1_error)
+          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
@@ -2491,35 +2507,35 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_14non
     __pyx_L37:;
   }
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":48
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":46
  * 
  * 
  *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_memmap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_memmap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_coords_filename);
   __Pyx_GIVEREF(__pyx_v_coords_filename);
-  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_coords_filename);
-  __pyx_t_27 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 48, __pyx_L1_error)
+  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_coords_filename);
+  __pyx_t_27 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_27);
-  if (PyDict_SetItem(__pyx_t_27, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_27); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_27, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_27); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_27); __pyx_t_27 = 0;
   __pyx_r = __pyx_t_26;
   __pyx_t_26 = 0;
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":17
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
@@ -5075,8 +5091,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 35, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 36, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 272, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 856, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(1, 1038, __pyx_L1_error)
@@ -5089,14 +5105,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":35
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":32
  *     cdef int i = 0
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:             # <<<<<<<<<<<<<<
- *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED, image_fd.fileno(), image.offset)
- * 
+ *         mmap_image = <DTYPE_t *> mmap(NULL, image.size*sizeof(DTYPE_t), PROT_READ, MAP_SHARED,
+ *                                       image_fd.fileno(), 0)
  */
-  __pyx_tuple_ = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
@@ -5177,17 +5193,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":17
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
  *     """ generates linear indices of all non zero values in array
  *     """
  */
-  __pyx_tuple__9 = PyTuple_Pack(15, __pyx_n_s_image, __pyx_n_s_coords_filename, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_idx, __pyx_n_s_image_val, __pyx_n_s_byteorder, __pyx_n_s_mmap_image, __pyx_n_s_i, __pyx_n_s_coords_fd, __pyx_n_s_image_fd); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(15, __pyx_n_s_image, __pyx_n_s_coords_filename, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_idx, __pyx_n_s_image_val, __pyx_n_s_byteorder, __pyx_n_s_mmap_image, __pyx_n_s_i, __pyx_n_s_coords_fd, __pyx_n_s_image_fd); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_nonzero_coords, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_nonzero_coords, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5517,16 +5533,16 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":17
+  /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
  *     """ generates linear indices of all non zero values in array
  *     """
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_1nonzero_coords, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_4util_14nonzero_coords_1nonzero_coords, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_nonzero_coords, __pyx_t_1) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_nonzero_coords, __pyx_t_1) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "clearmap3/image_filters/filters/label/util/nonzero_coords.pyx":1
@@ -8223,195 +8239,6 @@ raise_neg_overflow:
     PyErr_SetString(PyExc_OverflowError,
         "can't convert negative value to int");
     return (int) -1;
-}
-
-/* CIntFromPy */
-  static CYTHON_INLINE off_t __Pyx_PyInt_As_off_t(PyObject *x) {
-    const off_t neg_one = (off_t) ((off_t) 0 - (off_t) 1), const_zero = (off_t) 0;
-    const int is_unsigned = neg_one > const_zero;
-#if PY_MAJOR_VERSION < 3
-    if (likely(PyInt_Check(x))) {
-        if (sizeof(off_t) < sizeof(long)) {
-            __PYX_VERIFY_RETURN_INT(off_t, long, PyInt_AS_LONG(x))
-        } else {
-            long val = PyInt_AS_LONG(x);
-            if (is_unsigned && unlikely(val < 0)) {
-                goto raise_neg_overflow;
-            }
-            return (off_t) val;
-        }
-    } else
-#endif
-    if (likely(PyLong_Check(x))) {
-        if (is_unsigned) {
-#if CYTHON_USE_PYLONG_INTERNALS
-            const digit* digits = ((PyLongObject*)x)->ob_digit;
-            switch (Py_SIZE(x)) {
-                case  0: return (off_t) 0;
-                case  1: __PYX_VERIFY_RETURN_INT(off_t, digit, digits[0])
-                case 2:
-                    if (8 * sizeof(off_t) > 1 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 2 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, unsigned long, (((((unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) >= 2 * PyLong_SHIFT) {
-                            return (off_t) (((((off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0]));
-                        }
-                    }
-                    break;
-                case 3:
-                    if (8 * sizeof(off_t) > 2 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 3 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, unsigned long, (((((((unsigned long)digits[2]) << PyLong_SHIFT) | (unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) >= 3 * PyLong_SHIFT) {
-                            return (off_t) (((((((off_t)digits[2]) << PyLong_SHIFT) | (off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0]));
-                        }
-                    }
-                    break;
-                case 4:
-                    if (8 * sizeof(off_t) > 3 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 4 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, unsigned long, (((((((((unsigned long)digits[3]) << PyLong_SHIFT) | (unsigned long)digits[2]) << PyLong_SHIFT) | (unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) >= 4 * PyLong_SHIFT) {
-                            return (off_t) (((((((((off_t)digits[3]) << PyLong_SHIFT) | (off_t)digits[2]) << PyLong_SHIFT) | (off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0]));
-                        }
-                    }
-                    break;
-            }
-#endif
-#if CYTHON_COMPILING_IN_CPYTHON
-            if (unlikely(Py_SIZE(x) < 0)) {
-                goto raise_neg_overflow;
-            }
-#else
-            {
-                int result = PyObject_RichCompareBool(x, Py_False, Py_LT);
-                if (unlikely(result < 0))
-                    return (off_t) -1;
-                if (unlikely(result == 1))
-                    goto raise_neg_overflow;
-            }
-#endif
-            if (sizeof(off_t) <= sizeof(unsigned long)) {
-                __PYX_VERIFY_RETURN_INT_EXC(off_t, unsigned long, PyLong_AsUnsignedLong(x))
-#ifdef HAVE_LONG_LONG
-            } else if (sizeof(off_t) <= sizeof(unsigned PY_LONG_LONG)) {
-                __PYX_VERIFY_RETURN_INT_EXC(off_t, unsigned PY_LONG_LONG, PyLong_AsUnsignedLongLong(x))
-#endif
-            }
-        } else {
-#if CYTHON_USE_PYLONG_INTERNALS
-            const digit* digits = ((PyLongObject*)x)->ob_digit;
-            switch (Py_SIZE(x)) {
-                case  0: return (off_t) 0;
-                case -1: __PYX_VERIFY_RETURN_INT(off_t, sdigit, (sdigit) (-(sdigit)digits[0]))
-                case  1: __PYX_VERIFY_RETURN_INT(off_t,  digit, +digits[0])
-                case -2:
-                    if (8 * sizeof(off_t) - 1 > 1 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 2 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, long, -(long) (((((unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) - 1 > 2 * PyLong_SHIFT) {
-                            return (off_t) (((off_t)-1)*(((((off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0])));
-                        }
-                    }
-                    break;
-                case 2:
-                    if (8 * sizeof(off_t) > 1 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 2 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, unsigned long, (((((unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) - 1 > 2 * PyLong_SHIFT) {
-                            return (off_t) ((((((off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0])));
-                        }
-                    }
-                    break;
-                case -3:
-                    if (8 * sizeof(off_t) - 1 > 2 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 3 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, long, -(long) (((((((unsigned long)digits[2]) << PyLong_SHIFT) | (unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) - 1 > 3 * PyLong_SHIFT) {
-                            return (off_t) (((off_t)-1)*(((((((off_t)digits[2]) << PyLong_SHIFT) | (off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0])));
-                        }
-                    }
-                    break;
-                case 3:
-                    if (8 * sizeof(off_t) > 2 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 3 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, unsigned long, (((((((unsigned long)digits[2]) << PyLong_SHIFT) | (unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) - 1 > 3 * PyLong_SHIFT) {
-                            return (off_t) ((((((((off_t)digits[2]) << PyLong_SHIFT) | (off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0])));
-                        }
-                    }
-                    break;
-                case -4:
-                    if (8 * sizeof(off_t) - 1 > 3 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 4 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, long, -(long) (((((((((unsigned long)digits[3]) << PyLong_SHIFT) | (unsigned long)digits[2]) << PyLong_SHIFT) | (unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) - 1 > 4 * PyLong_SHIFT) {
-                            return (off_t) (((off_t)-1)*(((((((((off_t)digits[3]) << PyLong_SHIFT) | (off_t)digits[2]) << PyLong_SHIFT) | (off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0])));
-                        }
-                    }
-                    break;
-                case 4:
-                    if (8 * sizeof(off_t) > 3 * PyLong_SHIFT) {
-                        if (8 * sizeof(unsigned long) > 4 * PyLong_SHIFT) {
-                            __PYX_VERIFY_RETURN_INT(off_t, unsigned long, (((((((((unsigned long)digits[3]) << PyLong_SHIFT) | (unsigned long)digits[2]) << PyLong_SHIFT) | (unsigned long)digits[1]) << PyLong_SHIFT) | (unsigned long)digits[0])))
-                        } else if (8 * sizeof(off_t) - 1 > 4 * PyLong_SHIFT) {
-                            return (off_t) ((((((((((off_t)digits[3]) << PyLong_SHIFT) | (off_t)digits[2]) << PyLong_SHIFT) | (off_t)digits[1]) << PyLong_SHIFT) | (off_t)digits[0])));
-                        }
-                    }
-                    break;
-            }
-#endif
-            if (sizeof(off_t) <= sizeof(long)) {
-                __PYX_VERIFY_RETURN_INT_EXC(off_t, long, PyLong_AsLong(x))
-#ifdef HAVE_LONG_LONG
-            } else if (sizeof(off_t) <= sizeof(PY_LONG_LONG)) {
-                __PYX_VERIFY_RETURN_INT_EXC(off_t, PY_LONG_LONG, PyLong_AsLongLong(x))
-#endif
-            }
-        }
-        {
-#if CYTHON_COMPILING_IN_PYPY && !defined(_PyLong_AsByteArray)
-            PyErr_SetString(PyExc_RuntimeError,
-                            "_PyLong_AsByteArray() not available in PyPy, cannot convert large numbers");
-#else
-            off_t val;
-            PyObject *v = __Pyx_PyNumber_IntOrLong(x);
- #if PY_MAJOR_VERSION < 3
-            if (likely(v) && !PyLong_Check(v)) {
-                PyObject *tmp = v;
-                v = PyNumber_Long(tmp);
-                Py_DECREF(tmp);
-            }
- #endif
-            if (likely(v)) {
-                int one = 1; int is_little = (int)*(unsigned char *)&one;
-                unsigned char *bytes = (unsigned char *)&val;
-                int ret = _PyLong_AsByteArray((PyLongObject *)v,
-                                              bytes, sizeof(val),
-                                              is_little, !is_unsigned);
-                Py_DECREF(v);
-                if (likely(!ret))
-                    return val;
-            }
-#endif
-            return (off_t) -1;
-        }
-    } else {
-        off_t val;
-        PyObject *tmp = __Pyx_PyNumber_IntOrLong(x);
-        if (!tmp) return (off_t) -1;
-        val = __Pyx_PyInt_As_off_t(tmp);
-        Py_DECREF(tmp);
-        return val;
-    }
-raise_overflow:
-    PyErr_SetString(PyExc_OverflowError,
-        "value too large to convert to off_t");
-    return (off_t) -1;
-raise_neg_overflow:
-    PyErr_SetString(PyExc_OverflowError,
-        "can't convert negative value to off_t");
-    return (off_t) -1;
 }
 
 /* CIntFromPy */
