@@ -1,4 +1,4 @@
-import numpy as np
+import tifffile as tif
 import cv2
 
 from ._connect import _connect

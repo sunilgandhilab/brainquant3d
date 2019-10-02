@@ -1,3 +1,4 @@
+import tifffile as tif
 import numpy as np
 
 from ._filter import _size_filter

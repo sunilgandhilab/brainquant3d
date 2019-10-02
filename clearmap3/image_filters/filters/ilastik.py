@@ -116,7 +116,7 @@ class PixelClassification(FilterBase):
         #create temp npy
         input_fn = str((self.temp_dir / Path(self.input.filename).stem).with_suffix('.npy'))
         # T because io.writeData not transpose for npy files
-        io.writeData(input_fn, self.input.T)
+        io.writeData(input_fn, self.input)
         output_fn = str(self.temp_dir / 'out_prelim.npy')
 
         ilinp = self._filename_to_input_arg(input_fn)

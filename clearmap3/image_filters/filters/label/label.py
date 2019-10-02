@@ -1,7 +1,6 @@
 import os
 import numpy as np
 from scipy.ndimage import gaussian_filter
-import tifffile as tif
 
 import clearmap3.IO as io
 from clearmap3.image_filters import filter_manager
@@ -14,7 +13,6 @@ from .overlap import overlap
 from .util.nonzero_coords import nonzero_coords
 from .watershed._watershed import watershed_3d
 from .watershed._util import _validate_connectivity, _offsets_to_raveled_neighbors
-
 
 
 class Label(FilterBase):
@@ -65,14 +63,16 @@ class Label(FilterBase):
 
         if self.mode == 3:
             # Pad image by 1 pixel in each dimension
-            print('Padding image...')
+            self.log.debug('Padding image...')
             padded_img = io.empty(os.path.join(self.temp_dir, 'temp_padded_img.tif'),
                                              dtype=raw_img.dtype,
                                              shape=(tuple(x+2 for x in raw_img.shape)))
-            if raw_img.ndim == 3:
-                padded_img[1:-1,1:-1,1:-1] = raw_img
+
             if raw_img.ndim == 2:
                 padded_img[1:-1,1:-1] = raw_img
+            if raw_img.ndim == 3:
+                padded_img[1:-1,1:-1,1:-1] = raw_img
+
             raw_img = padded_img
 
         bin_img = io.empty(os.path.join(self.temp_dir, 'temp_bin_img.tif'),
@@ -82,8 +82,6 @@ class Label(FilterBase):
         labeled_img = io.empty(os.path.join(self.temp_dir, 'temp_labeled_img.tif'),
                                         dtype=np.int32,
                                         shape=raw_img.shape)
-        labeled_img = tif.tifffile.memmap(labeled_img.filename) # WHY THE FUCK DOES THIS NEED TO BE
-        # HERE
 
         # Binarize image
         self.log.debug('Thresholding')
@@ -95,6 +93,7 @@ class Label(FilterBase):
 
         # Filter labeled regions by size (1st pass) # Mode 1: Stop after this
         self.log.debug('Size filtering')
+
         _, _ = size_filter(labeled_img, self.min_size, self.max_size, labeled_img, return_labels=True)
 
         if self.mode == 1:

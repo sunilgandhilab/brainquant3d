@@ -199,6 +199,9 @@ def watershed(image, markers=None, connectivity=1, offset=None, mask=None,
     The algorithm works also for 3-D images, and can be used for example to
     separate overlapping spheres.
     """
+
+    image = tif.tifffile.memmap(image.filename)  # WHY THE FUCK DOES THIS NEED TO BE
+
     image, markers, mask = _validate_inputs(image, markers, mask, connectivity)
     connectivity, offset = _validate_connectivity(image.ndim, connectivity,
                                                   offset)
