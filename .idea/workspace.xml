@@ -282,7 +282,7 @@
       <workItem from="1569356174254" duration="93917000" />
       <workItem from="1569890262853" duration="637000" />
       <workItem from="1569962089617" duration="8863000" />
-      <workItem from="1569986102284" duration="13262000" />
+      <workItem from="1569986102284" duration="15051000" />
     </task>
     <task id="LOCAL-00001" summary="Initial working version">
       <created>1564718739417</created>
@@ -599,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570054999603</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="updated ilastik dependency">
+      <created>1570056673835</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1570056673835</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +647,8 @@
     <MESSAGE value="ilastik filter now removes extra chanels&#10;io now writes to Path()&#10;fixed offset issues in label filters" />
     <MESSAGE value="ilastik filter now removes extra chanels&#10;io now writes to Path()&#10;fixed offset issues in label filters&#10;label now works in 2d as well" />
     <MESSAGE value="removed transpose from tif IO" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed transpose from tif IO" />
+    <MESSAGE value="updated ilastik dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated ilastik dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
