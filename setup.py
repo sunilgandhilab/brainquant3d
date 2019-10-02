@@ -149,7 +149,7 @@ class install(_install):
             tar.close()
 
         print('installing ilastik')
-        url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
+        url = 'http://files.ilastik.org/ilastik-1.3.3rc2-Linux.tar.bz2'
         tmp = Path(url).name
 
         sink = dest / 'ilastik-1.3.2post1-Linux'
