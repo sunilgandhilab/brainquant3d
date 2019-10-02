@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/ilastik.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/ilastik.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -282,7 +284,7 @@
       <workItem from="1569356174254" duration="93917000" />
       <workItem from="1569890262853" duration="637000" />
       <workItem from="1569962089617" duration="8863000" />
-      <workItem from="1569986102284" duration="15051000" />
+      <workItem from="1569986102284" duration="15867000" />
     </task>
     <task id="LOCAL-00001" summary="Initial working version">
       <created>1564718739417</created>
@@ -606,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570056673835</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="updated ilastik dependency">
+      <created>1570058981760</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1570058981760</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

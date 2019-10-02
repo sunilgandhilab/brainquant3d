@@ -151,7 +151,7 @@ class install(_install):
         print('installing ilastik')
         url = 'http://files.ilastik.org/ilastik-1.3.3rc2-Linux.tar.bz2'
         tmp = Path(url).name
-        sink = dest / 'ilastik-1.3.2post1-Linux'
+        sink = dest / 'ilastik-1.3.3rc2-Linux'
 
         with open(tmp, "wb") as f:
             r = requests.get(url)
