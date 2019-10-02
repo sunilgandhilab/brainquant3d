@@ -5,7 +5,7 @@ cimport numpy as np
 from libcpp.map cimport map
 from libcpp.pair cimport pair
 
-from _label cimport *
+from _connect cimport *
 
 DTYPE = np.int32
 
@@ -13,7 +13,7 @@ ctypedef np.int32_t DTYPE_t
 
 @cython.boundscheck(False) # turn off bounds-checking for entire function
 @cython.wraparound(False)  # turn off negative index wrapping for entire function
-def label(unsigned char[:,:,::1] img, int[:,:,::1] out):
+def _connect(unsigned char[:,:,::1] img, int[:,:,::1] out):
 
     cdef int zmax = img.shape[0]
     cdef int ymax = img.shape[1]

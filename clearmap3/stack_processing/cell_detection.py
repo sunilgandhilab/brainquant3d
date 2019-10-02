@@ -13,7 +13,7 @@ from clearmap3 import config
 import clearmap3.IO as io
 from clearmap3.utils.timer import Timer
 from clearmap3.utils.files import unique_temp_dir
-from clearmap3.utils.chunking import chunk_ranges
+from clearmap3.stack_processing.chunking import chunk_ranges
 from clearmap3.stack_processing.parallelization import processSubStack
 
 import logging

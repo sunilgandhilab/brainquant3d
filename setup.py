@@ -21,9 +21,9 @@ from distutils.extension import Extension
 
 from clearmap3._version import __version__
 
-if sys.platform not in ['linux']:
-    import tarfile
-    raise EnvironmentError(f'platform {sys.platform} not supported.')
+#if sys.platform not in ['linux']:
+#    import tarfile
+#    raise EnvironmentError(f'platform {sys.platform} not supported.')
 
 USE_CYTHON = 'auto'
 
@@ -52,8 +52,8 @@ if USE_CYTHON:
         Extension("clearmap3.image_filters.filters.helpers.array_manipulations",
                   sources=["clearmap3/image_filters/filters/helpers/array_manipulations.pyx"]
                   ),
-        Extension("clearmap3.image_filters.filters.label._label",
-                  sources=["clearmap3/image_filters/filters/label/_label.pyx"],
+        Extension("clearmap3.image_filters.filters.label._connect",
+                  sources=["clearmap3/image_filters/filters/label/_connect.pyx"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
                   extra_link_args=[os.path.join('clearmap3/.lib', f) for f in os.listdir(
@@ -65,21 +65,21 @@ if USE_CYTHON:
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.filter",
-                  sources=["clearmap3/image_filters/filters/label/filter.pyx"],
+        Extension("clearmap3.image_filters.filters.label._filter",
+                  sources=["clearmap3/image_filters/filters/label/_filter.pyx"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.overlap",
-                  sources=["clearmap3/image_filters/filters/label/overlap.pyx"],
+        Extension("clearmap3.image_filters.filters.label._overlap",
+                  sources=["clearmap3/image_filters/filters/label/_overlap.pyx"],
                   include_dirs=[numpy.get_include()],
                   ),
         Extension("clearmap3.image_filters.filters.label.watershed._watershed",
                   sources=["clearmap3/image_filters/filters/label/watershed/_watershed.pyx"],
                   include_dirs=[numpy.get_include()]
                   ),
-        Extension("clearmap3.image_filters.filters.label.util.nonzero_coords",
-                  sources=["clearmap3/image_filters/filters/label/util/nonzero_coords.pyx"],
+        Extension("clearmap3.image_filters.filters.label.util._nonzero_coords",
+                  sources=["clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx"],
                   language='c++',
                   include_dirs=[numpy.get_include()]
                   )
@@ -97,8 +97,8 @@ else:
         Extension("clearmap3.image_filters.filters.helpers.array_manipulations",
                   sources=["clearmap3/image_filters/filters/helpers/array_manipulations.c"]
                   ),
-        Extension("clearmap3.image_filters.filters.label._label",
-                  sources=["clearmap3/image_filters/filters/label/_label.cpp"],
+        Extension("clearmap3.image_filters.filters.label._connect",
+                  sources=["clearmap3/image_filters/filters/label/_connect.cpp"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
                   extra_link_args=[os.path.join('clearmap3/.lib', f) for f in os.listdir(
@@ -110,21 +110,21 @@ else:
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.filter",
-                  sources=["clearmap3/image_filters/filters/label/filter.cpp"],
+        Extension("clearmap3.image_filters.filters.label._filter",
+                  sources=["clearmap3/image_filters/filters/label/_filter.cpp"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.overlap",
-                  sources=["clearmap3/image_filters/filters/label/overlap.c"],
+        Extension("clearmap3.image_filters.filters.label._overlap",
+                  sources=["clearmap3/image_filters/filters/label/_overlap.c"],
                   include_dirs=[numpy.get_include()],
                   ),
         Extension("clearmap3.image_filters.filters.label.watershed._watershed",
                   sources=["clearmap3/image_filters/filters/label/watershed/_watershed.c"],
                   include_dirs=[numpy.get_include()]
                   ),
-        Extension("clearmap3.image_filters.filters.label.util.nonzero_coords",
-                  sources=["clearmap3/image_filters/filters/label/util/nonzero_coords.cpp"],
+        Extension("clearmap3.image_filters.filters.label.util._nonzero_coords",
+                  sources=["clearmap3/image_filters/filters/label/util/_nonzero_coords.cpp"],
                   language='c++',
                   include_dirs=[numpy.get_include()]
                   )

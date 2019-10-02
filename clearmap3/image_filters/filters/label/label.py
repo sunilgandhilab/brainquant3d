@@ -7,7 +7,7 @@ import clearmap3.IO as io
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase
 
-from ._label import label
+from .connect import connect
 from .threshold import threshold
 from .filter import size_filter
 from .overlap import overlap
@@ -30,7 +30,7 @@ class Label(FilterBase):
          max_size2      (float): Maximum object size during optional second filtering.
          high_threshold (float): Probability threshold for filtering.
          low_threshold  (float): Probability threshold for optional second filtering.
-         mode           (int): . Options are:
+         mode           (int): Options are:
                                 1 : High Threshold --> Label --> Size Filter
                                 2 : Mode 1 --> Low Thresh --> Watershed --> Size Filter (2nd Pass)
                                 3 : Mode 1 --> Low Thresh --> Label -->
@@ -55,30 +55,35 @@ class Label(FilterBase):
 
         if self.sigmas:
             if self.input.ndim != len(self.sigmas):
-                raise ValueError('sigmas must have same length as image dimensions')
+                raise ValueError('Sigmas must have same length as image dimensions.')
 
             # Smooth image
-            self.log.verbose('Smoothing image.')
+            self.log.debug('Smoothing image.')
             self.input[:] = gaussian_filter(self.input, sigma=self.sigmas)
 
-        raw_img = self.input.T
+        raw_img = self.input
 
         if self.mode == 3:
             # Pad image by 1 pixel in each dimension
             print('Padding image...')
-            padded_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_padded_img.tif'),
+            padded_img = io.empty(os.path.join(self.temp_dir, 'temp_padded_img.tif'),
                                              dtype=raw_img.dtype,
                                              shape=(tuple(x+2 for x in raw_img.shape)))
-            padded_img[1:-1,1:-1,1:-1] = raw_img
+            if raw_img.ndim == 3:
+                padded_img[1:-1,1:-1,1:-1] = raw_img
+            if raw_img.ndim == 2:
+                padded_img[1:-1,1:-1] = raw_img
             raw_img = padded_img
 
-        bin_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_bin_img.tif'),
-                                      dtype=np.uint8,
-                                      shape=raw_img.shape)
+        bin_img = io.empty(os.path.join(self.temp_dir, 'temp_bin_img.tif'),
+                                        dtype=np.uint8,
+                                        shape=raw_img.shape)
 
-        labeled_1_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_labeled_1_img.tif'),
-                                            dtype=np.int32,
-                                            shape=raw_img.shape)
+        labeled_img = io.empty(os.path.join(self.temp_dir, 'temp_labeled_img.tif'),
+                                        dtype=np.int32,
+                                        shape=raw_img.shape)
+        labeled_img = tif.tifffile.memmap(labeled_img.filename) # WHY THE FUCK DOES THIS NEED TO BE
+        # HERE
 
         # Binarize image
         self.log.debug('Thresholding')
@@ -86,19 +91,19 @@ class Label(FilterBase):
 
         # Label image
         self.log.debug('Labeling')
-        label(bin_img, labeled_1_img)
+        connect(bin_img, labeled_img)
 
         # Filter labeled regions by size (1st pass) # Mode 1: Stop after this
         self.log.debug('Size filtering')
-        _, _ = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img, return_labels=True)
+        _, _ = size_filter(labeled_img, self.min_size, self.max_size, labeled_img, return_labels=True)
 
         if self.mode == 1:
-            return io.readData(labeled_1_img.filename)
+            return io.readData(labeled_img.filename)
 
         # Mode 2 two serial thresholding>label> filter runs
         elif self.mode == 2:
 
-            labeled_2_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_labeled_2_img.tif'),
+            labeled_2_img = io.empty(os.path.join(self.temp_dir, 'temp_labeled_2_img.tif'),
                                                     dtype=np.int32,
                                                     shape=raw_img.shape)
 
@@ -106,15 +111,15 @@ class Label(FilterBase):
             threshold(raw_img, self.low_threshold, bin_img)
 
             self.log.debug('Labeling...')
-            _ = label(bin_img, labeled_2_img)
+            _ = connect(bin_img, labeled_2_img)
 
             self.log.debug('Comparing overlap...')
-            overlap(labeled_1_img, labeled_2_img, labeled_2_img)
+            overlap(labeled_img, labeled_2_img, labeled_2_img)
 
             self.log.debug('Running final size filter...')
             _, _ = size_filter(labeled_2_img, self.min_size2, self.max_size2, labeled_2_img, return_labels=True)
 
-            return io.readData(labeled_1_img.filename)
+            return io.readData(labeled_img.filename)
 
         # Mode 3 two serial thresholds with identity preservation
         elif self.mode == 3:
@@ -128,7 +133,7 @@ class Label(FilterBase):
             # Get coordinates of all nonzero values in labeled/size-filtered image
             print('Getting label coordinates...')
             marker_locations_filename = os.path.join(self.temp_dir, 'marker_locations.mmap')
-            marker_locations = nonzero_coords(labeled_1_img, marker_locations_filename)
+            marker_locations = nonzero_coords(labeled_img, marker_locations_filename)
 
             connectivity, offset = _validate_connectivity(raw_img.ndim, connectivity=None,
                                                           offset=None)
@@ -141,17 +146,24 @@ class Label(FilterBase):
             print('Running watershed...')
             watershed_3d(raw_img, marker_locations, flat_neighborhood,
                                  bin_img, image_strides, 0,
-                                 labeled_1_img, # <-- Output
+                                 labeled_img, # <-- Output
                                  False, True) # <-- Inverted watershed
 
             #######################################################################
 
             # Final size filter
             self.log.debug('Running final size filter...')
-            _, _ = size_filter(labeled_1_img, self.min_size2, self.max_size2, labeled_1_img, return_labels=True)
+            _, _ = size_filter(labeled_img, self.min_size2, self.max_size2, labeled_img, return_labels=True)
 
-        self.input[:] = io.readData(labeled_1_img.filename)[1:-1,1:-1,1:-1]
-        return self.input
+            if self.input.ndim == 2:
+                labeled_img = labeled_img[1:-1,1:-1]
+            else:
+                labeled_img =  labeled_img[1:-1,1:-1,1:-1]
+
+            out = io.empty(os.path.join(self.temp_dir, 'output.tif'), shape = labeled_img.shape, dtype=labeled_img.dtype)
+            out[:] = labeled_img
+
+            return out
 
 
 filter_manager.add_filter(Label())

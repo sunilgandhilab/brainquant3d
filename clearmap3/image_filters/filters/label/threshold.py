@@ -2,8 +2,7 @@ import numpy as np
 
 from ._threshold import _threshold
 
-def threshold(image, val, output=
-              ):
+def threshold(image, val, output=None):
     """Performs a simple threshold on 'image'.
 
     Parameters
@@ -16,17 +15,24 @@ def threshold(image, val, output=
         Binary matrix where values >= 'val' = max(dtype) and values < 'va' = 0.
     """
 
-    val = image.dtype.type(val)
+    original_ndim = image.ndim
+    if original_ndim == 2:
+        image = image[np.newaxis, ...]
 
-    # Ensure 3 dimensions
-    if image.ndim == 2:
-        image = image[np.newaxis, ...,]
-        if isinstance(output, np.ndarray) and output.ndim == 2:
-            output.shape = image.shape
+    if not isinstance(output, np.ndarray):
+        output = image
+        original_out_ndim = output.ndim
+    else:
+        original_out_ndim = output.ndim
+        if original_out_ndim == 2:
+            output = output[np.newaxis, ...]
+
+    val = image.dtype.type(val)
 
     _threshold(image, output, val)
 
-    # remove useless axis
-    if image.shape[0] == 1:
+    if original_ndim == 2:
         image.shape = image.shape[1:]
+
+    if original_out_ndim == 2:
         output.shape = output.shape[1:]

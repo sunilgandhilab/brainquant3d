@@ -128,7 +128,7 @@ class PixelClassification(FilterBase):
         output_chan = self.temp_dir / 'out.npy'
         # transpose to restore input dimensionality
         output_chan = io.writeData(output_chan,
-                                    output[..., self.output_channel].T,
+                                    output[...,self.output_channel],
                                     returnMemmap=True)
 
         return output_chan

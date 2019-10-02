@@ -5,7 +5,7 @@ import tifffile as tif
 import clearmap3.IO as io
 
 import logging
-from clearmap3.utils.chunking import range_to_slices
+from clearmap3.stack_processing.chunking import range_to_slices
 log = logging.getLogger(__name__)
 
 def dataSize(filename, **args):

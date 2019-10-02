@@ -5,7 +5,7 @@ from libcpp cimport bool
 from libcpp.map cimport map
 from libcpp.pair cimport pair
 
-def size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out, bool return_labels=False):
+def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out, bool return_labels=False):
 
     cdef int zmax = img.shape[0]
     cdef int ymax = img.shape[1]
