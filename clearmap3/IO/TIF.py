@@ -84,15 +84,6 @@ def readData(filename, x = None, y = None, z = None, returnMemmap = True, **kwar
     else:
         data = tif.imread(filename)
 
-    if data.ndim == 2:
-        data = data.transpose(1,0)
-    elif data.ndim == 3:
-        data = data.transpose(2,1,0)
-    elif data.ndim == 4: # multi channel image
-        data = data.transpose(1,3,2,0)
-    else:
-        raise RuntimeError('readData: dimension %d not supproted!' % data.ndim)
-
     return io.dataToRange(data, x = x, y = y, z = z)
 
 
@@ -130,22 +121,17 @@ def writeData(filename, data, rgb = False, substack = None, returnMemmap = True)
     else:
         if not rgb:
             if d == 2: # XY
-                data = data.transpose(1,0)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape)
             elif d == 3: # XYZ
-                data = data.transpose(2,1,0)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, bigtiff = True) #imageJ = true not work for int32
             elif d == 4: #XYZC
-                data = data.transpose(2, 3, 1, 0)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, imagej = True)
             else:
                 raise RuntimeError('writing {} dimensional data to tif not supported!'.format(len(data.shape)))
         else:
             if d == 3: # XYC
-                data = data.transpose(1,0,2)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, imagej = True) #imageJ = true not work for int32
             elif d == 4: # XYZS
-                data = data.transpose(2, 1, 0, 3)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, imagej = True)
             else:
                 raise RuntimeError('writing {} dimensional data to tif not supported!'.format(len(data.shape)))

@@ -35,7 +35,7 @@ def readFileList(filename, z = None):
     fnames = os.listdir(fpath)
     # generate list
     searchRegex = re.compile(fname).search    
-    fl = [ l for l in fnames for m in (searchRegex(l),) if m]
+    fl = sort([l for l in fnames for m in (searchRegex(l),) if m])
 
     if not fl:
         raise Exception('no files found in ' + fpath + ' match ' + fname + ' !')
@@ -43,7 +43,7 @@ def readFileList(filename, z = None):
     if z != None:
         fl = fl[z[0]:z[1]] #TODO: check if correct indexing
 
-    return fpath, sort(fl)
+    return fpath, fl
 
 
 def splitFileExpression(filename):
@@ -188,7 +188,7 @@ def readData(filename, **args):
 
 def empty(filename, shape, dtype, **kwargs):
     fileheader, fileext, digitfrmt = splitFileExpression(filename)
-    nz = shape[-1]
+    nz = shape[0]
 
     for i in range(nz):
         fname = fileheader + (digitfrmt % i) + fileext
@@ -221,11 +221,11 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
 
         if substack:
 
-            startIndex = substack[-1][0]
-            nz = substack[-1][1] - startIndex
+            startIndex = substack[0][0]
+            nz = substack[0][1] - startIndex
             substack = substack[:-1]
         else:
-            nz = data.shape[2]
+            nz = data.shape[0]
 
         if rgb:
             if nz == 3:
@@ -237,7 +237,7 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
         else:
             for i in range(nz):
                 fname = fileheader + (digitfrmt % (i + startIndex)) + fileext
-                io.writeData(fname, data[:,:,i], substack=substack)
+                io.writeData(fname, data[i], substack=substack)
             return filename
 
 
@@ -318,7 +318,7 @@ def _parallelCopyToFileList(args):
 
     for i,file in enumerate(sources):
         log.debug(f'copyData: copying {file} to {sink}')
-        im = tif.imread(file).T
+        im = tif.imread(file)
         if not Xrng == Yrng == None:
             im = io.dataToRange(im, x=Xrng, y=Yrng)
 
@@ -334,6 +334,6 @@ def _parallelCopyToTif(args):
         log.debug(f'copyData: copying {file} to {sink}')
         im = tif.imread(file).T
         if not Xrng == Yrng == None:
-            output[:,:,idx] = io.dataToRange(im, x=Xrng, y=Yrng)
+            output[idx] = io.dataToRange(im, x=Xrng, y=Yrng)
         else:
-            output[:, :, idx] = im
+            output[idx] = im

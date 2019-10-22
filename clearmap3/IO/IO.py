@@ -411,11 +411,11 @@ def dataToRange(data, x = None, y = None, z = None):
     d = len(dsize)
     rr = []
     if d > 0:
-        rr.append(toDataRange(dsize[0], r = x))
+        rr.append(toDataRange(dsize[0], r = z))
     if d > 1:
         rr.append(toDataRange(dsize[1], r = y))
     if d > 2:
-        rr.append(toDataRange(dsize[2], r = z))
+        rr.append(toDataRange(dsize[2], r = x))
     if d > 4:
         raise RuntimeError('dataToRange: dimension %d to big' % d)
 

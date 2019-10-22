@@ -4,15 +4,12 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="minor refactor">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/IO/FileList.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/FileList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/IO/IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/IO/Imaris.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/Imaris.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/IO/NRRD.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/NRRD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/IO/RAW.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/RAW.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/IO/TIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/IO/TIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -290,14 +287,7 @@
       <workItem from="1569962089617" duration="8863000" />
       <workItem from="1569986102284" duration="17209000" />
       <workItem from="1571761267338" duration="334000" />
-      <workItem from="1571761913312" duration="14832000" />
-    </task>
-    <task id="LOCAL-00006" summary="added compiled cython files">
-      <created>1564780907475</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1564780907475</updated>
+      <workItem from="1571761913312" duration="16317000" />
     </task>
     <task id="LOCAL-00007" summary="added readme to docs">
       <created>1564781197974</created>
@@ -635,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571782672880</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="replaces all uses of all when cropping to None">
+      <created>1571784174274</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1571784174274</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +678,8 @@
     <MESSAGE value="re-added z only chunking" />
     <MESSAGE value="update elastik dependency" />
     <MESSAGE value="minor refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor refactor" />
+    <MESSAGE value="replaces all uses of all when cropping to None" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaces all uses of all when cropping to None" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
