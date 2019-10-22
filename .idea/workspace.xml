@@ -4,11 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
-    </list>
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,14 +281,7 @@
       <workItem from="1569962089617" duration="8863000" />
       <workItem from="1569986102284" duration="17209000" />
       <workItem from="1571761267338" duration="334000" />
-      <workItem from="1571761913312" duration="12869000" />
-    </task>
-    <task id="LOCAL-00004" summary="more refactoring and added docs.">
-      <created>1564780548021</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1564780548021</updated>
+      <workItem from="1571761913312" duration="13500000" />
     </task>
     <task id="LOCAL-00005" summary="more refactoring and added docs.">
       <created>1564780789692</created>
@@ -630,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571773106899</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="minor refactor">
+      <created>1571781828155</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1571781828155</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +671,8 @@
     <MESSAGE value="fixed sigesev on munmap" />
     <MESSAGE value="re-added z only chunking" />
     <MESSAGE value="update elastik dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="update elastik dependency" />
+    <MESSAGE value="minor refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

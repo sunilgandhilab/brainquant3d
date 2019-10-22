@@ -199,7 +199,7 @@ def chunk_ranges_z_only(source:Union[str, np.ndarray],
             chunk_sizes.append(a - np.sum(chunk_sizes))  # contains remainder of voxels from
             # rounding
 
-        else
+        else:
             chunk_sizes = [max_size] * (a / max_size)
 
         indices.append(ranges_from_sizes(chunk_sizes))
