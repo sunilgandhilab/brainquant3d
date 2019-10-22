@@ -15,8 +15,6 @@ from .util.nonzero_coords import nonzero_coords
 from .watershed._watershed import watershed_3d
 from .watershed._util import _validate_connectivity, _offsets_to_raveled_neighbors
 
-
-
 class Label(FilterBase):
     """thresholds image using Ilastik's threshold applet
 

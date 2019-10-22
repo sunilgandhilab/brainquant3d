@@ -45,7 +45,8 @@ class PixelClassification(FilterBase):
         """
 
         if config.ilastik_binary is None:
-            raise RuntimeError(f'Cannot find elastix binary {config.ilastik_binary}, set Elastix path in ClearMap.conf accordingly!')
+            raise RuntimeError(f'Cannot find Ilastix binary {config.ilastik_binary}, set Ilastik '
+                               f'path in config file accordingly!')
 
         config.ilastik_initialized = True
         self.log.verbose(f'Ilastik sucessfully initialized from path: {config.ilastik_path}')

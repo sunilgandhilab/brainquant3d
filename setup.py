@@ -153,10 +153,10 @@ class install(_install):
             tar.close()
 
         print('installing ilastik')
-        url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
+        url = 'https://files.ilastik.org/ilastik-1.3.3-Linux.tar.bz2'
         tmp = Path(url).name
 
-        sink = dest / 'ilastik-1.3.2post1-Linux'
+        sink = dest
         with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
