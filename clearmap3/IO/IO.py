@@ -12,7 +12,7 @@ import sys
 
 import os
 import re
-import numpy as np
+import numpy
 import importlib
 import shutil
 from pathlib import Path
@@ -268,7 +268,7 @@ def dataSize(source, x = all, y = all, z = all, **args):
     if isinstance(source, str):
         mod = dataFileNameToModule(source)
         return mod.dataSize(source, x = x, y = y, z = z, **args)
-    elif isinstance(source, np.ndarray):
+    elif isinstance(source, numpy.ndarray):
         return dataSizeFromDataRange(source.shape, x = x, y = y, z = z)
     elif isinstance(source, tuple):
         return dataSizeFromDataRange(source, x = x, y = y, z = z)
@@ -290,7 +290,7 @@ def dataZSize(source, z = all, **args):
     if isinstance(source, str):
         mod = dataFileNameToModule(source)
         return mod.dataZSize(source, z = z, **args)
-    elif isinstance(source, np.ndarray):
+    elif isinstance(source, numpy.ndarray):
         if len(source.shape) > 2: 
             return toDataSize(source.shape[2], r = z)
         else:
@@ -324,6 +324,8 @@ def toDataRange(size, r = all):
     if isinstance(r, int) or isinstance(r, float):
         r = (r, r +1)
 
+    if r[0] is all:
+        r = (0, r[1])
     if r[0] < 0:
         if -r[0] > size:
             r = (0, r[1])
@@ -361,7 +363,7 @@ def toDataSize(size, r = all):
     See Also:
         :func:`toDataRange`, :func:`dataSizeFromDataRange`
     """
-    dr = toDataRange(size, r=r)
+    dr = toDataRange(size, r = r)
     return int(dr[1] - dr[0])
 
 
@@ -382,11 +384,11 @@ def dataSizeFromDataRange(dataSize, x = all, y = all, z = all):
     dataSize = list(dataSize)
     n = len(dataSize)
     if n > 0:
-        dataSize[0] = toDataSize(dataSize[0], r=x)
+        dataSize[0] = toDataSize(dataSize[0], r = x)
     if n > 1:
-        dataSize[1] = toDataSize(dataSize[1], r=y)
+        dataSize[1] = toDataSize(dataSize[1], r = y)
     if n > 2:
-        dataSize[2] = toDataSize(dataSize[2], r=z)
+        dataSize[2] = toDataSize(dataSize[2], r = z)
 
     return tuple(dataSize)
 
@@ -406,14 +408,14 @@ def dataToRange(data, x = all, y = all, z = all):
     """  
 
     dsize = data.shape
-    d = data.ndim
-    rr = [None] * d
+    d = len(dsize)
+    rr = []
     if d > 0:
-        rr[-1] = (toDataRange(dsize[-1], r=x))
+        rr.append(toDataRange(dsize[0], r = x))
     if d > 1:
-        rr[-2] = (toDataRange(dsize[-2], r=y))
+        rr.append(toDataRange(dsize[1], r = y))
     if d > 2:
-        rr[-3] = (toDataRange(dsize[-3], r=z))
+        rr.append(toDataRange(dsize[2], r = z))
     if d > 4:
         raise RuntimeError('dataToRange: dimension %d to big' % d)
 
@@ -456,7 +458,7 @@ def readData(source, **args):
     elif isinstance(source, str):
         mod = dataFileNameToModule(source)
         return mod.readData(source, **args)
-    elif isinstance(source, np.ndarray):
+    elif isinstance(source, numpy.ndarray) or isinstance(source, numpy.memmap):
         return dataToRange(source, **args)
     else:
         log.exception('readData: cannot infer format of the requested data/file.')
@@ -558,7 +560,7 @@ def convertData(source, sink, **kwargs):
     if source is None:
         return None
 
-    elif isinstance(source, np.ndarray):
+    elif isinstance(source, numpy.ndarray):
         if sink is None:
             return dataToRange(source, **kwargs)
         elif isinstance(sink,  str):
@@ -585,7 +587,7 @@ def toMultiChannelData(*args):
         array: concatenated multi-channel array
     """
     
-    data = np.array(args)
+    data = numpy.array(args)
     return data.rollaxis(data, 0, data.ndim)
 
 
@@ -747,7 +749,7 @@ def pointsToRange(points, dataSize = all, x = all, y = all, z = all, shift = Fal
         else:
             return points
 
-    if not isinstance(points, np.ndarray):
+    if not isinstance(points, numpy.ndarray):
         raise RuntimeError('pointsToRange: points not None or numpy array!')
 
     d = points.shape[1]
@@ -768,11 +770,11 @@ def pointsToRange(points, dataSize = all, x = all, y = all, z = all, shift = Fal
         raise RuntimeError('pointsToRange: dimension %d to big' % d)
 
     if d > 0:
-        ids = np.logical_and(points[:,0] >= rr[0][0], points[:,0] < rr[0][1])
+        ids = numpy.logical_and(points[:,0] >= rr[0][0], points[:,0] < rr[0][1])
     if d > 1:
-        ids = np.logical_and(np.logical_and(ids, points[:,1] >= rr[1][0]), points[:,1] < rr[1][1])
+        ids = numpy.logical_and(numpy.logical_and(ids, points[:,1] >= rr[1][0]), points[:,1] < rr[1][1])
     if d > 2:
-        ids = np.logical_and(np.logical_and(ids, points[:,2] >= rr[2][0]), points[:,2] < rr[2][1])
+        ids = numpy.logical_and(numpy.logical_and(ids, points[:,2] >= rr[2][0]), points[:,2] < rr[2][1])
 
     points = points[ids, :]
 
@@ -807,7 +809,7 @@ def readPoints(source, **args):
 
     if source is None:
         source = (None, None)
-    elif isinstance(source, np.ndarray):
+    elif isinstance(source, numpy.ndarray):
         source = (source, None)
     elif isinstance(source, str):
         source = (source, None)
@@ -817,15 +819,15 @@ def readPoints(source, **args):
         elif len(source) == 1: 
             if source[0] is None:
                 source = (None, None)
-            elif isinstance(source[0], np.ndarray):
+            elif isinstance(source[0], numpy.ndarray):
                 source = (source[0], None)
             elif isinstance(source[0], str):
                 source = pointsToCoordinatesAndPropertiesFileNames(source, **args)
             else:
                 raise RuntimeError('readPoints: cannot infer format of the requested data/file.')
         elif len(source) == 2:
-            if not((source[0] is None or isinstance(source[0], str) or isinstance(source[0], np.ndarray)) and
-                   (source[1] is None or isinstance(source[1], str) or isinstance(source[0], np.ndarray))):
+            if not((source[0] is None or isinstance(source[0], str) or isinstance(source[0], numpy.ndarray)) and 
+                   (source[1] is None or isinstance(source[1], str) or isinstance(source[0], numpy.ndarray))):
                raise RuntimeError('readPoints: cannot infer format of the requested data/file.')
         else:
             raise RuntimeError('readPoints: cannot infer format of the requested data/file.')
@@ -834,7 +836,7 @@ def readPoints(source, **args):
 
     if source[0] is None:
         points = None
-    elif isinstance(source[0], np.ndarray):
+    elif isinstance(source[0], numpy.ndarray):
         points = source[0]
     elif isinstance(source[0], str):
         mod = self.pointFileNameToModule(source[0])
@@ -842,7 +844,7 @@ def readPoints(source, **args):
 
     if source[1] is None:
         properties = None
-    elif isinstance(source[1], np.ndarray):
+    elif isinstance(source[1], numpy.ndarray):
         properties = source[1]
     elif isinstance(source[1], str):
         mod = self.pointFileNameToModule(source[1])

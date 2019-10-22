@@ -45,8 +45,7 @@ class PixelClassification(FilterBase):
         """
 
         if config.ilastik_binary is None:
-            raise RuntimeError(f'Cannot find ilastix binary {config.ilastik_binary}, set Elastix '
-                               f'path in ClearMap.conf accordingly!')
+            raise RuntimeError(f'Cannot find elastix binary {config.ilastik_binary}, set Elastix path in ClearMap.conf accordingly!')
 
         config.ilastik_initialized = True
         self.log.verbose(f'Ilastik sucessfully initialized from path: {config.ilastik_path}')
@@ -117,7 +116,7 @@ class PixelClassification(FilterBase):
         #create temp npy
         input_fn = str((self.temp_dir / Path(self.input.filename).stem).with_suffix('.npy'))
         # T because io.writeData not transpose for npy files
-        io.writeData(input_fn, self.input)
+        io.writeData(input_fn, self.input.T)
         output_fn = str(self.temp_dir / 'out_prelim.npy')
 
         ilinp = self._filename_to_input_arg(input_fn)
@@ -129,7 +128,7 @@ class PixelClassification(FilterBase):
         output_chan = self.temp_dir / 'out.npy'
         # transpose to restore input dimensionality
         output_chan = io.writeData(output_chan,
-                                    output[...,self.output_channel],
+                                    output[..., self.output_channel].T,
                                     returnMemmap=True)
 
         return output_chan

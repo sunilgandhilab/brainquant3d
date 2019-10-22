@@ -35,7 +35,7 @@ def readFileList(filename, z = all):
     fnames = os.listdir(fpath)
     # generate list
     searchRegex = re.compile(fname).search    
-    fl = sort([l for l in fnames for m in (searchRegex(l),) if m])
+    fl = [ l for l in fnames for m in (searchRegex(l),) if m]
 
     if not fl:
         raise Exception('no files found in ' + fpath + ' match ' + fname + ' !')
@@ -43,7 +43,7 @@ def readFileList(filename, z = all):
     if z != all:
         fl = fl[z[0]:z[1]] #TODO: check if correct indexing
 
-    return fpath, fl
+    return fpath, sort(fl)
 
 
 def splitFileExpression(filename):

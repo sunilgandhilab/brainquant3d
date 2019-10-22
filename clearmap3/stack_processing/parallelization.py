@@ -7,7 +7,7 @@ import clearmap3.IO as io
 from clearmap3.IO.FileList import splitFileExpression
 import logging
 
-from clearmap3.stack_processing.chunking import unique_slice
+from clearmap3.utils.chunking import unique_slice
 from clearmap3.image_filters.functions import filter_image
 from clearmap3.analysis.label_properties import label_props
 

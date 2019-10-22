@@ -7,11 +7,13 @@ import os
 import sys
 import numpy
 import pip
+import pkgutil
 import shutil
 import tarfile
-import requests
+import urllib
 
 from pathlib import Path
+from setuptools import setup
 from setuptools import find_packages
 from setuptools.command.install import install as _install
 from distutils.core import setup
@@ -71,15 +73,17 @@ if USE_CYTHON:
         Extension("clearmap3.image_filters.filters.label._overlap",
                   sources=["clearmap3/image_filters/filters/label/_overlap.pyx"],
                   include_dirs=[numpy.get_include()],
+                  language="c++"
                   ),
         Extension("clearmap3.image_filters.filters.label.watershed._watershed",
                   sources=["clearmap3/image_filters/filters/label/watershed/_watershed.pyx"],
-                  include_dirs=[numpy.get_include()]
+                  include_dirs=[numpy.get_include()],
+                  language="c++"
                   ),
         Extension("clearmap3.image_filters.filters.label.util._nonzero_coords",
                   sources=["clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx"],
-                  language='c++',
-                  include_dirs=[numpy.get_include()]
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
                   )
     ])
     cmdclass['build_ext'] = build_ext
@@ -114,17 +118,19 @@ else:
                   language="c++"
                   ),
         Extension("clearmap3.image_filters.filters.label._overlap",
-                  sources=["clearmap3/image_filters/filters/label/_overlap.c"],
+                  sources=["clearmap3/image_filters/filters/label/_overlap.cpp"],
                   include_dirs=[numpy.get_include()],
+                  language="c++"
                   ),
         Extension("clearmap3.image_filters.filters.label.watershed._watershed",
-                  sources=["clearmap3/image_filters/filters/label/watershed/_watershed.c"],
-                  include_dirs=[numpy.get_include()]
+                  sources=["clearmap3/image_filters/filters/label/watershed/_watershed.cpp"],
+                  include_dirs=[numpy.get_include()],
+                  language="c++"
                   ),
         Extension("clearmap3.image_filters.filters.label.util._nonzero_coords",
                   sources=["clearmap3/image_filters/filters/label/util/_nonzero_coords.cpp"],
-                  language='c++',
-                  include_dirs=[numpy.get_include()]
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
                   )
     ]
 
@@ -140,25 +146,22 @@ class install(_install):
         '-linux.tar.bz2'
         tmp = Path(url).name
         sink = dest / 'elastix-4.9.0-linux'
-
-        with open(tmp, "wb") as f:
-            r = requests.get(url)
-            f.write(r.content)
-        tar = tarfile.open(tmp, "r:bz2")
-        tar.extractall(sink)
-        tar.close()
+        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+            shutil.copyfileobj(response, out_file)
+            tar = tarfile.open(tmp, "r:bz2")
+            tar.extractall(sink)
+            tar.close()
 
         print('installing ilastik')
-        url = 'http://files.ilastik.org/ilastik-1.3.3rc2-Linux.tar.bz2'
+        url = 'http://files.ilastik.org/ilastik-1.3.2post1-Linux.tar.bz2'
         tmp = Path(url).name
-        sink = dest
 
-        with open(tmp, "wb") as f:
-            r = requests.get(url)
-            f.write(r.content)
-        tar = tarfile.open(tmp, "r:bz2")
-        tar.extractall(sink)
-        tar.close()
+        sink = dest / 'ilastik-1.3.2post1-Linux'
+        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+            shutil.copyfileobj(response, out_file)
+            tar = tarfile.open(tmp, "r:bz2")
+            tar.extractall(sink)
+            tar.close()
 
         _install.run(self)
 
