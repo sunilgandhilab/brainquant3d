@@ -81,13 +81,13 @@ def unique_slice(img_rng, unique_rng):
 def chunk_ranges(source:Union[str, np.ndarray],
                   overlap:int = 10,
                   min_sizes:tuple = (30,30,30),
-                  aspect_ratio:tuple = (10,10,1),
+                  aspect_ratio:tuple = (1,10,10),
                   size:float = config.thread_ram_max, **kwargs):
     """ chunks image into equally sized 3d chunks.
 
     Args:
         source (str,np.ndarray): image to chunkimage
-        overlap (int) :overlap between chunks in voxels
+        overlap (int): overlap between chunks in voxels
         min_sizes (tuple): minimum voxel size of chunk along each axis
         aspect_ratio (tuple): ratio to maintain between axis
         size (int): max total size of substack in Gb
@@ -129,7 +129,7 @@ def chunk_ranges(source:Union[str, np.ndarray],
                 chunk_size = axis // n_chunks
 
                 if chunk_size < min_sizes[a]:
-                    raise ValueError(f'cannot chunk along axis {a}. min_size too large or size to small to ')
+                    raise ValueError(f'cannot chunk along axis {a}. min_size too large or size to small')
 
                 chunk_sizes = [chunk_size] * (n_chunks - 1)
                 chunk_sizes.append(axis - np.sum(chunk_sizes)) # contains remainder of voxels from rounding
@@ -146,3 +146,73 @@ def chunk_ranges(source:Union[str, np.ndarray],
     else:
         return [[[0, ax] for ax in source.shape]] * 2
 
+def chunk_ranges_z_only(source:Union[str, np.ndarray],
+                  overlap:int = 10,
+                  min_size:tuple = 30,
+                  size:float = config.thread_ram_max, **kwargs):
+    """ chunks image into equally sized 3d chunks.
+
+    Args:
+        source (str,np.ndarray): image to chunkimage
+        overlap (int): overlap between chunks in voxels
+        min_size (tuple): minimum voxel size of chunk along z
+        size (int): max total size of substack in Gb
+
+    Returns:
+        (list) list of chunk indices each index is in form [[x_start,x_end],[y_start,y_end],[z_start,z_end])
+
+
+    """
+    source = io.readData(source)
+
+    if not source.ndim == 3:
+        raise ValueError('source must be 3 dimensional')
+
+
+    if overlap > min_size:
+        raise ValueError('overnlap cannot be smaller thn any value in min_size')
+
+    chunk_size = size * (1.28 * 10**8) / source.itemsize # in voxels
+
+    indices = []
+    if chunk_size < source.size:
+
+        a = source.shape[0]
+        # bounding chunks won't be perfectly optimized because assumning the max unique size
+        # of a chunk is size - 2*overlap
+        max_size = math.floor(source.size / chunk_size) - (2 * overlap)
+
+        if min_size > max_size:
+            raise ValueError(f'min_size along axis {a} too large. results in substack larger than max chunk.')
+
+        # if does not chunk evenly. equalize chunk sizes by moving voxels from equal chunks to
+        # the unequal chunk
+
+        if a % max_size:
+            n_chunks = math.ceil(a / max_size)
+            chunk_size = a // n_chunks
+
+            if chunk_size < min_size:
+                raise ValueError(f'cannot chunk along axis {a}. min_size too large or size to small')
+
+            chunk_sizes = [chunk_size] * (n_chunks - 1)
+            chunk_sizes.append(a - np.sum(chunk_sizes))  # contains remainder of voxels from
+            # rounding
+
+        else
+            chunk_sizes = [max_size] * (a / max_size)
+
+        indices.append(ranges_from_sizes(chunk_sizes))
+
+        unique_chunks = [[ranges_from_sizes(source.shape[1]),
+                          ranges_from_sizes(source.shape[2]),
+                          z] for z in indices]
+
+        overlap_chunks = add_overlap(indices, overlap, source.shape)
+        overlap_chunks = [[ranges_from_sizes(source.shape[1]),
+                          ranges_from_sizes(source.shape[2]),
+                          z] for z in overlap_chunks]
+
+        return unique_chunks, overlap_chunks
+    else:
+        return [[[0, ax] for ax in source.shape]] * 2
