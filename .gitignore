@@ -17,3 +17,6 @@ build/
 dist/
 /include/core/
 /include/imgproc/
+
+# osx
+.DS_Store

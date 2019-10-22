@@ -5,7 +5,7 @@ import tifffile as tif
 import clearmap3.IO as io
 
 import logging
-from clearmap3.stack_processing.chunking import range_to_slices
+from clearmap3.utils.chunking import range_to_slices
 log = logging.getLogger(__name__)
 
 def dataSize(filename, **args):
@@ -84,6 +84,15 @@ def readData(filename, x = all, y = all, z = all, returnMemmap = True, **kwargs)
     else:
         data = tif.imread(filename)
 
+    if data.ndim == 2:
+        data = data.transpose(1,0)
+    elif data.ndim == 3:
+        data = data.transpose(2,1,0)
+    elif data.ndim == 4: # multi channel image
+        data = data.transpose(1,3,2,0)
+    else:
+        raise RuntimeError('readData: dimension %d not supproted!' % data.ndim)
+
     return io.dataToRange(data, x = x, y = y, z = z)
 
 
@@ -120,18 +129,23 @@ def writeData(filename, data, rgb = False, substack = None, returnMemmap = True)
 
     else:
         if not rgb:
-            if d == 2:
+            if d == 2: # XY
+                data = data.transpose(1,0)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape)
-            elif d == 3:
+            elif d == 3: # XYZ
+                data = data.transpose(2,1,0)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, bigtiff = True) #imageJ = true not work for int32
-            elif d == 4:
+            elif d == 4: #XYZC
+                data = data.transpose(2, 3, 1, 0)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, imagej = True)
             else:
                 raise RuntimeError('writing {} dimensional data to tif not supported!'.format(len(data.shape)))
         else:
-            if d == 3:
+            if d == 3: # XYC
+                data = data.transpose(1,0,2)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, imagej = True) #imageJ = true not work for int32
-            elif d == 4:
+            elif d == 4: # XYZS
+                data = data.transpose(2, 1, 0, 3)
                 data_map = tif.tifffile.memmap(fn, dtype=dtype, shape=data.shape, imagej = True)
             else:
                 raise RuntimeError('writing {} dimensional data to tif not supported!'.format(len(data.shape)))
