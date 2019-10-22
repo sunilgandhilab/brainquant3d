@@ -452,7 +452,7 @@ def _write_data(data, filehandle, options):
         raise NrrdError('Unsupported encoding: "%s"' % options['encoding'])
 
 
-def writeData(filename, data, options={}, separateHeader = False, x = all, y = all, z = all):
+def writeData(filename, data, options={}, separateHeader = False, x = None, y = None, z = None):
     """Write data to nrrd file
     
     Arguments:
@@ -563,7 +563,7 @@ def dataSize(filename, **args):
     return io.dataSizeFromDataRange(dims, **args)
 
 
-def dataZSize(filename, z = all, **args):
+def dataZSize(filename, z = None, **args):
     """Read data z size from nrrd image
         
     Arguments:

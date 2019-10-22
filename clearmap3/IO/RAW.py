@@ -47,12 +47,12 @@ def dataSize(filename, **args):
     return io.dataSizeFromDataRange(dims, **args)
 
 
-def dataZSize(filename, z = all, **args):
+def dataZSize(filename, z = None, **args):
     """Read z data size from raw/mhd image
         
     Arguments:
         filename (str):  imaris file name
-        z (tuple or all): range specification
+        z (tuple or None): range specification
     
     Returns:
         int: raw image z data size
@@ -71,7 +71,7 @@ def dataZSize(filename, z = all, **args):
         return None
 
 
-def readData(filename, x = all, y = all, z = all):
+def readData(filename, x = None, y = None, z = None):
     """Read data from raw/mhd image
     
     Arguments:

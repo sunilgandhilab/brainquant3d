@@ -33,7 +33,7 @@ def dataSize(filename, **args):
     return io.dataSizeFromDataRange(dims, **args)
 
 
-def dataZSize(filename, z = all, ):
+def dataZSize(filename, z = None):
     """Returns z size of data in tif file
     
     Arguments:
@@ -68,7 +68,7 @@ def getDataType(filename):
     return io.readData(filename).dtype
 
 
-def readData(filename, x = all, y = all, z = all, returnMemmap = True, **kwargs):
+def readData(filename, x = None, y = None, z = None, returnMemmap = True, **kwargs):
     """Read data from a single tif image or stack
     
     Arguments:
@@ -159,7 +159,7 @@ def writeData(filename, data, rgb = False, substack = None, returnMemmap = True)
         return filename
 
 
-def copyData(source, sink, x=all, y=all, z=all, returnMemmap = True):
+def copyData(source, sink, x=None, y=None, z=None, returnMemmap = True):
     """Copy a data file from source to sink
     
     Arguments:
@@ -171,7 +171,7 @@ def copyData(source, sink, x=all, y=all, z=all, returnMemmap = True):
     """
     out_type = io.dataFileNameToType(sink)
     if out_type == 'TIF':
-        if isinstance(source, np.memmap) and x==y==y==z==all:
+        if isinstance(source, np.memmap) and x==y==y==z==None:
             shutil.copyfile(source.filename, sink)
         else:
             Xsize, Ysize, Zsize = io.dataSize(source)

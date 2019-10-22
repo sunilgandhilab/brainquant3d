@@ -254,12 +254,12 @@ def pointFileNameToModule(filename):
 ##############################################################################
 
     
-def dataSize(source, x = all, y = all, z = all, **args):
+def dataSize(source, x = None, y = None, z = None, **args):
     """Returns array size of the image data needed when read from file and reduced to specified ranges
        
     Arguments:
         source (array or str): source data
-        x,y,z (tuple or all): range specifications, ``all`` is full range
+        x,y,z (tuple or None): range specifications, ``None`` is no cropping
         
     Returns:
         tuple: size of the image data after reading and range reduction
@@ -276,12 +276,12 @@ def dataSize(source, x = all, y = all, z = all, **args):
         raise RuntimeError('dataSize: argument not a string, tuple or array!')
 
 
-def dataZSize(source, z = all, **args):
+def dataZSize(source, z = None, **args):
     """Returns size of the array in the third dimension, None if 2D data
            
     Arguments:
         source (array or str): source data
-        z (tuple or all): z-range specification, ``all`` is full range
+        z (tuple or None): z-range specification, ``None`` is no cropping
         
     Returns:
         int: size of the image data in z after reading and range reduction
@@ -304,12 +304,12 @@ def dataZSize(source, z = all, **args):
         raise RuntimeError('dataZSize: argument not a string, tuple or array!')
 
 
-def toDataRange(size, r = all):
+def toDataRange(size, r = None):
     """Converts range r to numeric range (min,max) given the full array size
        
     Arguments:
         size (tuple): source data size
-        r (tuple or all): range specification, ``all`` is full range
+        r (tuple or None): range specification, ``None`` is no cropping
         
     Returns:
         tuple: absolute range as pair of integers
@@ -318,13 +318,13 @@ def toDataRange(size, r = all):
         :func:`toDataSize`, :func:`dataSizeFromDataRange`
     """     
 
-    if r is all:
+    if r is None:
         return 0, size
 
     if isinstance(r, int) or isinstance(r, float):
         r = (r, r +1)
 
-    if r[0] is all:
+    if r[0] is None:
         r = (0, r[1])
     if r[0] < 0:
         if -r[0] > size:
@@ -334,7 +334,7 @@ def toDataRange(size, r = all):
     if r[0] > size:
         r = (size, r[1])
 
-    if r[1] is all:
+    if r[1] is None:
         r = (r[0], size)
     if r[1] < 0:
         if -r[1] > size:
@@ -350,12 +350,12 @@ def toDataRange(size, r = all):
     return r
 
 
-def toDataSize(size, r = all):
+def toDataSize(size, r = None):
     """Converts full size to actual size given range r
     
     Arguments:
         size (tuple): data size
-        r (tuple or all): range specification, ``all`` is full range
+        r (tuple or None): range specification, ``None`` is no cropping
         
     Returns:
         int: data size
@@ -367,12 +367,12 @@ def toDataSize(size, r = all):
     return int(dr[1] - dr[0])
 
 
-def dataSizeFromDataRange(dataSize, x = all, y = all, z = all):
+def dataSizeFromDataRange(dataSize, x = None, y = None, z = None):
     """Converts full data size to actual size given ranges for x,y,z
     
     Arguments:
         dataSize (tuple): data size
-        x,y,z (tuple or all): range specifications, ``all`` is full range
+        x,y,z (tuple or None): range specifications, ``None`` is no cropping
         
     Returns:
         tuple: data size as tuple of integers
@@ -393,12 +393,12 @@ def dataSizeFromDataRange(dataSize, x = all, y = all, z = all):
     return tuple(dataSize)
 
 
-def dataToRange(data, x = all, y = all, z = all):
+def dataToRange(data, x = None, y = None, z = None):
     """Reduces data to specified ranges
     
     Arguments:
         data (array): full data array
-        x,y,z (tuple or all): range specifications, ``all`` is full range
+        x,y,z (tuple or None): range specifications, ``None`` is no cropping
         
     Returns:
         array: reduced data
@@ -440,7 +440,7 @@ def readData(source, **args):
     
     Arguments:
         source (str, array or None): full data array, if numpy array simply reduce its range
-        x,y,z (tuple or all): range specifications, ``all`` is full range
+        x,y,z (tuple or None): range specifications, ``None`` is full range
         args: further arguments specific to image data format reader
     
     Returns:
@@ -694,12 +694,12 @@ def pointsToCoordinatesAndPropertiesFileNames(filename, propertiesPostfix = '_in
         raise RuntimeError('pointsFilenames: invalid filename specification!')
 
 
-def pointShiftFromRange(dataSize, x = all, y = all, z = all):
+def pointShiftFromRange(dataSize, x = None, y = None, z = None):
     """Calculate shift of points given a specific range restriction
     
     Arguments:
         dataSize (str): data size of the full image
-        x,y,z (tuples or all): range specifications
+        x,y,z (tuples or None): range specifications
     
     Returns:
         tuple: shift of points from original origin of data to origin of range reduced data
@@ -723,13 +723,13 @@ def pointShiftFromRange(dataSize, x = all, y = all, z = all):
     return [r[0] for r in rr]
 
 
-def pointsToRange(points, dataSize = all, x = all, y = all, z = all, shift = False):
+def pointsToRange(points, dataSize = None, x = None, y = None, z = None, shift = False):
     """Restrict points to a specific range
     
     Arguments:
         points (array or str): point source
         dataSize (str): data size of the full image
-        x,y,z (tuples or all): range specifications
+        x,y,z (tuples or None): range specifications
         shift (bool): shift points to relative coordinates in the reduced image
     
     Returns:
@@ -737,7 +737,7 @@ def pointsToRange(points, dataSize = all, x = all, y = all, z = all, shift = Fal
     """
     
 
-    if x is all and y is all and z is all:
+    if x is None and y is None and z is None:
         return points
 
     istuple = isinstance(points, tuple)
@@ -754,7 +754,7 @@ def pointsToRange(points, dataSize = all, x = all, y = all, z = all, shift = Fal
 
     d = points.shape[1]
 
-    if dataSize is all:
+    if dataSize is None:
         dataSize = points.max(axis=0)
     elif isinstance(dataSize, str):
         dataSize = self.dataSize(dataSize)

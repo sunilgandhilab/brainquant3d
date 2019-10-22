@@ -19,7 +19,7 @@ from clearmap3.utils.files import sort
 import logging
 log = logging.getLogger(__name__)
 
-def readFileList(filename, z = all):
+def readFileList(filename, z = None):
     """Returns list of files that match the regular expression
     
     Arguments:
@@ -40,7 +40,7 @@ def readFileList(filename, z = all):
     if not fl:
         raise Exception('no files found in ' + fpath + ' match ' + fname + ' !')
     # crop along z
-    if z != all:
+    if z != None:
         fl = fl[z[0]:z[1]] #TODO: check if correct indexing
 
     return fpath, sort(fl)
@@ -111,7 +111,7 @@ def dataSize(filename, **args):
     return io.dataSizeFromDataRange(dims, **args)
 
 
-def dataZSize(filename, z = all, **args):
+def dataZSize(filename, z = None, **args):
     """Returns size of data stored as a file list
     
     Arguments:
@@ -138,7 +138,7 @@ def getDataType(filename):
     return io.readData(filename, z=0).dtype
 
 
-def readDataFiles(filename, x = all, y = all, z = all, **args):
+def readDataFiles(filename, x = None, y = None, z = None, **args):
     """Read data from individual images assuming they are the z slices
 
     Arguments:
@@ -241,7 +241,7 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
             return filename
 
 
-def copyData(source, sink, processes = clearmap3.config.processes, x = all, y = all, z = all, **kwargs):
+def copyData(source, sink, processes = clearmap3.config.processes, x = None, y = None, z = None, **kwargs):
     """Copy a data file from source to sink when for entire list of files
     
     Arguments:
@@ -319,7 +319,7 @@ def _parallelCopyToFileList(args):
     for i,file in enumerate(sources):
         log.debug(f'copyData: copying {file} to {sink}')
         im = tif.imread(file).T
-        if not Xrng == Yrng == all:
+        if not Xrng == Yrng == None:
             im = io.dataToRange(im, x=Xrng, y=Yrng)
 
         io.writeData(sink, im, startIndex = source_idxs[i])
@@ -333,7 +333,7 @@ def _parallelCopyToTif(args):
         file = sources[i]
         log.debug(f'copyData: copying {file} to {sink}')
         im = tif.imread(file).T
-        if not Xrng == Yrng == all:
+        if not Xrng == Yrng == None:
             output[:,:,idx] = io.dataToRange(im, x=Xrng, y=Yrng)
         else:
             output[:, :, idx] = im

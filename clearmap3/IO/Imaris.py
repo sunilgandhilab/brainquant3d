@@ -114,7 +114,7 @@ def dataZSize(filename, **args):
     return dsize[2]
 
 
-def readData(filename, x = all, y = all, z = all, resolution = 0, channel = 0, timepoint = 0, **args):
+def readData(filename, x = None, y = None, z = None, resolution = 0, channel = 0, timepoint = 0, **args):
     """Read data from imaris file
 
     Arguments:
@@ -229,7 +229,7 @@ def transformPointsToImaris(points, scale = (4.0625, 4.0625, 3), offset = (0,0,0
     return points
 
 
-def writePoints(filename, points, mode = "o", radius = 0.5, scale = all, offset = None):
+def writePoints(filename, points, mode = "o", radius = 0.5, scale = None, offset = None):
     """Write points to Imaris file 
     
     Arguments:
@@ -237,7 +237,7 @@ def writePoints(filename, points, mode = "o", radius = 0.5, scale = all, offset 
         points (array): point data
         mode (str): 'o'= override, 'a'=add
         radius (float): size of each point
-        scale (tuple or all): spatial scaling of points
+        scale (tuple or None): spatial scaling of points
         offset (tuple or None): spatial offset of points
     
     Returns:
@@ -312,7 +312,7 @@ def writePoints(filename, points, mode = "o", radius = 0.5, scale = all, offset 
     #points = points[:,[0,1,2]] # todo: check exchange of coordinates
     
     #scale points frfom pixel to     
-    if scale is all: # automatically determine scaling for points    
+    if scale is None: # automatically determine scaling for points
         (scale, offset) = getScaleAndOffset(h5file)
 
     if offset is None:
