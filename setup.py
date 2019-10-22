@@ -142,10 +142,9 @@ class install(_install):
         dest = Path(os.getcwd()) / 'clearmap3/.external'
 
         print('installing elastik')
-        url = 'https://github.com/SuperElastix/elastix/releases/download/4.9.0/elastix-4.9.0' \
-        '-linux.tar.bz2'
+        url = 'https://github.com/SuperElastix/elastix/releases/download/5.0.0/elastix-5.0.0-linux.tar.bz2'
         tmp = Path(url).name
-        sink = dest / 'elastix-4.9.0-linux'
+        sink = dest / 'elastix-5.0.0-linux'
         with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")

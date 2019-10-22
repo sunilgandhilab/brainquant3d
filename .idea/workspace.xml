@@ -4,14 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="update elastik dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_overlap.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_overlap.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/threshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/threshold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -289,21 +286,7 @@
       <workItem from="1569962089617" duration="8863000" />
       <workItem from="1569986102284" duration="17209000" />
       <workItem from="1571761267338" duration="334000" />
-      <workItem from="1571761913312" duration="4947000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial working version">
-      <created>1564718739417</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1564718739417</updated>
-    </task>
-    <task id="LOCAL-00002" summary="minor refactoring and bug fixes.">
-      <created>1564771647237</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1564771647237</updated>
+      <workItem from="1571761913312" duration="7982000" />
     </task>
     <task id="LOCAL-00003" summary="removed analysis.tools module">
       <created>1564772580011</created>
@@ -634,7 +617,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571763027089</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="fixed sigesev on munmap">
+      <created>1571767004662</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1571767004663</updated>
+    </task>
+    <task id="LOCAL-00051" summary="re-added z only chunking">
+      <created>1571768517559</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1571768517559</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +673,9 @@
     <MESSAGE value="ilastik filter now removes extra chanels&#10;io now writes to Path()&#10;fixed offset issues in label filters&#10;label now works in 2d as well" />
     <MESSAGE value="removed transpose from tif IO" />
     <MESSAGE value="updated ilastik dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated ilastik dependency" />
+    <MESSAGE value="fixed sigesev on munmap" />
+    <MESSAGE value="re-added z only chunking" />
+    <option name="LAST_COMMIT_MESSAGE" value="re-added z only chunking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

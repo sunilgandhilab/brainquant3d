@@ -53,7 +53,7 @@ def process_flow(source,
                  z=None,
                  overlap=10,
                  min_sizes=(30, 30, 30),
-                 aspect_ratio=(10, 10, 1),
+                 aspect_ratio=(1, 10, 10),
                  size=config.thread_ram_max,
                  sink=None,
                  processes=config.processes):
