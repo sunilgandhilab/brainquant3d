@@ -4,11 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="update elastik dependency">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,14 +285,7 @@
       <workItem from="1569962089617" duration="8863000" />
       <workItem from="1569986102284" duration="17209000" />
       <workItem from="1571761267338" duration="334000" />
-      <workItem from="1571761913312" duration="7982000" />
-    </task>
-    <task id="LOCAL-00003" summary="removed analysis.tools module">
-      <created>1564772580011</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1564772580011</updated>
+      <workItem from="1571761913312" duration="12869000" />
     </task>
     <task id="LOCAL-00004" summary="more refactoring and added docs.">
       <created>1564780548021</created>
@@ -631,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571768517559</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update elastik dependency">
+      <created>1571773106899</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1571773106899</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +674,8 @@
     <MESSAGE value="updated ilastik dependency" />
     <MESSAGE value="fixed sigesev on munmap" />
     <MESSAGE value="re-added z only chunking" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-added z only chunking" />
+    <MESSAGE value="update elastik dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="update elastik dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -489,7 +489,7 @@ def resampleDataInverse(sink, source=None, dataSizeSource=None, orientation=None
         return data
 
 
-def resamplePoints(pointSource, pointSink=None, dataSizeSource=None, dataSizeSink=None, orientation=None,
+def resamplePoints(source, sink=None, dataSizeSource=None, dataSizeSink=None, orientation=None,
                    resolutionSource=(4.0625, 4.0625, 3), resolutionSink=(25, 25, 25), **args):
     """Resample Points to map from original data to the coordinates of the resampled image
 
@@ -550,7 +550,8 @@ def resamplePoints(pointSource, pointSink=None, dataSizeSource=None, dataSizeSin
     return io.writePoints(pointSink, repoints)
 
 
-def resamplePointsInverse(pointSource, pointSink=None, dataSizeSource=None, dataSizeSink=None, orientation=None,
+def resamplePointsInverse(source, sink=None, dataSizeSource=None, dataSizeSink=None,
+                          orientation=None,
                           resolutionSource=(4.0625, 4.0625, 3), resolutionSink=(25, 25, 25), **args):
     """Resample points from the coordinates of the resampled image to the original data
     The resampling of points here corresponds to he resampling of an image in :func:`resampleDataInverse`

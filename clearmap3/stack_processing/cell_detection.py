@@ -21,7 +21,7 @@ from clearmap3.utils.logger import set_console_level
 log = logging.getLogger(__name__)
 
 
-def detect_cells(source, flow, sink=None, processes=config.processes, log_level='info', **parameter):
+def detect_cells(source, flow, processes=config.processes, log_level='info', **parameter):
     """Detect cells in data
     
     This is a main script to start running the cell detection.    
@@ -29,7 +29,6 @@ def detect_cells(source, flow, sink=None, processes=config.processes, log_level=
     Arguments:
         source (str or array): Image source
         flow (tuple): sequence of filters to call
-        sink (str or None): destination for the results.
         processes (int): parallel processes to spawn
         log_level (str): log level to print to console. can use 'verbose',
          a custom level higher than info but lower than debug.
@@ -41,7 +40,7 @@ def detect_cells(source, flow, sink=None, processes=config.processes, log_level=
     timer = Timer()
     set_console_level(log_level)
 
-    result = process_flow(source, sink=sink, flow=flow, processes=processes, **parameter)
+    result = process_flow(source, flow=flow, processes=processes, **parameter)
 
     timer.log_elapsed("Total Cell Detection")
     return result
