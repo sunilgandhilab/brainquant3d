@@ -25,7 +25,7 @@ def threshold(image, val, output=None):
     else:
         original_out_ndim = output.ndim
         if original_out_ndim == 2:
-            output = output[np.newaxis, ...]
+            output.shape = image.shape
 
     val = image.dtype.type(val)
 

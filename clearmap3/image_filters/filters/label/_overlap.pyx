@@ -61,6 +61,7 @@ def _overlap(label_0, label_1, output):
                                         label_1_fd.fileno(),
                                         0)
         # Increment original pointer by <offset> bytes and then typecast to input datatype
+
         mmapped_label_1 += label_1.offset
         mmapped_label_1_offset = <int*> mmapped_label_1
 
@@ -73,7 +74,9 @@ def _overlap(label_0, label_1, output):
                     lookup[label_1_val] = 1
 
         # Deallocate mapped memory after processing each frome
+        mmapped_label_0 -= label_0.offset
         munmap(mmapped_label_0, label_0.size * sizeof(int) + label_0.offset)
+        mmapped_label_1 -= label_1.offset
         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
 
     # Remove labels that did not overlap
@@ -110,7 +113,9 @@ def _overlap(label_0, label_1, output):
                     mmapped_output_offset[idx] = 0
 
         # Deallocate mapped memory after processing each frome
+        mmapped_label_1 -= label_1.offset
         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
+        mmapped_output -= output.offset
         munmap(mmapped_output, output.size * sizeof(int) + output.offset)
 
 

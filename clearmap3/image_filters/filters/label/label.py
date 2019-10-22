@@ -77,14 +77,13 @@ class Label(FilterBase):
                                       dtype=np.uint8,
                                       shape=raw_img.shape)
 
-        # Binarize image
-        self.log.debug('Thresholding')
-        threshold(raw_img, self.high_threshold, bin_img)
-
-        #TODO: Figure out why the fuck this line cannot be called before "threshold."
         labeled_1_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_labeled_1_img.tif'),
                                             dtype=np.int32,
                                             shape=raw_img.shape)
+
+        # Binarize image
+        self.log.debug('Thresholding')
+        threshold(raw_img, self.high_threshold, bin_img)
 
         # Label image
         self.log.debug('Labeling')

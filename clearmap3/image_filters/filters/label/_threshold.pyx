@@ -23,7 +23,6 @@ ctypedef fused OUTPUT_DTYPE:
     cnp.int32_t
     cnp.uint32_t
 
-@cython.cdivision(True)
 @cython.boundscheck(False) # turn off bounds-checking for entire function
 @cython.wraparound(False)  # turn off negative index wrapping for entire function
 def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
@@ -91,6 +90,8 @@ cnp    ----------
                     mmapped_output_offset[idx] = maxval
 
         # Deallocate mapped memory after processing each frome
+        mmapped_image -= image.offset
         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+        mmapped_output -= output.offset
         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
 
