@@ -6,7 +6,7 @@ from .max import Max
 from .median import Median
 from .thresholding import ThresholdMinimum
 from .ilastik import PixelClassification
-from .label.label import Label
+from .label.label import Label, LabelBySize
 from .erosion import Erode
 from .surface_extraction import ExtractSurface
 from .projection import Project

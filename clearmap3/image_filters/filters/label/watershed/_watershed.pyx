@@ -12,16 +12,23 @@ All rights reserved.
 Original author: Lee Kamentsky
 """
 import numpy as np
-from libc.math cimport sqrt
-
-from posix.mman cimport *
 cimport numpy as cnp
 cimport cython
 
+from libc.math cimport sqrt
+
+from posix.mman cimport *
 
 ctypedef cnp.int32_t DTYPE_INT32_t
 ctypedef cnp.int8_t DTYPE_BOOL_t
 
+ctypedef fused INPUT_DTYPE:
+    cnp.float32_t
+    cnp.float64_t
+    cnp.uint8_t
+    cnp.uint16_t
+    cnp.int32_t
+    cnp.uint32_t
 
 include "heap_watershed.pxi"
 
@@ -80,13 +87,13 @@ cdef inline DTYPE_BOOL_t _diff_neighbors(DTYPE_INT32_t[::1] output,
 
 @cython.boundscheck(False)
 @cython.wraparound(False)
-def watershed_3d(image,
-                      marker_locations,
+def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
+                      cnp.ndarray[cnp.int64_t, ndim=1] marker_locations,
                       cnp.intp_t[::1] structure,
-                      mask,
+                      cnp.ndarray[cnp.uint8_t, ndim=3] mask,
                       cnp.intp_t[::1] strides,
                       cnp.double_t compactness,
-                      output,
+                      cnp.ndarray[cnp.int32_t, ndim=3] output,
                       DTYPE_BOOL_t wsl,
                       DTYPE_BOOL_t invert=False):
     """Perform watershed algorithm using a raveled image and neighborhood.
@@ -137,7 +144,7 @@ def watershed_3d(image,
     cdef Heap *hp = <Heap *> heap_from_numpy2()
 
     cdef char *mmapped_image
-    cdef unsigned short *mmapped_image_offset
+    cdef INPUT_DTYPE *mmapped_image_offset
     cdef char *mmapped_marker_locations
     cdef long *mmapped_marker_locations_offset
     cdef char *mmapped_mask
@@ -152,13 +159,13 @@ def watershed_3d(image,
 
     ############################# MMAP Files #############################
     mmapped_image = <char *> mmap(NULL,
-                                  image.size * sizeof(unsigned short) + image.offset,
+                                  image.size * sizeof(INPUT_DTYPE) + image.offset,
                                   PROT_READ|PROT_WRITE,
                                   MAP_SHARED,
                                   image_fd.fileno(),
                                   0)
     mmapped_image += image.offset
-    mmapped_image_offset = <unsigned short *> mmapped_image
+    mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
 
     mmapped_marker_locations = <char *> mmap(NULL,
                                              marker_locations.size * sizeof(long) + marker_locations.offset,

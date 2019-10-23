@@ -9,10 +9,10 @@ from clearmap3.image_filters.filter import FilterBase
 
 from .connect import connect
 from .threshold import threshold
-from .filter import size_filter
+from .filter import size_filter, label_by_size
 from .overlap import overlap
 from .util.nonzero_coords import nonzero_coords
-from .watershed._watershed import watershed_3d
+from .watershed.watershed import watershed
 from .watershed._util import _validate_connectivity, _offsets_to_raveled_neighbors
 
 class Label(FilterBase):
@@ -30,9 +30,9 @@ class Label(FilterBase):
          low_threshold  (float): Probability threshold for optional second filtering.
          mode           (int): Options are:
                                 1 : High Threshold --> Label --> Size Filter
-                                2 : Mode 1 --> Low Thresh --> Watershed --> Size Filter (2nd Pass)
                                 3 : Mode 1 --> Low Thresh --> Label -->
                                       Compare with size filtered and keep overlap --> Size Filter (2nd Pass)
+                                2 : Mode 1 --> Low Thresh --> Watershed --> Size Filter (2nd Pass)
     """
 
     def __init__(self):
@@ -90,7 +90,7 @@ class Label(FilterBase):
 
         # Filter labeled regions by size (1st pass) # Mode 1: Stop after this
         self.log.debug('Size filtering')
-        _, _ = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img, return_labels=True)
+        _, _ = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img)
 
         if self.mode == 1:
             return io.readData(labeled_1_img.filename)
@@ -112,7 +112,7 @@ class Label(FilterBase):
             overlap(labeled_1_img, labeled_2_img, labeled_2_img)
 
             self.log.debug('Running final size filter...')
-            _, _ = size_filter(labeled_2_img, self.min_size2, self.max_size2, labeled_2_img, return_labels=True)
+            _, _ = size_filter(labeled_2_img, self.min_size2, self.max_size2, labeled_2_img)
 
             return io.readData(labeled_1_img.filename)
 
@@ -139,7 +139,7 @@ class Label(FilterBase):
             image_strides = np.array(raw_img.strides, dtype=np.intp) // raw_img.itemsize
 
             print('Running watershed...')
-            watershed_3d(raw_img, marker_locations, flat_neighborhood,
+            watershed(raw_img, marker_locations, flat_neighborhood,
                                  bin_img, image_strides, 0,
                                  labeled_1_img, # <-- Output
                                  False, True) # <-- Inverted watershed
@@ -148,17 +148,33 @@ class Label(FilterBase):
 
             # Final size filter
             self.log.debug('Running final size filter...')
-            _, _ = size_filter(labeled_1_img, self.min_size2, self.max_size2, labeled_1_img, return_labels=True)
+            _, _ = size_filter(labeled_1_img, self.min_size2, self.max_size2, labeled_1_img)
 
             if self.input.ndim == 2:
                 labeled_1_img = labeled_1_img[1:-1,1:-1]
             else:
                 labeled_1_img = labeled_1_img[1:-1,1:-1,1:-1]
 
-            out = io.empty(os.path.join(self.temp_dir, 'output.tif'), shape = labeled_1_img.shape, dtype=labeled_1_img.dtype)
+            out = io.empty(os.path.join(self.temp_dir, 'output.tif'),
+                           shape=labeled_1_img.shape,
+                           dtype=labeled_1_img.dtype)
             out[:] = labeled_1_img
 
             return out
 
+class LabelBySize(FilterBase):
+    """Changes the value of all labels in a labeled image to their volume. Good for determining
+    size thresholds.
 
-filter_manager.add_filter(Label())
+    Attributes:
+         input          (array): Labeled Image to pass through filter, munt be memmapped.
+         output         (array): Filter result.
+    """
+
+    def __init__(self):
+        super().__init__(temp_dir=True)
+
+    def _generate_output(self):
+        return label_by_size(self.input, self.input)
+
+filter_manager.add_filter(LabelBySize())
