@@ -1,7 +1,6 @@
 import numpy as np
 cimport numpy as np
 
-from libcpp cimport bool
 from libcpp.map cimport map
 from libcpp.pair cimport pair
 

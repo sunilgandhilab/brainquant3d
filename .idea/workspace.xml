@@ -4,17 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="fixed bugs in label code&#10;added LabelBySize filter">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_filter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_filter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_filter.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_filter.pyx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/watershed.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/watershed.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -292,14 +286,7 @@
       <workItem from="1569962089617" duration="8863000" />
       <workItem from="1569986102284" duration="17209000" />
       <workItem from="1571761267338" duration="334000" />
-      <workItem from="1571761913312" duration="31515000" />
-    </task>
-    <task id="LOCAL-00009" summary="fixed include form cython">
-      <created>1564782546125</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1564782546125</updated>
+      <workItem from="1571761913312" duration="33456000" />
     </task>
     <task id="LOCAL-00010" summary="fixed include form cython">
       <created>1564785280684</created>
@@ -637,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571857567611</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="fixed bugs in label code&#10;added LabelBySize filter">
+      <created>1571871682996</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1571871682996</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +654,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor refactoring and bug fixes." />
     <MESSAGE value="removed analysis.tools module" />
     <MESSAGE value="more refactoring and added docs." />
     <MESSAGE value="added compiled cython files" />
@@ -685,7 +678,8 @@
     <MESSAGE value="replaces all uses of all when cropping to None" />
     <MESSAGE value="transposed data so that axes are in standard z,y,x" />
     <MESSAGE value="general bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="general bugfixes" />
+    <MESSAGE value="fixed bugs in label code&#10;added LabelBySize filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs in label code&#10;added LabelBySize filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -727,6 +721,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/clearmap3$axon_segmentation.coverage" NAME="axon_segmentation Coverage Results" MODIFIED="1569969334405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1571870597839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1571874445269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

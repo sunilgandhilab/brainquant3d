@@ -2140,8 +2140,6 @@ static PyTypeObject *__pyx_ptype_5numpy_ndarray = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, char *, char *, int *); /*proto*/
 
-/* Module declarations from 'libcpp' */
-
 /* Module declarations from 'libcpp.utility' */
 
 /* Module declarations from 'libcpp.map' */
@@ -2286,10 +2284,9 @@ static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_label_counts[] = "label_counts";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "stringsource";
-static const char __pyx_k_label_by_size[] = "label_by_size";
+static const char __pyx_k_label_by_size[] = "_label_by_size";
 static const char __pyx_k_pyx_getbuffer[] = "__pyx_getbuffer";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
-static const char __pyx_k_return_labels[] = "return_labels";
 static const char __pyx_k_original_count[] = "original_count";
 static const char __pyx_k_View_MemoryView[] = "View.MemoryView";
 static const char __pyx_k_allocate_buffer[] = "allocate_buffer";
@@ -2429,7 +2426,6 @@ static PyObject *__pyx_n_s_range;
 static PyObject *__pyx_n_s_reduce;
 static PyObject *__pyx_n_s_reduce_cython;
 static PyObject *__pyx_n_s_reduce_ex;
-static PyObject *__pyx_n_s_return_labels;
 static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_shape;
@@ -2458,7 +2454,7 @@ static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_s_zeros;
 static PyObject *__pyx_n_s_zmax;
 static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__size_filter(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_minsize, int __pyx_v_maxsize, __Pyx_memviewslice __pyx_v_out); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2label_by_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_minsize, int __pyx_v_maxsize, __Pyx_memviewslice __pyx_v_out, bool __pyx_v_return_labels); /* proto */
+static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2_label_by_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, __Pyx_memviewslice __pyx_v_out); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2551,7 +2547,7 @@ static PyObject *__pyx_codeobj__30;
 static PyObject *__pyx_codeobj__37;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/_filter.pyx":8
+/* "clearmap3/image_filters/filters/label/_filter.pyx":7
  * from libcpp.pair cimport pair
  * 
  * def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out):             # <<<<<<<<<<<<<<
@@ -2597,23 +2593,23 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_1_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_minsize)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, 1); __PYX_ERR(0, 8, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, 1); __PYX_ERR(0, 7, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_maxsize)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, 2); __PYX_ERR(0, 8, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, 2); __PYX_ERR(0, 7, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_out)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, 3); __PYX_ERR(0, 8, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, 3); __PYX_ERR(0, 7, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_size_filter") < 0)) __PYX_ERR(0, 8, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_size_filter") < 0)) __PYX_ERR(0, 7, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -2623,14 +2619,14 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_1_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_img = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_img.memview)) __PYX_ERR(0, 8, __pyx_L3_error)
-    __pyx_v_minsize = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_minsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
-    __pyx_v_maxsize = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_maxsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
-    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 8, __pyx_L3_error)
+    __pyx_v_img = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_img.memview)) __PYX_ERR(0, 7, __pyx_L3_error)
+    __pyx_v_minsize = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_minsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 7, __pyx_L3_error)
+    __pyx_v_maxsize = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_maxsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 7, __pyx_L3_error)
+    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 7, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 8, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("_size_filter", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 7, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("clearmap3.image_filters.filters.label._filter._size_filter", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2694,7 +2690,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   Py_ssize_t __pyx_t_30;
   __Pyx_RefNannySetupContext("_size_filter", 0);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":10
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":9
  * def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out):
  * 
  *     cdef int zmax = img.shape[0]             # <<<<<<<<<<<<<<
@@ -2703,7 +2699,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  */
   __pyx_v_zmax = (__pyx_v_img.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":11
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":10
  * 
  *     cdef int zmax = img.shape[0]
  *     cdef int ymax = img.shape[1]             # <<<<<<<<<<<<<<
@@ -2712,7 +2708,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  */
   __pyx_v_ymax = (__pyx_v_img.shape[1]);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":12
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":11
  *     cdef int zmax = img.shape[0]
  *     cdef int ymax = img.shape[1]
  *     cdef int xmax = img.shape[2]             # <<<<<<<<<<<<<<
@@ -2721,38 +2717,38 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  */
   __pyx_v_xmax = (__pyx_v_img.shape[2]);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":17
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":16
  * 
  *     cdef map[int, int] mlookup
  *     cdef int[::1] arrlookup = np.zeros(2**32-1, dtype=np.int32)             # <<<<<<<<<<<<<<
  * 
  *     cdef pair[int, int] i
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int32); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int32); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_arrlookup = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":26
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":25
  * 
  *     # Count pixels in each label
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -2764,7 +2760,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_z = __pyx_t_8;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":27
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":26
  *     # Count pixels in each label
  *     for z in range(zmax):
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -2776,7 +2772,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_y = __pyx_t_11;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":28
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":27
  *     for z in range(zmax):
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -2788,7 +2784,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":29
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":28
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 val = img[z,y,x]             # <<<<<<<<<<<<<<
@@ -2813,11 +2809,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
         } else if (unlikely(__pyx_t_17 >= __pyx_v_img.shape[2])) __pyx_t_18 = 2;
         if (unlikely(__pyx_t_18 != -1)) {
           __Pyx_RaiseBufferIndexError(__pyx_t_18);
-          __PYX_ERR(0, 29, __pyx_L1_error)
+          __PYX_ERR(0, 28, __pyx_L1_error)
         }
         __pyx_v_val = (*((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_img.data + __pyx_t_15 * __pyx_v_img.strides[0]) ) + __pyx_t_16 * __pyx_v_img.strides[1]) )) + __pyx_t_17)) )));
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":30
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":29
  *             for x in range(xmax):
  *                 val = img[z,y,x]
  *                 if val != 0:             # <<<<<<<<<<<<<<
@@ -2827,7 +2823,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
         __pyx_t_19 = ((__pyx_v_val != 0) != 0);
         if (__pyx_t_19) {
 
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":31
+          /* "clearmap3/image_filters/filters/label/_filter.pyx":30
  *                 val = img[z,y,x]
  *                 if val != 0:
  *                     areas[val] +=1             # <<<<<<<<<<<<<<
@@ -2837,7 +2833,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
           __pyx_t_18 = __pyx_v_val;
           (__pyx_v_areas[__pyx_t_18]) = ((__pyx_v_areas[__pyx_t_18]) + 1);
 
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":30
+          /* "clearmap3/image_filters/filters/label/_filter.pyx":29
  *             for x in range(xmax):
  *                 val = img[z,y,x]
  *                 if val != 0:             # <<<<<<<<<<<<<<
@@ -2849,7 +2845,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":34
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":33
  * 
  *     # Filter labels by size (counts)
  *     original_count = 0             # <<<<<<<<<<<<<<
@@ -2859,7 +2855,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   __Pyx_INCREF(__pyx_int_0);
   __pyx_v_original_count = __pyx_int_0;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":35
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":34
  *     # Filter labels by size (counts)
  *     original_count = 0
  *     for i in areas:             # <<<<<<<<<<<<<<
@@ -2873,7 +2869,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     ++__pyx_t_20;
     __pyx_v_i = __pyx_t_21;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":36
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":35
  *     original_count = 0
  *     for i in areas:
  *         counts = i.second             # <<<<<<<<<<<<<<
@@ -2883,7 +2879,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     __pyx_t_6 = __pyx_v_i.second;
     __pyx_v_counts = __pyx_t_6;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":37
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":36
  *     for i in areas:
  *         counts = i.second
  *         if maxsize >= counts >= minsize:             # <<<<<<<<<<<<<<
@@ -2897,7 +2893,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     __pyx_t_22 = (__pyx_t_19 != 0);
     if (__pyx_t_22) {
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":38
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":37
  *         counts = i.second
  *         if maxsize >= counts >= minsize:
  *             mlookup[i.first] = i.second             # <<<<<<<<<<<<<<
@@ -2907,7 +2903,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
       __pyx_t_6 = __pyx_v_i.second;
       (__pyx_v_mlookup[__pyx_v_i.first]) = __pyx_t_6;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":39
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":38
  *         if maxsize >= counts >= minsize:
  *             mlookup[i.first] = i.second
  *             arrlookup[i.first] = 1             # <<<<<<<<<<<<<<
@@ -2922,11 +2918,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
       } else if (unlikely(__pyx_t_23 >= __pyx_v_arrlookup.shape[0])) __pyx_t_6 = 0;
       if (unlikely(__pyx_t_6 != -1)) {
         __Pyx_RaiseBufferIndexError(__pyx_t_6);
-        __PYX_ERR(0, 39, __pyx_L1_error)
+        __PYX_ERR(0, 38, __pyx_L1_error)
       }
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_arrlookup.data) + __pyx_t_23)) )) = 1;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":37
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":36
  *     for i in areas:
  *         counts = i.second
  *         if maxsize >= counts >= minsize:             # <<<<<<<<<<<<<<
@@ -2935,19 +2931,19 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  */
     }
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":40
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":39
  *             mlookup[i.first] = i.second
  *             arrlookup[i.first] = 1
  *         original_count += 1             # <<<<<<<<<<<<<<
  * 
  *     # Apply Lookup
  */
-    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_v_original_count, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_v_original_count, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF_SET(__pyx_v_original_count, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":35
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":34
  *     # Filter labels by size (counts)
  *     original_count = 0
  *     for i in areas:             # <<<<<<<<<<<<<<
@@ -2956,7 +2952,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":43
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":42
  * 
  *     # Apply Lookup
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -2968,7 +2964,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_z = __pyx_t_8;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":44
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":43
  *     # Apply Lookup
  *     for z in range(zmax):
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -2980,7 +2976,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_y = __pyx_t_11;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":45
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":44
  *     for z in range(zmax):
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -2992,7 +2988,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":46
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":45
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 val = img[z,y,x]             # <<<<<<<<<<<<<<
@@ -3017,11 +3013,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
         } else if (unlikely(__pyx_t_26 >= __pyx_v_img.shape[2])) __pyx_t_18 = 2;
         if (unlikely(__pyx_t_18 != -1)) {
           __Pyx_RaiseBufferIndexError(__pyx_t_18);
-          __PYX_ERR(0, 46, __pyx_L1_error)
+          __PYX_ERR(0, 45, __pyx_L1_error)
         }
         __pyx_v_val = (*((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_img.data + __pyx_t_24 * __pyx_v_img.strides[0]) ) + __pyx_t_25 * __pyx_v_img.strides[1]) )) + __pyx_t_26)) )));
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":47
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":46
  *             for x in range(xmax):
  *                 val = img[z,y,x]
  *                 lookup_val = arrlookup[val]             # <<<<<<<<<<<<<<
@@ -3036,11 +3032,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
         } else if (unlikely(__pyx_t_27 >= __pyx_v_arrlookup.shape[0])) __pyx_t_18 = 0;
         if (unlikely(__pyx_t_18 != -1)) {
           __Pyx_RaiseBufferIndexError(__pyx_t_18);
-          __PYX_ERR(0, 47, __pyx_L1_error)
+          __PYX_ERR(0, 46, __pyx_L1_error)
         }
         __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_arrlookup.data) + __pyx_t_27)) )));
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":48
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":47
  *                 val = img[z,y,x]
  *                 lookup_val = arrlookup[val]
  *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
@@ -3050,7 +3046,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
         __pyx_t_22 = ((__pyx_v_lookup_val != 0) != 0);
         if (__pyx_t_22) {
 
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":49
+          /* "clearmap3/image_filters/filters/label/_filter.pyx":48
  *                 lookup_val = arrlookup[val]
  *                 if lookup_val != 0:
  *                     out[z,y,x] = val             # <<<<<<<<<<<<<<
@@ -3075,11 +3071,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
           } else if (unlikely(__pyx_t_30 >= __pyx_v_out.shape[2])) __pyx_t_18 = 2;
           if (unlikely(__pyx_t_18 != -1)) {
             __Pyx_RaiseBufferIndexError(__pyx_t_18);
-            __PYX_ERR(0, 49, __pyx_L1_error)
+            __PYX_ERR(0, 48, __pyx_L1_error)
           }
           *((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_out.data + __pyx_t_28 * __pyx_v_out.strides[0]) ) + __pyx_t_29 * __pyx_v_out.strides[1]) )) + __pyx_t_30)) )) = __pyx_v_val;
 
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":48
+          /* "clearmap3/image_filters/filters/label/_filter.pyx":47
  *                 val = img[z,y,x]
  *                 lookup_val = arrlookup[val]
  *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
@@ -3091,7 +3087,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":52
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":51
  * 
  *     # Return total original label count and dictionary of final labels and respective counts
  *     label_counts = {i.first: i.second for i in mlookup if i.second != 0}             # <<<<<<<<<<<<<<
@@ -3099,7 +3095,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  * 
  */
   { /* enter inner scope */
-    __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_20 = __pyx_v_mlookup.begin();
     for (;;) {
@@ -3109,11 +3105,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
       __pyx_7genexpr__pyx_v_i = __pyx_t_21;
       __pyx_t_22 = ((__pyx_7genexpr__pyx_v_i.second != 0) != 0);
       if (__pyx_t_22) {
-        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_7genexpr__pyx_v_i.first); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_7genexpr__pyx_v_i.first); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_7genexpr__pyx_v_i.second); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_7genexpr__pyx_v_i.second); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        if (unlikely(PyDict_SetItem(__pyx_t_4, (PyObject*)__pyx_t_1, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 52, __pyx_L1_error)
+        if (unlikely(PyDict_SetItem(__pyx_t_4, (PyObject*)__pyx_t_1, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 51, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       }
@@ -3122,7 +3118,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   __pyx_v_label_counts = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":53
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":52
  *     # Return total original label count and dictionary of final labels and respective counts
  *     label_counts = {i.first: i.second for i in mlookup if i.second != 0}
  *     return original_count, label_counts             # <<<<<<<<<<<<<<
@@ -3130,7 +3126,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_original_count);
   __Pyx_GIVEREF(__pyx_v_original_count);
@@ -3142,7 +3138,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":8
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":7
  * from libcpp.pair cimport pair
  * 
  * def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out):             # <<<<<<<<<<<<<<
@@ -3170,39 +3166,30 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter__s
   return __pyx_r;
 }
 
-/* "clearmap3/image_filters/filters/label/_filter.pyx":56
+/* "clearmap3/image_filters/filters/label/_filter.pyx":55
  * 
  * 
- * def label_by_size(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out,             # <<<<<<<<<<<<<<
- *              bool return_labels=False):
+ * def _label_by_size(int[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
+ *     cdef int zmax = img.shape[0]
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3label_by_size(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_7_filter_3label_by_size = {"label_by_size", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3label_by_size, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3label_by_size(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3_label_by_size(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_7_filter_3_label_by_size = {"_label_by_size", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3_label_by_size, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3_label_by_size(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_img = { 0, 0, { 0 }, { 0 }, { 0 } };
-  int __pyx_v_minsize;
-  int __pyx_v_maxsize;
   __Pyx_memviewslice __pyx_v_out = { 0, 0, { 0 }, { 0 }, { 0 } };
-  bool __pyx_v_return_labels;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("label_by_size (wrapper)", 0);
+  __Pyx_RefNannySetupContext("_label_by_size (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_img,&__pyx_n_s_minsize,&__pyx_n_s_maxsize,&__pyx_n_s_out,&__pyx_n_s_return_labels,0};
-    PyObject* values[5] = {0,0,0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_img,&__pyx_n_s_out,0};
+    PyObject* values[2] = {0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
-        case  5: values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
-        CYTHON_FALLTHROUGH;
-        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
-        CYTHON_FALLTHROUGH;
-        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
-        CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
         CYTHON_FALLTHROUGH;
         case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
@@ -3217,86 +3204,39 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_7_filter_3l
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
-        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_minsize)) != 0)) kw_args--;
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_out)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("label_by_size", 0, 4, 5, 1); __PYX_ERR(0, 56, __pyx_L3_error)
-        }
-        CYTHON_FALLTHROUGH;
-        case  2:
-        if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_maxsize)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("label_by_size", 0, 4, 5, 2); __PYX_ERR(0, 56, __pyx_L3_error)
-        }
-        CYTHON_FALLTHROUGH;
-        case  3:
-        if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_out)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("label_by_size", 0, 4, 5, 3); __PYX_ERR(0, 56, __pyx_L3_error)
-        }
-        CYTHON_FALLTHROUGH;
-        case  4:
-        if (kw_args > 0) {
-          PyObject* value = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_return_labels);
-          if (value) { values[4] = value; kw_args--; }
+          __Pyx_RaiseArgtupleInvalid("_label_by_size", 1, 2, 2, 1); __PYX_ERR(0, 55, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "label_by_size") < 0)) __PYX_ERR(0, 56, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_label_by_size") < 0)) __PYX_ERR(0, 55, __pyx_L3_error)
       }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+      goto __pyx_L5_argtuple_error;
     } else {
-      switch (PyTuple_GET_SIZE(__pyx_args)) {
-        case  5: values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
-        CYTHON_FALLTHROUGH;
-        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
-        values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
-        values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
-        values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-        break;
-        default: goto __pyx_L5_argtuple_error;
-      }
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_img = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_img.memview)) __PYX_ERR(0, 56, __pyx_L3_error)
-    __pyx_v_minsize = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_minsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
-    __pyx_v_maxsize = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_maxsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
-    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 56, __pyx_L3_error)
-    if (values[4]) {
-      __pyx_v_return_labels = __Pyx_PyObject_IsTrue(values[4]); if (unlikely((__pyx_v_return_labels == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L3_error)
-    } else {
-
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":57
- * 
- * def label_by_size(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out,
- *              bool return_labels=False):             # <<<<<<<<<<<<<<
- * 
- *     cdef int zmax = img.shape[0]
- */
-      __pyx_v_return_labels = ((bool)0);
-    }
+    __pyx_v_img = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_img.memview)) __PYX_ERR(0, 55, __pyx_L3_error)
+    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_int(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 55, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("label_by_size", 0, 4, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 56, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("_label_by_size", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._filter.label_by_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._filter._label_by_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2label_by_size(__pyx_self, __pyx_v_img, __pyx_v_minsize, __pyx_v_maxsize, __pyx_v_out, __pyx_v_return_labels);
-
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":56
- * 
- * 
- * def label_by_size(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out,             # <<<<<<<<<<<<<<
- *              bool return_labels=False):
- * 
- */
+  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2_label_by_size(__pyx_self, __pyx_v_img, __pyx_v_out);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2label_by_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_minsize, int __pyx_v_maxsize, __Pyx_memviewslice __pyx_v_out, bool __pyx_v_return_labels) {
+static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2_label_by_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, __Pyx_memviewslice __pyx_v_out) {
   int __pyx_v_zmax;
   int __pyx_v_ymax;
   int __pyx_v_xmax;
@@ -3306,13 +3246,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
   std::pair<int,int>  __pyx_v_i;
   int __pyx_v_val;
   int __pyx_v_lookup_val;
-  int __pyx_v_counts;
   Py_ssize_t __pyx_v_z;
   Py_ssize_t __pyx_v_y;
   Py_ssize_t __pyx_v_x;
-  PyObject *__pyx_v_original_count = NULL;
-  PyObject *__pyx_v_label_counts = NULL;
-  std::pair<int,int>  __pyx_8genexpr1__pyx_v_i;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3336,7 +3272,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
   int __pyx_t_19;
   std::map<int,int> ::iterator __pyx_t_20;
   std::pair<int,int>  __pyx_t_21;
-  int __pyx_t_22;
+  Py_ssize_t __pyx_t_22;
   Py_ssize_t __pyx_t_23;
   Py_ssize_t __pyx_t_24;
   Py_ssize_t __pyx_t_25;
@@ -3344,11 +3280,10 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
   Py_ssize_t __pyx_t_27;
   Py_ssize_t __pyx_t_28;
   Py_ssize_t __pyx_t_29;
-  Py_ssize_t __pyx_t_30;
-  __Pyx_RefNannySetupContext("label_by_size", 0);
+  __Pyx_RefNannySetupContext("_label_by_size", 0);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":59
- *              bool return_labels=False):
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":57
+ * def _label_by_size(int[:,:,::1] img, int[:,:,::1] out):
  * 
  *     cdef int zmax = img.shape[0]             # <<<<<<<<<<<<<<
  *     cdef int ymax = img.shape[1]
@@ -3356,7 +3291,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
  */
   __pyx_v_zmax = (__pyx_v_img.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":60
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":58
  * 
  *     cdef int zmax = img.shape[0]
  *     cdef int ymax = img.shape[1]             # <<<<<<<<<<<<<<
@@ -3365,7 +3300,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
  */
   __pyx_v_ymax = (__pyx_v_img.shape[1]);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":61
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":59
  *     cdef int zmax = img.shape[0]
  *     cdef int ymax = img.shape[1]
  *     cdef int xmax = img.shape[2]             # <<<<<<<<<<<<<<
@@ -3374,38 +3309,38 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
  */
   __pyx_v_xmax = (__pyx_v_img.shape[2]);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":66
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":64
  * 
  *     cdef map[int, int] mlookup
  *     cdef int[::1] arrlookup = np.zeros(2**32-1, dtype=np.int32)             # <<<<<<<<<<<<<<
  * 
  *     cdef pair[int, int] i
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int32); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int32); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_arrlookup = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":75
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":73
  * 
  *     # Count pixels in each label
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -3417,7 +3352,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_z = __pyx_t_8;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":76
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":74
  *     # Count pixels in each label
  *     for z in range(zmax):
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3429,7 +3364,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_y = __pyx_t_11;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":77
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":75
  *     for z in range(zmax):
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3441,7 +3376,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":78
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":76
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 val = img[z,y,x]             # <<<<<<<<<<<<<<
@@ -3466,11 +3401,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
         } else if (unlikely(__pyx_t_17 >= __pyx_v_img.shape[2])) __pyx_t_18 = 2;
         if (unlikely(__pyx_t_18 != -1)) {
           __Pyx_RaiseBufferIndexError(__pyx_t_18);
-          __PYX_ERR(0, 78, __pyx_L1_error)
+          __PYX_ERR(0, 76, __pyx_L1_error)
         }
         __pyx_v_val = (*((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_img.data + __pyx_t_15 * __pyx_v_img.strides[0]) ) + __pyx_t_16 * __pyx_v_img.strides[1]) )) + __pyx_t_17)) )));
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":79
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":77
  *             for x in range(xmax):
  *                 val = img[z,y,x]
  *                 if val != 0:             # <<<<<<<<<<<<<<
@@ -3480,17 +3415,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
         __pyx_t_19 = ((__pyx_v_val != 0) != 0);
         if (__pyx_t_19) {
 
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":80
+          /* "clearmap3/image_filters/filters/label/_filter.pyx":78
  *                 val = img[z,y,x]
  *                 if val != 0:
  *                     areas[val] +=1             # <<<<<<<<<<<<<<
  * 
- *     # Filter labels by size (counts)
+ *     # generate LUT
  */
           __pyx_t_18 = __pyx_v_val;
           (__pyx_v_areas[__pyx_t_18]) = ((__pyx_v_areas[__pyx_t_18]) + 1);
 
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":79
+          /* "clearmap3/image_filters/filters/label/_filter.pyx":77
  *             for x in range(xmax):
  *                 val = img[z,y,x]
  *                 if val != 0:             # <<<<<<<<<<<<<<
@@ -3502,22 +3437,12 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":83
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":81
  * 
- *     # Filter labels by size (counts)
- *     original_count = 0             # <<<<<<<<<<<<<<
- *     for i in areas:
- *         counts = i.second
- */
-  __Pyx_INCREF(__pyx_int_0);
-  __pyx_v_original_count = __pyx_int_0;
-
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":84
- *     # Filter labels by size (counts)
- *     original_count = 0
+ *     # generate LUT
  *     for i in areas:             # <<<<<<<<<<<<<<
- *         counts = i.second
- *         if maxsize >= counts >= minsize:
+ *         mlookup[i.first] = i.second
+ *         arrlookup[i.first] = i.second
  */
   __pyx_t_20 = __pyx_v_areas.begin();
   for (;;) {
@@ -3526,91 +3451,46 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
     ++__pyx_t_20;
     __pyx_v_i = __pyx_t_21;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":85
- *     original_count = 0
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":82
+ *     # generate LUT
  *     for i in areas:
- *         counts = i.second             # <<<<<<<<<<<<<<
- *         if maxsize >= counts >= minsize:
- *             mlookup[i.first] = i.second
- */
-    __pyx_t_6 = __pyx_v_i.second;
-    __pyx_v_counts = __pyx_t_6;
-
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":86
- *     for i in areas:
- *         counts = i.second
- *         if maxsize >= counts >= minsize:             # <<<<<<<<<<<<<<
- *             mlookup[i.first] = i.second
- *             arrlookup[i.first] = i.second
- */
-    __pyx_t_19 = (__pyx_v_maxsize >= __pyx_v_counts);
-    if (__pyx_t_19) {
-      __pyx_t_19 = (__pyx_v_counts >= __pyx_v_minsize);
-    }
-    __pyx_t_22 = (__pyx_t_19 != 0);
-    if (__pyx_t_22) {
-
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":87
- *         counts = i.second
- *         if maxsize >= counts >= minsize:
- *             mlookup[i.first] = i.second             # <<<<<<<<<<<<<<
- *             arrlookup[i.first] = i.second
- *         original_count += 1
- */
-      __pyx_t_6 = __pyx_v_i.second;
-      (__pyx_v_mlookup[__pyx_v_i.first]) = __pyx_t_6;
-
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":88
- *         if maxsize >= counts >= minsize:
- *             mlookup[i.first] = i.second
- *             arrlookup[i.first] = i.second             # <<<<<<<<<<<<<<
- *         original_count += 1
+ *         mlookup[i.first] = i.second             # <<<<<<<<<<<<<<
+ *         arrlookup[i.first] = i.second
  * 
  */
-      __pyx_t_6 = __pyx_v_i.second;
-      __pyx_t_23 = __pyx_v_i.first;
-      __pyx_t_7 = -1;
-      if (__pyx_t_23 < 0) {
-        __pyx_t_23 += __pyx_v_arrlookup.shape[0];
-        if (unlikely(__pyx_t_23 < 0)) __pyx_t_7 = 0;
-      } else if (unlikely(__pyx_t_23 >= __pyx_v_arrlookup.shape[0])) __pyx_t_7 = 0;
-      if (unlikely(__pyx_t_7 != -1)) {
-        __Pyx_RaiseBufferIndexError(__pyx_t_7);
-        __PYX_ERR(0, 88, __pyx_L1_error)
-      }
-      *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_arrlookup.data) + __pyx_t_23)) )) = __pyx_t_6;
+    __pyx_t_6 = __pyx_v_i.second;
+    (__pyx_v_mlookup[__pyx_v_i.first]) = __pyx_t_6;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":86
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":83
  *     for i in areas:
- *         counts = i.second
- *         if maxsize >= counts >= minsize:             # <<<<<<<<<<<<<<
- *             mlookup[i.first] = i.second
- *             arrlookup[i.first] = i.second
- */
-    }
-
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":89
- *             mlookup[i.first] = i.second
- *             arrlookup[i.first] = i.second
- *         original_count += 1             # <<<<<<<<<<<<<<
+ *         mlookup[i.first] = i.second
+ *         arrlookup[i.first] = i.second             # <<<<<<<<<<<<<<
  * 
  *     # Apply Lookup
  */
-    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_v_original_count, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF_SET(__pyx_v_original_count, __pyx_t_4);
-    __pyx_t_4 = 0;
+    __pyx_t_6 = __pyx_v_i.second;
+    __pyx_t_22 = __pyx_v_i.first;
+    __pyx_t_7 = -1;
+    if (__pyx_t_22 < 0) {
+      __pyx_t_22 += __pyx_v_arrlookup.shape[0];
+      if (unlikely(__pyx_t_22 < 0)) __pyx_t_7 = 0;
+    } else if (unlikely(__pyx_t_22 >= __pyx_v_arrlookup.shape[0])) __pyx_t_7 = 0;
+    if (unlikely(__pyx_t_7 != -1)) {
+      __Pyx_RaiseBufferIndexError(__pyx_t_7);
+      __PYX_ERR(0, 83, __pyx_L1_error)
+    }
+    *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_arrlookup.data) + __pyx_t_22)) )) = __pyx_t_6;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":84
- *     # Filter labels by size (counts)
- *     original_count = 0
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":81
+ * 
+ *     # generate LUT
  *     for i in areas:             # <<<<<<<<<<<<<<
- *         counts = i.second
- *         if maxsize >= counts >= minsize:
+ *         mlookup[i.first] = i.second
+ *         arrlookup[i.first] = i.second
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":92
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":86
  * 
  *     # Apply Lookup
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -3622,7 +3502,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_z = __pyx_t_8;
 
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":93
+    /* "clearmap3/image_filters/filters/label/_filter.pyx":87
  *     # Apply Lookup
  *     for z in range(zmax):
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3634,7 +3514,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_y = __pyx_t_11;
 
-      /* "clearmap3/image_filters/filters/label/_filter.pyx":94
+      /* "clearmap3/image_filters/filters/label/_filter.pyx":88
  *     for z in range(zmax):
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3646,181 +3526,89 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":95
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":89
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 val = img[z,y,x]             # <<<<<<<<<<<<<<
  *                 lookup_val = arrlookup[val]
- *                 if lookup_val != 0:
+ *                 out[z,y,x] = lookup_val
  */
-        __pyx_t_24 = __pyx_v_z;
-        __pyx_t_25 = __pyx_v_y;
-        __pyx_t_26 = __pyx_v_x;
+        __pyx_t_23 = __pyx_v_z;
+        __pyx_t_24 = __pyx_v_y;
+        __pyx_t_25 = __pyx_v_x;
         __pyx_t_18 = -1;
+        if (__pyx_t_23 < 0) {
+          __pyx_t_23 += __pyx_v_img.shape[0];
+          if (unlikely(__pyx_t_23 < 0)) __pyx_t_18 = 0;
+        } else if (unlikely(__pyx_t_23 >= __pyx_v_img.shape[0])) __pyx_t_18 = 0;
         if (__pyx_t_24 < 0) {
-          __pyx_t_24 += __pyx_v_img.shape[0];
-          if (unlikely(__pyx_t_24 < 0)) __pyx_t_18 = 0;
-        } else if (unlikely(__pyx_t_24 >= __pyx_v_img.shape[0])) __pyx_t_18 = 0;
+          __pyx_t_24 += __pyx_v_img.shape[1];
+          if (unlikely(__pyx_t_24 < 0)) __pyx_t_18 = 1;
+        } else if (unlikely(__pyx_t_24 >= __pyx_v_img.shape[1])) __pyx_t_18 = 1;
         if (__pyx_t_25 < 0) {
-          __pyx_t_25 += __pyx_v_img.shape[1];
-          if (unlikely(__pyx_t_25 < 0)) __pyx_t_18 = 1;
-        } else if (unlikely(__pyx_t_25 >= __pyx_v_img.shape[1])) __pyx_t_18 = 1;
-        if (__pyx_t_26 < 0) {
-          __pyx_t_26 += __pyx_v_img.shape[2];
-          if (unlikely(__pyx_t_26 < 0)) __pyx_t_18 = 2;
-        } else if (unlikely(__pyx_t_26 >= __pyx_v_img.shape[2])) __pyx_t_18 = 2;
+          __pyx_t_25 += __pyx_v_img.shape[2];
+          if (unlikely(__pyx_t_25 < 0)) __pyx_t_18 = 2;
+        } else if (unlikely(__pyx_t_25 >= __pyx_v_img.shape[2])) __pyx_t_18 = 2;
         if (unlikely(__pyx_t_18 != -1)) {
           __Pyx_RaiseBufferIndexError(__pyx_t_18);
-          __PYX_ERR(0, 95, __pyx_L1_error)
+          __PYX_ERR(0, 89, __pyx_L1_error)
         }
-        __pyx_v_val = (*((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_img.data + __pyx_t_24 * __pyx_v_img.strides[0]) ) + __pyx_t_25 * __pyx_v_img.strides[1]) )) + __pyx_t_26)) )));
+        __pyx_v_val = (*((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_img.data + __pyx_t_23 * __pyx_v_img.strides[0]) ) + __pyx_t_24 * __pyx_v_img.strides[1]) )) + __pyx_t_25)) )));
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":96
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":90
  *             for x in range(xmax):
  *                 val = img[z,y,x]
  *                 lookup_val = arrlookup[val]             # <<<<<<<<<<<<<<
- *                 if lookup_val != 0:
- *                     out[z,y,x] = lookup_val
+ *                 out[z,y,x] = lookup_val
  */
-        __pyx_t_27 = __pyx_v_val;
+        __pyx_t_26 = __pyx_v_val;
         __pyx_t_18 = -1;
-        if (__pyx_t_27 < 0) {
-          __pyx_t_27 += __pyx_v_arrlookup.shape[0];
-          if (unlikely(__pyx_t_27 < 0)) __pyx_t_18 = 0;
-        } else if (unlikely(__pyx_t_27 >= __pyx_v_arrlookup.shape[0])) __pyx_t_18 = 0;
+        if (__pyx_t_26 < 0) {
+          __pyx_t_26 += __pyx_v_arrlookup.shape[0];
+          if (unlikely(__pyx_t_26 < 0)) __pyx_t_18 = 0;
+        } else if (unlikely(__pyx_t_26 >= __pyx_v_arrlookup.shape[0])) __pyx_t_18 = 0;
         if (unlikely(__pyx_t_18 != -1)) {
           __Pyx_RaiseBufferIndexError(__pyx_t_18);
-          __PYX_ERR(0, 96, __pyx_L1_error)
+          __PYX_ERR(0, 90, __pyx_L1_error)
         }
-        __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_arrlookup.data) + __pyx_t_27)) )));
+        __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_arrlookup.data) + __pyx_t_26)) )));
 
-        /* "clearmap3/image_filters/filters/label/_filter.pyx":97
+        /* "clearmap3/image_filters/filters/label/_filter.pyx":91
  *                 val = img[z,y,x]
  *                 lookup_val = arrlookup[val]
- *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
- *                     out[z,y,x] = lookup_val
- * 
+ *                 out[z,y,x] = lookup_val             # <<<<<<<<<<<<<<
  */
-        __pyx_t_22 = ((__pyx_v_lookup_val != 0) != 0);
-        if (__pyx_t_22) {
-
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":98
- *                 lookup_val = arrlookup[val]
- *                 if lookup_val != 0:
- *                     out[z,y,x] = lookup_val             # <<<<<<<<<<<<<<
- * 
- *     # Return total original label count and dictionary of final labels and respective counts
- */
-          __pyx_t_28 = __pyx_v_z;
-          __pyx_t_29 = __pyx_v_y;
-          __pyx_t_30 = __pyx_v_x;
-          __pyx_t_18 = -1;
-          if (__pyx_t_28 < 0) {
-            __pyx_t_28 += __pyx_v_out.shape[0];
-            if (unlikely(__pyx_t_28 < 0)) __pyx_t_18 = 0;
-          } else if (unlikely(__pyx_t_28 >= __pyx_v_out.shape[0])) __pyx_t_18 = 0;
-          if (__pyx_t_29 < 0) {
-            __pyx_t_29 += __pyx_v_out.shape[1];
-            if (unlikely(__pyx_t_29 < 0)) __pyx_t_18 = 1;
-          } else if (unlikely(__pyx_t_29 >= __pyx_v_out.shape[1])) __pyx_t_18 = 1;
-          if (__pyx_t_30 < 0) {
-            __pyx_t_30 += __pyx_v_out.shape[2];
-            if (unlikely(__pyx_t_30 < 0)) __pyx_t_18 = 2;
-          } else if (unlikely(__pyx_t_30 >= __pyx_v_out.shape[2])) __pyx_t_18 = 2;
-          if (unlikely(__pyx_t_18 != -1)) {
-            __Pyx_RaiseBufferIndexError(__pyx_t_18);
-            __PYX_ERR(0, 98, __pyx_L1_error)
-          }
-          *((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_out.data + __pyx_t_28 * __pyx_v_out.strides[0]) ) + __pyx_t_29 * __pyx_v_out.strides[1]) )) + __pyx_t_30)) )) = __pyx_v_lookup_val;
-
-          /* "clearmap3/image_filters/filters/label/_filter.pyx":97
- *                 val = img[z,y,x]
- *                 lookup_val = arrlookup[val]
- *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
- *                     out[z,y,x] = lookup_val
- * 
- */
+        __pyx_t_27 = __pyx_v_z;
+        __pyx_t_28 = __pyx_v_y;
+        __pyx_t_29 = __pyx_v_x;
+        __pyx_t_18 = -1;
+        if (__pyx_t_27 < 0) {
+          __pyx_t_27 += __pyx_v_out.shape[0];
+          if (unlikely(__pyx_t_27 < 0)) __pyx_t_18 = 0;
+        } else if (unlikely(__pyx_t_27 >= __pyx_v_out.shape[0])) __pyx_t_18 = 0;
+        if (__pyx_t_28 < 0) {
+          __pyx_t_28 += __pyx_v_out.shape[1];
+          if (unlikely(__pyx_t_28 < 0)) __pyx_t_18 = 1;
+        } else if (unlikely(__pyx_t_28 >= __pyx_v_out.shape[1])) __pyx_t_18 = 1;
+        if (__pyx_t_29 < 0) {
+          __pyx_t_29 += __pyx_v_out.shape[2];
+          if (unlikely(__pyx_t_29 < 0)) __pyx_t_18 = 2;
+        } else if (unlikely(__pyx_t_29 >= __pyx_v_out.shape[2])) __pyx_t_18 = 2;
+        if (unlikely(__pyx_t_18 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_18);
+          __PYX_ERR(0, 91, __pyx_L1_error)
         }
+        *((int *) ( /* dim=2 */ ((char *) (((int *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_out.data + __pyx_t_27 * __pyx_v_out.strides[0]) ) + __pyx_t_28 * __pyx_v_out.strides[1]) )) + __pyx_t_29)) )) = __pyx_v_lookup_val;
       }
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":101
- * 
- *     # Return total original label count and dictionary of final labels and respective counts
- *     if return_labels:             # <<<<<<<<<<<<<<
- *         label_counts = {i.first: i.second for i in mlookup if i.second != 0}
- *         return original_count, label_counts
- */
-  __pyx_t_22 = (__pyx_v_return_labels != 0);
-  if (__pyx_t_22) {
-
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":102
- *     # Return total original label count and dictionary of final labels and respective counts
- *     if return_labels:
- *         label_counts = {i.first: i.second for i in mlookup if i.second != 0}             # <<<<<<<<<<<<<<
- *         return original_count, label_counts
- * 
- */
-    { /* enter inner scope */
-      __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_20 = __pyx_v_mlookup.begin();
-      for (;;) {
-        if (!(__pyx_t_20 != __pyx_v_mlookup.end())) break;
-        __pyx_t_21 = *__pyx_t_20;
-        ++__pyx_t_20;
-        __pyx_8genexpr1__pyx_v_i = __pyx_t_21;
-        __pyx_t_22 = ((__pyx_8genexpr1__pyx_v_i.second != 0) != 0);
-        if (__pyx_t_22) {
-          __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_8genexpr1__pyx_v_i.first); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_8genexpr1__pyx_v_i.second); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_2);
-          if (unlikely(PyDict_SetItem(__pyx_t_4, (PyObject*)__pyx_t_1, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 102, __pyx_L1_error)
-          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        }
-      }
-    } /* exit inner scope */
-    __pyx_v_label_counts = ((PyObject*)__pyx_t_4);
-    __pyx_t_4 = 0;
-
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":103
- *     if return_labels:
- *         label_counts = {i.first: i.second for i in mlookup if i.second != 0}
- *         return original_count, label_counts             # <<<<<<<<<<<<<<
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":55
  * 
  * 
- */
-    __Pyx_XDECREF(__pyx_r);
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 103, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_INCREF(__pyx_v_original_count);
-    __Pyx_GIVEREF(__pyx_v_original_count);
-    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_original_count);
-    __Pyx_INCREF(__pyx_v_label_counts);
-    __Pyx_GIVEREF(__pyx_v_label_counts);
-    PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_label_counts);
-    __pyx_r = __pyx_t_4;
-    __pyx_t_4 = 0;
-    goto __pyx_L0;
-
-    /* "clearmap3/image_filters/filters/label/_filter.pyx":101
+ * def _label_by_size(int[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
- *     # Return total original label count and dictionary of final labels and respective counts
- *     if return_labels:             # <<<<<<<<<<<<<<
- *         label_counts = {i.first: i.second for i in mlookup if i.second != 0}
- *         return original_count, label_counts
- */
-  }
-
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":56
- * 
- * 
- * def label_by_size(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out,             # <<<<<<<<<<<<<<
- *              bool return_labels=False):
- * 
+ *     cdef int zmax = img.shape[0]
  */
 
   /* function exit code */
@@ -3832,12 +3620,10 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_7_filter_2l
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._filter.label_by_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._filter._label_by_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_arrlookup, 1);
-  __Pyx_XDECREF(__pyx_v_original_count);
-  __Pyx_XDECREF(__pyx_v_label_counts);
   __PYX_XDEC_MEMVIEW(&__pyx_v_img, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_out, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -19863,7 +19649,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
   {&__pyx_n_s_reduce_cython, __pyx_k_reduce_cython, sizeof(__pyx_k_reduce_cython), 0, 0, 1, 1},
   {&__pyx_n_s_reduce_ex, __pyx_k_reduce_ex, sizeof(__pyx_k_reduce_ex), 0, 0, 1, 1},
-  {&__pyx_n_s_return_labels, __pyx_k_return_labels, sizeof(__pyx_k_return_labels), 0, 0, 1, 1},
   {&__pyx_n_s_setstate, __pyx_k_setstate, sizeof(__pyx_k_setstate), 0, 0, 1, 1},
   {&__pyx_n_s_setstate_cython, __pyx_k_setstate_cython, sizeof(__pyx_k_setstate_cython), 0, 0, 1, 1},
   {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
@@ -19894,7 +19679,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 25, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 272, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 856, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(1, 1038, __pyx_L1_error)
@@ -19913,14 +19698,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":17
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":16
  * 
  *     cdef map[int, int] mlookup
  *     cdef int[::1] arrlookup = np.zeros(2**32-1, dtype=np.int32)             # <<<<<<<<<<<<<<
  * 
  *     cdef pair[int, int] i
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_int_4294967295); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_int_4294967295); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
@@ -20193,29 +19978,29 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":8
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":7
  * from libcpp.pair cimport pair
  * 
  * def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
  *     cdef int zmax = img.shape[0]
  */
-  __pyx_tuple__27 = PyTuple_Pack(20, __pyx_n_s_img, __pyx_n_s_minsize, __pyx_n_s_maxsize, __pyx_n_s_out, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_areas, __pyx_n_s_mlookup, __pyx_n_s_arrlookup, __pyx_n_s_i, __pyx_n_s_val, __pyx_n_s_lookup_val, __pyx_n_s_counts, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_original_count, __pyx_n_s_label_counts, __pyx_n_s_i); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(20, __pyx_n_s_img, __pyx_n_s_minsize, __pyx_n_s_maxsize, __pyx_n_s_out, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_areas, __pyx_n_s_mlookup, __pyx_n_s_arrlookup, __pyx_n_s_i, __pyx_n_s_val, __pyx_n_s_lookup_val, __pyx_n_s_counts, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_original_count, __pyx_n_s_label_counts, __pyx_n_s_i); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(4, 0, 20, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_size_filter, 8, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(4, 0, 20, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_size_filter, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 7, __pyx_L1_error)
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":56
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":55
  * 
  * 
- * def label_by_size(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out,             # <<<<<<<<<<<<<<
- *              bool return_labels=False):
+ * def _label_by_size(int[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
+ *     cdef int zmax = img.shape[0]
  */
-  __pyx_tuple__29 = PyTuple_Pack(21, __pyx_n_s_img, __pyx_n_s_minsize, __pyx_n_s_maxsize, __pyx_n_s_out, __pyx_n_s_return_labels, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_areas, __pyx_n_s_mlookup, __pyx_n_s_arrlookup, __pyx_n_s_i, __pyx_n_s_val, __pyx_n_s_lookup_val, __pyx_n_s_counts, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_original_count, __pyx_n_s_label_counts, __pyx_n_s_i); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(14, __pyx_n_s_img, __pyx_n_s_out, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_areas, __pyx_n_s_mlookup, __pyx_n_s_arrlookup, __pyx_n_s_i, __pyx_n_s_val, __pyx_n_s_lookup_val, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(5, 0, 21, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_label_by_size, 56, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_label_by_size, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 55, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -20660,28 +20445,28 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":8
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":7
  * from libcpp.pair cimport pair
  * 
  * def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
  *     cdef int zmax = img.shape[0]
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_7_filter_1_size_filter, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_7_filter_1_size_filter, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_size_filter, __pyx_t_1) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_size_filter, __pyx_t_1) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_filter.pyx":56
+  /* "clearmap3/image_filters/filters/label/_filter.pyx":55
  * 
  * 
- * def label_by_size(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out,             # <<<<<<<<<<<<<<
- *              bool return_labels=False):
+ * def _label_by_size(int[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
+ *     cdef int zmax = img.shape[0]
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_7_filter_3label_by_size, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_7_filter_3_label_by_size, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_label_by_size, __pyx_t_1) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_label_by_size, __pyx_t_1) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "clearmap3/image_filters/filters/label/_filter.pyx":1

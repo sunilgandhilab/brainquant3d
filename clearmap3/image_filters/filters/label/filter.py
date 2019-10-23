@@ -38,7 +38,7 @@ def size_filter(image, minsize, maxsize, output):
 
     return n_labels_in, counts
 
-def size_filter(image,  output):
+def label_by_size(image,  output):
     """hanges the value of all labels in a labeled image to their volume. Good for determining
     size thresholds.
 
