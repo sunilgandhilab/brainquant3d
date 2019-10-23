@@ -21,7 +21,6 @@ import clearmap3.IO as io
 from clearmap3 import config
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase
-from clearmap3.utils.files import unique_temp_dir
 
 class PixelClassification(FilterBase):
     """Run ilastik pixel classification in headless mode using a trained project file. Output will be a probabilty mask
@@ -46,7 +45,7 @@ class PixelClassification(FilterBase):
 
         if config.ilastik_binary is None:
             raise RuntimeError(f'Cannot find Ilastix binary {config.ilastik_binary}, set Ilastik '
-                               f'path in config file accordingly!')
+                               f'path in config filec accordingly!')
 
         config.ilastik_initialized = True
         self.log.verbose(f'Ilastik sucessfully initialized from path: {config.ilastik_path}')
@@ -116,8 +115,7 @@ class PixelClassification(FilterBase):
 
         #create temp npy
         input_fn = str((self.temp_dir / Path(self.input.filename).stem).with_suffix('.npy'))
-        # T because io.writeData not transpose for npy files
-        io.writeData(input_fn, self.input.T)
+        io.writeData(input_fn, self.input)
         output_fn = str(self.temp_dir / 'out_prelim.npy')
 
         ilinp = self._filename_to_input_arg(input_fn)
@@ -129,7 +127,7 @@ class PixelClassification(FilterBase):
         output_chan = self.temp_dir / 'out.npy'
         # transpose to restore input dimensionality
         output_chan = io.writeData(output_chan,
-                                    output[..., self.output_channel].T,
+                                    output[..., self.output_channel],
                                     returnMemmap=True)
 
         return output_chan

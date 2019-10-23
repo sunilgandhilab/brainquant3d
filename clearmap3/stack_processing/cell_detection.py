@@ -37,7 +37,7 @@ def detect_cells(source, flow, processes=config.processes, log_level='info', **p
     Returns:
         
     """
-    timer = Timer()pip3
+    timer = Timer()
     set_console_level(log_level)
 
     result = process_flow(source, flow=flow, processes=processes, **parameter)

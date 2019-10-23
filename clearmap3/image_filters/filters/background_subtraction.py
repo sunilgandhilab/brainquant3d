@@ -32,10 +32,10 @@ class RollingBackgroundSubtract(FilterBase):
         img = self.input
 
         # background subtraction in each slice
-        for z in range(img.shape[2]):
-            im = np.array(img[:, :, z], dtype=np.dtype(img.dtype).newbyteorder('L'))
+        for z in range(img.shape[0]):
+            im = np.array(img[z], dtype=np.dtype(img.dtype).newbyteorder('L'))
             im = cv2.blur(im, (3, 3))
-            img[:, :, z], _ = subtract_background_rolling_ball(im, self.size)
+            img[z], _ = subtract_background_rolling_ball(im, self.size)
 
         return self.input
 
@@ -71,9 +71,9 @@ class BackgroundSubtract(FilterBase):
         if self.shift_z != 0:
             shifted = tif.writeData(self.temp_dir / f'{uuid.uuid4()}.tif', self.background, returnMemmap = True)
 
-            for z in range(self.background.shape[2]):
+            for z in range(self.background.shape[0]):
                 try:
-                    shifted[..., z + self.shift_z] = self.background[..., z]
+                    shifted[z + self.shift_z,] = self.background[z]
                 except:
                     continue  # if out of bounds
             self.background = shifted

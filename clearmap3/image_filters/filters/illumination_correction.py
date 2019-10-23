@@ -92,11 +92,11 @@ class IlluminationCorrection(FilterBase):
                 raise ValueError(f'Background does not match model size {model.shape}')
 
             model = model - background
-            for z in range(img.shape[2]):
-                img[:, :, z] = (img[:, :, z] - background) / model
+            for z in range(img.shape[0]):
+                img[z] = (img[z] - background) / model
         else:
-            for z in range(img.shape[2]):
-                img[:, :, z] = img[:, :, z] / model
+            for z in range(img.shape[0]):
+                img[z] = img[z] / model
 
         # rescale image
         if isinstance(self.scaling, str):

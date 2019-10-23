@@ -39,8 +39,8 @@ class Median2D(FilterBase):
         super().__init__()
 
     def _generate_output(self):
-        for z in range(self.input.shape[2]):
-            self.input[...,z] = cv2.medianBlur(self.input[...,z], self.size)
+        for z in range(self.input.shape[0]):
+            self.input[z] = cv2.medianBlur(self.input[z], self.size)
 
         return self.input
 

@@ -16,7 +16,7 @@ def range_to_slices(ranges:list):
         list of sloce objects
     """
 
-    return tuple(slice(*r, None) for r in ranges)
+    return tuple(slice(r[0], r[1], None) for r in ranges)
 
 
 def ranges_from_sizes(sizes:list):
@@ -32,7 +32,7 @@ def ranges_from_sizes(sizes:list):
     indices = []
     offset = 0
     for r in sizes:
-        indices.append([offset, offset+r]) # 1st al included, second excluded
+        indices.append([offset, offset+r])  # 1st al included, second excluded
         offset = offset+r
 
     return indices
@@ -132,10 +132,11 @@ def chunk_ranges(source:Union[str, np.ndarray],
                     raise ValueError(f'cannot chunk along axis {a}. min_size too large or size to small')
 
                 chunk_sizes = [chunk_size] * (n_chunks - 1)
-                chunk_sizes.append(axis - np.sum(chunk_sizes)) # contains remainder of voxels from rounding
+                chunk_sizes.append(int(axis - np.sum(chunk_sizes))) # contains remainder of voxels
+                # from rounding
 
             else:
-                chunk_sizes = [max_size] * (axis / max_size)
+                chunk_sizes = [int(max_size)] * (axis / max_size)
 
             indices.append(ranges_from_sizes(chunk_sizes))
 
@@ -196,11 +197,11 @@ def chunk_ranges_z_only(source:Union[str, np.ndarray],
                 raise ValueError(f'cannot chunk along axis {a}. min_size too large or size to small')
 
             chunk_sizes = [chunk_size] * (n_chunks - 1)
-            chunk_sizes.append(a - np.sum(chunk_sizes))  # contains remainder of voxels from
+            chunk_sizes.append(int(a - np.sum(chunk_sizes)))  # contains remainder of voxels from
             # rounding
 
         else:
-            chunk_sizes = [max_size] * (a / max_size)
+            chunk_sizes = [int(max_size)] * (a / max_size)
 
         indices.append(ranges_from_sizes(chunk_sizes))
 

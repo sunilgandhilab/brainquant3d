@@ -44,7 +44,6 @@ class Label(FilterBase):
         self.max_size2 = 2147483647
         self.high_threshold = .7
         self.low_threshold = .2
-        self.graphcut_beta = .2
         self.mode = 2
         super().__init__(temp_dir=True)
 
@@ -154,7 +153,7 @@ class Label(FilterBase):
             if self.input.ndim == 2:
                 labeled_1_img = labeled_1_img[1:-1,1:-1]
             else:
-                labeled_1_img =  labeled_1_img[1:-1,1:-1,1:-1]
+                labeled_1_img = labeled_1_img[1:-1,1:-1,1:-1]
 
             out = io.empty(os.path.join(self.temp_dir, 'output.tif'), shape = labeled_1_img.shape, dtype=labeled_1_img.dtype)
             out[:] = labeled_1_img

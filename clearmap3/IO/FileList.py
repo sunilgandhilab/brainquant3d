@@ -194,6 +194,7 @@ def empty(filename, shape, dtype, **kwargs):
         fname = fileheader + (digitfrmt % i) + fileext
         io.empty(fname, shape[:-1], dtype)
 
+
 def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kwargs):
     """Write image stack to single or multiple image files
     
@@ -223,7 +224,7 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
 
             startIndex = substack[0][0]
             nz = substack[0][1] - startIndex
-            substack = substack[:-1]
+            substack = substack[1:]
         else:
             nz = data.shape[0]
 
@@ -332,7 +333,7 @@ def _parallelCopyToTif(args):
     for i, idx in enumerate(idxs):
         file = sources[i]
         log.debug(f'copyData: copying {file} to {sink}')
-        im = tif.imread(file).T
+        im = tif.imread(file)
         if not Xrng == Yrng == None:
             output[idx] = io.dataToRange(im, x=Xrng, y=Yrng)
         else:

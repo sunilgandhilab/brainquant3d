@@ -32,8 +32,8 @@ def processSubStack(flow, source, overlap_indices, unique_indices, temp_dir):
     """
     timer = Timer()
 
-    xRng, yRng, zRng = overlap_indices
-    log.info(f'chunk ranges: x= {xRng}, y= {yRng}, z= {zRng}')
+    zRng, yRng, xRng = overlap_indices
+    log.info(f'chunk ranges: z= {zRng}, y= {yRng}, x = {xRng}')
 
     #memMap routine
     if not os.path.exists(temp_dir):
@@ -69,7 +69,7 @@ def processSubStack(flow, source, overlap_indices, unique_indices, temp_dir):
             for z in range(*zRng):
                 fname = h + (dfmt % z) + ext
                 if not os.path.isfile(fname):
-                    io.empty(fname, io.dataSize(source)[:2], filtered_im.dtype)
+                    io.empty(fname, io.dataSize(source)[1:], filtered_im.dtype)
 
             unique = filtered_im[unique_slice(overlap_indices, unique_indices)]
             io.writeData(save, unique, substack=unique_indices)
