@@ -177,4 +177,5 @@ class LabelBySize(FilterBase):
     def _generate_output(self):
         return label_by_size(self.input, self.input)
 
+filter_manager.add_filter(Label())
 filter_manager.add_filter(LabelBySize())
