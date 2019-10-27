@@ -384,11 +384,11 @@ def dataSizeFromDataRange(dataSize, x = None, y = None, z = None):
     dataSize = list(dataSize)
     n = len(dataSize)
     if n > 0:
-        dataSize[0] = toDataSize(dataSize[0], r = x)
+        dataSize[0] = toDataSize(dataSize[0], r = z)
     if n > 1:
         dataSize[1] = toDataSize(dataSize[1], r = y)
     if n > 2:
-        dataSize[2] = toDataSize(dataSize[2], r = z)
+        dataSize[2] = toDataSize(dataSize[2], r = x)
 
     return tuple(dataSize)
 

@@ -107,7 +107,7 @@ def dataSize(filename, **args):
     if not len(d2) == 2:
         raise RuntimeError("FileList: importing multiple files of dim %d not supported!" % len(d2))
 
-    dims = d2 + (nz,)
+    dims = (nz,) + d2
     return io.dataSizeFromDataRange(dims, **args)
 
 
@@ -221,7 +221,6 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
     else:
 
         if substack:
-
             startIndex = substack[0][0]
             nz = substack[0][1] - startIndex
             substack = substack[1:]
@@ -289,7 +288,7 @@ def copyData(source, sink, processes = clearmap3.config.processes, x = None, y =
 
     elif out_type == 'TIF':
         # get datasize
-        Xsize, Ysize, Zsize = io.dataSize(source)
+        Zsize, Ysize, Xsize = io.dataSize(source)
         # cropped size
         Xsize = io.toDataSize(Xsize, r=x)
         Ysize = io.toDataSize(Ysize, r=y)

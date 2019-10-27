@@ -244,7 +244,7 @@ def parse_interpolation(interpolation: str):
 
 
 def resampleXY(source, dataSizeSink, zList=[0], sink=None, interpolation='linear'):
-    """Resample a 2d image slice
+    """Resample an image stack along the a 2d slice
     This routine is used for resampling a large stack in parallel in xy or xz direction.
 
     Arguments:
@@ -253,8 +253,6 @@ def resampleXY(source, dataSizeSink, zList=[0], sink=None, interpolation='linear
         zList (int): z planes to crop
         sink (str or None): location for the resmapled image
         interpolation (int): CV2 interpolation method to use
-        out (stdout): where to write progress information
-        verbose (bool): write progress info if true
 
     Returns:
         array or str: resampled data or file name
@@ -264,7 +262,7 @@ def resampleXY(source, dataSizeSink, zList=[0], sink=None, interpolation='linear
         data = io.readData(source, z=i)
         log.verbose("resample XY: Resampling plane {} to size: ({}, {})".format(i, dataSizeSink[0], dataSizeSink[1]))
         # note: cv2.resize reverses x-Y axes
-        sink[:, :, i] = cv2.resize(data, (dataSizeSink[1], dataSizeSink[0]), interpolation=interpolation)
+        sink[i] = cv2.resize(data, (dataSizeSink[1], dataSizeSink[0]), interpolation=interpolation)
 
     return sink
 
@@ -336,10 +334,11 @@ def resampleData(source, sink=None, orientation=None, dataSizeSink=None, resolut
 
     resampledXYFile = os.path.join(processingDirectory, 'resampleXY.tif')
     data_type = io.getDataType(source)
-    resampledXY = tif.tifffile.memmap(resampledXYFile, dtype=data_type,
-                                      shape=(dataSizeSource[2], dataSizeSinkI[1], dataSizeSinkI[0]), imagej=True)
+    resampledXY = io.empty(resampledXYFile, dtype=data_type,
+                                      shape=(dataSizeSource[0], dataSizeSinkI[1], dataSizeSinkI[2]),
+                                      imagej=True)
 
-    nZ = dataSizeSource[2]
+    nZ = dataSizeSource[0]
 
     # resample in XY
     # chunk for each process
@@ -356,14 +355,14 @@ def resampleData(source, sink=None, orientation=None, dataSizeSink=None, resolut
 
     # rescale in z
     resampledXY = io.readData(resampledXYFile)
-    resampledData = numpy.zeros((dataSizeSinkI[2], dataSizeSinkI[1], dataSizeSinkI[0]), dtype=data_type)
+    resampledData = numpy.zeros((dataSizeSinkI[0], dataSizeSinkI[1], dataSizeSinkI[2]),
+                                dtype=data_type)
 
     for i in range(dataSizeSinkI[1]):  # faster if iterate over y
         if i % 50 == 0:
             log.verbose(("resampleData: Z: Resampling %d/%d" % (i, dataSizeSinkI[0])))
         resampledData[:, i, :] = cv2.resize(resampledXY[:, i, :], (dataSizeSinkI[2], dataSizeSinkI[0]),
                                             interpolation=interpolation).T
-    resampledData = resampledData.T
 
     if cleanup:
         shutil.rmtree(processingDirectory)
@@ -461,7 +460,6 @@ def resampleDataInverse(sink, source=None, dataSizeSource=None, orientation=None
                                               interpolation=interpolation)
 
     # upscale x, y in parallel
-
     if io.isFileExpression(source):
         files = source
     else:
@@ -471,7 +469,7 @@ def resampleDataInverse(sink, source=None, dataSizeSource=None, orientation=None
 
     io.writeData(files, resampledDataXY)
 
-    nZ = dataSizeSource[2]
+    nZ = dataSizeSource[0]
     pool = multiprocessing.Pool(processes=processes)
     argdata = []
     for i in range(nZ):
@@ -527,7 +525,7 @@ def resamplePoints(source, sink=None, dataSizeSource=None, dataSizeSink=None, or
                                                                                       resolutionSink=resolutionSink,
                                                                                       orientation=orientation)
 
-    points = io.readPoints(pointSource)
+    points = io.readPoints(source)
 
     dataSizeSinkI = orientDataSizeInverse(dataSizeSink, orientation)
 
@@ -547,7 +545,7 @@ def resamplePoints(source, sink=None, dataSizeSource=None, dataSizeSink=None, or
             if orientation[i] < 0:
                 repoints[:, i] = dataSizeSink[i] - repoints[:, i]
 
-    return io.writePoints(pointSink, repoints)
+    return io.writePoints(sink, repoints)
 
 
 def resamplePointsInverse(source, sink=None, dataSizeSource=None, dataSizeSink=None,
@@ -587,7 +585,7 @@ def resamplePointsInverse(source, sink=None, dataSizeSource=None, dataSizeSink=N
                                                                                       resolutionSink=resolutionSink,
                                                                                       orientation=orientation)
 
-    points = io.readPoints(pointSource)
+    points = io.readPoints(source)
 
     dataSizeSinkI = orientDataSizeInverse(dataSizeSink, orientation)
 
@@ -611,69 +609,7 @@ def resamplePointsInverse(source, sink=None, dataSizeSource=None, dataSizeSink=N
     for i in range(3):
         rpoints[:, i] = rpoints[:, i] * scale[i]
 
-    return io.writePoints(pointSink, rpoints)
-
-
-def sagittalToCoronalData(source, sink=None):
-    """Change from saggital to coronal orientation
-
-    Arguments:
-        source (str or array): source data to be reoriented
-        sink (str or None): destination for reoriented image
-
-    Returns:
-        str or array: reoriented data
-    """
-
-    source = io.readData(source)
-    d = source.ndim
-    if d < 3:
-        raise RuntimeError('sagittalToCoronalData: 3d image required!')
-
-    tp = list(range(d))
-    tp[0:3] = [2, 0, 1]
-    source = source.transpose(tp)
-    source = source[::-1]
-    return io.writeData(sink, source)
-
-
-def _test():
-    """Tests for the Resampling Module"""
-    import clearmap3.Alignment.Resampling as self
-    import iDISCO.IO.IO as io
-    import os, numpy
-
-    fn = os.path.join(basedir, 'Test/Data/OME/16-17-27_0_8X-s3-20HF_UltraII_C00_xyz-Table Z\d{4}.ome.tif')
-    outfn = os.path.join(basedir, "Test/Data/Resampling/test.mhd")
-
-    print(("Making resampled stack " + outfn))
-    print(("source datasize %s" % str(io.dataSize(fn))))
-    data = self.resampleData(fn, sink=None, resolutionSource=(1, 1, 1), orientation=(1, 2, 3),
-                             resolutionSink=(10, 10, 2))
-    print((data.shape))
-    io.writeData(outfn, data)
-
-    data = self.resampleData(fn, sink=None, dataSizeSink=(50, 70, 10), orientation=(1, 2, 3))
-    print((data.shape))
-    io.writeData(outfn, data)
-
-    dataSizeSource, dataSizeSink, resolutionSource, resolutionSink = self.resampleDataSize(
-        dataSizeSource=(100, 200, 303), dataSizeSink=None,
-        resolutionSource=(1, 1, 1), resolutionSink=(5, 5, 5), orientation=(1, 2, 3))
-
-    print((dataSizeSource, dataSizeSink, resolutionSource, resolutionSink))
-
-    points = numpy.array([[0, 0, 0], [1, 1, 1], io.dataSize(fn)])
-    points = points.astype('float')
-    pr = self.resamplePoints(points, dataSizeSource=fn, dataSizeSink=(50, 70, 10), orientation=(1, 2, 3))
-    print(pr)
-
-    pri = self.resamplePointsInverse(pr, dataSizeSource=fn, dataSizeSink=(50, 70, 10), orientation=(-1, 2, 3))
-    print(pri)
-
-    result = self.resampleDataInverse(outfn, os.path.join(basedir, 'Test/Data/OME/resample_\d{4}.ome.tif'),
-                                      dataSizeSource=fn)
-    print(result)
+    return io.writePoints(sink, rpoints)
 
 
 if __name__ == "__main__":

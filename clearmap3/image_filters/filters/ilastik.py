@@ -35,6 +35,8 @@ class PixelClassification(FilterBase):
     """
 
     def __init__(self):
+        self.ram = config.thread_ram_max
+        self.processes = config.processes
         self.project = None
         self.output_channel = 0
         super().__init__(temp_dir = True)
@@ -94,15 +96,17 @@ class PixelClassification(FilterBase):
             o = f'--output_format="{ext}" --output_filename_format="{filename}"'
             return o
 
-    def run_headless(self, args, processes=config.processes, ram=config.thread_ram_max):
+    def run_headless(self, args):
         """Run Ilastik in headless mode with system RAM/prcesses config.
         """
 
-        mem = ram * config.processes
-        RAM = mem // 1000000
+        mem = self.ram * self.processes
+        ram_mb = mem * 1000
 
-        cmd = f' LAZYFLOW_THREADS={processes} LAZYFLOW_TOTAL_RAM_MB={RAM} {config.ilastik_binary} --headless {args}'
-        self.log.debug('Ilastik: running: %s' % cmd)
+        cmd = f'LAZYFLOW_THREADS={self.processes} ' \
+              f'LAZYFLOW_TOTAL_RAM_MB={ram_mb} ' \
+              f'{config.ilastik_binary} --headless {args}'
+        self.log.info(f'running Ilastik command: {cmd}')
         res = os.system(cmd)
 
         if res != 0:
@@ -113,7 +117,7 @@ class PixelClassification(FilterBase):
 
         self._initialize_Ilastik()
 
-        #create temp npy
+        # create temp npy
         input_fn = str((self.temp_dir / Path(self.input.filename).stem).with_suffix('.npy'))
         io.writeData(input_fn, self.input)
         output_fn = str(self.temp_dir / 'out_prelim.npy')
@@ -121,6 +125,9 @@ class PixelClassification(FilterBase):
         ilinp = self._filename_to_input_arg(input_fn)
         ilout = self._filename_to_output_arg(output_fn)
         cmd_args = f'--project="{self.project}" {ilout} {ilinp}'
+
+
+
         self.run_headless(cmd_args)
 
         output = io.readData(output_fn)

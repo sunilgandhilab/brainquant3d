@@ -46,6 +46,8 @@ def _size_filter(int[:,:,::1] img, int minsize, int maxsize, int[:,:,::1] out):
                 lookup_val = arrlookup[val]
                 if lookup_val != 0:
                     out[z,y,x] = val
+                else:
+                    out[z,y,x] = 0
 
     # Return total original label count and dictionary of final labels and respective counts
     label_counts = {i.first: i.second for i in mlookup if i.second != 0}

@@ -126,7 +126,7 @@ class Label(FilterBase):
             ############################## Watershed ##############################
 
             # Get coordinates of all nonzero values in labeled/size-filtered image
-            print('Getting label coordinates...')
+            self.log.debug('Getting label coordinates...')
             marker_locations_filename = os.path.join(self.temp_dir, 'marker_locations.mmap')
             marker_locations = nonzero_coords(labeled_1_img, marker_locations_filename)
 
@@ -138,7 +138,7 @@ class Label(FilterBase):
 
             image_strides = np.array(raw_img.strides, dtype=np.intp) // raw_img.itemsize
 
-            print('Running watershed...')
+            self.log.debug('Running watershed...')
             watershed(raw_img, marker_locations, flat_neighborhood,
                                  bin_img, image_strides, 0,
                                  labeled_1_img, # <-- Output

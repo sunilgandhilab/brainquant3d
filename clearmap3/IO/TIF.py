@@ -21,16 +21,8 @@ def dataSize(filename, **args):
 
     t = tif.tifffile.memmap(filename)
     s = t.shape
-    l = len(s)
 
-    if l <= 3:
-        dims = s[::-1] #reverse dims
-    elif l == 4:
-        dims = (s[2],s[1],s[0],s[3])
-    else:
-        RuntimeError('dataSize: Could not determine data size of ' + filename)
-
-    return io.dataSizeFromDataRange(dims, **args)
+    return io.dataSizeFromDataRange(s, **args)
 
 
 def dataZSize(filename, z = None):
