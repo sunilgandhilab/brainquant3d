@@ -10,7 +10,7 @@ import pip
 import pkgutil
 import shutil
 import tarfile
-import urllib
+import urllib.request as request
 
 from pathlib import Path
 from setuptools import setup
@@ -145,7 +145,7 @@ class install(_install):
         url = 'https://github.com/SuperElastix/elastix/releases/download/5.0.0/elastix-5.0.0-linux.tar.bz2'
         tmp = Path(url).name
         sink = dest / 'elastix-5.0.0-linux'
-        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+        with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
             tar.extractall(sink)
@@ -156,7 +156,7 @@ class install(_install):
         tmp = Path(url).name
 
         sink = dest
-        with urllib.request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+        with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
             tar.extractall(sink)
