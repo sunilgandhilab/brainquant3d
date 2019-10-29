@@ -21,9 +21,13 @@ from distutils.extension import Extension
 
 from clearmap3._version import __version__
 
-#if sys.platform not in ['linux']:
-#    import tarfile
-#    raise EnvironmentError(f'platform {sys.platform} not supported.')
+if sys.platform not in ['linux', 'darwin']:
+    raise EnvironmentError(f'Platform {sys.platform} not supported.')
+
+if sys.platform == 'linux':
+    opencv_libs = '.lib-linux'
+elif sys.platform == 'darwin':
+    opencv_libs = '.lib-osx'
 
 USE_CYTHON = 'auto'
 
@@ -56,9 +60,9 @@ if USE_CYTHON:
                   sources=["clearmap3/image_filters/filters/label/_connect.pyx"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join('clearmap3/.lib', f) for f in os.listdir(
-                      'clearmap3/.lib')],
-                  runtime_library_dirs=['$ORIGIN/../../../.lib']
+                  extra_link_args=[os.path.join(f'clearmap3/{opencv_libs}', f) for f in os.listdir(
+                      f'clearmap3/{opencv_libs}')],
+                  runtime_library_dirs=[f'$ORIGIN/../../../{opencv_libs}']
                   ),
         Extension("clearmap3.image_filters.filters.label._threshold",
                   sources=["clearmap3/image_filters/filters/label/_threshold.pyx"],
@@ -103,9 +107,9 @@ else:
                   sources=["clearmap3/image_filters/filters/label/_connect.cpp"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join('clearmap3/.lib', f) for f in os.listdir(
-                      'clearmap3/.lib')],
-                  runtime_library_dirs=['$ORIGIN/../../../.lib']
+                  extra_link_args=[os.path.join(f'clearmap3/{opencv_libs}', f) for f in os.listdir(
+                      f'clearmap3/{opencv_libs}')],
+                  runtime_library_dirs=[f'$ORIGIN/../../../{opencv_libs}']
                   ),
         Extension("clearmap3.image_filters.filters.label._threshold",
                   sources=["clearmap3/image_filters/filters/label/_threshold.cpp"],
