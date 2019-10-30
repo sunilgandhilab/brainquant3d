@@ -4,7 +4,7 @@ from ._watershed import _watershed
 
 
 def watershed(raw_image, marker_locations, flat_neighborhood, mask_image, image_strides,
-              compactness, output_image, wsl=False, invert=False):
+              output_image, invert=False):
 
 
     original_ndim = raw_image.ndim
@@ -20,7 +20,7 @@ def watershed(raw_image, marker_locations, flat_neighborhood, mask_image, image_
         output_image.shape = raw_image.shape
 
     _watershed(raw_image, marker_locations, flat_neighborhood, mask_image, image_strides,
-              compactness, output_image, wsl=False, invert=False)
+              output_image, invert=invert)
 
     if original_ndim == 2:
         raw_image.shape = raw_image.shape[1:]
