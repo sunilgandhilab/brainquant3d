@@ -15,6 +15,7 @@ import numpy as np
 cimport numpy as cnp
 cimport cython
 
+
 from libc.math cimport sqrt
 
 from posix.mman cimport *
@@ -92,9 +93,7 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
                       cnp.intp_t[::1] structure,
                       cnp.ndarray[cnp.uint8_t, ndim=3] mask,
                       cnp.intp_t[::1] strides,
-                      cnp.double_t compactness,
                       cnp.ndarray[cnp.int32_t, ndim=3] output,
-                      DTYPE_BOOL_t wsl,
                       DTYPE_BOOL_t invert=False):
     """Perform watershed algorithm using a raveled image and neighborhood.
 
@@ -120,15 +119,9 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
         An array representing the number of steps to move along each dimension.
         This is used in computing the Euclidean distance between raveled
         indices.
-    compactness : float
-        A value greater than 0 implements the compact watershed algorithm
-        (see .py file).
     output : numpy.memmap object
         The output array, which must already contain nonzero entries at all the
         seed locations.
-    wsl : bool
-        Parameter indicating whether the watershed line is calculated.
-        If wsl is set to True, the watershed line is calculated.
     invert : bool
         Parameter indicating whether to invert the image. Default: False.
     """
@@ -139,7 +132,6 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
     cdef Py_ssize_t age = 1
     cdef Py_ssize_t index = 0
     cdef Py_ssize_t neighbor_index = 0
-    cdef DTYPE_BOOL_t compact = (compactness > 0)
 
     cdef Heap *hp = <Heap *> heap_from_numpy2()
 
@@ -199,7 +191,7 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
     ######################################################################
 
-    cdef long factor = -1 if invert else 1
+    cdef INPUT_DTYPE factor = -1 if invert else 1
 
     cdef long marker_size = marker_locations.size
 
@@ -214,27 +206,6 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
 
         while hp.items > 0:
             heappop(hp, &elem)
-
-            if compact or wsl:
-                # in the compact case, we need to label pixels as they come off
-                # the heap, because the same pixel can be pushed twice, *and* the
-                # later push can have lower cost because of the compactness.
-                #
-                # In the case of preserving watershed lines, a similar argument
-                # applies: we can only observe that all neighbors have been labeled
-                # as the pixel comes off the heap. Trying to do so at push time
-                # is a bug.
-                if mmapped_output_offset[elem.index] and elem.index != elem.source:
-                    # non-marker, already visited from another neighbor
-                    continue
-                if wsl:
-                    # if the current element has different-labeled neighbors and we
-                    # want to preserve watershed lines, we mask it and move on
-
-                    #if _diff_neighbors(mmapped_output, structure, mmapped_mask, elem.index):
-                    if _diff_neighbors(memview_output, structure, memview_mask, elem.index):
-                        continue
-                mmapped_output_offset[elem.index] = mmapped_output_offset[elem.source]
 
             for i in range(nneighbors):
                 # get the flattened address of the neighbor
@@ -251,18 +222,9 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
 
                 age += 1
                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
-                if compact:
-                    new_elem.value += (compactness *
-                                       _euclid_dist(neighbor_index, elem.source,
-                                                    strides))
-                elif not wsl:
-                    # in the simplest watershed case (no compactness and no
-                    # watershed lines), we can label a pixel at the time that
-                    # we push it onto the heap, because it can't be reached with
-                    # lower cost later.
-                    # This results in a very significant performance gain, see:
-                    # https://github.com/scikit-image/scikit-image/issues/2636
-                    mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
+
+                mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
+
                 new_elem.age = age
                 new_elem.index = neighbor_index
                 new_elem.source = elem.source
