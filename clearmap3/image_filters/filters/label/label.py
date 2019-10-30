@@ -140,9 +140,9 @@ class Label(FilterBase):
 
             self.log.debug('Running watershed...')
             watershed(raw_img, marker_locations, flat_neighborhood,
-                                 bin_img, image_strides, 0,
+                                 bin_img, image_strides,
                                  labeled_1_img, # <-- Output
-                                 False, True) # <-- Inverted watershed
+                                 True) # <-- Inverted watershed
 
             #######################################################################
 
