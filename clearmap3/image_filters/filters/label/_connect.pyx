@@ -1,19 +1,21 @@
 import numpy as np
 cimport cython
-cimport numpy as np
+cimport numpy as cnp
 
 from libcpp.map cimport map
 from libcpp.pair cimport pair
+
+from libc.stdio cimport printf
 
 from _connect cimport *
 
 DTYPE = np.int32
 
-ctypedef np.int32_t DTYPE_t
+ctypedef cnp.int32_t DTYPE_t
 
 @cython.boundscheck(False) # turn off bounds-checking for entire function
 @cython.wraparound(False)  # turn off negative index wrapping for entire function
-def _connect(unsigned char[:,:,::1] img, int[:,:,::1] out):
+def _connect(cnp.ndarray[unsigned char, ndim=3] img, cnp.ndarray[DTYPE_t, ndim=3] out): #unsigned char[:,:,::1] img, int[:,:,::1] out):
 
     cdef int zmax = img.shape[0]
     cdef int ymax = img.shape[1]
@@ -123,7 +125,6 @@ def _connect(unsigned char[:,:,::1] img, int[:,:,::1] out):
                 if lookup_val != 0:
                     final_lookup[lookup_key] = lookup_val
                     next_lookup_key = lookup_val
-
 
     # Apply final lookup
     for z in range(zmax):

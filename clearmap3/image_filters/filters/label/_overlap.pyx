@@ -76,8 +76,10 @@ def _overlap(label_0, label_1, output):
         # Deallocate mapped memory after processing each frome
         mmapped_label_0 -= label_0.offset
         munmap(mmapped_label_0, label_0.size * sizeof(int) + label_0.offset)
+        munmap(mmapped_label_0_offset, label_0.size * sizeof(int))
         mmapped_label_1 -= label_1.offset
         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
+        munmap(mmapped_label_1_offset, label_1.size * sizeof(int))
 
     # Remove labels that did not overlap
     for z in range(zmax):
@@ -115,7 +117,9 @@ def _overlap(label_0, label_1, output):
         # Deallocate mapped memory after processing each frome
         mmapped_label_1 -= label_1.offset
         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
+        munmap(mmapped_label_1_offset, label_1.size * sizeof(int))
         mmapped_output -= output.offset
         munmap(mmapped_output, output.size * sizeof(int) + output.offset)
+        munmap(mmapped_output_offset, output.size * sizeof(int))
 
 

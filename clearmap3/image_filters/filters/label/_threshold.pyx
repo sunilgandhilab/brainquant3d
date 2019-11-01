@@ -92,6 +92,9 @@ cnp    ----------
         # Deallocate mapped memory after processing each frome
         mmapped_image -= image.offset
         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+        munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+
         mmapped_output -= output.offset
         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
+        munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))
 

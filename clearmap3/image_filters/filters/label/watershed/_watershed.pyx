@@ -231,4 +231,20 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
 
                 heappush(hp, &new_elem)
 
+    mmapped_image -= image.offset
+    munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+    munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+
+    mmapped_marker_locations -= marker_locations.offset
+    munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+    munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+
+    mmapped_mask -= mask.offset
+    munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+    munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+
+    mmapped_output -= output.offset
+    munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+    munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+
     heap_done(hp)

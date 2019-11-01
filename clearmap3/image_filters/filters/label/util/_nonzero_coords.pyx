@@ -51,6 +51,8 @@ def _nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):
                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))
                         i += 1
 
+            mmapped_image -= image.offset
             munmap(mmapped_image, image.size * sizeof(DTYPE_t) + image.offset)
+            munmap(mmapped_image_offset, image.size * sizeof(DTYPE_t))
 
     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file

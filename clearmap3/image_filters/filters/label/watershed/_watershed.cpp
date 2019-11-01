@@ -4,11 +4,11 @@
 {
     "distutils": {
         "depends": [
-            "/home/admin/.local/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/home/admin/.local/lib/python3.6/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/home/translucence/.local/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/home/translucence/.local/lib/python3.6/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "include_dirs": [
-            "/home/admin/.local/lib/python3.6/site-packages/numpy/core/include"
+            "/home/translucence/.local/lib/python3.6/site-packages/numpy/core/include"
         ],
         "language": "c++",
         "name": "clearmap3.image_filters.filters.label.watershed._watershed",
@@ -5878,7 +5878,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
- *     heap_done(hp)
+ *     mmapped_image -= image.offset
  */
             __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
@@ -5907,6 +5907,234 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 
   /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
+ * 
+ *     mmapped_image -= image.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":235
+ * 
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":236
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":238
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":239
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":240
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_mask -= mask.offset
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":242
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ *     mmapped_mask -= mask.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":243
+ * 
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":244
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_output -= output.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":246
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ *     mmapped_output -= output.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":247
+ * 
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":248
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))             # <<<<<<<<<<<<<<
+ * 
+ *     heap_done(hp)
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":250
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
@@ -7025,7 +7253,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
- *     heap_done(hp)
+ *     mmapped_image -= image.offset
  */
             __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
@@ -7054,6 +7282,234 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 
   /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
+ * 
+ *     mmapped_image -= image.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":235
+ * 
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float64_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":236
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float64_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":238
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":239
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":240
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_mask -= mask.offset
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":242
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ *     mmapped_mask -= mask.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":243
+ * 
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":244
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_output -= output.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":246
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ *     mmapped_output -= output.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":247
+ * 
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":248
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))             # <<<<<<<<<<<<<<
+ * 
+ *     heap_done(hp)
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":250
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
@@ -8172,7 +8628,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
- *     heap_done(hp)
+ *     mmapped_image -= image.offset
  */
             __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
@@ -8201,6 +8657,234 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 
   /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
+ * 
+ *     mmapped_image -= image.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":235
+ * 
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint8_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":236
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint8_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":238
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":239
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":240
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_mask -= mask.offset
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":242
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ *     mmapped_mask -= mask.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":243
+ * 
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":244
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_output -= output.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":246
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ *     mmapped_output -= output.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":247
+ * 
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":248
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))             # <<<<<<<<<<<<<<
+ * 
+ *     heap_done(hp)
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":250
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
@@ -9319,7 +10003,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
- *     heap_done(hp)
+ *     mmapped_image -= image.offset
  */
             __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
@@ -9348,6 +10032,234 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 
   /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
+ * 
+ *     mmapped_image -= image.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":235
+ * 
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint16_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":236
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint16_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":238
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":239
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":240
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_mask -= mask.offset
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":242
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ *     mmapped_mask -= mask.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":243
+ * 
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":244
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_output -= output.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":246
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ *     mmapped_output -= output.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":247
+ * 
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":248
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))             # <<<<<<<<<<<<<<
+ * 
+ *     heap_done(hp)
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":250
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
@@ -10466,7 +11378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
- *     heap_done(hp)
+ *     mmapped_image -= image.offset
  */
             __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
@@ -10495,6 +11407,234 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 
   /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
+ * 
+ *     mmapped_image -= image.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":235
+ * 
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_int32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":236
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_int32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":238
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":239
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":240
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_mask -= mask.offset
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":242
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ *     mmapped_mask -= mask.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":243
+ * 
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":244
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_output -= output.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":246
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ *     mmapped_output -= output.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":247
+ * 
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":248
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))             # <<<<<<<<<<<<<<
+ * 
+ *     heap_done(hp)
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":250
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
@@ -11613,7 +12753,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
- *     heap_done(hp)
+ *     mmapped_image -= image.offset
  */
             __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
@@ -11642,6 +12782,234 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 
   /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
+ * 
+ *     mmapped_image -= image.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 234, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":235
+ * 
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":236
+ *     mmapped_image -= image.offset
+ *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":238
+ *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":239
+ * 
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 239, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":240
+ *     mmapped_marker_locations -= marker_locations.offset
+ *     munmap(mmapped_marker_locations, marker_locations.size * sizeof(long) + marker_locations.offset)
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_mask -= mask.offset
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":242
+ *     munmap(mmapped_marker_locations_offset, marker_locations.size * sizeof(long))
+ * 
+ *     mmapped_mask -= mask.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 242, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":243
+ * 
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":244
+ *     mmapped_mask -= mask.offset
+ *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))             # <<<<<<<<<<<<<<
+ * 
+ *     mmapped_output -= output.offset
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":246
+ *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
+ * 
+ *     mmapped_output -= output.offset             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_3); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 246, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_6);
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":247
+ * 
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)             # <<<<<<<<<<<<<<
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
+ * 
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 247, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":248
+ *     mmapped_output -= output.offset
+ *     munmap(mmapped_output, output.size * sizeof(DTYPE_INT32_t) + output.offset)
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))             # <<<<<<<<<<<<<<
+ * 
+ *     heap_done(hp)
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
+
+  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":250
+ *     munmap(mmapped_output_offset, output.size * sizeof(DTYPE_INT32_t))
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
