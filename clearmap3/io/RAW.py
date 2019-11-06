@@ -18,7 +18,7 @@ import numpy
 import vtk
 from vtk.util.numpy_support import vtk_to_numpy
 
-import clearmap3.IO as io
+from clearmap3 import io
 import imp
 
 import logging

@@ -2,7 +2,7 @@ import os
 import shutil
 import numpy as np
 import tifffile as tif
-import clearmap3.IO as io
+from clearmap3 import io
 
 import logging
 from clearmap3.utils.chunking import range_to_slices

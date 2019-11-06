@@ -6,7 +6,7 @@ import numpy as np
 import math
 import logging
 
-import clearmap3.IO as io
+from clearmap3 import io
 import clearmap3.analysis._voxelization as vox
 from clearmap3.analysis.colocalization import point_distance
 log = logging.getLogger(__name__)

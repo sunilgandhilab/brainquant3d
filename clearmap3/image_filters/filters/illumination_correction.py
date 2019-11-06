@@ -12,7 +12,7 @@ References:
 import numpy as np
 from scipy.optimize import curve_fit
 
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase
 

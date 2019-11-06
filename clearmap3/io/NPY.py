@@ -22,7 +22,7 @@ import os
 import shutil
 import numpy as np
 
-import clearmap3.IO as io
+from clearmap3 import io
 import imp
 
 import logging

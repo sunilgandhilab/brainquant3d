@@ -9,7 +9,7 @@ from anytree import AnyNode, RenderTree, PostOrderIter, PreOrderIter
 from anytree.exporter import JsonExporter
 
 import clearmap3
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.utils.timer import Timer
 
 

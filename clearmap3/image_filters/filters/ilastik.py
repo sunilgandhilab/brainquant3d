@@ -17,7 +17,7 @@ import os
 import numpy as np
 from pathlib import Path
 
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3 import config
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase

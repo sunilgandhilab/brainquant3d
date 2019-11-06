@@ -3,62 +3,49 @@ import numpy as np
 
 from scipy import ndimage as ndi
 
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.utils.timer import Timer
 from clearmap3.utils.logger import log_parameters
 log = logging.getLogger(__name__)
 
 
-def label_props(img, labels, centerMethod = 'Geo', intensityMethod = 'Sum', areaMethod = True):
+def label_props(img, labels, props):
     """Joins a list of coordiantes from distributed processing based on their IDs into a single list.
         Also. Handles duplicate ID entries bbased on
     Arguments:
         img (np.array): raw image
         labels (np.array): labeled image
-        centerMethod (str or bool): 'Max' sets brightst pixel as center coordinate
-        intensityMethod (str or bool): 'Sum' takes total label intensity.
-        areaMethod (bool): choose whether to calculate area.
+        props (list): list of strings where each string is the attibute from region_props to export
     Returns:
        array: label coordinates (list of tuples), intensities (list), sizes (list)
     """
+
     img = io.readData(img)
     labels = io.readData(labels)
 
     timer = Timer()
-    log_parameters(centerMethod = centerMethod, intensityMethod = intensityMethod, areaMethod = areaMethod)
+    log_parameters(props=props)
 
     # get label properties
     regions = region_props(labels, img)
-    # get relavant properties
-    coordinates = []
-    intensities = []
-    areas = []
-    for region in regions:
-        # get center coordinates
-        if centerMethod == 'Max':
-            coord = region.max_coord()
-        elif centerMethod == 'Geo':
-            coord = tuple(int(i) for i in region.centroid())
-        # get label intensity
-        if intensityMethod == 'Sum':
-            inten = region.sum_intensity()
-        # get label area
-        if areaMethod:
-            area = region.area()
 
-        # add props to output
-        coordinates.append(coord)
-        intensities.append(inten)
-        areas.append(area)
+    # get relavant properties
+    res = []
+    for prop in props:
+        prop_res = []
+        for region in regions:
+            method = getattr(region, prop)
+            prop_res.append(method())
+        res.append(prop_res)
 
     timer.log_elapsed()
 
-    return coordinates, intensities, areas, labels
+    return res
 
 
 def region_props(label_image, intensity_image=None):
     """ Measure properties of labeled image regions.
-    Similar to skimage.regionprops but handles memory more efficiently by removing cacheing of arrays.
+    Similar to skimage.regionprops but more memory efficient by not cacheing of arrays.
 
     Args:
         label_image (np.ndarray): labeled image
@@ -71,9 +58,8 @@ def region_props(label_image, intensity_image=None):
     if label_image.ndim not in (2, 3):
         raise TypeError('Only 2d and 3d images are supported.')
 
-    if isinstance(intensity_image, np.ndarray):
-        if not intensity_image.shape == label_image.shape:
-            raise ValueError('Label and intensity image must have the same shape.')
+    if not intensity_image.shape == label_image.shape:
+        raise ValueError('Label and intensity image must have the same shape.')
 
     if not np.issubdtype(label_image.dtype, np.integer):
         raise TypeError('Label image must be integer type.')
@@ -143,18 +129,18 @@ class RegionProperties(object):
         """
         return self._label_image == self.label
 
-    def max_intensity(self):
+    def max(self):
         return np.max(self._intensity_image[self.image()])
 
     def max_coord(self):
         return np.unravel_index(self._intensity_image[self.image()].argmax(), self._intensity_image.shape)
 
-    def mean_intensity(self):
+    def mean(self):
         return np.mean(self._intensity_image[self.image()])
 
-    def min_intensity(self):
+    def min(self):
         return np.min(self._intensity_image[self.image()])
 
-    def sum_intensity(self):
+    def sum(self):
         return np.sum(self._intensity_image[self.image()])
 

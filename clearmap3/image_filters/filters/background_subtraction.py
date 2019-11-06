@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 import uuid
-import clearmap3.IO as io
-import clearmap3.IO.TIF as tif
+from clearmap3 import io
+import clearmap3.io.TIF as tif
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase
 from clearmap3.image_filters.filters._background_subtraction import subtract_background_rolling_ball

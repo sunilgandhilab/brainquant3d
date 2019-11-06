@@ -29,7 +29,7 @@ import bz2
 import os.path
 from datetime import datetime
 
-import clearmap3.IO as io
+from clearmap3 import io
 import imp
 
 import logging

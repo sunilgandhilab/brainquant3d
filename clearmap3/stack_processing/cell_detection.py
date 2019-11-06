@@ -10,7 +10,7 @@ import uuid
 from multiprocessing import Pool
 
 from clearmap3 import config
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.utils.timer import Timer
 from clearmap3.utils.files import unique_temp_dir
 from clearmap3.utils.chunking import chunk_ranges
@@ -53,6 +53,7 @@ def process_flow(source,
                  overlap=10,
                  min_sizes=(30, 30, 30),
                  aspect_ratio=(1, 10, 10),
+                 output_properties = [],
                  size=config.thread_ram_max,
                  sink=None,
                  processes=config.processes):
@@ -69,6 +70,8 @@ def process_flow(source,
         overlap (int) :overlap between chunks in voxels
         min_sizes (tuple): minimum voxel size of chunk along each axis
         aspect_ratio (tuple): ratio to maintain between axis
+        output_properties: (list): properties to include in output. See
+        label_properties.region_props for more info
         size (int): max total size of substack in Gb
         sink (tuple): files to save detected cell info to.
             Coordinates will be saved to first file and properties segmented properties to second.
@@ -78,15 +81,23 @@ def process_flow(source,
         (tuple): coordinates, properties as tuple of np.ndarrays.
     """
 
+
     temp_dir = unique_temp_dir('clearmap')
     os.makedirs(temp_dir)
-    source = io.copyData(source, temp_dir / (str(uuid.uuid4()) + '.tif'), x=x, y=y, z=z, processes=1)
+    source_fn = temp_dir / (str(uuid.uuid4()) + '.tif')
+    log.verbose(f'Copying raw data to: {source_fn}')
+
+    if len(output_properties) > 0 and output_properties[0] != 'centroid':
+        output_properties.insert(0,'centroid')
+
+    source = io.copyData(source, source_fn, x=x, y=y, z=z)
 
     unique_chunks, overlap_chunks = chunk_ranges(source, overlap=overlap, min_sizes=min_sizes,
                                                  aspect_ratio=aspect_ratio, size=size)
     log.verbose(f'Number of chunks: {len(unique_chunks)}')
 
-    argdata = [(flow, source, overlap_chunks[i], unique_chunks[i], temp_dir) for i in
+    argdata = [(flow, output_properties, source, overlap_chunks[i], unique_chunks[i], temp_dir)
+               for i in
                range(len(overlap_chunks))]
     try:
         if processes == 1:
@@ -94,12 +105,17 @@ def process_flow(source,
         else:
             pool = Pool(processes=processes, maxtasksperchild=1)
             results = pool.starmap(processSubStack, argdata)
+            pool.close()
     except Exception as err:
         shutil.rmtree(temp_dir, ignore_errors=True)
         raise err
 
-
-    results = join_points(results, unique_chunks)
+    results = [results[0] for i in range(200)]
+    unique_chunks = [unique_chunks[0] for i in range(200)]
+    overlap_chunks = [overlap_chunks[0] for i in range(200)]
+    # join results
+    results = join_points(results, unique_chunks, overlap_chunks)
+    results = jsonify_points(output_properties, results)
 
     shutil.rmtree(temp_dir, ignore_errors=True)
     if sink:
@@ -108,44 +124,70 @@ def process_flow(source,
     return results
 
 
-def join_points(results, absolute_ranges):
+def join_points(results, unique_ranges, overlap_ranges):
     """Joins a list of points obtained from processing a stack in chunks. converts coordinates to absolute based on range.
     Only keeps points in given range.
 
     Arguments:
-        results (list): list of point results from the individual sub-processes
-        absolute_ranges (list or None): list of all sub-stack information, see :ref:`SubStack`
+        results (list): list of point results from the individual sub-processes.
+        unique_ranges (list): list of chunk indices of the unique portion of each chunk in form [[x_start,x_end],
+        [y_start,y_end],[z_start,z_end])
+        overlap_ranges: (list) list of chunk indices of the full chunk with overlap in form [[
+        x_start,x_end], [y_start,y_end],[z_start,z_end])
 
     Returns:
        tuple: joined points, joined intensities
     """
 
-    nchunks     = len(results)
-    pointlist   = [results[i][0] for i in range(nchunks)]
-    intensities = [results[i][1] for i in range(nchunks)]
+    nchunks = len(results)
+    all_coords  = [results[i][0] for i in range(nchunks)]
+    all_props   = [results[i][1:] for i in range(nchunks)]
 
-    filtered_results  = []
-    filtered_resultsi = []
+    filtered_data = None
 
     for i in range(nchunks):
-        cts = pointlist[i]
-        cti = intensities[i]
+        coords = np.array(all_coords[i])
+        props  = np.array(all_props[i]).T
 
-        if cts.size > 0:
+        if len(coords) > 0:
             # covert to abs coordinates
-            min_coord = tuple(rng[0] for rng in absolute_ranges[i])
-            max_coord = tuple(rng[1] for rng in absolute_ranges[i])
-            cts = cts + min_coord
+            min_coord = tuple(rng[0] for rng in unique_ranges[i])
+            max_coord = tuple(rng[1] for rng in unique_ranges[i])
+            coords = coords + tuple(rng[0] for rng in overlap_ranges[i])
 
-            # remove points out of range
-            mask = np.logical_and(cts >= min_coord, cts < max_coord)
+            # generate mask
+            mask = np.logical_and(coords >= min_coord, coords < max_coord)
             mask = np.all(mask, axis=1)
-            filtered_results.append(cts[mask])
 
-            # remove points in intensity array as well
-            filtered_resultsi.append(cti[mask])
+            # join data
+            data = np.concatenate((coords, props), axis=1)
 
-    if not results:
+            if not isinstance(filtered_data, np.ndarray):
+                filtered_data = data
+            else:
+                filtered_data = np.concatenate((filtered_data, data), axis=0)
+
+    if not isinstance(filtered_data, np.ndarray):
         return np.zeros((0, 3))
     else:
-        return np.concatenate(filtered_results), np.concatenate(filtered_resultsi)
+        return filtered_data.T.tolist()
+
+
+def jsonify_points(keys, values):
+
+    res = {}
+    i = 0
+    for k in keys:
+        if k == 'centroid':
+            res['z'] = values[i]
+            res['y'] = values[i+1]
+            res['x'] = values[i+2]
+            i += 3
+        else:
+            res[k] = values[i]
+            i += 1
+
+    if i != len(values):
+        raise ValueError('Too many point properties for the number of keys')
+
+    return res

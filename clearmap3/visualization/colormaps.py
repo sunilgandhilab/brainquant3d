@@ -2,7 +2,7 @@ import random
 import logging
 import numpy as np
 
-import clearmap3.IO as io
+from clearmap3 import io
 
 
 log = logging.getLogger(__name__)

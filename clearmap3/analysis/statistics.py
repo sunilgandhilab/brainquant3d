@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import scipy
 from scipy import stats, interpolate
-import clearmap3.IO as io
+from clearmap3 import io
 
 import logging
 log = logging.getLogger(__name__)

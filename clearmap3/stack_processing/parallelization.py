@@ -1,10 +1,9 @@
 
 import os
-import numpy as np
 import uuid
 from clearmap3.utils.timer import Timer
-import clearmap3.IO as io
-from clearmap3.IO.FileList import splitFileExpression
+from clearmap3 import io
+from clearmap3.io.FileList import splitFileExpression
 import logging
 
 from clearmap3.utils.chunking import unique_slice
@@ -14,16 +13,19 @@ from clearmap3.analysis.label_properties import label_props
 log = logging.getLogger(__name__)
 
 #define the subroutine for the processing
-def processSubStack(flow, source, overlap_indices, unique_indices, temp_dir):
+def processSubStack(flow, output_properties, source, overlap_indices, unique_indices, temp_dir):
     """ Helper to process stack in parallel
 
     Args:
         flow (tuple): images filters to run in sequential order.
             Entries should be a dict and will be passed to *clearmap3.image_filters.filter_image*.
             The input image to each filter will the be output of the pevious filter.
+        output_properties: (list): properties to include in output. See
+        label_properties.region_props for more info
         source (str): path to image file to analyse.
         overlap_indices (tuple or list): list of indices as [start,stop] along each axis to analyse.
-        unique_indices (tuple or list): list of indices as [start,stop] along each axis corresponding
+        unique_indices (tuple or list): list of indices as [start,stop] along each axis
+        corresponding
             to the non-overlapping portion of the image being analyzed.
         temp_dir (str): temp dir to be used for processing.
 
@@ -75,13 +77,11 @@ def processSubStack(flow, source, overlap_indices, unique_indices, temp_dir):
             io.writeData(save, unique, substack=unique_indices)
 
     # get label properties and return
-    centers, cintensity, csize, labels = label_props(raw, filtered_im)
-    cintensity = np.array(cintensity)
-    csize = np.array(csize)
-    centers = np.array(centers)
-
-    seg = (centers, np.vstack((cintensity, csize)).transpose())
+    if output_properties:
+        props = label_props(raw, filtered_im, output_properties)
+    else:
+        props = []
 
     os.remove(mmapFile)
     timer.log_elapsed(prefix='Processed chunk')
-    return seg
+    return props

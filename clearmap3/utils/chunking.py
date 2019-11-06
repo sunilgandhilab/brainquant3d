@@ -3,7 +3,7 @@ import numpy as np
 from typing import Union
 from itertools import product
 
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3 import config
 
 def range_to_slices(ranges:list):
@@ -13,7 +13,7 @@ def range_to_slices(ranges:list):
         ranges (list): list of ranges in format [[start,stop],[start,stop],]
 
     Returns:
-        list of sloce objects
+        list of slice objects
     """
 
     return tuple(slice(r[0], r[1], None) for r in ranges)
@@ -93,7 +93,10 @@ def chunk_ranges(source:Union[str, np.ndarray],
         size (int): max total size of substack in Gb
 
     Returns:
-        (list) list of chunk indices each index is in form [[x_start,x_end],[y_start,y_end],[z_start,z_end])
+        (list) list of chunk indices of the unique portion of each chunk in form [[x_start,x_end],
+        [y_start,y_end],[z_start,z_end])
+        (list) list of chunk indices of the full chunk with overlap in form [[x_start,x_end],
+        [y_start,y_end],[z_start,z_end])
 
 
     """
@@ -109,7 +112,6 @@ def chunk_ranges(source:Union[str, np.ndarray],
         raise ValueError('overnlap cannot be smaller thn any value in min_size')
 
     chunk_size = size * (1.28 * 10**8) / source.itemsize # in voxels
-
 
     indices = []
     if chunk_size < source.size:
@@ -145,7 +147,7 @@ def chunk_ranges(source:Union[str, np.ndarray],
 
         return unique_chunks, overlap_chunks
     else:
-        return [[[0, ax] for ax in source.shape]] * 2
+        return [[[[0, ax] for ax in source.shape]]] * 2
 
 def chunk_ranges_z_only(source:Union[str, np.ndarray],
                   overlap:int = 10,

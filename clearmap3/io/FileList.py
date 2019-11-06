@@ -13,7 +13,7 @@ import multiprocessing
 
 
 import clearmap3
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.utils.files import sort
 
 import logging
@@ -241,7 +241,7 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
             return filename
 
 
-def copyData(source, sink, processes = clearmap3.config.processes, x = None, y = None, z = None, **kwargs):
+def copyData(source, sink, processes = 1, x = None, y = None, z = None, **kwargs):
     """Copy a data file from source to sink when for entire list of files
     
     Arguments:
@@ -299,7 +299,7 @@ def copyData(source, sink, processes = clearmap3.config.processes, x = None, y =
         idxs        = list(range(len(files)))
         z_f_chunks  = [files[i::processes] for i in range(processes)]
         z_i_chunks  = [idxs[i::processes] for i in range(processes)]
-        tif.tifffile.memmap(sink, dtype=data_type, shape=(Zsize, Ysize, Xsize), bigtiff=True)
+        im = io.empty(sink, dtype=data_type, shape=(Zsize, Ysize, Xsize))
         args = [(z_f_chunks[i], idxs, sink, x, y) for i, idxs in enumerate(z_i_chunks)]
 
         # setup pool

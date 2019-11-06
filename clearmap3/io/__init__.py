@@ -39,7 +39,7 @@ The image format is inferred automatically from the file name extension.
 For example to read image data use :func:`~clearmap3.IO.IO.readData`:
 
     >>> import os
-    >>> import clearmap3.IO as io
+    >>> from clearmap3 import io
     >>> import clearmap3.    >>> filename = os.path.join(clearmap3.config.ClearMap_path,'Test/Data/Tif/test.tif')
     >>> data = io.readData(filename)
     >>> print data.shape
@@ -48,7 +48,7 @@ For example to read image data use :func:`~clearmap3.IO.IO.readData`:
 To write image data use :func:`~clearmap3.IO.IO.writeData`:
 
     >>> import os, numpy
-    >>> import clearmap3.IO as io
+    >>> from clearmap3 import io
     >>> import clearmap3.    >>> filename = os.path.join(clearmap3.config.ClearMap_path,'Test/Data/Tif/test.tif')
     >>> data = numpy.random.rand(20,50,10)
     >>> data[5:15, 20:45, 2:9] = 0
@@ -65,7 +65,7 @@ parallel processing, without rewriting the data analysis routines.
 For example:
 
     >>> import numpy
-    >>> import clearmap3.IO as io
+    >>> from clearmap3 import io
     >>> data = numpy.random.rand(20,50,10)
     >>> res = io.writeData(None, data)
     >>> print res.shape
@@ -75,7 +75,7 @@ Range parameter can be passed in order to only load sub sets of image data,
 useful when the images are very large. For example to load a sub-image:
 
     >>> import os, numpy
-    >>> import clearmap3.IO as io
+    >>> from clearmap3 import io
     >>> import clearmap3.    >>> filename = os.path.join(clearmap3.config.ClearMap_path,'Test/Data/Tif/test.tif')
     >>> res = io.readData(filename, data, x = (0,3), y = (4,6), z = (1,4))
     >>> print res.shape
@@ -114,7 +114,7 @@ The point file format is inferred automatically from the file name extension.
 For example to read point data use :func:`~clearmap3.IO.IO.readPoints`:
 
     >>> import os
-    >>> import clearmap3.IO as io
+    >>> from clearmap3 import io
     >>> import clearmap3.    >>> filename = os.path.join(clearmap3.config.ClearMap_path, stack_processing')
     >>> points = io.readPoints(filename)
     >>> print points.shape
@@ -123,7 +123,7 @@ For example to read point data use :func:`~clearmap3.IO.IO.readPoints`:
 and to write it use :func:`~clearmap3.IO.IO.writePoints`:
 
     >>> import os, numpy
-    >>> import clearmap3.IO as io
+    >>> from clearmap3 import io
     >>> import clearmap3.    >>> filename = os.path.join(clearmap3.config.ClearMap_path, stack_stack_processing >>> points = numpy.random.rand(5,3)
     >>> io.writePoints(filename, points)
 
@@ -136,6 +136,6 @@ Summary
 #:copyright: Copyright 2015 by Christoph Kirst, The Rockefeller University, New York City
 #:license: GNU, see LICENSE.txt for details.
 
-from clearmap3.IO.IO import *
+from clearmap3.io.io import *
 
 

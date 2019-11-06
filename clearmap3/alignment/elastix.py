@@ -24,7 +24,7 @@ import numpy as np
 import re
 
 from clearmap3 import config
-import clearmap3.IO as io
+from clearmap3 import io
 
 import logging
 log = logging.getLogger(__name__)

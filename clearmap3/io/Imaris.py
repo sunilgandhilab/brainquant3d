@@ -26,7 +26,7 @@ Example:
 import h5py
 import numpy
 
-import clearmap3.IO as io
+from clearmap3 import io
 import imp
 
 import logging

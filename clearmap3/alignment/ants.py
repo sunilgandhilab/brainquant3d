@@ -22,7 +22,7 @@ import ants
 import numpy as np
 
 from clearmap3 import config
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.utils.logger import log_parameters
 
 import logging

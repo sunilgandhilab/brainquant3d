@@ -9,7 +9,7 @@ The module utilizes the csv file writer/reader from numpy.
 import numpy as np
 import pandas as pd
 
-import clearmap3.IO as io
+from clearmap3 import io
 
 import logging
 log = logging.getLogger(__name__)
@@ -40,9 +40,14 @@ def readPoints(filename, **args):
     Returns:
         str: file name
     """
+    data = pd.read_csv(filename)
 
-    points = np.genfromtxt(filename, delimiter=',')
-    return io.pointsToRange(points, **args)
+    #imagej format
+    if {'Slice', 'Y', 'X'} <= set(data.columns):
+        return np.array([data['Slice'], data['Y'], data['X']]).T
+
+    else:
+        raise ValueError(f'could not infer points format from {filename}')
 
 
 def writeData(filename, data, **kwargs):

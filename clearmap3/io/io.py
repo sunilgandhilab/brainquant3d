@@ -17,17 +17,20 @@ import importlib
 import shutil
 from pathlib import Path
 
+from clearmap3.utils.chunking import range_to_slices
+
 import logging
 log = logging.getLogger(__name__)
 self = sys.modules[__name__]
 
-pointFileExtensions = ['csv', 'txt', 'npy', 'vtk', 'ims']
+pointFileExtensions = ['csv', 'txt', 'npy', 'vtk', 'ims', 'json']
 """list of extensions supported as a point data file"""
 
-pointFileTypes = ['CSV', 'NPY', 'VTK', 'Imaris']
+pointFileTypes = ['CSV', 'NPY', 'VTK', 'Imaris', 'JSON']
 """list of point data file types"""
 
-pointFileExtensionToType = {'csv' : 'CSV', 'txt' : 'CSV', 'npy' : 'NPY', 'vtk' : 'VTK', 'ims' : 'Imaris'}
+pointFileExtensionToType = {'csv' : 'CSV', 'txt' : 'CSV', 'npy' : 'NPY', 'vtk' : 'VTK',
+                            'ims' : 'Imaris', 'json': 'json'}
 """map from point file extensions to point file types"""
 
 dataFileExtensions = ['tif', 'tiff', 'mhd', 'raw', 'zraw', 'ims', 'nrrd', 'npy', 'NPY', 'csv']
@@ -232,7 +235,7 @@ def dataFileNameToModule(filename):
     """          
     
     ft = dataFileNameToType(filename)
-    return importlib.import_module('clearmap3.IO.' + ft)
+    return importlib.import_module('clearmap3.io.' + ft)
 
 
 def pointFileNameToModule(filename):
@@ -246,7 +249,7 @@ def pointFileNameToModule(filename):
     """ 
 
     ft = pointFileNameToType(filename)
-    return importlib.import_module('clearmap3.IO.' + ft)
+    return importlib.import_module('clearmap3.io.' + ft)
 
 
 ##############################################################################
@@ -407,28 +410,20 @@ def dataToRange(data, x = None, y = None, z = None):
         :func:`dataSizeFromDataRange`
     """  
 
-    dsize = data.shape
-    d = len(dsize)
+    shape = data.shape
+    d = data.ndim
     rr = []
-    if d > 0:
-        rr.append(toDataRange(dsize[0], r = z))
-    if d > 1:
-        rr.append(toDataRange(dsize[1], r = y))
-    if d > 2:
-        rr.append(toDataRange(dsize[2], r = x))
-    if d > 4:
-        raise RuntimeError('dataToRange: dimension %d to big' % d)
 
-    if d == 1:
-        return data[rr[0][0] : rr[0][1]]
-    elif d == 2:
-        return data[rr[0][0] : rr[0][1], rr[1][0] : rr[1][1]]
-    elif d == 3:
-        return data[rr[0][0] : rr[0][1], rr[1][0] : rr[1][1], rr[2][0] : rr[2][1]]
-    elif d == 4:
-        return data[rr[0][0] : rr[0][1], rr[ 1][0] : rr[1][1], rr[2][0] : rr[2][1], :]
-    else:
-        raise RuntimeError('dataToRange dealing with images of dimension %d not supported' % d)
+    if d > 3:
+        raise RuntimeError('dataToRange: dimension %d to big' % d)
+    if d > 2:
+        rr.append(toDataRange(shape[-3], r = z))
+    if d > 1:
+        rr.append(toDataRange(shape[-2], r = y))
+    if d > 0:
+        rr.append(toDataRange(shape[-1], r = x))
+
+    return data[range_to_slices(rr)]
 
 
 ##############################################################################
@@ -535,7 +530,12 @@ def copyData(source, sink, **kwargs):
     See Also:
         :func:`copyFile`, :func:`convertData`
     """     
-    
+
+    if isinstance(source, Path):
+        source = source.as_posix()
+    if isinstance(sink, Path):
+        sink = sink.as_posix()
+
     mod = dataFileNameToModule(source)
     return mod.copyData(source, sink, **kwargs)
 

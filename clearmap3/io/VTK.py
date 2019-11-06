@@ -10,7 +10,7 @@ Notes:
 
 import logging
 
-import clearmap3.IO as io
+from clearmap3 import io
 import numpy
 
 log = logging.getLogger(__name__)

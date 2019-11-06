@@ -3,7 +3,7 @@ import tifffile as tif
 from multiprocessing import Pool
 import cv2
 
-import clearmap3.IO as io
+from clearmap3 import io
 
 from clearmap3 import config
 from clearmap3.image_filters import filter_manager

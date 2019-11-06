@@ -16,7 +16,7 @@ import numpy
 import tifffile as tif
 import matplotlib as mpl
 
-import clearmap3.IO as io
+from clearmap3 import io
 import clearmap3.analysis.voxelization as vox
 
 

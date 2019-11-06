@@ -3,7 +3,7 @@ import numpy as np
 from scipy.ndimage import gaussian_filter
 import tifffile as tif
 
-import clearmap3.IO as io
+from clearmap3 import io
 from clearmap3.image_filters import filter_manager
 from clearmap3.image_filters.filter import FilterBase
 
@@ -62,7 +62,7 @@ class Label(FilterBase):
 
         if self.mode == 3:
             # Pad image by 1 pixel in each dimension
-            print('Padding image...')
+            self.log.verbose('Padding image...')
             padded_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_padded_img.tif'),
                                              dtype=raw_img.dtype,
                                              shape=(tuple(x+2 for x in raw_img.shape)))
@@ -105,13 +105,13 @@ class Label(FilterBase):
             self.log.debug('Low thresholding')
             threshold(raw_img, self.low_threshold, bin_img)
 
-            self.log.debug('Labeling...')
+            self.log.debug('Labeling.')
             _ = connect(bin_img, labeled_2_img)
 
-            self.log.debug('Comparing overlap...')
+            self.log.debug('Comparing overlap.')
             overlap(labeled_1_img, labeled_2_img, labeled_2_img)
 
-            self.log.debug('Running final size filter...')
+            self.log.debug('Running final size filter.')
             _, _ = size_filter(labeled_2_img, self.min_size2, self.max_size2, labeled_2_img)
 
             return io.readData(labeled_1_img.filename)
@@ -120,13 +120,13 @@ class Label(FilterBase):
         elif self.mode == 3:
 
             # Low threshold Image
-            self.log.debug('Low thresholding...')
+            self.log.debug('Low thresholding.')
             threshold(raw_img, self.low_threshold, bin_img)
 
             ############################## Watershed ##############################
 
             # Get coordinates of all nonzero values in labeled/size-filtered image
-            self.log.debug('Getting label coordinates...')
+            self.log.debug('Getting label coordinates.')
             marker_locations_filename = os.path.join(self.temp_dir, 'marker_locations.mmap')
             marker_locations = nonzero_coords(labeled_1_img, marker_locations_filename)
 
@@ -138,7 +138,7 @@ class Label(FilterBase):
 
             image_strides = np.array(raw_img.strides, dtype=np.intp) // raw_img.itemsize
 
-            self.log.debug('Running watershed...')
+            self.log.debug('Running watershed.')
             watershed(raw_img, marker_locations, flat_neighborhood,
                                  bin_img, image_strides,
                                  labeled_1_img, # <-- Output
@@ -147,7 +147,7 @@ class Label(FilterBase):
             #######################################################################
 
             # Final size filter
-            self.log.debug('Running final size filter...')
+            self.log.debug('Running final size filter.')
             _, _ = size_filter(labeled_1_img, self.min_size2, self.max_size2, labeled_1_img)
 
             if self.input.ndim == 2:
