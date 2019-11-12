@@ -1,4 +1,3 @@
-import math
 import numpy as np
 from typing import Union
 from itertools import product

@@ -865,55 +865,20 @@ def writePoints(sink, points, **args):
         args: further arguments specific to point data format writer
     
     Returns:
-        str or array or tuple or None: point data of source
+        str: output filename
     
     See Also:
         :func:`readPoints`
     """ 
     
-    #todo: make clean independent of return of two results -> io.wrtiePoints -> take care of pairs: (points,intensities)
-    istuple = isinstance(sink, tuple)
+    mod = self.pointFileNameToModule(sink)
+    abs_path = Path(sink).absolute()
+    if not Path(abs_path.parent).is_dir():
+        os.mkdir(abs_path.parent)
 
-    if sink is None:
-        sink = (None, None)
-    elif isinstance(sink, str):
-        sink = (sink, None)
-    elif isinstance(sink, tuple):
-        if len(sink) == 0:
-            sink = (None, None)
-        elif len(sink) == 1:
-            if sink[0] is None:
-                sink = (None, None)
-            elif isinstance(sink, str):
-                sink = pointsToCoordinatesAndPropertiesFileNames(sink, **args)
-            else:
-                raise RuntimeWarning('sink not well defined!')
-        elif len(sink) == 2:
-            if not((sink[0] is None or isinstance(sink[0], str)) and (sink[1] is None or isinstance(sink[1], str))):
-                raise RuntimeWarning('sink not well defined!')
-        else:
-            raise RuntimeWarning('sink not well defined!')
-    else:
-        raise RuntimeWarning('sink not well defined!')
+    ret = mod.writePoints(abs_path.as_posix(), points)
 
-    
-    (points, properties) = pointsToCoordinatesAndProperties(points)
-    if sink[0] is None:
-        retpoints = points
-    else:
-        mod = self.pointFileNameToModule(sink[0])
-        retpoints = mod.writePoints(sink[0], points)
-
-    if sink[1] is None:
-        retproperties = properties
-    else:
-        mod = self.pointFileNameToModule(sink[1])
-        retproperties = mod.writePoints(sink[1], properties)
-
-    if istuple:
-        return retpoints, retproperties
-    else:
-        return retpoints
+    return ret
 
 
 def writeTable(filename, table):

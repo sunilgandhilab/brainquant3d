@@ -117,7 +117,7 @@ class FilterBase(ABC):
         """
 
         timer = Timer()
-        if self.temp_dir:
+        if self.temp_dir != False:
             self.set_temp_dir()
         self.log_parameters()
 
@@ -142,12 +142,16 @@ class FilterBase(ABC):
             if key not in ['output', 'input', 'log']:
                 self.log.verbose(f'{self.name}| {key}: {value}')
 
-    def set_temp_dir(self):
+    def set_temp_dir(self, root=None):
         """ Creates unique temportary directory
         """
-        self.temp_dir = unique_temp_dir(self.name)
-        self.temp_dir.mkdir()
-        self.log.debug(f'Set temp path {self.temp_dir}')
+        if self.temp_dir == True:
+            if root:
+                self.temp_dir = unique_temp_dir(self.name, path=root)
+            else:
+                self.temp_dir = unique_temp_dir(self.name)
+            self.temp_dir.mkdir()
+            self.log.debug(f'Set temp path {self.temp_dir}')
         return
 
     def del_temp_dir(self):

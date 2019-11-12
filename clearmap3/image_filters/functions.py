@@ -3,7 +3,8 @@
 from clearmap3 import io
 from clearmap3.image_filters import filter_manager
 
-def filter_image(filter, input, output = None, **kwargs):
+
+def filter_image(filter, input, output = None, temp_dir_root=None, **kwargs):
     """ Passes an image through the specified image filter.
 
     Arguments:
@@ -19,7 +20,10 @@ def filter_image(filter, input, output = None, **kwargs):
     kwargs['input'] = input
     kwargs['output'] = input
     im_filter = set_filter(filter, kwargs)
+    if temp_dir_root:
+        im_filter.set_temp_dir(root=temp_dir_root)
     return im_filter.run()
+
 
 def set_filter(filter, kwargs):
     """ Instantiates an image filter and passed to it the specified input arguments.

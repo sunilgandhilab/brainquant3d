@@ -3,10 +3,11 @@ import numpy as np
 
 def writePoints(filename, data):
 
-    out = {}
-    out['z'] = data[0]
-    out['y'] = data[1]
-    out['x'] = data[2]
+    if isinstance(data, np.ndarray):
+        out = {}
+        out['z'] = data[0]
+        out['y'] = data[1]
+        out['x'] = data[2]
 
     with open(filename, 'w') as f:
         json.dump(data, f)

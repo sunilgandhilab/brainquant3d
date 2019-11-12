@@ -142,7 +142,7 @@ else:
 class install(_install):
     def run(self):
 
-        #  downloadexternal programs required by package to install directory.
+        #  download external programs required by package to install directory.
         dest = Path(os.getcwd()) / 'clearmap3/.external'
 
         print('installing elastik')
@@ -173,7 +173,6 @@ class install(_install):
             pip.main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
         if sys.platform == 'darwin':
             pip.main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
-
 
 
 cmdclass['install'] = install

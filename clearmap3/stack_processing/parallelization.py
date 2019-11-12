@@ -1,5 +1,5 @@
-
 import os
+import shutil
 import uuid
 from clearmap3.utils.timer import Timer
 from clearmap3 import io
@@ -7,13 +7,15 @@ from clearmap3.io.FileList import splitFileExpression
 import logging
 
 from clearmap3.utils.chunking import unique_slice
+from clearmap3.utils.files import unique_temp_dir
 from clearmap3.image_filters.functions import filter_image
 from clearmap3.analysis.label_properties import label_props
 
 log = logging.getLogger(__name__)
 
 #define the subroutine for the processing
-def processSubStack(flow, output_properties, source, overlap_indices, unique_indices, temp_dir):
+def processSubStack(flow, output_properties, source, overlap_indices, unique_indices,
+                    temp_dir_root):
     """ Helper to process stack in parallel
 
     Args:
@@ -38,6 +40,7 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
     log.info(f'chunk ranges: z= {zRng}, y= {yRng}, x = {xRng}')
 
     #memMap routine
+    temp_dir = unique_temp_dir('run', path = temp_dir_root)
     if not os.path.exists(temp_dir):
         os.mkdir(temp_dir)
 
@@ -55,13 +58,11 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
     for p in flow:
         params = dict(p)
         filter = params.pop('filter')
-
         if 'save' in params:
             save = params.pop('save')
         else:
             save = False
-
-        filtered_im = filter_image(filter, filtered_im, **params)
+        filtered_im = filter_image(filter, filtered_im, temp_dir_root = temp_dir, **params)
 
         # save intermediate output
         if save:
@@ -82,6 +83,6 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
     else:
         props = []
 
-    os.remove(mmapFile)
+    shutil.rmtree(temp_dir, ignore_errors=True)
     timer.log_elapsed(prefix='Processed chunk')
     return props
