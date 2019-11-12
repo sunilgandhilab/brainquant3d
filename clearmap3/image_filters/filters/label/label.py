@@ -62,7 +62,7 @@ class Label(FilterBase):
 
         if self.mode == 3:
             # Pad image by 1 pixel in each dimension
-            self.log.verbose('Padding image...')
+            self.log.verbose('Padding image.')
             padded_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_padded_img.tif'),
                                              dtype=raw_img.dtype,
                                              shape=(tuple(x+2 for x in raw_img.shape)))

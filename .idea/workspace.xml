@@ -4,20 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="- fixewd tempfile behavior so it properly deletes folder">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/alignment/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/ants.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/alignment/ants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/elastix.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/alignment/elastix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/io/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/io/io.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/io/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/parallelization.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/parallelization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/utils/chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/utils/chunking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -296,14 +287,7 @@
       <workItem from="1569986102284" duration="17209000" />
       <workItem from="1571761267338" duration="334000" />
       <workItem from="1571761913312" duration="53732000" />
-      <workItem from="1572637519894" duration="54599000" />
-    </task>
-    <task id="LOCAL-00014" summary="updated lib">
-      <created>1565046225040</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1565046225040</updated>
+      <workItem from="1572637519894" duration="56402000" />
     </task>
     <task id="LOCAL-00015" summary="updated lib">
       <created>1565046560512</created>
@@ -641,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573007028829</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="- fixewd tempfile behavior so it properly deletes folder">
+      <created>1573593155422</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1573593155422</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +655,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added compiled cython files" />
     <MESSAGE value="added readme to docs" />
     <MESSAGE value="added include form cython" />
     <MESSAGE value="fixed include form cython" />
@@ -689,7 +679,8 @@
     <MESSAGE value="fixed bugs in label code&#10;added LabelBySize filter" />
     <MESSAGE value="fixed Jacks watershed call" />
     <MESSAGE value="- bug fixes&#10;- made label_props more flexible by allowing input of output params&#10;- refactored clearmap.IO as clearmap.io&#10;- modified label_props to allow for more flexibility in the future by accepting a list of properties to export.&#10;- label props now skipped if not output_properties defined&#10;- points can now be read/written to json" />
-    <option name="LAST_COMMIT_MESSAGE" value="- bug fixes&#10;- made label_props more flexible by allowing input of output params&#10;- refactored clearmap.IO as clearmap.io&#10;- modified label_props to allow for more flexibility in the future by accepting a list of properties to export.&#10;- label props now skipped if not output_properties defined&#10;- points can now be read/written to json" />
+    <MESSAGE value="- fixewd tempfile behavior so it properly deletes folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixewd tempfile behavior so it properly deletes folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

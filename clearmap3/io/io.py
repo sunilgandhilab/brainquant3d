@@ -876,7 +876,7 @@ def writePoints(sink, points, **args):
     if not Path(abs_path.parent).is_dir():
         os.mkdir(abs_path.parent)
 
-    ret = mod.writePoints(abs_path.as_posix(), points)
+    ret = mod.writePoints(abs_path.as_po0six(), points)
 
     return ret
 
