@@ -19,7 +19,7 @@ from setuptools.command.install import install as _install
 from distutils.core import setup
 from distutils.extension import Extension
 
-from clearmap3._version import __version__
+from brainquant3d._version import __version__
 
 if sys.platform not in ['linux', 'darwin']:
     raise EnvironmentError(f'Platform {sys.platform} not supported.')
@@ -46,46 +46,46 @@ ext_modules = []
 
 if USE_CYTHON:
     ext_modules += cythonize([
-        Extension("clearmap3.analysis._voxelization",
-                  sources=["clearmap3/analysis/_voxelization.pyx"],
+        Extension("brainquant3d.analysis._voxelization",
+                  sources=["brainquant3d/analysis/_voxelization.pyx"],
                   include_dirs=[numpy.get_include()]
                   ),
-        Extension("clearmap3.image_filters.filters._background_subtraction",
-                  sources=["clearmap3/image_filters/filters/_background_subtraction.pyx"]
+        Extension("brainquant3d.image_filters.filters._background_subtraction",
+                  sources=["brainquant3d/image_filters/filters/_background_subtraction.pyx"]
                   ),
-        Extension("clearmap3.image_filters.filters.helpers.array_manipulations",
-                  sources=["clearmap3/image_filters/filters/helpers/array_manipulations.pyx"]
+        Extension("brainquant3d.image_filters.filters.helpers.array_manipulations",
+                  sources=["brainquant3d/image_filters/filters/helpers/array_manipulations.pyx"]
                   ),
-        Extension("clearmap3.image_filters.filters.label._connect",
-                  sources=["clearmap3/image_filters/filters/label/_connect.pyx"],
+        Extension("brainquant3d.image_filters.filters.label._connect",
+                  sources=["brainquant3d/image_filters/filters/label/_connect.pyx"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join(f'clearmap3/{opencv_libs}', f) for f in os.listdir(
-                      f'clearmap3/{opencv_libs}')],
+                  extra_link_args=[os.path.join(f'brainquant3d/{opencv_libs}', f) for f in os.listdir(
+                      f'brainquant3d/{opencv_libs}')],
                   runtime_library_dirs=[f'$ORIGIN/../../../{opencv_libs}']
                   ),
-        Extension("clearmap3.image_filters.filters.label._threshold",
-                  sources=["clearmap3/image_filters/filters/label/_threshold.pyx"],
+        Extension("brainquant3d.image_filters.filters.label._threshold",
+                  sources=["brainquant3d/image_filters/filters/label/_threshold.pyx"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label._filter",
-                  sources=["clearmap3/image_filters/filters/label/_filter.pyx"],
+        Extension("brainquant3d.image_filters.filters.label._filter",
+                  sources=["brainquant3d/image_filters/filters/label/_filter.pyx"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label._overlap",
-                  sources=["clearmap3/image_filters/filters/label/_overlap.pyx"],
+        Extension("brainquant3d.image_filters.filters.label._overlap",
+                  sources=["brainquant3d/image_filters/filters/label/_overlap.pyx"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.watershed._watershed",
-                  sources=["clearmap3/image_filters/filters/label/watershed/_watershed.pyx"],
+        Extension("brainquant3d.image_filters.filters.label.watershed._watershed",
+                  sources=["brainquant3d/image_filters/filters/label/watershed/_watershed.pyx"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.util._nonzero_coords",
-                  sources=["clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx"],
+        Extension("brainquant3d.image_filters.filters.label.util._nonzero_coords",
+                  sources=["brainquant3d/image_filters/filters/label/util/_nonzero_coords.pyx"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   )
@@ -93,46 +93,46 @@ if USE_CYTHON:
     cmdclass['build_ext'] = build_ext
 else:
     ext_modules += [
-        Extension("clearmap3.analysis._voxelization",
-                  sources=["clearmap3/analysis/_voxelization.c"],
+        Extension("brainquant3d.analysis._voxelization",
+                  sources=["brainquant3d/analysis/_voxelization.c"],
                   include_dirs=[numpy.get_include()]
                   ),
-        Extension("clearmap3.image_filters.filters._background_subtraction",
-                  sources=["clearmap3/image_filters/filters/_background_subtraction.c"]
+        Extension("brainquant3d.image_filters.filters._background_subtraction",
+                  sources=["brainquant3d/image_filters/filters/_background_subtraction.c"]
                   ),
-        Extension("clearmap3.image_filters.filters.helpers.array_manipulations",
-                  sources=["clearmap3/image_filters/filters/helpers/array_manipulations.c"]
+        Extension("brainquant3d.image_filters.filters.helpers.array_manipulations",
+                  sources=["brainquant3d/image_filters/filters/helpers/array_manipulations.c"]
                   ),
-        Extension("clearmap3.image_filters.filters.label._connect",
-                  sources=["clearmap3/image_filters/filters/label/_connect.cpp"],
+        Extension("brainquant3d.image_filters.filters.label._connect",
+                  sources=["brainquant3d/image_filters/filters/label/_connect.cpp"],
                   language="c++",
                   include_dirs=[numpy.get_include(), "include"],
-                  extra_link_args=[os.path.join(f'clearmap3/{opencv_libs}', f) for f in os.listdir(
-                      f'clearmap3/{opencv_libs}')],
+                  extra_link_args=[os.path.join(f'brainquant3d/{opencv_libs}', f) for f in os.listdir(
+                      f'brainquant3d/{opencv_libs}')],
                   runtime_library_dirs=[f'$ORIGIN/../../../{opencv_libs}']
                   ),
-        Extension("clearmap3.image_filters.filters.label._threshold",
-                  sources=["clearmap3/image_filters/filters/label/_threshold.cpp"],
+        Extension("brainquant3d.image_filters.filters.label._threshold",
+                  sources=["brainquant3d/image_filters/filters/label/_threshold.cpp"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label._filter",
-                  sources=["clearmap3/image_filters/filters/label/_filter.cpp"],
+        Extension("brainquant3d.image_filters.filters.label._filter",
+                  sources=["brainquant3d/image_filters/filters/label/_filter.cpp"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label._overlap",
-                  sources=["clearmap3/image_filters/filters/label/_overlap.cpp"],
+        Extension("brainquant3d.image_filters.filters.label._overlap",
+                  sources=["brainquant3d/image_filters/filters/label/_overlap.cpp"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.watershed._watershed",
-                  sources=["clearmap3/image_filters/filters/label/watershed/_watershed.cpp"],
+        Extension("brainquant3d.image_filters.filters.label.watershed._watershed",
+                  sources=["brainquant3d/image_filters/filters/label/watershed/_watershed.cpp"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("clearmap3.image_filters.filters.label.util._nonzero_coords",
-                  sources=["clearmap3/image_filters/filters/label/util/_nonzero_coords.cpp"],
+        Extension("brainquant3d.image_filters.filters.label.util._nonzero_coords",
+                  sources=["brainquant3d/image_filters/filters/label/util/_nonzero_coords.cpp"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   )
@@ -143,7 +143,7 @@ class install(_install):
     def run(self):
 
         #  download external programs required by package to install directory.
-        dest = Path(os.getcwd()) / 'clearmap3/.external'
+        dest = Path(os.getcwd()) / 'brainquant3d/.external'
 
         print('installing elastik')
         url = 'https://github.com/SuperElastix/elastix/releases/download/5.0.0/elastix-5.0.0-linux.tar.bz2'
@@ -178,14 +178,14 @@ class install(_install):
 cmdclass['install'] = install
 
 setup(
-    name=               'clearmap3',
+    name=               'brainquant3d',
     version=            __version__,
     description=        'Tools for tera-voxel image analysis.',
     author=             'Ricardo Azevedo, Jack Zeitoun',
     author_email=       'ricardo-re-azevedo@gmail.com, jack.zeitoun@outlook.com',
     maintainer=         'Ricardo Azevedo',
     maintainer_email=   'ricardo-re-azevedo@gmail.com',
-    url=                'https://github.com/ricardo-re-azevedo/clearmap3',
+    url=                'https://github.com/sunilgandhilab/brainquant3d',
     license=            'BY-NC-SA 4.0',
     cmdclass=           cmdclass,
     packages=           find_packages(),
