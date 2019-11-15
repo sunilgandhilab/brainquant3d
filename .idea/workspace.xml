@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/io/io.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/utils/chunking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/label_properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/analysis/label_properties.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -288,6 +287,7 @@
       <workItem from="1571761267338" duration="334000" />
       <workItem from="1571761913312" duration="53732000" />
       <workItem from="1572637519894" duration="56402000" />
+      <workItem from="1573772492315" duration="3561000" />
     </task>
     <task id="LOCAL-00015" summary="updated lib">
       <created>1565046560512</created>

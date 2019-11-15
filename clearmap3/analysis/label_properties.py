@@ -66,6 +66,7 @@ def region_props(label_image, intensity_image=None):
 
     regions = []
     objects = ndi.find_objects(label_image)
+    log.info(f'Objects Detected: {len(objects)}')
 
     for i, sl in enumerate(objects):
         if sl is None:

@@ -110,9 +110,6 @@ def process_flow(source,
         shutil.rmtree(temp_dir, ignore_errors=True)
         raise err
 
-    results = [results[0] for i in range(200)]
-    unique_chunks = [unique_chunks[0] for i in range(200)]
-    overlap_chunks = [overlap_chunks[0] for i in range(200)]
     # join results
     results = join_points(results, unique_chunks, overlap_chunks)
     results = jsonify_points(output_properties, results)
@@ -140,6 +137,7 @@ def join_points(results, unique_ranges, overlap_ranges):
     """
 
     nchunks = len(results)
+
     all_coords  = [results[i][0] for i in range(nchunks)]
     all_props   = [results[i][1:] for i in range(nchunks)]
 
@@ -152,7 +150,7 @@ def join_points(results, unique_ranges, overlap_ranges):
         if len(coords) > 0:
             # covert to abs coordinates
             min_coord = tuple(rng[0] for rng in unique_ranges[i])
-            max_coord = tuple(rng[1] for rng in unique_ranges[i])
+            max_coord = tuple(rng[1] for rng in unique_ranges[  i])
             coords = coords + tuple(rng[0] for rng in overlap_ranges[i])
 
             # generate mask
