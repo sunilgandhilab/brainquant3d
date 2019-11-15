@@ -62,7 +62,7 @@ class Label(FilterBase):
 
         if self.mode == 3:
             # Pad image by 1 pixel in each dimension
-            self.log.verbose('Padding image.')
+            self.log.debug('Padding image.')
             padded_img = tif.tifffile.memmap(os.path.join(self.temp_dir, 'temp_padded_img.tif'),
                                              dtype=raw_img.dtype,
                                              shape=(tuple(x+2 for x in raw_img.shape)))
@@ -90,9 +90,13 @@ class Label(FilterBase):
 
         # Filter labeled regions by size (1st pass) # Mode 1: Stop after this
         self.log.debug('Size filtering')
-        _, _ = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img)
+        _, counts = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img)
+
+        if len(counts) == 0:
+            return io.readData(labeled_1_img.filename)
 
         if self.mode == 1:
+            self.log.debug('No components found.')
             return io.readData(labeled_1_img.filename)
 
         # Mode 2 two serial thresholding>label> filter runs
@@ -112,7 +116,11 @@ class Label(FilterBase):
             overlap(labeled_1_img, labeled_2_img, labeled_2_img)
 
             self.log.debug('Running final size filter.')
-            _, _ = size_filter(labeled_2_img, self.min_size2, self.max_size2, labeled_2_img)
+            _, counts = size_filter(labeled_2_img, self.min_size2, self.max_size2, labeled_2_img)
+
+            if len(counts) == 0:
+                self.log.debug('No components found.')
+                return io.readData(labeled_2_img.filename)
 
             return io.readData(labeled_1_img.filename)
 
@@ -148,7 +156,11 @@ class Label(FilterBase):
 
             # Final size filter
             self.log.debug('Running final size filter.')
-            _, _ = size_filter(labeled_1_img, self.min_size2, self.max_size2, labeled_1_img)
+            _, counts = size_filter(labeled_1_img, self.min_size2, self.max_size2, labeled_1_img)
+
+            if len(counts) == 0:
+                self.log.debug('No components found.')
+                return io.readData(labeled_1_img.filename)
 
             if self.input.ndim == 2:
                 labeled_1_img = labeled_1_img[1:-1,1:-1]
