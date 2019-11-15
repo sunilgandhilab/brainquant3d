@@ -12,9 +12,9 @@ References:
 import numpy as np
 from scipy.optimize import curve_fit
 
-from clearmap3 import io
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d import io
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 class IlluminationCorrection(FilterBase):
     """Filter provides a function to correct systematic variations in intensity.

@@ -9,15 +9,15 @@ import shutil
 import uuid
 from multiprocessing import Pool
 
-from clearmap3 import config
-from clearmap3 import io
-from clearmap3.utils.timer import Timer
-from clearmap3.utils.files import unique_temp_dir
-from clearmap3.utils.chunking import chunk_ranges
-from clearmap3.stack_processing.parallelization import processSubStack
+from bq3d import config
+from bq3d import io
+from bq3d.utils.timer import Timer
+from bq3d.utils.files import unique_temp_dir
+from bq3d.utils.chunking import chunk_ranges
+from bq3d.stack_processing.parallelization import processSubStack
 
 import logging
-from clearmap3.utils.logger import set_console_level
+from bq3d.utils.logger import set_console_level
 log = logging.getLogger(__name__)
 
 
@@ -62,7 +62,7 @@ def process_flow(source,
     Args:
         source (str): path to image file to analyse.
         flow (tuple): images filters to run in sequential order.
-            Entries should be a dict and will be passed to *clearmap3.image_filters.filter_image*.
+            Entries should be a dict and will be passed to *bq3d.image_filters.filter_image*.
             The input image to each filter will the be output of the pevious filter.
         x (tuple): x range to analyse.
         y (tuple): y range to analyse.
@@ -82,7 +82,7 @@ def process_flow(source,
     """
 
 
-    temp_dir = unique_temp_dir('clearmap')
+    temp_dir = unique_temp_dir('brainquant3d')
     os.makedirs(temp_dir)
     source_fn = temp_dir / (str(uuid.uuid4()) + '.tif')
     log.verbose(f'Copying raw data to: {source_fn}')

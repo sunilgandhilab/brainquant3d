@@ -4,13 +4,13 @@ import csv
 import pandas as pd
 import numpy as np
 from ast import literal_eval
-from clearmap3.analysis.label_properties import region_props
+from bq3d.analysis.label_properties import region_props
 from anytree import AnyNode, RenderTree, PostOrderIter, PreOrderIter
 from anytree.exporter import JsonExporter
 
-import clearmap3
-from clearmap3 import io
-from clearmap3.utils.timer import Timer
+import bq3d
+from bq3d import io
+from bq3d.utils.timer import Timer
 
 
 log = logging.getLogger(__name__)
@@ -196,8 +196,8 @@ class Atlas(object):
         COLLAPSE (Bool): if True parents will inherit info from their children. not to be modified after init
      """
 
-    def __init__(self, label_image = clearmap3.config.labeled_image,
-                 annotation_file = clearmap3.config.annotations_default_file,
+    def __init__(self, label_image = bq3d.config.labeled_image,
+                 annotation_file = bq3d.config.annotations_default_file,
                  collapse = True):
 
 

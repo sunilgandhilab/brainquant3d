@@ -2,9 +2,9 @@ import numpy as np
 
 from scipy.ndimage.morphology import binary_erosion
 
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
-from  clearmap3.image_filters.filters.helpers.filterKernel import filterKernel
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
+from  bq3d.image_filters.filters.helpers.filterKernel import filterKernel
 
 
 class Erode(FilterBase):

@@ -9,7 +9,7 @@ The module utilizes the csv file writer/reader from numpy.
 import numpy as np
 import pandas as pd
 
-from clearmap3 import io
+from bq3d import io
 
 import logging
 log = logging.getLogger(__name__)
@@ -35,7 +35,7 @@ def readPoints(filename, **args):
     
     Arguments:
         filename (str): file name
-        args: arguments for :func:`~clearmap3.IO.pointsToRange`
+        args: arguments for :func:`~bq3d.IO.pointsToRange`
     
     Returns:
         str: file name

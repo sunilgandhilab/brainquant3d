@@ -28,7 +28,7 @@ Type            Descrition
 import numpy
 import math
 
-from clearmap3.image_filters.filters.helpers.structureElement  import structureElementOffsets
+from bq3d.image_filters.filters.helpers.structureElement  import structureElementOffsets
 
 import logging
 log = logging.getLogger(__name__)

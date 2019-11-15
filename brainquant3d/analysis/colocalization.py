@@ -2,7 +2,7 @@ import numpy as np
 from typing import Union
 from scipy.spatial.distance import cdist
 
-from clearmap3 import config
+from bq3d import config
 
 def grouped_distances(points:np.array, groups: dict, return_minimum = False):
     """ gets the minimum euclidian distance of each point to each coordinate group.

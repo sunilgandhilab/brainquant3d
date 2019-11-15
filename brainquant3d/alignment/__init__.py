@@ -4,10 +4,10 @@ This sub-package provides alignment tools used to register datasets to a referen
 as resample images.
 
 Main routine for resampling is:
-:func:`~clearmap3.alignment.resampling.resampleData`
+:func:`~bq3d.alignment.resampling.resampleData`
 
 For image registration there are 2 main routines, one using Elastix (requires install of Elastix
-binaries. Path added to elastix folder must be included in clearmap3 config.):
+binaries. Path added to elastix folder must be included in bq3d config.):
 
 "S. Klein, M. Staring, K. Murphy, M.A. Viergever and J.P.W. Pluim,
 elastix: a toolbox for intensity based medical image registration,
@@ -20,17 +20,17 @@ Which module you chose to use will depend on the dataset as one may work better 
 under different circumstances.
 
 Main routines for elastix registration are: 
-:func:`clearmap3.alignment.elastix.alignData`,
-:func:`clearmap3.alignment.elastix.transformImage`
-:func:`clearmap3.alignment.elastix.transformPoints`.
+:func:`bq3d.alignment.elastix.alignData`,
+:func:`bq3d.alignment.elastix.transformImage`
+:func:`bq3d.alignment.elastix.transformPoints`.
 
 Main routines for ants registration are:
-:func:`clearmap3.alignment.ants.alignData`,
-:func:`clearmap3.alignment.ants.transformImage`
-:func:`clearmap3.alignment.ants.transformPoints`.
+:func:`bq3d.alignment.ants.alignData`,
+:func:`bq3d.alignment.ants.transformImage`
+:func:`bq3d.alignment.ants.transformPoints`.
 """
 
-from clearmap3._version import __version__
+from bq3d._version import __version__
 __author__     = 'Ricardo Azevedo, Jack Zeitoun'
 __copyright__  = "Copyright 2019, Gandhi Lab"
 __license__    = 'BY-NC-SA 4.0'

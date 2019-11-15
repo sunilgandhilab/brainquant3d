@@ -4,8 +4,8 @@ Simple Interface to read RAW/MHD files e.g. created by elastix
 
 Example:
     >>> import os, numpy
-    >>> import clearmap3.    >>> import clearmap3.IO.RAW as raw
-    >>> filename = os.path.join(ClearMapPath, 'Test/Data/Raw/test.mhd') 
+    >>> import bq3d.    >>> import bq3d.IO.RAW as raw
+    >>> filename = os.path.join(brainquant3dPath, 'Test/Data/Raw/test.mhd') 
     >>> raw.dataSize(filename)
     (20, 50, 10)
 """
@@ -18,7 +18,7 @@ import numpy
 import vtk
 from vtk.util.numpy_support import vtk_to_numpy
 
-from clearmap3 import io
+from bq3d import io
 import imp
 
 import logging

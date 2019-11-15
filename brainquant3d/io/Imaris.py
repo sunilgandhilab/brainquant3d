@@ -6,12 +6,12 @@ Module to read data and write points to `Imaris <http://www.bitplane.com/imaris/
 files.
 
 Note: 
-    To write points without errors make sure the original file has at least one spot object! You can create a fake point in Imaris, then save the file. The point will be overwritten by ClearMap.
+    To write points without errors make sure the original file has at least one spot object! You can create a fake point in Imaris, then save the file. The point will be overwritten by brainquant3d.
 
 Example:
     >>> import os, numpy
-    >>> import clearmap3.IO.Imaris as ims
-    >>> filename = os.path.join(ClearMapPath,'Test/Data/Imaris/test for spots added spot.ims') 
+    >>> import bq3d.IO.Imaris as ims
+    >>> filename = os.path.join(brainquant3dPath,'Test/Data/Imaris/test for spots added spot.ims') 
     >>> ims.dataSize(filename)
     (256, 320, 256)
 
@@ -26,7 +26,7 @@ Example:
 import h5py
 import numpy
 
-from clearmap3 import io
+from bq3d import io
 import imp
 
 import logging

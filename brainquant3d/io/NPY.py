@@ -6,9 +6,9 @@ The interface is based on the numpy library.
 
 Example:
     >>> import os, numpy
-    >>> import clearmap3.Settings as settings
-    >>> import clearmap3.IO.NPY as npy
-    >>> filename = os.path.join(clearmap3.config.ClearMapPath, 'Test/Data/NPY/points.npy')
+    >>> import bq3d.Settings as settings
+    >>> import bq3d.IO.NPY as npy
+    >>> filename = os.path.join(bq3d.config.brainquant3dPath, 'Test/Data/NPY/points.npy')
     >>> points = npy.readPoints(filename)
     >>> print points.shape
     (5, 3)
@@ -22,7 +22,7 @@ import os
 import shutil
 import numpy as np
 
-from clearmap3 import io
+from bq3d import io
 import imp
 
 import logging

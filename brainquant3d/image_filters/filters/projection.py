@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-from clearmap3 import io
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d import io
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 class Project(FilterBase):
     """ Calculates h-maximum transform of an image. input should be unassigned ints.

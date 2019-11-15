@@ -2,8 +2,8 @@
 import shutil
 from abc import ABC, abstractmethod
 
-from clearmap3.utils.files import unique_temp_dir
-from clearmap3.utils.timer import Timer
+from bq3d.utils.files import unique_temp_dir
+from bq3d.utils.timer import Timer
 import logging
 
 class FilterManager(object):

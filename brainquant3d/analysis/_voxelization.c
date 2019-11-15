@@ -10,12 +10,12 @@
         "include_dirs": [
             "/usr/local/lib/python3.7/site-packages/numpy/core/include"
         ],
-        "name": "clearmap3.analysis._voxelization",
+        "name": "bq3d.analysis._voxelization",
         "sources": [
-            "clearmap3/analysis/_voxelization.pyx"
+            "bq3d/analysis/_voxelization.pyx"
         ]
     },
-    "module_name": "clearmap3.analysis._voxelization"
+    "module_name": "bq3d.analysis._voxelization"
 }
 END: Cython Metadata */
 
@@ -609,8 +609,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clearmap3__analysis___voxelization
-#define __PYX_HAVE_API__clearmap3__analysis___voxelization
+#define __PYX_HAVE__bq3d__analysis___voxelization
+#define __PYX_HAVE_API__bq3d__analysis___voxelization
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -846,7 +846,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clearmap3/analysis/_voxelization.pyx",
+  "bq3d/analysis/_voxelization.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -1684,15 +1684,15 @@ static PyTypeObject *__pyx_ptype_5numpy_ndarray = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, char *, char *, int *); /*proto*/
 
-/* Module declarations from 'clearmap3.analysis._voxelization' */
+/* Module declarations from 'bq3d.analysis._voxelization' */
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_float_t = { "float_t", NULL, sizeof(__pyx_t_5numpy_float_t), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int32_t = { "int32_t", NULL, sizeof(__pyx_t_5numpy_int32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_int32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_int32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int_t = { "int_t", NULL, sizeof(__pyx_t_5numpy_int_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_int_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_int_t), 0 };
-#define __Pyx_MODULE_NAME "clearmap3.analysis._voxelization"
-extern int __pyx_module_is_main_clearmap3__analysis___voxelization;
-int __pyx_module_is_main_clearmap3__analysis___voxelization = 0;
+#define __Pyx_MODULE_NAME "bq3d.analysis._voxelization"
+extern int __pyx_module_is_main_bq3d__analysis___voxelization;
+int __pyx_module_is_main_bq3d__analysis___voxelization = 0;
 
-/* Implementation of 'clearmap3.analysis._voxelization' */
+/* Implementation of 'bq3d.analysis._voxelization' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_RuntimeError;
@@ -1772,11 +1772,11 @@ static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multia
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Format_string_allocated_too_shor[] = "Format string allocated too short, see comment in numpy.pxd";
 static const char __pyx_k_Non_native_byte_order_not_suppor[] = "Non-native byte order not supported";
-static const char __pyx_k_clearmap3_analysis__voxelization[] = "clearmap3/analysis/_voxelization.pyx";
+static const char __pyx_k_bq3d_analysis__voxelization[] = "bq3d/analysis/_voxelization.pyx";
 static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not Fortran contiguous";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
-static const char __pyx_k_clearmap3_analysis__voxelization_2[] = "clearmap3.analysis._voxelization";
+static const char __pyx_k_bq3d_analysis__voxelization_2[] = "bq3d.analysis._voxelization";
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor;
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor_2;
 static PyObject *__pyx_n_s_ImportError;
@@ -1784,8 +1784,8 @@ static PyObject *__pyx_kp_u_Non_native_byte_order_not_suppor;
 static PyObject *__pyx_kp_s_Processed_d_d;
 static PyObject *__pyx_n_s_RuntimeError;
 static PyObject *__pyx_n_s_ValueError;
-static PyObject *__pyx_kp_s_clearmap3_analysis__voxelization;
-static PyObject *__pyx_n_s_clearmap3_analysis__voxelization_2;
+static PyObject *__pyx_kp_s_bq3d_analysis__voxelization;
+static PyObject *__pyx_n_s_bq3d_analysis__voxelization_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_cx;
 static PyObject *__pyx_n_s_cx0;
@@ -1856,10 +1856,10 @@ static PyObject *__pyx_n_s_zmax;
 static PyObject *__pyx_n_s_zmin;
 static PyObject *__pyx_n_s_zs;
 static PyObject *__pyx_n_s_zsize;
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam); /* proto */
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights); /* proto */
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangle(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam); /* proto */
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangleWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights); /* proto */
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_voxelizeSphere(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam); /* proto */
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_2voxelizeSphereWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights); /* proto */
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_4voxelizeRectangle(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam); /* proto */
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_6voxelizeRectangleWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static PyObject *__pyx_int_1;
@@ -1880,7 +1880,7 @@ static PyObject *__pyx_codeobj__13;
 static PyObject *__pyx_codeobj__15;
 /* Late includes */
 
-/* "clearmap3/analysis/_voxelization.pyx":22
+/* "bq3d/analysis/_voxelization.pyx":22
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphere(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
@@ -1889,10 +1889,10 @@ static PyObject *__pyx_codeobj__15;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_1voxelizeSphere(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_8analysis_13_voxelization_voxelizeSphere[] = "Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point";
-static PyMethodDef __pyx_mdef_9clearmap3_8analysis_13_voxelization_1voxelizeSphere = {"voxelizeSphere", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_8analysis_13_voxelization_1voxelizeSphere, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_8analysis_13_voxelization_voxelizeSphere};
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_1voxelizeSphere(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_1voxelizeSphere(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_8analysis_13_voxelization_voxelizeSphere[] = "Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point";
+static PyMethodDef __pyx_mdef_9bq3d_8analysis_13_voxelization_1voxelizeSphere = {"voxelizeSphere", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_8analysis_13_voxelization_1voxelizeSphere, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_8analysis_13_voxelization_voxelizeSphere};
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_1voxelizeSphere(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_points = 0;
   int __pyx_v_xsize;
   int __pyx_v_ysize;
@@ -1995,12 +1995,12 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_1voxelizeSphere(P
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("voxelizeSphere", 1, 7, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 22, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeSphere", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeSphere", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_points), __pyx_ptype_5numpy_ndarray, 1, "points", 0))) __PYX_ERR(0, 22, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam);
+  __pyx_r = __pyx_pf_9bq3d_8analysis_13_voxelization_voxelizeSphere(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2011,7 +2011,7 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_1voxelizeSphere(P
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam) {
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_voxelizeSphere(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam) {
   PyArrayObject *__pyx_v_voximg = 0;
   int __pyx_v_iCentroid;
   int __pyx_v_nCentroid;
@@ -2120,7 +2120,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   }
   __pyx_pybuffernd_points.diminfo[0].strides = __pyx_pybuffernd_points.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_points.diminfo[0].shape = __pyx_pybuffernd_points.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_points.diminfo[1].strides = __pyx_pybuffernd_points.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_points.diminfo[1].shape = __pyx_pybuffernd_points.rcbuffer->pybuffer.shape[1];
 
-  /* "clearmap3/analysis/_voxelization.pyx":25
+  /* "bq3d/analysis/_voxelization.pyx":25
  *     """Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point"""
  * 
  *     cdef np.ndarray[np.int32_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.int32)             # <<<<<<<<<<<<<<
@@ -2182,7 +2182,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   __pyx_v_voximg = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":27
+  /* "bq3d/analysis/_voxelization.pyx":27
  *     cdef np.ndarray[np.int32_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.int32)
  * 
  *     cdef int iCentroid = 0             # <<<<<<<<<<<<<<
@@ -2191,7 +2191,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_iCentroid = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":28
+  /* "bq3d/analysis/_voxelization.pyx":28
  * 
  *     cdef int iCentroid = 0
  *     cdef int nCentroid = points.shape[0]             # <<<<<<<<<<<<<<
@@ -2200,7 +2200,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_nCentroid = (__pyx_v_points->dimensions[0]);
 
-  /* "clearmap3/analysis/_voxelization.pyx":29
+  /* "bq3d/analysis/_voxelization.pyx":29
  *     cdef int iCentroid = 0
  *     cdef int nCentroid = points.shape[0]
  *     cdef int nSphereIndices = int(xdiam * ydiam * zdiam)             # <<<<<<<<<<<<<<
@@ -2209,7 +2209,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_nSphereIndices = ((int)((__pyx_v_xdiam * __pyx_v_ydiam) * __pyx_v_zdiam));
 
-  /* "clearmap3/analysis/_voxelization.pyx":32
+  /* "bq3d/analysis/_voxelization.pyx":32
  * 
  *     # precompute indices centered at 0,0,0
  *     cdef np.ndarray[np.int_t, ndim = 1] xs = np.zeros([nSphereIndices], dtype=np.int)             # <<<<<<<<<<<<<<
@@ -2261,7 +2261,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   __pyx_v_xs = ((PyArrayObject *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":33
+  /* "bq3d/analysis/_voxelization.pyx":33
  *     # precompute indices centered at 0,0,0
  *     cdef np.ndarray[np.int_t, ndim = 1] xs = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] ys = np.zeros([nSphereIndices], dtype=np.int)             # <<<<<<<<<<<<<<
@@ -2313,7 +2313,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   __pyx_v_ys = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":34
+  /* "bq3d/analysis/_voxelization.pyx":34
  *     cdef np.ndarray[np.int_t, ndim = 1] xs = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] ys = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] zs = np.zeros([nSphereIndices], dtype=np.int)             # <<<<<<<<<<<<<<
@@ -2365,7 +2365,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   __pyx_v_zs = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":35
+  /* "bq3d/analysis/_voxelization.pyx":35
  *     cdef np.ndarray[np.int_t, ndim = 1] ys = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] zs = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef int ns = 0             # <<<<<<<<<<<<<<
@@ -2374,7 +2374,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_ns = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":37
+  /* "bq3d/analysis/_voxelization.pyx":37
  *     cdef int ns = 0
  * 
  *     cdef float xdiam2 = (xdiam - 1) * (xdiam - 1) / 4             # <<<<<<<<<<<<<<
@@ -2383,7 +2383,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_xdiam2 = (((__pyx_v_xdiam - 1.0) * (__pyx_v_xdiam - 1.0)) / 4.0);
 
-  /* "clearmap3/analysis/_voxelization.pyx":38
+  /* "bq3d/analysis/_voxelization.pyx":38
  * 
  *     cdef float xdiam2 = (xdiam - 1) * (xdiam - 1) / 4
  *     cdef float ydiam2 = (ydiam - 1) * (ydiam - 1) / 4             # <<<<<<<<<<<<<<
@@ -2392,7 +2392,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_ydiam2 = (((__pyx_v_ydiam - 1.0) * (__pyx_v_ydiam - 1.0)) / 4.0);
 
-  /* "clearmap3/analysis/_voxelization.pyx":39
+  /* "bq3d/analysis/_voxelization.pyx":39
  *     cdef float xdiam2 = (xdiam - 1) * (xdiam - 1) / 4
  *     cdef float ydiam2 = (ydiam - 1) * (ydiam - 1) / 4
  *     cdef float zdiam2 = (zdiam - 1) * (zdiam - 1) / 4             # <<<<<<<<<<<<<<
@@ -2401,7 +2401,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_zdiam2 = (((__pyx_v_zdiam - 1.0) * (__pyx_v_zdiam - 1.0)) / 4.0);
 
-  /* "clearmap3/analysis/_voxelization.pyx":41
+  /* "bq3d/analysis/_voxelization.pyx":41
  *     cdef float zdiam2 = (zdiam - 1) * (zdiam - 1) / 4
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -2466,7 +2466,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":42
+    /* "bq3d/analysis/_voxelization.pyx":42
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -2531,7 +2531,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":43
+      /* "bq3d/analysis/_voxelization.pyx":43
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -2596,7 +2596,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
         __Pyx_XDECREF_SET(__pyx_v_z, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "clearmap3/analysis/_voxelization.pyx":44
+        /* "bq3d/analysis/_voxelization.pyx":44
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:             # <<<<<<<<<<<<<<
@@ -2641,7 +2641,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         if (__pyx_t_18) {
 
-          /* "clearmap3/analysis/_voxelization.pyx":45
+          /* "bq3d/analysis/_voxelization.pyx":45
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:
  *                     xs[ns] = x; ys[ns] = y; zs[ns] = z;             # <<<<<<<<<<<<<<
@@ -2685,7 +2685,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
           }
           *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_zs.rcbuffer->pybuffer.buf, __pyx_t_23, __pyx_pybuffernd_zs.diminfo[0].strides) = __pyx_t_19;
 
-          /* "clearmap3/analysis/_voxelization.pyx":46
+          /* "bq3d/analysis/_voxelization.pyx":46
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:
  *                     xs[ns] = x; ys[ns] = y; zs[ns] = z;
  *                     ns += 1;             # <<<<<<<<<<<<<<
@@ -2694,7 +2694,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
           __pyx_v_ns = (__pyx_v_ns + 1);
 
-          /* "clearmap3/analysis/_voxelization.pyx":44
+          /* "bq3d/analysis/_voxelization.pyx":44
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:             # <<<<<<<<<<<<<<
@@ -2703,7 +2703,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
         }
 
-        /* "clearmap3/analysis/_voxelization.pyx":43
+        /* "bq3d/analysis/_voxelization.pyx":43
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -2713,7 +2713,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":42
+      /* "bq3d/analysis/_voxelization.pyx":42
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -2723,7 +2723,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":41
+    /* "bq3d/analysis/_voxelization.pyx":41
  *     cdef float zdiam2 = (zdiam - 1) * (zdiam - 1) / 4
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -2733,7 +2733,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":48
+  /* "bq3d/analysis/_voxelization.pyx":48
  *                     ns += 1;
  * 
  *     cdef int iss = 0             # <<<<<<<<<<<<<<
@@ -2742,7 +2742,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
   __pyx_v_iss = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":61
+  /* "bq3d/analysis/_voxelization.pyx":61
  *     cdef int cz
  * 
  *     for iCentroid in range(nCentroid):             # <<<<<<<<<<<<<<
@@ -2754,7 +2754,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   for (__pyx_t_25 = 0; __pyx_t_25 < __pyx_t_24; __pyx_t_25+=1) {
     __pyx_v_iCentroid = __pyx_t_25;
 
-    /* "clearmap3/analysis/_voxelization.pyx":62
+    /* "bq3d/analysis/_voxelization.pyx":62
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -2764,7 +2764,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     __pyx_t_18 = ((__Pyx_mod_long(__pyx_v_iCentroid, 0x61A8) == 0) != 0);
     if (__pyx_t_18) {
 
-      /* "clearmap3/analysis/_voxelization.pyx":63
+      /* "bq3d/analysis/_voxelization.pyx":63
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));             # <<<<<<<<<<<<<<
@@ -2809,7 +2809,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":62
+      /* "bq3d/analysis/_voxelization.pyx":62
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -2818,7 +2818,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
     }
 
-    /* "clearmap3/analysis/_voxelization.pyx":65
+    /* "bq3d/analysis/_voxelization.pyx":65
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));
  * 
  *         cx0 = points[iCentroid, 0];             # <<<<<<<<<<<<<<
@@ -2842,7 +2842,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     }
     __pyx_v_cx0 = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_points.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_points.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_points.diminfo[1].strides));
 
-    /* "clearmap3/analysis/_voxelization.pyx":66
+    /* "bq3d/analysis/_voxelization.pyx":66
  * 
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];             # <<<<<<<<<<<<<<
@@ -2866,7 +2866,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     }
     __pyx_v_cy0 = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_points.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_points.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_points.diminfo[1].strides));
 
-    /* "clearmap3/analysis/_voxelization.pyx":67
+    /* "bq3d/analysis/_voxelization.pyx":67
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];
  *         cz0 = points[iCentroid, 2];             # <<<<<<<<<<<<<<
@@ -2890,7 +2890,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     }
     __pyx_v_cz0 = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_points.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_points.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_points.diminfo[1].strides));
 
-    /* "clearmap3/analysis/_voxelization.pyx":69
+    /* "bq3d/analysis/_voxelization.pyx":69
  *         cz0 = points[iCentroid, 2];
  * 
  *         for iss in range(ns):             # <<<<<<<<<<<<<<
@@ -2902,7 +2902,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     for (__pyx_t_34 = 0; __pyx_t_34 < __pyx_t_33; __pyx_t_34+=1) {
       __pyx_v_iss = __pyx_t_34;
 
-      /* "clearmap3/analysis/_voxelization.pyx":70
+      /* "bq3d/analysis/_voxelization.pyx":70
  * 
  *         for iss in range(ns):
  *             cxf = cx0 + xs[iss];             # <<<<<<<<<<<<<<
@@ -2921,7 +2921,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       }
       __pyx_v_cxf = (__pyx_v_cx0 + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_xs.rcbuffer->pybuffer.buf, __pyx_t_35, __pyx_pybuffernd_xs.diminfo[0].strides)));
 
-      /* "clearmap3/analysis/_voxelization.pyx":71
+      /* "bq3d/analysis/_voxelization.pyx":71
  *         for iss in range(ns):
  *             cxf = cx0 + xs[iss];
  *             cyf = cy0 + ys[iss];             # <<<<<<<<<<<<<<
@@ -2940,7 +2940,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       }
       __pyx_v_cyf = (__pyx_v_cy0 + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_ys.rcbuffer->pybuffer.buf, __pyx_t_37, __pyx_pybuffernd_ys.diminfo[0].strides)));
 
-      /* "clearmap3/analysis/_voxelization.pyx":72
+      /* "bq3d/analysis/_voxelization.pyx":72
  *             cxf = cx0 + xs[iss];
  *             cyf = cy0 + ys[iss];
  *             czf = cz0 + zs[iss];             # <<<<<<<<<<<<<<
@@ -2959,7 +2959,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       }
       __pyx_v_czf = (__pyx_v_cz0 + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_zs.rcbuffer->pybuffer.buf, __pyx_t_38, __pyx_pybuffernd_zs.diminfo[0].strides)));
 
-      /* "clearmap3/analysis/_voxelization.pyx":74
+      /* "bq3d/analysis/_voxelization.pyx":74
  *             czf = cz0 + zs[iss];
  * 
  *             if cxf >= 0 and cxf < xsize:             # <<<<<<<<<<<<<<
@@ -2977,7 +2977,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
       __pyx_L16_bool_binop_done:;
       if (__pyx_t_18) {
 
-        /* "clearmap3/analysis/_voxelization.pyx":75
+        /* "bq3d/analysis/_voxelization.pyx":75
  * 
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:             # <<<<<<<<<<<<<<
@@ -2995,7 +2995,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
         __pyx_L19_bool_binop_done:;
         if (__pyx_t_18) {
 
-          /* "clearmap3/analysis/_voxelization.pyx":76
+          /* "bq3d/analysis/_voxelization.pyx":76
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:
  *                     if czf >= 0 and czf < zsize:             # <<<<<<<<<<<<<<
@@ -3013,7 +3013,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
           __pyx_L22_bool_binop_done:;
           if (__pyx_t_18) {
 
-            /* "clearmap3/analysis/_voxelization.pyx":77
+            /* "bq3d/analysis/_voxelization.pyx":77
  *                 if cyf >= 0 and cyf < ysize:
  *                     if czf >= 0 and czf < zsize:
  *                         cx = int(cxf);             # <<<<<<<<<<<<<<
@@ -3022,7 +3022,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
             __pyx_v_cx = ((int)__pyx_v_cxf);
 
-            /* "clearmap3/analysis/_voxelization.pyx":78
+            /* "bq3d/analysis/_voxelization.pyx":78
  *                     if czf >= 0 and czf < zsize:
  *                         cx = int(cxf);
  *                         cy = int(cyf);             # <<<<<<<<<<<<<<
@@ -3031,7 +3031,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
             __pyx_v_cy = ((int)__pyx_v_cyf);
 
-            /* "clearmap3/analysis/_voxelization.pyx":79
+            /* "bq3d/analysis/_voxelization.pyx":79
  *                         cx = int(cxf);
  *                         cy = int(cyf);
  *                         cz = int(czf);             # <<<<<<<<<<<<<<
@@ -3040,7 +3040,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
             __pyx_v_cz = ((int)__pyx_v_czf);
 
-            /* "clearmap3/analysis/_voxelization.pyx":81
+            /* "bq3d/analysis/_voxelization.pyx":81
  *                         cz = int(czf);
  * 
  *                         voximg[cx,cy,cz] = voximg[cx,cy,cz] + 1;             # <<<<<<<<<<<<<<
@@ -3089,7 +3089,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
             }
             *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_int32_t *, __pyx_pybuffernd_voximg.rcbuffer->pybuffer.buf, __pyx_t_43, __pyx_pybuffernd_voximg.diminfo[0].strides, __pyx_t_44, __pyx_pybuffernd_voximg.diminfo[1].strides, __pyx_t_45, __pyx_pybuffernd_voximg.diminfo[2].strides) = ((*__Pyx_BufPtrStrided3d(__pyx_t_5numpy_int32_t *, __pyx_pybuffernd_voximg.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_voximg.diminfo[0].strides, __pyx_t_41, __pyx_pybuffernd_voximg.diminfo[1].strides, __pyx_t_42, __pyx_pybuffernd_voximg.diminfo[2].strides)) + 1);
 
-            /* "clearmap3/analysis/_voxelization.pyx":76
+            /* "bq3d/analysis/_voxelization.pyx":76
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:
  *                     if czf >= 0 and czf < zsize:             # <<<<<<<<<<<<<<
@@ -3098,7 +3098,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
           }
 
-          /* "clearmap3/analysis/_voxelization.pyx":75
+          /* "bq3d/analysis/_voxelization.pyx":75
  * 
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:             # <<<<<<<<<<<<<<
@@ -3107,7 +3107,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
         }
 
-        /* "clearmap3/analysis/_voxelization.pyx":74
+        /* "bq3d/analysis/_voxelization.pyx":74
  *             czf = cz0 + zs[iss];
  * 
  *             if cxf >= 0 and cxf < xsize:             # <<<<<<<<<<<<<<
@@ -3118,7 +3118,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     }
   }
 
-  /* "clearmap3/analysis/_voxelization.pyx":83
+  /* "bq3d/analysis/_voxelization.pyx":83
  *                         voximg[cx,cy,cz] = voximg[cx,cy,cz] + 1;
  * 
  *     return voximg;             # <<<<<<<<<<<<<<
@@ -3130,7 +3130,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   __pyx_r = ((PyObject *)__pyx_v_voximg);
   goto __pyx_L0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":22
+  /* "bq3d/analysis/_voxelization.pyx":22
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphere(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
@@ -3157,7 +3157,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_ys.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_zs.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeSphere", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeSphere", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -3179,7 +3179,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
   return __pyx_r;
 }
 
-/* "clearmap3/analysis/_voxelization.pyx":88
+/* "bq3d/analysis/_voxelization.pyx":88
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphereWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
@@ -3188,10 +3188,10 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_voxelizeSphere(CY
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWithWeights[] = "Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point with a weight for each point";
-static PyMethodDef __pyx_mdef_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWithWeights = {"voxelizeSphereWithWeights", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWithWeights, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWithWeights};
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_3voxelizeSphereWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_8analysis_13_voxelization_2voxelizeSphereWithWeights[] = "Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point with a weight for each point";
+static PyMethodDef __pyx_mdef_9bq3d_8analysis_13_voxelization_3voxelizeSphereWithWeights = {"voxelizeSphereWithWeights", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_8analysis_13_voxelization_3voxelizeSphereWithWeights, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_8analysis_13_voxelization_2voxelizeSphereWithWeights};
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_3voxelizeSphereWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_points = 0;
   int __pyx_v_xsize;
   int __pyx_v_ysize;
@@ -3305,13 +3305,13 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWi
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("voxelizeSphereWithWeights", 1, 8, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 88, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeSphereWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeSphereWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_points), __pyx_ptype_5numpy_ndarray, 1, "points", 0))) __PYX_ERR(0, 88, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_weights), __pyx_ptype_5numpy_ndarray, 1, "weights", 0))) __PYX_ERR(0, 88, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWithWeights(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam, __pyx_v_weights);
+  __pyx_r = __pyx_pf_9bq3d_8analysis_13_voxelization_2voxelizeSphereWithWeights(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam, __pyx_v_weights);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3322,7 +3322,7 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWi
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights) {
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_2voxelizeSphereWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights) {
   PyArrayObject *__pyx_v_voximg = 0;
   int __pyx_v_iCentroid;
   int __pyx_v_nCentroid;
@@ -3443,7 +3443,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   }
   __pyx_pybuffernd_weights.diminfo[0].strides = __pyx_pybuffernd_weights.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_weights.diminfo[0].shape = __pyx_pybuffernd_weights.rcbuffer->pybuffer.shape[0];
 
-  /* "clearmap3/analysis/_voxelization.pyx":91
+  /* "bq3d/analysis/_voxelization.pyx":91
  *     """Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point with a weight for each point"""
  * 
  *     cdef np.ndarray[np.float_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.float)             # <<<<<<<<<<<<<<
@@ -3505,7 +3505,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   __pyx_v_voximg = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":93
+  /* "bq3d/analysis/_voxelization.pyx":93
  *     cdef np.ndarray[np.float_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.float)
  * 
  *     cdef int iCentroid = 0             # <<<<<<<<<<<<<<
@@ -3514,7 +3514,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_iCentroid = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":94
+  /* "bq3d/analysis/_voxelization.pyx":94
  * 
  *     cdef int iCentroid = 0
  *     cdef int nCentroid = points.shape[0]             # <<<<<<<<<<<<<<
@@ -3523,7 +3523,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_nCentroid = (__pyx_v_points->dimensions[0]);
 
-  /* "clearmap3/analysis/_voxelization.pyx":95
+  /* "bq3d/analysis/_voxelization.pyx":95
  *     cdef int iCentroid = 0
  *     cdef int nCentroid = points.shape[0]
  *     cdef int nSphereIndices = int(xdiam * ydiam * zdiam)             # <<<<<<<<<<<<<<
@@ -3532,7 +3532,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_nSphereIndices = ((int)((__pyx_v_xdiam * __pyx_v_ydiam) * __pyx_v_zdiam));
 
-  /* "clearmap3/analysis/_voxelization.pyx":98
+  /* "bq3d/analysis/_voxelization.pyx":98
  * 
  *     # precompute indices centered at 0,0,0
  *     cdef np.ndarray[np.int_t, ndim = 1] xs = np.zeros([nSphereIndices], dtype=np.int)             # <<<<<<<<<<<<<<
@@ -3584,7 +3584,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   __pyx_v_xs = ((PyArrayObject *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":99
+  /* "bq3d/analysis/_voxelization.pyx":99
  *     # precompute indices centered at 0,0,0
  *     cdef np.ndarray[np.int_t, ndim = 1] xs = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] ys = np.zeros([nSphereIndices], dtype=np.int)             # <<<<<<<<<<<<<<
@@ -3636,7 +3636,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   __pyx_v_ys = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":100
+  /* "bq3d/analysis/_voxelization.pyx":100
  *     cdef np.ndarray[np.int_t, ndim = 1] xs = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] ys = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] zs = np.zeros([nSphereIndices], dtype=np.int)             # <<<<<<<<<<<<<<
@@ -3688,7 +3688,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   __pyx_v_zs = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":101
+  /* "bq3d/analysis/_voxelization.pyx":101
  *     cdef np.ndarray[np.int_t, ndim = 1] ys = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef np.ndarray[np.int_t, ndim = 1] zs = np.zeros([nSphereIndices], dtype=np.int)
  *     cdef int ns = 0             # <<<<<<<<<<<<<<
@@ -3697,7 +3697,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_ns = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":103
+  /* "bq3d/analysis/_voxelization.pyx":103
  *     cdef int ns = 0
  * 
  *     cdef float xdiam2 = (xdiam - 1) * (xdiam - 1) / 4             # <<<<<<<<<<<<<<
@@ -3706,7 +3706,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_xdiam2 = (((__pyx_v_xdiam - 1.0) * (__pyx_v_xdiam - 1.0)) / 4.0);
 
-  /* "clearmap3/analysis/_voxelization.pyx":104
+  /* "bq3d/analysis/_voxelization.pyx":104
  * 
  *     cdef float xdiam2 = (xdiam - 1) * (xdiam - 1) / 4
  *     cdef float ydiam2 = (ydiam - 1) * (ydiam - 1) / 4             # <<<<<<<<<<<<<<
@@ -3715,7 +3715,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_ydiam2 = (((__pyx_v_ydiam - 1.0) * (__pyx_v_ydiam - 1.0)) / 4.0);
 
-  /* "clearmap3/analysis/_voxelization.pyx":105
+  /* "bq3d/analysis/_voxelization.pyx":105
  *     cdef float xdiam2 = (xdiam - 1) * (xdiam - 1) / 4
  *     cdef float ydiam2 = (ydiam - 1) * (ydiam - 1) / 4
  *     cdef float zdiam2 = (zdiam - 1) * (zdiam - 1) / 4             # <<<<<<<<<<<<<<
@@ -3724,7 +3724,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_zdiam2 = (((__pyx_v_zdiam - 1.0) * (__pyx_v_zdiam - 1.0)) / 4.0);
 
-  /* "clearmap3/analysis/_voxelization.pyx":107
+  /* "bq3d/analysis/_voxelization.pyx":107
  *     cdef float zdiam2 = (zdiam - 1) * (zdiam - 1) / 4
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -3789,7 +3789,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":108
+    /* "bq3d/analysis/_voxelization.pyx":108
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -3854,7 +3854,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":109
+      /* "bq3d/analysis/_voxelization.pyx":109
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -3919,7 +3919,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
         __Pyx_XDECREF_SET(__pyx_v_z, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "clearmap3/analysis/_voxelization.pyx":110
+        /* "bq3d/analysis/_voxelization.pyx":110
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:             # <<<<<<<<<<<<<<
@@ -3964,7 +3964,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         if (__pyx_t_18) {
 
-          /* "clearmap3/analysis/_voxelization.pyx":111
+          /* "bq3d/analysis/_voxelization.pyx":111
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:
  *                     xs[ns] = x; ys[ns] = y; zs[ns] = z;             # <<<<<<<<<<<<<<
@@ -4008,7 +4008,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
           }
           *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_zs.rcbuffer->pybuffer.buf, __pyx_t_23, __pyx_pybuffernd_zs.diminfo[0].strides) = __pyx_t_19;
 
-          /* "clearmap3/analysis/_voxelization.pyx":112
+          /* "bq3d/analysis/_voxelization.pyx":112
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:
  *                     xs[ns] = x; ys[ns] = y; zs[ns] = z;
  *                     ns += 1;             # <<<<<<<<<<<<<<
@@ -4017,7 +4017,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
           __pyx_v_ns = (__pyx_v_ns + 1);
 
-          /* "clearmap3/analysis/_voxelization.pyx":110
+          /* "bq3d/analysis/_voxelization.pyx":110
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):
  *                 if x*x / xdiam2 + y*y / ydiam2 + z*z / zdiam2 < 1:             # <<<<<<<<<<<<<<
@@ -4026,7 +4026,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
         }
 
-        /* "clearmap3/analysis/_voxelization.pyx":109
+        /* "bq3d/analysis/_voxelization.pyx":109
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):
  *             for z in range(int(-zdiam/2 + 1), int(zdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -4036,7 +4036,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":108
+      /* "bq3d/analysis/_voxelization.pyx":108
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):
  *         for y in range(int(-ydiam/2 + 1), int(ydiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -4046,7 +4046,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":107
+    /* "bq3d/analysis/_voxelization.pyx":107
  *     cdef float zdiam2 = (zdiam - 1) * (zdiam - 1) / 4
  * 
  *     for x in range(int(-xdiam/2 + 1), int(xdiam/2 + 1)):             # <<<<<<<<<<<<<<
@@ -4056,7 +4056,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":114
+  /* "bq3d/analysis/_voxelization.pyx":114
  *                     ns += 1;
  * 
  *     cdef int iss = 0             # <<<<<<<<<<<<<<
@@ -4065,7 +4065,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
   __pyx_v_iss = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":127
+  /* "bq3d/analysis/_voxelization.pyx":127
  *     cdef int cz
  * 
  *     for iCentroid in range(nCentroid):             # <<<<<<<<<<<<<<
@@ -4077,7 +4077,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   for (__pyx_t_25 = 0; __pyx_t_25 < __pyx_t_24; __pyx_t_25+=1) {
     __pyx_v_iCentroid = __pyx_t_25;
 
-    /* "clearmap3/analysis/_voxelization.pyx":128
+    /* "bq3d/analysis/_voxelization.pyx":128
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -4087,7 +4087,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     __pyx_t_18 = ((__Pyx_mod_long(__pyx_v_iCentroid, 0x61A8) == 0) != 0);
     if (__pyx_t_18) {
 
-      /* "clearmap3/analysis/_voxelization.pyx":129
+      /* "bq3d/analysis/_voxelization.pyx":129
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));             # <<<<<<<<<<<<<<
@@ -4132,7 +4132,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":128
+      /* "bq3d/analysis/_voxelization.pyx":128
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -4141,7 +4141,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
     }
 
-    /* "clearmap3/analysis/_voxelization.pyx":131
+    /* "bq3d/analysis/_voxelization.pyx":131
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));
  * 
  *         cx0 = points[iCentroid, 0];             # <<<<<<<<<<<<<<
@@ -4165,7 +4165,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     }
     __pyx_v_cx0 = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_points.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_points.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_points.diminfo[1].strides));
 
-    /* "clearmap3/analysis/_voxelization.pyx":132
+    /* "bq3d/analysis/_voxelization.pyx":132
  * 
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];             # <<<<<<<<<<<<<<
@@ -4189,7 +4189,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     }
     __pyx_v_cy0 = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_points.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_points.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_points.diminfo[1].strides));
 
-    /* "clearmap3/analysis/_voxelization.pyx":133
+    /* "bq3d/analysis/_voxelization.pyx":133
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];
  *         cz0 = points[iCentroid, 2];             # <<<<<<<<<<<<<<
@@ -4213,7 +4213,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     }
     __pyx_v_cz0 = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_points.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_points.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_points.diminfo[1].strides));
 
-    /* "clearmap3/analysis/_voxelization.pyx":135
+    /* "bq3d/analysis/_voxelization.pyx":135
  *         cz0 = points[iCentroid, 2];
  * 
  *         for iss in range(ns):             # <<<<<<<<<<<<<<
@@ -4225,7 +4225,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     for (__pyx_t_34 = 0; __pyx_t_34 < __pyx_t_33; __pyx_t_34+=1) {
       __pyx_v_iss = __pyx_t_34;
 
-      /* "clearmap3/analysis/_voxelization.pyx":136
+      /* "bq3d/analysis/_voxelization.pyx":136
  * 
  *         for iss in range(ns):
  *             cxf = cx0 + xs[iss];             # <<<<<<<<<<<<<<
@@ -4244,7 +4244,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       }
       __pyx_v_cxf = (__pyx_v_cx0 + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_xs.rcbuffer->pybuffer.buf, __pyx_t_35, __pyx_pybuffernd_xs.diminfo[0].strides)));
 
-      /* "clearmap3/analysis/_voxelization.pyx":137
+      /* "bq3d/analysis/_voxelization.pyx":137
  *         for iss in range(ns):
  *             cxf = cx0 + xs[iss];
  *             cyf = cy0 + ys[iss];             # <<<<<<<<<<<<<<
@@ -4263,7 +4263,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       }
       __pyx_v_cyf = (__pyx_v_cy0 + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_ys.rcbuffer->pybuffer.buf, __pyx_t_37, __pyx_pybuffernd_ys.diminfo[0].strides)));
 
-      /* "clearmap3/analysis/_voxelization.pyx":138
+      /* "bq3d/analysis/_voxelization.pyx":138
  *             cxf = cx0 + xs[iss];
  *             cyf = cy0 + ys[iss];
  *             czf = cz0 + zs[iss];             # <<<<<<<<<<<<<<
@@ -4282,7 +4282,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       }
       __pyx_v_czf = (__pyx_v_cz0 + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int_t *, __pyx_pybuffernd_zs.rcbuffer->pybuffer.buf, __pyx_t_38, __pyx_pybuffernd_zs.diminfo[0].strides)));
 
-      /* "clearmap3/analysis/_voxelization.pyx":140
+      /* "bq3d/analysis/_voxelization.pyx":140
  *             czf = cz0 + zs[iss];
  * 
  *             if cxf >= 0 and cxf < xsize:             # <<<<<<<<<<<<<<
@@ -4300,7 +4300,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
       __pyx_L16_bool_binop_done:;
       if (__pyx_t_18) {
 
-        /* "clearmap3/analysis/_voxelization.pyx":141
+        /* "bq3d/analysis/_voxelization.pyx":141
  * 
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:             # <<<<<<<<<<<<<<
@@ -4318,7 +4318,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
         __pyx_L19_bool_binop_done:;
         if (__pyx_t_18) {
 
-          /* "clearmap3/analysis/_voxelization.pyx":142
+          /* "bq3d/analysis/_voxelization.pyx":142
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:
  *                     if czf >= 0 and czf < zsize:             # <<<<<<<<<<<<<<
@@ -4336,7 +4336,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
           __pyx_L22_bool_binop_done:;
           if (__pyx_t_18) {
 
-            /* "clearmap3/analysis/_voxelization.pyx":143
+            /* "bq3d/analysis/_voxelization.pyx":143
  *                 if cyf >= 0 and cyf < ysize:
  *                     if czf >= 0 and czf < zsize:
  *                         cx = int(cxf);             # <<<<<<<<<<<<<<
@@ -4345,7 +4345,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
             __pyx_v_cx = ((int)__pyx_v_cxf);
 
-            /* "clearmap3/analysis/_voxelization.pyx":144
+            /* "bq3d/analysis/_voxelization.pyx":144
  *                     if czf >= 0 and czf < zsize:
  *                         cx = int(cxf);
  *                         cy = int(cyf);             # <<<<<<<<<<<<<<
@@ -4354,7 +4354,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
             __pyx_v_cy = ((int)__pyx_v_cyf);
 
-            /* "clearmap3/analysis/_voxelization.pyx":145
+            /* "bq3d/analysis/_voxelization.pyx":145
  *                         cx = int(cxf);
  *                         cy = int(cyf);
  *                         cz = int(czf);             # <<<<<<<<<<<<<<
@@ -4363,7 +4363,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
             __pyx_v_cz = ((int)__pyx_v_czf);
 
-            /* "clearmap3/analysis/_voxelization.pyx":147
+            /* "bq3d/analysis/_voxelization.pyx":147
  *                         cz = int(czf);
  * 
  *                         voximg[cx,cy,cz] = voximg[cx,cy,cz] + weights[iCentroid];             # <<<<<<<<<<<<<<
@@ -4422,7 +4422,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
             }
             *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_voximg.rcbuffer->pybuffer.buf, __pyx_t_44, __pyx_pybuffernd_voximg.diminfo[0].strides, __pyx_t_45, __pyx_pybuffernd_voximg.diminfo[1].strides, __pyx_t_46, __pyx_pybuffernd_voximg.diminfo[2].strides) = ((*__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_voximg.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_voximg.diminfo[0].strides, __pyx_t_41, __pyx_pybuffernd_voximg.diminfo[1].strides, __pyx_t_42, __pyx_pybuffernd_voximg.diminfo[2].strides)) + (*__Pyx_BufPtrStrided1d(__pyx_t_5numpy_float_t *, __pyx_pybuffernd_weights.rcbuffer->pybuffer.buf, __pyx_t_43, __pyx_pybuffernd_weights.diminfo[0].strides)));
 
-            /* "clearmap3/analysis/_voxelization.pyx":142
+            /* "bq3d/analysis/_voxelization.pyx":142
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:
  *                     if czf >= 0 and czf < zsize:             # <<<<<<<<<<<<<<
@@ -4431,7 +4431,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
           }
 
-          /* "clearmap3/analysis/_voxelization.pyx":141
+          /* "bq3d/analysis/_voxelization.pyx":141
  * 
  *             if cxf >= 0 and cxf < xsize:
  *                 if cyf >= 0 and cyf < ysize:             # <<<<<<<<<<<<<<
@@ -4440,7 +4440,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
         }
 
-        /* "clearmap3/analysis/_voxelization.pyx":140
+        /* "bq3d/analysis/_voxelization.pyx":140
  *             czf = cz0 + zs[iss];
  * 
  *             if cxf >= 0 and cxf < xsize:             # <<<<<<<<<<<<<<
@@ -4451,7 +4451,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     }
   }
 
-  /* "clearmap3/analysis/_voxelization.pyx":149
+  /* "bq3d/analysis/_voxelization.pyx":149
  *                         voximg[cx,cy,cz] = voximg[cx,cy,cz] + weights[iCentroid];
  * 
  *     return voximg;             # <<<<<<<<<<<<<<
@@ -4463,7 +4463,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   __pyx_r = ((PyObject *)__pyx_v_voximg);
   goto __pyx_L0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":88
+  /* "bq3d/analysis/_voxelization.pyx":88
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphereWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
@@ -4491,7 +4491,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_ys.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_zs.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeSphereWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeSphereWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -4514,7 +4514,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
   return __pyx_r;
 }
 
-/* "clearmap3/analysis/_voxelization.pyx":153
+/* "bq3d/analysis/_voxelization.pyx":153
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangle(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
@@ -4523,10 +4523,10 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_2voxelizeSphereWi
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_5voxelizeRectangle(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_8analysis_13_voxelization_4voxelizeRectangle[] = "Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point";
-static PyMethodDef __pyx_mdef_9clearmap3_8analysis_13_voxelization_5voxelizeRectangle = {"voxelizeRectangle", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_8analysis_13_voxelization_5voxelizeRectangle, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_8analysis_13_voxelization_4voxelizeRectangle};
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_5voxelizeRectangle(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_5voxelizeRectangle(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_8analysis_13_voxelization_4voxelizeRectangle[] = "Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point";
+static PyMethodDef __pyx_mdef_9bq3d_8analysis_13_voxelization_5voxelizeRectangle = {"voxelizeRectangle", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_8analysis_13_voxelization_5voxelizeRectangle, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_8analysis_13_voxelization_4voxelizeRectangle};
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_5voxelizeRectangle(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_points = 0;
   int __pyx_v_xsize;
   int __pyx_v_ysize;
@@ -4629,12 +4629,12 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_5voxelizeRectangl
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("voxelizeRectangle", 1, 7, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 153, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeRectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeRectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_points), __pyx_ptype_5numpy_ndarray, 1, "points", 0))) __PYX_ERR(0, 153, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangle(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam);
+  __pyx_r = __pyx_pf_9bq3d_8analysis_13_voxelization_4voxelizeRectangle(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4645,7 +4645,7 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_5voxelizeRectangl
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangle(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam) {
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_4voxelizeRectangle(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam) {
   PyArrayObject *__pyx_v_voximg = 0;
   int __pyx_v_iCentroid;
   int __pyx_v_nCentroid;
@@ -4722,7 +4722,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
   }
   __pyx_pybuffernd_points.diminfo[0].strides = __pyx_pybuffernd_points.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_points.diminfo[0].shape = __pyx_pybuffernd_points.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_points.diminfo[1].strides = __pyx_pybuffernd_points.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_points.diminfo[1].shape = __pyx_pybuffernd_points.rcbuffer->pybuffer.shape[1];
 
-  /* "clearmap3/analysis/_voxelization.pyx":156
+  /* "bq3d/analysis/_voxelization.pyx":156
  *     """Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point"""
  * 
  *     cdef np.ndarray[np.int32_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.int32)             # <<<<<<<<<<<<<<
@@ -4784,7 +4784,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
   __pyx_v_voximg = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":158
+  /* "bq3d/analysis/_voxelization.pyx":158
  *     cdef np.ndarray[np.int32_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.int32)
  * 
  *     cdef int iCentroid = 0             # <<<<<<<<<<<<<<
@@ -4793,7 +4793,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_iCentroid = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":159
+  /* "bq3d/analysis/_voxelization.pyx":159
  * 
  *     cdef int iCentroid = 0
  *     cdef int nCentroid = points.shape[0]             # <<<<<<<<<<<<<<
@@ -4802,7 +4802,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_nCentroid = (__pyx_v_points->dimensions[0]);
 
-  /* "clearmap3/analysis/_voxelization.pyx":161
+  /* "bq3d/analysis/_voxelization.pyx":161
  *     cdef int nCentroid = points.shape[0]
  * 
  *     cdef int iss = 0             # <<<<<<<<<<<<<<
@@ -4811,7 +4811,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_iss = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":171
+  /* "bq3d/analysis/_voxelization.pyx":171
  *     cdef int cz
  * 
  *     cdef int xmin = int(-xdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -4820,7 +4820,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_xmin = ((int)(((-__pyx_v_xdiam) / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":172
+  /* "bq3d/analysis/_voxelization.pyx":172
  * 
  *     cdef int xmin = int(-xdiam/2 + 1)
  *     cdef int xmax = int(xdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -4829,7 +4829,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_xmax = ((int)((__pyx_v_xdiam / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":174
+  /* "bq3d/analysis/_voxelization.pyx":174
  *     cdef int xmax = int(xdiam/2 + 1)
  * 
  *     cdef int ymin = int(-ydiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -4838,7 +4838,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_ymin = ((int)(((-__pyx_v_ydiam) / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":175
+  /* "bq3d/analysis/_voxelization.pyx":175
  * 
  *     cdef int ymin = int(-ydiam/2 + 1)
  *     cdef int ymax = int(ydiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -4847,7 +4847,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_ymax = ((int)((__pyx_v_ydiam / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":177
+  /* "bq3d/analysis/_voxelization.pyx":177
  *     cdef int ymax = int(ydiam/2 + 1)
  * 
  *     cdef int zmin = int(-zdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -4856,7 +4856,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_zmin = ((int)(((-__pyx_v_zdiam) / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":178
+  /* "bq3d/analysis/_voxelization.pyx":178
  * 
  *     cdef int zmin = int(-zdiam/2 + 1)
  *     cdef int zmax = int(zdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -4865,7 +4865,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
   __pyx_v_zmax = ((int)((__pyx_v_zdiam / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":182
+  /* "bq3d/analysis/_voxelization.pyx":182
  *     cdef int xl, xh, yl, yh, zl, zh
  * 
  *     for iCentroid in range(nCentroid):             # <<<<<<<<<<<<<<
@@ -4877,7 +4877,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_iCentroid = __pyx_t_9;
 
-    /* "clearmap3/analysis/_voxelization.pyx":183
+    /* "bq3d/analysis/_voxelization.pyx":183
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -4887,7 +4887,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __pyx_t_10 = ((__Pyx_mod_long(__pyx_v_iCentroid, 0x61A8) == 0) != 0);
     if (__pyx_t_10) {
 
-      /* "clearmap3/analysis/_voxelization.pyx":184
+      /* "bq3d/analysis/_voxelization.pyx":184
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));             # <<<<<<<<<<<<<<
@@ -4932,7 +4932,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":183
+      /* "bq3d/analysis/_voxelization.pyx":183
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -4941,7 +4941,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
     }
 
-    /* "clearmap3/analysis/_voxelization.pyx":186
+    /* "bq3d/analysis/_voxelization.pyx":186
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));
  * 
  *         cx0 = points[iCentroid, 0];             # <<<<<<<<<<<<<<
@@ -4968,7 +4968,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_XDECREF_SET(__pyx_v_cx0, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":187
+    /* "bq3d/analysis/_voxelization.pyx":187
  * 
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];             # <<<<<<<<<<<<<<
@@ -4995,7 +4995,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_XDECREF_SET(__pyx_v_cy0, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":188
+    /* "bq3d/analysis/_voxelization.pyx":188
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];
  *         cz0 = points[iCentroid, 2];             # <<<<<<<<<<<<<<
@@ -5022,7 +5022,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_XDECREF_SET(__pyx_v_cz0, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":190
+    /* "bq3d/analysis/_voxelization.pyx":190
  *         cz0 = points[iCentroid, 2];
  * 
  *         xl = max(0, int(cx0 + xmin));             # <<<<<<<<<<<<<<
@@ -5058,7 +5058,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_xl = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":191
+    /* "bq3d/analysis/_voxelization.pyx":191
  * 
  *         xl = max(0, int(cx0 + xmin));
  *         xh = min(xsize, int(cx0 + xmax));             # <<<<<<<<<<<<<<
@@ -5094,7 +5094,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_xh = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":193
+    /* "bq3d/analysis/_voxelization.pyx":193
  *         xh = min(xsize, int(cx0 + xmax));
  * 
  *         yl = max(0, int(cy0 + ymin));             # <<<<<<<<<<<<<<
@@ -5130,7 +5130,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_yl = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":194
+    /* "bq3d/analysis/_voxelization.pyx":194
  * 
  *         yl = max(0, int(cy0 + ymin));
  *         yh = min(xsize, int(cy0 + ymax));             # <<<<<<<<<<<<<<
@@ -5166,7 +5166,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_yh = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":196
+    /* "bq3d/analysis/_voxelization.pyx":196
  *         yh = min(xsize, int(cy0 + ymax));
  * 
  *         zl = max(0, int(cz0 + zmin));             # <<<<<<<<<<<<<<
@@ -5202,7 +5202,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_zl = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":197
+    /* "bq3d/analysis/_voxelization.pyx":197
  * 
  *         zl = max(0, int(cz0 + zmin));
  *         zh = min(zsize, int(cz0 + zmax));             # <<<<<<<<<<<<<<
@@ -5238,7 +5238,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_zh = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":199
+    /* "bq3d/analysis/_voxelization.pyx":199
  *         zh = min(zsize, int(cz0 + zmax));
  * 
  *         for xs in range(xl,xh):             # <<<<<<<<<<<<<<
@@ -5250,7 +5250,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     for (__pyx_t_20 = __pyx_v_xl; __pyx_t_20 < __pyx_t_19; __pyx_t_20+=1) {
       __pyx_v_xs = __pyx_t_20;
 
-      /* "clearmap3/analysis/_voxelization.pyx":200
+      /* "bq3d/analysis/_voxelization.pyx":200
  * 
  *         for xs in range(xl,xh):
  *             for ys in range(yl,yh):             # <<<<<<<<<<<<<<
@@ -5262,7 +5262,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
       for (__pyx_t_23 = __pyx_v_yl; __pyx_t_23 < __pyx_t_22; __pyx_t_23+=1) {
         __pyx_v_ys = __pyx_t_23;
 
-        /* "clearmap3/analysis/_voxelization.pyx":201
+        /* "bq3d/analysis/_voxelization.pyx":201
  *         for xs in range(xl,xh):
  *             for ys in range(yl,yh):
  *                 for zs in range(zl,zh):             # <<<<<<<<<<<<<<
@@ -5274,7 +5274,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
         for (__pyx_t_26 = __pyx_v_zl; __pyx_t_26 < __pyx_t_25; __pyx_t_26+=1) {
           __pyx_v_zs = __pyx_t_26;
 
-          /* "clearmap3/analysis/_voxelization.pyx":202
+          /* "bq3d/analysis/_voxelization.pyx":202
  *             for ys in range(yl,yh):
  *                 for zs in range(zl,zh):
  *                     voximg[xs,ys,zs] = voximg[xs,ys,zs] + 1;             # <<<<<<<<<<<<<<
@@ -5327,7 +5327,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     }
   }
 
-  /* "clearmap3/analysis/_voxelization.pyx":204
+  /* "bq3d/analysis/_voxelization.pyx":204
  *                     voximg[xs,ys,zs] = voximg[xs,ys,zs] + 1;
  * 
  *     return voximg;             # <<<<<<<<<<<<<<
@@ -5339,7 +5339,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
   __pyx_r = ((PyObject *)__pyx_v_voximg);
   goto __pyx_L0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":153
+  /* "bq3d/analysis/_voxelization.pyx":153
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangle(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
@@ -5361,7 +5361,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_points.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_voximg.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeRectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeRectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -5377,7 +5377,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
   return __pyx_r;
 }
 
-/* "clearmap3/analysis/_voxelization.pyx":209
+/* "bq3d/analysis/_voxelization.pyx":209
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangleWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
@@ -5386,10 +5386,10 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_4voxelizeRectangl
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_7voxelizeRectangleWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_8analysis_13_voxelization_6voxelizeRectangleWithWeights[] = "Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point with a weight factor for each array";
-static PyMethodDef __pyx_mdef_9clearmap3_8analysis_13_voxelization_7voxelizeRectangleWithWeights = {"voxelizeRectangleWithWeights", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_8analysis_13_voxelization_7voxelizeRectangleWithWeights, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_8analysis_13_voxelization_6voxelizeRectangleWithWeights};
-static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_7voxelizeRectangleWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_7voxelizeRectangleWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_8analysis_13_voxelization_6voxelizeRectangleWithWeights[] = "Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point with a weight factor for each array";
+static PyMethodDef __pyx_mdef_9bq3d_8analysis_13_voxelization_7voxelizeRectangleWithWeights = {"voxelizeRectangleWithWeights", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_8analysis_13_voxelization_7voxelizeRectangleWithWeights, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_8analysis_13_voxelization_6voxelizeRectangleWithWeights};
+static PyObject *__pyx_pw_9bq3d_8analysis_13_voxelization_7voxelizeRectangleWithWeights(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_points = 0;
   int __pyx_v_xsize;
   int __pyx_v_ysize;
@@ -5503,13 +5503,13 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_7voxelizeRectangl
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("voxelizeRectangleWithWeights", 1, 8, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 209, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeRectangleWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeRectangleWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_points), __pyx_ptype_5numpy_ndarray, 1, "points", 0))) __PYX_ERR(0, 209, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_weights), __pyx_ptype_5numpy_ndarray, 1, "weights", 0))) __PYX_ERR(0, 209, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangleWithWeights(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam, __pyx_v_weights);
+  __pyx_r = __pyx_pf_9bq3d_8analysis_13_voxelization_6voxelizeRectangleWithWeights(__pyx_self, __pyx_v_points, __pyx_v_xsize, __pyx_v_ysize, __pyx_v_zsize, __pyx_v_xdiam, __pyx_v_ydiam, __pyx_v_zdiam, __pyx_v_weights);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5520,7 +5520,7 @@ static PyObject *__pyx_pw_9clearmap3_8analysis_13_voxelization_7voxelizeRectangl
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangleWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights) {
+static PyObject *__pyx_pf_9bq3d_8analysis_13_voxelization_6voxelizeRectangleWithWeights(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_points, int __pyx_v_xsize, int __pyx_v_ysize, int __pyx_v_zsize, float __pyx_v_xdiam, float __pyx_v_ydiam, float __pyx_v_zdiam, PyArrayObject *__pyx_v_weights) {
   PyArrayObject *__pyx_v_voximg = 0;
   int __pyx_v_iCentroid;
   int __pyx_v_nCentroid;
@@ -5609,7 +5609,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
   }
   __pyx_pybuffernd_weights.diminfo[0].strides = __pyx_pybuffernd_weights.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_weights.diminfo[0].shape = __pyx_pybuffernd_weights.rcbuffer->pybuffer.shape[0];
 
-  /* "clearmap3/analysis/_voxelization.pyx":212
+  /* "bq3d/analysis/_voxelization.pyx":212
  *     """Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point with a weight factor for each array"""
  * 
  *     cdef np.ndarray[np.float_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.float)             # <<<<<<<<<<<<<<
@@ -5671,7 +5671,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
   __pyx_v_voximg = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":214
+  /* "bq3d/analysis/_voxelization.pyx":214
  *     cdef np.ndarray[np.float_t, ndim =3] voximg = np.zeros([xsize, ysize, zsize], dtype=np.float)
  * 
  *     cdef int iCentroid = 0             # <<<<<<<<<<<<<<
@@ -5680,7 +5680,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_iCentroid = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":215
+  /* "bq3d/analysis/_voxelization.pyx":215
  * 
  *     cdef int iCentroid = 0
  *     cdef int nCentroid = points.shape[0]             # <<<<<<<<<<<<<<
@@ -5689,7 +5689,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_nCentroid = (__pyx_v_points->dimensions[0]);
 
-  /* "clearmap3/analysis/_voxelization.pyx":217
+  /* "bq3d/analysis/_voxelization.pyx":217
  *     cdef int nCentroid = points.shape[0]
  * 
  *     cdef int iss = 0             # <<<<<<<<<<<<<<
@@ -5698,7 +5698,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_iss = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":227
+  /* "bq3d/analysis/_voxelization.pyx":227
  *     cdef int cz
  * 
  *     cdef int xmin = int(-xdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -5707,7 +5707,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_xmin = ((int)(((-__pyx_v_xdiam) / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":228
+  /* "bq3d/analysis/_voxelization.pyx":228
  * 
  *     cdef int xmin = int(-xdiam/2 + 1)
  *     cdef int xmax = int(xdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -5716,7 +5716,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_xmax = ((int)((__pyx_v_xdiam / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":230
+  /* "bq3d/analysis/_voxelization.pyx":230
  *     cdef int xmax = int(xdiam/2 + 1)
  * 
  *     cdef int ymin = int(-ydiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -5725,7 +5725,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_ymin = ((int)(((-__pyx_v_ydiam) / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":231
+  /* "bq3d/analysis/_voxelization.pyx":231
  * 
  *     cdef int ymin = int(-ydiam/2 + 1)
  *     cdef int ymax = int(ydiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -5734,7 +5734,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_ymax = ((int)((__pyx_v_ydiam / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":233
+  /* "bq3d/analysis/_voxelization.pyx":233
  *     cdef int ymax = int(ydiam/2 + 1)
  * 
  *     cdef int zmin = int(-zdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -5743,7 +5743,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_zmin = ((int)(((-__pyx_v_zdiam) / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":234
+  /* "bq3d/analysis/_voxelization.pyx":234
  * 
  *     cdef int zmin = int(-zdiam/2 + 1)
  *     cdef int zmax = int(zdiam/2 + 1)             # <<<<<<<<<<<<<<
@@ -5752,7 +5752,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
   __pyx_v_zmax = ((int)((__pyx_v_zdiam / 2.0) + 1.0));
 
-  /* "clearmap3/analysis/_voxelization.pyx":238
+  /* "bq3d/analysis/_voxelization.pyx":238
  *     cdef int xl, xh, yl, yh, zl, zh
  * 
  *     for iCentroid in range(nCentroid):             # <<<<<<<<<<<<<<
@@ -5764,7 +5764,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_iCentroid = __pyx_t_9;
 
-    /* "clearmap3/analysis/_voxelization.pyx":239
+    /* "bq3d/analysis/_voxelization.pyx":239
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -5774,7 +5774,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __pyx_t_10 = ((__Pyx_mod_long(__pyx_v_iCentroid, 0x61A8) == 0) != 0);
     if (__pyx_t_10) {
 
-      /* "clearmap3/analysis/_voxelization.pyx":240
+      /* "bq3d/analysis/_voxelization.pyx":240
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));             # <<<<<<<<<<<<<<
@@ -5819,7 +5819,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clearmap3/analysis/_voxelization.pyx":239
+      /* "bq3d/analysis/_voxelization.pyx":239
  * 
  *     for iCentroid in range(nCentroid):
  *         if ((iCentroid % 25000) == 0):             # <<<<<<<<<<<<<<
@@ -5828,7 +5828,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
  */
     }
 
-    /* "clearmap3/analysis/_voxelization.pyx":242
+    /* "bq3d/analysis/_voxelization.pyx":242
  *             log.info("Processed %d/%d" % (iCentroid, nCentroid));
  * 
  *         cx0 = points[iCentroid, 0];             # <<<<<<<<<<<<<<
@@ -5855,7 +5855,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_XDECREF_SET(__pyx_v_cx0, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":243
+    /* "bq3d/analysis/_voxelization.pyx":243
  * 
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];             # <<<<<<<<<<<<<<
@@ -5882,7 +5882,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_XDECREF_SET(__pyx_v_cy0, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":244
+    /* "bq3d/analysis/_voxelization.pyx":244
  *         cx0 = points[iCentroid, 0];
  *         cy0 = points[iCentroid, 1];
  *         cz0 = points[iCentroid, 2];             # <<<<<<<<<<<<<<
@@ -5909,7 +5909,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_XDECREF_SET(__pyx_v_cz0, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "clearmap3/analysis/_voxelization.pyx":246
+    /* "bq3d/analysis/_voxelization.pyx":246
  *         cz0 = points[iCentroid, 2];
  * 
  *         xl = max(0, int(cx0 + xmin));             # <<<<<<<<<<<<<<
@@ -5945,7 +5945,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_xl = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":247
+    /* "bq3d/analysis/_voxelization.pyx":247
  * 
  *         xl = max(0, int(cx0 + xmin));
  *         xh = min(xsize, int(cx0 + xmax));             # <<<<<<<<<<<<<<
@@ -5981,7 +5981,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_xh = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":249
+    /* "bq3d/analysis/_voxelization.pyx":249
  *         xh = min(xsize, int(cx0 + xmax));
  * 
  *         yl = max(0, int(cy0 + ymin));             # <<<<<<<<<<<<<<
@@ -6017,7 +6017,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_yl = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":250
+    /* "bq3d/analysis/_voxelization.pyx":250
  * 
  *         yl = max(0, int(cy0 + ymin));
  *         yh = min(xsize, int(cy0 + ymax));             # <<<<<<<<<<<<<<
@@ -6053,7 +6053,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_yh = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":252
+    /* "bq3d/analysis/_voxelization.pyx":252
  *         yh = min(xsize, int(cy0 + ymax));
  * 
  *         zl = max(0, int(cz0 + zmin));             # <<<<<<<<<<<<<<
@@ -6089,7 +6089,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_zl = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":253
+    /* "bq3d/analysis/_voxelization.pyx":253
  * 
  *         zl = max(0, int(cz0 + zmin));
  *         zh = min(zsize, int(cz0 + zmax));             # <<<<<<<<<<<<<<
@@ -6125,7 +6125,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_zh = __pyx_t_13;
 
-    /* "clearmap3/analysis/_voxelization.pyx":255
+    /* "bq3d/analysis/_voxelization.pyx":255
  *         zh = min(zsize, int(cz0 + zmax));
  * 
  *         for xs in range(xl,xh):             # <<<<<<<<<<<<<<
@@ -6137,7 +6137,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     for (__pyx_t_20 = __pyx_v_xl; __pyx_t_20 < __pyx_t_19; __pyx_t_20+=1) {
       __pyx_v_xs = __pyx_t_20;
 
-      /* "clearmap3/analysis/_voxelization.pyx":256
+      /* "bq3d/analysis/_voxelization.pyx":256
  * 
  *         for xs in range(xl,xh):
  *             for ys in range(yl,yh):             # <<<<<<<<<<<<<<
@@ -6149,7 +6149,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
       for (__pyx_t_23 = __pyx_v_yl; __pyx_t_23 < __pyx_t_22; __pyx_t_23+=1) {
         __pyx_v_ys = __pyx_t_23;
 
-        /* "clearmap3/analysis/_voxelization.pyx":257
+        /* "bq3d/analysis/_voxelization.pyx":257
  *         for xs in range(xl,xh):
  *             for ys in range(yl,yh):
  *                 for zs in range(zl,zh):             # <<<<<<<<<<<<<<
@@ -6161,7 +6161,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
         for (__pyx_t_26 = __pyx_v_zl; __pyx_t_26 < __pyx_t_25; __pyx_t_26+=1) {
           __pyx_v_zs = __pyx_t_26;
 
-          /* "clearmap3/analysis/_voxelization.pyx":258
+          /* "bq3d/analysis/_voxelization.pyx":258
  *             for ys in range(yl,yh):
  *                 for zs in range(zl,zh):
  *                     voximg[xs,ys,zs] = voximg[xs,ys,zs] + weights[iCentroid];             # <<<<<<<<<<<<<<
@@ -6224,7 +6224,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     }
   }
 
-  /* "clearmap3/analysis/_voxelization.pyx":260
+  /* "bq3d/analysis/_voxelization.pyx":260
  *                     voximg[xs,ys,zs] = voximg[xs,ys,zs] + weights[iCentroid];
  * 
  *     return voximg;             # <<<<<<<<<<<<<<
@@ -6234,7 +6234,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
   __pyx_r = ((PyObject *)__pyx_v_voximg);
   goto __pyx_L0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":209
+  /* "bq3d/analysis/_voxelization.pyx":209
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangleWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
@@ -6257,7 +6257,7 @@ static PyObject *__pyx_pf_9clearmap3_8analysis_13_voxelization_6voxelizeRectangl
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_voximg.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_weights.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.analysis._voxelization.voxelizeRectangleWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.analysis._voxelization.voxelizeRectangleWithWeights", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -8745,8 +8745,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_Processed_d_d, __pyx_k_Processed_d_d, sizeof(__pyx_k_Processed_d_d), 0, 0, 1, 0},
   {&__pyx_n_s_RuntimeError, __pyx_k_RuntimeError, sizeof(__pyx_k_RuntimeError), 0, 0, 1, 1},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
-  {&__pyx_kp_s_clearmap3_analysis__voxelization, __pyx_k_clearmap3_analysis__voxelization, sizeof(__pyx_k_clearmap3_analysis__voxelization), 0, 0, 1, 0},
-  {&__pyx_n_s_clearmap3_analysis__voxelization_2, __pyx_k_clearmap3_analysis__voxelization_2, sizeof(__pyx_k_clearmap3_analysis__voxelization_2), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_analysis__voxelization, __pyx_k_bq3d_analysis__voxelization, sizeof(__pyx_k_bq3d_analysis__voxelization), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_analysis__voxelization_2, __pyx_k_bq3d_analysis__voxelization_2, sizeof(__pyx_k_bq3d_analysis__voxelization_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_cx, __pyx_k_cx, sizeof(__pyx_k_cx), 0, 0, 1, 1},
   {&__pyx_n_s_cx0, __pyx_k_cx0, sizeof(__pyx_k_cx0), 0, 0, 1, 1},
@@ -8910,7 +8910,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "clearmap3/analysis/_voxelization.pyx":22
+  /* "bq3d/analysis/_voxelization.pyx":22
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphere(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
@@ -8920,9 +8920,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__8 = PyTuple_Pack(31, __pyx_n_s_points, __pyx_n_s_xsize, __pyx_n_s_ysize, __pyx_n_s_zsize, __pyx_n_s_xdiam, __pyx_n_s_ydiam, __pyx_n_s_zdiam, __pyx_n_s_voximg, __pyx_n_s_iCentroid, __pyx_n_s_nCentroid, __pyx_n_s_nSphereIndices, __pyx_n_s_xs, __pyx_n_s_ys, __pyx_n_s_zs, __pyx_n_s_ns, __pyx_n_s_xdiam2, __pyx_n_s_ydiam2, __pyx_n_s_zdiam2, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_iss, __pyx_n_s_cx0, __pyx_n_s_cy0, __pyx_n_s_cz0, __pyx_n_s_cxf, __pyx_n_s_cyf, __pyx_n_s_czf, __pyx_n_s_cx, __pyx_n_s_cy, __pyx_n_s_cz); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(7, 0, 31, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_analysis__voxelization, __pyx_n_s_voxelizeSphere, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(7, 0, 31, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_analysis__voxelization, __pyx_n_s_voxelizeSphere, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  /* "clearmap3/analysis/_voxelization.pyx":88
+  /* "bq3d/analysis/_voxelization.pyx":88
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphereWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
@@ -8932,9 +8932,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__10 = PyTuple_Pack(32, __pyx_n_s_points, __pyx_n_s_xsize, __pyx_n_s_ysize, __pyx_n_s_zsize, __pyx_n_s_xdiam, __pyx_n_s_ydiam, __pyx_n_s_zdiam, __pyx_n_s_weights, __pyx_n_s_voximg, __pyx_n_s_iCentroid, __pyx_n_s_nCentroid, __pyx_n_s_nSphereIndices, __pyx_n_s_xs, __pyx_n_s_ys, __pyx_n_s_zs, __pyx_n_s_ns, __pyx_n_s_xdiam2, __pyx_n_s_ydiam2, __pyx_n_s_zdiam2, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_iss, __pyx_n_s_cx0, __pyx_n_s_cy0, __pyx_n_s_cz0, __pyx_n_s_cxf, __pyx_n_s_cyf, __pyx_n_s_czf, __pyx_n_s_cx, __pyx_n_s_cy, __pyx_n_s_cz); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(8, 0, 32, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_analysis__voxelization, __pyx_n_s_voxelizeSphereWithWeights, 88, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(8, 0, 32, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_analysis__voxelization, __pyx_n_s_voxelizeSphereWithWeights, 88, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 88, __pyx_L1_error)
 
-  /* "clearmap3/analysis/_voxelization.pyx":153
+  /* "bq3d/analysis/_voxelization.pyx":153
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangle(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
@@ -8944,9 +8944,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__12 = PyTuple_Pack(35, __pyx_n_s_points, __pyx_n_s_xsize, __pyx_n_s_ysize, __pyx_n_s_zsize, __pyx_n_s_xdiam, __pyx_n_s_ydiam, __pyx_n_s_zdiam, __pyx_n_s_voximg, __pyx_n_s_iCentroid, __pyx_n_s_nCentroid, __pyx_n_s_iss, __pyx_n_s_cxf, __pyx_n_s_cyf, __pyx_n_s_czf, __pyx_n_s_cx, __pyx_n_s_cy, __pyx_n_s_cz, __pyx_n_s_xmin, __pyx_n_s_xmax, __pyx_n_s_ymin, __pyx_n_s_ymax, __pyx_n_s_zmin, __pyx_n_s_zmax, __pyx_n_s_xl, __pyx_n_s_xh, __pyx_n_s_yl, __pyx_n_s_yh, __pyx_n_s_zl, __pyx_n_s_zh, __pyx_n_s_cx0, __pyx_n_s_cy0, __pyx_n_s_cz0, __pyx_n_s_xs, __pyx_n_s_ys, __pyx_n_s_zs); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(7, 0, 35, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_analysis__voxelization, __pyx_n_s_voxelizeRectangle, 153, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(7, 0, 35, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_analysis__voxelization, __pyx_n_s_voxelizeRectangle, 153, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 153, __pyx_L1_error)
 
-  /* "clearmap3/analysis/_voxelization.pyx":209
+  /* "bq3d/analysis/_voxelization.pyx":209
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangleWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
@@ -8956,7 +8956,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__14 = PyTuple_Pack(36, __pyx_n_s_points, __pyx_n_s_xsize, __pyx_n_s_ysize, __pyx_n_s_zsize, __pyx_n_s_xdiam, __pyx_n_s_ydiam, __pyx_n_s_zdiam, __pyx_n_s_weights, __pyx_n_s_voximg, __pyx_n_s_iCentroid, __pyx_n_s_nCentroid, __pyx_n_s_iss, __pyx_n_s_cxf, __pyx_n_s_cyf, __pyx_n_s_czf, __pyx_n_s_cx, __pyx_n_s_cy, __pyx_n_s_cz, __pyx_n_s_xmin, __pyx_n_s_xmax, __pyx_n_s_ymin, __pyx_n_s_ymax, __pyx_n_s_zmin, __pyx_n_s_zmax, __pyx_n_s_xl, __pyx_n_s_xh, __pyx_n_s_yl, __pyx_n_s_yh, __pyx_n_s_zl, __pyx_n_s_zh, __pyx_n_s_cx0, __pyx_n_s_cy0, __pyx_n_s_cz0, __pyx_n_s_xs, __pyx_n_s_ys, __pyx_n_s_zs); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(8, 0, 36, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_analysis__voxelization, __pyx_n_s_voxelizeRectangleWithWeights, 209, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(8, 0, 36, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_analysis__voxelization, __pyx_n_s_voxelizeRectangleWithWeights, 209, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -9236,14 +9236,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clearmap3__analysis___voxelization) {
+  if (__pyx_module_is_main_bq3d__analysis___voxelization) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clearmap3.analysis._voxelization")) {
-      if (unlikely(PyDict_SetItemString(modules, "clearmap3.analysis._voxelization", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "bq3d.analysis._voxelization")) {
+      if (unlikely(PyDict_SetItemString(modules, "bq3d.analysis._voxelization", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -9264,7 +9264,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "clearmap3/analysis/_voxelization.pyx":11
+  /* "bq3d/analysis/_voxelization.pyx":11
  * #cimport cython
  * 
  * import logging             # <<<<<<<<<<<<<<
@@ -9276,7 +9276,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_logging, __pyx_t_1) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":12
+  /* "bq3d/analysis/_voxelization.pyx":12
  * 
  * import logging
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -9288,7 +9288,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":15
+  /* "bq3d/analysis/_voxelization.pyx":15
  * cimport numpy as np
  * 
  * log = logging.getLogger(__name__)             # <<<<<<<<<<<<<<
@@ -9309,55 +9309,55 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_log, __pyx_t_3) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":22
+  /* "bq3d/analysis/_voxelization.pyx":22
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphere(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
  *     """Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point"""
  * 
  */
-  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_8analysis_13_voxelization_1voxelizeSphere, NULL, __pyx_n_s_clearmap3_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_8analysis_13_voxelization_1voxelizeSphere, NULL, __pyx_n_s_bq3d_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_voxelizeSphere, __pyx_t_3) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":88
+  /* "bq3d/analysis/_voxelization.pyx":88
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeSphereWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
  *     """Converts a list of points into an volumetric image array using uniformly filled spheres at the center of each point with a weight for each point"""
  * 
  */
-  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_8analysis_13_voxelization_3voxelizeSphereWithWeights, NULL, __pyx_n_s_clearmap3_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_8analysis_13_voxelization_3voxelizeSphereWithWeights, NULL, __pyx_n_s_bq3d_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_voxelizeSphereWithWeights, __pyx_t_3) < 0) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":153
+  /* "bq3d/analysis/_voxelization.pyx":153
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangle(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam):             # <<<<<<<<<<<<<<
  *     """Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point"""
  * 
  */
-  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_8analysis_13_voxelization_5voxelizeRectangle, NULL, __pyx_n_s_clearmap3_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_8analysis_13_voxelization_5voxelizeRectangle, NULL, __pyx_n_s_bq3d_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_voxelizeRectangle, __pyx_t_3) < 0) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":209
+  /* "bq3d/analysis/_voxelization.pyx":209
  * 
  * #@cython.boundscheck(False)  # turn of bounds-checking for entire function
  * def voxelizeRectangleWithWeights(np.ndarray[np.float_t, ndim=2] points, int xsize, int ysize, int zsize, float xdiam, float ydiam, float zdiam, np.ndarray[np.float_t, ndim=1] weights):             # <<<<<<<<<<<<<<
  *     """Converts a list of points into an volumetric image array using uniformly filled rectangle at the center of each point with a weight factor for each array"""
  * 
  */
-  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_8analysis_13_voxelization_7voxelizeRectangleWithWeights, NULL, __pyx_n_s_clearmap3_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_8analysis_13_voxelization_7voxelizeRectangleWithWeights, NULL, __pyx_n_s_bq3d_analysis__voxelization_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_voxelizeRectangleWithWeights, __pyx_t_3) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "clearmap3/analysis/_voxelization.pyx":1
+  /* "bq3d/analysis/_voxelization.pyx":1
  * # -*- coding: utf-8 -*-             # <<<<<<<<<<<<<<
  * """
  * Cython code to convert point data into voxel image data for visulaization and analysis
@@ -9384,11 +9384,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clearmap3.analysis._voxelization", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init bq3d.analysis._voxelization", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clearmap3.analysis._voxelization");
+    PyErr_SetString(PyExc_ImportError, "init bq3d.analysis._voxelization");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

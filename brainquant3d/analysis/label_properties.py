@@ -3,9 +3,9 @@ import numpy as np
 
 from scipy import ndimage as ndi
 
-from clearmap3 import io
-from clearmap3.utils.timer import Timer
-from clearmap3.utils.logger import log_parameters
+from bq3d import io
+from bq3d.utils.timer import Timer
+from bq3d.utils.logger import log_parameters
 log = logging.getLogger(__name__)
 
 

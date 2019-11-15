@@ -2,7 +2,7 @@ import random
 import logging
 import numpy as np
 
-from clearmap3 import io
+from bq3d import io
 
 
 log = logging.getLogger(__name__)

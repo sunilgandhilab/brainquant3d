@@ -9,9 +9,9 @@ See http://teem.sourceforge.net/nrrd/format.html for the specification.
 
 Example:
     >>> import os, numpy
-    >>> import clearmap3.Settings as settings
-    >>> import clearmap3.IO.NRRD as nrrd
-    >>> filename = os.path.join(clearmap3.config.ClearMapPath, 'Test/Data/Nrrd/test.nrrd')
+    >>> import bq3d.Settings as settings
+    >>> import bq3d.IO.NRRD as nrrd
+    >>> filename = os.path.join(bq3d.config.brainquant3dPath, 'Test/Data/Nrrd/test.nrrd')
     >>> data = nrrd.readData(filename)  
     >>> print data.shape
     (20, 50, 10)
@@ -20,7 +20,7 @@ Author
 """"""
     Copyright 2011 Maarten Everts and David Hammond.
 
-    Modified to integrate into clearmap3framework by Christoph Kirst, The Rockefeller University, New York City, 2015
+    Modified to integrate into bq3dframework by Christoph Kirst, The Rockefeller University, New York City, 2015
 """
 
 import numpy as np
@@ -29,7 +29,7 @@ import bz2
 import os.path
 from datetime import datetime
 
-from clearmap3 import io
+from bq3d import io
 import imp
 
 import logging

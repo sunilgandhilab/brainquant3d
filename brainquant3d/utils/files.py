@@ -1,6 +1,6 @@
 import re
 import uuid
-from clearmap3 import config
+from bq3d import config
 from pathlib import Path
 
 

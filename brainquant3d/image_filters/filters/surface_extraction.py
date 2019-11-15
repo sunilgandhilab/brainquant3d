@@ -3,11 +3,11 @@ import tifffile as tif
 from multiprocessing import Pool
 import cv2
 
-from clearmap3 import io
+from bq3d import io
 
-from clearmap3 import config
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d import config
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 class ExtractSurface(FilterBase):
     """ Extracts only the surface layer of the largest object in an image.

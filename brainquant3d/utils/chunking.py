@@ -3,8 +3,8 @@ import numpy as np
 from typing import Union
 from itertools import product
 
-from clearmap3 import io
-from clearmap3 import config
+from bq3d import io
+from bq3d import config
 
 def range_to_slices(ranges:list):
     """ converts ranges to slice object

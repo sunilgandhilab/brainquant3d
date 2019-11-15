@@ -11,12 +11,12 @@
             "/usr/local/lib/python3.6/dist-packages/numpy/core/include"
         ],
         "language": "c++",
-        "name": "clearmap3.image_filters.filters.label._threshold",
+        "name": "bq3d.image_filters.filters.label._threshold",
         "sources": [
-            "clearmap3/image_filters/filters/label/_threshold.pyx"
+            "bq3d/image_filters/filters/label/_threshold.pyx"
         ]
     },
-    "module_name": "clearmap3.image_filters.filters.label._threshold"
+    "module_name": "bq3d.image_filters.filters.label._threshold"
 }
 END: Cython Metadata */
 
@@ -624,8 +624,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clearmap3__image_filters__filters__label___threshold
-#define __PYX_HAVE_API__clearmap3__image_filters__filters__label___threshold
+#define __PYX_HAVE__bq3d__image_filters__filters__label___threshold
+#define __PYX_HAVE_API__bq3d__image_filters__filters__label___threshold
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -867,7 +867,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clearmap3/image_filters/filters/label/_threshold.pyx",
+  "bq3d/image_filters/filters/label/_threshold.pyx",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -2332,7 +2332,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, cha
 
 /* Module declarations from 'libcpp.limits' */
 
-/* Module declarations from 'clearmap3.image_filters.filters.label._threshold' */
+/* Module declarations from 'bq3d.image_filters.filters.label._threshold' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2383,11 +2383,11 @@ static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint8_t = { "uint8_t", NU
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint16_t = { "uint16_t", NULL, sizeof(__pyx_t_5numpy_uint16_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint16_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint16_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int32_t = { "int32_t", NULL, sizeof(__pyx_t_5numpy_int32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_int32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_int32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint32_t = { "uint32_t", NULL, sizeof(__pyx_t_5numpy_uint32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint32_t), 0 };
-#define __Pyx_MODULE_NAME "clearmap3.image_filters.filters.label._threshold"
-extern int __pyx_module_is_main_clearmap3__image_filters__filters__label___threshold;
-int __pyx_module_is_main_clearmap3__image_filters__filters__label___threshold = 0;
+#define __Pyx_MODULE_NAME "bq3d.image_filters.filters.label._threshold"
+extern int __pyx_module_is_main_bq3d__image_filters__filters__label___threshold;
+int __pyx_module_is_main_bq3d__image_filters__filters__label___threshold = 0;
 
-/* Implementation of 'clearmap3.image_filters.filters.label._threshold' */
+/* Implementation of 'bq3d.image_filters.filters.label._threshold' */
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_open;
@@ -2553,7 +2553,7 @@ static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cyt
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_clearmap3_image_filters_filters[] = "clearmap3/image_filters/filters/label/_threshold.pyx";
+static const char __pyx_k_bq3d_image_filters_filters[] = "bq3d/image_filters/filters/label/_threshold.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
@@ -2575,7 +2575,7 @@ static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not F
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
-static const char __pyx_k_clearmap3_image_filters_filters_2[] = "clearmap3.image_filters.filters.label._threshold";
+static const char __pyx_k_bq3d_image_filters_filters_2[] = "bq3d.image_filters.filters.label._threshold";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_kp_s_;
 static PyObject *__pyx_n_s_ASCII;
@@ -2616,8 +2616,8 @@ static PyObject *__pyx_n_s_base;
 static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_u_c;
 static PyObject *__pyx_n_s_class;
-static PyObject *__pyx_kp_s_clearmap3_image_filters_filters;
-static PyObject *__pyx_n_s_clearmap3_image_filters_filters_2;
+static PyObject *__pyx_kp_s_bq3d_image_filters_filters;
+static PyObject *__pyx_n_s_bq3d_image_filters_filters_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_kp_s_contiguous_and_direct;
 static PyObject *__pyx_kp_s_contiguous_and_indirect;
@@ -2757,43 +2757,43 @@ static PyObject *__pyx_n_s_y;
 static PyObject *__pyx_n_s_ymax;
 static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_s_zmax;
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_2_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_4_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_6_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_8_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_10_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_12_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_14_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_16_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_18_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_20_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_22_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_24_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_26_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_28_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_30_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_32_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_34_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_36_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_38_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_40_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_42_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_44_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_46_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_48_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_50_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_52_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_54_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_56_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_58_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_60_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_62_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_64_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_66_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_68_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_70_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_72_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold__threshold(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_2_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_4_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_6_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_8_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_10_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_12_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_14_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_16_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_18_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_20_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_22_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_24_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_26_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_28_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_30_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_32_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_34_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_36_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_38_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_40_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_42_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_44_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_46_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_48_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_50_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_52_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_54_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_56_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_58_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_60_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_62_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_64_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_66_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_68_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_70_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_72_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2885,7 +2885,7 @@ static PyObject *__pyx_codeobj__31;
 static PyObject *__pyx_codeobj__38;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+/* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -2894,10 +2894,10 @@ static PyObject *__pyx_codeobj__38;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_1_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold[] = "Performs a simple threshold on 'image'.\n\n    Parameters\ncnp    ----------\n    image: numpy.memmap array (3D) of integers\n        Image to be thresholded. Image must have exactly 3 dimensions.\n    val: integer or float\n        Value to be used as the threshold.\n    output: numpy.memmap array (3D)\n        Binary matrix where values >= 'val' = max(dtype) and values < 'val' = 0.\n    ";
-static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_1_threshold = {"_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_1_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_1_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_1_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold[] = "Performs a simple threshold on 'image'.\n\n    Parameters\ncnp    ----------\n    image: numpy.memmap array (3D) of integers\n        Image to be thresholded. Image must have exactly 3 dimensions.\n    val: integer or float\n        Value to be used as the threshold.\n    output: numpy.memmap array (3D)\n        Binary matrix where values >= 'val' = max(dtype) and values < 'val' = 0.\n    ";
+static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_1_threshold = {"_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_1_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_1_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_signatures = 0;
   PyObject *__pyx_v_args = 0;
   PyObject *__pyx_v_kwargs = 0;
@@ -2967,18 +2967,18 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold__threshold(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold__threshold(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
   PyObject *__pyx_v_dest_sig = NULL;
   Py_ssize_t __pyx_v_i;
   PyTypeObject *__pyx_v_ndarray = 0;
@@ -3997,7 +3997,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_14);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_dest_sig);
@@ -4016,9 +4016,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_3_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_3_threshold = {"__pyx_fuse_0_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_3_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_0_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_3_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_3_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_3_threshold = {"__pyx_fuse_0_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_3_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_0_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_3_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float32_t __pyx_v_val;
@@ -4077,13 +4077,13 @@ static PyObject *__pyx_fuse_0_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_2_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_2_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4094,7 +4094,7 @@ static PyObject *__pyx_fuse_0_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_2_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_2_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -4151,7 +4151,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -4160,7 +4160,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -4169,7 +4169,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -4178,7 +4178,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -4201,7 +4201,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -4224,7 +4224,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -4233,7 +4233,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -4245,7 +4245,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -4269,7 +4269,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -4296,7 +4296,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -4305,7 +4305,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -4318,7 +4318,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -4327,7 +4327,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -4351,7 +4351,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -4378,7 +4378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -4387,7 +4387,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -4400,7 +4400,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -4409,7 +4409,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -4421,7 +4421,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -4433,7 +4433,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -4442,7 +4442,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -4451,7 +4451,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -4461,7 +4461,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -4470,7 +4470,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -4480,7 +4480,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -4494,7 +4494,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -4507,7 +4507,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -4532,7 +4532,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -4551,7 +4551,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -4564,7 +4564,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -4589,7 +4589,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -4608,7 +4608,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -4630,7 +4630,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -4645,9 +4645,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_5_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_5_threshold = {"__pyx_fuse_0_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_5_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_0_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_5_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_5_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_5_threshold = {"__pyx_fuse_0_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_5_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_0_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_5_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float32_t __pyx_v_val;
@@ -4706,13 +4706,13 @@ static PyObject *__pyx_fuse_0_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_4_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_4_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4723,7 +4723,7 @@ static PyObject *__pyx_fuse_0_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_4_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_4_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -4780,7 +4780,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -4789,7 +4789,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -4798,7 +4798,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -4807,7 +4807,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -4830,7 +4830,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -4853,7 +4853,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -4862,7 +4862,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float64_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -4874,7 +4874,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -4898,7 +4898,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -4925,7 +4925,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -4934,7 +4934,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -4947,7 +4947,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -4956,7 +4956,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -4980,7 +4980,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5007,7 +5007,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5016,7 +5016,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -5029,7 +5029,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -5038,7 +5038,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -5050,7 +5050,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -5062,7 +5062,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -5071,7 +5071,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -5080,7 +5080,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -5090,7 +5090,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -5099,7 +5099,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -5109,7 +5109,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -5123,7 +5123,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -5136,7 +5136,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -5161,7 +5161,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -5180,7 +5180,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -5193,7 +5193,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -5218,7 +5218,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -5237,7 +5237,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -5259,7 +5259,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -5274,9 +5274,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_7_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_7_threshold = {"__pyx_fuse_0_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_7_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_0_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_7_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_7_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_7_threshold = {"__pyx_fuse_0_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_7_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_0_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_7_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float32_t __pyx_v_val;
@@ -5335,13 +5335,13 @@ static PyObject *__pyx_fuse_0_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_6_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_6_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5352,7 +5352,7 @@ static PyObject *__pyx_fuse_0_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_6_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_6_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -5409,7 +5409,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -5418,7 +5418,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -5427,7 +5427,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -5436,7 +5436,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -5459,7 +5459,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -5482,7 +5482,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -5491,7 +5491,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint8_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -5503,7 +5503,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -5527,7 +5527,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5554,7 +5554,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5563,7 +5563,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -5576,7 +5576,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -5585,7 +5585,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -5609,7 +5609,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5636,7 +5636,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5645,7 +5645,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -5658,7 +5658,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -5667,7 +5667,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -5679,7 +5679,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -5691,7 +5691,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -5700,7 +5700,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -5709,7 +5709,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -5719,7 +5719,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -5728,7 +5728,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -5738,7 +5738,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -5752,7 +5752,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -5765,7 +5765,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -5790,7 +5790,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -5809,7 +5809,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -5822,7 +5822,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -5847,7 +5847,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -5866,7 +5866,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -5888,7 +5888,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -5903,9 +5903,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_9_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_9_threshold = {"__pyx_fuse_0_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_9_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_0_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_9_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_9_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_9_threshold = {"__pyx_fuse_0_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_9_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_0_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_9_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float32_t __pyx_v_val;
@@ -5964,13 +5964,13 @@ static PyObject *__pyx_fuse_0_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_8_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_8_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5981,7 +5981,7 @@ static PyObject *__pyx_fuse_0_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_8_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_8_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -6038,7 +6038,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -6047,7 +6047,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -6056,7 +6056,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -6065,7 +6065,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -6088,7 +6088,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -6111,7 +6111,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -6120,7 +6120,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint16_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -6132,7 +6132,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -6156,7 +6156,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6183,7 +6183,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6192,7 +6192,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -6205,7 +6205,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -6214,7 +6214,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -6238,7 +6238,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6265,7 +6265,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6274,7 +6274,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -6287,7 +6287,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -6296,7 +6296,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -6308,7 +6308,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -6320,7 +6320,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -6329,7 +6329,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -6338,7 +6338,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -6348,7 +6348,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -6357,7 +6357,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -6367,7 +6367,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -6381,7 +6381,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -6394,7 +6394,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -6419,7 +6419,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -6438,7 +6438,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -6451,7 +6451,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -6476,7 +6476,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -6495,7 +6495,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -6517,7 +6517,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -6532,9 +6532,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_11_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_11_threshold = {"__pyx_fuse_0_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_11_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_0_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_11_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_11_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_11_threshold = {"__pyx_fuse_0_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_11_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_0_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_11_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float32_t __pyx_v_val;
@@ -6593,13 +6593,13 @@ static PyObject *__pyx_fuse_0_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_10_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_10_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -6610,7 +6610,7 @@ static PyObject *__pyx_fuse_0_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_10_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_10_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -6667,7 +6667,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -6676,7 +6676,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -6685,7 +6685,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -6694,7 +6694,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -6717,7 +6717,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -6740,7 +6740,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -6749,7 +6749,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_int32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -6761,7 +6761,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -6785,7 +6785,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6812,7 +6812,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6821,7 +6821,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -6834,7 +6834,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -6843,7 +6843,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -6867,7 +6867,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6894,7 +6894,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6903,7 +6903,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -6916,7 +6916,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -6925,7 +6925,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -6937,7 +6937,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -6949,7 +6949,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -6958,7 +6958,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -6967,7 +6967,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -6977,7 +6977,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -6986,7 +6986,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -6996,7 +6996,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -7010,7 +7010,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -7023,7 +7023,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -7048,7 +7048,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -7067,7 +7067,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -7080,7 +7080,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -7105,7 +7105,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -7124,7 +7124,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -7146,7 +7146,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -7161,9 +7161,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_13_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_13_threshold = {"__pyx_fuse_0_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_13_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_0_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_13_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_13_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_13_threshold = {"__pyx_fuse_0_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_13_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_0_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_13_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float32_t __pyx_v_val;
@@ -7222,13 +7222,13 @@ static PyObject *__pyx_fuse_0_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_12_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_12_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -7239,7 +7239,7 @@ static PyObject *__pyx_fuse_0_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_12_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_12_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -7296,7 +7296,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -7305,7 +7305,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -7314,7 +7314,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -7323,7 +7323,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -7346,7 +7346,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -7369,7 +7369,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -7378,7 +7378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -7390,7 +7390,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -7414,7 +7414,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -7441,7 +7441,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -7450,7 +7450,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -7463,7 +7463,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -7472,7 +7472,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -7496,7 +7496,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -7523,7 +7523,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -7532,7 +7532,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -7545,7 +7545,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -7554,7 +7554,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -7566,7 +7566,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -7578,7 +7578,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -7587,7 +7587,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -7596,7 +7596,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -7606,7 +7606,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -7615,7 +7615,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -7625,7 +7625,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -7639,7 +7639,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -7652,7 +7652,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -7677,7 +7677,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -7696,7 +7696,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -7709,7 +7709,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -7734,7 +7734,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -7753,7 +7753,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -7775,7 +7775,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -7790,9 +7790,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_15_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_15_threshold = {"__pyx_fuse_1_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_15_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_1_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_15_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_15_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_15_threshold = {"__pyx_fuse_1_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_15_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_1_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_15_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float64_t __pyx_v_val;
@@ -7851,13 +7851,13 @@ static PyObject *__pyx_fuse_1_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_14_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_14_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -7868,7 +7868,7 @@ static PyObject *__pyx_fuse_1_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_14_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_14_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -7925,7 +7925,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -7934,7 +7934,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -7943,7 +7943,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -7952,7 +7952,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -7975,7 +7975,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -7998,7 +7998,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -8007,7 +8007,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -8019,7 +8019,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -8043,7 +8043,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8070,7 +8070,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8079,7 +8079,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -8092,7 +8092,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -8101,7 +8101,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -8125,7 +8125,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8152,7 +8152,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8161,7 +8161,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -8174,7 +8174,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -8183,7 +8183,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -8195,7 +8195,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -8207,7 +8207,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -8216,7 +8216,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -8225,7 +8225,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -8235,7 +8235,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -8244,7 +8244,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -8254,7 +8254,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -8268,7 +8268,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -8281,7 +8281,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -8306,7 +8306,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -8325,7 +8325,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -8338,7 +8338,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -8363,7 +8363,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -8382,7 +8382,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -8404,7 +8404,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -8419,9 +8419,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_17_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_17_threshold = {"__pyx_fuse_1_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_17_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_1_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_17_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_17_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_17_threshold = {"__pyx_fuse_1_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_17_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_1_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_17_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float64_t __pyx_v_val;
@@ -8480,13 +8480,13 @@ static PyObject *__pyx_fuse_1_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_16_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_16_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8497,7 +8497,7 @@ static PyObject *__pyx_fuse_1_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_16_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_16_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -8554,7 +8554,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -8563,7 +8563,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -8572,7 +8572,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -8581,7 +8581,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -8604,7 +8604,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -8627,7 +8627,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -8636,7 +8636,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float64_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -8648,7 +8648,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -8672,7 +8672,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8699,7 +8699,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8708,7 +8708,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -8721,7 +8721,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -8730,7 +8730,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -8754,7 +8754,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8781,7 +8781,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8790,7 +8790,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -8803,7 +8803,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -8812,7 +8812,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -8824,7 +8824,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -8836,7 +8836,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -8845,7 +8845,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -8854,7 +8854,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -8864,7 +8864,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -8873,7 +8873,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -8883,7 +8883,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -8897,7 +8897,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -8910,7 +8910,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -8935,7 +8935,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -8954,7 +8954,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -8967,7 +8967,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -8992,7 +8992,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -9011,7 +9011,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -9033,7 +9033,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -9048,9 +9048,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_19_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_19_threshold = {"__pyx_fuse_1_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_19_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_1_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_19_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_19_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_19_threshold = {"__pyx_fuse_1_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_19_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_1_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_19_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float64_t __pyx_v_val;
@@ -9109,13 +9109,13 @@ static PyObject *__pyx_fuse_1_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_18_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_18_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -9126,7 +9126,7 @@ static PyObject *__pyx_fuse_1_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_18_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_18_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -9183,7 +9183,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -9192,7 +9192,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -9201,7 +9201,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -9210,7 +9210,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -9233,7 +9233,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -9256,7 +9256,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -9265,7 +9265,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint8_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -9277,7 +9277,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -9301,7 +9301,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -9328,7 +9328,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -9337,7 +9337,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -9350,7 +9350,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -9359,7 +9359,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -9383,7 +9383,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -9410,7 +9410,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -9419,7 +9419,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -9432,7 +9432,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -9441,7 +9441,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -9453,7 +9453,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -9465,7 +9465,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -9474,7 +9474,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -9483,7 +9483,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -9493,7 +9493,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -9502,7 +9502,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -9512,7 +9512,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -9526,7 +9526,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -9539,7 +9539,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -9564,7 +9564,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -9583,7 +9583,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -9596,7 +9596,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -9621,7 +9621,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -9640,7 +9640,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -9662,7 +9662,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -9677,9 +9677,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_21_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_21_threshold = {"__pyx_fuse_1_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_21_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_1_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_21_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_21_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_21_threshold = {"__pyx_fuse_1_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_21_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_1_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_21_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float64_t __pyx_v_val;
@@ -9738,13 +9738,13 @@ static PyObject *__pyx_fuse_1_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_20_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_20_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -9755,7 +9755,7 @@ static PyObject *__pyx_fuse_1_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_20_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_20_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -9812,7 +9812,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -9821,7 +9821,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -9830,7 +9830,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -9839,7 +9839,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -9862,7 +9862,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -9885,7 +9885,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -9894,7 +9894,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint16_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -9906,7 +9906,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -9930,7 +9930,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -9957,7 +9957,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -9966,7 +9966,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -9979,7 +9979,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -9988,7 +9988,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -10012,7 +10012,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -10039,7 +10039,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -10048,7 +10048,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -10061,7 +10061,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -10070,7 +10070,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -10082,7 +10082,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -10094,7 +10094,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -10103,7 +10103,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -10112,7 +10112,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -10122,7 +10122,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -10131,7 +10131,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -10141,7 +10141,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -10155,7 +10155,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -10168,7 +10168,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -10193,7 +10193,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -10212,7 +10212,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -10225,7 +10225,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -10250,7 +10250,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -10269,7 +10269,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -10291,7 +10291,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -10306,9 +10306,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_23_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_23_threshold = {"__pyx_fuse_1_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_23_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_1_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_23_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_23_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_23_threshold = {"__pyx_fuse_1_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_23_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_1_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_23_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float64_t __pyx_v_val;
@@ -10367,13 +10367,13 @@ static PyObject *__pyx_fuse_1_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_22_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_22_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10384,7 +10384,7 @@ static PyObject *__pyx_fuse_1_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_22_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_22_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -10441,7 +10441,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -10450,7 +10450,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -10459,7 +10459,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -10468,7 +10468,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -10491,7 +10491,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -10514,7 +10514,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -10523,7 +10523,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_int32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -10535,7 +10535,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -10559,7 +10559,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -10586,7 +10586,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -10595,7 +10595,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -10608,7 +10608,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -10617,7 +10617,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -10641,7 +10641,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -10668,7 +10668,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -10677,7 +10677,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -10690,7 +10690,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -10699,7 +10699,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -10711,7 +10711,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -10723,7 +10723,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -10732,7 +10732,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -10741,7 +10741,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -10751,7 +10751,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -10760,7 +10760,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -10770,7 +10770,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -10784,7 +10784,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -10797,7 +10797,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -10822,7 +10822,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -10841,7 +10841,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -10854,7 +10854,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -10879,7 +10879,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -10898,7 +10898,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -10920,7 +10920,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -10935,9 +10935,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_25_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_25_threshold = {"__pyx_fuse_1_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_25_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_1_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_25_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_25_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_25_threshold = {"__pyx_fuse_1_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_25_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_1_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_25_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_float64_t __pyx_v_val;
@@ -10996,13 +10996,13 @@ static PyObject *__pyx_fuse_1_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_24_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_24_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -11013,7 +11013,7 @@ static PyObject *__pyx_fuse_1_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_24_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_24_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_float64_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -11070,7 +11070,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -11079,7 +11079,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -11088,7 +11088,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -11097,7 +11097,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -11120,7 +11120,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -11143,7 +11143,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -11152,7 +11152,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -11164,7 +11164,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -11188,7 +11188,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11215,7 +11215,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11224,7 +11224,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -11237,7 +11237,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -11246,7 +11246,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -11270,7 +11270,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11297,7 +11297,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11306,7 +11306,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -11319,7 +11319,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -11328,7 +11328,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -11340,7 +11340,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -11352,7 +11352,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -11361,7 +11361,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -11370,7 +11370,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -11380,7 +11380,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -11389,7 +11389,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -11399,7 +11399,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -11413,7 +11413,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -11426,7 +11426,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -11451,7 +11451,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -11470,7 +11470,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -11483,7 +11483,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -11508,7 +11508,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -11527,7 +11527,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -11549,7 +11549,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -11564,9 +11564,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_27_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_27_threshold = {"__pyx_fuse_2_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_27_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_2_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_27_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_27_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_27_threshold = {"__pyx_fuse_2_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_27_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_2_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_27_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint8_t __pyx_v_val;
@@ -11625,13 +11625,13 @@ static PyObject *__pyx_fuse_2_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_26_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_26_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -11642,7 +11642,7 @@ static PyObject *__pyx_fuse_2_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_26_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_26_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -11699,7 +11699,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -11708,7 +11708,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -11717,7 +11717,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -11726,7 +11726,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -11749,7 +11749,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -11772,7 +11772,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -11781,7 +11781,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -11793,7 +11793,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -11817,7 +11817,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11844,7 +11844,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11853,7 +11853,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -11866,7 +11866,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -11875,7 +11875,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -11899,7 +11899,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11926,7 +11926,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11935,7 +11935,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -11948,7 +11948,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -11957,7 +11957,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -11969,7 +11969,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -11981,7 +11981,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -11990,7 +11990,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -11999,7 +11999,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -12009,7 +12009,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -12018,7 +12018,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -12028,7 +12028,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -12042,7 +12042,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -12055,7 +12055,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -12080,7 +12080,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -12099,7 +12099,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -12112,7 +12112,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -12137,7 +12137,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -12156,7 +12156,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -12178,7 +12178,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -12193,9 +12193,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_29_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_29_threshold = {"__pyx_fuse_2_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_29_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_2_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_29_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_29_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_29_threshold = {"__pyx_fuse_2_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_29_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_2_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_29_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint8_t __pyx_v_val;
@@ -12254,13 +12254,13 @@ static PyObject *__pyx_fuse_2_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_28_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_28_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -12271,7 +12271,7 @@ static PyObject *__pyx_fuse_2_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_28_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_28_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -12328,7 +12328,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -12337,7 +12337,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -12346,7 +12346,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -12355,7 +12355,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -12378,7 +12378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -12401,7 +12401,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -12410,7 +12410,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float64_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -12422,7 +12422,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -12446,7 +12446,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -12473,7 +12473,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -12482,7 +12482,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -12495,7 +12495,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -12504,7 +12504,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -12528,7 +12528,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -12555,7 +12555,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -12564,7 +12564,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -12577,7 +12577,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -12586,7 +12586,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -12598,7 +12598,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -12610,7 +12610,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -12619,7 +12619,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -12628,7 +12628,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -12638,7 +12638,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -12647,7 +12647,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -12657,7 +12657,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -12671,7 +12671,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -12684,7 +12684,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -12709,7 +12709,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -12728,7 +12728,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -12741,7 +12741,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -12766,7 +12766,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -12785,7 +12785,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -12807,7 +12807,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -12822,9 +12822,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_31_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_31_threshold = {"__pyx_fuse_2_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_31_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_2_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_31_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_31_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_31_threshold = {"__pyx_fuse_2_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_31_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_2_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_31_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint8_t __pyx_v_val;
@@ -12883,13 +12883,13 @@ static PyObject *__pyx_fuse_2_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_30_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_30_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -12900,7 +12900,7 @@ static PyObject *__pyx_fuse_2_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_30_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_30_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -12957,7 +12957,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -12966,7 +12966,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -12975,7 +12975,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -12984,7 +12984,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -13007,7 +13007,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -13030,7 +13030,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -13039,7 +13039,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint8_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -13051,7 +13051,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -13075,7 +13075,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -13102,7 +13102,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -13111,7 +13111,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -13124,7 +13124,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -13133,7 +13133,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -13157,7 +13157,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -13184,7 +13184,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -13193,7 +13193,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -13206,7 +13206,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -13215,7 +13215,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -13227,7 +13227,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -13239,7 +13239,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -13248,7 +13248,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -13257,7 +13257,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -13267,7 +13267,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -13276,7 +13276,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -13286,7 +13286,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -13300,7 +13300,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -13313,7 +13313,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -13338,7 +13338,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -13357,7 +13357,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -13370,7 +13370,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -13395,7 +13395,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -13414,7 +13414,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -13436,7 +13436,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -13451,9 +13451,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_33_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_33_threshold = {"__pyx_fuse_2_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_33_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_2_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_33_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_33_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_33_threshold = {"__pyx_fuse_2_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_33_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_2_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_33_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint8_t __pyx_v_val;
@@ -13512,13 +13512,13 @@ static PyObject *__pyx_fuse_2_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_32_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_32_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -13529,7 +13529,7 @@ static PyObject *__pyx_fuse_2_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_32_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_32_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -13586,7 +13586,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -13595,7 +13595,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -13604,7 +13604,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -13613,7 +13613,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -13636,7 +13636,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -13659,7 +13659,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -13668,7 +13668,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint16_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -13680,7 +13680,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -13704,7 +13704,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -13731,7 +13731,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -13740,7 +13740,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -13753,7 +13753,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -13762,7 +13762,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -13786,7 +13786,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -13813,7 +13813,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -13822,7 +13822,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -13835,7 +13835,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -13844,7 +13844,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -13856,7 +13856,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -13868,7 +13868,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -13877,7 +13877,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -13886,7 +13886,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -13896,7 +13896,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -13905,7 +13905,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -13915,7 +13915,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -13929,7 +13929,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -13942,7 +13942,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -13967,7 +13967,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -13986,7 +13986,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -13999,7 +13999,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -14024,7 +14024,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -14043,7 +14043,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -14065,7 +14065,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -14080,9 +14080,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_35_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_35_threshold = {"__pyx_fuse_2_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_35_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_2_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_35_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_35_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_35_threshold = {"__pyx_fuse_2_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_35_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_2_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_35_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint8_t __pyx_v_val;
@@ -14141,13 +14141,13 @@ static PyObject *__pyx_fuse_2_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_34_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_34_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -14158,7 +14158,7 @@ static PyObject *__pyx_fuse_2_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_34_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_34_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -14215,7 +14215,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -14224,7 +14224,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -14233,7 +14233,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -14242,7 +14242,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -14265,7 +14265,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -14288,7 +14288,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -14297,7 +14297,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_int32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -14309,7 +14309,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -14333,7 +14333,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -14360,7 +14360,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -14369,7 +14369,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -14382,7 +14382,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -14391,7 +14391,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -14415,7 +14415,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -14442,7 +14442,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -14451,7 +14451,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -14464,7 +14464,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -14473,7 +14473,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -14485,7 +14485,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -14497,7 +14497,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -14506,7 +14506,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -14515,7 +14515,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -14525,7 +14525,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -14534,7 +14534,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -14544,7 +14544,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -14558,7 +14558,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -14571,7 +14571,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -14596,7 +14596,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -14615,7 +14615,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -14628,7 +14628,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -14653,7 +14653,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -14672,7 +14672,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -14694,7 +14694,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -14709,9 +14709,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_37_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_37_threshold = {"__pyx_fuse_2_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_37_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_2_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_37_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_37_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_37_threshold = {"__pyx_fuse_2_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_37_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_2_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_37_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint8_t __pyx_v_val;
@@ -14770,13 +14770,13 @@ static PyObject *__pyx_fuse_2_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_36_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_36_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -14787,7 +14787,7 @@ static PyObject *__pyx_fuse_2_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_36_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_36_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint8_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -14844,7 +14844,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -14853,7 +14853,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -14862,7 +14862,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -14871,7 +14871,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -14894,7 +14894,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -14917,7 +14917,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -14926,7 +14926,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -14938,7 +14938,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -14962,7 +14962,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -14989,7 +14989,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -14998,7 +14998,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -15011,7 +15011,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -15020,7 +15020,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -15044,7 +15044,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -15071,7 +15071,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -15080,7 +15080,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -15093,7 +15093,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -15102,7 +15102,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -15114,7 +15114,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -15126,7 +15126,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -15135,7 +15135,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -15144,7 +15144,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -15154,7 +15154,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -15163,7 +15163,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -15173,7 +15173,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -15187,7 +15187,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -15200,7 +15200,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -15225,7 +15225,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -15244,7 +15244,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -15257,7 +15257,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -15282,7 +15282,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -15301,7 +15301,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -15323,7 +15323,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -15338,9 +15338,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_39_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_39_threshold = {"__pyx_fuse_3_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_39_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_3_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_39_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_39_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_39_threshold = {"__pyx_fuse_3_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_39_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_3_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_39_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint16_t __pyx_v_val;
@@ -15399,13 +15399,13 @@ static PyObject *__pyx_fuse_3_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_38_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_38_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -15416,7 +15416,7 @@ static PyObject *__pyx_fuse_3_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_38_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_38_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -15473,7 +15473,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -15482,7 +15482,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -15491,7 +15491,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -15500,7 +15500,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -15523,7 +15523,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -15546,7 +15546,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -15555,7 +15555,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -15567,7 +15567,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -15591,7 +15591,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -15618,7 +15618,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -15627,7 +15627,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -15640,7 +15640,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -15649,7 +15649,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -15673,7 +15673,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -15700,7 +15700,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -15709,7 +15709,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -15722,7 +15722,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -15731,7 +15731,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -15743,7 +15743,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -15755,7 +15755,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -15764,7 +15764,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -15773,7 +15773,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -15783,7 +15783,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -15792,7 +15792,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -15802,7 +15802,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -15816,7 +15816,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -15829,7 +15829,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -15854,7 +15854,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -15873,7 +15873,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -15886,7 +15886,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -15911,7 +15911,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -15930,7 +15930,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -15952,7 +15952,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -15967,9 +15967,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_41_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_41_threshold = {"__pyx_fuse_3_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_41_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_3_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_41_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_41_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_41_threshold = {"__pyx_fuse_3_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_41_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_3_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_41_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint16_t __pyx_v_val;
@@ -16028,13 +16028,13 @@ static PyObject *__pyx_fuse_3_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_40_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_40_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -16045,7 +16045,7 @@ static PyObject *__pyx_fuse_3_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_40_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_40_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -16102,7 +16102,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -16111,7 +16111,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -16120,7 +16120,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -16129,7 +16129,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -16152,7 +16152,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -16175,7 +16175,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -16184,7 +16184,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float64_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -16196,7 +16196,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -16220,7 +16220,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -16247,7 +16247,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -16256,7 +16256,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -16269,7 +16269,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -16278,7 +16278,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -16302,7 +16302,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -16329,7 +16329,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -16338,7 +16338,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -16351,7 +16351,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -16360,7 +16360,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -16372,7 +16372,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -16384,7 +16384,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -16393,7 +16393,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -16402,7 +16402,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -16412,7 +16412,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -16421,7 +16421,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -16431,7 +16431,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -16445,7 +16445,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -16458,7 +16458,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -16483,7 +16483,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -16502,7 +16502,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -16515,7 +16515,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -16540,7 +16540,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -16559,7 +16559,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -16581,7 +16581,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -16596,9 +16596,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_43_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_43_threshold = {"__pyx_fuse_3_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_43_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_3_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_43_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_43_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_43_threshold = {"__pyx_fuse_3_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_43_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_3_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_43_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint16_t __pyx_v_val;
@@ -16657,13 +16657,13 @@ static PyObject *__pyx_fuse_3_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_42_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_42_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -16674,7 +16674,7 @@ static PyObject *__pyx_fuse_3_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_42_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_42_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -16731,7 +16731,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -16740,7 +16740,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -16749,7 +16749,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -16758,7 +16758,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -16781,7 +16781,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -16804,7 +16804,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -16813,7 +16813,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint8_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -16825,7 +16825,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -16849,7 +16849,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -16876,7 +16876,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -16885,7 +16885,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -16898,7 +16898,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -16907,7 +16907,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -16931,7 +16931,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -16958,7 +16958,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -16967,7 +16967,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -16980,7 +16980,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -16989,7 +16989,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -17001,7 +17001,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -17013,7 +17013,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -17022,7 +17022,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -17031,7 +17031,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -17041,7 +17041,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -17050,7 +17050,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -17060,7 +17060,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -17074,7 +17074,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -17087,7 +17087,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -17112,7 +17112,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -17131,7 +17131,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -17144,7 +17144,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -17169,7 +17169,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -17188,7 +17188,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -17210,7 +17210,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -17225,9 +17225,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_45_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_45_threshold = {"__pyx_fuse_3_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_45_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_3_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_45_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_45_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_45_threshold = {"__pyx_fuse_3_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_45_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_3_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_45_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint16_t __pyx_v_val;
@@ -17286,13 +17286,13 @@ static PyObject *__pyx_fuse_3_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_44_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_44_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -17303,7 +17303,7 @@ static PyObject *__pyx_fuse_3_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_44_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_44_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -17360,7 +17360,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -17369,7 +17369,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -17378,7 +17378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -17387,7 +17387,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -17410,7 +17410,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -17433,7 +17433,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -17442,7 +17442,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint16_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -17454,7 +17454,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -17478,7 +17478,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -17505,7 +17505,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -17514,7 +17514,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -17527,7 +17527,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -17536,7 +17536,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -17560,7 +17560,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -17587,7 +17587,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -17596,7 +17596,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -17609,7 +17609,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -17618,7 +17618,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -17630,7 +17630,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -17642,7 +17642,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -17651,7 +17651,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -17660,7 +17660,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -17670,7 +17670,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -17679,7 +17679,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -17689,7 +17689,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -17703,7 +17703,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -17716,7 +17716,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -17741,7 +17741,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -17760,7 +17760,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -17773,7 +17773,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -17798,7 +17798,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -17817,7 +17817,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -17839,7 +17839,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -17854,9 +17854,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_47_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_47_threshold = {"__pyx_fuse_3_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_47_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_3_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_47_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_47_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_47_threshold = {"__pyx_fuse_3_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_47_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_3_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_47_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint16_t __pyx_v_val;
@@ -17915,13 +17915,13 @@ static PyObject *__pyx_fuse_3_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_46_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_46_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -17932,7 +17932,7 @@ static PyObject *__pyx_fuse_3_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_46_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_46_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -17989,7 +17989,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -17998,7 +17998,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -18007,7 +18007,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -18016,7 +18016,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -18039,7 +18039,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -18062,7 +18062,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -18071,7 +18071,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_int32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -18083,7 +18083,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -18107,7 +18107,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -18134,7 +18134,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -18143,7 +18143,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -18156,7 +18156,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -18165,7 +18165,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -18189,7 +18189,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -18216,7 +18216,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -18225,7 +18225,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -18238,7 +18238,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -18247,7 +18247,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -18259,7 +18259,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -18271,7 +18271,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -18280,7 +18280,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -18289,7 +18289,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -18299,7 +18299,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -18308,7 +18308,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -18318,7 +18318,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -18332,7 +18332,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -18345,7 +18345,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -18370,7 +18370,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -18389,7 +18389,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -18402,7 +18402,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -18427,7 +18427,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -18446,7 +18446,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -18468,7 +18468,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -18483,9 +18483,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_49_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_49_threshold = {"__pyx_fuse_3_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_49_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_3_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_49_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_49_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_49_threshold = {"__pyx_fuse_3_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_49_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_3_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_49_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint16_t __pyx_v_val;
@@ -18544,13 +18544,13 @@ static PyObject *__pyx_fuse_3_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_48_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_48_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -18561,7 +18561,7 @@ static PyObject *__pyx_fuse_3_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_48_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_48_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint16_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -18618,7 +18618,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -18627,7 +18627,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -18636,7 +18636,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -18645,7 +18645,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -18668,7 +18668,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -18691,7 +18691,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -18700,7 +18700,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -18712,7 +18712,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -18736,7 +18736,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -18763,7 +18763,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -18772,7 +18772,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -18785,7 +18785,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -18794,7 +18794,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -18818,7 +18818,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -18845,7 +18845,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -18854,7 +18854,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -18867,7 +18867,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -18876,7 +18876,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -18888,7 +18888,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -18900,7 +18900,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -18909,7 +18909,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -18918,7 +18918,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -18928,7 +18928,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -18937,7 +18937,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -18947,7 +18947,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -18961,7 +18961,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -18974,7 +18974,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -18999,7 +18999,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -19018,7 +19018,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -19031,7 +19031,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -19056,7 +19056,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -19075,7 +19075,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -19097,7 +19097,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -19112,9 +19112,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_51_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_51_threshold = {"__pyx_fuse_4_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_51_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_4_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_51_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_51_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_51_threshold = {"__pyx_fuse_4_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_51_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_4_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_51_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_int32_t __pyx_v_val;
@@ -19173,13 +19173,13 @@ static PyObject *__pyx_fuse_4_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_50_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_50_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -19190,7 +19190,7 @@ static PyObject *__pyx_fuse_4_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_50_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_50_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -19247,7 +19247,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -19256,7 +19256,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -19265,7 +19265,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -19274,7 +19274,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -19297,7 +19297,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -19320,7 +19320,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -19329,7 +19329,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -19341,7 +19341,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -19365,7 +19365,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -19392,7 +19392,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -19401,7 +19401,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -19414,7 +19414,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -19423,7 +19423,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -19447,7 +19447,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -19474,7 +19474,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -19483,7 +19483,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -19496,7 +19496,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -19505,7 +19505,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -19517,7 +19517,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -19529,7 +19529,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -19538,7 +19538,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -19547,7 +19547,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -19557,7 +19557,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -19566,7 +19566,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -19576,7 +19576,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -19590,7 +19590,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -19603,7 +19603,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -19628,7 +19628,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -19647,7 +19647,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -19660,7 +19660,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -19685,7 +19685,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -19704,7 +19704,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -19726,7 +19726,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -19741,9 +19741,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_53_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_53_threshold = {"__pyx_fuse_4_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_53_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_4_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_53_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_53_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_53_threshold = {"__pyx_fuse_4_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_53_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_4_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_53_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_int32_t __pyx_v_val;
@@ -19802,13 +19802,13 @@ static PyObject *__pyx_fuse_4_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_52_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_52_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -19819,7 +19819,7 @@ static PyObject *__pyx_fuse_4_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_52_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_52_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -19876,7 +19876,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -19885,7 +19885,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -19894,7 +19894,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -19903,7 +19903,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -19926,7 +19926,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -19949,7 +19949,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -19958,7 +19958,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float64_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -19970,7 +19970,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -19994,7 +19994,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -20021,7 +20021,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -20030,7 +20030,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -20043,7 +20043,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -20052,7 +20052,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -20076,7 +20076,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -20103,7 +20103,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -20112,7 +20112,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -20125,7 +20125,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -20134,7 +20134,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -20146,7 +20146,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -20158,7 +20158,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -20167,7 +20167,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -20176,7 +20176,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -20186,7 +20186,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -20195,7 +20195,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -20205,7 +20205,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -20219,7 +20219,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -20232,7 +20232,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -20257,7 +20257,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -20276,7 +20276,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -20289,7 +20289,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -20314,7 +20314,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -20333,7 +20333,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -20355,7 +20355,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -20370,9 +20370,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_55_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_55_threshold = {"__pyx_fuse_4_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_55_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_4_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_55_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_55_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_55_threshold = {"__pyx_fuse_4_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_55_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_4_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_55_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_int32_t __pyx_v_val;
@@ -20431,13 +20431,13 @@ static PyObject *__pyx_fuse_4_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_54_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_54_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -20448,7 +20448,7 @@ static PyObject *__pyx_fuse_4_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_54_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_54_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -20505,7 +20505,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -20514,7 +20514,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -20523,7 +20523,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -20532,7 +20532,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -20555,7 +20555,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -20578,7 +20578,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -20587,7 +20587,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint8_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -20599,7 +20599,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -20623,7 +20623,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -20650,7 +20650,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -20659,7 +20659,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -20672,7 +20672,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -20681,7 +20681,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -20705,7 +20705,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -20732,7 +20732,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -20741,7 +20741,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -20754,7 +20754,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -20763,7 +20763,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -20775,7 +20775,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -20787,7 +20787,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -20796,7 +20796,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -20805,7 +20805,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -20815,7 +20815,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -20824,7 +20824,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -20834,7 +20834,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -20848,7 +20848,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -20861,7 +20861,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -20886,7 +20886,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -20905,7 +20905,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -20918,7 +20918,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -20943,7 +20943,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -20962,7 +20962,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -20984,7 +20984,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -20999,9 +20999,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_57_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_57_threshold = {"__pyx_fuse_4_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_57_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_4_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_57_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_57_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_57_threshold = {"__pyx_fuse_4_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_57_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_4_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_57_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_int32_t __pyx_v_val;
@@ -21060,13 +21060,13 @@ static PyObject *__pyx_fuse_4_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_56_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_56_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -21077,7 +21077,7 @@ static PyObject *__pyx_fuse_4_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_56_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_56_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -21134,7 +21134,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -21143,7 +21143,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -21152,7 +21152,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -21161,7 +21161,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -21184,7 +21184,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -21207,7 +21207,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -21216,7 +21216,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint16_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -21228,7 +21228,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -21252,7 +21252,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -21279,7 +21279,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -21288,7 +21288,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -21301,7 +21301,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -21310,7 +21310,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -21334,7 +21334,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -21361,7 +21361,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -21370,7 +21370,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -21383,7 +21383,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -21392,7 +21392,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -21404,7 +21404,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -21416,7 +21416,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -21425,7 +21425,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -21434,7 +21434,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -21444,7 +21444,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -21453,7 +21453,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -21463,7 +21463,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -21477,7 +21477,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -21490,7 +21490,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -21515,7 +21515,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -21534,7 +21534,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -21547,7 +21547,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -21572,7 +21572,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -21591,7 +21591,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -21613,7 +21613,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -21628,9 +21628,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_59_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_59_threshold = {"__pyx_fuse_4_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_59_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_4_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_59_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_59_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_59_threshold = {"__pyx_fuse_4_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_59_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_4_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_59_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_int32_t __pyx_v_val;
@@ -21689,13 +21689,13 @@ static PyObject *__pyx_fuse_4_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_58_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_58_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -21706,7 +21706,7 @@ static PyObject *__pyx_fuse_4_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_58_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_58_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -21763,7 +21763,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -21772,7 +21772,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -21781,7 +21781,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -21790,7 +21790,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -21813,7 +21813,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -21836,7 +21836,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -21845,7 +21845,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_int32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -21857,7 +21857,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -21881,7 +21881,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -21908,7 +21908,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -21917,7 +21917,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -21930,7 +21930,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -21939,7 +21939,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -21963,7 +21963,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -21990,7 +21990,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -21999,7 +21999,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -22012,7 +22012,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -22021,7 +22021,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -22033,7 +22033,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -22045,7 +22045,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -22054,7 +22054,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -22063,7 +22063,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -22073,7 +22073,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -22082,7 +22082,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -22092,7 +22092,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -22106,7 +22106,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -22119,7 +22119,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -22144,7 +22144,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -22163,7 +22163,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -22176,7 +22176,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -22201,7 +22201,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -22220,7 +22220,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -22242,7 +22242,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -22257,9 +22257,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_61_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_61_threshold = {"__pyx_fuse_4_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_61_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_4_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_61_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_61_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_61_threshold = {"__pyx_fuse_4_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_61_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_4_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_61_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_int32_t __pyx_v_val;
@@ -22318,13 +22318,13 @@ static PyObject *__pyx_fuse_4_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_60_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_60_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -22335,7 +22335,7 @@ static PyObject *__pyx_fuse_4_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_60_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_60_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_int32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -22392,7 +22392,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -22401,7 +22401,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -22410,7 +22410,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -22419,7 +22419,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -22442,7 +22442,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -22465,7 +22465,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -22474,7 +22474,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -22486,7 +22486,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -22510,7 +22510,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -22537,7 +22537,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -22546,7 +22546,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -22559,7 +22559,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -22568,7 +22568,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -22592,7 +22592,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -22619,7 +22619,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -22628,7 +22628,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -22641,7 +22641,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -22650,7 +22650,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -22662,7 +22662,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -22674,7 +22674,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -22683,7 +22683,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -22692,7 +22692,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -22702,7 +22702,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -22711,7 +22711,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -22721,7 +22721,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -22735,7 +22735,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -22748,7 +22748,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -22773,7 +22773,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -22792,7 +22792,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -22805,7 +22805,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -22830,7 +22830,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -22849,7 +22849,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -22871,7 +22871,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -22886,9 +22886,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_63_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_63_threshold = {"__pyx_fuse_5_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_63_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_5_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_63_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_63_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_63_threshold = {"__pyx_fuse_5_0_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_63_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_5_0__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_63_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint32_t __pyx_v_val;
@@ -22947,13 +22947,13 @@ static PyObject *__pyx_fuse_5_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_62_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_62_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -22964,7 +22964,7 @@ static PyObject *__pyx_fuse_5_0__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_62_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_62_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -23021,7 +23021,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -23030,7 +23030,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -23039,7 +23039,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -23048,7 +23048,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -23071,7 +23071,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -23094,7 +23094,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -23103,7 +23103,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -23115,7 +23115,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -23139,7 +23139,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -23166,7 +23166,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -23175,7 +23175,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -23188,7 +23188,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -23197,7 +23197,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -23221,7 +23221,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -23248,7 +23248,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -23257,7 +23257,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -23270,7 +23270,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -23279,7 +23279,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -23291,7 +23291,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -23303,7 +23303,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -23312,7 +23312,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -23321,7 +23321,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -23331,7 +23331,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -23340,7 +23340,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -23350,7 +23350,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -23364,7 +23364,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -23377,7 +23377,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -23402,7 +23402,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -23421,7 +23421,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -23434,7 +23434,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -23459,7 +23459,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -23478,7 +23478,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -23500,7 +23500,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -23515,9 +23515,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_65_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_65_threshold = {"__pyx_fuse_5_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_65_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_5_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_65_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_65_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_65_threshold = {"__pyx_fuse_5_1_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_65_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_5_1__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_65_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint32_t __pyx_v_val;
@@ -23576,13 +23576,13 @@ static PyObject *__pyx_fuse_5_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_64_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_64_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -23593,7 +23593,7 @@ static PyObject *__pyx_fuse_5_1__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_64_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_64_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -23650,7 +23650,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -23659,7 +23659,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -23668,7 +23668,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -23677,7 +23677,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -23700,7 +23700,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -23723,7 +23723,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -23732,7 +23732,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_float64_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -23744,7 +23744,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -23768,7 +23768,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -23795,7 +23795,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -23804,7 +23804,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -23817,7 +23817,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -23826,7 +23826,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -23850,7 +23850,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -23877,7 +23877,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -23886,7 +23886,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -23899,7 +23899,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -23908,7 +23908,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -23920,7 +23920,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -23932,7 +23932,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -23941,7 +23941,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -23950,7 +23950,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -23960,7 +23960,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -23969,7 +23969,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0.0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -23979,7 +23979,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -23993,7 +23993,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -24006,7 +24006,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -24031,7 +24031,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -24050,7 +24050,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -24063,7 +24063,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -24088,7 +24088,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -24107,7 +24107,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -24129,7 +24129,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -24144,9 +24144,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_67_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_67_threshold = {"__pyx_fuse_5_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_67_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_5_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_67_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_67_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_67_threshold = {"__pyx_fuse_5_2_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_67_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_5_2__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_67_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint32_t __pyx_v_val;
@@ -24205,13 +24205,13 @@ static PyObject *__pyx_fuse_5_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_66_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_66_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -24222,7 +24222,7 @@ static PyObject *__pyx_fuse_5_2__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_66_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_66_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -24279,7 +24279,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -24288,7 +24288,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -24297,7 +24297,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -24306,7 +24306,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -24329,7 +24329,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -24352,7 +24352,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -24361,7 +24361,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint8_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -24373,7 +24373,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -24397,7 +24397,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -24424,7 +24424,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -24433,7 +24433,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -24446,7 +24446,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -24455,7 +24455,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -24479,7 +24479,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -24506,7 +24506,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -24515,7 +24515,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -24528,7 +24528,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -24537,7 +24537,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -24549,7 +24549,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -24561,7 +24561,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -24570,7 +24570,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -24579,7 +24579,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -24589,7 +24589,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -24598,7 +24598,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -24608,7 +24608,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -24622,7 +24622,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -24635,7 +24635,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -24660,7 +24660,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -24679,7 +24679,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -24692,7 +24692,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -24717,7 +24717,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -24736,7 +24736,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -24758,7 +24758,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -24773,9 +24773,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_69_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_69_threshold = {"__pyx_fuse_5_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_69_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_5_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_69_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_69_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_69_threshold = {"__pyx_fuse_5_3_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_69_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_5_3__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_69_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint32_t __pyx_v_val;
@@ -24834,13 +24834,13 @@ static PyObject *__pyx_fuse_5_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_68_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_68_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -24851,7 +24851,7 @@ static PyObject *__pyx_fuse_5_3__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_68_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_68_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -24908,7 +24908,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -24917,7 +24917,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -24926,7 +24926,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -24935,7 +24935,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -24958,7 +24958,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -24981,7 +24981,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -24990,7 +24990,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint16_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -25002,7 +25002,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -25026,7 +25026,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -25053,7 +25053,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -25062,7 +25062,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -25075,7 +25075,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -25084,7 +25084,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -25108,7 +25108,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -25135,7 +25135,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -25144,7 +25144,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -25157,7 +25157,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -25166,7 +25166,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -25178,7 +25178,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -25190,7 +25190,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -25199,7 +25199,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -25208,7 +25208,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -25218,7 +25218,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -25227,7 +25227,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -25237,7 +25237,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -25251,7 +25251,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -25264,7 +25264,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -25289,7 +25289,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -25308,7 +25308,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -25321,7 +25321,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -25346,7 +25346,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -25365,7 +25365,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -25387,7 +25387,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -25402,9 +25402,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_71_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_71_threshold = {"__pyx_fuse_5_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_71_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_5_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_71_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_71_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_71_threshold = {"__pyx_fuse_5_4_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_71_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_5_4__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_71_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint32_t __pyx_v_val;
@@ -25463,13 +25463,13 @@ static PyObject *__pyx_fuse_5_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_70_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_70_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -25480,7 +25480,7 @@ static PyObject *__pyx_fuse_5_4__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_70_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_70_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -25537,7 +25537,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -25546,7 +25546,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -25555,7 +25555,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -25564,7 +25564,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -25587,7 +25587,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -25610,7 +25610,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -25619,7 +25619,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_int32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -25631,7 +25631,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -25655,7 +25655,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -25682,7 +25682,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -25691,7 +25691,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -25704,7 +25704,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -25713,7 +25713,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -25737,7 +25737,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -25764,7 +25764,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -25773,7 +25773,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -25786,7 +25786,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -25795,7 +25795,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -25807,7 +25807,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -25819,7 +25819,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -25828,7 +25828,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -25837,7 +25837,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -25847,7 +25847,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -25856,7 +25856,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -25866,7 +25866,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -25880,7 +25880,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -25893,7 +25893,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -25918,7 +25918,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -25937,7 +25937,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -25950,7 +25950,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -25975,7 +25975,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -25994,7 +25994,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -26016,7 +26016,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -26031,9 +26031,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_73_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_73_threshold = {"__pyx_fuse_5_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_73_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_10_threshold__threshold};
-static PyObject *__pyx_fuse_5_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_10_threshold_73_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_73_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_73_threshold = {"__pyx_fuse_5_5_threshold", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_73_threshold, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_10_threshold__threshold};
+static PyObject *__pyx_fuse_5_5__pyx_pw_9bq3d_13image_filters_7filters_5label_10_threshold_73_threshold(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_output = 0;
   __pyx_t_5numpy_uint32_t __pyx_v_val;
@@ -26092,13 +26092,13 @@ static PyObject *__pyx_fuse_5_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_threshold", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_72_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_72_threshold(__pyx_self, __pyx_v_image, __pyx_v_output, __pyx_v_val);
 
   /* function exit code */
   goto __pyx_L0;
@@ -26109,7 +26109,7 @@ static PyObject *__pyx_fuse_5_5__pyx_pw_9clearmap3_13image_filters_7filters_5lab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshold_72_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_10_threshold_72_threshold(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_output, __pyx_t_5numpy_uint32_t __pyx_v_val) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -26166,7 +26166,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":43
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":43
  *     """
  * 
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -26175,7 +26175,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":44
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":44
  * 
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -26184,7 +26184,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":45
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":45
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -26193,7 +26193,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":52
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":52
  *     cdef OUTPUT_DTYPE *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'rb')             # <<<<<<<<<<<<<<
@@ -26216,7 +26216,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":53
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":53
  * 
  *     image_fd = open(image.filename, 'rb')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -26239,7 +26239,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":56
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":56
  * 
  *     cdef INPUT_DTYPE image_val
  *     cdef OUTPUT_DTYPE maxval = numeric_limits[OUTPUT_DTYPE].max()             # <<<<<<<<<<<<<<
@@ -26248,7 +26248,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
   __pyx_v_maxval = std::numeric_limits<__pyx_t_5numpy_uint32_t> ::max();
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":61
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":61
  *     cdef long idx
  * 
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -26260,7 +26260,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_z = __pyx_t_5;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":64
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":64
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,
  *                                       image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -26284,7 +26284,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":67
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":67
  *                                       PROT_READ,
  *                                       MAP_SHARED,
  *                                       image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -26311,7 +26311,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":63
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":63
  *     for z in range(zmax):
  *         # Allocate memory at the start of each new frame
  *         mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -26320,7 +26320,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_7, PROT_READ, MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":70
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":70
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -26333,7 +26333,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":71
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":71
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_image += image.offset
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image             # <<<<<<<<<<<<<<
@@ -26342,7 +26342,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":74
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":74
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                        output.size * sizeof(OUTPUT_DTYPE) + output.offset,             # <<<<<<<<<<<<<<
@@ -26366,7 +26366,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_7 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_7 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":77
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":77
  *                                        PROT_READ|PROT_WRITE,
  *                                        MAP_SHARED,
  *                                        output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -26393,7 +26393,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":73
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":73
  *         mmapped_image_offset = <INPUT_DTYPE*>mmapped_image
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -26402,7 +26402,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_7, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_8, 0));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":80
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":80
  *                                        0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -26415,7 +26415,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":81
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":81
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output             # <<<<<<<<<<<<<<
@@ -26424,7 +26424,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
     __pyx_v_mmapped_output_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":83
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":83
  *         mmapped_output_offset = <OUTPUT_DTYPE*>mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -26436,7 +26436,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_11; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_threshold.pyx":84
+      /* "bq3d/image_filters/filters/label/_threshold.pyx":84
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -26448,7 +26448,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_x = __pyx_t_14;
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":85
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":85
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -26457,7 +26457,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":86
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":86
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -26466,7 +26466,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -26476,7 +26476,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
         __pyx_t_15 = ((__pyx_v_image_val < __pyx_v_val) != 0);
         if (__pyx_t_15) {
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":88
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":88
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -26485,7 +26485,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = 0;
 
-          /* "clearmap3/image_filters/filters/label/_threshold.pyx":87
+          /* "bq3d/image_filters/filters/label/_threshold.pyx":87
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 image_val = mmapped_image_offset[idx]
  *                 if image_val < val:             # <<<<<<<<<<<<<<
@@ -26495,7 +26495,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
           goto __pyx_L9;
         }
 
-        /* "clearmap3/image_filters/filters/label/_threshold.pyx":90
+        /* "bq3d/image_filters/filters/label/_threshold.pyx":90
  *                     mmapped_output_offset[idx] = 0
  *                 else:
  *                     mmapped_output_offset[idx] = maxval             # <<<<<<<<<<<<<<
@@ -26509,7 +26509,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":93
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":93
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -26522,7 +26522,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":94
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":94
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)             # <<<<<<<<<<<<<<
@@ -26547,7 +26547,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":95
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":95
  *         mmapped_image -= image.offset
  *         munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -26566,7 +26566,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":97
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":97
  *         munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -26579,7 +26579,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_9);
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":98
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":98
  * 
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)             # <<<<<<<<<<<<<<
@@ -26604,7 +26604,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_7));
 
-    /* "clearmap3/image_filters/filters/label/_threshold.pyx":99
+    /* "bq3d/image_filters/filters/label/_threshold.pyx":99
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(OUTPUT_DTYPE) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(OUTPUT_DTYPE))             # <<<<<<<<<<<<<<
@@ -26623,7 +26623,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_7));
   }
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -26645,7 +26645,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_10_threshol
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._threshold._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -41973,7 +41973,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._threshold.array", /*tp_name*/
+  "bq3d.image_filters.filters.label._threshold.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -42084,7 +42084,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._threshold.Enum", /*tp_name*/
+  "bq3d.image_filters.filters.label._threshold.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -42337,7 +42337,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._threshold.memoryview", /*tp_name*/
+  "bq3d.image_filters.filters.label._threshold.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -42467,7 +42467,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._threshold._memoryviewslice", /*tp_name*/
+  "bq3d.image_filters.filters.label._threshold._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -42619,8 +42619,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
-  {&__pyx_kp_s_clearmap3_image_filters_filters, __pyx_k_clearmap3_image_filters_filters, sizeof(__pyx_k_clearmap3_image_filters_filters), 0, 0, 1, 0},
-  {&__pyx_n_s_clearmap3_image_filters_filters_2, __pyx_k_clearmap3_image_filters_filters_2, sizeof(__pyx_k_clearmap3_image_filters_filters_2), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_image_filters_filters, __pyx_k_bq3d_image_filters_filters, sizeof(__pyx_k_bq3d_image_filters_filters), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_image_filters_filters_2, __pyx_k_bq3d_image_filters_filters_2, sizeof(__pyx_k_bq3d_image_filters_filters_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_kp_s_contiguous_and_direct, __pyx_k_contiguous_and_direct, sizeof(__pyx_k_contiguous_and_direct), 0, 0, 1, 0},
   {&__pyx_kp_s_contiguous_and_indirect, __pyx_k_contiguous_and_indirect, sizeof(__pyx_k_contiguous_and_indirect), 0, 0, 1, 0},
@@ -42783,7 +42783,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -43066,7 +43066,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -43076,7 +43076,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__30 = PyTuple_Pack(18, __pyx_n_s_image, __pyx_n_s_output, __pyx_n_s_val, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_mmapped_image, __pyx_n_s_mmapped_image_offset, __pyx_n_s_mmapped_output, __pyx_n_s_mmapped_output_offset, __pyx_n_s_image_fd, __pyx_n_s_output_fd, __pyx_n_s_image_val, __pyx_n_s_maxval, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_idx); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
-  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(3, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_threshold, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(3, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters, __pyx_n_s_threshold, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 28, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -43485,14 +43485,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clearmap3__image_filters__filters__label___threshold) {
+  if (__pyx_module_is_main_bq3d__image_filters__filters__label___threshold) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clearmap3.image_filters.filters.label._threshold")) {
-      if (unlikely(PyDict_SetItemString(modules, "clearmap3.image_filters.filters.label._threshold", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "bq3d.image_filters.filters.label._threshold")) {
+      if (unlikely(PyDict_SetItemString(modules, "bq3d.image_filters.filters.label._threshold", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -43513,7 +43513,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":28
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":28
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _threshold(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -43522,187 +43522,187 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(36); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_3_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_3_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float32_t_float32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_5_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_5_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float32_t_float64_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_7_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_7_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float32_t_uint8_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_9_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_9_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float32_t_uint16_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_11_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_11_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float32_t_int32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_13_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_13_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float32_t_uint32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_15_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_15_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float64_t_float32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_17_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_17_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float64_t_float64_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_19_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_19_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float64_t_uint8_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_21_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_21_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float64_t_uint16_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_23_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_23_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float64_t_int32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_25_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_25_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_float64_t_uint32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_27_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_27_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint8_t_float32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_29_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_29_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint8_t_float64_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_31_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_31_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint8_t_uint8_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_33_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_33_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint8_t_uint16_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_35_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_35_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint8_t_int32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_37_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_37_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint8_t_uint32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_39_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_39_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint16_t_float32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_41_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_41_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint16_t_float64_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_43_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_43_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint16_t_uint8_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_45_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_45_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint16_t_uint16_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_47_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_47_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint16_t_int32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_49_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_49_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint16_t_uint32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_51_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_51_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_int32_t_float32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_53_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_53_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_int32_t_float64_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_55_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_55_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_int32_t_uint8_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_57_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_57_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_int32_t_uint16_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_59_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_59_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_int32_t_int32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_61_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_61_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_int32_t_uint32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_63_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_63_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint32_t_float32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_65_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_65_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint32_t_float64_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_67_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_67_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint32_t_uint8_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_69_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_69_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint32_t_uint16_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_71_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_71_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint32_t_int32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_73_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_73_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_uint32_t_uint32_t, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_10_threshold_1_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_5label_10_threshold_1_threshold, 0, __pyx_n_s_threshold, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_2)->__signatures__ = __pyx_t_1;
@@ -43710,7 +43710,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_threshold, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_threshold.pyx":1
+  /* "bq3d/image_filters/filters/label/_threshold.pyx":1
  * # cython: language_level = 3             # <<<<<<<<<<<<<<
  * 
  * cimport numpy as cnp
@@ -43882,11 +43882,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clearmap3.image_filters.filters.label._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init bq3d.image_filters.filters.label._threshold", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clearmap3.image_filters.filters.label._threshold");
+    PyErr_SetString(PyExc_ImportError, "init bq3d.image_filters.filters.label._threshold");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

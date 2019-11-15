@@ -1,8 +1,8 @@
 import cv2
 from scipy.ndimage.filters import median_filter
 
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 class Median(FilterBase):
     """ 3D median filter.

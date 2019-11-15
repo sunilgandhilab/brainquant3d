@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from clearmap3 import io
-from clearmap3.image_filters import filter_manager
+from bq3d import io
+from bq3d.image_filters import filter_manager
 
 
 def filter_image(filter, input, output = None, temp_dir_root=None, **kwargs):

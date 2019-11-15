@@ -1,4 +1,4 @@
-from clearmap3._version import __version__
+from bq3d._version import __version__
 __author__     = 'Ricardo Azevedo, Jack Zeitoun'
 __copyright__  = "Copyright 2019, Gandhi Lab"
 __license__    = 'BY-NC-SA 4.0'

@@ -1,5 +1,5 @@
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 from .helpers.array_manipulations import min_threshold_3d
 

@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 
 import uuid
-from clearmap3 import io
-import clearmap3.io.TIF as tif
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
-from clearmap3.image_filters.filters._background_subtraction import subtract_background_rolling_ball
+from bq3d import io
+import bq3d.io.TIF as tif
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
+from bq3d.image_filters.filters._background_subtraction import subtract_background_rolling_ball
 
 
 class RollingBackgroundSubtract(FilterBase):

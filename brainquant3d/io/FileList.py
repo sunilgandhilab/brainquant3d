@@ -12,9 +12,9 @@ import tifffile as tif
 import multiprocessing
 
 
-import clearmap3
-from clearmap3 import io
-from clearmap3.utils.files import sort
+import bq3d
+from bq3d import io
+from bq3d.utils.files import sort
 
 import logging
 log = logging.getLogger(__name__)

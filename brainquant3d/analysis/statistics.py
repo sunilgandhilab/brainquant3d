@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import scipy
 from scipy import stats, interpolate
-from clearmap3 import io
+from bq3d import io
 
 import logging
 log = logging.getLogger(__name__)

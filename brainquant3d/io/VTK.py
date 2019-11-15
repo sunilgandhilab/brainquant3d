@@ -3,14 +3,14 @@
 Interface to write points to VTK files
 
 Notes:
-    - points are assumed to be in [x,y,z] coordinates as standard in ClearMap
+    - points are assumed to be in [x,y,z] coordinates as standard in brainquant3d
     - reading of points not supported at the moment!
 
 """
 
 import logging
 
-from clearmap3 import io
+from bq3d import io
 import numpy
 
 log = logging.getLogger(__name__)

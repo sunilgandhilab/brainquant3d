@@ -10,7 +10,7 @@ Summary
     * the moving image is typically the reference image
     * Transforms can be applied to images or point coordinates and direction is assumed to be from fixed -> moving
     * ANTs allows for inverting transforms which can be usefull if better result are obtained with a fixed reference image.
-    * point arrays are assumed to be in (x,y,z) coordinates consistent with (x,y,z) array represenation of images in ClearMap
+    * point arrays are assumed to be in (x,y,z) coordinates consistent with (x,y,z) array represenation of images in brainquant3d
 
 
 Main routines are: :func:`alignData`, :func:`transformImage` and :func:`transformPoints`.
@@ -23,8 +23,8 @@ import shutil
 import numpy as np
 import re
 
-from clearmap3 import config
-from clearmap3 import io
+from bq3d import config
+from bq3d import io
 
 import logging
 log = logging.getLogger(__name__)
@@ -41,11 +41,11 @@ def initialize_Elastix():
 
     # check binaries
     if config.elastix_path is None:
-        raise RuntimeError('Cannot find elastix path %s set Elastix path in ClearMap.conf accordingly!' % clearmap3.config.tranformix_binary)
+        raise RuntimeError('Cannot find elastix path %s set Elastix path in brainquant3d.conf accordingly!' % bq3d.config.tranformix_binary)
     if config.elastix_binary is None:
-        raise RuntimeError('Cannot find elastix binary %s, set Elastix path in ClearMap.conf accordingly!' % clearmap3.config.elastix_binary)
+        raise RuntimeError('Cannot find elastix binary %s, set Elastix path in brainquant3d.conf accordingly!' % bq3d.config.elastix_binary)
     if config.tranformix_binary is None:
-        raise RuntimeError('Cannot find transformix binary %s set Elastix path in ClearMap.conf accordingly!' % clearmap3.config.tranformix_binary)
+        raise RuntimeError('Cannot find transformix binary %s set Elastix path in brainquant3d.conf accordingly!' % bq3d.config.tranformix_binary)
 
     # set elastix library path environment variable
     path = config.elastix_path

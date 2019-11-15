@@ -10,23 +10,23 @@
             "include/opencv2/imgproc.hpp"
         ],
         "extra_link_args": [
-            "clearmap3/.lib-linux/libopencv_core.so.3.4",
-            "clearmap3/.lib-linux/libopencv_imgproc.so.3.4"
+            "bq3d/.lib-linux/libopencv_core.so.3.4",
+            "bq3d/.lib-linux/libopencv_imgproc.so.3.4"
         ],
         "include_dirs": [
             "/usr/local/lib/python3.6/dist-packages/numpy/core/include",
             "include"
         ],
         "language": "c++",
-        "name": "clearmap3.image_filters.filters.label._connect",
+        "name": "bq3d.image_filters.filters.label._connect",
         "runtime_library_dirs": [
             "$ORIGIN/../../../.lib-linux"
         ],
         "sources": [
-            "clearmap3/image_filters/filters/label/_connect.pyx"
+            "bq3d/image_filters/filters/label/_connect.pyx"
         ]
     },
-    "module_name": "clearmap3.image_filters.filters.label._connect"
+    "module_name": "bq3d.image_filters.filters.label._connect"
 }
 END: Cython Metadata */
 
@@ -634,8 +634,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clearmap3__image_filters__filters__label___connect
-#define __PYX_HAVE_API__clearmap3__image_filters__filters__label___connect
+#define __PYX_HAVE__bq3d__image_filters__filters__label___connect
+#define __PYX_HAVE_API__bq3d__image_filters__filters__label___connect
 /* Early includes */
 #include <string.h>
 #include "opencv2/core.hpp"
@@ -882,8 +882,8 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clearmap3/image_filters/filters/label/_connect.pyx",
-  "clearmap3/image_filters/filters/label/_connect.pxd",
+  "bq3d/image_filters/filters/label/_connect.pyx",
+  "bq3d/image_filters/filters/label/_connect.pxd",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -1186,14 +1186,14 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "clearmap3/image_filters/filters/label/_connect.pyx":14
+/* "bq3d/image_filters/filters/label/_connect.pyx":14
  * DTYPE = np.int32
  * 
  * ctypedef cnp.int32_t DTYPE_t             # <<<<<<<<<<<<<<
  * 
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  */
-typedef __pyx_t_5numpy_int32_t __pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t;
+typedef __pyx_t_5numpy_int32_t __pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -2202,7 +2202,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, cha
 
 /* Module declarations from 'libcpp.pair' */
 
-/* Module declarations from 'clearmap3.image_filters.filters.label._connect' */
+/* Module declarations from 'bq3d.image_filters.filters.label._connect' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2214,8 +2214,8 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_np2cvMat(__Pyx_memviewslice, cv::Mat &); /*proto*/
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_cvMat2np(cv::Mat &, __Pyx_memviewslice); /*proto*/
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_np2cvMat(__Pyx_memviewslice, cv::Mat &); /*proto*/
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_cvMat2np(cv::Mat &, __Pyx_memviewslice); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -2250,13 +2250,13 @@ static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_unsigned_char = { "unsigned char", NULL, sizeof(unsigned char), { 0 }, 0, IS_UNSIGNED(unsigned char) ? 'U' : 'I', IS_UNSIGNED(unsigned char), 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t), 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_int = { "int", NULL, sizeof(int), { 0 }, 0, IS_UNSIGNED(int) ? 'U' : 'I', IS_UNSIGNED(int), 0 };
-#define __Pyx_MODULE_NAME "clearmap3.image_filters.filters.label._connect"
-extern int __pyx_module_is_main_clearmap3__image_filters__filters__label___connect;
-int __pyx_module_is_main_clearmap3__image_filters__filters__label___connect = 0;
+#define __Pyx_MODULE_NAME "bq3d.image_filters.filters.label._connect"
+extern int __pyx_module_is_main_bq3d__image_filters__filters__label___connect;
+int __pyx_module_is_main_bq3d__image_filters__filters__label___connect = 0;
 
-/* Implementation of 'clearmap3.image_filters.filters.label._connect' */
+/* Implementation of 'bq3d.image_filters.filters.label._connect' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_RuntimeError;
@@ -2381,7 +2381,7 @@ static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cyt
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_clearmap3_image_filters_filters[] = "clearmap3/image_filters/filters/label/_connect.pyx";
+static const char __pyx_k_bq3d_image_filters_filters[] = "bq3d/image_filters/filters/label/_connect.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
@@ -2401,7 +2401,7 @@ static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not F
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
-static const char __pyx_k_clearmap3_image_filters_filters_2[] = "clearmap3.image_filters.filters.label._connect";
+static const char __pyx_k_bq3d_image_filters_filters_2[] = "bq3d.image_filters.filters.label._connect";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_n_s_ASCII;
 static PyObject *__pyx_kp_s_Buffer_view_does_not_expose_stri;
@@ -2439,8 +2439,8 @@ static PyObject *__pyx_n_s_base;
 static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_u_c;
 static PyObject *__pyx_n_s_class;
-static PyObject *__pyx_kp_s_clearmap3_image_filters_filters;
-static PyObject *__pyx_n_s_clearmap3_image_filters_filters_2;
+static PyObject *__pyx_kp_s_bq3d_image_filters_filters;
+static PyObject *__pyx_n_s_bq3d_image_filters_filters_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_connect;
 static PyObject *__pyx_kp_s_contiguous_and_direct;
@@ -2541,7 +2541,7 @@ static PyObject *__pyx_n_s_ymax;
 static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_s_zeros;
 static PyObject *__pyx_n_s_zmax;
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__connect(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img, PyArrayObject *__pyx_v_out); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_8_connect__connect(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img, PyArrayObject *__pyx_v_out); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2630,7 +2630,7 @@ static PyObject *__pyx_codeobj__27;
 static PyObject *__pyx_codeobj__34;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/_connect.pyx":18
+/* "bq3d/image_filters/filters/label/_connect.pyx":18
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _connect(cnp.ndarray[unsigned char, ndim=3] img, cnp.ndarray[DTYPE_t, ndim=3] out): #unsigned char[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
@@ -2639,9 +2639,9 @@ static PyObject *__pyx_codeobj__34;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_connect_1_connect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_8_connect_1_connect = {"_connect", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_connect_1_connect, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_connect_1_connect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_8_connect_1_connect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_5label_8_connect_1_connect = {"_connect", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_5label_8_connect_1_connect, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_8_connect_1_connect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_img = 0;
   PyArrayObject *__pyx_v_out = 0;
   PyObject *__pyx_r = 0;
@@ -2689,13 +2689,13 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_connect_1
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_connect", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 18, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._connect._connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._connect._connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_img), __pyx_ptype_5numpy_ndarray, 1, "img", 0))) __PYX_ERR(0, 18, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_out), __pyx_ptype_5numpy_ndarray, 1, "out", 0))) __PYX_ERR(0, 18, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__connect(__pyx_self, __pyx_v_img, __pyx_v_out);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_8_connect__connect(__pyx_self, __pyx_v_img, __pyx_v_out);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2706,7 +2706,7 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_connect_1
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__connect(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img, PyArrayObject *__pyx_v_out) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_8_connect__connect(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img, PyArrayObject *__pyx_v_out) {
   int __pyx_v_zmax;
   int __pyx_v_ymax;
   int __pyx_v_xmax;
@@ -2726,9 +2726,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   int __pyx_v_last_label;
   int __pyx_v_val;
   int __pyx_v_lookup_val;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t __pyx_v_a_val;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t __pyx_v_b_val;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t __pyx_v_out_val;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t __pyx_v_a_val;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t __pyx_v_b_val;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t __pyx_v_out_val;
   __Pyx_memviewslice __pyx_v_final_lookup = { 0, 0, { 0 }, { 0 }, { 0 } };
   std::pair<int,int>  __pyx_v_lookup_pair;
   std::pair<int,std::map<int,int> >  __pyx_v_rev_lookup;
@@ -2831,11 +2831,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_pybuffernd_img.diminfo[0].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_img.diminfo[0].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_img.diminfo[1].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_img.diminfo[1].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_img.diminfo[2].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_img.diminfo[2].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_v_out, &__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 18, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_v_out, &__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 18, __pyx_L1_error)
   }
   __pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":20
+  /* "bq3d/image_filters/filters/label/_connect.pyx":20
  * def _connect(cnp.ndarray[unsigned char, ndim=3] img, cnp.ndarray[DTYPE_t, ndim=3] out): #unsigned char[:,:,::1] img, int[:,:,::1] out):
  * 
  *     cdef int zmax = img.shape[0]             # <<<<<<<<<<<<<<
@@ -2844,7 +2844,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   __pyx_v_zmax = (__pyx_v_img->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":21
+  /* "bq3d/image_filters/filters/label/_connect.pyx":21
  * 
  *     cdef int zmax = img.shape[0]
  *     cdef int ymax = img.shape[1]             # <<<<<<<<<<<<<<
@@ -2853,7 +2853,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   __pyx_v_ymax = (__pyx_v_img->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":22
+  /* "bq3d/image_filters/filters/label/_connect.pyx":22
  *     cdef int zmax = img.shape[0]
  *     cdef int ymax = img.shape[1]
  *     cdef int xmax = img.shape[2]             # <<<<<<<<<<<<<<
@@ -2862,7 +2862,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   __pyx_v_xmax = (__pyx_v_img->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":24
+  /* "bq3d/image_filters/filters/label/_connect.pyx":24
  *     cdef int xmax = img.shape[2]
  * 
  *     cdef long size = 2**32-1             # <<<<<<<<<<<<<<
@@ -2871,7 +2871,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   __pyx_v_size = 0xFFFFFFFF;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":26
+  /* "bq3d/image_filters/filters/label/_connect.pyx":26
  *     cdef long size = 2**32-1
  * 
  *     cdef int[::1] new_labels_lookup = np.zeros(size, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -2907,7 +2907,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":27
+  /* "bq3d/image_filters/filters/label/_connect.pyx":27
  * 
  *     cdef int[::1] new_labels_lookup = np.zeros(size, dtype=DTYPE)
  *     cdef int[::1] lookup = np.zeros(size, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -2943,7 +2943,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":32
+  /* "bq3d/image_filters/filters/label/_connect.pyx":32
  * 
  *     cdef Mat slice_0, slice_1, _labeled_0, _labeled_1
  *     cdef int[:,::1] labeled_0 = np.zeros((ymax, xmax), dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -2989,7 +2989,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":33
+  /* "bq3d/image_filters/filters/label/_connect.pyx":33
  *     cdef Mat slice_0, slice_1, _labeled_0, _labeled_1
  *     cdef int[:,::1] labeled_0 = np.zeros((ymax, xmax), dtype=DTYPE)
  *     cdef int[:,::1] labeled_1 = np.zeros((ymax, xmax), dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -3035,7 +3035,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":39
+  /* "bq3d/image_filters/filters/label/_connect.pyx":39
  *     cdef DTYPE_t a_val, b_val, out_val
  * 
  *     _labeled_0.create(ymax, xmax, CV_32S)             # <<<<<<<<<<<<<<
@@ -3044,7 +3044,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   __pyx_v__labeled_0.create(__pyx_v_ymax, __pyx_v_xmax, CV_32S);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":40
+  /* "bq3d/image_filters/filters/label/_connect.pyx":40
  * 
  *     _labeled_0.create(ymax, xmax, CV_32S)
  *     _labeled_1.create(ymax, xmax, CV_32S)             # <<<<<<<<<<<<<<
@@ -3053,7 +3053,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   __pyx_v__labeled_1.create(__pyx_v_ymax, __pyx_v_xmax, CV_32S);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":42
+  /* "bq3d/image_filters/filters/label/_connect.pyx":42
  *     _labeled_1.create(ymax, xmax, CV_32S)
  * 
  *     for z in range(zmax-1):             # <<<<<<<<<<<<<<
@@ -3065,7 +3065,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_z = __pyx_t_9;
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":44
+    /* "bq3d/image_filters/filters/label/_connect.pyx":44
  *     for z in range(zmax-1):
  *         # Read frames, convert to cv::Mat objects, label, then convert to memory-view
  *         if z == 0:             # <<<<<<<<<<<<<<
@@ -3075,7 +3075,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     __pyx_t_10 = ((__pyx_v_z == 0) != 0);
     if (__pyx_t_10) {
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":45
+      /* "bq3d/image_filters/filters/label/_connect.pyx":45
  *         # Read frames, convert to cv::Mat objects, label, then convert to memory-view
  *         if z == 0:
  *             np2cvMat(img[z], slice_0)             # <<<<<<<<<<<<<<
@@ -3086,12 +3086,12 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_11 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_unsigned_char(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_11.memview)) __PYX_ERR(0, 45, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_np2cvMat(__pyx_t_11, __pyx_v_slice_0);
+      __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_np2cvMat(__pyx_t_11, __pyx_v_slice_0);
       __PYX_XDEC_MEMVIEW(&__pyx_t_11, 1);
       __pyx_t_11.memview = NULL;
       __pyx_t_11.data = NULL;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":46
+      /* "bq3d/image_filters/filters/label/_connect.pyx":46
  *         if z == 0:
  *             np2cvMat(img[z], slice_0)
  *             last_label = connectedComponents(slice_0, _labeled_0)             # <<<<<<<<<<<<<<
@@ -3100,16 +3100,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
       __pyx_v_last_label = cv::connectedComponents(__pyx_v_slice_0, __pyx_v__labeled_0);
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":47
+      /* "bq3d/image_filters/filters/label/_connect.pyx":47
  *             np2cvMat(img[z], slice_0)
  *             last_label = connectedComponents(slice_0, _labeled_0)
  *             cvMat2np(_labeled_0, labeled_0)             # <<<<<<<<<<<<<<
  *             out[z] = labeled_0
  *         else:
  */
-      __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_cvMat2np(__pyx_v__labeled_0, __pyx_v_labeled_0);
+      __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_cvMat2np(__pyx_v__labeled_0, __pyx_v_labeled_0);
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":48
+      /* "bq3d/image_filters/filters/label/_connect.pyx":48
  *             last_label = connectedComponents(slice_0, _labeled_0)
  *             cvMat2np(_labeled_0, labeled_0)
  *             out[z] = labeled_0             # <<<<<<<<<<<<<<
@@ -3121,7 +3121,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_out), __pyx_v_z, __pyx_t_2, int, 1, __Pyx_PyInt_From_int, 0, 0, 0) < 0)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":44
+      /* "bq3d/image_filters/filters/label/_connect.pyx":44
  *     for z in range(zmax-1):
  *         # Read frames, convert to cv::Mat objects, label, then convert to memory-view
  *         if z == 0:             # <<<<<<<<<<<<<<
@@ -3131,7 +3131,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       goto __pyx_L5;
     }
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":50
+    /* "bq3d/image_filters/filters/label/_connect.pyx":50
  *             out[z] = labeled_0
  *         else:
  *             labeled_0 = out[z]             # <<<<<<<<<<<<<<
@@ -3150,7 +3150,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     }
     __pyx_L5:;
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":51
+    /* "bq3d/image_filters/filters/label/_connect.pyx":51
  *         else:
  *             labeled_0 = out[z]
  *         np2cvMat(img[z+1], slice_1)             # <<<<<<<<<<<<<<
@@ -3162,12 +3162,12 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_11 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_unsigned_char(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_11.memview)) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_np2cvMat(__pyx_t_11, __pyx_v_slice_1);
+    __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_np2cvMat(__pyx_t_11, __pyx_v_slice_1);
     __PYX_XDEC_MEMVIEW(&__pyx_t_11, 1);
     __pyx_t_11.memview = NULL;
     __pyx_t_11.data = NULL;
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":52
+    /* "bq3d/image_filters/filters/label/_connect.pyx":52
  *             labeled_0 = out[z]
  *         np2cvMat(img[z+1], slice_1)
  *         connectedComponents(slice_1, _labeled_1)             # <<<<<<<<<<<<<<
@@ -3176,16 +3176,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
     (void)(cv::connectedComponents(__pyx_v_slice_1, __pyx_v__labeled_1));
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":53
+    /* "bq3d/image_filters/filters/label/_connect.pyx":53
  *         np2cvMat(img[z+1], slice_1)
  *         connectedComponents(slice_1, _labeled_1)
  *         cvMat2np(_labeled_1, labeled_1)             # <<<<<<<<<<<<<<
  * 
  *         # Before generating lookup, shift labels to begin after last label from first slice
  */
-    __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_cvMat2np(__pyx_v__labeled_1, __pyx_v_labeled_1);
+    __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_cvMat2np(__pyx_v__labeled_1, __pyx_v_labeled_1);
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":56
+    /* "bq3d/image_filters/filters/label/_connect.pyx":56
  * 
  *         # Before generating lookup, shift labels to begin after last label from first slice
  *         new_labels_lookup = np.zeros(size, dtype=DTYPE) # Reset             # <<<<<<<<<<<<<<
@@ -3222,7 +3222,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     __pyx_t_5.memview = NULL;
     __pyx_t_5.data = NULL;
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":57
+    /* "bq3d/image_filters/filters/label/_connect.pyx":57
  *         # Before generating lookup, shift labels to begin after last label from first slice
  *         new_labels_lookup = np.zeros(size, dtype=DTYPE) # Reset
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3234,7 +3234,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
       __pyx_v_y = __pyx_t_15;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":58
+      /* "bq3d/image_filters/filters/label/_connect.pyx":58
  *         new_labels_lookup = np.zeros(size, dtype=DTYPE) # Reset
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3246,7 +3246,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
         __pyx_v_x = __pyx_t_18;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":59
+        /* "bq3d/image_filters/filters/label/_connect.pyx":59
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 b_val = labeled_1[y,x]             # <<<<<<<<<<<<<<
@@ -3257,7 +3257,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_20 = __pyx_v_x;
         __pyx_v_b_val = (*((int *) ( /* dim=1 */ ((char *) (((int *) ( /* dim=0 */ (__pyx_v_labeled_1.data + __pyx_t_19 * __pyx_v_labeled_1.strides[0]) )) + __pyx_t_20)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":60
+        /* "bq3d/image_filters/filters/label/_connect.pyx":60
  *             for x in range(xmax):
  *                 b_val = labeled_1[y,x]
  *                 if b_val == 0:             # <<<<<<<<<<<<<<
@@ -3269,7 +3269,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L10;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":62
+        /* "bq3d/image_filters/filters/label/_connect.pyx":62
  *                 if b_val == 0:
  *                     pass
  *                 elif not new_labels_lookup[b_val]:             # <<<<<<<<<<<<<<
@@ -3280,7 +3280,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_10 = ((!((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_new_labels_lookup.data) + __pyx_t_21)) ))) != 0)) != 0);
         if (__pyx_t_10) {
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":63
+          /* "bq3d/image_filters/filters/label/_connect.pyx":63
  *                     pass
  *                 elif not new_labels_lookup[b_val]:
  *                     last_label += 1             # <<<<<<<<<<<<<<
@@ -3289,7 +3289,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
           __pyx_v_last_label = (__pyx_v_last_label + 1);
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":64
+          /* "bq3d/image_filters/filters/label/_connect.pyx":64
  *                 elif not new_labels_lookup[b_val]:
  *                     last_label += 1
  *                     new_labels_lookup[b_val] = last_label             # <<<<<<<<<<<<<<
@@ -3299,7 +3299,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_22 = __pyx_v_b_val;
           *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_new_labels_lookup.data) + __pyx_t_22)) )) = __pyx_v_last_label;
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":62
+          /* "bq3d/image_filters/filters/label/_connect.pyx":62
  *                 if b_val == 0:
  *                     pass
  *                 elif not new_labels_lookup[b_val]:             # <<<<<<<<<<<<<<
@@ -3311,7 +3311,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":65
+    /* "bq3d/image_filters/filters/label/_connect.pyx":65
  *                     last_label += 1
  *                     new_labels_lookup[b_val] = last_label
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3323,7 +3323,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
       __pyx_v_y = __pyx_t_15;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":66
+      /* "bq3d/image_filters/filters/label/_connect.pyx":66
  *                     new_labels_lookup[b_val] = last_label
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3335,7 +3335,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
         __pyx_v_x = __pyx_t_18;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":67
+        /* "bq3d/image_filters/filters/label/_connect.pyx":67
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 b_val = labeled_1[y,x]             # <<<<<<<<<<<<<<
@@ -3346,7 +3346,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_24 = __pyx_v_x;
         __pyx_v_b_val = (*((int *) ( /* dim=1 */ ((char *) (((int *) ( /* dim=0 */ (__pyx_v_labeled_1.data + __pyx_t_23 * __pyx_v_labeled_1.strides[0]) )) + __pyx_t_24)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":68
+        /* "bq3d/image_filters/filters/label/_connect.pyx":68
  *             for x in range(xmax):
  *                 b_val = labeled_1[y,x]
  *                 lookup_val = new_labels_lookup[b_val]             # <<<<<<<<<<<<<<
@@ -3356,7 +3356,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_25 = __pyx_v_b_val;
         __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_new_labels_lookup.data) + __pyx_t_25)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":69
+        /* "bq3d/image_filters/filters/label/_connect.pyx":69
  *                 b_val = labeled_1[y,x]
  *                 lookup_val = new_labels_lookup[b_val]
  *                 if b_val == 0:             # <<<<<<<<<<<<<<
@@ -3368,7 +3368,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L15;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":71
+        /* "bq3d/image_filters/filters/label/_connect.pyx":71
  *                 if b_val == 0:
  *                     pass
  *                 elif lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3378,7 +3378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_10 = ((__pyx_v_lookup_val == 0) != 0);
         if (__pyx_t_10) {
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":72
+          /* "bq3d/image_filters/filters/label/_connect.pyx":72
  *                     pass
  *                 elif lookup_val == 0:
  *                     out[z+1,y,x] = b_val             # <<<<<<<<<<<<<<
@@ -3388,9 +3388,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_26 = (__pyx_v_z + 1);
           __pyx_t_27 = __pyx_v_y;
           __pyx_t_28 = __pyx_v_x;
-          *__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_28, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_b_val;
+          *__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_28, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_b_val;
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":71
+          /* "bq3d/image_filters/filters/label/_connect.pyx":71
  *                 if b_val == 0:
  *                     pass
  *                 elif lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3400,7 +3400,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L15;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":74
+        /* "bq3d/image_filters/filters/label/_connect.pyx":74
  *                     out[z+1,y,x] = b_val
  *                 else:
  *                     out[z+1,y,x] = lookup_val             # <<<<<<<<<<<<<<
@@ -3411,13 +3411,13 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_29 = (__pyx_v_z + 1);
           __pyx_t_30 = __pyx_v_y;
           __pyx_t_31 = __pyx_v_x;
-          *__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_31, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_lookup_val;
+          *__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_31, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_lookup_val;
         }
         __pyx_L15:;
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":77
+    /* "bq3d/image_filters/filters/label/_connect.pyx":77
  * 
  *         # Generate forward lookup
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3429,7 +3429,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
       __pyx_v_y = __pyx_t_15;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":78
+      /* "bq3d/image_filters/filters/label/_connect.pyx":78
  *         # Generate forward lookup
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3441,7 +3441,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
         __pyx_v_x = __pyx_t_18;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":79
+        /* "bq3d/image_filters/filters/label/_connect.pyx":79
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 a_val = labeled_0[y,x]             # <<<<<<<<<<<<<<
@@ -3452,7 +3452,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_33 = __pyx_v_x;
         __pyx_v_a_val = (*((int *) ( /* dim=1 */ ((char *) (((int *) ( /* dim=0 */ (__pyx_v_labeled_0.data + __pyx_t_32 * __pyx_v_labeled_0.strides[0]) )) + __pyx_t_33)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":80
+        /* "bq3d/image_filters/filters/label/_connect.pyx":80
  *             for x in range(xmax):
  *                 a_val = labeled_0[y,x]
  *                 b_val = out[z+1,y,x]             # <<<<<<<<<<<<<<
@@ -3462,9 +3462,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_34 = (__pyx_v_z + 1);
         __pyx_t_35 = __pyx_v_y;
         __pyx_t_36 = __pyx_v_x;
-        __pyx_v_b_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides));
+        __pyx_v_b_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":81
+        /* "bq3d/image_filters/filters/label/_connect.pyx":81
  *                 a_val = labeled_0[y,x]
  *                 b_val = out[z+1,y,x]
  *                 if a_val == 0 or b_val == 0:             # <<<<<<<<<<<<<<
@@ -3484,7 +3484,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L20;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":84
+        /* "bq3d/image_filters/filters/label/_connect.pyx":84
  *                     pass
  *                 else:
  *                     lookup_val = lookup[b_val]             # <<<<<<<<<<<<<<
@@ -3495,7 +3495,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_38 = __pyx_v_b_val;
           __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_lookup.data) + __pyx_t_38)) )));
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":85
+          /* "bq3d/image_filters/filters/label/_connect.pyx":85
  *                 else:
  *                     lookup_val = lookup[b_val]
  *                     if lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3505,7 +3505,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_10 = ((__pyx_v_lookup_val == 0) != 0);
           if (__pyx_t_10) {
 
-            /* "clearmap3/image_filters/filters/label/_connect.pyx":86
+            /* "bq3d/image_filters/filters/label/_connect.pyx":86
  *                     lookup_val = lookup[b_val]
  *                     if lookup_val == 0:
  *                         lookup[b_val] = a_val             # <<<<<<<<<<<<<<
@@ -3515,7 +3515,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
             __pyx_t_39 = __pyx_v_b_val;
             *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_lookup.data) + __pyx_t_39)) )) = __pyx_v_a_val;
 
-            /* "clearmap3/image_filters/filters/label/_connect.pyx":85
+            /* "bq3d/image_filters/filters/label/_connect.pyx":85
  *                 else:
  *                     lookup_val = lookup[b_val]
  *                     if lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3528,7 +3528,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":89
+    /* "bq3d/image_filters/filters/label/_connect.pyx":89
  * 
  *         # 1st pass to map secondary values
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3540,7 +3540,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
       __pyx_v_y = __pyx_t_15;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":90
+      /* "bq3d/image_filters/filters/label/_connect.pyx":90
  *         # 1st pass to map secondary values
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3552,7 +3552,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
         __pyx_v_x = __pyx_t_18;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":91
+        /* "bq3d/image_filters/filters/label/_connect.pyx":91
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 b_val = out[z+1,y,x]             # <<<<<<<<<<<<<<
@@ -3562,9 +3562,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_40 = (__pyx_v_z + 1);
         __pyx_t_41 = __pyx_v_y;
         __pyx_t_42 = __pyx_v_x;
-        __pyx_v_b_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_41, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_42, __pyx_pybuffernd_out.diminfo[2].strides));
+        __pyx_v_b_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_41, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_42, __pyx_pybuffernd_out.diminfo[2].strides));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":92
+        /* "bq3d/image_filters/filters/label/_connect.pyx":92
  *             for x in range(xmax):
  *                 b_val = out[z+1,y,x]
  *                 lookup_val = lookup[b_val]             # <<<<<<<<<<<<<<
@@ -3574,7 +3574,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_43 = __pyx_v_b_val;
         __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_lookup.data) + __pyx_t_43)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":93
+        /* "bq3d/image_filters/filters/label/_connect.pyx":93
  *                 b_val = out[z+1,y,x]
  *                 lookup_val = lookup[b_val]
  *                 if b_val == 0:             # <<<<<<<<<<<<<<
@@ -3586,7 +3586,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L28;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":95
+        /* "bq3d/image_filters/filters/label/_connect.pyx":95
  *                 if b_val == 0:
  *                     pass
  *                 elif lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3596,7 +3596,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_10 = ((__pyx_v_lookup_val == 0) != 0);
         if (__pyx_t_10) {
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":96
+          /* "bq3d/image_filters/filters/label/_connect.pyx":96
  *                     pass
  *                 elif lookup_val == 0:
  *                     out[z+1,y,x] = b_val             # <<<<<<<<<<<<<<
@@ -3606,9 +3606,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_44 = (__pyx_v_z + 1);
           __pyx_t_45 = __pyx_v_y;
           __pyx_t_46 = __pyx_v_x;
-          *__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_44, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_46, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_b_val;
+          *__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_44, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_46, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_b_val;
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":95
+          /* "bq3d/image_filters/filters/label/_connect.pyx":95
  *                 if b_val == 0:
  *                     pass
  *                 elif lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3618,7 +3618,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L28;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":98
+        /* "bq3d/image_filters/filters/label/_connect.pyx":98
  *                     out[z+1,y,x] = b_val
  *                 else:
  *                     out[z+1,y,x] = lookup_val             # <<<<<<<<<<<<<<
@@ -3629,13 +3629,13 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_47 = (__pyx_v_z + 1);
           __pyx_t_48 = __pyx_v_y;
           __pyx_t_49 = __pyx_v_x;
-          *__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_47, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_48, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_49, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_lookup_val;
+          *__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_47, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_48, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_49, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_lookup_val;
         }
         __pyx_L28:;
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":101
+    /* "bq3d/image_filters/filters/label/_connect.pyx":101
  * 
  *         # Generate reverse lookup
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3647,7 +3647,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
       __pyx_v_y = __pyx_t_15;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":102
+      /* "bq3d/image_filters/filters/label/_connect.pyx":102
  *         # Generate reverse lookup
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3659,7 +3659,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
         __pyx_v_x = __pyx_t_18;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":103
+        /* "bq3d/image_filters/filters/label/_connect.pyx":103
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 a_val = labeled_0[y,x]             # <<<<<<<<<<<<<<
@@ -3670,7 +3670,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_51 = __pyx_v_x;
         __pyx_v_a_val = (*((int *) ( /* dim=1 */ ((char *) (((int *) ( /* dim=0 */ (__pyx_v_labeled_0.data + __pyx_t_50 * __pyx_v_labeled_0.strides[0]) )) + __pyx_t_51)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":104
+        /* "bq3d/image_filters/filters/label/_connect.pyx":104
  *             for x in range(xmax):
  *                 a_val = labeled_0[y,x]
  *                 out_val = out[z+1,y,x]             # <<<<<<<<<<<<<<
@@ -3680,9 +3680,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_52 = (__pyx_v_z + 1);
         __pyx_t_53 = __pyx_v_y;
         __pyx_t_54 = __pyx_v_x;
-        __pyx_v_out_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_52, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_53, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_54, __pyx_pybuffernd_out.diminfo[2].strides));
+        __pyx_v_out_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_52, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_53, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_54, __pyx_pybuffernd_out.diminfo[2].strides));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":105
+        /* "bq3d/image_filters/filters/label/_connect.pyx":105
  *                 a_val = labeled_0[y,x]
  *                 out_val = out[z+1,y,x]
  *                 if out_val == 0 or a_val == 0 or out_val == a_val:             # <<<<<<<<<<<<<<
@@ -3708,7 +3708,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L33;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":108
+        /* "bq3d/image_filters/filters/label/_connect.pyx":108
  *                     pass
  *                 else:
  *                     lookup_val = rev_lookups[z][a_val]             # <<<<<<<<<<<<<<
@@ -3718,7 +3718,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         /*else*/ {
           __pyx_v_lookup_val = ((__pyx_v_rev_lookups[__pyx_v_z])[__pyx_v_a_val]);
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":109
+          /* "bq3d/image_filters/filters/label/_connect.pyx":109
  *                 else:
  *                     lookup_val = rev_lookups[z][a_val]
  *                     if lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3728,7 +3728,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_10 = ((__pyx_v_lookup_val == 0) != 0);
           if (__pyx_t_10) {
 
-            /* "clearmap3/image_filters/filters/label/_connect.pyx":110
+            /* "bq3d/image_filters/filters/label/_connect.pyx":110
  *                     lookup_val = rev_lookups[z][a_val]
  *                     if lookup_val == 0:
  *                         rev_lookups[z][a_val] = out_val             # <<<<<<<<<<<<<<
@@ -3737,7 +3737,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
             ((__pyx_v_rev_lookups[__pyx_v_z])[__pyx_v_a_val]) = __pyx_v_out_val;
 
-            /* "clearmap3/image_filters/filters/label/_connect.pyx":109
+            /* "bq3d/image_filters/filters/label/_connect.pyx":109
  *                 else:
  *                     lookup_val = rev_lookups[z][a_val]
  *                     if lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -3751,7 +3751,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":113
+  /* "bq3d/image_filters/filters/label/_connect.pyx":113
  * 
  *     # Generate final lookup
  *     cdef int[::1] final_lookup = np.zeros(last_label+1, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -3787,7 +3787,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":117
+  /* "bq3d/image_filters/filters/label/_connect.pyx":117
  *     cdef int lookup_idx
  * 
  *     for rev_lookup in rev_lookups:             # <<<<<<<<<<<<<<
@@ -3801,7 +3801,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     ++__pyx_t_55;
     __pyx_v_rev_lookup = __pyx_t_56;
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":118
+    /* "bq3d/image_filters/filters/label/_connect.pyx":118
  * 
  *     for rev_lookup in rev_lookups:
  *         for lookup_pair in rev_lookup.second:             # <<<<<<<<<<<<<<
@@ -3816,7 +3816,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       ++__pyx_t_57;
       __pyx_v_lookup_pair = __pyx_t_59;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":119
+      /* "bq3d/image_filters/filters/label/_connect.pyx":119
  *     for rev_lookup in rev_lookups:
  *         for lookup_pair in rev_lookup.second:
  *             lookup_key = lookup_pair.first             # <<<<<<<<<<<<<<
@@ -3826,7 +3826,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       __pyx_t_9 = __pyx_v_lookup_pair.first;
       __pyx_v_lookup_key = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":120
+      /* "bq3d/image_filters/filters/label/_connect.pyx":120
  *         for lookup_pair in rev_lookup.second:
  *             lookup_key = lookup_pair.first
  *             lookup_val = lookup_pair.second             # <<<<<<<<<<<<<<
@@ -3836,7 +3836,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       __pyx_t_9 = __pyx_v_lookup_pair.second;
       __pyx_v_lookup_val = __pyx_t_9;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":121
+      /* "bq3d/image_filters/filters/label/_connect.pyx":121
  *             lookup_key = lookup_pair.first
  *             lookup_val = lookup_pair.second
  *             final_lookup[lookup_key] = lookup_val             # <<<<<<<<<<<<<<
@@ -3846,7 +3846,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       __pyx_t_60 = __pyx_v_lookup_key;
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_final_lookup.data) + __pyx_t_60)) )) = __pyx_v_lookup_val;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":122
+      /* "bq3d/image_filters/filters/label/_connect.pyx":122
  *             lookup_val = lookup_pair.second
  *             final_lookup[lookup_key] = lookup_val
  *             next_lookup_key = lookup_val             # <<<<<<<<<<<<<<
@@ -3855,7 +3855,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
       __pyx_v_next_lookup_key = __pyx_v_lookup_val;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":123
+      /* "bq3d/image_filters/filters/label/_connect.pyx":123
  *             final_lookup[lookup_key] = lookup_val
  *             next_lookup_key = lookup_val
  *             for next_lookup in rev_lookups:             # <<<<<<<<<<<<<<
@@ -3869,7 +3869,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         ++__pyx_t_61;
         __pyx_v_next_lookup = __pyx_t_56;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":124
+        /* "bq3d/image_filters/filters/label/_connect.pyx":124
  *             next_lookup_key = lookup_val
  *             for next_lookup in rev_lookups:
  *                 lookup_val = next_lookup.second[next_lookup_key]             # <<<<<<<<<<<<<<
@@ -3878,7 +3878,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
         __pyx_v_lookup_val = (__pyx_v_next_lookup.second[__pyx_v_next_lookup_key]);
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":125
+        /* "bq3d/image_filters/filters/label/_connect.pyx":125
  *             for next_lookup in rev_lookups:
  *                 lookup_val = next_lookup.second[next_lookup_key]
  *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
@@ -3888,7 +3888,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_10 = ((__pyx_v_lookup_val != 0) != 0);
         if (__pyx_t_10) {
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":126
+          /* "bq3d/image_filters/filters/label/_connect.pyx":126
  *                 lookup_val = next_lookup.second[next_lookup_key]
  *                 if lookup_val != 0:
  *                     final_lookup[lookup_key] = lookup_val             # <<<<<<<<<<<<<<
@@ -3898,7 +3898,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_62 = __pyx_v_lookup_key;
           *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_final_lookup.data) + __pyx_t_62)) )) = __pyx_v_lookup_val;
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":127
+          /* "bq3d/image_filters/filters/label/_connect.pyx":127
  *                 if lookup_val != 0:
  *                     final_lookup[lookup_key] = lookup_val
  *                     next_lookup_key = lookup_val             # <<<<<<<<<<<<<<
@@ -3907,7 +3907,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
           __pyx_v_next_lookup_key = __pyx_v_lookup_val;
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":125
+          /* "bq3d/image_filters/filters/label/_connect.pyx":125
  *             for next_lookup in rev_lookups:
  *                 lookup_val = next_lookup.second[next_lookup_key]
  *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
@@ -3916,7 +3916,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":123
+        /* "bq3d/image_filters/filters/label/_connect.pyx":123
  *             final_lookup[lookup_key] = lookup_val
  *             next_lookup_key = lookup_val
  *             for next_lookup in rev_lookups:             # <<<<<<<<<<<<<<
@@ -3925,7 +3925,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
       }
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":118
+      /* "bq3d/image_filters/filters/label/_connect.pyx":118
  * 
  *     for rev_lookup in rev_lookups:
  *         for lookup_pair in rev_lookup.second:             # <<<<<<<<<<<<<<
@@ -3934,7 +3934,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
     }
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":117
+    /* "bq3d/image_filters/filters/label/_connect.pyx":117
  *     cdef int lookup_idx
  * 
  *     for rev_lookup in rev_lookups:             # <<<<<<<<<<<<<<
@@ -3943,7 +3943,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":130
+  /* "bq3d/image_filters/filters/label/_connect.pyx":130
  * 
  *     # Apply final lookup
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -3955,7 +3955,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
     __pyx_v_z = __pyx_t_14;
 
-    /* "clearmap3/image_filters/filters/label/_connect.pyx":131
+    /* "bq3d/image_filters/filters/label/_connect.pyx":131
  *     # Apply final lookup
  *     for z in range(zmax):
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3967,7 +3967,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     for (__pyx_t_17 = 0; __pyx_t_17 < __pyx_t_16; __pyx_t_17+=1) {
       __pyx_v_y = __pyx_t_17;
 
-      /* "clearmap3/image_filters/filters/label/_connect.pyx":132
+      /* "bq3d/image_filters/filters/label/_connect.pyx":132
  *     for z in range(zmax):
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3979,7 +3979,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
       for (__pyx_t_64 = 0; __pyx_t_64 < __pyx_t_63; __pyx_t_64+=1) {
         __pyx_v_x = __pyx_t_64;
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":133
+        /* "bq3d/image_filters/filters/label/_connect.pyx":133
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 val = out[z,y,x]             # <<<<<<<<<<<<<<
@@ -3989,9 +3989,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_65 = __pyx_v_z;
         __pyx_t_66 = __pyx_v_y;
         __pyx_t_67 = __pyx_v_x;
-        __pyx_v_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_65, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_66, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_67, __pyx_pybuffernd_out.diminfo[2].strides));
+        __pyx_v_val = (*__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_65, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_66, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_67, __pyx_pybuffernd_out.diminfo[2].strides));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":134
+        /* "bq3d/image_filters/filters/label/_connect.pyx":134
  *             for x in range(xmax):
  *                 val = out[z,y,x]
  *                 lookup_val = final_lookup[val]             # <<<<<<<<<<<<<<
@@ -4001,7 +4001,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_68 = __pyx_v_val;
         __pyx_v_lookup_val = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_final_lookup.data) + __pyx_t_68)) )));
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":135
+        /* "bq3d/image_filters/filters/label/_connect.pyx":135
  *                 val = out[z,y,x]
  *                 lookup_val = final_lookup[val]
  *                 if val == 0:             # <<<<<<<<<<<<<<
@@ -4013,7 +4013,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L51;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":137
+        /* "bq3d/image_filters/filters/label/_connect.pyx":137
  *                 if val == 0:
  *                     pass
  *                 elif lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -4023,7 +4023,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
         __pyx_t_10 = ((__pyx_v_lookup_val == 0) != 0);
         if (__pyx_t_10) {
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":138
+          /* "bq3d/image_filters/filters/label/_connect.pyx":138
  *                     pass
  *                 elif lookup_val == 0:
  *                     out[z,y,x] = val             # <<<<<<<<<<<<<<
@@ -4033,9 +4033,9 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_69 = __pyx_v_z;
           __pyx_t_70 = __pyx_v_y;
           __pyx_t_71 = __pyx_v_x;
-          *__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_69, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_70, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_71, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_val;
+          *__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_69, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_70, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_71, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_val;
 
-          /* "clearmap3/image_filters/filters/label/_connect.pyx":137
+          /* "bq3d/image_filters/filters/label/_connect.pyx":137
  *                 if val == 0:
  *                     pass
  *                 elif lookup_val == 0:             # <<<<<<<<<<<<<<
@@ -4045,7 +4045,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           goto __pyx_L51;
         }
 
-        /* "clearmap3/image_filters/filters/label/_connect.pyx":140
+        /* "bq3d/image_filters/filters/label/_connect.pyx":140
  *                     out[z,y,x] = val
  *                 else:
  *                     out[z,y,x] = lookup_val             # <<<<<<<<<<<<<<
@@ -4056,14 +4056,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
           __pyx_t_72 = __pyx_v_z;
           __pyx_t_73 = __pyx_v_y;
           __pyx_t_74 = __pyx_v_x;
-          *__Pyx_BufPtrStrided3d(__pyx_t_9clearmap3_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_72, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_73, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_74, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_lookup_val;
+          *__Pyx_BufPtrStrided3d(__pyx_t_9bq3d_13image_filters_7filters_5label_8_connect_DTYPE_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_72, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_73, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_74, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_lookup_val;
         }
         __pyx_L51:;
       }
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":142
+  /* "bq3d/image_filters/filters/label/_connect.pyx":142
  *                     out[z,y,x] = lookup_val
  * 
  *     return last_label             # <<<<<<<<<<<<<<
@@ -4075,7 +4075,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":18
+  /* "bq3d/image_filters/filters/label/_connect.pyx":18
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _connect(cnp.ndarray[unsigned char, ndim=3] img, cnp.ndarray[DTYPE_t, ndim=3] out): #unsigned char[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
@@ -4099,7 +4099,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_img.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_out.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._connect._connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._connect._connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -4116,7 +4116,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
   return __pyx_r;
 }
 
-/* "clearmap3/image_filters/filters/label/_connect.pxd":16
+/* "bq3d/image_filters/filters/label/_connect.pxd":16
  *   cdef int connectedComponents(Mat, Mat)
  * 
  * cdef inline void np2cvMat(unsigned char[:,::1] arr, Mat& out):             # <<<<<<<<<<<<<<
@@ -4124,7 +4124,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_connect__
  *   cdef int r = arr.shape[0]
  */
 
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_np2cvMat(__Pyx_memviewslice __pyx_v_arr, cv::Mat &__pyx_v_out) {
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_np2cvMat(__Pyx_memviewslice __pyx_v_arr, cv::Mat &__pyx_v_out) {
   unsigned char *__pyx_v_im_buff;
   int __pyx_v_r;
   int __pyx_v_c;
@@ -4134,7 +4134,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("np2cvMat", 0);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":17
+  /* "bq3d/image_filters/filters/label/_connect.pxd":17
  * 
  * cdef inline void np2cvMat(unsigned char[:,::1] arr, Mat& out):
  *   cdef unsigned char* im_buff = &arr[0,0]             # <<<<<<<<<<<<<<
@@ -4158,7 +4158,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
   }
   __pyx_v_im_buff = (&(*((unsigned char *) ( /* dim=1 */ ((char *) (((unsigned char *) ( /* dim=0 */ (__pyx_v_arr.data + __pyx_t_1 * __pyx_v_arr.strides[0]) )) + __pyx_t_2)) ))));
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":18
+  /* "bq3d/image_filters/filters/label/_connect.pxd":18
  * cdef inline void np2cvMat(unsigned char[:,::1] arr, Mat& out):
  *   cdef unsigned char* im_buff = &arr[0,0]
  *   cdef int r = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -4167,7 +4167,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  */
   __pyx_v_r = (__pyx_v_arr.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":19
+  /* "bq3d/image_filters/filters/label/_connect.pxd":19
  *   cdef unsigned char* im_buff = &arr[0,0]
  *   cdef int r = arr.shape[0]
  *   cdef int c = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -4176,7 +4176,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  */
   __pyx_v_c = (__pyx_v_arr.shape[1]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":20
+  /* "bq3d/image_filters/filters/label/_connect.pxd":20
  *   cdef int r = arr.shape[0]
  *   cdef int c = arr.shape[1]
  *   out.create(r, c, CV_8UC1)             # <<<<<<<<<<<<<<
@@ -4185,7 +4185,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  */
   __pyx_v_out.create(__pyx_v_r, __pyx_v_c, CV_8UC1);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":21
+  /* "bq3d/image_filters/filters/label/_connect.pxd":21
  *   cdef int c = arr.shape[1]
  *   out.create(r, c, CV_8UC1)
  *   memcpy(out.data, im_buff, r*c*1)             # <<<<<<<<<<<<<<
@@ -4194,7 +4194,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  */
   (void)(memcpy(__pyx_v_out.data, __pyx_v_im_buff, ((__pyx_v_r * __pyx_v_c) * 1)));
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":16
+  /* "bq3d/image_filters/filters/label/_connect.pxd":16
  *   cdef int connectedComponents(Mat, Mat)
  * 
  * cdef inline void np2cvMat(unsigned char[:,::1] arr, Mat& out):             # <<<<<<<<<<<<<<
@@ -4205,12 +4205,12 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
   /* function exit code */
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_WriteUnraisable("clearmap3.image_filters.filters.label._connect.np2cvMat", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("bq3d.image_filters.filters.label._connect.np2cvMat", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
 }
 
-/* "clearmap3/image_filters/filters/label/_connect.pxd":23
+/* "bq3d/image_filters/filters/label/_connect.pxd":23
  *   memcpy(out.data, im_buff, r*c*1)
  * 
  * cdef inline void cvMat2np(Mat& arr, int[:,::1] out):             # <<<<<<<<<<<<<<
@@ -4218,7 +4218,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  *   cdef int r = out.shape[0]
  */
 
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_connect_cvMat2np(cv::Mat &__pyx_v_arr, __Pyx_memviewslice __pyx_v_out) {
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_8_connect_cvMat2np(cv::Mat &__pyx_v_arr, __Pyx_memviewslice __pyx_v_out) {
   int *__pyx_v_out_buff;
   int __pyx_v_r;
   int __pyx_v_c;
@@ -4228,7 +4228,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("cvMat2np", 0);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":24
+  /* "bq3d/image_filters/filters/label/_connect.pxd":24
  * 
  * cdef inline void cvMat2np(Mat& arr, int[:,::1] out):
  *   cdef int* out_buff = &out[0,0]             # <<<<<<<<<<<<<<
@@ -4252,7 +4252,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
   }
   __pyx_v_out_buff = (&(*((int *) ( /* dim=1 */ ((char *) (((int *) ( /* dim=0 */ (__pyx_v_out.data + __pyx_t_1 * __pyx_v_out.strides[0]) )) + __pyx_t_2)) ))));
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":25
+  /* "bq3d/image_filters/filters/label/_connect.pxd":25
  * cdef inline void cvMat2np(Mat& arr, int[:,::1] out):
  *   cdef int* out_buff = &out[0,0]
  *   cdef int r = out.shape[0]             # <<<<<<<<<<<<<<
@@ -4261,7 +4261,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  */
   __pyx_v_r = (__pyx_v_out.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":26
+  /* "bq3d/image_filters/filters/label/_connect.pxd":26
  *   cdef int* out_buff = &out[0,0]
  *   cdef int r = out.shape[0]
  *   cdef int c = out.shape[1]             # <<<<<<<<<<<<<<
@@ -4269,14 +4269,14 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
  */
   __pyx_v_c = (__pyx_v_out.shape[1]);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":27
+  /* "bq3d/image_filters/filters/label/_connect.pxd":27
  *   cdef int r = out.shape[0]
  *   cdef int c = out.shape[1]
  *   memcpy(out_buff, arr.data, r*c*4) # Rows x Columns x Size of variable type             # <<<<<<<<<<<<<<
  */
   (void)(memcpy(__pyx_v_out_buff, __pyx_v_arr.data, ((__pyx_v_r * __pyx_v_c) * 4)));
 
-  /* "clearmap3/image_filters/filters/label/_connect.pxd":23
+  /* "bq3d/image_filters/filters/label/_connect.pxd":23
  *   memcpy(out.data, im_buff, r*c*1)
  * 
  * cdef inline void cvMat2np(Mat& arr, int[:,::1] out):             # <<<<<<<<<<<<<<
@@ -4287,7 +4287,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_8_c
   /* function exit code */
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_WriteUnraisable("clearmap3.image_filters.filters.label._connect.cvMat2np", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("bq3d.image_filters.filters.label._connect.cvMat2np", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
 }
@@ -19606,7 +19606,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._connect.array", /*tp_name*/
+  "bq3d.image_filters.filters.label._connect.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -19717,7 +19717,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._connect.Enum", /*tp_name*/
+  "bq3d.image_filters.filters.label._connect.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -19970,7 +19970,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._connect.memoryview", /*tp_name*/
+  "bq3d.image_filters.filters.label._connect.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -20100,7 +20100,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._connect._memoryviewslice", /*tp_name*/
+  "bq3d.image_filters.filters.label._connect._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -20249,8 +20249,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
-  {&__pyx_kp_s_clearmap3_image_filters_filters, __pyx_k_clearmap3_image_filters_filters, sizeof(__pyx_k_clearmap3_image_filters_filters), 0, 0, 1, 0},
-  {&__pyx_n_s_clearmap3_image_filters_filters_2, __pyx_k_clearmap3_image_filters_filters_2, sizeof(__pyx_k_clearmap3_image_filters_filters_2), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_image_filters_filters, __pyx_k_bq3d_image_filters_filters, sizeof(__pyx_k_bq3d_image_filters_filters), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_image_filters_filters_2, __pyx_k_bq3d_image_filters_filters_2, sizeof(__pyx_k_bq3d_image_filters_filters_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_connect, __pyx_k_connect, sizeof(__pyx_k_connect), 0, 0, 1, 1},
   {&__pyx_kp_s_contiguous_and_direct, __pyx_k_contiguous_and_direct, sizeof(__pyx_k_contiguous_and_direct), 0, 0, 1, 0},
@@ -20642,7 +20642,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":18
+  /* "bq3d/image_filters/filters/label/_connect.pyx":18
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _connect(cnp.ndarray[unsigned char, ndim=3] img, cnp.ndarray[DTYPE_t, ndim=3] out): #unsigned char[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
@@ -20652,7 +20652,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__26 = PyTuple_Pack(34, __pyx_n_s_img, __pyx_n_s_out, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_size, __pyx_n_s_new_labels_lookup, __pyx_n_s_lookup, __pyx_n_s_rev_lookups, __pyx_n_s_slice_0, __pyx_n_s_slice_1, __pyx_n_s_labeled_0, __pyx_n_s_labeled_1, __pyx_n_s_labeled_0_2, __pyx_n_s_labeled_1_2, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_i, __pyx_n_s_last_label, __pyx_n_s_val, __pyx_n_s_lookup_val, __pyx_n_s_next_lookup_val, __pyx_n_s_a_val, __pyx_n_s_b_val, __pyx_n_s_out_val, __pyx_n_s_final_lookup, __pyx_n_s_lookup_pair, __pyx_n_s_next_lookup_pair, __pyx_n_s_lookup_idx, __pyx_n_s_rev_lookup, __pyx_n_s_lookup_key, __pyx_n_s_next_lookup_key, __pyx_n_s_next_lookup); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 34, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_connect, 18, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 34, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters, __pyx_n_s_connect, 18, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 18, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -21059,14 +21059,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clearmap3__image_filters__filters__label___connect) {
+  if (__pyx_module_is_main_bq3d__image_filters__filters__label___connect) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clearmap3.image_filters.filters.label._connect")) {
-      if (unlikely(PyDict_SetItemString(modules, "clearmap3.image_filters.filters.label._connect", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "bq3d.image_filters.filters.label._connect")) {
+      if (unlikely(PyDict_SetItemString(modules, "bq3d.image_filters.filters.label._connect", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -21087,7 +21087,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":1
+  /* "bq3d/image_filters/filters/label/_connect.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport cython
  * cimport numpy as cnp
@@ -21097,7 +21097,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":12
+  /* "bq3d/image_filters/filters/label/_connect.pyx":12
  * from _connect cimport *
  * 
  * DTYPE = np.int32             # <<<<<<<<<<<<<<
@@ -21112,19 +21112,19 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_DTYPE, __pyx_t_2) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":18
+  /* "bq3d/image_filters/filters/label/_connect.pyx":18
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _connect(cnp.ndarray[unsigned char, ndim=3] img, cnp.ndarray[DTYPE_t, ndim=3] out): #unsigned char[:,:,::1] img, int[:,:,::1] out):             # <<<<<<<<<<<<<<
  * 
  *     cdef int zmax = img.shape[0]
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_8_connect_1_connect, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_5label_8_connect_1_connect, NULL, __pyx_n_s_bq3d_image_filters_filters_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_connect, __pyx_t_2) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_connect.pyx":1
+  /* "bq3d/image_filters/filters/label/_connect.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport cython
  * cimport numpy as cnp
@@ -21295,11 +21295,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clearmap3.image_filters.filters.label._connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init bq3d.image_filters.filters.label._connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clearmap3.image_filters.filters.label._connect");
+    PyErr_SetString(PyExc_ImportError, "init bq3d.image_filters.filters.label._connect");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

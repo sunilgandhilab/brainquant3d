@@ -11,12 +11,12 @@
             "/usr/local/lib/python3.6/dist-packages/numpy/core/include"
         ],
         "language": "c++",
-        "name": "clearmap3.image_filters.filters.label._overlap",
+        "name": "bq3d.image_filters.filters.label._overlap",
         "sources": [
-            "clearmap3/image_filters/filters/label/_overlap.pyx"
+            "bq3d/image_filters/filters/label/_overlap.pyx"
         ]
     },
-    "module_name": "clearmap3.image_filters.filters.label._overlap"
+    "module_name": "bq3d.image_filters.filters.label._overlap"
 }
 END: Cython Metadata */
 
@@ -624,8 +624,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clearmap3__image_filters__filters__label___overlap
-#define __PYX_HAVE_API__clearmap3__image_filters__filters__label___overlap
+#define __PYX_HAVE__bq3d__image_filters__filters__label___overlap
+#define __PYX_HAVE_API__bq3d__image_filters__filters__label___overlap
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -866,7 +866,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clearmap3/image_filters/filters/label/_overlap.pyx",
+  "bq3d/image_filters/filters/label/_overlap.pyx",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -2148,7 +2148,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, cha
 
 /* Module declarations from 'posix.mman' */
 
-/* Module declarations from 'clearmap3.image_filters.filters.label._overlap' */
+/* Module declarations from 'bq3d.image_filters.filters.label._overlap' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2194,11 +2194,11 @@ static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_unsigned_char = { "unsigned char", NULL, sizeof(unsigned char), { 0 }, 0, IS_UNSIGNED(unsigned char) ? 'U' : 'I', IS_UNSIGNED(unsigned char), 0 };
-#define __Pyx_MODULE_NAME "clearmap3.image_filters.filters.label._overlap"
-extern int __pyx_module_is_main_clearmap3__image_filters__filters__label___overlap;
-int __pyx_module_is_main_clearmap3__image_filters__filters__label___overlap = 0;
+#define __Pyx_MODULE_NAME "bq3d.image_filters.filters.label._overlap"
+extern int __pyx_module_is_main_bq3d__image_filters__filters__label___overlap;
+int __pyx_module_is_main_bq3d__image_filters__filters__label___overlap = 0;
 
-/* Implementation of 'clearmap3.image_filters.filters.label._overlap' */
+/* Implementation of 'bq3d.image_filters.filters.label._overlap' */
 static PyObject *__pyx_builtin_open;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
@@ -2318,7 +2318,7 @@ static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cyt
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_clearmap3_image_filters_filters[] = "clearmap3/image_filters/filters/label/_overlap.pyx";
+static const char __pyx_k_bq3d_image_filters_filters[] = "bq3d/image_filters/filters/label/_overlap.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
@@ -2338,7 +2338,7 @@ static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not F
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
-static const char __pyx_k_clearmap3_image_filters_filters_2[] = "clearmap3.image_filters.filters.label._overlap";
+static const char __pyx_k_bq3d_image_filters_filters_2[] = "bq3d.image_filters.filters.label._overlap";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_n_s_ASCII;
 static PyObject *__pyx_kp_s_Buffer_view_does_not_expose_stri;
@@ -2373,8 +2373,8 @@ static PyObject *__pyx_n_s_base;
 static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_u_c;
 static PyObject *__pyx_n_s_class;
-static PyObject *__pyx_kp_s_clearmap3_image_filters_filters;
-static PyObject *__pyx_n_s_clearmap3_image_filters_filters_2;
+static PyObject *__pyx_kp_s_bq3d_image_filters_filters;
+static PyObject *__pyx_n_s_bq3d_image_filters_filters_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_kp_s_contiguous_and_direct;
 static PyObject *__pyx_kp_s_contiguous_and_indirect;
@@ -2472,7 +2472,7 @@ static PyObject *__pyx_n_s_ymax;
 static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_s_zeros;
 static PyObject *__pyx_n_s_zmax;
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__overlap(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_label_0, PyObject *__pyx_v_label_1, PyObject *__pyx_v_output); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_8_overlap__overlap(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_label_0, PyObject *__pyx_v_label_1, PyObject *__pyx_v_output); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2563,7 +2563,7 @@ static PyObject *__pyx_codeobj__28;
 static PyObject *__pyx_codeobj__35;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/_overlap.pyx":11
+/* "bq3d/image_filters/filters/label/_overlap.pyx":11
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _overlap(label_0, label_1, output):             # <<<<<<<<<<<<<<
@@ -2572,10 +2572,10 @@ static PyObject *__pyx_codeobj__35;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_overlap_1_overlap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_13image_filters_7filters_5label_8_overlap__overlap[] = "\n    label_0: High thresholded, labeled, and size filtered\n    label_1: Low Threshold, labeled\n\n    All 3 input images must be the same shape.\n\n    'output' can be the same image as 'label_1', in which case 'label_1' will be overwritten.\n    ";
-static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_8_overlap_1_overlap = {"_overlap", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_overlap_1_overlap, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_8_overlap__overlap};
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_overlap_1_overlap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_8_overlap_1_overlap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_13image_filters_7filters_5label_8_overlap__overlap[] = "\n    label_0: High thresholded, labeled, and size filtered\n    label_1: Low Threshold, labeled\n\n    All 3 input images must be the same shape.\n\n    'output' can be the same image as 'label_1', in which case 'label_1' will be overwritten.\n    ";
+static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_5label_8_overlap_1_overlap = {"_overlap", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_5label_8_overlap_1_overlap, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_8_overlap__overlap};
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_8_overlap_1_overlap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_label_0 = 0;
   PyObject *__pyx_v_label_1 = 0;
   PyObject *__pyx_v_output = 0;
@@ -2634,18 +2634,18 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_8_overlap_1
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_overlap", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 11, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._overlap._overlap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._overlap._overlap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__overlap(__pyx_self, __pyx_v_label_0, __pyx_v_label_1, __pyx_v_output);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_8_overlap__overlap(__pyx_self, __pyx_v_label_0, __pyx_v_label_1, __pyx_v_output);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__overlap(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_label_0, PyObject *__pyx_v_label_1, PyObject *__pyx_v_output) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_8_overlap__overlap(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_label_0, PyObject *__pyx_v_label_1, PyObject *__pyx_v_output) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -2689,7 +2689,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   Py_ssize_t __pyx_t_19;
   __Pyx_RefNannySetupContext("_overlap", 0);
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":21
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":21
  *     """
  * 
  *     cdef long zmax = label_0.shape[0]             # <<<<<<<<<<<<<<
@@ -2705,7 +2705,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_zmax = __pyx_t_3;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":22
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":22
  * 
  *     cdef long zmax = label_0.shape[0]
  *     cdef long ymax = label_0.shape[1]             # <<<<<<<<<<<<<<
@@ -2721,7 +2721,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_ymax = __pyx_t_3;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":23
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":23
  *     cdef long zmax = label_0.shape[0]
  *     cdef long ymax = label_0.shape[1]
  *     cdef long xmax = label_0.shape[2]             # <<<<<<<<<<<<<<
@@ -2737,7 +2737,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_xmax = __pyx_t_3;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":32
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":32
  *     cdef int *mmapped_output_offset
  * 
  *     label_0_fd = open(label_0.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -2760,7 +2760,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __pyx_v_label_0_fd = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":33
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":33
  * 
  *     label_0_fd = open(label_0.filename, 'r+b')
  *     label_1_fd = open(label_1.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -2783,7 +2783,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __pyx_v_label_1_fd = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":34
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":34
  *     label_0_fd = open(label_0.filename, 'r+b')
  *     label_1_fd = open(label_1.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -2806,7 +2806,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __pyx_v_output_fd = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":36
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":36
  *     output_fd = open(output.filename, 'r+b')
  * 
  *     cdef unsigned char[::1 ] lookup = np.zeros(2**32-1, dtype='uint8')             # <<<<<<<<<<<<<<
@@ -2831,7 +2831,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":45
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":45
  * 
  *     # Compare labels and generate lookup to keep labels that overlap
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -2843,7 +2843,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_z = __pyx_t_7;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":48
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":48
  * 
  *         mmapped_label_0 = <char *> mmap(NULL,
  *                                         label_0.size * sizeof(int) + label_0.offset,             # <<<<<<<<<<<<<<
@@ -2867,7 +2867,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_8 = __Pyx_PyInt_As_size_t(__pyx_t_4); if (unlikely((__pyx_t_8 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":51
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":51
  *                                         PROT_READ|PROT_WRITE,
  *                                         MAP_SHARED,
  *                                         label_0_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -2894,7 +2894,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":47
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":47
  *     for z in range(zmax):
  * 
  *         mmapped_label_0 = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -2903,7 +2903,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_label_0 = ((char *)mmap(NULL, __pyx_t_8, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_9, 0));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":54
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":54
  *                                         0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_label_0 += label_0.offset             # <<<<<<<<<<<<<<
@@ -2916,7 +2916,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_mmapped_label_0 = (__pyx_v_mmapped_label_0 + __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":55
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":55
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_label_0 += label_0.offset
  *         mmapped_label_0_offset = <int*> mmapped_label_0             # <<<<<<<<<<<<<<
@@ -2925,7 +2925,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_label_0_offset = ((int *)__pyx_v_mmapped_label_0);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":58
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":58
  * 
  *         mmapped_label_1 = <char *> mmap(NULL,
  *                                         label_1.size * sizeof(int) + label_1.offset,             # <<<<<<<<<<<<<<
@@ -2949,7 +2949,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_8 = __Pyx_PyInt_As_size_t(__pyx_t_4); if (unlikely((__pyx_t_8 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":61
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":61
  *                                         PROT_READ|PROT_WRITE,
  *                                         MAP_SHARED,
  *                                         label_1_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -2976,7 +2976,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":57
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":57
  *         mmapped_label_0_offset = <int*> mmapped_label_0
  * 
  *         mmapped_label_1 = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -2985,7 +2985,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_label_1 = ((char *)mmap(NULL, __pyx_t_8, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_9, 0));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":65
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":65
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  * 
  *         mmapped_label_1 += label_1.offset             # <<<<<<<<<<<<<<
@@ -2998,7 +2998,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_mmapped_label_1 = (__pyx_v_mmapped_label_1 + __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":66
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":66
  * 
  *         mmapped_label_1 += label_1.offset
  *         mmapped_label_1_offset = <int*> mmapped_label_1             # <<<<<<<<<<<<<<
@@ -3007,7 +3007,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_label_1_offset = ((int *)__pyx_v_mmapped_label_1);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":68
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":68
  *         mmapped_label_1_offset = <int*> mmapped_label_1
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3019,7 +3019,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_12; __pyx_t_10+=1) {
       __pyx_v_y = __pyx_t_10;
 
-      /* "clearmap3/image_filters/filters/label/_overlap.pyx":69
+      /* "bq3d/image_filters/filters/label/_overlap.pyx":69
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3031,7 +3031,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
       for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
         __pyx_v_x = __pyx_t_15;
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":70
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":70
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -3040,7 +3040,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":71
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":71
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 label_0_val = mmapped_label_0_offset[idx]             # <<<<<<<<<<<<<<
@@ -3049,7 +3049,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
         __pyx_v_label_0_val = (__pyx_v_mmapped_label_0_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":72
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":72
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 label_0_val = mmapped_label_0_offset[idx]
  *                 label_1_val = mmapped_label_1_offset[idx]             # <<<<<<<<<<<<<<
@@ -3058,7 +3058,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
         __pyx_v_label_1_val = (__pyx_v_mmapped_label_1_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":73
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":73
  *                 label_0_val = mmapped_label_0_offset[idx]
  *                 label_1_val = mmapped_label_1_offset[idx]
  *                 if label_0_val != 0 and label_1_val != 0:             # <<<<<<<<<<<<<<
@@ -3076,7 +3076,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
         __pyx_L10_bool_binop_done:;
         if (__pyx_t_16) {
 
-          /* "clearmap3/image_filters/filters/label/_overlap.pyx":74
+          /* "bq3d/image_filters/filters/label/_overlap.pyx":74
  *                 label_1_val = mmapped_label_1_offset[idx]
  *                 if label_0_val != 0 and label_1_val != 0:
  *                     lookup[label_1_val] = 1             # <<<<<<<<<<<<<<
@@ -3086,7 +3086,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
           __pyx_t_18 = __pyx_v_label_1_val;
           *((unsigned char *) ( /* dim=0 */ ((char *) (((unsigned char *) __pyx_v_lookup.data) + __pyx_t_18)) )) = 1;
 
-          /* "clearmap3/image_filters/filters/label/_overlap.pyx":73
+          /* "bq3d/image_filters/filters/label/_overlap.pyx":73
  *                 label_0_val = mmapped_label_0_offset[idx]
  *                 label_1_val = mmapped_label_1_offset[idx]
  *                 if label_0_val != 0 and label_1_val != 0:             # <<<<<<<<<<<<<<
@@ -3097,7 +3097,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":77
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":77
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_label_0 -= label_0.offset             # <<<<<<<<<<<<<<
@@ -3110,7 +3110,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_mmapped_label_0 = (__pyx_v_mmapped_label_0 - __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":78
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":78
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_label_0 -= label_0.offset
  *         munmap(mmapped_label_0, label_0.size * sizeof(int) + label_0.offset)             # <<<<<<<<<<<<<<
@@ -3135,7 +3135,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     (void)(munmap(__pyx_v_mmapped_label_0, __pyx_t_8));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":79
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":79
  *         mmapped_label_0 -= label_0.offset
  *         munmap(mmapped_label_0, label_0.size * sizeof(int) + label_0.offset)
  *         munmap(mmapped_label_0_offset, label_0.size * sizeof(int))             # <<<<<<<<<<<<<<
@@ -3154,7 +3154,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_label_0_offset, __pyx_t_8));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":80
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":80
  *         munmap(mmapped_label_0, label_0.size * sizeof(int) + label_0.offset)
  *         munmap(mmapped_label_0_offset, label_0.size * sizeof(int))
  *         mmapped_label_1 -= label_1.offset             # <<<<<<<<<<<<<<
@@ -3167,7 +3167,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_label_1 = (__pyx_v_mmapped_label_1 - __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":81
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":81
  *         munmap(mmapped_label_0_offset, label_0.size * sizeof(int))
  *         mmapped_label_1 -= label_1.offset
  *         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)             # <<<<<<<<<<<<<<
@@ -3192,7 +3192,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_label_1, __pyx_t_8));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":82
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":82
  *         mmapped_label_1 -= label_1.offset
  *         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
  *         munmap(mmapped_label_1_offset, label_1.size * sizeof(int))             # <<<<<<<<<<<<<<
@@ -3212,7 +3212,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     (void)(munmap(__pyx_v_mmapped_label_1_offset, __pyx_t_8));
   }
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":85
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":85
  * 
  *     # Remove labels that did not overlap
  *     for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -3224,7 +3224,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_z = __pyx_t_7;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":88
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":88
  * 
  *         mmapped_label_1 = <char *> mmap(NULL,
  *                                         label_1.size * sizeof(int) + label_1.offset,             # <<<<<<<<<<<<<<
@@ -3248,7 +3248,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_8 = __Pyx_PyInt_As_size_t(__pyx_t_4); if (unlikely((__pyx_t_8 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 88, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":91
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":91
  *                                         PROT_READ|PROT_WRITE,
  *                                         MAP_SHARED,
  *                                         label_1_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -3275,7 +3275,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 91, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":87
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":87
  *     for z in range(zmax):
  * 
  *         mmapped_label_1 = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -3284,7 +3284,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_label_1 = ((char *)mmap(NULL, __pyx_t_8, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_9, 0));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":94
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":94
  *                                         0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_label_1 += label_1.offset             # <<<<<<<<<<<<<<
@@ -3297,7 +3297,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_mmapped_label_1 = (__pyx_v_mmapped_label_1 + __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":95
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":95
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_label_1 += label_1.offset
  *         mmapped_label_1_offset = <int*> mmapped_label_1             # <<<<<<<<<<<<<<
@@ -3306,7 +3306,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_label_1_offset = ((int *)__pyx_v_mmapped_label_1);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":98
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":98
  * 
  *         mmapped_output = <char *> mmap(NULL,
  *                                       output.size * sizeof(int) + output.offset,             # <<<<<<<<<<<<<<
@@ -3330,7 +3330,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_8 = __Pyx_PyInt_As_size_t(__pyx_t_4); if (unlikely((__pyx_t_8 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":101
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":101
  *                                       PROT_READ|PROT_WRITE,
  *                                       MAP_SHARED,
  *                                       output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -3357,7 +3357,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":97
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":97
  *         mmapped_label_1_offset = <int*> mmapped_label_1
  * 
  *         mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -3366,7 +3366,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_8, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_9, 0));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":104
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":104
  *                                       0)
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -3379,7 +3379,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":105
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":105
  *         # Increment original pointer by <offset> bytes and then typecast to input datatype
  *         mmapped_output += output.offset
  *         mmapped_output_offset = <int*> mmapped_output             # <<<<<<<<<<<<<<
@@ -3388,7 +3388,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
     __pyx_v_mmapped_output_offset = ((int *)__pyx_v_mmapped_output);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":107
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":107
  *         mmapped_output_offset = <int*> mmapped_output
  * 
  *         for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -3400,7 +3400,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_12; __pyx_t_10+=1) {
       __pyx_v_y = __pyx_t_10;
 
-      /* "clearmap3/image_filters/filters/label/_overlap.pyx":108
+      /* "bq3d/image_filters/filters/label/_overlap.pyx":108
  * 
  *         for y in range(ymax):
  *             for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -3412,7 +3412,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
       for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
         __pyx_v_x = __pyx_t_15;
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":109
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":109
  *         for y in range(ymax):
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -3421,7 +3421,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":110
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":110
  *             for x in range(xmax):
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 label_1_val = mmapped_label_1_offset[idx]             # <<<<<<<<<<<<<<
@@ -3430,7 +3430,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
         __pyx_v_label_1_val = (__pyx_v_mmapped_label_1_offset[__pyx_v_idx]);
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":111
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":111
  *                 idx = (z * ymax * xmax) + (y * xmax) + x
  *                 label_1_val = mmapped_label_1_offset[idx]
  *                 lookup_val = lookup[label_1_val]             # <<<<<<<<<<<<<<
@@ -3440,7 +3440,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
         __pyx_t_19 = __pyx_v_label_1_val;
         __pyx_v_lookup_val = (*((unsigned char *) ( /* dim=0 */ ((char *) (((unsigned char *) __pyx_v_lookup.data) + __pyx_t_19)) )));
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":112
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":112
  *                 label_1_val = mmapped_label_1_offset[idx]
  *                 lookup_val = lookup[label_1_val]
  *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
@@ -3450,7 +3450,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
         __pyx_t_16 = ((__pyx_v_lookup_val != 0) != 0);
         if (__pyx_t_16) {
 
-          /* "clearmap3/image_filters/filters/label/_overlap.pyx":113
+          /* "bq3d/image_filters/filters/label/_overlap.pyx":113
  *                 lookup_val = lookup[label_1_val]
  *                 if lookup_val != 0:
  *                     mmapped_output_offset[idx] = label_1_val             # <<<<<<<<<<<<<<
@@ -3459,7 +3459,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
  */
           (__pyx_v_mmapped_output_offset[__pyx_v_idx]) = __pyx_v_label_1_val;
 
-          /* "clearmap3/image_filters/filters/label/_overlap.pyx":112
+          /* "bq3d/image_filters/filters/label/_overlap.pyx":112
  *                 label_1_val = mmapped_label_1_offset[idx]
  *                 lookup_val = lookup[label_1_val]
  *                 if lookup_val != 0:             # <<<<<<<<<<<<<<
@@ -3469,7 +3469,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
           goto __pyx_L18;
         }
 
-        /* "clearmap3/image_filters/filters/label/_overlap.pyx":115
+        /* "bq3d/image_filters/filters/label/_overlap.pyx":115
  *                     mmapped_output_offset[idx] = label_1_val
  *                 else:
  *                     mmapped_output_offset[idx] = 0             # <<<<<<<<<<<<<<
@@ -3483,7 +3483,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
       }
     }
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":118
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":118
  * 
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_label_1 -= label_1.offset             # <<<<<<<<<<<<<<
@@ -3496,7 +3496,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_mmapped_label_1 = (__pyx_v_mmapped_label_1 - __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":119
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":119
  *         # Deallocate mapped memory after processing each frome
  *         mmapped_label_1 -= label_1.offset
  *         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)             # <<<<<<<<<<<<<<
@@ -3521,7 +3521,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     (void)(munmap(__pyx_v_mmapped_label_1, __pyx_t_8));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":120
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":120
  *         mmapped_label_1 -= label_1.offset
  *         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
  *         munmap(mmapped_label_1_offset, label_1.size * sizeof(int))             # <<<<<<<<<<<<<<
@@ -3540,7 +3540,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_label_1_offset, __pyx_t_8));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":121
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":121
  *         munmap(mmapped_label_1, label_1.size * sizeof(int) + label_1.offset)
  *         munmap(mmapped_label_1_offset, label_1.size * sizeof(int))
  *         mmapped_output -= output.offset             # <<<<<<<<<<<<<<
@@ -3553,7 +3553,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mmapped_output = (__pyx_v_mmapped_output - __pyx_t_10);
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":122
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":122
  *         munmap(mmapped_label_1_offset, label_1.size * sizeof(int))
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(int) + output.offset)             # <<<<<<<<<<<<<<
@@ -3578,7 +3578,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     (void)(munmap(__pyx_v_mmapped_output, __pyx_t_8));
 
-    /* "clearmap3/image_filters/filters/label/_overlap.pyx":123
+    /* "bq3d/image_filters/filters/label/_overlap.pyx":123
  *         mmapped_output -= output.offset
  *         munmap(mmapped_output, output.size * sizeof(int) + output.offset)
  *         munmap(mmapped_output_offset, output.size * sizeof(int))             # <<<<<<<<<<<<<<
@@ -3598,7 +3598,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
     (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_8));
   }
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":11
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":11
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _overlap(label_0, label_1, output):             # <<<<<<<<<<<<<<
@@ -3614,7 +3614,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_8_overlap__
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label._overlap._overlap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label._overlap._overlap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_label_0_fd);
@@ -18940,7 +18940,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._overlap.array", /*tp_name*/
+  "bq3d.image_filters.filters.label._overlap.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -19051,7 +19051,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._overlap.Enum", /*tp_name*/
+  "bq3d.image_filters.filters.label._overlap.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -19304,7 +19304,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._overlap.memoryview", /*tp_name*/
+  "bq3d.image_filters.filters.label._overlap.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -19434,7 +19434,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label._overlap._memoryviewslice", /*tp_name*/
+  "bq3d.image_filters.filters.label._overlap._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -19580,8 +19580,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
-  {&__pyx_kp_s_clearmap3_image_filters_filters, __pyx_k_clearmap3_image_filters_filters, sizeof(__pyx_k_clearmap3_image_filters_filters), 0, 0, 1, 0},
-  {&__pyx_n_s_clearmap3_image_filters_filters_2, __pyx_k_clearmap3_image_filters_filters_2, sizeof(__pyx_k_clearmap3_image_filters_filters_2), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_image_filters_filters, __pyx_k_bq3d_image_filters_filters, sizeof(__pyx_k_bq3d_image_filters_filters), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_image_filters_filters_2, __pyx_k_bq3d_image_filters_filters_2, sizeof(__pyx_k_bq3d_image_filters_filters_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_kp_s_contiguous_and_direct, __pyx_k_contiguous_and_direct, sizeof(__pyx_k_contiguous_and_direct), 0, 0, 1, 0},
   {&__pyx_kp_s_contiguous_and_indirect, __pyx_k_contiguous_and_indirect, sizeof(__pyx_k_contiguous_and_indirect), 0, 0, 1, 0},
@@ -19702,7 +19702,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":36
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":36
  *     output_fd = open(output.filename, 'r+b')
  * 
  *     cdef unsigned char[::1 ] lookup = np.zeros(2**32-1, dtype='uint8')             # <<<<<<<<<<<<<<
@@ -19982,7 +19982,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":11
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":11
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _overlap(label_0, label_1, output):             # <<<<<<<<<<<<<<
@@ -19992,7 +19992,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__27 = PyTuple_Pack(23, __pyx_n_s_label_0, __pyx_n_s_label_1, __pyx_n_s_output, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_mmapped_label_0, __pyx_n_s_mmapped_label_0_offset, __pyx_n_s_mmapped_label_1, __pyx_n_s_mmapped_label_1_offset, __pyx_n_s_mmapped_output, __pyx_n_s_mmapped_output_offset, __pyx_n_s_label_0_fd, __pyx_n_s_label_1_fd, __pyx_n_s_output_fd, __pyx_n_s_lookup, __pyx_n_s_lookup_val, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_idx, __pyx_n_s_label_0_val, __pyx_n_s_label_1_val); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(3, 0, 23, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_overlap, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(3, 0, 23, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters, __pyx_n_s_overlap, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -20399,14 +20399,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clearmap3__image_filters__filters__label___overlap) {
+  if (__pyx_module_is_main_bq3d__image_filters__filters__label___overlap) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clearmap3.image_filters.filters.label._overlap")) {
-      if (unlikely(PyDict_SetItemString(modules, "clearmap3.image_filters.filters.label._overlap", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "bq3d.image_filters.filters.label._overlap")) {
+      if (unlikely(PyDict_SetItemString(modules, "bq3d.image_filters.filters.label._overlap", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -20427,7 +20427,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":3
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":3
  * # cython: language_level = 3
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -20439,19 +20439,19 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":11
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":11
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _overlap(label_0, label_1, output):             # <<<<<<<<<<<<<<
  *     """
  *     label_0: High thresholded, labeled, and size filtered
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_8_overlap_1_overlap, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_5label_8_overlap_1_overlap, NULL, __pyx_n_s_bq3d_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_overlap, __pyx_t_1) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/_overlap.pyx":1
+  /* "bq3d/image_filters/filters/label/_overlap.pyx":1
  * # cython: language_level = 3             # <<<<<<<<<<<<<<
  * 
  * import numpy as np
@@ -20621,11 +20621,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clearmap3.image_filters.filters.label._overlap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init bq3d.image_filters.filters.label._overlap", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clearmap3.image_filters.filters.label._overlap");
+    PyErr_SetString(PyExc_ImportError, "init bq3d.image_filters.filters.label._overlap");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

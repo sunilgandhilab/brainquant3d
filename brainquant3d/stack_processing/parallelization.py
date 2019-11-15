@@ -1,15 +1,15 @@
 import os
 import shutil
 import uuid
-from clearmap3.utils.timer import Timer
-from clearmap3 import io
-from clearmap3.io.FileList import splitFileExpression
+from bq3d.utils.timer import Timer
+from bq3d import io
+from bq3d.io.FileList import splitFileExpression
 import logging
 
-from clearmap3.utils.chunking import unique_slice
-from clearmap3.utils.files import unique_temp_dir
-from clearmap3.image_filters.functions import filter_image
-from clearmap3.analysis.label_properties import label_props
+from bq3d.utils.chunking import unique_slice
+from bq3d.utils.files import unique_temp_dir
+from bq3d.image_filters.functions import filter_image
+from bq3d.analysis.label_properties import label_props
 
 log = logging.getLogger(__name__)
 
@@ -20,7 +20,7 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
 
     Args:
         flow (tuple): images filters to run in sequential order.
-            Entries should be a dict and will be passed to *clearmap3.image_filters.filter_image*.
+            Entries should be a dict and will be passed to *bq3d.image_filters.filter_image*.
             The input image to each filter will the be output of the pevious filter.
         output_properties: (list): properties to include in output. See
         label_properties.region_props for more info

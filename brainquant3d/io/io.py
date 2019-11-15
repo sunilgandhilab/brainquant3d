@@ -4,7 +4,7 @@ IO interface to read microscope and point data
 
 This is the main module to distribute the reading and writing of individual data formats to the specialized sub-modules.
 
-See :mod:`clearmap3.IO` for details.
+See :mod:`bq3d.IO` for details.
 
 """
 
@@ -17,7 +17,7 @@ import importlib
 import shutil
 from pathlib import Path
 
-from clearmap3.utils.chunking import range_to_slices
+from bq3d.utils.chunking import range_to_slices
 
 import logging
 log = logging.getLogger(__name__)
@@ -40,7 +40,7 @@ dataFileTypes = ['FileList', 'TIF', 'RAW', 'NRRD', 'Imaris', 'NPY', 'CSV']
 """list of image data file types"""
 
 mappableFileTypes = ['TIF', 'NPY']
-"""list of file types compatable with clearmap3memory mapping"""
+"""list of file types compatable with bq3dmemory mapping"""
 
 dataFileExtensionToType = { 'tif' : 'TIF', 'tiff' : 'TIF', 'raw' : 'RAW', 'zraw' : 'RAW', 'mhd' : 'RAW', 'nrrd': 'NRRD', 'ims' : 'Imaris', 'npy' : 'NPY', 'csv' : 'CSV'}
 """map from image file extensions to image file types"""
@@ -138,7 +138,7 @@ def isDataFile(source):
 
 
 def isMappable(source):
-    """Checks if a file is compatable with clearmap3memmap
+    """Checks if a file is compatable with bq3dmemmap
 
     Arguments:
         source (str): source file name
@@ -235,7 +235,7 @@ def dataFileNameToModule(filename):
     """          
     
     ft = dataFileNameToType(filename)
-    return importlib.import_module('clearmap3.io.' + ft)
+    return importlib.import_module('bq3d.io.' + ft)
 
 
 def pointFileNameToModule(filename):
@@ -249,7 +249,7 @@ def pointFileNameToModule(filename):
     """ 
 
     ft = pointFileNameToType(filename)
-    return importlib.import_module('clearmap3.io.' + ft)
+    return importlib.import_module('bq3d.io.' + ft)
 
 
 ##############################################################################

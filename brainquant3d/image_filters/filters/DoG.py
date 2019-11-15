@@ -1,8 +1,8 @@
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 from scipy.ndimage.filters import correlate
-from  clearmap3.image_filters.filters.helpers.filterKernel import filterKernel
+from  bq3d.image_filters.filters.helpers.filterKernel import filterKernel
 
 class DoG(FilterBase):
     """Remove background via subtracting a morphological opening from the original image

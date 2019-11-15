@@ -19,12 +19,12 @@ import socket
 import yaml
 from pathlib import Path
 
-from clearmap3.utils.logger import setup_logging
+from bq3d.utils.logger import setup_logging
 
 import logging
 log = logging.getLogger(__name__)
 
-from clearmap3._version import __version__
+from bq3d._version import __version__
 __author__     = 'Ricardo Azevedo'
 __copyright__  = "Copyright 2019, Gandhi Lab"
 __license__    = 'BY-NC-SA 4.0'
@@ -37,15 +37,15 @@ class Config(object):
     """Object to hold global settings and configure package environment"""
 
     def __init__(self):
-        path = _get_ClearMapPath()
-        self.ClearMap_path = path
+        path = _get_brainquant3dPath()
+        self.brainquant3d_path = path
         # setup Clearmap_path yal constructor
-        yaml.add_constructor('!pkg_path', _prepend_ClearMap_path)
+        yaml.add_constructor('!pkg_path', _prepend_brainquant3d_path)
 
         # get config file
-        conf_file = os.path.join(path, 'ClearMap.conf')
+        conf_file = os.path.join(path, 'brainquant3d.conf')
         if os.path.isfile(conf_file):
-            with open(os.path.join(path, 'ClearMap.conf'), 'rt') as f:
+            with open(os.path.join(path, 'brainquant3d.conf'), 'rt') as f:
                 conf = yaml.load(f.read(), Loader=yaml.Loader)
         else:
             with open(os.path.join(path, 'default.conf'), 'rt') as f:
@@ -61,7 +61,7 @@ class Config(object):
 
         #setup logger
         self.console_level = _choose_valid_value(user_conf, default_conf, 'Console_level')
-        setup_logging(log_path = os.path.join(self.ClearMap_path, 'logs/'), console_level=self.console_level)
+        setup_logging(log_path = os.path.join(self.brainquant3d_path, 'logs/'), console_level=self.console_level)
 
         # set params
         self.processes                = _choose_valid_value(user_conf, default_conf, 'Processing_cores')
@@ -129,7 +129,7 @@ def _choose_valid_value(user: dict, default: dict, param: str, path: bool = Fals
             return default[param]
 
     else:
-        raise RuntimeError(param +' not defined in ClearMap.conf')
+        raise RuntimeError(param +' not defined in brainquant3d.conf')
 
 
 def _check_exists(path, create = True):
@@ -152,18 +152,18 @@ def _check_exists(path, create = True):
         log.warning('Path {} does not exist'.format(path))
         return None
 
-def _prepend_ClearMap_path(loader, node):
-    """joins Config.ClearMap_path to a path in response to the !ClearMap_path constructor """
+def _prepend_brainquant3d_path(loader, node):
+    """joins Config.brainquant3d_path to a path in response to the !brainquant3d_path constructor """
 
-    path = os.path.join(_get_ClearMapPath(), node.value)
+    path = os.path.join(_get_brainquant3dPath(), node.value)
     return path
 
 
-def _get_ClearMapPath():
-    """Returns root path to the ClearMap software
+def _get_brainquant3dPath():
+    """Returns root path to the brainquant3d software
 
     Returns:
-        str: root path to ClearMap
+        str: root path to brainquant3d
     """
     fn = os.path.split(__file__)
     fn = Path(os.path.abspath(fn[0]))

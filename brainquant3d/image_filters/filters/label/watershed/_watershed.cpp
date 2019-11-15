@@ -11,12 +11,12 @@
             "/usr/local/lib/python3.6/dist-packages/numpy/core/include"
         ],
         "language": "c++",
-        "name": "clearmap3.image_filters.filters.label.watershed._watershed",
+        "name": "bq3d.image_filters.filters.label.watershed._watershed",
         "sources": [
-            "clearmap3/image_filters/filters/label/watershed/_watershed.pyx"
+            "bq3d/image_filters/filters/label/watershed/_watershed.pyx"
         ]
     },
-    "module_name": "clearmap3.image_filters.filters.label.watershed._watershed"
+    "module_name": "bq3d.image_filters.filters.label.watershed._watershed"
 }
 END: Cython Metadata */
 
@@ -624,8 +624,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clearmap3__image_filters__filters__label__watershed___watershed
-#define __PYX_HAVE_API__clearmap3__image_filters__filters__label__watershed___watershed
+#define __PYX_HAVE__bq3d__image_filters__filters__label__watershed___watershed
+#define __PYX_HAVE_API__bq3d__image_filters__filters__label__watershed___watershed
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -867,8 +867,8 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clearmap3/image_filters/filters/label/watershed/heap_general.pxi",
-  "clearmap3/image_filters/filters/label/watershed/_watershed.pyx",
+  "bq3d/image_filters/filters/label/watershed/heap_general.pxi",
+  "bq3d/image_filters/filters/label/watershed/_watershed.pyx",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -1171,23 +1171,23 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":23
+/* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":23
  * from posix.mman cimport *
  * 
  * ctypedef cnp.int32_t DTYPE_INT32_t             # <<<<<<<<<<<<<<
  * ctypedef cnp.int8_t DTYPE_BOOL_t
  * 
  */
-typedef __pyx_t_5numpy_int32_t __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t;
+typedef __pyx_t_5numpy_int32_t __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t;
 
-/* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":24
+/* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":24
  * 
  * ctypedef cnp.int32_t DTYPE_INT32_t
  * ctypedef cnp.int8_t DTYPE_BOOL_t             # <<<<<<<<<<<<<<
  * 
  * ctypedef fused INPUT_DTYPE:
  */
-typedef __pyx_t_5numpy_int8_t __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t;
+typedef __pyx_t_5numpy_int8_t __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -1254,8 +1254,8 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  * cdef inline object PyArray_MultiIterNew1(a):
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
-struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem;
-struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap;
+struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem;
+struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap;
 struct __pyx_defaults;
 typedef struct __pyx_defaults __pyx_defaults;
 struct __pyx_defaults1;
@@ -1281,68 +1281,68 @@ typedef struct __pyx_defaults10 __pyx_defaults10;
 struct __pyx_defaults11;
 typedef struct __pyx_defaults11 __pyx_defaults11;
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":15
+/* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":15
  * 
  * 
  * cdef struct Heapitem:             # <<<<<<<<<<<<<<
  *     cnp.float64_t value
  *     cnp.int32_t age
  */
-struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem {
+struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem {
   __pyx_t_5numpy_float64_t value;
   __pyx_t_5numpy_int32_t age;
   Py_ssize_t index;
   Py_ssize_t source;
 };
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":16
+/* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":16
  * 
  * 
  * cdef struct Heap:             # <<<<<<<<<<<<<<
  *     Py_ssize_t items
  *     Py_ssize_t space
  */
-struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap {
+struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap {
   Py_ssize_t items;
   Py_ssize_t space;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *data;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem **ptrs;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *data;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem **ptrs;
 };
 struct __pyx_defaults {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults1 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults2 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults3 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults4 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults5 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults6 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults7 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults8 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults9 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults10 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 struct __pyx_defaults11 {
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_arg_invert;
 };
 
 /* "View.MemoryView":105
@@ -2424,7 +2424,7 @@ static CYTHON_INLINE char __Pyx_PyInt_As_char(PyObject *);
 static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_unsigned_char(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(PyObject *, int writable_flag);
 
 /* CheckBinaryVersion.proto */
 static int __Pyx_check_binary_version(void);
@@ -2485,7 +2485,7 @@ static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, c
 
 /* Module declarations from 'libc.stdlib' */
 
-/* Module declarations from 'clearmap3.image_filters.filters.label.watershed._watershed' */
+/* Module declarations from 'bq3d.image_filters.filters.label.watershed._watershed' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2497,12 +2497,12 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_smaller(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *); /*proto*/
-static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2(void); /*proto*/
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_swap(Py_ssize_t, Py_ssize_t, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *); /*proto*/
+static CYTHON_INLINE int __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_smaller(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *); /*proto*/
+static CYTHON_INLINE struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2(void); /*proto*/
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *); /*proto*/
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_swap(Py_ssize_t, Py_ssize_t, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *); /*proto*/
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *); /*proto*/
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -2542,16 +2542,16 @@ static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t = { "int64_t", NU
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint8_t = { "uint8_t", NULL, sizeof(__pyx_t_5numpy_uint8_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint8_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint8_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int32_t = { "int32_t", NULL, sizeof(__pyx_t_5numpy_int32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_int32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_int32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_unsigned_char = { "unsigned char", NULL, sizeof(unsigned char), { 0 }, 0, IS_UNSIGNED(unsigned char) ? 'U' : 'I', IS_UNSIGNED(unsigned char), 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t = { "DTYPE_INT32_t", NULL, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t = { "DTYPE_INT32_t", NULL, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t = { "float64_t", NULL, sizeof(__pyx_t_5numpy_float64_t), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint16_t = { "uint16_t", NULL, sizeof(__pyx_t_5numpy_uint16_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint16_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint16_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint32_t = { "uint32_t", NULL, sizeof(__pyx_t_5numpy_uint32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_intp_t = { "intp_t", NULL, sizeof(__pyx_t_5numpy_intp_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_intp_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_intp_t), 0 };
-#define __Pyx_MODULE_NAME "clearmap3.image_filters.filters.label.watershed._watershed"
-extern int __pyx_module_is_main_clearmap3__image_filters__filters__label__watershed___watershed;
-int __pyx_module_is_main_clearmap3__image_filters__filters__label__watershed___watershed = 0;
+#define __Pyx_MODULE_NAME "bq3d.image_filters.filters.label.watershed._watershed"
+extern int __pyx_module_is_main_bq3d__image_filters__filters__label__watershed___watershed;
+int __pyx_module_is_main_bq3d__image_filters__filters__label__watershed___watershed = 0;
 
-/* Implementation of 'clearmap3.image_filters.filters.label.watershed._watershed' */
+/* Implementation of 'bq3d.image_filters.filters.label.watershed._watershed' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_open;
@@ -2701,7 +2701,7 @@ static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cyt
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_clearmap3_image_filters_filters[] = "clearmap3/image_filters/filters/label/watershed/_watershed.pyx";
+static const char __pyx_k_bq3d_image_filters_filters[] = "bq3d/image_filters/filters/label/watershed/_watershed.pyx";
 static const char __pyx_k_mmapped_marker_locations_offset[] = "mmapped_marker_locations_offset";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
@@ -2725,7 +2725,7 @@ static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __red
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
 static const char __pyx_k_watershed_pyx_cython_implementat[] = "watershed.pyx - cython implementation of guts of watershed\n\nOriginally part of CellProfiler, code licensed under both GPL and BSD licenses.\nWebsite: http://www.cellprofiler.org\n\nCopyright (c) 2003-2009 Massachusetts Institute of Technology\nCopyright (c) 2009-2011 Broad Institute\nAll rights reserved.\n\nOriginal author: Lee Kamentsky\n";
-static const char __pyx_k_clearmap3_image_filters_filters_2[] = "clearmap3.image_filters.filters.label.watershed._watershed";
+static const char __pyx_k_bq3d_image_filters_filters_2[] = "bq3d.image_filters.filters.label.watershed._watershed";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_kp_s_;
 static PyObject *__pyx_n_s_ASCII;
@@ -2773,8 +2773,8 @@ static PyObject *__pyx_n_s_base;
 static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_u_c;
 static PyObject *__pyx_n_s_class;
-static PyObject *__pyx_kp_s_clearmap3_image_filters_filters;
-static PyObject *__pyx_n_s_clearmap3_image_filters_filters_2;
+static PyObject *__pyx_kp_s_bq3d_image_filters_filters;
+static PyObject *__pyx_n_s_bq3d_image_filters_filters_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_kp_s_contiguous_and_direct;
 static PyObject *__pyx_kp_s_contiguous_and_indirect;
@@ -2892,19 +2892,19 @@ static PyObject *__pyx_kp_u_unknown_dtype_code_in_numpy_pxd;
 static PyObject *__pyx_n_s_unpack;
 static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_s_watershed;
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_28__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_2_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_30__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_4_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_32__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_6_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_34__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_8_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_36__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_10_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_38__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_12_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_28__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_2_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_30__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_4_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_32__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_6_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_34__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_8_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_36__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_10_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_38__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_12_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2996,7 +2996,7 @@ static PyObject *__pyx_codeobj__36;
 static PyObject *__pyx_codeobj__43;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":22
+/* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":22
  * 
  * 
  * cdef inline int smaller(Heapitem *a, Heapitem *b) nogil:             # <<<<<<<<<<<<<<
@@ -3004,11 +3004,11 @@ static PyObject *__pyx_codeobj__43;
  *         return a.value < b.value
  */
 
-static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_smaller(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_a, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_b) {
+static CYTHON_INLINE int __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_smaller(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_a, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_b) {
   int __pyx_r;
   int __pyx_t_1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":23
+  /* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":23
  * 
  * cdef inline int smaller(Heapitem *a, Heapitem *b) nogil:
  *     if a.value != b.value:             # <<<<<<<<<<<<<<
@@ -3018,7 +3018,7 @@ static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9wat
   __pyx_t_1 = ((__pyx_v_a->value != __pyx_v_b->value) != 0);
   if (__pyx_t_1) {
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":24
+    /* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":24
  * cdef inline int smaller(Heapitem *a, Heapitem *b) nogil:
  *     if a.value != b.value:
  *         return a.value < b.value             # <<<<<<<<<<<<<<
@@ -3028,7 +3028,7 @@ static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9wat
     __pyx_r = (__pyx_v_a->value < __pyx_v_b->value);
     goto __pyx_L0;
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":23
+    /* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":23
  * 
  * cdef inline int smaller(Heapitem *a, Heapitem *b) nogil:
  *     if a.value != b.value:             # <<<<<<<<<<<<<<
@@ -3037,7 +3037,7 @@ static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9wat
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":25
+  /* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":25
  *     if a.value != b.value:
  *         return a.value < b.value
  *     return a.age < b.age             # <<<<<<<<<<<<<<
@@ -3047,7 +3047,7 @@ static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9wat
   __pyx_r = (__pyx_v_a->age < __pyx_v_b->age);
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi":22
+  /* "bq3d/image_filters/filters/label/watershed/heap_watershed.pxi":22
  * 
  * 
  * cdef inline int smaller(Heapitem *a, Heapitem *b) nogil:             # <<<<<<<<<<<<<<
@@ -3060,7 +3060,7 @@ static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9wat
   return __pyx_r;
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":22
+/* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":22
  *     Heapitem **ptrs
  * 
  * cdef inline Heap *heap_from_numpy2() nogil:             # <<<<<<<<<<<<<<
@@ -3068,24 +3068,24 @@ static CYTHON_INLINE int __pyx_f_9clearmap3_13image_filters_7filters_5label_9wat
  *     cdef Heap *heap
  */
 
-static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2(void) {
+static CYTHON_INLINE struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2(void) {
   Py_ssize_t __pyx_v_k;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_r;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_r;
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
   Py_ssize_t __pyx_t_3;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":25
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":25
  *     cdef Py_ssize_t k
  *     cdef Heap *heap
  *     heap = <Heap *> malloc(sizeof (Heap))             # <<<<<<<<<<<<<<
  *     heap.items = 0
  *     heap.space = 1000
  */
-  __pyx_v_heap = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)malloc((sizeof(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap))));
+  __pyx_v_heap = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)malloc((sizeof(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap))));
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":26
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":26
  *     cdef Heap *heap
  *     heap = <Heap *> malloc(sizeof (Heap))
  *     heap.items = 0             # <<<<<<<<<<<<<<
@@ -3094,7 +3094,7 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
  */
   __pyx_v_heap->items = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":27
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":27
  *     heap = <Heap *> malloc(sizeof (Heap))
  *     heap.items = 0
  *     heap.space = 1000             # <<<<<<<<<<<<<<
@@ -3103,25 +3103,25 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
  */
   __pyx_v_heap->space = 0x3E8;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":28
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":28
  *     heap.items = 0
  *     heap.space = 1000
  *     heap.data = <Heapitem *> malloc(heap.space * sizeof(Heapitem))             # <<<<<<<<<<<<<<
  *     heap.ptrs = <Heapitem **> malloc(heap.space * sizeof(Heapitem *))
  *     for k in range(heap.space):
  */
-  __pyx_v_heap->data = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *)malloc((__pyx_v_heap->space * (sizeof(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem)))));
+  __pyx_v_heap->data = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *)malloc((__pyx_v_heap->space * (sizeof(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem)))));
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":29
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":29
  *     heap.space = 1000
  *     heap.data = <Heapitem *> malloc(heap.space * sizeof(Heapitem))
  *     heap.ptrs = <Heapitem **> malloc(heap.space * sizeof(Heapitem *))             # <<<<<<<<<<<<<<
  *     for k in range(heap.space):
  *         heap.ptrs[k] = heap.data + k
  */
-  __pyx_v_heap->ptrs = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem **)malloc((__pyx_v_heap->space * (sizeof(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *)))));
+  __pyx_v_heap->ptrs = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem **)malloc((__pyx_v_heap->space * (sizeof(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *)))));
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":30
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":30
  *     heap.data = <Heapitem *> malloc(heap.space * sizeof(Heapitem))
  *     heap.ptrs = <Heapitem **> malloc(heap.space * sizeof(Heapitem *))
  *     for k in range(heap.space):             # <<<<<<<<<<<<<<
@@ -3133,7 +3133,7 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_k = __pyx_t_3;
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":31
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":31
  *     heap.ptrs = <Heapitem **> malloc(heap.space * sizeof(Heapitem *))
  *     for k in range(heap.space):
  *         heap.ptrs[k] = heap.data + k             # <<<<<<<<<<<<<<
@@ -3143,7 +3143,7 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
     (__pyx_v_heap->ptrs[__pyx_v_k]) = (__pyx_v_heap->data + __pyx_v_k);
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":32
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":32
  *     for k in range(heap.space):
  *         heap.ptrs[k] = heap.data + k
  *     return heap             # <<<<<<<<<<<<<<
@@ -3153,7 +3153,7 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
   __pyx_r = __pyx_v_heap;
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":22
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":22
  *     Heapitem **ptrs
  * 
  * cdef inline Heap *heap_from_numpy2() nogil:             # <<<<<<<<<<<<<<
@@ -3166,7 +3166,7 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
   return __pyx_r;
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":34
+/* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":34
  *     return heap
  * 
  * cdef inline void heap_done(Heap *heap) nogil:             # <<<<<<<<<<<<<<
@@ -3174,9 +3174,9 @@ static CYTHON_INLINE struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9
  *    free(heap.ptrs)
  */
 
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap) {
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap) {
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":35
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":35
  * 
  * cdef inline void heap_done(Heap *heap) nogil:
  *    free(heap.data)             # <<<<<<<<<<<<<<
@@ -3185,7 +3185,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   free(__pyx_v_heap->data);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":36
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":36
  * cdef inline void heap_done(Heap *heap) nogil:
  *    free(heap.data)
  *    free(heap.ptrs)             # <<<<<<<<<<<<<<
@@ -3194,7 +3194,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   free(__pyx_v_heap->ptrs);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":37
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":37
  *    free(heap.data)
  *    free(heap.ptrs)
  *    free(heap)             # <<<<<<<<<<<<<<
@@ -3203,7 +3203,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   free(__pyx_v_heap);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":34
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":34
  *     return heap
  * 
  * cdef inline void heap_done(Heap *heap) nogil:             # <<<<<<<<<<<<<<
@@ -3214,7 +3214,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   /* function exit code */
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":39
+/* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":39
  *    free(heap)
  * 
  * cdef inline void swap(Py_ssize_t a, Py_ssize_t b, Heap *h) nogil:             # <<<<<<<<<<<<<<
@@ -3222,11 +3222,11 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  * 
  */
 
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_swap(Py_ssize_t __pyx_v_a, Py_ssize_t __pyx_v_b, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_h) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_t_1;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_t_2;
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_swap(Py_ssize_t __pyx_v_a, Py_ssize_t __pyx_v_b, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_h) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_t_1;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_t_2;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":40
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":40
  * 
  * cdef inline void swap(Py_ssize_t a, Py_ssize_t b, Heap *h) nogil:
  *     h.ptrs[a], h.ptrs[b] = h.ptrs[b], h.ptrs[a]             # <<<<<<<<<<<<<<
@@ -3238,7 +3238,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   (__pyx_v_h->ptrs[__pyx_v_a]) = __pyx_t_1;
   (__pyx_v_h->ptrs[__pyx_v_b]) = __pyx_t_2;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":39
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":39
  *    free(heap)
  * 
  * cdef inline void swap(Py_ssize_t a, Py_ssize_t b, Heap *h) nogil:             # <<<<<<<<<<<<<<
@@ -3249,7 +3249,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   /* function exit code */
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":50
+/* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":50
  * # Note: heap ordering is the same as python heapq, i.e., smallest first.
  * ######################################################
  * cdef inline void heappop(Heap *heap, Heapitem *dest) nogil:             # <<<<<<<<<<<<<<
@@ -3257,7 +3257,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  *     cdef Py_ssize_t i, smallest, l, r # heap indices
  */
 
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_dest) {
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_dest) {
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_smallest;
   Py_ssize_t __pyx_v_l;
@@ -3265,7 +3265,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   int __pyx_t_1;
   int __pyx_t_2;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":57
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":57
  *     # Start by copying the first element to the destination
  *     #
  *     dest[0] = heap.ptrs[0][0]             # <<<<<<<<<<<<<<
@@ -3274,7 +3274,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   (__pyx_v_dest[0]) = ((__pyx_v_heap->ptrs[0])[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":58
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":58
  *     #
  *     dest[0] = heap.ptrs[0][0]
  *     heap.items -= 1             # <<<<<<<<<<<<<<
@@ -3283,7 +3283,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   __pyx_v_heap->items = (__pyx_v_heap->items - 1);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":61
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":61
  * 
  *     # if the heap is now empty, we can return, no need to fix heap.
  *     if heap.items == 0:             # <<<<<<<<<<<<<<
@@ -3293,7 +3293,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   __pyx_t_1 = ((__pyx_v_heap->items == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":62
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":62
  *     # if the heap is now empty, we can return, no need to fix heap.
  *     if heap.items == 0:
  *         return             # <<<<<<<<<<<<<<
@@ -3302,7 +3302,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     goto __pyx_L0;
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":61
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":61
  * 
  *     # if the heap is now empty, we can return, no need to fix heap.
  *     if heap.items == 0:             # <<<<<<<<<<<<<<
@@ -3311,16 +3311,16 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":67
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":67
  *     # Move the last element in the heap to the first.
  *     #
  *     swap(0, heap.items, heap)             # <<<<<<<<<<<<<<
  * 
  *     #
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_swap(0, __pyx_v_heap->items, __pyx_v_heap);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_swap(0, __pyx_v_heap->items, __pyx_v_heap);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":72
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":72
  *     # Restore the heap invariant.
  *     #
  *     i = 0             # <<<<<<<<<<<<<<
@@ -3329,7 +3329,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":73
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":73
  *     #
  *     i = 0
  *     smallest = i             # <<<<<<<<<<<<<<
@@ -3338,7 +3338,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   __pyx_v_smallest = __pyx_v_i;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":74
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":74
  *     i = 0
  *     smallest = i
  *     while True:             # <<<<<<<<<<<<<<
@@ -3347,7 +3347,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   while (1) {
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":78
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":78
  * 
  *         # find smallest of (i, l, r), and swap it to i's position if necessary
  *         l = i * 2 + 1 #__left(i)             # <<<<<<<<<<<<<<
@@ -3356,7 +3356,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     __pyx_v_l = ((__pyx_v_i * 2) + 1);
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":79
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":79
  *         # find smallest of (i, l, r), and swap it to i's position if necessary
  *         l = i * 2 + 1 #__left(i)
  *         r = i * 2 + 2 #__right(i)             # <<<<<<<<<<<<<<
@@ -3365,7 +3365,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     __pyx_v_r = ((__pyx_v_i * 2) + 2);
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":80
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":80
  *         l = i * 2 + 1 #__left(i)
  *         r = i * 2 + 2 #__right(i)
  *         if l < heap.items:             # <<<<<<<<<<<<<<
@@ -3375,17 +3375,17 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
     __pyx_t_1 = ((__pyx_v_l < __pyx_v_heap->items) != 0);
     if (__pyx_t_1) {
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":81
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":81
  *         r = i * 2 + 2 #__right(i)
  *         if l < heap.items:
  *             if smaller(heap.ptrs[l], heap.ptrs[i]):             # <<<<<<<<<<<<<<
  *                 smallest = l
  *             if r < heap.items and smaller(heap.ptrs[r], heap.ptrs[smallest]):
  */
-      __pyx_t_1 = (__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_smaller((__pyx_v_heap->ptrs[__pyx_v_l]), (__pyx_v_heap->ptrs[__pyx_v_i])) != 0);
+      __pyx_t_1 = (__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_smaller((__pyx_v_heap->ptrs[__pyx_v_l]), (__pyx_v_heap->ptrs[__pyx_v_i])) != 0);
       if (__pyx_t_1) {
 
-        /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":82
+        /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":82
  *         if l < heap.items:
  *             if smaller(heap.ptrs[l], heap.ptrs[i]):
  *                 smallest = l             # <<<<<<<<<<<<<<
@@ -3394,7 +3394,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
         __pyx_v_smallest = __pyx_v_l;
 
-        /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":81
+        /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":81
  *         r = i * 2 + 2 #__right(i)
  *         if l < heap.items:
  *             if smaller(heap.ptrs[l], heap.ptrs[i]):             # <<<<<<<<<<<<<<
@@ -3403,7 +3403,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":83
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":83
  *             if smaller(heap.ptrs[l], heap.ptrs[i]):
  *                 smallest = l
  *             if r < heap.items and smaller(heap.ptrs[r], heap.ptrs[smallest]):             # <<<<<<<<<<<<<<
@@ -3416,12 +3416,12 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
         __pyx_t_1 = __pyx_t_2;
         goto __pyx_L9_bool_binop_done;
       }
-      __pyx_t_2 = (__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_smaller((__pyx_v_heap->ptrs[__pyx_v_r]), (__pyx_v_heap->ptrs[__pyx_v_smallest])) != 0);
+      __pyx_t_2 = (__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_smaller((__pyx_v_heap->ptrs[__pyx_v_r]), (__pyx_v_heap->ptrs[__pyx_v_smallest])) != 0);
       __pyx_t_1 = __pyx_t_2;
       __pyx_L9_bool_binop_done:;
       if (__pyx_t_1) {
 
-        /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":84
+        /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":84
  *                 smallest = l
  *             if r < heap.items and smaller(heap.ptrs[r], heap.ptrs[smallest]):
  *                 smallest = r             # <<<<<<<<<<<<<<
@@ -3430,7 +3430,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
         __pyx_v_smallest = __pyx_v_r;
 
-        /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":83
+        /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":83
  *             if smaller(heap.ptrs[l], heap.ptrs[i]):
  *                 smallest = l
  *             if r < heap.items and smaller(heap.ptrs[r], heap.ptrs[smallest]):             # <<<<<<<<<<<<<<
@@ -3439,7 +3439,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":80
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":80
  *         l = i * 2 + 1 #__left(i)
  *         r = i * 2 + 2 #__right(i)
  *         if l < heap.items:             # <<<<<<<<<<<<<<
@@ -3449,7 +3449,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
       goto __pyx_L6;
     }
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":87
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":87
  *         else:
  *             # this is unnecessary, but trims 0.04 out of 0.85 seconds...
  *             break             # <<<<<<<<<<<<<<
@@ -3461,7 +3461,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
     }
     __pyx_L6:;
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":90
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":90
  *         # the element at i is smaller than either of its children, heap
  *         # invariant restored.
  *         if smallest == i:             # <<<<<<<<<<<<<<
@@ -3471,7 +3471,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
     __pyx_t_1 = ((__pyx_v_smallest == __pyx_v_i) != 0);
     if (__pyx_t_1) {
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":91
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":91
  *         # invariant restored.
  *         if smallest == i:
  *                 break             # <<<<<<<<<<<<<<
@@ -3480,7 +3480,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
       goto __pyx_L5_break;
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":90
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":90
  *         # the element at i is smaller than either of its children, heap
  *         # invariant restored.
  *         if smallest == i:             # <<<<<<<<<<<<<<
@@ -3489,16 +3489,16 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     }
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":93
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":93
  *                 break
  *         # swap
  *         swap(i, smallest, heap)             # <<<<<<<<<<<<<<
  *         i = smallest
  * 
  */
-    __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_swap(__pyx_v_i, __pyx_v_smallest, __pyx_v_heap);
+    __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_swap(__pyx_v_i, __pyx_v_smallest, __pyx_v_heap);
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":94
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":94
  *         # swap
  *         swap(i, smallest, heap)
  *         i = smallest             # <<<<<<<<<<<<<<
@@ -3509,7 +3509,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   }
   __pyx_L5_break:;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":50
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":50
  * # Note: heap ordering is the same as python heapq, i.e., smallest first.
  * ######################################################
  * cdef inline void heappop(Heap *heap, Heapitem *dest) nogil:             # <<<<<<<<<<<<<<
@@ -3521,7 +3521,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   __pyx_L0:;
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":103
+/* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":103
  * # Note: heap ordering is the same as python heapq, i.e., smallest first.
  * ##################################################
  * cdef inline void heappush(Heap *heap, Heapitem *new_elem) nogil:             # <<<<<<<<<<<<<<
@@ -3529,17 +3529,17 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  *     cdef Py_ssize_t child = heap.items
  */
 
-static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap, struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_new_elem) {
+static CYTHON_INLINE void __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_heap, struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_new_elem) {
   Py_ssize_t __pyx_v_child;
   Py_ssize_t __pyx_v_parent;
   Py_ssize_t __pyx_v_k;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_new_data;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *__pyx_v_new_data;
   Py_ssize_t __pyx_t_1;
   int __pyx_t_2;
   Py_ssize_t __pyx_t_3;
   Py_ssize_t __pyx_t_4;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":105
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":105
  * cdef inline void heappush(Heap *heap, Heapitem *new_elem) nogil:
  * 
  *     cdef Py_ssize_t child = heap.items             # <<<<<<<<<<<<<<
@@ -3549,7 +3549,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   __pyx_t_1 = __pyx_v_heap->items;
   __pyx_v_child = __pyx_t_1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":111
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":111
  * 
  *     # grow if necessary
  *     if heap.items == heap.space:             # <<<<<<<<<<<<<<
@@ -3559,7 +3559,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   __pyx_t_2 = ((__pyx_v_heap->items == __pyx_v_heap->space) != 0);
   if (__pyx_t_2) {
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":112
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":112
  *     # grow if necessary
  *     if heap.items == heap.space:
  *       heap.space = heap.space * 2             # <<<<<<<<<<<<<<
@@ -3568,25 +3568,25 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     __pyx_v_heap->space = (__pyx_v_heap->space * 2);
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":113
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":113
  *     if heap.items == heap.space:
  *       heap.space = heap.space * 2
  *       new_data = <Heapitem*>realloc(<void*>heap.data,             # <<<<<<<<<<<<<<
  *                     <Py_ssize_t>(heap.space * sizeof(Heapitem)))
  *       heap.ptrs = <Heapitem**>realloc(<void*>heap.ptrs,
  */
-    __pyx_v_new_data = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *)realloc(((void *)__pyx_v_heap->data), ((Py_ssize_t)(__pyx_v_heap->space * (sizeof(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem))))));
+    __pyx_v_new_data = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *)realloc(((void *)__pyx_v_heap->data), ((Py_ssize_t)(__pyx_v_heap->space * (sizeof(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem))))));
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":115
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":115
  *       new_data = <Heapitem*>realloc(<void*>heap.data,
  *                     <Py_ssize_t>(heap.space * sizeof(Heapitem)))
  *       heap.ptrs = <Heapitem**>realloc(<void*>heap.ptrs,             # <<<<<<<<<<<<<<
  *                     <Py_ssize_t>(heap.space * sizeof(Heapitem *)))
  *       for k in range(heap.items):
  */
-    __pyx_v_heap->ptrs = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem **)realloc(((void *)__pyx_v_heap->ptrs), ((Py_ssize_t)(__pyx_v_heap->space * (sizeof(struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *))))));
+    __pyx_v_heap->ptrs = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem **)realloc(((void *)__pyx_v_heap->ptrs), ((Py_ssize_t)(__pyx_v_heap->space * (sizeof(struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem *))))));
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":117
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":117
  *       heap.ptrs = <Heapitem**>realloc(<void*>heap.ptrs,
  *                     <Py_ssize_t>(heap.space * sizeof(Heapitem *)))
  *       for k in range(heap.items):             # <<<<<<<<<<<<<<
@@ -3598,7 +3598,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
     for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
       __pyx_v_k = __pyx_t_4;
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":118
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":118
  *                     <Py_ssize_t>(heap.space * sizeof(Heapitem *)))
  *       for k in range(heap.items):
  *           heap.ptrs[k] = new_data + (heap.ptrs[k] - heap.data)             # <<<<<<<<<<<<<<
@@ -3608,7 +3608,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
       (__pyx_v_heap->ptrs[__pyx_v_k]) = (__pyx_v_new_data + ((__pyx_v_heap->ptrs[__pyx_v_k]) - __pyx_v_heap->data));
     }
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":119
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":119
  *       for k in range(heap.items):
  *           heap.ptrs[k] = new_data + (heap.ptrs[k] - heap.data)
  *       for k in range(heap.items, heap.space):             # <<<<<<<<<<<<<<
@@ -3620,7 +3620,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
     for (__pyx_t_4 = __pyx_v_heap->items; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
       __pyx_v_k = __pyx_t_4;
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":120
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":120
  *           heap.ptrs[k] = new_data + (heap.ptrs[k] - heap.data)
  *       for k in range(heap.items, heap.space):
  *           heap.ptrs[k] = new_data + k             # <<<<<<<<<<<<<<
@@ -3630,7 +3630,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
       (__pyx_v_heap->ptrs[__pyx_v_k]) = (__pyx_v_new_data + __pyx_v_k);
     }
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":121
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":121
  *       for k in range(heap.items, heap.space):
  *           heap.ptrs[k] = new_data + k
  *       heap.data = new_data             # <<<<<<<<<<<<<<
@@ -3639,7 +3639,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     __pyx_v_heap->data = __pyx_v_new_data;
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":111
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":111
  * 
  *     # grow if necessary
  *     if heap.items == heap.space:             # <<<<<<<<<<<<<<
@@ -3648,7 +3648,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":124
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":124
  * 
  *     # insert new data at child
  *     heap.ptrs[child][0] = new_elem[0]             # <<<<<<<<<<<<<<
@@ -3657,7 +3657,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   ((__pyx_v_heap->ptrs[__pyx_v_child])[0]) = (__pyx_v_new_elem[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":125
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":125
  *     # insert new data at child
  *     heap.ptrs[child][0] = new_elem[0]
  *     heap.items += 1             # <<<<<<<<<<<<<<
@@ -3666,7 +3666,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
   __pyx_v_heap->items = (__pyx_v_heap->items + 1);
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":128
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":128
  * 
  *     # restore heap invariant, all parents <= children
  *     while child > 0:             # <<<<<<<<<<<<<<
@@ -3677,7 +3677,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
     __pyx_t_2 = ((__pyx_v_child > 0) != 0);
     if (!__pyx_t_2) break;
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":129
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":129
  *     # restore heap invariant, all parents <= children
  *     while child > 0:
  *         parent = (child + 1) // 2 - 1 # __parent(i)             # <<<<<<<<<<<<<<
@@ -3686,26 +3686,26 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
     __pyx_v_parent = (__Pyx_div_Py_ssize_t((__pyx_v_child + 1), 2) - 1);
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":131
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":131
  *         parent = (child + 1) // 2 - 1 # __parent(i)
  * 
  *         if smaller(heap.ptrs[child], heap.ptrs[parent]):             # <<<<<<<<<<<<<<
  *             swap(parent, child, heap)
  *             child = parent
  */
-    __pyx_t_2 = (__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_smaller((__pyx_v_heap->ptrs[__pyx_v_child]), (__pyx_v_heap->ptrs[__pyx_v_parent])) != 0);
+    __pyx_t_2 = (__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_smaller((__pyx_v_heap->ptrs[__pyx_v_child]), (__pyx_v_heap->ptrs[__pyx_v_parent])) != 0);
     if (__pyx_t_2) {
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":132
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":132
  * 
  *         if smaller(heap.ptrs[child], heap.ptrs[parent]):
  *             swap(parent, child, heap)             # <<<<<<<<<<<<<<
  *             child = parent
  *         else:
  */
-      __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_swap(__pyx_v_parent, __pyx_v_child, __pyx_v_heap);
+      __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_swap(__pyx_v_parent, __pyx_v_child, __pyx_v_heap);
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":133
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":133
  *         if smaller(heap.ptrs[child], heap.ptrs[parent]):
  *             swap(parent, child, heap)
  *             child = parent             # <<<<<<<<<<<<<<
@@ -3714,7 +3714,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  */
       __pyx_v_child = __pyx_v_parent;
 
-      /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":131
+      /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":131
  *         parent = (child + 1) // 2 - 1 # __parent(i)
  * 
  *         if smaller(heap.ptrs[child], heap.ptrs[parent]):             # <<<<<<<<<<<<<<
@@ -3724,7 +3724,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
       goto __pyx_L10;
     }
 
-    /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":135
+    /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":135
  *             child = parent
  *         else:
  *             break             # <<<<<<<<<<<<<<
@@ -3736,7 +3736,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   }
   __pyx_L9_break:;
 
-  /* "clearmap3/image_filters/filters/label/watershed/heap_general.pxi":103
+  /* "bq3d/image_filters/filters/label/watershed/heap_general.pxi":103
  * # Note: heap ordering is the same as python heapq, i.e., smallest first.
  * ##################################################
  * cdef inline void heappush(Heap *heap, Heapitem *new_elem) nogil:             # <<<<<<<<<<<<<<
@@ -3747,7 +3747,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
   /* function exit code */
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":42
+/* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":42
  * @cython.overflowcheck(False)
  * @cython.unraisable_tracebacks(False)
  * cdef inline double _euclid_dist(Py_ssize_t pt0, Py_ssize_t pt1,             # <<<<<<<<<<<<<<
@@ -3755,7 +3755,7 @@ static CYTHON_INLINE void __pyx_f_9clearmap3_13image_filters_7filters_5label_9wa
  *     """Return the Euclidean distance between raveled points pt0 and pt1."""
  */
 
-static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__euclid_dist(Py_ssize_t __pyx_v_pt0, Py_ssize_t __pyx_v_pt1, __Pyx_memviewslice __pyx_v_strides) {
+static CYTHON_INLINE double __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__euclid_dist(Py_ssize_t __pyx_v_pt0, Py_ssize_t __pyx_v_pt1, __Pyx_memviewslice __pyx_v_strides) {
   double __pyx_v_result;
   double __pyx_v_curr;
   Py_ssize_t __pyx_v_i;
@@ -3768,7 +3768,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
   Py_ssize_t __pyx_t_6;
   Py_ssize_t __pyx_t_7;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":45
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":45
  *                                 cnp.intp_t[::1] strides) nogil:
  *     """Return the Euclidean distance between raveled points pt0 and pt1."""
  *     cdef double result = 0             # <<<<<<<<<<<<<<
@@ -3777,7 +3777,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
  */
   __pyx_v_result = 0.0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":46
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":46
  *     """Return the Euclidean distance between raveled points pt0 and pt1."""
  *     cdef double result = 0
  *     cdef double curr = 0             # <<<<<<<<<<<<<<
@@ -3786,7 +3786,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
  */
   __pyx_v_curr = 0.0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":47
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":47
  *     cdef double result = 0
  *     cdef double curr = 0
  *     for i in range(strides.shape[0]):             # <<<<<<<<<<<<<<
@@ -3798,7 +3798,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":48
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":48
  *     cdef double curr = 0
  *     for i in range(strides.shape[0]):
  *         curr = (pt0 // strides[i]) - (pt1 // strides[i])             # <<<<<<<<<<<<<<
@@ -3809,7 +3809,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
     __pyx_t_5 = __pyx_v_i;
     __pyx_v_curr = ((__pyx_v_pt0 / (*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_strides.data) + __pyx_t_4)) )))) - (__pyx_v_pt1 / (*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_strides.data) + __pyx_t_5)) )))));
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":49
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":49
  *     for i in range(strides.shape[0]):
  *         curr = (pt0 // strides[i]) - (pt1 // strides[i])
  *         result += curr * curr             # <<<<<<<<<<<<<<
@@ -3818,7 +3818,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
  */
     __pyx_v_result = (__pyx_v_result + (__pyx_v_curr * __pyx_v_curr));
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":50
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":50
  *         curr = (pt0 // strides[i]) - (pt1 // strides[i])
  *         result += curr * curr
  *         pt0 = pt0 % strides[i]             # <<<<<<<<<<<<<<
@@ -3828,7 +3828,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
     __pyx_t_6 = __pyx_v_i;
     __pyx_v_pt0 = (__pyx_v_pt0 % (*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_strides.data) + __pyx_t_6)) ))));
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":51
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":51
  *         result += curr * curr
  *         pt0 = pt0 % strides[i]
  *         pt1 = pt1 % strides[i]             # <<<<<<<<<<<<<<
@@ -3839,7 +3839,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
     __pyx_v_pt1 = (__pyx_v_pt1 % (*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_strides.data) + __pyx_t_7)) ))));
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":52
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":52
  *         pt0 = pt0 % strides[i]
  *         pt1 = pt1 % strides[i]
  *     return sqrt(result)             # <<<<<<<<<<<<<<
@@ -3849,7 +3849,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
   __pyx_r = sqrt(__pyx_v_result);
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":42
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":42
  * @cython.overflowcheck(False)
  * @cython.unraisable_tracebacks(False)
  * cdef inline double _euclid_dist(Py_ssize_t pt0, Py_ssize_t pt1,             # <<<<<<<<<<<<<<
@@ -3862,7 +3862,7 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
   return __pyx_r;
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":59
+/* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":59
  * @cython.cdivision(True)
  * @cython.unraisable_tracebacks(False)
  * cdef inline DTYPE_BOOL_t _diff_neighbors(DTYPE_INT32_t[::1] output,             # <<<<<<<<<<<<<<
@@ -3870,17 +3870,17 @@ static CYTHON_INLINE double __pyx_f_9clearmap3_13image_filters_7filters_5label_9
  *                                          unsigned char[::1] mask,
  */
 
-static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__diff_neighbors(__Pyx_memviewslice __pyx_v_output, __Pyx_memviewslice __pyx_v_structure, __Pyx_memviewslice __pyx_v_mask, Py_ssize_t __pyx_v_index) {
+static CYTHON_INLINE __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__diff_neighbors(__Pyx_memviewslice __pyx_v_output, __Pyx_memviewslice __pyx_v_structure, __Pyx_memviewslice __pyx_v_mask, Py_ssize_t __pyx_v_index) {
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_neighbor_index;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_v_neighbor_label0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_v_neighbor_label1;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_v_neighbor_label0;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_v_neighbor_label1;
   Py_ssize_t __pyx_v_nneighbors;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_r;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_r;
   Py_ssize_t __pyx_t_1;
   int __pyx_t_2;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_t_3;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_t_4;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_t_3;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t __pyx_t_4;
   Py_ssize_t __pyx_t_5;
   Py_ssize_t __pyx_t_6;
   Py_ssize_t __pyx_t_7;
@@ -3891,7 +3891,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
   int __pyx_t_12;
   Py_ssize_t __pyx_t_13;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":71
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":71
  *         Py_ssize_t i, neighbor_index
  *         DTYPE_INT32_t neighbor_label0, neighbor_label1
  *         Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -3900,7 +3900,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":73
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":73
  *         Py_ssize_t nneighbors = structure.shape[0]
  * 
  *     if not mask[index]:             # <<<<<<<<<<<<<<
@@ -3911,7 +3911,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
   __pyx_t_2 = ((!((*((unsigned char *) ( /* dim=0 */ ((char *) (((unsigned char *) __pyx_v_mask.data) + __pyx_t_1)) ))) != 0)) != 0);
   if (__pyx_t_2) {
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":74
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":74
  * 
  *     if not mask[index]:
  *         return True             # <<<<<<<<<<<<<<
@@ -3921,7 +3921,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
     __pyx_r = 1;
     goto __pyx_L0;
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":73
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":73
  *         Py_ssize_t nneighbors = structure.shape[0]
  * 
  *     if not mask[index]:             # <<<<<<<<<<<<<<
@@ -3930,7 +3930,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
  */
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":76
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":76
  *         return True
  * 
  *     neighbor_label0, neighbor_label1 = 0, 0             # <<<<<<<<<<<<<<
@@ -3942,7 +3942,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
   __pyx_v_neighbor_label0 = __pyx_t_3;
   __pyx_v_neighbor_label1 = __pyx_t_4;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":77
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":77
  * 
  *     neighbor_label0, neighbor_label1 = 0, 0
  *     for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -3954,7 +3954,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
   for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_i = __pyx_t_7;
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":78
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":78
  *     neighbor_label0, neighbor_label1 = 0, 0
  *     for i in range(nneighbors):
  *         neighbor_index = structure[i] + index             # <<<<<<<<<<<<<<
@@ -3964,7 +3964,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
     __pyx_t_8 = __pyx_v_i;
     __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_8)) ))) + __pyx_v_index);
 
-    /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":79
+    /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":79
  *     for i in range(nneighbors):
  *         neighbor_index = structure[i] + index
  *         if mask[neighbor_index]:  # neighbor not a watershed line             # <<<<<<<<<<<<<<
@@ -3975,7 +3975,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
     __pyx_t_2 = ((*((unsigned char *) ( /* dim=0 */ ((char *) (((unsigned char *) __pyx_v_mask.data) + __pyx_t_9)) ))) != 0);
     if (__pyx_t_2) {
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":80
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":80
  *         neighbor_index = structure[i] + index
  *         if mask[neighbor_index]:  # neighbor not a watershed line
  *             if not neighbor_label0:             # <<<<<<<<<<<<<<
@@ -3985,7 +3985,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
       __pyx_t_2 = ((!(__pyx_v_neighbor_label0 != 0)) != 0);
       if (__pyx_t_2) {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":81
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":81
  *         if mask[neighbor_index]:  # neighbor not a watershed line
  *             if not neighbor_label0:
  *                 neighbor_label0 = output[neighbor_index]             # <<<<<<<<<<<<<<
@@ -3993,9 +3993,9 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
  *                 neighbor_label1 = output[neighbor_index]
  */
         __pyx_t_10 = __pyx_v_neighbor_index;
-        __pyx_v_neighbor_label0 = (*((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) ( /* dim=0 */ ((char *) (((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) __pyx_v_output.data) + __pyx_t_10)) )));
+        __pyx_v_neighbor_label0 = (*((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) ( /* dim=0 */ ((char *) (((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) __pyx_v_output.data) + __pyx_t_10)) )));
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":80
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":80
  *         neighbor_index = structure[i] + index
  *         if mask[neighbor_index]:  # neighbor not a watershed line
  *             if not neighbor_label0:             # <<<<<<<<<<<<<<
@@ -4005,7 +4005,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
         goto __pyx_L7;
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":83
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":83
  *                 neighbor_label0 = output[neighbor_index]
  *             else:
  *                 neighbor_label1 = output[neighbor_index]             # <<<<<<<<<<<<<<
@@ -4014,9 +4014,9 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
  */
       /*else*/ {
         __pyx_t_11 = __pyx_v_neighbor_index;
-        __pyx_v_neighbor_label1 = (*((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) ( /* dim=0 */ ((char *) (((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) __pyx_v_output.data) + __pyx_t_11)) )));
+        __pyx_v_neighbor_label1 = (*((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) ( /* dim=0 */ ((char *) (((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *) __pyx_v_output.data) + __pyx_t_11)) )));
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":84
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":84
  *             else:
  *                 neighbor_label1 = output[neighbor_index]
  *                 if neighbor_label1 and neighbor_label1 != neighbor_label0:             # <<<<<<<<<<<<<<
@@ -4034,7 +4034,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
         __pyx_L9_bool_binop_done:;
         if (__pyx_t_2) {
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":85
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":85
  *                 neighbor_label1 = output[neighbor_index]
  *                 if neighbor_label1 and neighbor_label1 != neighbor_label0:
  *                     mask[index] = 0             # <<<<<<<<<<<<<<
@@ -4044,7 +4044,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
           __pyx_t_13 = __pyx_v_index;
           *((unsigned char *) ( /* dim=0 */ ((char *) (((unsigned char *) __pyx_v_mask.data) + __pyx_t_13)) )) = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":86
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":86
  *                 if neighbor_label1 and neighbor_label1 != neighbor_label0:
  *                     mask[index] = 0
  *                     return True             # <<<<<<<<<<<<<<
@@ -4054,7 +4054,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
           __pyx_r = 1;
           goto __pyx_L0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":84
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":84
  *             else:
  *                 neighbor_label1 = output[neighbor_index]
  *                 if neighbor_label1 and neighbor_label1 != neighbor_label0:             # <<<<<<<<<<<<<<
@@ -4065,7 +4065,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
       }
       __pyx_L7:;
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":79
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":79
  *     for i in range(nneighbors):
  *         neighbor_index = structure[i] + index
  *         if mask[neighbor_index]:  # neighbor not a watershed line             # <<<<<<<<<<<<<<
@@ -4075,7 +4075,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
     }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":87
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":87
  *                     mask[index] = 0
  *                     return True
  *     return False             # <<<<<<<<<<<<<<
@@ -4085,7 +4085,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":59
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":59
  * @cython.cdivision(True)
  * @cython.unraisable_tracebacks(False)
  * cdef inline DTYPE_BOOL_t _diff_neighbors(DTYPE_INT32_t[::1] output,             # <<<<<<<<<<<<<<
@@ -4098,7 +4098,7 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
   return __pyx_r;
 }
 
-/* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+/* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -4107,10 +4107,10 @@ static CYTHON_INLINE __pyx_t_9clearmap3_13image_filters_7filters_5label_9watersh
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed[] = "Perform watershed algorithm using a raveled image and neighborhood.\n\n    Parameters\n    ----------\n\n    image : numpy.memmap object\n        3D image.\n    marker_locations : numpy.memmap object\n        The raveled coordinates of the initial markers (aka seeds) for the\n        watershed. NOTE: these should *all* point to nonzero entries in the\n        output, or the algorithm will never terminate and blow up your memory!\n    structure : array of int\n        A list of coordinate offsets to compute the raveled coordinates of each\n        neighbor from the raveled coordinates of the current pixel.\n    mask : numpy.memmap object\n        An array of the same shape as `image` where each pixel contains a\n        nonzero value if it is to be considered for flooding with watershed,\n        zero otherwise. NOTE: it is *essential* that the border pixels (those\n        with neighbors falling outside the volume) are all set to zero, or\n        segfaults could occur.\n    strides : array of int\n        An array representing the number of steps to move along each dimension.\n        This is used in computing the Euclidean distance between raveled\n        indices.\n    output : numpy.memmap object\n        The output array, which must already contain nonzero entries at all the\n        seed locations.\n    invert : bool\n        Parameter indicating whether to invert the image. Default: False.\n    ";
-static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed = {"_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed[] = "Perform watershed algorithm using a raveled image and neighborhood.\n\n    Parameters\n    ----------\n\n    image : numpy.memmap object\n        3D image.\n    marker_locations : numpy.memmap object\n        The raveled coordinates of the initial markers (aka seeds) for the\n        watershed. NOTE: these should *all* point to nonzero entries in the\n        output, or the algorithm will never terminate and blow up your memory!\n    structure : array of int\n        A list of coordinate offsets to compute the raveled coordinates of each\n        neighbor from the raveled coordinates of the current pixel.\n    mask : numpy.memmap object\n        An array of the same shape as `image` where each pixel contains a\n        nonzero value if it is to be considered for flooding with watershed,\n        zero otherwise. NOTE: it is *essential* that the border pixels (those\n        with neighbors falling outside the volume) are all set to zero, or\n        segfaults could occur.\n    strides : array of int\n        An array representing the number of steps to move along each dimension.\n        This is used in computing the Euclidean distance between raveled\n        indices.\n    output : numpy.memmap object\n        The output array, which must already contain nonzero entries at all the\n        seed locations.\n    invert : bool\n        Parameter indicating whether to invert the image. Default: False.\n    ";
+static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed = {"_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_signatures = 0;
   PyObject *__pyx_v_args = 0;
   PyObject *__pyx_v_kwargs = 0;
@@ -4180,18 +4180,18 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
   PyObject *__pyx_v_dest_sig = NULL;
   Py_ssize_t __pyx_v_i;
   PyTypeObject *__pyx_v_ndarray = 0;
@@ -4801,7 +4801,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_14);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_dest_sig);
@@ -4819,7 +4819,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_28__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_28__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4849,7 +4849,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4858,16 +4858,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed = {"__pyx_fuse_0_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_fuse_0__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed = {"__pyx_fuse_0_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_marker_locations = 0;
   __Pyx_memviewslice __pyx_v_structure = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_mask = 0;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_output = 0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_watershed (wrapper)", 0);
@@ -4971,7 +4971,7 @@ static PyObject *__pyx_fuse_0__pyx_pw_9clearmap3_13image_filters_7filters_5label
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_watershed", 0, 6, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -4979,7 +4979,7 @@ static PyObject *__pyx_fuse_0__pyx_pw_9clearmap3_13image_filters_7filters_5label
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_marker_locations), __pyx_ptype_5numpy_ndarray, 1, "marker_locations", 0))) __PYX_ERR(1, 92, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mask), __pyx_ptype_5numpy_ndarray, 1, "mask", 0))) __PYX_ERR(1, 94, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(1, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_2_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_2_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4990,15 +4990,15 @@ static PyObject *__pyx_fuse_0__pyx_pw_9clearmap3_13image_filters_7filters_5label
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_2_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_2_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
   Py_ssize_t __pyx_v_nneighbors;
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_age;
   Py_ssize_t __pyx_v_index;
   Py_ssize_t __pyx_v_neighbor_index;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
   char *__pyx_v_mmapped_image;
   __pyx_t_5numpy_float32_t *__pyx_v_mmapped_image_offset;
   char *__pyx_v_mmapped_marker_locations;
@@ -5006,7 +5006,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   char *__pyx_v_mmapped_mask;
   unsigned char *__pyx_v_mmapped_mask_offset;
   char *__pyx_v_mmapped_output;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
   PyObject *__pyx_v_image_fd = NULL;
   PyObject *__pyx_v_marker_fd = NULL;
   PyObject *__pyx_v_mask_fd = NULL;
@@ -5080,7 +5080,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":130
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":130
  *     cdef Heapitem elem
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -5089,7 +5089,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":131
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":131
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0             # <<<<<<<<<<<<<<
@@ -5098,7 +5098,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":132
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":132
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1             # <<<<<<<<<<<<<<
@@ -5107,7 +5107,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_age = 1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":133
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":133
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0             # <<<<<<<<<<<<<<
@@ -5116,7 +5116,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":134
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":134
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0
  *     cdef Py_ssize_t neighbor_index = 0             # <<<<<<<<<<<<<<
@@ -5125,16 +5125,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_neighbor_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":136
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":136
  *     cdef Py_ssize_t neighbor_index = 0
  * 
  *     cdef Heap *hp = <Heap *> heap_from_numpy2()             # <<<<<<<<<<<<<<
  * 
  *     cdef char *mmapped_image
  */
-  __pyx_v_hp = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
+  __pyx_v_hp = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":147
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":147
  *     cdef DTYPE_INT32_t *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -5157,7 +5157,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":148
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":148
  * 
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -5180,7 +5180,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_marker_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":149
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":149
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -5203,7 +5203,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_mask_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":150
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":150
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -5226,7 +5226,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":154
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":154
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,
  *                                   image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -5250,7 +5250,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 154, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":157
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":157
  *                                   PROT_READ|PROT_WRITE,
  *                                   MAP_SHARED,
  *                                   image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5277,7 +5277,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":153
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":153
  * 
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5286,7 +5286,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":159
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":159
  *                                   image_fd.fileno(),
  *                                   0)
  *     mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -5299,7 +5299,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":160
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":160
  *                                   0)
  *     mmapped_image += image.offset
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image             # <<<<<<<<<<<<<<
@@ -5308,7 +5308,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float32_t *)__pyx_v_mmapped_image);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":163
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":163
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,
  *                                              marker_locations.size * sizeof(long) + marker_locations.offset,             # <<<<<<<<<<<<<<
@@ -5332,7 +5332,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":166
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":166
  *                                              PROT_READ|PROT_WRITE,
  *                                              MAP_SHARED,
  *                                              marker_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5359,7 +5359,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":162
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":162
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5368,7 +5368,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":168
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":168
  *                                              marker_fd.fileno(),
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset             # <<<<<<<<<<<<<<
@@ -5381,7 +5381,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":169
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":169
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations             # <<<<<<<<<<<<<<
@@ -5390,7 +5390,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations_offset = ((long *)__pyx_v_mmapped_marker_locations);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":172
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":172
  * 
  *     mmapped_mask = <char *> mmap(NULL,
  *                                  mask.size * sizeof(unsigned char) + mask.offset,             # <<<<<<<<<<<<<<
@@ -5414,7 +5414,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":175
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":175
  *                                  PROT_READ|PROT_WRITE,
  *                                  MAP_SHARED,
  *                                  mask_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5441,7 +5441,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":171
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":171
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations
  * 
  *     mmapped_mask = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5450,7 +5450,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":177
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":177
  *                                  mask_fd.fileno(),
  *                                  0)
  *     mmapped_mask += mask.offset             # <<<<<<<<<<<<<<
@@ -5463,7 +5463,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":178
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":178
  *                                  0)
  *     mmapped_mask += mask.offset
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask             # <<<<<<<<<<<<<<
@@ -5472,7 +5472,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask_offset = ((unsigned char *)__pyx_v_mmapped_mask);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":180
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":180
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask
  * 
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset             # <<<<<<<<<<<<<<
@@ -5503,7 +5503,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":183
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":183
  * 
  *     mmapped_output = <char *> mmap(NULL,
  *                                    output.size * sizeof(DTYPE_INT32_t) + output.offset,             # <<<<<<<<<<<<<<
@@ -5512,7 +5512,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5527,7 +5527,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":186
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":186
  *                                    PROT_READ|PROT_WRITE,
  *                                    MAP_SHARED,
  *                                    output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -5554,7 +5554,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":182
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":182
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset
  * 
  *     mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -5563,7 +5563,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":188
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":188
  *                                    output_fd.fileno(),
  *                                    0)
  *     mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -5576,16 +5576,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":189
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":189
  *                                    0)
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
-  __pyx_v_mmapped_output_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
+  __pyx_v_mmapped_output_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":191
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":191
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
@@ -5600,23 +5600,23 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(1, 191, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
+  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
   if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
+  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
   if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
   __pyx_v_memview_output = __pyx_t_9;
   __pyx_t_9.memview = NULL;
   __pyx_t_9.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":194
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":194
  *     ######################################################################
  * 
  *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
@@ -5630,7 +5630,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_v_factor = __pyx_t_10;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":196
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":196
  *     cdef INPUT_DTYPE factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
@@ -5643,7 +5643,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_marker_size = __pyx_t_11;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5658,7 +5658,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       #endif
       /*try:*/ {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":199
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  * 
  *     with nogil:
  *         for i in range(marker_size):             # <<<<<<<<<<<<<<
@@ -5670,7 +5670,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
         for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":200
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":200
  *     with nogil:
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]             # <<<<<<<<<<<<<<
@@ -5679,7 +5679,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_index = (__pyx_v_mmapped_marker_locations_offset[__pyx_v_i]);
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":201
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]             # <<<<<<<<<<<<<<
@@ -5688,7 +5688,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_index]));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":202
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":202
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0             # <<<<<<<<<<<<<<
@@ -5697,7 +5697,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.age = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":203
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":203
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0
  *             elem.index = index             # <<<<<<<<<<<<<<
@@ -5706,7 +5706,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.index = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":204
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":204
  *             elem.age = 0
  *             elem.index = index
  *             elem.source = index             # <<<<<<<<<<<<<<
@@ -5715,17 +5715,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.source = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":205
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":205
  *             elem.index = index
  *             elem.source = index
  *             heappush(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *         while hp.items > 0:
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
         }
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":207
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":207
  *             heappush(hp, &elem)
  * 
  *         while hp.items > 0:             # <<<<<<<<<<<<<<
@@ -5736,16 +5736,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
           if (!__pyx_t_13) break;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":208
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":208
  * 
  *         while hp.items > 0:
  *             heappop(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *             for i in range(nneighbors):
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":210
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":210
  *             heappop(hp, &elem)
  * 
  *             for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -5757,7 +5757,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
             __pyx_v_i = __pyx_t_15;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":212
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":212
  *             for i in range(nneighbors):
  *                 # get the flattened address of the neighbor
  *                 neighbor_index = structure[i] + elem.index             # <<<<<<<<<<<<<<
@@ -5767,7 +5767,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_16 = __pyx_v_i;
             __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -5777,7 +5777,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":217
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":217
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  *                     continue             # <<<<<<<<<<<<<<
@@ -5786,7 +5786,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -5795,7 +5795,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -5805,7 +5805,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":221
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":221
  *                 if mmapped_output_offset[neighbor_index]:
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue             # <<<<<<<<<<<<<<
@@ -5814,7 +5814,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -5823,7 +5823,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":223
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":223
  *                     continue
  * 
  *                 age += 1             # <<<<<<<<<<<<<<
@@ -5832,7 +5832,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_age = (__pyx_v_age + 1);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":224
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":224
  * 
  *                 age += 1
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]             # <<<<<<<<<<<<<<
@@ -5841,7 +5841,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_neighbor_index]));
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":226
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":226
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
  * 
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]             # <<<<<<<<<<<<<<
@@ -5850,7 +5850,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             (__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) = (__pyx_v_mmapped_output_offset[__pyx_v_elem.index]);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":228
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":228
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
  * 
  *                 new_elem.age = age             # <<<<<<<<<<<<<<
@@ -5859,7 +5859,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.age = __pyx_v_age;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":229
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":229
  * 
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index             # <<<<<<<<<<<<<<
@@ -5868,7 +5868,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.index = __pyx_v_neighbor_index;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":230
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":230
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index
  *                 new_elem.source = elem.source             # <<<<<<<<<<<<<<
@@ -5878,20 +5878,20 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_17 = __pyx_v_elem.source;
             __pyx_v_new_elem.source = __pyx_t_17;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":232
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":232
  *                 new_elem.source = elem.source
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
  *     heap_done(hp)
  */
-            __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
+            __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
           }
         }
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5910,14 +5910,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -5944,7 +5944,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_mask.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -5966,7 +5966,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_30__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_30__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5996,7 +5996,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6005,16 +6005,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed = {"__pyx_fuse_1_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_fuse_1__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed = {"__pyx_fuse_1_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_marker_locations = 0;
   __Pyx_memviewslice __pyx_v_structure = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_mask = 0;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_output = 0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_watershed (wrapper)", 0);
@@ -6118,7 +6118,7 @@ static PyObject *__pyx_fuse_1__pyx_pw_9clearmap3_13image_filters_7filters_5label
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_watershed", 0, 6, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -6126,7 +6126,7 @@ static PyObject *__pyx_fuse_1__pyx_pw_9clearmap3_13image_filters_7filters_5label
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_marker_locations), __pyx_ptype_5numpy_ndarray, 1, "marker_locations", 0))) __PYX_ERR(1, 92, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mask), __pyx_ptype_5numpy_ndarray, 1, "mask", 0))) __PYX_ERR(1, 94, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(1, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_4_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_4_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
 
   /* function exit code */
   goto __pyx_L0;
@@ -6137,15 +6137,15 @@ static PyObject *__pyx_fuse_1__pyx_pw_9clearmap3_13image_filters_7filters_5label
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_4_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_4_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
   Py_ssize_t __pyx_v_nneighbors;
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_age;
   Py_ssize_t __pyx_v_index;
   Py_ssize_t __pyx_v_neighbor_index;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
   char *__pyx_v_mmapped_image;
   __pyx_t_5numpy_float64_t *__pyx_v_mmapped_image_offset;
   char *__pyx_v_mmapped_marker_locations;
@@ -6153,7 +6153,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   char *__pyx_v_mmapped_mask;
   unsigned char *__pyx_v_mmapped_mask_offset;
   char *__pyx_v_mmapped_output;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
   PyObject *__pyx_v_image_fd = NULL;
   PyObject *__pyx_v_marker_fd = NULL;
   PyObject *__pyx_v_mask_fd = NULL;
@@ -6227,7 +6227,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":130
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":130
  *     cdef Heapitem elem
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -6236,7 +6236,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":131
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":131
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0             # <<<<<<<<<<<<<<
@@ -6245,7 +6245,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":132
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":132
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1             # <<<<<<<<<<<<<<
@@ -6254,7 +6254,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_age = 1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":133
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":133
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0             # <<<<<<<<<<<<<<
@@ -6263,7 +6263,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":134
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":134
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0
  *     cdef Py_ssize_t neighbor_index = 0             # <<<<<<<<<<<<<<
@@ -6272,16 +6272,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_neighbor_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":136
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":136
  *     cdef Py_ssize_t neighbor_index = 0
  * 
  *     cdef Heap *hp = <Heap *> heap_from_numpy2()             # <<<<<<<<<<<<<<
  * 
  *     cdef char *mmapped_image
  */
-  __pyx_v_hp = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
+  __pyx_v_hp = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":147
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":147
  *     cdef DTYPE_INT32_t *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -6304,7 +6304,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":148
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":148
  * 
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -6327,7 +6327,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_marker_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":149
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":149
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -6350,7 +6350,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_mask_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":150
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":150
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -6373,7 +6373,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":154
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":154
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,
  *                                   image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -6397,7 +6397,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 154, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":157
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":157
  *                                   PROT_READ|PROT_WRITE,
  *                                   MAP_SHARED,
  *                                   image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6424,7 +6424,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":153
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":153
  * 
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6433,7 +6433,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":159
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":159
  *                                   image_fd.fileno(),
  *                                   0)
  *     mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -6446,7 +6446,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":160
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":160
  *                                   0)
  *     mmapped_image += image.offset
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image             # <<<<<<<<<<<<<<
@@ -6455,7 +6455,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_float64_t *)__pyx_v_mmapped_image);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":163
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":163
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,
  *                                              marker_locations.size * sizeof(long) + marker_locations.offset,             # <<<<<<<<<<<<<<
@@ -6479,7 +6479,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":166
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":166
  *                                              PROT_READ|PROT_WRITE,
  *                                              MAP_SHARED,
  *                                              marker_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6506,7 +6506,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":162
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":162
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6515,7 +6515,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":168
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":168
  *                                              marker_fd.fileno(),
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset             # <<<<<<<<<<<<<<
@@ -6528,7 +6528,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":169
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":169
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations             # <<<<<<<<<<<<<<
@@ -6537,7 +6537,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations_offset = ((long *)__pyx_v_mmapped_marker_locations);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":172
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":172
  * 
  *     mmapped_mask = <char *> mmap(NULL,
  *                                  mask.size * sizeof(unsigned char) + mask.offset,             # <<<<<<<<<<<<<<
@@ -6561,7 +6561,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":175
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":175
  *                                  PROT_READ|PROT_WRITE,
  *                                  MAP_SHARED,
  *                                  mask_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6588,7 +6588,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":171
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":171
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations
  * 
  *     mmapped_mask = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6597,7 +6597,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":177
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":177
  *                                  mask_fd.fileno(),
  *                                  0)
  *     mmapped_mask += mask.offset             # <<<<<<<<<<<<<<
@@ -6610,7 +6610,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":178
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":178
  *                                  0)
  *     mmapped_mask += mask.offset
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask             # <<<<<<<<<<<<<<
@@ -6619,7 +6619,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask_offset = ((unsigned char *)__pyx_v_mmapped_mask);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":180
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":180
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask
  * 
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset             # <<<<<<<<<<<<<<
@@ -6650,7 +6650,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":183
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":183
  * 
  *     mmapped_output = <char *> mmap(NULL,
  *                                    output.size * sizeof(DTYPE_INT32_t) + output.offset,             # <<<<<<<<<<<<<<
@@ -6659,7 +6659,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6674,7 +6674,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":186
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":186
  *                                    PROT_READ|PROT_WRITE,
  *                                    MAP_SHARED,
  *                                    output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -6701,7 +6701,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":182
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":182
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset
  * 
  *     mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -6710,7 +6710,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":188
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":188
  *                                    output_fd.fileno(),
  *                                    0)
  *     mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -6723,16 +6723,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":189
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":189
  *                                    0)
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
-  __pyx_v_mmapped_output_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
+  __pyx_v_mmapped_output_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":191
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":191
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
@@ -6747,23 +6747,23 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(1, 191, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
+  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
   if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
+  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
   if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
   __pyx_v_memview_output = __pyx_t_9;
   __pyx_t_9.memview = NULL;
   __pyx_t_9.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":194
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":194
  *     ######################################################################
  * 
  *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
@@ -6777,7 +6777,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_v_factor = __pyx_t_10;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":196
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":196
  *     cdef INPUT_DTYPE factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
@@ -6790,7 +6790,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_marker_size = __pyx_t_11;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -6805,7 +6805,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       #endif
       /*try:*/ {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":199
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  * 
  *     with nogil:
  *         for i in range(marker_size):             # <<<<<<<<<<<<<<
@@ -6817,7 +6817,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
         for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":200
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":200
  *     with nogil:
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]             # <<<<<<<<<<<<<<
@@ -6826,7 +6826,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_index = (__pyx_v_mmapped_marker_locations_offset[__pyx_v_i]);
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":201
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]             # <<<<<<<<<<<<<<
@@ -6835,7 +6835,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_index]));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":202
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":202
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0             # <<<<<<<<<<<<<<
@@ -6844,7 +6844,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.age = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":203
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":203
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0
  *             elem.index = index             # <<<<<<<<<<<<<<
@@ -6853,7 +6853,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.index = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":204
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":204
  *             elem.age = 0
  *             elem.index = index
  *             elem.source = index             # <<<<<<<<<<<<<<
@@ -6862,17 +6862,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.source = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":205
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":205
  *             elem.index = index
  *             elem.source = index
  *             heappush(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *         while hp.items > 0:
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
         }
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":207
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":207
  *             heappush(hp, &elem)
  * 
  *         while hp.items > 0:             # <<<<<<<<<<<<<<
@@ -6883,16 +6883,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
           if (!__pyx_t_13) break;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":208
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":208
  * 
  *         while hp.items > 0:
  *             heappop(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *             for i in range(nneighbors):
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":210
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":210
  *             heappop(hp, &elem)
  * 
  *             for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -6904,7 +6904,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
             __pyx_v_i = __pyx_t_15;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":212
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":212
  *             for i in range(nneighbors):
  *                 # get the flattened address of the neighbor
  *                 neighbor_index = structure[i] + elem.index             # <<<<<<<<<<<<<<
@@ -6914,7 +6914,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_16 = __pyx_v_i;
             __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -6924,7 +6924,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":217
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":217
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  *                     continue             # <<<<<<<<<<<<<<
@@ -6933,7 +6933,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -6942,7 +6942,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -6952,7 +6952,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":221
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":221
  *                 if mmapped_output_offset[neighbor_index]:
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue             # <<<<<<<<<<<<<<
@@ -6961,7 +6961,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -6970,7 +6970,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":223
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":223
  *                     continue
  * 
  *                 age += 1             # <<<<<<<<<<<<<<
@@ -6979,7 +6979,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_age = (__pyx_v_age + 1);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":224
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":224
  * 
  *                 age += 1
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]             # <<<<<<<<<<<<<<
@@ -6988,7 +6988,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_neighbor_index]));
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":226
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":226
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
  * 
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]             # <<<<<<<<<<<<<<
@@ -6997,7 +6997,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             (__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) = (__pyx_v_mmapped_output_offset[__pyx_v_elem.index]);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":228
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":228
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
  * 
  *                 new_elem.age = age             # <<<<<<<<<<<<<<
@@ -7006,7 +7006,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.age = __pyx_v_age;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":229
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":229
  * 
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index             # <<<<<<<<<<<<<<
@@ -7015,7 +7015,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.index = __pyx_v_neighbor_index;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":230
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":230
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index
  *                 new_elem.source = elem.source             # <<<<<<<<<<<<<<
@@ -7025,20 +7025,20 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_17 = __pyx_v_elem.source;
             __pyx_v_new_elem.source = __pyx_t_17;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":232
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":232
  *                 new_elem.source = elem.source
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
  *     heap_done(hp)
  */
-            __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
+            __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
           }
         }
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -7057,14 +7057,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -7091,7 +7091,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_mask.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -7113,7 +7113,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_32__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_32__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7143,7 +7143,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7152,16 +7152,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed = {"__pyx_fuse_2_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_fuse_2__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_2__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed = {"__pyx_fuse_2_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_2__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_fuse_2__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_marker_locations = 0;
   __Pyx_memviewslice __pyx_v_structure = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_mask = 0;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_output = 0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_watershed (wrapper)", 0);
@@ -7265,7 +7265,7 @@ static PyObject *__pyx_fuse_2__pyx_pw_9clearmap3_13image_filters_7filters_5label
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_watershed", 0, 6, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -7273,7 +7273,7 @@ static PyObject *__pyx_fuse_2__pyx_pw_9clearmap3_13image_filters_7filters_5label
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_marker_locations), __pyx_ptype_5numpy_ndarray, 1, "marker_locations", 0))) __PYX_ERR(1, 92, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mask), __pyx_ptype_5numpy_ndarray, 1, "mask", 0))) __PYX_ERR(1, 94, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(1, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_6_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_6_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
 
   /* function exit code */
   goto __pyx_L0;
@@ -7284,15 +7284,15 @@ static PyObject *__pyx_fuse_2__pyx_pw_9clearmap3_13image_filters_7filters_5label
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_6_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_6_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
   Py_ssize_t __pyx_v_nneighbors;
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_age;
   Py_ssize_t __pyx_v_index;
   Py_ssize_t __pyx_v_neighbor_index;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
   char *__pyx_v_mmapped_image;
   __pyx_t_5numpy_uint8_t *__pyx_v_mmapped_image_offset;
   char *__pyx_v_mmapped_marker_locations;
@@ -7300,7 +7300,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   char *__pyx_v_mmapped_mask;
   unsigned char *__pyx_v_mmapped_mask_offset;
   char *__pyx_v_mmapped_output;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
   PyObject *__pyx_v_image_fd = NULL;
   PyObject *__pyx_v_marker_fd = NULL;
   PyObject *__pyx_v_mask_fd = NULL;
@@ -7374,7 +7374,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":130
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":130
  *     cdef Heapitem elem
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -7383,7 +7383,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":131
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":131
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0             # <<<<<<<<<<<<<<
@@ -7392,7 +7392,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":132
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":132
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1             # <<<<<<<<<<<<<<
@@ -7401,7 +7401,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_age = 1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":133
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":133
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0             # <<<<<<<<<<<<<<
@@ -7410,7 +7410,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":134
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":134
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0
  *     cdef Py_ssize_t neighbor_index = 0             # <<<<<<<<<<<<<<
@@ -7419,16 +7419,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_neighbor_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":136
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":136
  *     cdef Py_ssize_t neighbor_index = 0
  * 
  *     cdef Heap *hp = <Heap *> heap_from_numpy2()             # <<<<<<<<<<<<<<
  * 
  *     cdef char *mmapped_image
  */
-  __pyx_v_hp = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
+  __pyx_v_hp = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":147
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":147
  *     cdef DTYPE_INT32_t *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -7451,7 +7451,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":148
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":148
  * 
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -7474,7 +7474,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_marker_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":149
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":149
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -7497,7 +7497,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_mask_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":150
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":150
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -7520,7 +7520,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":154
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":154
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,
  *                                   image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -7544,7 +7544,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 154, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":157
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":157
  *                                   PROT_READ|PROT_WRITE,
  *                                   MAP_SHARED,
  *                                   image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -7571,7 +7571,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":153
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":153
  * 
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -7580,7 +7580,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":159
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":159
  *                                   image_fd.fileno(),
  *                                   0)
  *     mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -7593,7 +7593,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":160
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":160
  *                                   0)
  *     mmapped_image += image.offset
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image             # <<<<<<<<<<<<<<
@@ -7602,7 +7602,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint8_t *)__pyx_v_mmapped_image);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":163
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":163
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,
  *                                              marker_locations.size * sizeof(long) + marker_locations.offset,             # <<<<<<<<<<<<<<
@@ -7626,7 +7626,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":166
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":166
  *                                              PROT_READ|PROT_WRITE,
  *                                              MAP_SHARED,
  *                                              marker_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -7653,7 +7653,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":162
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":162
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -7662,7 +7662,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":168
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":168
  *                                              marker_fd.fileno(),
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset             # <<<<<<<<<<<<<<
@@ -7675,7 +7675,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":169
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":169
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations             # <<<<<<<<<<<<<<
@@ -7684,7 +7684,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations_offset = ((long *)__pyx_v_mmapped_marker_locations);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":172
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":172
  * 
  *     mmapped_mask = <char *> mmap(NULL,
  *                                  mask.size * sizeof(unsigned char) + mask.offset,             # <<<<<<<<<<<<<<
@@ -7708,7 +7708,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":175
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":175
  *                                  PROT_READ|PROT_WRITE,
  *                                  MAP_SHARED,
  *                                  mask_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -7735,7 +7735,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":171
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":171
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations
  * 
  *     mmapped_mask = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -7744,7 +7744,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":177
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":177
  *                                  mask_fd.fileno(),
  *                                  0)
  *     mmapped_mask += mask.offset             # <<<<<<<<<<<<<<
@@ -7757,7 +7757,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":178
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":178
  *                                  0)
  *     mmapped_mask += mask.offset
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask             # <<<<<<<<<<<<<<
@@ -7766,7 +7766,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask_offset = ((unsigned char *)__pyx_v_mmapped_mask);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":180
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":180
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask
  * 
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset             # <<<<<<<<<<<<<<
@@ -7797,7 +7797,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":183
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":183
  * 
  *     mmapped_output = <char *> mmap(NULL,
  *                                    output.size * sizeof(DTYPE_INT32_t) + output.offset,             # <<<<<<<<<<<<<<
@@ -7806,7 +7806,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7821,7 +7821,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":186
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":186
  *                                    PROT_READ|PROT_WRITE,
  *                                    MAP_SHARED,
  *                                    output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -7848,7 +7848,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":182
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":182
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset
  * 
  *     mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -7857,7 +7857,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":188
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":188
  *                                    output_fd.fileno(),
  *                                    0)
  *     mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -7870,16 +7870,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":189
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":189
  *                                    0)
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
-  __pyx_v_mmapped_output_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
+  __pyx_v_mmapped_output_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":191
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":191
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
@@ -7894,23 +7894,23 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(1, 191, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
+  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
   if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
+  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
   if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
   __pyx_v_memview_output = __pyx_t_9;
   __pyx_t_9.memview = NULL;
   __pyx_t_9.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":194
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":194
  *     ######################################################################
  * 
  *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
@@ -7924,7 +7924,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_v_factor = __pyx_t_10;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":196
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":196
  *     cdef INPUT_DTYPE factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
@@ -7937,7 +7937,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_marker_size = __pyx_t_11;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -7952,7 +7952,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       #endif
       /*try:*/ {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":199
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  * 
  *     with nogil:
  *         for i in range(marker_size):             # <<<<<<<<<<<<<<
@@ -7964,7 +7964,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
         for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":200
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":200
  *     with nogil:
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]             # <<<<<<<<<<<<<<
@@ -7973,7 +7973,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_index = (__pyx_v_mmapped_marker_locations_offset[__pyx_v_i]);
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":201
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]             # <<<<<<<<<<<<<<
@@ -7982,7 +7982,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_index]));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":202
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":202
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0             # <<<<<<<<<<<<<<
@@ -7991,7 +7991,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.age = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":203
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":203
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0
  *             elem.index = index             # <<<<<<<<<<<<<<
@@ -8000,7 +8000,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.index = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":204
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":204
  *             elem.age = 0
  *             elem.index = index
  *             elem.source = index             # <<<<<<<<<<<<<<
@@ -8009,17 +8009,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.source = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":205
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":205
  *             elem.index = index
  *             elem.source = index
  *             heappush(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *         while hp.items > 0:
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
         }
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":207
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":207
  *             heappush(hp, &elem)
  * 
  *         while hp.items > 0:             # <<<<<<<<<<<<<<
@@ -8030,16 +8030,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
           if (!__pyx_t_13) break;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":208
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":208
  * 
  *         while hp.items > 0:
  *             heappop(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *             for i in range(nneighbors):
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":210
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":210
  *             heappop(hp, &elem)
  * 
  *             for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -8051,7 +8051,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
             __pyx_v_i = __pyx_t_15;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":212
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":212
  *             for i in range(nneighbors):
  *                 # get the flattened address of the neighbor
  *                 neighbor_index = structure[i] + elem.index             # <<<<<<<<<<<<<<
@@ -8061,7 +8061,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_16 = __pyx_v_i;
             __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -8071,7 +8071,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":217
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":217
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  *                     continue             # <<<<<<<<<<<<<<
@@ -8080,7 +8080,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -8089,7 +8089,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -8099,7 +8099,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":221
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":221
  *                 if mmapped_output_offset[neighbor_index]:
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue             # <<<<<<<<<<<<<<
@@ -8108,7 +8108,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -8117,7 +8117,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":223
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":223
  *                     continue
  * 
  *                 age += 1             # <<<<<<<<<<<<<<
@@ -8126,7 +8126,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_age = (__pyx_v_age + 1);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":224
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":224
  * 
  *                 age += 1
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]             # <<<<<<<<<<<<<<
@@ -8135,7 +8135,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_neighbor_index]));
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":226
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":226
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
  * 
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]             # <<<<<<<<<<<<<<
@@ -8144,7 +8144,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             (__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) = (__pyx_v_mmapped_output_offset[__pyx_v_elem.index]);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":228
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":228
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
  * 
  *                 new_elem.age = age             # <<<<<<<<<<<<<<
@@ -8153,7 +8153,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.age = __pyx_v_age;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":229
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":229
  * 
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index             # <<<<<<<<<<<<<<
@@ -8162,7 +8162,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.index = __pyx_v_neighbor_index;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":230
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":230
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index
  *                 new_elem.source = elem.source             # <<<<<<<<<<<<<<
@@ -8172,20 +8172,20 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_17 = __pyx_v_elem.source;
             __pyx_v_new_elem.source = __pyx_t_17;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":232
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":232
  *                 new_elem.source = elem.source
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
  *     heap_done(hp)
  */
-            __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
+            __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
           }
         }
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -8204,14 +8204,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -8238,7 +8238,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_mask.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -8260,7 +8260,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_34__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_34__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8290,7 +8290,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8299,16 +8299,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed = {"__pyx_fuse_3_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_fuse_3__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_3__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed = {"__pyx_fuse_3_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_3__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_fuse_3__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_marker_locations = 0;
   __Pyx_memviewslice __pyx_v_structure = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_mask = 0;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_output = 0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_watershed (wrapper)", 0);
@@ -8412,7 +8412,7 @@ static PyObject *__pyx_fuse_3__pyx_pw_9clearmap3_13image_filters_7filters_5label
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_watershed", 0, 6, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -8420,7 +8420,7 @@ static PyObject *__pyx_fuse_3__pyx_pw_9clearmap3_13image_filters_7filters_5label
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_marker_locations), __pyx_ptype_5numpy_ndarray, 1, "marker_locations", 0))) __PYX_ERR(1, 92, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mask), __pyx_ptype_5numpy_ndarray, 1, "mask", 0))) __PYX_ERR(1, 94, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(1, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_8_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_8_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8431,15 +8431,15 @@ static PyObject *__pyx_fuse_3__pyx_pw_9clearmap3_13image_filters_7filters_5label
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_8_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_8_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
   Py_ssize_t __pyx_v_nneighbors;
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_age;
   Py_ssize_t __pyx_v_index;
   Py_ssize_t __pyx_v_neighbor_index;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
   char *__pyx_v_mmapped_image;
   __pyx_t_5numpy_uint16_t *__pyx_v_mmapped_image_offset;
   char *__pyx_v_mmapped_marker_locations;
@@ -8447,7 +8447,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   char *__pyx_v_mmapped_mask;
   unsigned char *__pyx_v_mmapped_mask_offset;
   char *__pyx_v_mmapped_output;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
   PyObject *__pyx_v_image_fd = NULL;
   PyObject *__pyx_v_marker_fd = NULL;
   PyObject *__pyx_v_mask_fd = NULL;
@@ -8521,7 +8521,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":130
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":130
  *     cdef Heapitem elem
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -8530,7 +8530,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":131
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":131
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0             # <<<<<<<<<<<<<<
@@ -8539,7 +8539,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":132
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":132
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1             # <<<<<<<<<<<<<<
@@ -8548,7 +8548,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_age = 1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":133
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":133
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0             # <<<<<<<<<<<<<<
@@ -8557,7 +8557,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":134
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":134
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0
  *     cdef Py_ssize_t neighbor_index = 0             # <<<<<<<<<<<<<<
@@ -8566,16 +8566,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_neighbor_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":136
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":136
  *     cdef Py_ssize_t neighbor_index = 0
  * 
  *     cdef Heap *hp = <Heap *> heap_from_numpy2()             # <<<<<<<<<<<<<<
  * 
  *     cdef char *mmapped_image
  */
-  __pyx_v_hp = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
+  __pyx_v_hp = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":147
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":147
  *     cdef DTYPE_INT32_t *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -8598,7 +8598,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":148
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":148
  * 
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -8621,7 +8621,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_marker_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":149
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":149
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -8644,7 +8644,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_mask_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":150
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":150
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -8667,7 +8667,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":154
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":154
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,
  *                                   image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -8691,7 +8691,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 154, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":157
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":157
  *                                   PROT_READ|PROT_WRITE,
  *                                   MAP_SHARED,
  *                                   image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8718,7 +8718,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":153
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":153
  * 
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8727,7 +8727,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":159
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":159
  *                                   image_fd.fileno(),
  *                                   0)
  *     mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -8740,7 +8740,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":160
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":160
  *                                   0)
  *     mmapped_image += image.offset
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image             # <<<<<<<<<<<<<<
@@ -8749,7 +8749,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint16_t *)__pyx_v_mmapped_image);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":163
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":163
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,
  *                                              marker_locations.size * sizeof(long) + marker_locations.offset,             # <<<<<<<<<<<<<<
@@ -8773,7 +8773,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":166
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":166
  *                                              PROT_READ|PROT_WRITE,
  *                                              MAP_SHARED,
  *                                              marker_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8800,7 +8800,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":162
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":162
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8809,7 +8809,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":168
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":168
  *                                              marker_fd.fileno(),
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset             # <<<<<<<<<<<<<<
@@ -8822,7 +8822,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":169
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":169
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations             # <<<<<<<<<<<<<<
@@ -8831,7 +8831,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations_offset = ((long *)__pyx_v_mmapped_marker_locations);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":172
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":172
  * 
  *     mmapped_mask = <char *> mmap(NULL,
  *                                  mask.size * sizeof(unsigned char) + mask.offset,             # <<<<<<<<<<<<<<
@@ -8855,7 +8855,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":175
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":175
  *                                  PROT_READ|PROT_WRITE,
  *                                  MAP_SHARED,
  *                                  mask_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8882,7 +8882,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":171
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":171
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations
  * 
  *     mmapped_mask = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -8891,7 +8891,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":177
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":177
  *                                  mask_fd.fileno(),
  *                                  0)
  *     mmapped_mask += mask.offset             # <<<<<<<<<<<<<<
@@ -8904,7 +8904,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":178
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":178
  *                                  0)
  *     mmapped_mask += mask.offset
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask             # <<<<<<<<<<<<<<
@@ -8913,7 +8913,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask_offset = ((unsigned char *)__pyx_v_mmapped_mask);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":180
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":180
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask
  * 
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset             # <<<<<<<<<<<<<<
@@ -8944,7 +8944,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":183
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":183
  * 
  *     mmapped_output = <char *> mmap(NULL,
  *                                    output.size * sizeof(DTYPE_INT32_t) + output.offset,             # <<<<<<<<<<<<<<
@@ -8953,7 +8953,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8968,7 +8968,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":186
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":186
  *                                    PROT_READ|PROT_WRITE,
  *                                    MAP_SHARED,
  *                                    output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -8995,7 +8995,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":182
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":182
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset
  * 
  *     mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -9004,7 +9004,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":188
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":188
  *                                    output_fd.fileno(),
  *                                    0)
  *     mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -9017,16 +9017,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":189
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":189
  *                                    0)
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
-  __pyx_v_mmapped_output_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
+  __pyx_v_mmapped_output_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":191
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":191
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
@@ -9041,23 +9041,23 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(1, 191, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
+  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
   if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
+  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
   if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
   __pyx_v_memview_output = __pyx_t_9;
   __pyx_t_9.memview = NULL;
   __pyx_t_9.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":194
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":194
  *     ######################################################################
  * 
  *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
@@ -9071,7 +9071,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_v_factor = __pyx_t_10;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":196
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":196
  *     cdef INPUT_DTYPE factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
@@ -9084,7 +9084,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_marker_size = __pyx_t_11;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -9099,7 +9099,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       #endif
       /*try:*/ {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":199
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  * 
  *     with nogil:
  *         for i in range(marker_size):             # <<<<<<<<<<<<<<
@@ -9111,7 +9111,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
         for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":200
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":200
  *     with nogil:
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]             # <<<<<<<<<<<<<<
@@ -9120,7 +9120,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_index = (__pyx_v_mmapped_marker_locations_offset[__pyx_v_i]);
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":201
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]             # <<<<<<<<<<<<<<
@@ -9129,7 +9129,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_index]));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":202
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":202
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0             # <<<<<<<<<<<<<<
@@ -9138,7 +9138,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.age = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":203
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":203
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0
  *             elem.index = index             # <<<<<<<<<<<<<<
@@ -9147,7 +9147,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.index = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":204
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":204
  *             elem.age = 0
  *             elem.index = index
  *             elem.source = index             # <<<<<<<<<<<<<<
@@ -9156,17 +9156,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.source = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":205
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":205
  *             elem.index = index
  *             elem.source = index
  *             heappush(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *         while hp.items > 0:
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
         }
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":207
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":207
  *             heappush(hp, &elem)
  * 
  *         while hp.items > 0:             # <<<<<<<<<<<<<<
@@ -9177,16 +9177,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
           if (!__pyx_t_13) break;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":208
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":208
  * 
  *         while hp.items > 0:
  *             heappop(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *             for i in range(nneighbors):
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":210
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":210
  *             heappop(hp, &elem)
  * 
  *             for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -9198,7 +9198,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
             __pyx_v_i = __pyx_t_15;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":212
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":212
  *             for i in range(nneighbors):
  *                 # get the flattened address of the neighbor
  *                 neighbor_index = structure[i] + elem.index             # <<<<<<<<<<<<<<
@@ -9208,7 +9208,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_16 = __pyx_v_i;
             __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -9218,7 +9218,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":217
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":217
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  *                     continue             # <<<<<<<<<<<<<<
@@ -9227,7 +9227,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -9236,7 +9236,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -9246,7 +9246,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":221
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":221
  *                 if mmapped_output_offset[neighbor_index]:
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue             # <<<<<<<<<<<<<<
@@ -9255,7 +9255,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -9264,7 +9264,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":223
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":223
  *                     continue
  * 
  *                 age += 1             # <<<<<<<<<<<<<<
@@ -9273,7 +9273,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_age = (__pyx_v_age + 1);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":224
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":224
  * 
  *                 age += 1
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]             # <<<<<<<<<<<<<<
@@ -9282,7 +9282,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_neighbor_index]));
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":226
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":226
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
  * 
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]             # <<<<<<<<<<<<<<
@@ -9291,7 +9291,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             (__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) = (__pyx_v_mmapped_output_offset[__pyx_v_elem.index]);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":228
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":228
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
  * 
  *                 new_elem.age = age             # <<<<<<<<<<<<<<
@@ -9300,7 +9300,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.age = __pyx_v_age;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":229
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":229
  * 
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index             # <<<<<<<<<<<<<<
@@ -9309,7 +9309,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.index = __pyx_v_neighbor_index;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":230
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":230
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index
  *                 new_elem.source = elem.source             # <<<<<<<<<<<<<<
@@ -9319,20 +9319,20 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_17 = __pyx_v_elem.source;
             __pyx_v_new_elem.source = __pyx_t_17;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":232
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":232
  *                 new_elem.source = elem.source
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
  *     heap_done(hp)
  */
-            __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
+            __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
           }
         }
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -9351,14 +9351,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -9385,7 +9385,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_mask.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -9407,7 +9407,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_36__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_36__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9437,7 +9437,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9446,16 +9446,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed = {"__pyx_fuse_4_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_fuse_4__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_4__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed = {"__pyx_fuse_4_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_4__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_fuse_4__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_marker_locations = 0;
   __Pyx_memviewslice __pyx_v_structure = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_mask = 0;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_output = 0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_watershed (wrapper)", 0);
@@ -9559,7 +9559,7 @@ static PyObject *__pyx_fuse_4__pyx_pw_9clearmap3_13image_filters_7filters_5label
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_watershed", 0, 6, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -9567,7 +9567,7 @@ static PyObject *__pyx_fuse_4__pyx_pw_9clearmap3_13image_filters_7filters_5label
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_marker_locations), __pyx_ptype_5numpy_ndarray, 1, "marker_locations", 0))) __PYX_ERR(1, 92, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mask), __pyx_ptype_5numpy_ndarray, 1, "mask", 0))) __PYX_ERR(1, 94, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(1, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_10_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_10_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
 
   /* function exit code */
   goto __pyx_L0;
@@ -9578,15 +9578,15 @@ static PyObject *__pyx_fuse_4__pyx_pw_9clearmap3_13image_filters_7filters_5label
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_10_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_10_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
   Py_ssize_t __pyx_v_nneighbors;
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_age;
   Py_ssize_t __pyx_v_index;
   Py_ssize_t __pyx_v_neighbor_index;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
   char *__pyx_v_mmapped_image;
   __pyx_t_5numpy_int32_t *__pyx_v_mmapped_image_offset;
   char *__pyx_v_mmapped_marker_locations;
@@ -9594,7 +9594,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   char *__pyx_v_mmapped_mask;
   unsigned char *__pyx_v_mmapped_mask_offset;
   char *__pyx_v_mmapped_output;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
   PyObject *__pyx_v_image_fd = NULL;
   PyObject *__pyx_v_marker_fd = NULL;
   PyObject *__pyx_v_mask_fd = NULL;
@@ -9668,7 +9668,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":130
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":130
  *     cdef Heapitem elem
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -9677,7 +9677,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":131
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":131
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0             # <<<<<<<<<<<<<<
@@ -9686,7 +9686,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":132
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":132
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1             # <<<<<<<<<<<<<<
@@ -9695,7 +9695,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_age = 1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":133
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":133
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0             # <<<<<<<<<<<<<<
@@ -9704,7 +9704,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":134
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":134
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0
  *     cdef Py_ssize_t neighbor_index = 0             # <<<<<<<<<<<<<<
@@ -9713,16 +9713,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_neighbor_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":136
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":136
  *     cdef Py_ssize_t neighbor_index = 0
  * 
  *     cdef Heap *hp = <Heap *> heap_from_numpy2()             # <<<<<<<<<<<<<<
  * 
  *     cdef char *mmapped_image
  */
-  __pyx_v_hp = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
+  __pyx_v_hp = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":147
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":147
  *     cdef DTYPE_INT32_t *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -9745,7 +9745,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":148
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":148
  * 
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -9768,7 +9768,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_marker_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":149
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":149
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -9791,7 +9791,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_mask_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":150
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":150
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -9814,7 +9814,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":154
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":154
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,
  *                                   image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -9838,7 +9838,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 154, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":157
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":157
  *                                   PROT_READ|PROT_WRITE,
  *                                   MAP_SHARED,
  *                                   image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -9865,7 +9865,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":153
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":153
  * 
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -9874,7 +9874,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":159
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":159
  *                                   image_fd.fileno(),
  *                                   0)
  *     mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -9887,7 +9887,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":160
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":160
  *                                   0)
  *     mmapped_image += image.offset
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image             # <<<<<<<<<<<<<<
@@ -9896,7 +9896,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_int32_t *)__pyx_v_mmapped_image);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":163
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":163
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,
  *                                              marker_locations.size * sizeof(long) + marker_locations.offset,             # <<<<<<<<<<<<<<
@@ -9920,7 +9920,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":166
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":166
  *                                              PROT_READ|PROT_WRITE,
  *                                              MAP_SHARED,
  *                                              marker_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -9947,7 +9947,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":162
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":162
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -9956,7 +9956,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":168
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":168
  *                                              marker_fd.fileno(),
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset             # <<<<<<<<<<<<<<
@@ -9969,7 +9969,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":169
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":169
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations             # <<<<<<<<<<<<<<
@@ -9978,7 +9978,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations_offset = ((long *)__pyx_v_mmapped_marker_locations);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":172
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":172
  * 
  *     mmapped_mask = <char *> mmap(NULL,
  *                                  mask.size * sizeof(unsigned char) + mask.offset,             # <<<<<<<<<<<<<<
@@ -10002,7 +10002,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":175
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":175
  *                                  PROT_READ|PROT_WRITE,
  *                                  MAP_SHARED,
  *                                  mask_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -10029,7 +10029,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":171
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":171
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations
  * 
  *     mmapped_mask = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -10038,7 +10038,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":177
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":177
  *                                  mask_fd.fileno(),
  *                                  0)
  *     mmapped_mask += mask.offset             # <<<<<<<<<<<<<<
@@ -10051,7 +10051,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":178
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":178
  *                                  0)
  *     mmapped_mask += mask.offset
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask             # <<<<<<<<<<<<<<
@@ -10060,7 +10060,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask_offset = ((unsigned char *)__pyx_v_mmapped_mask);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":180
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":180
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask
  * 
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset             # <<<<<<<<<<<<<<
@@ -10091,7 +10091,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":183
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":183
  * 
  *     mmapped_output = <char *> mmap(NULL,
  *                                    output.size * sizeof(DTYPE_INT32_t) + output.offset,             # <<<<<<<<<<<<<<
@@ -10100,7 +10100,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -10115,7 +10115,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":186
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":186
  *                                    PROT_READ|PROT_WRITE,
  *                                    MAP_SHARED,
  *                                    output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -10142,7 +10142,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":182
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":182
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset
  * 
  *     mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -10151,7 +10151,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":188
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":188
  *                                    output_fd.fileno(),
  *                                    0)
  *     mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -10164,16 +10164,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":189
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":189
  *                                    0)
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
-  __pyx_v_mmapped_output_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
+  __pyx_v_mmapped_output_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":191
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":191
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
@@ -10188,23 +10188,23 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(1, 191, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
+  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
   if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
+  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
   if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
   __pyx_v_memview_output = __pyx_t_9;
   __pyx_t_9.memview = NULL;
   __pyx_t_9.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":194
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":194
  *     ######################################################################
  * 
  *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
@@ -10218,7 +10218,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_v_factor = __pyx_t_10;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":196
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":196
  *     cdef INPUT_DTYPE factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
@@ -10231,7 +10231,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_marker_size = __pyx_t_11;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -10246,7 +10246,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       #endif
       /*try:*/ {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":199
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  * 
  *     with nogil:
  *         for i in range(marker_size):             # <<<<<<<<<<<<<<
@@ -10258,7 +10258,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
         for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":200
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":200
  *     with nogil:
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]             # <<<<<<<<<<<<<<
@@ -10267,7 +10267,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_index = (__pyx_v_mmapped_marker_locations_offset[__pyx_v_i]);
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":201
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]             # <<<<<<<<<<<<<<
@@ -10276,7 +10276,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_index]));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":202
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":202
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0             # <<<<<<<<<<<<<<
@@ -10285,7 +10285,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.age = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":203
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":203
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0
  *             elem.index = index             # <<<<<<<<<<<<<<
@@ -10294,7 +10294,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.index = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":204
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":204
  *             elem.age = 0
  *             elem.index = index
  *             elem.source = index             # <<<<<<<<<<<<<<
@@ -10303,17 +10303,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.source = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":205
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":205
  *             elem.index = index
  *             elem.source = index
  *             heappush(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *         while hp.items > 0:
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
         }
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":207
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":207
  *             heappush(hp, &elem)
  * 
  *         while hp.items > 0:             # <<<<<<<<<<<<<<
@@ -10324,16 +10324,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
           if (!__pyx_t_13) break;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":208
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":208
  * 
  *         while hp.items > 0:
  *             heappop(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *             for i in range(nneighbors):
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":210
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":210
  *             heappop(hp, &elem)
  * 
  *             for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -10345,7 +10345,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
             __pyx_v_i = __pyx_t_15;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":212
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":212
  *             for i in range(nneighbors):
  *                 # get the flattened address of the neighbor
  *                 neighbor_index = structure[i] + elem.index             # <<<<<<<<<<<<<<
@@ -10355,7 +10355,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_16 = __pyx_v_i;
             __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -10365,7 +10365,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":217
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":217
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  *                     continue             # <<<<<<<<<<<<<<
@@ -10374,7 +10374,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -10383,7 +10383,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -10393,7 +10393,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":221
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":221
  *                 if mmapped_output_offset[neighbor_index]:
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue             # <<<<<<<<<<<<<<
@@ -10402,7 +10402,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -10411,7 +10411,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":223
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":223
  *                     continue
  * 
  *                 age += 1             # <<<<<<<<<<<<<<
@@ -10420,7 +10420,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_age = (__pyx_v_age + 1);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":224
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":224
  * 
  *                 age += 1
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]             # <<<<<<<<<<<<<<
@@ -10429,7 +10429,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_neighbor_index]));
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":226
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":226
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
  * 
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]             # <<<<<<<<<<<<<<
@@ -10438,7 +10438,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             (__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) = (__pyx_v_mmapped_output_offset[__pyx_v_elem.index]);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":228
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":228
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
  * 
  *                 new_elem.age = age             # <<<<<<<<<<<<<<
@@ -10447,7 +10447,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.age = __pyx_v_age;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":229
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":229
  * 
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index             # <<<<<<<<<<<<<<
@@ -10456,7 +10456,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.index = __pyx_v_neighbor_index;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":230
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":230
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index
  *                 new_elem.source = elem.source             # <<<<<<<<<<<<<<
@@ -10466,20 +10466,20 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_17 = __pyx_v_elem.source;
             __pyx_v_new_elem.source = __pyx_t_17;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":232
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":232
  *                 new_elem.source = elem.source
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
  *     heap_done(hp)
  */
-            __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
+            __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
           }
         }
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -10498,14 +10498,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -10532,7 +10532,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_mask.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -10554,7 +10554,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_38__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_38__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10584,7 +10584,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10593,16 +10593,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed = {"__pyx_fuse_5_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
-static PyObject *__pyx_fuse_5__pyx_pw_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_5__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed = {"__pyx_fuse_5_watershed", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_5__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed__watershed};
+static PyObject *__pyx_fuse_5__pyx_pw_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyArrayObject *__pyx_v_marker_locations = 0;
   __Pyx_memviewslice __pyx_v_structure = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_mask = 0;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyArrayObject *__pyx_v_output = 0;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_watershed (wrapper)", 0);
@@ -10706,7 +10706,7 @@ static PyObject *__pyx_fuse_5__pyx_pw_9clearmap3_13image_filters_7filters_5label
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_watershed", 0, 6, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -10714,7 +10714,7 @@ static PyObject *__pyx_fuse_5__pyx_pw_9clearmap3_13image_filters_7filters_5label
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_marker_locations), __pyx_ptype_5numpy_ndarray, 1, "marker_locations", 0))) __PYX_ERR(1, 92, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mask), __pyx_ptype_5numpy_ndarray, 1, "mask", 0))) __PYX_ERR(1, 94, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output), __pyx_ptype_5numpy_ndarray, 1, "output", 0))) __PYX_ERR(1, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_12_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_12_watershed(__pyx_self, __pyx_v_image, __pyx_v_marker_locations, __pyx_v_structure, __pyx_v_mask, __pyx_v_strides, __pyx_v_output, __pyx_v_invert);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10725,15 +10725,15 @@ static PyObject *__pyx_fuse_5__pyx_pw_9clearmap3_13image_filters_7filters_5label
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_12_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_12_watershed(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyArrayObject *__pyx_v_marker_locations, __Pyx_memviewslice __pyx_v_structure, PyArrayObject *__pyx_v_mask, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_strides, PyArrayObject *__pyx_v_output, __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_BOOL_t __pyx_v_invert) {
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_elem;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heapitem __pyx_v_new_elem;
   Py_ssize_t __pyx_v_nneighbors;
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_age;
   Py_ssize_t __pyx_v_index;
   Py_ssize_t __pyx_v_neighbor_index;
-  struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
+  struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *__pyx_v_hp;
   char *__pyx_v_mmapped_image;
   __pyx_t_5numpy_uint32_t *__pyx_v_mmapped_image_offset;
   char *__pyx_v_mmapped_marker_locations;
@@ -10741,7 +10741,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   char *__pyx_v_mmapped_mask;
   unsigned char *__pyx_v_mmapped_mask_offset;
   char *__pyx_v_mmapped_output;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *__pyx_v_mmapped_output_offset;
   PyObject *__pyx_v_image_fd = NULL;
   PyObject *__pyx_v_marker_fd = NULL;
   PyObject *__pyx_v_mask_fd = NULL;
@@ -10815,7 +10815,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_pybuffernd_output.diminfo[0].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_output.diminfo[0].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_output.diminfo[1].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_output.diminfo[1].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_output.diminfo[2].strides = __pyx_pybuffernd_output.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_output.diminfo[2].shape = __pyx_pybuffernd_output.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":130
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":130
  *     cdef Heapitem elem
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]             # <<<<<<<<<<<<<<
@@ -10824,7 +10824,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_nneighbors = (__pyx_v_structure.shape[0]);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":131
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":131
  *     cdef Heapitem new_elem
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0             # <<<<<<<<<<<<<<
@@ -10833,7 +10833,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":132
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":132
  *     cdef Py_ssize_t nneighbors = structure.shape[0]
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1             # <<<<<<<<<<<<<<
@@ -10842,7 +10842,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_age = 1;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":133
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":133
  *     cdef Py_ssize_t i = 0
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0             # <<<<<<<<<<<<<<
@@ -10851,7 +10851,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":134
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":134
  *     cdef Py_ssize_t age = 1
  *     cdef Py_ssize_t index = 0
  *     cdef Py_ssize_t neighbor_index = 0             # <<<<<<<<<<<<<<
@@ -10860,16 +10860,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_neighbor_index = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":136
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":136
  *     cdef Py_ssize_t neighbor_index = 0
  * 
  *     cdef Heap *hp = <Heap *> heap_from_numpy2()             # <<<<<<<<<<<<<<
  * 
  *     cdef char *mmapped_image
  */
-  __pyx_v_hp = ((struct __pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
+  __pyx_v_hp = ((struct __pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_Heap *)__pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_from_numpy2());
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":147
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":147
  *     cdef DTYPE_INT32_t *mmapped_output_offset
  * 
  *     image_fd = open(image.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -10892,7 +10892,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_image_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":148
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":148
  * 
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -10915,7 +10915,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_marker_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":149
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":149
  *     image_fd = open(image.filename, 'r+b')
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -10938,7 +10938,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_mask_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":150
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":150
  *     marker_fd = open(marker_locations.filename, 'r+b')
  *     mask_fd = open(mask.filename, 'r+b')
  *     output_fd = open(output.filename, 'r+b')             # <<<<<<<<<<<<<<
@@ -10961,7 +10961,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_v_output_fd = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":154
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":154
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,
  *                                   image.size * sizeof(INPUT_DTYPE) + image.offset,             # <<<<<<<<<<<<<<
@@ -10985,7 +10985,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 154, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":157
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":157
  *                                   PROT_READ|PROT_WRITE,
  *                                   MAP_SHARED,
  *                                   image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11012,7 +11012,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":153
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":153
  * 
  *     ############################# MMAP Files #############################
  *     mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11021,7 +11021,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":159
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":159
  *                                   image_fd.fileno(),
  *                                   0)
  *     mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -11034,7 +11034,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":160
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":160
  *                                   0)
  *     mmapped_image += image.offset
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image             # <<<<<<<<<<<<<<
@@ -11043,7 +11043,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_image_offset = ((__pyx_t_5numpy_uint32_t *)__pyx_v_mmapped_image);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":163
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":163
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,
  *                                              marker_locations.size * sizeof(long) + marker_locations.offset,             # <<<<<<<<<<<<<<
@@ -11067,7 +11067,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":166
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":166
  *                                              PROT_READ|PROT_WRITE,
  *                                              MAP_SHARED,
  *                                              marker_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11094,7 +11094,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":162
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":162
  *     mmapped_image_offset = <INPUT_DTYPE *> mmapped_image
  * 
  *     mmapped_marker_locations = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11103,7 +11103,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":168
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":168
  *                                              marker_fd.fileno(),
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset             # <<<<<<<<<<<<<<
@@ -11116,7 +11116,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_marker_locations = (__pyx_v_mmapped_marker_locations + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":169
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":169
  *                                              0)
  *     mmapped_marker_locations += marker_locations.offset
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations             # <<<<<<<<<<<<<<
@@ -11125,7 +11125,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_marker_locations_offset = ((long *)__pyx_v_mmapped_marker_locations);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":172
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":172
  * 
  *     mmapped_mask = <char *> mmap(NULL,
  *                                  mask.size * sizeof(unsigned char) + mask.offset,             # <<<<<<<<<<<<<<
@@ -11149,7 +11149,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":175
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":175
  *                                  PROT_READ|PROT_WRITE,
  *                                  MAP_SHARED,
  *                                  mask_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11176,7 +11176,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":171
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":171
  *     mmapped_marker_locations_offset = <long *> mmapped_marker_locations
  * 
  *     mmapped_mask = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11185,7 +11185,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":177
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":177
  *                                  mask_fd.fileno(),
  *                                  0)
  *     mmapped_mask += mask.offset             # <<<<<<<<<<<<<<
@@ -11198,7 +11198,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":178
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":178
  *                                  0)
  *     mmapped_mask += mask.offset
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask             # <<<<<<<<<<<<<<
@@ -11207,7 +11207,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_mask_offset = ((unsigned char *)__pyx_v_mmapped_mask);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":180
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":180
  *     mmapped_mask_offset = <unsigned char *> mmapped_mask
  * 
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset             # <<<<<<<<<<<<<<
@@ -11238,7 +11238,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":183
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":183
  * 
  *     mmapped_output = <char *> mmap(NULL,
  *                                    output.size * sizeof(DTYPE_INT32_t) + output.offset,             # <<<<<<<<<<<<<<
@@ -11247,7 +11247,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -11262,7 +11262,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":186
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":186
  *                                    PROT_READ|PROT_WRITE,
  *                                    MAP_SHARED,
  *                                    output_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -11289,7 +11289,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":182
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":182
  *     cdef unsigned char[::1] memview_mask = <unsigned char[:mask.size]> mmapped_mask_offset
  * 
  *     mmapped_output = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -11298,7 +11298,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
   __pyx_v_mmapped_output = ((char *)mmap(NULL, __pyx_t_4, (PROT_READ | PROT_WRITE), MAP_SHARED, __pyx_t_5, 0));
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":188
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":188
  *                                    output_fd.fileno(),
  *                                    0)
  *     mmapped_output += output.offset             # <<<<<<<<<<<<<<
@@ -11311,16 +11311,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_output = (__pyx_v_mmapped_output + __pyx_t_6);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":189
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":189
  *                                    0)
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
-  __pyx_v_mmapped_output_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
+  __pyx_v_mmapped_output_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":191
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":191
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
  * 
  *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
@@ -11335,23 +11335,23 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(1, 191, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
+  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
   if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
+  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
   if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
   __pyx_v_memview_output = __pyx_t_9;
   __pyx_t_9.memview = NULL;
   __pyx_t_9.data = NULL;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":194
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":194
  *     ######################################################################
  * 
  *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
@@ -11365,7 +11365,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   }
   __pyx_v_factor = __pyx_t_10;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":196
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":196
  *     cdef INPUT_DTYPE factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
@@ -11378,7 +11378,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_marker_size = __pyx_t_11;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -11393,7 +11393,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       #endif
       /*try:*/ {
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":199
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  * 
  *     with nogil:
  *         for i in range(marker_size):             # <<<<<<<<<<<<<<
@@ -11405,7 +11405,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
         for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":200
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":200
  *     with nogil:
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]             # <<<<<<<<<<<<<<
@@ -11414,7 +11414,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_index = (__pyx_v_mmapped_marker_locations_offset[__pyx_v_i]);
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":201
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
  *         for i in range(marker_size):
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]             # <<<<<<<<<<<<<<
@@ -11423,7 +11423,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_index]));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":202
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":202
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0             # <<<<<<<<<<<<<<
@@ -11432,7 +11432,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.age = 0;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":203
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":203
  *             elem.value = factor * mmapped_image_offset[index]
  *             elem.age = 0
  *             elem.index = index             # <<<<<<<<<<<<<<
@@ -11441,7 +11441,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.index = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":204
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":204
  *             elem.age = 0
  *             elem.index = index
  *             elem.source = index             # <<<<<<<<<<<<<<
@@ -11450,17 +11450,17 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
           __pyx_v_elem.source = __pyx_v_index;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":205
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":205
  *             elem.index = index
  *             elem.source = index
  *             heappush(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *         while hp.items > 0:
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_elem));
         }
 
-        /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":207
+        /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":207
  *             heappush(hp, &elem)
  * 
  *         while hp.items > 0:             # <<<<<<<<<<<<<<
@@ -11471,16 +11471,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
           if (!__pyx_t_13) break;
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":208
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":208
  * 
  *         while hp.items > 0:
  *             heappop(hp, &elem)             # <<<<<<<<<<<<<<
  * 
  *             for i in range(nneighbors):
  */
-          __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
+          __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappop(__pyx_v_hp, (&__pyx_v_elem));
 
-          /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":210
+          /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":210
  *             heappop(hp, &elem)
  * 
  *             for i in range(nneighbors):             # <<<<<<<<<<<<<<
@@ -11492,7 +11492,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
           for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
             __pyx_v_i = __pyx_t_15;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":212
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":212
  *             for i in range(nneighbors):
  *                 # get the flattened address of the neighbor
  *                 neighbor_index = structure[i] + elem.index             # <<<<<<<<<<<<<<
@@ -11502,7 +11502,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_16 = __pyx_v_i;
             __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -11512,7 +11512,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":217
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":217
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  *                     continue             # <<<<<<<<<<<<<<
@@ -11521,7 +11521,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":214
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":214
  *                 neighbor_index = structure[i] + elem.index
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -11530,7 +11530,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -11540,7 +11540,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
             if (__pyx_t_13) {
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":221
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":221
  *                 if mmapped_output_offset[neighbor_index]:
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue             # <<<<<<<<<<<<<<
@@ -11549,7 +11549,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
               goto __pyx_L10_continue;
 
-              /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":219
+              /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":219
  *                     continue
  * 
  *                 if mmapped_output_offset[neighbor_index]:             # <<<<<<<<<<<<<<
@@ -11558,7 +11558,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             }
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":223
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":223
  *                     continue
  * 
  *                 age += 1             # <<<<<<<<<<<<<<
@@ -11567,7 +11567,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_age = (__pyx_v_age + 1);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":224
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":224
  * 
  *                 age += 1
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]             # <<<<<<<<<<<<<<
@@ -11576,7 +11576,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.value = (__pyx_v_factor * (__pyx_v_mmapped_image_offset[__pyx_v_neighbor_index]));
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":226
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":226
  *                 new_elem.value = factor * mmapped_image_offset[neighbor_index]
  * 
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]             # <<<<<<<<<<<<<<
@@ -11585,7 +11585,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             (__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) = (__pyx_v_mmapped_output_offset[__pyx_v_elem.index]);
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":228
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":228
  *                 mmapped_output_offset[neighbor_index] = mmapped_output_offset[elem.index]
  * 
  *                 new_elem.age = age             # <<<<<<<<<<<<<<
@@ -11594,7 +11594,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.age = __pyx_v_age;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":229
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":229
  * 
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index             # <<<<<<<<<<<<<<
@@ -11603,7 +11603,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
  */
             __pyx_v_new_elem.index = __pyx_v_neighbor_index;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":230
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":230
  *                 new_elem.age = age
  *                 new_elem.index = neighbor_index
  *                 new_elem.source = elem.source             # <<<<<<<<<<<<<<
@@ -11613,20 +11613,20 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
             __pyx_t_17 = __pyx_v_elem.source;
             __pyx_v_new_elem.source = __pyx_t_17;
 
-            /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":232
+            /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":232
  *                 new_elem.source = elem.source
  * 
  *                 heappush(hp, &new_elem)             # <<<<<<<<<<<<<<
  * 
  *     heap_done(hp)
  */
-            __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
+            __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heappush(__pyx_v_hp, (&__pyx_v_new_elem));
             __pyx_L10_continue:;
           }
         }
       }
 
-      /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":198
+      /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":198
  *     cdef long marker_size = marker_locations.size
  * 
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -11645,14 +11645,14 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
       }
   }
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":234
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":234
  *                 heappush(hp, &new_elem)
  * 
  *     heap_done(hp)             # <<<<<<<<<<<<<<
  */
-  __pyx_f_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
+  __pyx_f_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_heap_done(__pyx_v_hp);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -11679,7 +11679,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_mask.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_output.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.watershed._watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -27361,7 +27361,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label.watershed._watershed.array", /*tp_name*/
+  "bq3d.image_filters.filters.label.watershed._watershed.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -27472,7 +27472,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label.watershed._watershed.Enum", /*tp_name*/
+  "bq3d.image_filters.filters.label.watershed._watershed.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -27725,7 +27725,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label.watershed._watershed.memoryview", /*tp_name*/
+  "bq3d.image_filters.filters.label.watershed._watershed.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -27855,7 +27855,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clearmap3.image_filters.filters.label.watershed._watershed._memoryviewslice", /*tp_name*/
+  "bq3d.image_filters.filters.label.watershed._watershed._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -28014,8 +28014,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
-  {&__pyx_kp_s_clearmap3_image_filters_filters, __pyx_k_clearmap3_image_filters_filters, sizeof(__pyx_k_clearmap3_image_filters_filters), 0, 0, 1, 0},
-  {&__pyx_n_s_clearmap3_image_filters_filters_2, __pyx_k_clearmap3_image_filters_filters_2, sizeof(__pyx_k_clearmap3_image_filters_filters_2), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_image_filters_filters, __pyx_k_bq3d_image_filters_filters, sizeof(__pyx_k_bq3d_image_filters_filters), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_image_filters_filters_2, __pyx_k_bq3d_image_filters_filters_2, sizeof(__pyx_k_bq3d_image_filters_filters_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_kp_s_contiguous_and_direct, __pyx_k_contiguous_and_direct, sizeof(__pyx_k_contiguous_and_direct), 0, 0, 1, 0},
   {&__pyx_kp_s_contiguous_and_indirect, __pyx_k_contiguous_and_indirect, sizeof(__pyx_k_contiguous_and_indirect), 0, 0, 1, 0},
@@ -28156,7 +28156,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -28439,7 +28439,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -28449,7 +28449,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__35 = PyTuple_Pack(31, __pyx_n_s_image, __pyx_n_s_marker_locations, __pyx_n_s_structure, __pyx_n_s_mask, __pyx_n_s_strides, __pyx_n_s_output, __pyx_n_s_invert, __pyx_n_s_elem, __pyx_n_s_new_elem, __pyx_n_s_nneighbors, __pyx_n_s_i, __pyx_n_s_age, __pyx_n_s_index, __pyx_n_s_neighbor_index, __pyx_n_s_hp, __pyx_n_s_mmapped_image, __pyx_n_s_mmapped_image_offset, __pyx_n_s_mmapped_marker_locations, __pyx_n_s_mmapped_marker_locations_offset, __pyx_n_s_mmapped_mask, __pyx_n_s_mmapped_mask_offset, __pyx_n_s_mmapped_output, __pyx_n_s_mmapped_output_offset, __pyx_n_s_image_fd, __pyx_n_s_marker_fd, __pyx_n_s_mask_fd, __pyx_n_s_output_fd, __pyx_n_s_memview_mask, __pyx_n_s_memview_output, __pyx_n_s_factor, __pyx_n_s_marker_size); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(7, 0, 31, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_watershed, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(7, 0, 31, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters, __pyx_n_s_watershed, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(1, 91, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -28859,14 +28859,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clearmap3__image_filters__filters__label__watershed___watershed) {
+  if (__pyx_module_is_main_bq3d__image_filters__filters__label__watershed___watershed) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(1, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clearmap3.image_filters.filters.label.watershed._watershed")) {
-      if (unlikely(PyDict_SetItemString(modules, "clearmap3.image_filters.filters.label.watershed._watershed", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "bq3d.image_filters.filters.label.watershed._watershed")) {
+      if (unlikely(PyDict_SetItemString(modules, "bq3d.image_filters.filters.label.watershed._watershed", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -28887,7 +28887,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":14
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":14
  * Original author: Lee Kamentsky
  * """
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -28899,7 +28899,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":97
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":97
  *                       cnp.intp_t[::1] strides,
  *                       cnp.ndarray[cnp.int32_t, ndim=3] output,
  *                       DTYPE_BOOL_t invert=False):             # <<<<<<<<<<<<<<
@@ -28909,7 +28909,7 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = __Pyx_PyBool_FromLong(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":91
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":91
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,             # <<<<<<<<<<<<<<
@@ -28923,55 +28923,55 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_1 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_3_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_3, sizeof(__pyx_defaults6), 0)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_CyFunction_Defaults(__pyx_defaults6, __pyx_t_3)->__pyx_arg_invert = 0;
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_28__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_28__defaults__);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_float32_t, __pyx_t_3) < 0) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_5_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_3, sizeof(__pyx_defaults7), 0)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_CyFunction_Defaults(__pyx_defaults7, __pyx_t_3)->__pyx_arg_invert = 0;
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_30__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_30__defaults__);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_float64_t, __pyx_t_3) < 0) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_2__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_7_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_3, sizeof(__pyx_defaults8), 0)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_CyFunction_Defaults(__pyx_defaults8, __pyx_t_3)->__pyx_arg_invert = 0;
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_32__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_32__defaults__);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_uint8_t, __pyx_t_3) < 0) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_3__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_9_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_3, sizeof(__pyx_defaults9), 0)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_CyFunction_Defaults(__pyx_defaults9, __pyx_t_3)->__pyx_arg_invert = 0;
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_34__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_34__defaults__);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_uint16_t, __pyx_t_3) < 0) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_4__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_11_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_3, sizeof(__pyx_defaults10), 0)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_CyFunction_Defaults(__pyx_defaults10, __pyx_t_3)->__pyx_arg_invert = 0;
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_36__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_36__defaults__);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_int32_t, __pyx_t_3) < 0) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_5__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_13_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_3, sizeof(__pyx_defaults11), 0)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_CyFunction_Defaults(__pyx_defaults11, __pyx_t_3)->__pyx_arg_invert = 0;
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_38__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_3, __pyx_pf_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_38__defaults__);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_uint32_t, __pyx_t_3) < 0) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_clearmap3_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_1_watershed, 0, __pyx_n_s_watershed, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_t_2);
   ((__pyx_FusedFunctionObject *) __pyx_t_3)->__signatures__ = __pyx_t_1;
@@ -28980,7 +28980,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/watershed/_watershed.pyx":1
+  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":1
  * # cython: language_level = 3             # <<<<<<<<<<<<<<
  * 
  * """watershed.pyx - cython implementation of guts of watershed
@@ -29153,11 +29153,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_4);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clearmap3.image_filters.filters.label.watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init bq3d.image_filters.filters.label.watershed._watershed", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clearmap3.image_filters.filters.label.watershed._watershed");
+    PyErr_SetString(PyExc_ImportError, "init bq3d.image_filters.filters.label.watershed._watershed");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -35458,7 +35458,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35469,7 +35469,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;

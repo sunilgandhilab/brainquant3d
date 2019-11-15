@@ -2,10 +2,10 @@ import os
 import shutil
 import numpy as np
 import tifffile as tif
-from clearmap3 import io
+from bq3d import io
 
 import logging
-from clearmap3.utils.chunking import range_to_slices
+from bq3d.utils.chunking import range_to_slices
 log = logging.getLogger(__name__)
 
 def dataSize(filename, **args):

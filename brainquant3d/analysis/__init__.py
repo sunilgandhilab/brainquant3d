@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-clearmap3analysis and statistics toolbox.
+bq3danalysis and statistics toolbox.
 
-This part of clearmap3provides a toolbox for the statistical analysis and
+This part of bq3dprovides a toolbox for the statistical analysis and
 visualization of detected cells or structures and region specific analysis
 of annotated data.
 
@@ -15,9 +15,9 @@ Key modules are:
 ====================================== =============================================================
 Module                                 Description
 ====================================== =============================================================
-:mod:`~ClearMap.Analysis.Voxelization` Voxelization of cells for visualization and analysis
-:mod:`~ClearMap.Analysis.Statistics`   Statistical tools for the analysis of detected cells
-:mod:`~ClearMap.Analysis.Label`        Tools to analyse data with respect to annotated references
+:mod:`~brainquant3d.Analysis.Voxelization` Voxelization of cells for visualization and analysis
+:mod:`~brainquant3d.Analysis.Statistics`   Statistical tools for the analysis of detected cells
+:mod:`~brainquant3d.Analysis.Label`        Tools to analyse data with respect to annotated references
 ====================================== =============================================================
 
 """

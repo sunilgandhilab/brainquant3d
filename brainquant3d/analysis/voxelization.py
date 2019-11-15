@@ -6,9 +6,9 @@ import numpy as np
 import math
 import logging
 
-from clearmap3 import io
-import clearmap3.analysis._voxelization as vox
-from clearmap3.analysis.colocalization import point_distance
+from bq3d import io
+import bq3d.analysis._voxelization as vox
+from bq3d.analysis.colocalization import point_distance
 log = logging.getLogger(__name__)
 
 

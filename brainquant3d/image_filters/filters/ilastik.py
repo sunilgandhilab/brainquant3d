@@ -1,9 +1,9 @@
 """
 Inteface to Illastik for pixel classification
 
-This module allows to integrate ilastik and its thresholding module into the *ClearMap* pipeline.
+This module allows to integrate ilastik and its thresholding module into the *brainquant3d* pipeline.
 
-To use ilastik within *ClearMap* use the followng steps:
+To use ilastik within *brainquant3d* use the followng steps:
 
   * train a pixel classifier in ilastik
 
@@ -17,10 +17,10 @@ import os
 import numpy as np
 from pathlib import Path
 
-from clearmap3 import io
-from clearmap3 import config
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d import io
+from bq3d import config
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
 class PixelClassification(FilterBase):
     """Run ilastik pixel classification in headless mode using a trained project file. Output will be a probabilty mask

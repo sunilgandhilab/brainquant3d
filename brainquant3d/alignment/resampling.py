@@ -31,13 +31,13 @@ import shutil
 import cv2
 import tifffile as tif
 
-import clearmap3
-import clearmap3.IO.IO as io
-import clearmap3.IO.FileList as fl
+import bq3d
+import bq3d.IO.IO as io
+import bq3d.IO.FileList as fl
 
 import logging
 
-from clearmap3._version import __version__
+from bq3d._version import __version__
 __author__     = 'Ricardo Azevedo, Jack Zeitoun'
 __copyright__  = "Copyright 2019, Gandhi Lab"
 __license__    = 'BY-NC-SA 4.0'
@@ -281,7 +281,7 @@ def _resampleXYParallel(arg):
 
 
 def resampleData(source, sink=None, orientation=None, dataSizeSink=None, resolutionSource=(.91, .91, 8.3),
-                 resolutionSink=(25, 25, 25), processingDirectory=None, processes=clearmap3.config.processes,
+                 resolutionSink=(25, 25, 25), processingDirectory=None, processes=bq3d.config.processes,
                  cleanup=True, interpolation='linear', **kwargs):
     """Resample data of source in resolution and orientation
 
@@ -388,7 +388,7 @@ def resampleData(source, sink=None, orientation=None, dataSizeSink=None, resolut
 
 def resampleDataInverse(sink, source=None, dataSizeSource=None, orientation=None, resolutionSource=(4.0625, 4.0625, 3),
                         resolutionSink=(25, 25, 25),
-                        processingDirectory=None, processes=clearmap3.config.processes, cleanup=True,
+                        processingDirectory=None, processes=bq3d.config.processes, cleanup=True,
                         interpolation='linear', **args):
     """Resample data inversely to :func:`resampleData` routine
 

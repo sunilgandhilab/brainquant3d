@@ -11,7 +11,7 @@ Summary
     * the moving image is typically the reference image
     * Transforms can be applied to images or point coordinates and direction is assumed to be from fixed -> moving
     * ANTs allows for inverting transforms which can be usefull if better result are obtained with a fixed reference image.
-    * point arrays are assumed to be in (x,y,z) coordinates consistent with (x,y,z) array represenation of images in ClearMap
+    * point arrays are assumed to be in (x,y,z) coordinates consistent with (x,y,z) array represenation of images in brainquant3d
 
 Main routines are: :func:`alignData`, :func:`transformImage` and :func:`transformPoints`.
 """
@@ -21,9 +21,9 @@ import shutil
 import ants
 import numpy as np
 
-from clearmap3 import config
-from clearmap3 import io
-from clearmap3.utils.logger import log_parameters
+from bq3d import config
+from bq3d import io
+from bq3d.utils.logger import log_parameters
 
 import logging
 log = logging.getLogger(__name__)
@@ -34,7 +34,7 @@ def alignData(fixedImage, movingImage, resultDirectory = None, type_of_transform
     Arguments:
         fixedImage (str): image source of the fixed image (typically the reference image)
         movingImage (str): image source of the moving image (typically the image to be registered)
-        resultDirectory (str or None): result directory for transform parameters. None saves to clearmap3default temp file
+        resultDirectory (str or None): result directory for transform parameters. None saves to bq3ddefault temp file
         transform: (str): type of transform to apply as defined in 'ants.registration' type_of_transform
         **kwargs: additional arguments to pass to 'ants.registration'
 

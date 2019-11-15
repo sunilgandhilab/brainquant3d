@@ -11,12 +11,12 @@
             "/usr/local/lib/python3.6/dist-packages/numpy/core/include"
         ],
         "language": "c++",
-        "name": "clearmap3.image_filters.filters.label.util._nonzero_coords",
+        "name": "bq3d.image_filters.filters.label.util._nonzero_coords",
         "sources": [
-            "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx"
+            "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx"
         ]
     },
-    "module_name": "clearmap3.image_filters.filters.label.util._nonzero_coords"
+    "module_name": "bq3d.image_filters.filters.label.util._nonzero_coords"
 }
 END: Cython Metadata */
 
@@ -624,8 +624,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clearmap3__image_filters__filters__label__util___nonzero_coords
-#define __PYX_HAVE_API__clearmap3__image_filters__filters__label__util___nonzero_coords
+#define __PYX_HAVE__bq3d__image_filters__filters__label__util___nonzero_coords
+#define __PYX_HAVE_API__bq3d__image_filters__filters__label__util___nonzero_coords
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -863,7 +863,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx",
+  "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -1093,14 +1093,14 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":10
+/* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":10
  * from posix.mman cimport *
  * 
  * ctypedef cnp.int32_t DTYPE_t             # <<<<<<<<<<<<<<
  * 
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  */
-typedef __pyx_t_5numpy_int32_t __pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t;
+typedef __pyx_t_5numpy_int32_t __pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -1733,13 +1733,13 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, cha
 
 /* Module declarations from 'posix.mman' */
 
-/* Module declarations from 'clearmap3.image_filters.filters.label.util._nonzero_coords' */
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t), 0 };
-#define __Pyx_MODULE_NAME "clearmap3.image_filters.filters.label.util._nonzero_coords"
-extern int __pyx_module_is_main_clearmap3__image_filters__filters__label__util___nonzero_coords;
-int __pyx_module_is_main_clearmap3__image_filters__filters__label__util___nonzero_coords = 0;
+/* Module declarations from 'bq3d.image_filters.filters.label.util._nonzero_coords' */
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t), 0 };
+#define __Pyx_MODULE_NAME "bq3d.image_filters.filters.label.util._nonzero_coords"
+extern int __pyx_module_is_main_bq3d__image_filters__filters__label__util___nonzero_coords;
+int __pyx_module_is_main_bq3d__image_filters__filters__label__util___nonzero_coords = 0;
 
-/* Implementation of 'clearmap3.image_filters.filters.label.util._nonzero_coords' */
+/* Implementation of 'bq3d.image_filters.filters.label.util._nonzero_coords' */
 static PyObject *__pyx_builtin_open;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
@@ -1790,14 +1790,14 @@ static const char __pyx_k_coords_filename[] = "coords_filename";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_mmapped_image_offset[] = "mmapped_image_offset";
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
-static const char __pyx_k_clearmap3_image_filters_filters[] = "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx";
+static const char __pyx_k_bq3d_image_filters_filters[] = "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Format_string_allocated_too_shor[] = "Format string allocated too short, see comment in numpy.pxd";
 static const char __pyx_k_Non_native_byte_order_not_suppor[] = "Non-native byte order not supported";
 static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not Fortran contiguous";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
-static const char __pyx_k_clearmap3_image_filters_filters_2[] = "clearmap3.image_filters.filters.label.util._nonzero_coords";
+static const char __pyx_k_bq3d_image_filters_filters_2[] = "bq3d.image_filters.filters.label.util._nonzero_coords";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor;
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor_2;
@@ -1806,8 +1806,8 @@ static PyObject *__pyx_kp_u_Non_native_byte_order_not_suppor;
 static PyObject *__pyx_n_s_RuntimeError;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_byteorder;
-static PyObject *__pyx_kp_s_clearmap3_image_filters_filters;
-static PyObject *__pyx_n_s_clearmap3_image_filters_filters_2;
+static PyObject *__pyx_kp_s_bq3d_image_filters_filters;
+static PyObject *__pyx_n_s_bq3d_image_filters_filters_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_coords_fd;
 static PyObject *__pyx_n_s_coords_filename;
@@ -1853,7 +1853,7 @@ static PyObject *__pyx_n_s_y;
 static PyObject *__pyx_n_s_ymax;
 static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_s_zmax;
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyObject *__pyx_v_coords_filename); /* proto */
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyObject *__pyx_v_coords_filename); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static PyObject *__pyx_int_8;
@@ -1869,7 +1869,7 @@ static PyObject *__pyx_tuple__9;
 static PyObject *__pyx_codeobj__10;
 /* Late includes */
 
-/* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":14
+/* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
@@ -1878,10 +1878,10 @@ static PyObject *__pyx_codeobj__10;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords[] = " generates linear indices of all non zero values in array\n    ";
-static PyMethodDef __pyx_mdef_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords = {"_nonzero_coords", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords};
-static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords[] = " generates linear indices of all non zero values in array\n    ";
+static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords = {"_nonzero_coords", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords};
+static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_image = 0;
   PyObject *__pyx_v_coords_filename = 0;
   PyObject *__pyx_r = 0;
@@ -1929,12 +1929,12 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_15_no
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("_nonzero_coords", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 14, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_image), __pyx_ptype_5numpy_ndarray, 1, "image", 0))) __PYX_ERR(0, 14, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords(__pyx_self, __pyx_v_image, __pyx_v_coords_filename);
+  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords(__pyx_self, __pyx_v_image, __pyx_v_coords_filename);
 
   /* function exit code */
   goto __pyx_L0;
@@ -1945,7 +1945,7 @@ static PyObject *__pyx_pw_9clearmap3_13image_filters_7filters_5label_4util_15_no
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyObject *__pyx_v_coords_filename) {
+static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords__nonzero_coords(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_image, PyObject *__pyx_v_coords_filename) {
   long __pyx_v_zmax;
   long __pyx_v_ymax;
   long __pyx_v_xmax;
@@ -1953,10 +1953,10 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
   long __pyx_v_y;
   long __pyx_v_x;
   long __pyx_v_idx;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t __pyx_v_image_val;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t __pyx_v_image_val;
   PyObject *__pyx_v_byteorder = NULL;
   char *__pyx_v_mmapped_image;
-  __pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t *__pyx_v_mmapped_image_offset;
+  __pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t *__pyx_v_mmapped_image_offset;
   int __pyx_v_i;
   PyObject *__pyx_v_coords_fd = NULL;
   PyObject *__pyx_v_image_fd = NULL;
@@ -2000,11 +2000,11 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
   __pyx_pybuffernd_image.rcbuffer = &__pyx_pybuffer_image;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_image.rcbuffer->pybuffer, (PyObject*)__pyx_v_image, &__Pyx_TypeInfo_nn___pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 14, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_image.rcbuffer->pybuffer, (PyObject*)__pyx_v_image, &__Pyx_TypeInfo_nn___pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 14, __pyx_L1_error)
   }
   __pyx_pybuffernd_image.diminfo[0].strides = __pyx_pybuffernd_image.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_image.diminfo[0].shape = __pyx_pybuffernd_image.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_image.diminfo[1].strides = __pyx_pybuffernd_image.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_image.diminfo[1].shape = __pyx_pybuffernd_image.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_image.diminfo[2].strides = __pyx_pybuffernd_image.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_image.diminfo[2].shape = __pyx_pybuffernd_image.rcbuffer->pybuffer.shape[2];
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":19
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":19
  * 
  *     # Expects an image of type int32
  *     cdef long zmax = image.shape[0]             # <<<<<<<<<<<<<<
@@ -2013,7 +2013,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
   __pyx_v_zmax = (__pyx_v_image->dimensions[0]);
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":20
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":20
  *     # Expects an image of type int32
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]             # <<<<<<<<<<<<<<
@@ -2022,7 +2022,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
   __pyx_v_ymax = (__pyx_v_image->dimensions[1]);
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":21
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":21
  *     cdef long zmax = image.shape[0]
  *     cdef long ymax = image.shape[1]
  *     cdef long xmax = image.shape[2]             # <<<<<<<<<<<<<<
@@ -2031,7 +2031,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
   __pyx_v_xmax = (__pyx_v_image->dimensions[2]);
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":26
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":26
  *     cdef DTYPE_t image_val
  * 
  *     byteorder = sys.byteorder             # <<<<<<<<<<<<<<
@@ -2046,7 +2046,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
   __pyx_v_byteorder = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":31
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":31
  *     cdef DTYPE_t *mmapped_image_offset
  * 
  *     cdef int i = 0             # <<<<<<<<<<<<<<
@@ -2055,7 +2055,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
   __pyx_v_i = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":33
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":33
  *     cdef int i = 0
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:             # <<<<<<<<<<<<<<
@@ -2155,7 +2155,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                   __pyx_v_image_fd = __pyx_t_2;
                   __pyx_t_2 = 0;
 
-                  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":35
+                  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":35
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:
  * 
  *         for z in range(zmax):             # <<<<<<<<<<<<<<
@@ -2167,7 +2167,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                   for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
                     __pyx_v_z = __pyx_t_15;
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":38
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":38
  * 
  *             mmapped_image = <char *> mmap(NULL,
  *                                           image.size * sizeof(DTYPE_t) + image.offset,             # <<<<<<<<<<<<<<
@@ -2176,7 +2176,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
-                    __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L17_error)
+                    __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_4);
                     __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_1);
@@ -2191,7 +2191,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     __pyx_t_16 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_16 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L17_error)
                     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":41
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":41
  *                                           PROT_READ,
  *                                           MAP_SHARED,
  *                                           image_fd.fileno(),             # <<<<<<<<<<<<<<
@@ -2218,7 +2218,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     __pyx_t_17 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_17 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L17_error)
                     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":37
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":37
  *         for z in range(zmax):
  * 
  *             mmapped_image = <char *> mmap(NULL,             # <<<<<<<<<<<<<<
@@ -2227,7 +2227,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                     __pyx_v_mmapped_image = ((char *)mmap(NULL, __pyx_t_16, PROT_READ, MAP_SHARED, __pyx_t_17, 0));
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":43
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":43
  *                                           image_fd.fileno(),
  *                                           0)
  *             mmapped_image += image.offset             # <<<<<<<<<<<<<<
@@ -2240,16 +2240,16 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
                     __pyx_v_mmapped_image = (__pyx_v_mmapped_image + __pyx_t_18);
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":44
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":44
  *                                           0)
  *             mmapped_image += image.offset
  *             mmapped_image_offset = <DTYPE_t *> mmapped_image             # <<<<<<<<<<<<<<
  * 
  *             for y in range(ymax):
  */
-                    __pyx_v_mmapped_image_offset = ((__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t *)__pyx_v_mmapped_image);
+                    __pyx_v_mmapped_image_offset = ((__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t *)__pyx_v_mmapped_image);
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":46
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":46
  *             mmapped_image_offset = <DTYPE_t *> mmapped_image
  * 
  *             for y in range(ymax):             # <<<<<<<<<<<<<<
@@ -2261,7 +2261,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     for (__pyx_t_21 = 0; __pyx_t_21 < __pyx_t_20; __pyx_t_21+=1) {
                       __pyx_v_y = __pyx_t_21;
 
-                      /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":47
+                      /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":47
  * 
  *             for y in range(ymax):
  *                 for x in range(xmax):             # <<<<<<<<<<<<<<
@@ -2273,7 +2273,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                       for (__pyx_t_24 = 0; __pyx_t_24 < __pyx_t_23; __pyx_t_24+=1) {
                         __pyx_v_x = __pyx_t_24;
 
-                        /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":48
+                        /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":48
  *             for y in range(ymax):
  *                 for x in range(xmax):
  *                     idx = (z * ymax * xmax) + (y * xmax) + x             # <<<<<<<<<<<<<<
@@ -2282,7 +2282,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                         __pyx_v_idx = ((((__pyx_v_z * __pyx_v_ymax) * __pyx_v_xmax) + (__pyx_v_y * __pyx_v_xmax)) + __pyx_v_x);
 
-                        /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":49
+                        /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":49
  *                 for x in range(xmax):
  *                     idx = (z * ymax * xmax) + (y * xmax) + x
  *                     image_val = mmapped_image_offset[idx]             # <<<<<<<<<<<<<<
@@ -2291,7 +2291,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                         __pyx_v_image_val = (__pyx_v_mmapped_image_offset[__pyx_v_idx]);
 
-                        /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":50
+                        /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":50
  *                     idx = (z * ymax * xmax) + (y * xmax) + x
  *                     image_val = mmapped_image_offset[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate             # <<<<<<<<<<<<<<
@@ -2301,7 +2301,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                         __pyx_t_25 = ((__pyx_v_image_val != 0) != 0);
                         if (__pyx_t_25) {
 
-                          /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":51
+                          /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":51
  *                     image_val = mmapped_image_offset[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))             # <<<<<<<<<<<<<<
@@ -2349,7 +2349,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
                           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-                          /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":52
+                          /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":52
  *                     if image_val != 0: # If value is nonzero, record the coordinate
  *                         coords_fd.write((idx).to_bytes(8, byteorder, signed=True))
  *                         i += 1             # <<<<<<<<<<<<<<
@@ -2358,7 +2358,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                           __pyx_v_i = (__pyx_v_i + 1);
 
-                          /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":50
+                          /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":50
  *                     idx = (z * ymax * xmax) + (y * xmax) + x
  *                     image_val = mmapped_image_offset[idx]
  *                     if image_val != 0: # If value is nonzero, record the coordinate             # <<<<<<<<<<<<<<
@@ -2369,7 +2369,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                       }
                     }
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":54
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":54
  *                         i += 1
  * 
  *             mmapped_image -= image.offset             # <<<<<<<<<<<<<<
@@ -2382,7 +2382,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
                     __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_18);
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":55
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":55
  * 
  *             mmapped_image -= image.offset
  *             munmap(mmapped_image, image.size * sizeof(DTYPE_t) + image.offset)             # <<<<<<<<<<<<<<
@@ -2391,7 +2391,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
-                    __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L17_error)
+                    __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_4);
                     __pyx_t_27 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 55, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_27);
@@ -2407,7 +2407,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
                     (void)(munmap(__pyx_v_mmapped_image, __pyx_t_16));
 
-                    /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":56
+                    /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":56
  *             mmapped_image -= image.offset
  *             munmap(mmapped_image, image.size * sizeof(DTYPE_t) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(DTYPE_t))             # <<<<<<<<<<<<<<
@@ -2416,7 +2416,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
-                    __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L17_error)
+                    __pyx_t_4 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_DTYPE_t))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_4);
                     __pyx_t_27 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 56, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_27);
@@ -2427,7 +2427,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                     (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_16));
                   }
 
-                  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":33
+                  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":33
  *     cdef int i = 0
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:             # <<<<<<<<<<<<<<
@@ -2447,7 +2447,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
                 __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
                 __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
                 /*except:*/ {
-                  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
+                  __Pyx_AddTraceback("bq3d.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
                   if (__Pyx_GetException(&__pyx_t_27, &__pyx_t_4, &__pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L19_except_error)
                   __Pyx_GOTREF(__pyx_t_27);
                   __Pyx_GOTREF(__pyx_t_4);
@@ -2522,7 +2522,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         /*except:*/ {
-          __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          __Pyx_AddTraceback("bq3d.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
           if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_4, &__pyx_t_27) < 0) __PYX_ERR(0, 33, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_GOTREF(__pyx_t_4);
@@ -2585,7 +2585,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
     __pyx_L37:;
   }
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":58
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":58
  *             munmap(mmapped_image_offset, image.size * sizeof(DTYPE_t))
  * 
  *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
@@ -2613,7 +2613,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
   __pyx_t_26 = 0;
   goto __pyx_L0;
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":14
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
@@ -2635,7 +2635,7 @@ static PyObject *__pyx_pf_9clearmap3_13image_filters_7filters_5label_4util_15_no
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_image.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("clearmap3.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("bq3d.image_filters.filters.label.util._nonzero_coords._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -5120,8 +5120,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_RuntimeError, __pyx_k_RuntimeError, sizeof(__pyx_k_RuntimeError), 0, 0, 1, 1},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_byteorder, __pyx_k_byteorder, sizeof(__pyx_k_byteorder), 0, 0, 1, 1},
-  {&__pyx_kp_s_clearmap3_image_filters_filters, __pyx_k_clearmap3_image_filters_filters, sizeof(__pyx_k_clearmap3_image_filters_filters), 0, 0, 1, 0},
-  {&__pyx_n_s_clearmap3_image_filters_filters_2, __pyx_k_clearmap3_image_filters_filters_2, sizeof(__pyx_k_clearmap3_image_filters_filters_2), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_image_filters_filters, __pyx_k_bq3d_image_filters_filters, sizeof(__pyx_k_bq3d_image_filters_filters), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_image_filters_filters_2, __pyx_k_bq3d_image_filters_filters_2, sizeof(__pyx_k_bq3d_image_filters_filters_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_coords_fd, __pyx_k_coords_fd, sizeof(__pyx_k_coords_fd), 0, 0, 1, 1},
   {&__pyx_n_s_coords_filename, __pyx_k_coords_filename, sizeof(__pyx_k_coords_filename), 0, 0, 1, 1},
@@ -5184,7 +5184,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":33
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":33
  *     cdef int i = 0
  * 
  *     with open(coords_filename, 'w+b') as coords_fd, open(image.filename, 'rb') as image_fd:             # <<<<<<<<<<<<<<
@@ -5272,7 +5272,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":14
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
@@ -5282,7 +5282,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__9 = PyTuple_Pack(16, __pyx_n_s_image, __pyx_n_s_coords_filename, __pyx_n_s_zmax, __pyx_n_s_ymax, __pyx_n_s_xmax, __pyx_n_s_z, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_idx, __pyx_n_s_image_val, __pyx_n_s_byteorder, __pyx_n_s_mmapped_image, __pyx_n_s_mmapped_image_offset, __pyx_n_s_i, __pyx_n_s_coords_fd, __pyx_n_s_image_fd); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clearmap3_image_filters_filters, __pyx_n_s_nonzero_coords, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters, __pyx_n_s_nonzero_coords, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5560,14 +5560,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clearmap3__image_filters__filters__label__util___nonzero_coords) {
+  if (__pyx_module_is_main_bq3d__image_filters__filters__label__util___nonzero_coords) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clearmap3.image_filters.filters.label.util._nonzero_coords")) {
-      if (unlikely(PyDict_SetItemString(modules, "clearmap3.image_filters.filters.label.util._nonzero_coords", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "bq3d.image_filters.filters.label.util._nonzero_coords")) {
+      if (unlikely(PyDict_SetItemString(modules, "bq3d.image_filters.filters.label.util._nonzero_coords", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5588,7 +5588,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":3
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":3
  * # cython: language_level = 3
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -5600,7 +5600,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":4
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":4
  * 
  * import numpy as np
  * import sys             # <<<<<<<<<<<<<<
@@ -5612,19 +5612,19 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":14
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":14
  * @cython.boundscheck(False) # turn off bounds-checking for entire function
  * @cython.wraparound(False)  # turn off negative index wrapping for entire function
  * def _nonzero_coords(cnp.ndarray[DTYPE_t, ndim=3] image, coords_filename):             # <<<<<<<<<<<<<<
  *     """ generates linear indices of all non zero values in array
  *     """
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9clearmap3_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords, NULL, __pyx_n_s_clearmap3_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_5label_4util_15_nonzero_coords_1_nonzero_coords, NULL, __pyx_n_s_bq3d_image_filters_filters_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_nonzero_coords, __pyx_t_1) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx":1
+  /* "bq3d/image_filters/filters/label/util/_nonzero_coords.pyx":1
  * # cython: language_level = 3             # <<<<<<<<<<<<<<
  * 
  * import numpy as np
@@ -5649,11 +5649,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clearmap3.image_filters.filters.label.util._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init bq3d.image_filters.filters.label.util._nonzero_coords", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clearmap3.image_filters.filters.label.util._nonzero_coords");
+    PyErr_SetString(PyExc_ImportError, "init bq3d.image_filters.filters.label.util._nonzero_coords");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

@@ -16,8 +16,8 @@ import numpy
 import tifffile as tif
 import matplotlib as mpl
 
-from clearmap3 import io
-import clearmap3.analysis.voxelization as vox
+from bq3d import io
+import bq3d.analysis.voxelization as vox
 
 
 import logging

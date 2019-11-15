@@ -1,7 +1,7 @@
-from clearmap3.image_filters import filter_manager
-from clearmap3.image_filters.filter import FilterBase
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 
-from clearmap3.image_filters.filters.helpers.greyReconstruction import reconstruct
+from bq3d.image_filters.filters.helpers.greyReconstruction import reconstruct
 
 class HMax(FilterBase):
     """ Calculates h-maximum transform of an image.
