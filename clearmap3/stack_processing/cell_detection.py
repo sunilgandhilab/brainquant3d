@@ -111,6 +111,7 @@ def process_flow(source,
         raise err
 
     # join results
+    results = [r for r in resilts if len(r) > 0]
     results = join_points(results, unique_chunks, overlap_chunks)
     results = jsonify_points(output_properties, results)
 

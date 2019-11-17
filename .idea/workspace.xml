@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/label_properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/analysis/label_properties.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/slots.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -287,14 +288,7 @@
       <workItem from="1571761267338" duration="334000" />
       <workItem from="1571761913312" duration="53732000" />
       <workItem from="1572637519894" duration="56402000" />
-      <workItem from="1573772492315" duration="3561000" />
-    </task>
-    <task id="LOCAL-00015" summary="updated lib">
-      <created>1565046560512</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1565046560512</updated>
+      <workItem from="1573772492315" duration="9549000" />
     </task>
     <task id="LOCAL-00016" summary="updated lib">
       <created>1565047332228</created>
@@ -632,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573593155422</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="- fixed dumb error">
+      <created>1573849079597</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1573849079598</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +656,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added readme to docs" />
     <MESSAGE value="added include form cython" />
     <MESSAGE value="fixed include form cython" />
     <MESSAGE value="updated lib" />
@@ -680,7 +680,8 @@
     <MESSAGE value="fixed Jacks watershed call" />
     <MESSAGE value="- bug fixes&#10;- made label_props more flexible by allowing input of output params&#10;- refactored clearmap.IO as clearmap.io&#10;- modified label_props to allow for more flexibility in the future by accepting a list of properties to export.&#10;- label props now skipped if not output_properties defined&#10;- points can now be read/written to json" />
     <MESSAGE value="- fixewd tempfile behavior so it properly deletes folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixewd tempfile behavior so it properly deletes folder" />
+    <MESSAGE value="- fixed dumb error" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed dumb error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
