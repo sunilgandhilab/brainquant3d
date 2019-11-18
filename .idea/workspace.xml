@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,28 +286,7 @@
       <workItem from="1571761267338" duration="334000" />
       <workItem from="1571761913312" duration="53732000" />
       <workItem from="1572637519894" duration="56402000" />
-      <workItem from="1573772492315" duration="11848000" />
-    </task>
-    <task id="LOCAL-00017" summary="updated lib">
-      <created>1565047640333</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1565047640333</updated>
-    </task>
-    <task id="LOCAL-00018" summary="updated lib">
-      <created>1565048193050</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1565048193050</updated>
-    </task>
-    <task id="LOCAL-00019" summary="updated lib">
-      <created>1565048840064</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1565048840064</updated>
+      <workItem from="1573772492315" duration="12844000" />
     </task>
     <task id="LOCAL-00020" summary="fixed setup.py">
       <created>1565060633208</created>
@@ -632,7 +610,28 @@
       <option name="project" value="LOCAL" />
       <updated>1574011435071</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="- fixed bug when label code receives blank mage">
+      <created>1574046486625</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1574046486625</updated>
+    </task>
+    <task id="LOCAL-00067" summary="- fixed bug when label code receives blank mage">
+      <created>1574046524257</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1574046524257</updated>
+    </task>
+    <task id="LOCAL-00068" summary="- fixed bug when label code receives blank mage">
+      <created>1574046720372</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1574046720372</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

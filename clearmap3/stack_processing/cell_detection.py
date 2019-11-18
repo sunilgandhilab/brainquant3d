@@ -111,7 +111,6 @@ def process_flow(source,
         raise err
 
     # join results
-    results = [r for r in resilts if len(r) > 0]
     results = join_points(results, unique_chunks, overlap_chunks)
     results = jsonify_points(output_properties, results)
 
@@ -139,8 +138,12 @@ def join_points(results, unique_ranges, overlap_ranges):
 
     nchunks = len(results)
 
-    all_coords  = [results[i][0] for i in range(nchunks)]
-    all_props   = [results[i][1:] for i in range(nchunks)]
+    all_coords  = []
+    all_props   = []
+    for r in results:
+        if len(r) > 0:
+            all_coords.append(results[i][0] for i in range(nchunks))
+            all_props.append(results[i][1:] for i in range(nchunks))
 
     filtered_data = None
 
