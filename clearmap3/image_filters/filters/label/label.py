@@ -93,9 +93,19 @@ class Label(FilterBase):
         _, counts = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img)
 
         if len(counts) == 0:
-            self.input[:] = 0
+            if mode == 3:
+                if self.input.ndim == 2:
+                    labeled_1_img = labeled_1_img[1:-1,1:-1]
+                else:
+                    labeled_1_img = labeled_1_img[1:-1,1:-1,1:-1]
+
+            out = io.empty(os.path.join(self.temp_dir, 'output.tif'),
+                           shape=labeled_1_img.shape,
+                           dtype=labeled_1_img.dtype)
+            out[:] = labeled_1_img
+
             self.log.debug('No components found in first threshold.')
-            return io.readData(self.input.filename)
+            return out
 
         if self.mode == 1:
             return io.readData(labeled_1_img.filename)
