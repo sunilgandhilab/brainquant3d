@@ -102,7 +102,7 @@ class Label(FilterBase):
             out = io.empty(os.path.join(self.temp_dir, 'output.tif'),
                            shape=labeled_1_img.shape,
                            dtype=labeled_1_img.dtype)
-            out[:] = labeled_1_img
+            out[:] = 0
 
             self.log.debug('No components found in first threshold.')
             return out
