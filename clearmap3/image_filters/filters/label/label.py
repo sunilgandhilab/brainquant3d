@@ -93,7 +93,7 @@ class Label(FilterBase):
         _, counts = size_filter(labeled_1_img, self.min_size, self.max_size, labeled_1_img)
 
         if len(counts) == 0:
-            if mode == 3:
+            if self.mode == 3:
                 if self.input.ndim == 2:
                     labeled_1_img = labeled_1_img[1:-1,1:-1]
                 else:
