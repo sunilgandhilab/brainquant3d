@@ -4,9 +4,12 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="- fixed bug when label code receives blank mage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/io/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/io/io.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clearmap3/utils/chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/utils/chunking.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,14 +289,7 @@
       <workItem from="1571761267338" duration="334000" />
       <workItem from="1571761913312" duration="53732000" />
       <workItem from="1572637519894" duration="56402000" />
-      <workItem from="1573772492315" duration="12844000" />
-    </task>
-    <task id="LOCAL-00020" summary="fixed setup.py">
-      <created>1565060633208</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1565060633208</updated>
+      <workItem from="1573772492315" duration="15093000" />
     </task>
     <task id="LOCAL-00021" summary="fixed setup.py">
       <created>1565063270142</created>
@@ -631,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574046720372</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="- fixed bug when label code receives blank mage">
+      <created>1574097508988</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1574097508988</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,6 +712,11 @@
           <line>127</line>
           <option name="timeStamp" value="221" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/clearmap3/utils/chunking.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -721,7 +729,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/clearmap3$cell_detection.coverage" NAME="cell_detection Coverage Results" MODIFIED="1572906449696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clearmap3/stack_processing" />
-    <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573592861246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574140595157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$axon_segmentation.coverage" NAME="axon_segmentation Coverage Results" MODIFIED="1569969334405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1573586263679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>

@@ -142,8 +142,8 @@ def join_points(results, unique_ranges, overlap_ranges):
     all_props   = []
     for r in results:
         if len(r) > 0:
-            all_coords.append(results[i][0] for i in range(nchunks))
-            all_props.append(results[i][1:] for i in range(nchunks))
+            all_coords.append(r[0])
+            all_props.append(r[1:])
 
     filtered_data = None
 
@@ -154,7 +154,7 @@ def join_points(results, unique_ranges, overlap_ranges):
         if len(coords) > 0:
             # covert to abs coordinates
             min_coord = tuple(rng[0] for rng in unique_ranges[i])
-            max_coord = tuple(rng[1] for rng in unique_ranges[  i])
+            max_coord = tuple(rng[1] for rng in unique_ranges[i])
             coords = coords + tuple(rng[0] for rng in overlap_ranges[i])
 
             # generate mask
@@ -163,6 +163,7 @@ def join_points(results, unique_ranges, overlap_ranges):
 
             # join data
             data = np.concatenate((coords, props), axis=1)
+            data = data[mask]
 
             if not isinstance(filtered_data, np.ndarray):
                 filtered_data = data
