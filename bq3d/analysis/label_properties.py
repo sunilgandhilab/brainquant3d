@@ -58,7 +58,7 @@ def region_props(label_image, intensity_image=None):
     if label_image.ndim not in (2, 3):
         raise TypeError('Only 2d and 3d images are supported.')
 
-    if intensity_image:
+    if isinstance(intensity_image, np.ndarray):
         if not intensity_image.shape == label_image.shape:
             raise ValueError('Label and intensity image must have the same shape.')
 

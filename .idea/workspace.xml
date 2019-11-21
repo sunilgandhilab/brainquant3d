@@ -5,107 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ClearMap3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BrainQuant3D.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/.lib-linux/libopencv_core.so.3.4" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/.lib-linux/libopencv_core.so.3.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/.lib-linux/libopencv_imgproc.so.3.4" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/.lib-linux/libopencv_imgproc.so.3.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/.lib-osx/libopencv_core.3.4.5.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/.lib-osx/libopencv_core.3.4.5.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/.lib-osx/libopencv_imgproc.3.4.5.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/.lib-osx/libopencv_imgproc.3.4.5.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/ants.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/ants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/elastix.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/elastix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/resampling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/_voxelization.c" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/_voxelization.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/_voxelization.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/_voxelization.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/colocalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/colocalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/label_properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/label_properties.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/region_atlas.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/region_atlas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/statistics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/analysis/voxelization.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/voxelization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/DoG.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/DoG.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/_background_subtraction.c" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/_background_subtraction.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/_background_subtraction.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/_background_subtraction.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/background_subtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/background_subtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/erosion.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/erosion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/h_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/h_max.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/helpers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/helpers/array_manipulations.c" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/array_manipulations.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/helpers/array_manipulations.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/array_manipulations.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/helpers/filterKernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/filterKernel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/helpers/greyReconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/greyReconstruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/helpers/structureElement.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/structureElement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/ilastik.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/ilastik.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/illumination_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/illumination_correction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_connect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_connect.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_connect.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_connect.pxd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_connect.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_connect.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_filter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_filter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_filter.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_filter.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_overlap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_overlap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_overlap.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_overlap.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_threshold.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/_threshold.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/_threshold.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/connect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/overlap.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/overlap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/threshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/threshold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/_nonzero_coords.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/_nonzero_coords.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/_nonzero_coords.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/_nonzero_coords.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/util/nonzero_coords.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/nonzero_coords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/_watershed.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/extrema.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/extrema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/heap_general.pxi" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_general.pxi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/heap_watershed.pxi" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_watershed.pxi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/watershed/watershed.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/watershed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/max.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/max.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/median.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/median.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/projection.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/projection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/surface_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/surface_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/template.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/thresholding.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/thresholding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/.IO.py.swp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/.IO.py.swp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/CSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/CSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/FileList.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/FileList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/Imaris.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/Imaris.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/NPY.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/NPY.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/NRRD.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/NRRD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/RAW.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/RAW.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/TIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/TIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/VTK.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/VTK.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/io.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/io/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/stack_processing/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/cell_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/stack_processing/cell_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/stack_processing/parallelization.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/stack_processing/parallelization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/checkpointing.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/checkpointing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/chunking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/dataframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/dataframe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/logger_default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/logger_default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/timer.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/timer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/visualization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/visualization/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/visualization/colormaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/visualization/colormaps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/visualization/overlays.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/visualization/overlays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/analysis/label_properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/label_properties.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -388,6 +291,7 @@
       <workItem from="1573772492315" duration="25781000" />
       <workItem from="1574215365334" duration="7851000" />
       <workItem from="1574275210826" duration="8412000" />
+      <workItem from="1574304872679" duration="2071000" />
     </task>
     <task id="LOCAL-00022" summary="fixed setup.py">
       <created>1565067638597</created>
@@ -831,6 +735,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/brainquant3d$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574306720248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$cell_detection.coverage" NAME="cell_detection Coverage Results" MODIFIED="1572906449696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clearmap3/stack_processing" />
     <SUITE FILE_PATH="coverage/BrainQuant3D$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574304139931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574220377457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
