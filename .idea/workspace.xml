@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/analysis/label_properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/analysis/label_properties.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/resampling.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -291,14 +289,7 @@
       <workItem from="1573772492315" duration="25781000" />
       <workItem from="1574215365334" duration="7851000" />
       <workItem from="1574275210826" duration="8412000" />
-      <workItem from="1574304872679" duration="2071000" />
-    </task>
-    <task id="LOCAL-00022" summary="fixed setup.py">
-      <created>1565067638597</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1565067638597</updated>
+      <workItem from="1574304872679" duration="6842000" />
     </task>
     <task id="LOCAL-00023" summary="fixed setup.py">
       <created>1565373292462</created>
@@ -636,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574140743895</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="- fixed bug when label code receives blank mage">
+      <created>1574306990397</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1574306990398</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -735,7 +733,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/brainquant3d$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574306720248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/brainquant3d$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574307285279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$cell_detection.coverage" NAME="cell_detection Coverage Results" MODIFIED="1572906449696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clearmap3/stack_processing" />
     <SUITE FILE_PATH="coverage/BrainQuant3D$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574304139931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574220377457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
