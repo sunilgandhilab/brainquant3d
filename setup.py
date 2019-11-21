@@ -6,7 +6,7 @@
 import os
 import sys
 import numpy
-import pip
+from pip._internal import main
 import pkgutil
 import shutil
 import tarfile
@@ -170,9 +170,9 @@ class install(_install):
 
         # install antspy
         if sys.platform == 'linux':
-            pip.main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
+            main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
         if sys.platform == 'darwin':
-            pip.main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
+            main(['install', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
 
 
 cmdclass['install'] = install
