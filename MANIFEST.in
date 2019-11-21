@@ -1,5 +1,5 @@
-include clearmap3/default.conf
-include clearmap3/utils/logger_default.conf
-graft clearmap3/.lib-linux
-graft clearmap3/.lib-osx
-graft clearmap3/.external
+include bq3s/default.conf
+include bq3d/utils/logger_default.conf
+graft bq3d/.lib-linux
+graft bq3d/.lib-osx
+graft bq3d/.external
