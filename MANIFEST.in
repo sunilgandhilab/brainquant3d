@@ -1,4 +1,4 @@
-include bq3s/default.conf
+include bq3d/default.conf
 include bq3d/utils/logger_default.conf
 graft bq3d/.lib-linux
 graft bq3d/.lib-osx
