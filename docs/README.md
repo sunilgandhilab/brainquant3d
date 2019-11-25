@@ -1,6 +1,6 @@
 # Install:
 ```
-pip3 install git+https://github.com/ricardo-re-azevedo/brainquant3d --user 
+python3 -m pip install git+https://github.com/ricardo-re-azevedo/brainquant3d --user 
 ```
 
 After installation you should edit the packages settings for your system. The settings are help in:
