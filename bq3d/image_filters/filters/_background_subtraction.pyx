@@ -348,8 +348,8 @@ def subtract_background_rolling_ball(DTYPE[:,:] img, int radius):
         img (array): uint8 or uint16 nnumpy array. must be little
         radius (int): Radius of the rolling ball creating the background (actually a
                       paraboloid of rotation with the same curvature)
-
         size (tuple): Size for the structure element of the morphological opening.
+
     Returns:
         img, background: Background subtracted image, Background
     """

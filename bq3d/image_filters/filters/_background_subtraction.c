@@ -933,7 +933,7 @@ typedef struct {
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
+struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
@@ -946,9 +946,9 @@ struct __pyx_memoryviewslice_obj;
  * 
  *     cdef Py_ssize_t width
  */
-struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract {
+struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract {
   PyObject_HEAD
-  struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_vtab;
+  struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_vtab;
   Py_ssize_t width;
   Py_ssize_t height;
   Py_ssize_t s_width;
@@ -1045,16 +1045,16 @@ struct __pyx_memoryviewslice_obj {
  *     cdef Py_ssize_t width
  */
 
-struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract {
-  __Pyx_memviewslice (*_roll_ball)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice);
-  __Pyx_memviewslice (*_shrink_image)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int);
-  __Pyx_memviewslice (*_enlarge_image)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, __Pyx_memviewslice);
-  PyObject *(*_make_interpolation_arrays)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, Py_ssize_t, int);
-  void (*_create_ball)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, int);
-  PyObject *(*__pyx_fuse_0rolling_ball_background)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int);
-  PyObject *(*__pyx_fuse_1rolling_ball_background)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int);
+struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract {
+  __Pyx_memviewslice (*_roll_ball)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice);
+  __Pyx_memviewslice (*_shrink_image)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int);
+  __Pyx_memviewslice (*_enlarge_image)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, __Pyx_memviewslice);
+  PyObject *(*_make_interpolation_arrays)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, Py_ssize_t, int);
+  void (*_create_ball)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, int);
+  PyObject *(*__pyx_fuse_0rolling_ball_background)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int);
+  PyObject *(*__pyx_fuse_1rolling_ball_background)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int);
 };
-static struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_vtabptr_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
+static struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_vtabptr_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
 
 
 /* "View.MemoryView":105
@@ -1932,13 +1932,13 @@ static int __Pyx_check_binary_version(void);
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto*/
-static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto*/
-static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__roll_ball(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_float_img); /* proto*/
-static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__shrink_image(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_flat_img, int __pyx_v_shrink_factor); /* proto*/
-static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__enlarge_image(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_small_img, __Pyx_memviewslice __pyx_v_float_img); /* proto*/
-static PyObject *__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__make_interpolation_arrays(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, Py_ssize_t __pyx_v_length, int __pyx_v_s_length); /* proto*/
-static void __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__create_ball(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, int __pyx_v_radius); /* proto*/
+static PyObject *__pyx_fuse_0__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto*/
+static PyObject *__pyx_fuse_1__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto*/
+static __Pyx_memviewslice __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__roll_ball(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_float_img); /* proto*/
+static __Pyx_memviewslice __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__shrink_image(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_flat_img, int __pyx_v_shrink_factor); /* proto*/
+static __Pyx_memviewslice __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__enlarge_image(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_small_img, __Pyx_memviewslice __pyx_v_float_img); /* proto*/
+static PyObject *__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__make_interpolation_arrays(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, Py_ssize_t __pyx_v_length, int __pyx_v_s_length); /* proto*/
+static void __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__create_ball(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, int __pyx_v_radius); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
 static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_obj); /* proto*/
@@ -1957,19 +1957,19 @@ static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memo
 /* Module declarations from 'libc.math' */
 
 /* Module declarations from 'bq3d.image_filters.filters._background_subtraction' */
-static PyTypeObject *__pyx_ptype_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = 0;
+static PyTypeObject *__pyx_ptype_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
 static PyTypeObject *__pyx_memoryviewslice_type = 0;
-static float __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_NEG_INFINITY;
-static float __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_INFINITY;
-static int __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_X_DIRECTION;
-static int __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_Y_DIRECTION;
-static int __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1A;
-static int __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1B;
-static int __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2A;
-static int __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2B;
+static float __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_NEG_INFINITY;
+static float __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_INFINITY;
+static int __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_X_DIRECTION;
+static int __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_Y_DIRECTION;
+static int __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1A;
+static int __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1B;
+static int __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2A;
+static int __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2B;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
 static PyObject *indirect = 0;
@@ -1977,8 +1977,8 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static float __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction__min(__Pyx_memviewslice); /*proto*/
-static PyObject *__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, PyObject *); /*proto*/
+static float __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction__min(__Pyx_memviewslice); /*proto*/
+static PyObject *__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, PyObject *); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -2130,7 +2130,6 @@ static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cyt
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_pyx_unpickle_BackgroundSubtrac[] = "__pyx_unpickle_BackgroundSubtract";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_bq3d_image_filters_filters[] = "bq3d/image_filters/filters/_background_subtraction.pyx";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
 static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is contiguous in memory.";
 static const char __pyx_k_Cannot_assign_to_read_only_memor[] = "Cannot assign to read-only memoryview";
@@ -2144,11 +2143,12 @@ static const char __pyx_k_Indirect_dimensions_not_supporte[] = "Indirect dimensi
 static const char __pyx_k_Invalid_mode_expected_c_or_fortr[] = "Invalid mode, expected 'c' or 'fortran', got %s";
 static const char __pyx_k_Out_of_bounds_on_buffer_access_a[] = "Out of bounds on buffer access (axis %d)";
 static const char __pyx_k_Unable_to_convert_item_to_object[] = "Unable to convert item to object";
+static const char __pyx_k_bq3d_image_filters_filters__back[] = "bq3d/image_filters/filters/_background_subtraction.pyx";
 static const char __pyx_k_got_differing_extents_in_dimensi[] = "got differing extents in dimension %d (got %d and %d)";
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 static const char __pyx_k_subtract_background_rolling_ball[] = "subtract_background_rolling_ball";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
-static const char __pyx_k_bq3d_image_filters_filters_2[] = "bq3d.image_filters.filters._background_subtraction";
+static const char __pyx_k_bq3d_image_filters_filters__back_2[] = "bq3d.image_filters.filters._background_subtraction";
 static PyObject *__pyx_kp_s_;
 static PyObject *__pyx_n_s_ASCII;
 static PyObject *__pyx_n_s_BackgroundSubtract;
@@ -2184,12 +2184,12 @@ static PyObject *__pyx_n_s_args;
 static PyObject *__pyx_n_s_array;
 static PyObject *__pyx_n_s_astype;
 static PyObject *__pyx_n_s_base;
+static PyObject *__pyx_kp_s_bq3d_image_filters_filters__back;
+static PyObject *__pyx_n_s_bq3d_image_filters_filters__back_2;
 static PyObject *__pyx_n_s_bs;
 static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_u_c;
 static PyObject *__pyx_n_s_class;
-static PyObject *__pyx_kp_s_bq3d_image_filters_filters;
-static PyObject *__pyx_n_s_bq3d_image_filters_filters_2;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_kp_s_contiguous_and_direct;
 static PyObject *__pyx_kp_s_contiguous_and_indirect;
@@ -2272,12 +2272,12 @@ static PyObject *__pyx_kp_s_unsigned_char;
 static PyObject *__pyx_kp_s_unsigned_short;
 static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_s_zeros;
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract___reduce_cython__(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_2__setstate_cython__(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_4subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto */
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_6subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto */
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_2__pyx_unpickle_BackgroundSubtract(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract___reduce_cython__(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_2__setstate_cython__(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_4subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto */
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_6subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius); /* proto */
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_2__pyx_unpickle_BackgroundSubtract(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -2320,7 +2320,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -2372,7 +2372,7 @@ static PyObject *__pyx_codeobj__33;
  *         Calculates and subtracts or creates background from image.
  */
 
-static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
+static PyObject *__pyx_fuse_0__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
   PyObject *__pyx_v_img_arr = NULL;
   __Pyx_memviewslice __pyx_v_img_flat = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_float_img = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -2595,7 +2595,7 @@ static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  * 
  *         cdef bint shrink
  */
-  ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_create_ball(__pyx_v_self, __pyx_v_radius);
+  ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_create_ball(__pyx_v_self, __pyx_v_radius);
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":88
  * 
@@ -2623,7 +2623,7 @@ static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  *         else:
  *             small_img = float_img
  */
-    __pyx_t_8 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_shrink_image(__pyx_v_self, __pyx_v_float_img, __pyx_v_self->shrink_factor); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 90, __pyx_L1_error)
+    __pyx_t_8 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_shrink_image(__pyx_v_self, __pyx_v_float_img, __pyx_v_self->shrink_factor); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 90, __pyx_L1_error)
     __pyx_v_small_img = __pyx_t_8;
     __pyx_t_8.memview = NULL;
     __pyx_t_8.data = NULL;
@@ -2658,7 +2658,7 @@ static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  * 
  *         if shrink:
  */
-  __pyx_t_8 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_roll_ball(__pyx_v_self, __pyx_v_small_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_8 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_roll_ball(__pyx_v_self, __pyx_v_small_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 95, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_small_img, 1);
   __pyx_v_small_img = __pyx_t_8;
   __pyx_t_8.memview = NULL;
@@ -2681,7 +2681,7 @@ static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  * 
  *         cdef float offset = 0.5
  */
-    __pyx_t_8 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_enlarge_image(__pyx_v_self, __pyx_v_small_img, __pyx_v_float_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_8 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_enlarge_image(__pyx_v_self, __pyx_v_small_img, __pyx_v_float_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 98, __pyx_L1_error)
     __PYX_XDEC_MEMVIEW(&__pyx_v_float_img, 1);
     __pyx_v_float_img = __pyx_t_8;
     __pyx_t_8.memview = NULL;
@@ -2949,7 +2949,7 @@ static PyObject *__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
   return __pyx_r;
 }
 
-static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
+static PyObject *__pyx_fuse_1__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
   PyObject *__pyx_v_img_arr = NULL;
   __Pyx_memviewslice __pyx_v_img_flat = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_float_img = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -3172,7 +3172,7 @@ static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  * 
  *         cdef bint shrink
  */
-  ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_create_ball(__pyx_v_self, __pyx_v_radius);
+  ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_create_ball(__pyx_v_self, __pyx_v_radius);
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":88
  * 
@@ -3200,7 +3200,7 @@ static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  *         else:
  *             small_img = float_img
  */
-    __pyx_t_8 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_shrink_image(__pyx_v_self, __pyx_v_float_img, __pyx_v_self->shrink_factor); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 90, __pyx_L1_error)
+    __pyx_t_8 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_shrink_image(__pyx_v_self, __pyx_v_float_img, __pyx_v_self->shrink_factor); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 90, __pyx_L1_error)
     __pyx_v_small_img = __pyx_t_8;
     __pyx_t_8.memview = NULL;
     __pyx_t_8.data = NULL;
@@ -3235,7 +3235,7 @@ static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  * 
  *         if shrink:
  */
-  __pyx_t_8 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_roll_ball(__pyx_v_self, __pyx_v_small_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_8 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_roll_ball(__pyx_v_self, __pyx_v_small_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 95, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_small_img, 1);
   __pyx_v_small_img = __pyx_t_8;
   __pyx_t_8.memview = NULL;
@@ -3258,7 +3258,7 @@ static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  * 
  *         cdef float offset = 0.5
  */
-    __pyx_t_8 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_enlarge_image(__pyx_v_self, __pyx_v_small_img, __pyx_v_float_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_8 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_enlarge_image(__pyx_v_self, __pyx_v_small_img, __pyx_v_float_img); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 98, __pyx_L1_error)
     __PYX_XDEC_MEMVIEW(&__pyx_v_float_img, 1);
     __pyx_v_float_img = __pyx_t_8;
     __pyx_t_8.memview = NULL;
@@ -3534,7 +3534,7 @@ static PyObject *__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_backgroun
  *         Rolls a filtering object over an image in order to find the
  */
 
-static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__roll_ball(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_float_img) {
+static __Pyx_memviewslice __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__roll_ball(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_float_img) {
   Py_ssize_t __pyx_v_height;
   Py_ssize_t __pyx_v_width;
   Py_ssize_t __pyx_v_ball_width;
@@ -3839,7 +3839,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_t_6, __pyx_t_11, 1, 1, 0) < 0)
 }
 
 {
-          float __pyx_temp_scalar = __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_NEG_INFINITY;
+          float __pyx_temp_scalar = __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_NEG_INFINITY;
           {
               Py_ssize_t __pyx_temp_extent_0 = __pyx_t_6.shape[0];
               Py_ssize_t __pyx_temp_stride_0 = __pyx_t_6.strides[0];
@@ -3946,7 +3946,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_t_6, __pyx_t_11, 1, 1, 0) < 0)
  *                 x0 = max((0, x - radius))
  *                 x_ball0 = x0 - x + radius # always = 0?
  */
-      __pyx_v_z = __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_INFINITY;
+      __pyx_v_z = __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_INFINITY;
 
       /* "bq3d/image_filters/filters/_background_subtraction.pyx":162
  *             for x in range(-radius, width + radius): # whole image
@@ -4301,7 +4301,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_t_6, __pyx_t_11, 1, 1, 0) < 0)
  *         """
  */
 
-static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__shrink_image(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_flat_img, int __pyx_v_shrink_factor) {
+static __Pyx_memviewslice __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__shrink_image(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_flat_img, int __pyx_v_shrink_factor) {
   __Pyx_memviewslice __pyx_v_img = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_sink = { 0, 0, { 0 }, { 0 }, { 0 } };
   float __pyx_v_min_value;
@@ -4576,7 +4576,7 @@ if (unlikely(__pyx_memoryview_slice_memviewslice(
     __PYX_ERR(0, 213, __pyx_L1_error)
 }
 
-__pyx_v_min_value = __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction__min(__pyx_t_6);
+__pyx_v_min_value = __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction__min(__pyx_t_6);
       __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
       __pyx_t_6.memview = NULL;
       __pyx_t_6.data = NULL;
@@ -4654,7 +4654,7 @@ __pyx_v_min_value = __pyx_f_9bq3d_13image_filters_7filters_23_background_subtrac
  *         """
  */
 
-static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__enlarge_image(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_small_img, __Pyx_memviewslice __pyx_v_float_img) {
+static __Pyx_memviewslice __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__enlarge_image(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, __Pyx_memviewslice __pyx_v_small_img, __Pyx_memviewslice __pyx_v_float_img) {
   Py_ssize_t __pyx_v_height;
   Py_ssize_t __pyx_v_width;
   Py_ssize_t __pyx_v_s_height;
@@ -4741,7 +4741,7 @@ static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_s
  *         y_s_indices, y_weights = self._make_interpolation_arrays(height, s_height)
  * 
  */
-  __pyx_t_3 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_make_interpolation_arrays(__pyx_v_self, __pyx_v_width, __pyx_v_s_width); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_3 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_make_interpolation_arrays(__pyx_v_self, __pyx_v_width, __pyx_v_s_width); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (likely(__pyx_t_3 != Py_None)) {
     PyObject* sequence = __pyx_t_3;
@@ -4784,7 +4784,7 @@ static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_s
  * 
  * 
  */
-  __pyx_t_3 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_make_interpolation_arrays(__pyx_v_self, __pyx_v_height, __pyx_v_s_height); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_3 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self->__pyx_vtab)->_make_interpolation_arrays(__pyx_v_self, __pyx_v_height, __pyx_v_s_height); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (likely(__pyx_t_3 != Py_None)) {
     PyObject* sequence = __pyx_t_3;
@@ -5142,7 +5142,7 @@ static __Pyx_memviewslice __pyx_f_9bq3d_13image_filters_7filters_23_background_s
  *         cdef int[:] s_indices = np.zeros((length), dtype = np.intc)
  */
 
-static PyObject *__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__make_interpolation_arrays(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, Py_ssize_t __pyx_v_length, int __pyx_v_s_length) {
+static PyObject *__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__make_interpolation_arrays(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, Py_ssize_t __pyx_v_length, int __pyx_v_s_length) {
   __Pyx_memviewslice __pyx_v_s_indices = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_weights = { 0, 0, { 0 }, { 0 }, { 0 } };
   Py_ssize_t __pyx_v_i;
@@ -5375,7 +5375,7 @@ static PyObject *__pyx_f_9bq3d_13image_filters_7filters_23_background_subtractio
  *             A rolling ball (or actually a square part thereof)
  */
 
-static void __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__create_ball(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, int __pyx_v_radius) {
+static void __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__create_ball(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, int __pyx_v_radius) {
   long __pyx_v_arc_trim_per;
   int __pyx_v_small_ball_radius;
   int __pyx_v_x_val;
@@ -5748,19 +5748,19 @@ static void __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18B
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract___reduce_cython__(((struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract___reduce_cython__(((struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract___reduce_cython__(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self) {
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract___reduce_cython__(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self) {
   PyObject *__pyx_v_state = 0;
   PyObject *__pyx_v__dict = 0;
   int __pyx_v_use_setstate;
@@ -6018,19 +6018,19 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_2__setstate_cython__(((struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_2__setstate_cython__(((struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_2__setstate_cython__(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_2__setstate_cython__(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6042,7 +6042,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     __pyx_unpickle_BackgroundSubtract__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -6074,7 +6074,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     cdef Py_ssize_t x_max = arr.shape[0]
  */
 
-static float __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction__min(__Pyx_memviewslice __pyx_v_arr) {
+static float __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction__min(__Pyx_memviewslice __pyx_v_arr) {
   Py_ssize_t __pyx_v_x_max;
   Py_ssize_t __pyx_v_y_max;
   Py_ssize_t __pyx_v_x;
@@ -6217,10 +6217,10 @@ static float __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction__m
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball[] = "Subtracts background via subtracting a morphological opening from the original image\n\n    Attributes:\n        img (array): uint8 or uint16 nnumpy array. must be little\n        radius (int): Radius of the rolling ball creating the background (actually a\n                      paraboloid of rotation with the same curvature)\n\n        size (tuple): Size for the structure element of the morphological opening.\n    Returns:\n        img, background: Background subtracted image, Background\n    ";
-static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball = {"subtract_background_rolling_ball", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball};
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball[] = "Subtracts background via subtracting a morphological opening from the original image\n\n    Attributes:\n        img (array): uint8 or uint16 nnumpy array. must be little\n        radius (int): Radius of the rolling ball creating the background (actually a\n                      paraboloid of rotation with the same curvature)\n        size (tuple): Size for the structure element of the morphological opening.\n\n    Returns:\n        img, background: Background subtracted image, Background\n    ";
+static PyMethodDef __pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball = {"subtract_background_rolling_ball", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball};
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_signatures = 0;
   PyObject *__pyx_v_args = 0;
   PyObject *__pyx_v_kwargs = 0;
@@ -6294,14 +6294,14 @@ static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtracti
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
+  __pyx_r = __pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
   PyObject *__pyx_v_dest_sig = NULL;
   Py_ssize_t __pyx_v_i;
   PyTypeObject *__pyx_v_ndarray = 0;
@@ -6761,9 +6761,9 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_0__pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball = {"__pyx_fuse_0subtract_background_rolling_ball", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball};
-static PyObject *__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_0__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_0__pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball = {"__pyx_fuse_0subtract_background_rolling_ball", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_0__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball};
+static PyObject *__pyx_fuse_0__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_img = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_radius;
   PyObject *__pyx_r = 0;
@@ -6815,15 +6815,15 @@ static PyObject *__pyx_fuse_0__pyx_pw_9bq3d_13image_filters_7filters_23_backgrou
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_4subtract_background_rolling_ball(__pyx_self, __pyx_v_img, __pyx_v_radius);
+  __pyx_r = __pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_4subtract_background_rolling_ball(__pyx_self, __pyx_v_img, __pyx_v_radius);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_4subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
-  struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_bs = NULL;
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_4subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
+  struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_bs = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6835,9 +6835,9 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     bs = BackgroundSubtract()             # <<<<<<<<<<<<<<
  *     return bs.rolling_ball_background(img, radius)
  */
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 356, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 356, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_bs = ((struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_t_1);
+  __pyx_v_bs = ((struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_t_1);
   __pyx_t_1 = 0;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":357
@@ -6846,7 +6846,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     return bs.rolling_ball_background(img, radius)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_bs->__pyx_vtab)->__pyx_fuse_0rolling_ball_background(__pyx_v_bs, __pyx_v_img, __pyx_v_radius); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_bs->__pyx_vtab)->__pyx_fuse_0rolling_ball_background(__pyx_v_bs, __pyx_v_img, __pyx_v_radius); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -6874,9 +6874,9 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
 }
 
 /* Python wrapper */
-static PyObject *__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_fuse_1__pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball = {"__pyx_fuse_1subtract_background_rolling_ball", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball};
-static PyObject *__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_fuse_1__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_fuse_1__pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball = {"__pyx_fuse_1subtract_background_rolling_ball", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_fuse_1__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4bq3d_13image_filters_7filters_23_background_subtraction_subtract_background_rolling_ball};
+static PyObject *__pyx_fuse_1__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_img = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_radius;
   PyObject *__pyx_r = 0;
@@ -6928,15 +6928,15 @@ static PyObject *__pyx_fuse_1__pyx_pw_9bq3d_13image_filters_7filters_23_backgrou
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_6subtract_background_rolling_ball(__pyx_self, __pyx_v_img, __pyx_v_radius);
+  __pyx_r = __pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_6subtract_background_rolling_ball(__pyx_self, __pyx_v_img, __pyx_v_radius);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_6subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
-  struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_bs = NULL;
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_6subtract_background_rolling_ball(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_img, int __pyx_v_radius) {
+  struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v_bs = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6948,9 +6948,9 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     bs = BackgroundSubtract()             # <<<<<<<<<<<<<<
  *     return bs.rolling_ball_background(img, radius)
  */
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 356, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 356, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_bs = ((struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_t_1);
+  __pyx_v_bs = ((struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_t_1);
   __pyx_t_1 = 0;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":357
@@ -6959,7 +6959,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     return bs.rolling_ball_background(img, radius)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_bs->__pyx_vtab)->__pyx_fuse_1rolling_ball_background(__pyx_v_bs, __pyx_v_img, __pyx_v_radius); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v_bs->__pyx_vtab)->__pyx_fuse_1rolling_ball_background(__pyx_v_bs, __pyx_v_img, __pyx_v_radius); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -6993,9 +6993,9 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract = {"__pyx_unpickle_BackgroundSubtract", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract = {"__pyx_unpickle_BackgroundSubtract", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v___pyx_type = 0;
   long __pyx_v___pyx_checksum;
   PyObject *__pyx_v___pyx_state = 0;
@@ -7058,14 +7058,14 @@ static PyObject *__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtracti
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_2__pyx_unpickle_BackgroundSubtract(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_2__pyx_unpickle_BackgroundSubtract(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtraction_2__pyx_unpickle_BackgroundSubtract(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_23_background_subtraction_2__pyx_unpickle_BackgroundSubtract(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_v___pyx_PickleError = 0;
   PyObject *__pyx_v___pyx_result = 0;
   PyObject *__pyx_r = NULL;
@@ -7159,7 +7159,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     if __pyx_state is not None:
  *         __pyx_unpickle_BackgroundSubtract__set_state(<BackgroundSubtract> __pyx_result, __pyx_state)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -7198,7 +7198,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  * cdef __pyx_unpickle_BackgroundSubtract__set_state(BackgroundSubtract __pyx_result, tuple __pyx_state):
  */
     if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 9, __pyx_L1_error)
-    __pyx_t_3 = __pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(((struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
+    __pyx_t_3 = __pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(((struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
@@ -7253,7 +7253,7 @@ static PyObject *__pyx_pf_9bq3d_13image_filters_7filters_23_background_subtracti
  *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
  */
 
-static PyObject *__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction___pyx_unpickle_BackgroundSubtract__set_state(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -20203,10 +20203,10 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
+static struct __pyx_vtabstruct_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
 
-static PyObject *__pyx_tp_new_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p;
+static PyObject *__pyx_tp_new_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -20214,14 +20214,14 @@ static PyObject *__pyx_tp_new_9bq3d_13image_filters_7filters_23_background_subtr
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o);
-  p->__pyx_vtab = __pyx_vtabptr_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
+  p = ((struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o);
+  p->__pyx_vtab = __pyx_vtabptr_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
   p->ball_data = ((PyObject*)Py_None); Py_INCREF(Py_None);
   return o;
 }
 
-static void __pyx_tp_dealloc_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyObject *o) {
-  struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p = (struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o;
+static void __pyx_tp_dealloc_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyObject *o) {
+  struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p = (struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -20232,36 +20232,36 @@ static void __pyx_tp_dealloc_9bq3d_13image_filters_7filters_23_background_subtra
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p = (struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o;
+  struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p = (struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o;
   if (p->ball_data) {
     e = (*v)(p->ball_data, a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyObject *o) {
+static int __pyx_tp_clear_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p = (struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o;
+  struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *p = (struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *)o;
   tmp = ((PyObject*)p->ball_data);
   p->ball_data = ((PyObject*)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyMethodDef __pyx_methods_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_1__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_3__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_1__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_3__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = {
+static PyTypeObject __pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = {
   PyVarObject_HEAD_INIT(0, 0)
   "bq3d.image_filters.filters._background_subtraction.BackgroundSubtract", /*tp_name*/
-  sizeof(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract), /*tp_basicsize*/
+  sizeof(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_dealloc*/
+  __pyx_tp_dealloc_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -20283,13 +20283,13 @@ static PyTypeObject __pyx_type_9bq3d_13image_filters_7filters_23_background_subt
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_traverse*/
-  __pyx_tp_clear_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_clear*/
+  __pyx_tp_traverse_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_traverse*/
+  __pyx_tp_clear_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_methods*/
+  __pyx_methods_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -20299,7 +20299,7 @@ static PyTypeObject __pyx_type_9bq3d_13image_filters_7filters_23_background_subt
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_new*/
+  __pyx_tp_new_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -21081,12 +21081,12 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_array, __pyx_k_array, sizeof(__pyx_k_array), 0, 0, 1, 1},
   {&__pyx_n_s_astype, __pyx_k_astype, sizeof(__pyx_k_astype), 0, 0, 1, 1},
   {&__pyx_n_s_base, __pyx_k_base, sizeof(__pyx_k_base), 0, 0, 1, 1},
+  {&__pyx_kp_s_bq3d_image_filters_filters__back, __pyx_k_bq3d_image_filters_filters__back, sizeof(__pyx_k_bq3d_image_filters_filters__back), 0, 0, 1, 0},
+  {&__pyx_n_s_bq3d_image_filters_filters__back_2, __pyx_k_bq3d_image_filters_filters__back_2, sizeof(__pyx_k_bq3d_image_filters_filters__back_2), 0, 0, 1, 1},
   {&__pyx_n_s_bs, __pyx_k_bs, sizeof(__pyx_k_bs), 0, 0, 1, 1},
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
-  {&__pyx_kp_s_bq3d_image_filters_filters, __pyx_k_bq3d_image_filters_filters, sizeof(__pyx_k_bq3d_image_filters_filters), 0, 0, 1, 0},
-  {&__pyx_n_s_bq3d_image_filters_filters_2, __pyx_k_bq3d_image_filters_filters_2, sizeof(__pyx_k_bq3d_image_filters_filters_2), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_kp_s_contiguous_and_direct, __pyx_k_contiguous_and_direct, sizeof(__pyx_k_contiguous_and_direct), 0, 0, 1, 0},
   {&__pyx_kp_s_contiguous_and_indirect, __pyx_k_contiguous_and_indirect, sizeof(__pyx_k_contiguous_and_indirect), 0, 0, 1, 0},
@@ -21405,7 +21405,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__23 = PyTuple_Pack(3, __pyx_n_s_img, __pyx_n_s_radius, __pyx_n_s_bs); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters, __pyx_n_s_subtract_background_rolling_ball, 344, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters__back, __pyx_n_s_subtract_background_rolling_ball, 344, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 344, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_BackgroundSubtract(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
@@ -21542,25 +21542,25 @@ static int __Pyx_modinit_type_init_code(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = &__pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._roll_ball = (__Pyx_memviewslice (*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice))__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__roll_ball;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._shrink_image = (__Pyx_memviewslice (*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int))__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__shrink_image;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._enlarge_image = (__Pyx_memviewslice (*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__enlarge_image;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._make_interpolation_arrays = (PyObject *(*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, Py_ssize_t, int))__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__make_interpolation_arrays;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._create_ball = (void (*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, int))__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__create_ball;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.__pyx_fuse_0rolling_ball_background = (PyObject *(*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int))__pyx_fuse_0__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background;
-  __pyx_vtable_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.__pyx_fuse_1rolling_ball_background = (PyObject *(*)(struct __pyx_obj_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int))__pyx_fuse_1__pyx_f_9bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background;
-  if (PyType_Ready(&__pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_vtabptr_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = &__pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._roll_ball = (__Pyx_memviewslice (*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice))__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__roll_ball;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._shrink_image = (__Pyx_memviewslice (*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int))__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__shrink_image;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._enlarge_image = (__Pyx_memviewslice (*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__enlarge_image;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._make_interpolation_arrays = (PyObject *(*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, Py_ssize_t, int))__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__make_interpolation_arrays;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract._create_ball = (void (*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, int))__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract__create_ball;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.__pyx_fuse_0rolling_ball_background = (PyObject *(*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int))__pyx_fuse_0__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background;
+  __pyx_vtable_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.__pyx_fuse_1rolling_ball_background = (PyObject *(*)(struct __pyx_obj_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract *, __Pyx_memviewslice, int))__pyx_fuse_1__pyx_f_4bq3d_13image_filters_7filters_23_background_subtraction_18BackgroundSubtract_rolling_ball_background;
+  if (PyType_Ready(&__pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_print = 0;
+  __pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_dictoffset && __pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_dictoffset && __pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_dict, __pyx_vtabptr_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BackgroundSubtract, (PyObject *)&__pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  __pyx_ptype_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = &__pyx_type_9bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
+  if (__Pyx_SetVtable(__pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract.tp_dict, __pyx_vtabptr_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BackgroundSubtract, (PyObject *)&__pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_ptype_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract = &__pyx_type_4bq3d_13image_filters_7filters_23_background_subtraction_BackgroundSubtract;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
@@ -21876,7 +21876,7 @@ if (!__Pyx_RefNanny) {
  * 
  */
   __pyx_t_2 = __Pyx_PyObject_AsDouble(__pyx_kp_u_inf); if (unlikely(__pyx_t_2 == ((double)((double)-1)) && PyErr_Occurred())) __PYX_ERR(0, 30, __pyx_L1_error)
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_NEG_INFINITY = __pyx_t_2;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_NEG_INFINITY = __pyx_t_2;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":31
  * 
@@ -21886,7 +21886,7 @@ if (!__Pyx_RefNanny) {
  * 
  */
   __pyx_t_2 = __Pyx_PyObject_AsDouble(__pyx_n_u_inf_2); if (unlikely(__pyx_t_2 == ((double)((double)-1)) && PyErr_Occurred())) __PYX_ERR(0, 31, __pyx_L1_error)
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_INFINITY = __pyx_t_2;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_INFINITY = __pyx_t_2;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":34
  * 
@@ -21895,7 +21895,7 @@ if (!__Pyx_RefNanny) {
  * cdef int Y_DIRECTION = 1
  * cdef int DIAGONAL_1A = 2
  */
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_X_DIRECTION = 0;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_X_DIRECTION = 0;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":35
  * 
@@ -21904,7 +21904,7 @@ if (!__Pyx_RefNanny) {
  * cdef int DIAGONAL_1A = 2
  * cdef int DIAGONAL_1B = 3
  */
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_Y_DIRECTION = 1;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_Y_DIRECTION = 1;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":36
  * cdef int X_DIRECTION = 0
@@ -21913,7 +21913,7 @@ if (!__Pyx_RefNanny) {
  * cdef int DIAGONAL_1B = 3
  * cdef int DIAGONAL_2A = 4
  */
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1A = 2;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1A = 2;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":37
  * cdef int Y_DIRECTION = 1
@@ -21922,7 +21922,7 @@ if (!__Pyx_RefNanny) {
  * cdef int DIAGONAL_2A = 4
  * cdef int DIAGONAL_2B = 5
  */
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1B = 3;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_1B = 3;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":38
  * cdef int DIAGONAL_1A = 2
@@ -21931,7 +21931,7 @@ if (!__Pyx_RefNanny) {
  * cdef int DIAGONAL_2B = 5
  * 
  */
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2A = 4;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2A = 4;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":39
  * cdef int DIAGONAL_1B = 3
@@ -21940,7 +21940,7 @@ if (!__Pyx_RefNanny) {
  * 
  * cdef class BackgroundSubtract:
  */
-  __pyx_v_9bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2B = 5;
+  __pyx_v_4bq3d_13image_filters_7filters_23_background_subtraction_DIAGONAL_2B = 5;
 
   /* "bq3d/image_filters/filters/_background_subtraction.pyx":344
  *     return val
@@ -21951,17 +21951,17 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball, 0, __pyx_n_s_subtract_background_rolling_ball, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_5subtract_background_rolling_ball, 0, __pyx_n_s_subtract_background_rolling_ball, NULL, __pyx_n_s_bq3d_image_filters_filters__back_2, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_unsigned_char, __pyx_t_3) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball, 0, __pyx_n_s_subtract_background_rolling_ball, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_7subtract_background_rolling_ball, 0, __pyx_n_s_subtract_background_rolling_ball, NULL, __pyx_n_s_bq3d_image_filters_filters__back_2, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_unsigned_short, __pyx_t_3) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball, 0, __pyx_n_s_subtract_background_rolling_ball, NULL, __pyx_n_s_bq3d_image_filters_filters_2, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __pyx_t_3 = __pyx_FusedFunction_NewEx(&__pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_1subtract_background_rolling_ball, 0, __pyx_n_s_subtract_background_rolling_ball, NULL, __pyx_n_s_bq3d_image_filters_filters__back_2, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_3)->__signatures__ = __pyx_t_1;
@@ -21974,7 +21974,7 @@ if (!__Pyx_RefNanny) {
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_9bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract, NULL, __pyx_n_s_bq3d_image_filters_filters_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_4bq3d_13image_filters_7filters_23_background_subtraction_3__pyx_unpickle_BackgroundSubtract, NULL, __pyx_n_s_bq3d_image_filters_filters__back_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_BackgroundSubtrac, __pyx_t_4) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;

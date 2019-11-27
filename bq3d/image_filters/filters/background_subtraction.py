@@ -10,14 +10,14 @@ from bq3d.image_filters.filters._background_subtraction import subtract_backgrou
 
 
 class RollingBackgroundSubtract(FilterBase):
-    """Remove background via subtracting a morphological opening from the original image
+    """
+    Remove background via subtracting a morphological opening from the original image.
+
     Background removal is done z-slice by z-slice.
-    Call using :meth:`filter_image` with 'background_subtract' as filter.
+    Call using :meth:`filter_image` with 'RollingBackgroundSubtract' as filter.
 
     Attributes:
-        input (array): Image to pass through filter.
-        output (array): Filter result.
-
+        input (array): 2D or 3D image to pass through filter.
         size (int): Size for the structure element of the morphological opening.
     """
 
@@ -31,11 +31,20 @@ class RollingBackgroundSubtract(FilterBase):
 
         img = self.input
 
+        if img.dtype != np.uint8:
+            raise ValueError(f'Input image of type "{img.dtype}" not supported. Must be "np.uint8".')
+
+        orig_shape = img.shape
+        if len(orig_shape) < 3:
+            img = img[np.newaxis, ...]
+
         # background subtraction in each slice
         for z in range(img.shape[0]):
             im = np.array(img[z], dtype=np.dtype(img.dtype).newbyteorder('L'))
             im = cv2.blur(im, (3, 3))
             img[z], _ = subtract_background_rolling_ball(im, self.size)
+
+        img.shape = orig_shape
 
         return self.input
 
@@ -43,16 +52,20 @@ filter_manager.add_filter(RollingBackgroundSubtract())
 
 
 class BackgroundSubtract(FilterBase):
-    """Remove background via subtracting a morphological opening from the original image
+    """
+    Subtracts provided background image from the input image using the specified
+    method.
+
     Background removal is done z-slice by z-slice.
-    Call using :meth:`filter_image` with 'background_subtract' as filter.
+    Call using :meth:`filter_image` with 'BackgroundSubtract' as filter.
 
     Attributes:
-        input (array): Image to pass through filter.
-        output (array): Filter result.
-        background (str or array): background image to subtract from data.
-
-        size (tuple): Size for the structure element of the morphological opening.
+        input (array): 2D or 3D mage to pass through filter.
+        background (str or array): Background image to subtract from data. Dimensions
+            must match input dimensions.
+        shift_z (int): Value to shift planes along Z.
+        method (str): Method to use for background subtraction. Currently, the only
+            option is 'mean'.
     """
 
     def __init__(self):
@@ -78,19 +91,26 @@ class BackgroundSubtract(FilterBase):
                     continue  # if out of bounds
             self.background = shifted
 
+        img = self.input
+
+        orig_shape = img.shape
+        if len(orig_shape) < 3:
+            img = img[np.newaxis, ...]
+
         if self.method == 'mean':
-            img_mean = self.input.mean()
+            img_mean = img.mean()
             bkg_mean = self.background.mean()
             ratio = img_mean / bkg_mean
-            for z in range(self.input.shape[2]):
-                bkg = (self.background[...,z] * ratio).astype(self.input.dtype)
-                sub =  self.input[...,z].astype(np.int32) - bkg
+            for z in range(img.shape[0]):
+                bkg = (self.background[z] * ratio).astype(img.dtype)
+                sub =  img[z].astype(np.int32) - bkg
                 sub[sub < 0] = 0
-                self.input[...,z] = sub
+                img[z] = sub
         else:
             raise ValueError(f'Method {self.method} not recongnized')
 
-        return self.input
+        img.shape = orig_shape
 
+        return self.input
 
 filter_manager.add_filter(BackgroundSubtract())
