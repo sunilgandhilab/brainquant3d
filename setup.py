@@ -178,14 +178,14 @@ class install(_install):
 cmdclass['install'] = install
 
 setup(
-    name=               'bq3d',
+    name=               'brainquant3d',
     version=            __version__,
     description=        'Tools for tera-voxel image analysis.',
     author=             'Ricardo Azevedo, Jack Zeitoun',
     author_email=       'ricardo-re-azevedo@gmail.com, jack.zeitoun@outlook.com',
     maintainer=         'Ricardo Azevedo',
     maintainer_email=   'ricardo-re-azevedo@gmail.com',
-    url=                'https://github.com/sunilgandhilab/bq3d',
+    url=                'https://github.com/ricardo-re-azevedo/brainquant3d',
     license=            'BY-NC-SA 4.0',
     cmdclass=           cmdclass,
     packages=           find_packages(),

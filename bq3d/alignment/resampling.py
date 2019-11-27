@@ -29,11 +29,10 @@ import multiprocessing
 import tempfile
 import shutil
 import cv2
-import tifffile as tif
 
 import bq3d
-import bq3d.IO.IO as io
-import bq3d.IO.FileList as fl
+from bq3d import io
+import bq3d.io.FileList as fl
 
 import logging
 
@@ -65,7 +64,7 @@ def invert_orientation(orientation: tuple):
 
 
 def orientationToPermuation(orientation: tuple):
-    """returnd the permuation from an orientation excluding mirroring.
+    """return the permuation from an orientation excluding mirroring.
 
     Arguments:
         orientation (tuple): orientation specification
@@ -77,8 +76,8 @@ def orientationToPermuation(orientation: tuple):
 
     if orientation:
         return tuple(int(abs(i)) - 1 for i in orientation)
-
-    return tuple(0,1,2)
+    else:
+        return tuple((1,2,3))
 
 def orientResolution(resolution, orientation):
     """Permutes a resolution tuple according to the given orientation.
@@ -98,7 +97,7 @@ def orientResolution(resolution, orientation):
 
     per = orientationToPermuation(orientation)
     # print orientation, per, resolution
-    return tuple(resolution[i] for i in per)
+    return tuple(resolution[i-1] for i in per)
 
 
 def orientResolutionInverse(resolution, orientation):
@@ -119,7 +118,7 @@ def orientResolutionInverse(resolution, orientation):
         return None
 
     per = orientationToPermuation(invert_orientation(orientation))
-    return tuple(resolution[i] for i in per)
+    return tuple(resolution[i-1] for i in per)
 
 
 def orientDataSize(dataSize, orientation):
@@ -256,13 +255,16 @@ def resampleXY(source, dataSizeSink, zList=[0], sink=None, interpolation='linear
 
     Returns:
         array or str: resampled data or file name
+
     """
 
     for i in zList:
         data = io.readData(source, z=i)
-        log.verbose("resample XY: Resampling plane {} to size: ({}, {})".format(i, dataSizeSink[0], dataSizeSink[1]))
+        log.verbose(f'resample XY: Resampling plane {i} to size: ({dataSizeSink[0]}, '
+                    f'{dataSizeSink[1]})')
         # note: cv2.resize reverses x-Y axes
-        sink[i] = cv2.resize(data, (dataSizeSink[1], dataSizeSink[0]), interpolation=interpolation)
+        sink[i] = cv2.resize(data, (dataSizeSink[2], dataSizeSink[1]),
+                             interpolation=interpolation)
 
     return sink
 
@@ -281,7 +283,8 @@ def _resampleXYParallel(arg):
 
 
 def resampleData(source, sink=None, orientation=None, dataSizeSink=None, resolutionSource=(.91, .91, 8.3),
-                 resolutionSink=(25, 25, 25), processingDirectory=None, processes=bq3d.config.processes,
+                 resolutionSink=(25, 25, 25), processingDirectory=bq3d.config.temp_dir,
+                 processes=bq3d.config.processes,
                  cleanup=True, interpolation='linear', **kwargs):
     """Resample data of source in resolution and orientation
 
@@ -361,8 +364,9 @@ def resampleData(source, sink=None, orientation=None, dataSizeSink=None, resolut
     for i in range(dataSizeSinkI[1]):  # faster if iterate over y
         if i % 50 == 0:
             log.verbose(("resampleData: Z: Resampling %d/%d" % (i, dataSizeSinkI[0])))
-        resampledData[:, i, :] = cv2.resize(resampledXY[:, i, :], (dataSizeSinkI[2], dataSizeSinkI[0]),
-                                            interpolation=interpolation).T
+        resampledData[:, i] = cv2.resize(resampledXY[:, i], (dataSizeSinkI[2],
+                                                                   dataSizeSinkI[0]),
+                                            interpolation=interpolation)
 
     if cleanup:
         shutil.rmtree(processingDirectory)
@@ -456,7 +460,8 @@ def resampleDataInverse(sink, source=None, dataSizeSource=None, orientation=None
             log.vebose("resampleDataInverse: processing %d/%d" % (i, dataSizeSinkI[0]))
 
         # cv2.resize takes reverse order of sizes !
-        resampledDataXY[i, :, :] = cv2.resize(resampledData[i, :, :], (dataSizeSource[2], dataSizeSinkI[1]),
+        resampledDataXY[i] = cv2.resize(resampledData[i], (dataSizeSource[2],
+                                                                 dataSizeSinkI[1]),
                                               interpolation=interpolation)
 
     # upscale x, y in parallel
@@ -519,6 +524,9 @@ def resamplePoints(source, sink=None, dataSizeSource=None, dataSizeSink=None, or
     if isinstance(dataSizeSource, str):
         dataSizeSource = io.dataSize(dataSizeSource)
 
+    if isinstance(dataSizeSink, str):
+        dataSizeSink = io.dataSize(dataSizeSink)
+
     dataSizeSource, dataSizeSink, resolutionSource, resolutionSink = resampleDataSize(dataSizeSource=dataSizeSource,
                                                                                       dataSizeSink=dataSizeSink,
                                                                                       resolutionSource=resolutionSource,
@@ -545,92 +553,7 @@ def resamplePoints(source, sink=None, dataSizeSource=None, dataSizeSink=None, or
             if orientation[i] < 0:
                 repoints[:, i] = dataSizeSink[i] - repoints[:, i]
 
-    return io.writePoints(sink, repoints)
-
-
-def resamplePointsInverse(source, sink=None, dataSizeSource=None, dataSizeSink=None,
-                          orientation=None,
-                          resolutionSource=(4.0625, 4.0625, 3), resolutionSink=(25, 25, 25), **args):
-    """Resample points from the coordinates of the resampled image to the original data
-    The resampling of points here corresponds to he resampling of an image in :func:`resampleDataInverse`
-
-    Arguments:
-        pointSource (str or array): image to be resampled
-        pointSink (str or None): destination of resampled image
-        orientation (tuple): orientation specified by permuation and change in sign of (1,2,3)
-        dataSizeSource (str, tuple or None): size of the data source
-        dataSizeSink (str, tuple or None): target size of the resampled image
-        resolutionSource (tuple): resolution of the source image (in length per pixel)
-        resolutionSink (tuple): resolution of the resampled image (in length per pixel)
-
-    Returns:
-        (array or str): data or file name of inversely resampled points
-    Notes:
-        * resolutions are assumed to be given for the axes of the intrinsic
-          orientation of the data and reference as when viewed by matplotlib or ImageJ
-        * orientation: permuation of 1,2,3 with potential sign, indicating which
-          axes map onto the reference axes, a negative sign indicates reversal
-          of that particular axes
-        * only a minimal set of information to detremine the resampling parameter
-          has to be given, e.g. dataSizeSource and dataSizeSink
-    """
-
-    # datasize of data source
-    if isinstance(dataSizeSource, str):
-        dataSizeSource = io.dataSize(dataSizeSource)
-
-    dataSizeSource, dataSizeSink, resolutionSource, resolutionSink = resampleDataSize(dataSizeSource=dataSizeSource,
-                                                                                      dataSizeSink=dataSizeSink,
-                                                                                      resolutionSource=resolutionSource,
-                                                                                      resolutionSink=resolutionSink,
-                                                                                      orientation=orientation)
-
-    points = io.readPoints(source)
-
-    dataSizeSinkI = orientDataSizeInverse(dataSizeSink, orientation)
-
-    # scaling factors
-    scale = [float(dataSizeSource[i]) / float(dataSizeSinkI[i]) for i in range(3)]
-
-    rpoints = points.copy()
-
-    # invert axis inversion and permutations
-    if not orientation is None:
-        # invert permuation
-        iorientation = invert_orientation(orientation)
-        per = orientationToPermuation(iorientation)
-        rpoints = rpoints[:, per]
-
-        for i in range(3):
-            if iorientation[i] < 0:
-                rpoints[:, i] = dataSizeSinkI[i] - rpoints[:, i]
-
-    # scale points
-    for i in range(3):
-        rpoints[:, i] = rpoints[:, i] * scale[i]
-
-    return io.writePoints(sink, rpoints)
-
-
-if __name__ == "__main__":
-    _test()
-
-#
-# def dataSize(imageFilePattern):
-#    """Determine full size from raw data in (x,y,z) order (not the array format (y,x,z))"""
-#
-#    if os.path.exists(imageFilePattern): # single file
-#        tf = tiff.TiffFile(imageFilePattern);
-#        shape = tf.series[0]['shape'];
-#        return (shape[1], shape[2], shape[0])
-#
-#    imageDirectory, listOfImages = self.readFileList(imageFilePattern);
-#    nz = len(listOfImages);
-#
-#    if nz == 0:
-#        raise RuntimeError("dataSize: no files match: %s" % imageFilePattern);
-#
-#    imagefile = os.path.join(imageDirectory, listOfImages[0]);
-#    sagittalImage = plt.imread(imagefile);# reads as y-x
-#
-#    return  (sagittalImage.shape[1], sagittalImage.shape[0], nz)
+    if sink:
+        return io.writePoints(sink, repoints)
+    else:
+        return repoints

@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/image_filters/filters/label/label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/io/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/io/io.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clearmap3/utils/chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/clearmap3/utils/chunking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/resampling.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
   </component>
   <component name="RunManager" selected="Python.scratch">
     <configuration name="2p_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ClearMap3" />
+      <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -103,7 +101,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="ClearMap3" />
+      <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -132,7 +130,7 @@
       <method v="2" />
     </configuration>
     <configuration name="axon_segmentation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ClearMap3" />
+      <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -161,7 +159,7 @@
       <method v="2" />
     </configuration>
     <configuration name="cell_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ClearMap3" />
+      <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -190,7 +188,7 @@
       <method v="2" />
     </configuration>
     <configuration name="condition comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ClearMap3" />
+      <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -219,7 +217,7 @@
       <method v="2" />
     </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ClearMap3" />
+      <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -288,62 +286,10 @@
       <workItem from="1571761267338" duration="334000" />
       <workItem from="1571761913312" duration="53732000" />
       <workItem from="1572637519894" duration="56402000" />
-    </task>
-    <task id="LOCAL-00015" summary="updated lib">
-      <created>1565046560512</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1565046560512</updated>
-    </task>
-    <task id="LOCAL-00016" summary="updated lib">
-      <created>1565047332228</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1565047332228</updated>
-    </task>
-    <task id="LOCAL-00017" summary="updated lib">
-      <created>1565047640333</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1565047640333</updated>
-    </task>
-    <task id="LOCAL-00018" summary="updated lib">
-      <created>1565048193050</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1565048193050</updated>
-    </task>
-    <task id="LOCAL-00019" summary="updated lib">
-      <created>1565048840064</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1565048840064</updated>
-    </task>
-    <task id="LOCAL-00020" summary="fixed setup.py">
-      <created>1565060633208</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1565060633208</updated>
-    </task>
-    <task id="LOCAL-00021" summary="fixed setup.py">
-      <created>1565063270142</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1565063270142</updated>
-    </task>
-    <task id="LOCAL-00022" summary="fixed setup.py">
-      <created>1565067638597</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1565067638597</updated>
+      <workItem from="1573772492315" duration="25781000" />
+      <workItem from="1574215365334" duration="7851000" />
+      <workItem from="1574275210826" duration="8412000" />
+      <workItem from="1574304872679" duration="6842000" />
     </task>
     <task id="LOCAL-00023" summary="fixed setup.py">
       <created>1565373292462</created>
@@ -632,7 +578,63 @@
       <option name="project" value="LOCAL" />
       <updated>1573593155422</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="- fixed dumb error">
+      <created>1573849079597</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1573849079598</updated>
+    </task>
+    <task id="LOCAL-00065" summary="- fixed bug when label code receives blank mage">
+      <created>1574011435071</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1574011435071</updated>
+    </task>
+    <task id="LOCAL-00066" summary="- fixed bug when label code receives blank mage">
+      <created>1574046486625</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1574046486625</updated>
+    </task>
+    <task id="LOCAL-00067" summary="- fixed bug when label code receives blank mage">
+      <created>1574046524257</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1574046524257</updated>
+    </task>
+    <task id="LOCAL-00068" summary="- fixed bug when label code receives blank mage">
+      <created>1574046720372</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1574046720372</updated>
+    </task>
+    <task id="LOCAL-00069" summary="- fixed bug when label code receives blank mage">
+      <created>1574097508988</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1574097508988</updated>
+    </task>
+    <task id="LOCAL-00070" summary="- fixed bug when label code receives blank mage">
+      <created>1574140743895</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1574140743895</updated>
+    </task>
+    <task id="LOCAL-00071" summary="- fixed bug when label code receives blank mage">
+      <created>1574306990397</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1574306990398</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,8 +657,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added readme to docs" />
-    <MESSAGE value="added include form cython" />
     <MESSAGE value="fixed include form cython" />
     <MESSAGE value="updated lib" />
     <MESSAGE value="fixed setup.py" />
@@ -680,7 +680,9 @@
     <MESSAGE value="fixed Jacks watershed call" />
     <MESSAGE value="- bug fixes&#10;- made label_props more flexible by allowing input of output params&#10;- refactored clearmap.IO as clearmap.io&#10;- modified label_props to allow for more flexibility in the future by accepting a list of properties to export.&#10;- label props now skipped if not output_properties defined&#10;- points can now be read/written to json" />
     <MESSAGE value="- fixewd tempfile behavior so it properly deletes folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixewd tempfile behavior so it properly deletes folder" />
+    <MESSAGE value="- fixed dumb error" />
+    <MESSAGE value="- fixed bug when label code receives blank mage" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed bug when label code receives blank mage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -696,7 +698,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/clearmap3/stack_processing/stack_processing.py</url>
+          <url>file://$PROJECT_DIR$/bq3d/stack_processing/stack_processing.py</url>
           <line>149</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
@@ -710,6 +712,16 @@
           <line>127</line>
           <option name="timeStamp" value="221" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bq3d/utils/chunking.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bq3d/io/io.py</url>
+          <line>419</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -721,8 +733,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/brainquant3d$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574307285279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$cell_detection.coverage" NAME="cell_detection Coverage Results" MODIFIED="1572906449696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clearmap3/stack_processing" />
-    <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573592861246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/BrainQuant3D$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574304139931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574220377457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$axon_segmentation.coverage" NAME="axon_segmentation Coverage Results" MODIFIED="1569969334405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$2p_analysis.coverage" NAME="2p_analysis Coverage Results" MODIFIED="1573586263679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>

@@ -58,14 +58,16 @@ def region_props(label_image, intensity_image=None):
     if label_image.ndim not in (2, 3):
         raise TypeError('Only 2d and 3d images are supported.')
 
-    if not intensity_image.shape == label_image.shape:
-        raise ValueError('Label and intensity image must have the same shape.')
+    if isinstance(intensity_image, np.ndarray):
+        if not intensity_image.shape == label_image.shape:
+            raise ValueError('Label and intensity image must have the same shape.')
 
     if not np.issubdtype(label_image.dtype, np.integer):
         raise TypeError('Label image must be integer type.')
 
     regions = []
     objects = ndi.find_objects(label_image)
+    log.info(f'Objects Detected: {len(objects)}')
 
     for i, sl in enumerate(objects):
         if sl is None:

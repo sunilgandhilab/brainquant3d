@@ -111,7 +111,7 @@ def chunk_ranges(source:Union[str, np.ndarray],
     if any([overlap > s for s in min_sizes]):
         raise ValueError('overnlap cannot be smaller thn any value in min_size')
 
-    chunk_size = size * (1.28 * 10**8) / source.itemsize # in voxels
+    chunk_size = size * (1.28 * 10**9) / source.itemsize # in voxels
 
     indices = []
     if chunk_size < source.size:

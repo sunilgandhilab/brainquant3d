@@ -35,7 +35,7 @@ def readPoints(filename, **args):
     
     Arguments:
         filename (str): file name
-        args: arguments for :func:`~bq3d.IO.pointsToRange`
+        args: arguments for :func:`~clearmap3.io.pointsToRange`
     
     Returns:
         str: file name

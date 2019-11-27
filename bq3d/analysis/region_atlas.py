@@ -53,7 +53,8 @@ class Region(AnyNode):
 
         self.nPoints         = []
         self.points_density  = []
-        # all kwargs aside from the required ones above get placed in an attribute named after the key
+        # all kwargs aside from the required ones above
+        # get placed in an attribute named after the key
         for key, value in list(kwargs.items()):
             setattr(self, key, value)
 
@@ -555,11 +556,6 @@ class Atlas(object):
 
     def clear(self):
         """ removes voxel info from all regions"""
-        #self.volume          = 0
-        #self.voxels          = {}
-#
-        #self.nPoints         = []
-        #self.points_density  = []
         for region in PostOrderIter(self.tree_root):
             region.clear()
 

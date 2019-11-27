@@ -40,7 +40,8 @@ For example to read image data use :func:`~bq3d.IO.IO.readData`:
 
     >>> import os
     >>> from bq3d import io
-    >>> import bq3d.    >>> filename = os.path.join(bq3d.config.brainquant3d_path,'Test/Data/Tif/test.tif')
+    >>> import bq3d
+    >>> filename = os.path.join(bq3d.config.brainquant3d_path,'Test/Data/Tif/test.tif')
     >>> data = io.readData(filename)
     >>> print data.shape
     (20, 50, 10)
@@ -76,7 +77,8 @@ useful when the images are very large. For example to load a sub-image:
 
     >>> import os, numpy
     >>> from bq3d import io
-    >>> import bq3d.    >>> filename = os.path.join(bq3d.config.brainquant3d_path,'Test/Data/Tif/test.tif')
+    >>> import bq3d
+    >>> filename = os.path.join(bq3d.config.brainquant3d_path,'Test/Data/Tif/test.tif')
     >>> res = io.readData(filename, data, x = (0,3), y = (4,6), z = (1,4))
     >>> print res.shape
     (3, 2, 3)
@@ -115,7 +117,8 @@ For example to read point data use :func:`~bq3d.IO.IO.readPoints`:
 
     >>> import os
     >>> from bq3d import io
-    >>> import bq3d.    >>> filename = os.path.join(bq3d.config.brainquant3d_path, stack_processing')
+    >>> import bq3d
+    >>> filename = os.path.join(bq3d.config.brainquant3d_path, stack_processing')
     >>> points = io.readPoints(filename)
     >>> print points.shape
     (5, 3)
@@ -124,7 +127,8 @@ and to write it use :func:`~bq3d.IO.IO.writePoints`:
 
     >>> import os, numpy
     >>> from bq3d import io
-    >>> import bq3d.    >>> filename = os.path.join(bq3d.config.brainquant3d_path, stack_stack_processing >>> points = numpy.random.rand(5,3)
+    >>> import bq3d
+    >>> filename = os.path.join(bq3d.config.brainquant3d_path, stack_stack_processing >>> points = numpy.random.rand(5,3)
     >>> io.writePoints(filename, points)
 
 

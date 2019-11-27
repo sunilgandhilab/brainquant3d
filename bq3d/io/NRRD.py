@@ -10,7 +10,7 @@ See http://teem.sourceforge.net/nrrd/format.html for the specification.
 Example:
     >>> import os, numpy
     >>> import bq3d.Settings as settings
-    >>> import bq3d.IO.NRRD as nrrd
+    >>> import bq3d.io.NRRD as nrrd
     >>> filename = os.path.join(bq3d.config.brainquant3dPath, 'Test/Data/Nrrd/test.nrrd')
     >>> data = nrrd.readData(filename)  
     >>> print data.shape

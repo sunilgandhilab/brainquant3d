@@ -4,7 +4,7 @@ IO interface to read microscope and point data
 
 This is the main module to distribute the reading and writing of individual data formats to the specialized sub-modules.
 
-See :mod:`bq3d.IO` for details.
+See :mod:`bq3d.io` for details.
 
 """
 
@@ -33,16 +33,19 @@ pointFileExtensionToType = {'csv' : 'CSV', 'txt' : 'CSV', 'npy' : 'NPY', 'vtk' :
                             'ims' : 'Imaris', 'json': 'json'}
 """map from point file extensions to point file types"""
 
-dataFileExtensions = ['tif', 'tiff', 'mhd', 'raw', 'zraw', 'ims', 'nrrd', 'npy', 'NPY', 'csv']
+dataFileExtensions = ['tif', 'tiff', 'mhd', 'raw', 'zraw', 'ims', 'nrrd', 'npy', 'NPY', 'csv',
+                      'json']
 """list of extensions supported as a image data file"""
 
-dataFileTypes = ['FileList', 'TIF', 'RAW', 'NRRD', 'Imaris', 'NPY', 'CSV']
+dataFileTypes = ['FileList', 'TIF', 'RAW', 'NRRD', 'Imaris', 'NPY', 'CSV','json']
 """list of image data file types"""
 
 mappableFileTypes = ['TIF', 'NPY']
 """list of file types compatable with bq3dmemory mapping"""
 
-dataFileExtensionToType = { 'tif' : 'TIF', 'tiff' : 'TIF', 'raw' : 'RAW', 'zraw' : 'RAW', 'mhd' : 'RAW', 'nrrd': 'NRRD', 'ims' : 'Imaris', 'npy' : 'NPY', 'csv' : 'CSV'}
+dataFileExtensionToType = { 'tif' : 'TIF', 'tiff' : 'TIF', 'raw' : 'RAW', 'zraw' : 'RAW',
+                            'mhd' : 'RAW', 'nrrd': 'NRRD', 'ims' : 'Imaris', 'npy' : 'NPY',
+                            'json': 'json', 'csv' : 'CSV'}
 """map from image file extensions to image file types"""
 
 
@@ -447,7 +450,9 @@ def readData(source, **args):
     if isinstance(source, Path):
         source = source.as_posix()
 
-    log.debug(f'Reading {source}')
+    if isinstance(source, (str, numpy.memmap)):
+        log.debug(f'Reading {source}')
+
     if source is None:
         return None
     elif isinstance(source, str):
@@ -876,7 +881,7 @@ def writePoints(sink, points, **args):
     if not Path(abs_path.parent).is_dir():
         os.mkdir(abs_path.parent)
 
-    ret = mod.writePoints(abs_path.as_po0six(), points)
+    ret = mod.writePoints(abs_path.as_posix(), points)
 
     return ret
 

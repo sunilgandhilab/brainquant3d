@@ -7,7 +7,7 @@ The interface is based on the numpy library.
 Example:
     >>> import os, numpy
     >>> import bq3d.Settings as settings
-    >>> import bq3d.IO.NPY as npy
+    >>> import bq3d.io.NPY as npy
     >>> filename = os.path.join(bq3d.config.brainquant3dPath, 'Test/Data/NPY/points.npy')
     >>> points = npy.readPoints(filename)
     >>> print points.shape

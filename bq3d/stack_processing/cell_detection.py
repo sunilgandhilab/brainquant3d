@@ -82,7 +82,7 @@ def process_flow(source,
     """
 
 
-    temp_dir = unique_temp_dir('brainquant3d')
+    temp_dir = unique_temp_dir('bq3d')
     os.makedirs(temp_dir)
     source_fn = temp_dir / (str(uuid.uuid4()) + '.tif')
     log.verbose(f'Copying raw data to: {source_fn}')
@@ -110,9 +110,6 @@ def process_flow(source,
         shutil.rmtree(temp_dir, ignore_errors=True)
         raise err
 
-    results = [results[0] for i in range(200)]
-    unique_chunks = [unique_chunks[0] for i in range(200)]
-    overlap_chunks = [overlap_chunks[0] for i in range(200)]
     # join results
     results = join_points(results, unique_chunks, overlap_chunks)
     results = jsonify_points(output_properties, results)
@@ -140,8 +137,13 @@ def join_points(results, unique_ranges, overlap_ranges):
     """
 
     nchunks = len(results)
-    all_coords  = [results[i][0] for i in range(nchunks)]
-    all_props   = [results[i][1:] for i in range(nchunks)]
+
+    all_coords  = []
+    all_props   = []
+    for r in results:
+        if len(r) > 0:
+            all_coords.append(r[0])
+            all_props.append(r[1:])
 
     filtered_data = None
 
@@ -161,6 +163,7 @@ def join_points(results, unique_ranges, overlap_ranges):
 
             # join data
             data = np.concatenate((coords, props), axis=1)
+            data = data[mask]
 
             if not isinstance(filtered_data, np.ndarray):
                 filtered_data = data

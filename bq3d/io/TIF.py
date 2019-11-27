@@ -79,9 +79,9 @@ def readData(filename, x = None, y = None, z = None, returnMemmap = True, **kwar
     return io.dataToRange(data, x = x, y = y, z = z)
 
 
-def empty(filename, shape, dtype):
+def empty(filename, shape, dtype, **kwargs):
 
-    return tif.tifffile.memmap(filename, shape=shape, dtype=dtype)
+    return tif.tifffile.memmap(filename, shape=shape, dtype=dtype, **kwargs)
 
 
 def writeData(filename, data, rgb = False, substack = None, returnMemmap = True):

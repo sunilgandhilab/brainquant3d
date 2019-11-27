@@ -4,7 +4,8 @@ Simple Interface to read RAW/MHD files e.g. created by elastix
 
 Example:
     >>> import os, numpy
-    >>> import bq3d.    >>> import bq3d.IO.RAW as raw
+    >>> import bq3d
+    >>> import bq3d.io.RAW as raw
     >>> filename = os.path.join(brainquant3dPath, 'Test/Data/Raw/test.mhd') 
     >>> raw.dataSize(filename)
     (20, 50, 10)

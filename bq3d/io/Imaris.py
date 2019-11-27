@@ -10,7 +10,7 @@ Note:
 
 Example:
     >>> import os, numpy
-    >>> import bq3d.IO.Imaris as ims
+    >>> import bq3d.io.Imaris as ims
     >>> filename = os.path.join(brainquant3dPath,'Test/Data/Imaris/test for spots added spot.ims') 
     >>> ims.dataSize(filename)
     (256, 320, 256)
