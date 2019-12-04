@@ -97,7 +97,7 @@ def orientResolution(resolution, orientation):
 
     per = orientationToPermuation(orientation)
     # print orientation, per, resolution
-    return tuple(resolution[i-1] for i in per)
+    return tuple(resolution[i] for i in per)
 
 
 def orientResolutionInverse(resolution, orientation):
@@ -118,7 +118,7 @@ def orientResolutionInverse(resolution, orientation):
         return None
 
     per = orientationToPermuation(invert_orientation(orientation))
-    return tuple(resolution[i-1] for i in per)
+    return tuple(resolution[i] for i in per)
 
 
 def orientDataSize(dataSize, orientation):

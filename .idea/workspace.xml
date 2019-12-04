@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/_version.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bq3d/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/resampling.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../software/python" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -289,14 +290,9 @@
       <workItem from="1573772492315" duration="25781000" />
       <workItem from="1574215365334" duration="7851000" />
       <workItem from="1574275210826" duration="8412000" />
-      <workItem from="1574304872679" duration="6842000" />
-    </task>
-    <task id="LOCAL-00023" summary="fixed setup.py">
-      <created>1565373292462</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1565373292462</updated>
+      <workItem from="1574304872679" duration="8088000" />
+      <workItem from="1574727029503" duration="290000" />
+      <workItem from="1575424911363" duration="102000" />
     </task>
     <task id="LOCAL-00024" summary="fixed setup.py">
       <created>1565373902990</created>
@@ -634,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574306990398</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="- fixed bug when label code receives blank mage">
+      <created>1574314333838</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1574314333838</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
