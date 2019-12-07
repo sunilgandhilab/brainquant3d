@@ -6,7 +6,6 @@
 import os
 import sys
 import numpy
-from pip._internal.main import main
 import pkgutil
 import shutil
 import tarfile
@@ -25,8 +24,10 @@ if sys.platform not in ['linux', 'darwin']:
     raise EnvironmentError(f'Platform {sys.platform} not supported.')
 
 if sys.platform == 'linux':
+    from pip._internal.main import main
     opencv_libs = '.lib-linux'
 elif sys.platform == 'darwin':
+    from pip._internal import main
     opencv_libs = '.lib-osx'
 
 USE_CYTHON = 'auto'
