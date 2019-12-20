@@ -38,18 +38,26 @@ Open the new file and edit the following paths:
 
 **Temp_path**: This is the location where temp data will be stored. It should be on a high-performance SSD. Preferably an NVMe. If the path does not exist, it will be created.
 
-**Rigid_default**, **Affine_default**, **BSpline_default**, **Labeled_default**, **Annotations_default**: These are the paths to the Allan Brain Atlas datasets downloaded earlier.
+**Rigid_default**, **Affine_default**, **BSpline_default**, **Labeled_default**, **Annotations_default**: These are the paths to the Allen Brain Atlas datasets downloaded earlier.
 
 An example configuration is provided below:
 
 ```yaml
-Temp_path:           ‘/mnt/ssd/brainquant3d-tmp’
+user:
+    default:
+        # Paths
+        Ilastik_path:        !pkg_path '.external/ilastik-1.3.3-Linux/'
+        Elastix_path:        !pkg_path '.external/elastix-5.0.0-linux'
+        Temp_path:           ‘/mnt/ssd/brainquant3d-tmp’
 
-Rigid_default:       '/home/<user>/atlas-data/warping/ParRigid.txt'
-Affine_default:      '/home/<user>/atlas-data/warping/ParAffine.txt'
-BSpline_default:     '/home/<user>/atlas-data/warping/ParBSpline.txt'
-Labeled_default:     '/home/<user>/atlas-data/warping/ARA2/annotation_25_right.tif'
-Annotations_default: '/home/<user>/atlas-data/warping/ARA2_annotation_info_collapse.csv'
+        Rigid_default:       '/home/<user>/atlas-data/warping/ParRigid.txt'
+        Affine_default:      '/home/<user>/atlas-data/warping/ParAffine.txt'
+        BSpline_default:     '/home/<user>/atlas-data/warping/ParBSpline.txt'
+        Labeled_default:     '/home/<user>/atlas-data/warping/ARA2/annotation_25_right.tif'
+        Annotations_default: '/home/<user>/atlas-data/warping/ARA2_annotation_info_collapse.csv'
+        Console_level:       'verbose'
+        Processing_cores:    1
+        Thread_ram_max_Gb:   2
 ```
 
 Now open a python shell and try to import brainquant3d:
