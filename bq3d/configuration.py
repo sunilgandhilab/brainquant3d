@@ -22,7 +22,6 @@ from pathlib import Path
 from bq3d.utils.logger import setup_logging
 
 import logging
-log = logging.getLogger(__name__)
 
 from bq3d._version import __version__
 __author__     = 'Ricardo Azevedo'
@@ -32,6 +31,9 @@ __version__    = __version__
 __maintainer__ = 'Ricardo Azevedo'
 __email__      = 'ricardo-re-azevedo@gmail.com'
 __status__     = "Development"
+
+log = logging.getLogger(__name__)
+
 
 class Config(object):
     """Object to hold global settings and configure package environment"""

@@ -11,6 +11,15 @@ from bq3d.utils.files import unique_temp_dir
 from bq3d.image_filters.functions import filter_image
 from bq3d.analysis.label_properties import label_props
 
+from bq3d._version import __version__
+__author__     = 'Ricardo Azevedo, Jack Zeitoun'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
 log = logging.getLogger(__name__)
 
 #define the subroutine for the processing

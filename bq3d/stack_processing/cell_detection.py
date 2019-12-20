@@ -18,6 +18,16 @@ from bq3d.stack_processing.parallelization import processSubStack
 
 import logging
 from bq3d.utils.logger import set_console_level
+
+from bq3d._version import __version__
+__author__     = 'Ricardo Azevedo, Jack Zeitoun'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
 log = logging.getLogger(__name__)
 
 

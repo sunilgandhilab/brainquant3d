@@ -15,6 +15,16 @@ from .util.nonzero_coords import nonzero_coords
 from .watershed.watershed import watershed
 from .watershed._util import _validate_connectivity, _offsets_to_raveled_neighbors
 
+from bq3d._version import __version__
+__author__     = 'Jack Zeitoun, Ricardo Azevedo'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
+
 class Label(FilterBase):
     """thresholds image using Ilastik's threshold applet
 

@@ -2,6 +2,16 @@ import numpy as np
 
 from ._filter import _size_filter, _label_by_size
 
+from bq3d._version import __version__
+__author__     = 'Jack Zeitoun, Ricardo Azevedo'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
+
 def size_filter(image, minsize, maxsize, output):
     """Filteres labeled regions in 'image' by size.
 
@@ -39,7 +49,7 @@ def size_filter(image, minsize, maxsize, output):
     return n_labels_in, counts
 
 def label_by_size(image,  output):
-    """hanges the value of all labels in a labeled image to their volume. Good for determining
+    """Changes the value of all labels in a labeled image to their volume. Good for determining
     size thresholds.
 
     Parameters

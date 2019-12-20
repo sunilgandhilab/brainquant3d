@@ -4,11 +4,22 @@ Converts point data into voxel image data for visulaization and analysis
 
 import numpy as np
 import math
-import logging
 
 from bq3d import io
 import bq3d.analysis._voxelization as vox
 from bq3d.analysis.colocalization import point_distance
+
+import logging
+
+from bq3d._version import __version__
+__author__     = 'Ricardo Azevedo, Jack Zeitoun'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
 log = logging.getLogger(__name__)
 
 

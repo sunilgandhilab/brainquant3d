@@ -3,6 +3,15 @@ import uuid
 from bq3d import config
 from pathlib import Path
 
+from bq3d._version import __version__
+__author__     = 'Ricardo Azevedo, Jack Zeitoun'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
 
 def unique_temp_dir(folder, path = config.temp_dir):
     """ Creates a unique temp.

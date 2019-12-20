@@ -31,6 +31,16 @@ import math
 from bq3d.image_filters.filters.helpers.structureElement  import structureElementOffsets
 
 import logging
+
+from bq3d._version import __version__
+__author__     = 'Ricardo Azevedo, Jack Zeitoun'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
 log = logging.getLogger(__name__)
 
 def filterKernel(ftype = 'Gaussian', size = (5,5), sigma = None, radius = None, sigma2 = None):

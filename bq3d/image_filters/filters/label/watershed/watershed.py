@@ -2,6 +2,15 @@ import numpy as np
 
 from ._watershed import _watershed
 
+from bq3d._version import __version__
+__author__     = 'Jack Zeitoun, Ricardo Azevedo'
+__copyright__  = "Copyright 2019, Gandhi Lab"
+__license__    = 'BY-NC-SA 4.0'
+__version__    = __version__
+__maintainer__ = 'Ricardo Azevedo'
+__email__      = 'ricardo-re-azevedo@gmail.com'
+__status__     = "Development"
+
 
 def watershed(raw_image, marker_locations, flat_neighborhood, mask_image, image_strides,
               output_image, invert=False):
