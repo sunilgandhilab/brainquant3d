@@ -174,7 +174,7 @@ flow = (
 
 The rest of the file contains parameters that are specific to the data downsampling and registration operations. In general, these should not be modified.
 
-The parameter file is now ready. For the process file, we will only change the line that points to the parameter file. This line is important as it tells BrainQuant3D which parameter file to use.
+The parameter file is now ready. Now we need to edit the process file. Edit the following line so that it points to the parameter file.
 
 ```python
 exec(open("/mnt/ssd/bq3d-tutorial/parameter.py").read())
