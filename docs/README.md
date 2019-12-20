@@ -5,20 +5,20 @@
 Download and Install
 
 ```
-pip3 install --user https://github.com/sunilgandhilab/brainquant3d
+$ pip3 install --user https://github.com/sunilgandhilab/brainquant3d
 ```
 
 Download Allen Brain Atlas datasets
 
 ```
-placeholder
+$ placeholder
 ```
 
 Create directory to hold Atlas datasets and move them into the new directory
 
 ```
-mkdir /home/<user>/atlas-data
-mv <Atlas-Download> /home/<user>/atlas-data
+$ mkdir /home/<user>/atlas-data
+$ mv <Atlas-Download> /home/<user>/atlas-data
 ```
 
 Now you need to set up the configuration file. This file will tell brainquant3d where to place temp data and where to find the atlas data. The configuration template file (default.conf) can be found in the package install location. On Linux, this should be:
@@ -30,8 +30,8 @@ Now you need to set up the configuration file. This file will tell brainquant3d 
 Copy this file and change the name
 
 ```
-mv /home/<user>/.local/lib/python3.x/site-packages/bq3d
-cp default.conf brainquant3d.conf
+$ mv /home/<user>/.local/lib/python3.x/site-packages/bq3d
+$ cp default.conf brainquant3d.conf
 ```
 
 Open the new file and edit the following paths:
@@ -183,7 +183,7 @@ For this tutorial, we will not be making any other changes to the process file. 
 At this point, you are ready to run BrainQuant3D. Make sure the **process.py** and **parameter.py** files are in the **BaseDirectory**. Now you simply run the **process.py** script.
 
 ```
-python3 /mnt/ssd/bq3d-tutorial/process.py
+$ python3 /mnt/ssd/bq3d-tutorial/process.py
 ```
 
 If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, length of each can vary quite a lot. For a typical typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
