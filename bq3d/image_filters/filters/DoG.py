@@ -33,6 +33,7 @@ class DoG(FilterBase):
 
     Attributes:
         input (array): Image to pass through filter.
+
         size (tuple): Size of the kernel.
         sigma (tuple): Sigma values for first gaussian.
         sigma2 (tuple): Sigma values for second gaussian.

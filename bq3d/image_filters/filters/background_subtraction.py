@@ -22,7 +22,7 @@ class RollingBackgroundSubtract(FilterBase):
     """
 
     def __init__(self):
-        self.size     = None
+        self.size = None
         super().__init__()
 
     def _generate_output(self):
@@ -112,5 +112,6 @@ class BackgroundSubtract(FilterBase):
         img.shape = orig_shape
 
         return self.input
+
 
 filter_manager.add_filter(BackgroundSubtract())

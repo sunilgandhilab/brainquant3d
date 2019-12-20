@@ -25,8 +25,8 @@ class IlluminationCorrection(FilterBase):
     The filter also has functionality to create flat field corections from measured
     intensity changes along a single axis, useful for lightsheet images where illumination is similar along x.
     see e.g. :func:`flatfieldLineFromRegression`.
-    Call using :meth:`filter_image` with 'illumination_correction' as filter.
 
+    Call using :meth:`filter_image` with 'IlluminationCorrection' as filter.
 
      .. math:
          C(x) = \\frac{I(x) - B(x)}{F(x) - B(x)}
@@ -41,6 +41,7 @@ class IlluminationCorrection(FilterBase):
         model_axis (int): If model is 1D, the axis defines which axis it models. The model will be extended along the other axis in xy.
         background (str, array, or none): background image to be subtracted from the input image.
         scaling (str or int): scale the corrected result by this factor. Also accepts 'max' or 'mean'.
+
     References:
         Fundamentals of Light Microscopy and Electronic Imaging, p 421
     """

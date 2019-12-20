@@ -6,18 +6,20 @@ from bq3d.image_filters import filter_manager
 from bq3d.image_filters.filter import FilterBase
 
 class Project(FilterBase):
-    """ Calculates h-maximum transform of an image. input should be unassigned ints.
+    """Generates a projection along the Z-axis using the specified method.
+
+    Call using :meth:`filter_image` with 'Max' as filter.
 
     Attributes:
         input (array): Image to pass through filter.
         output (array): Filter result.
 
-        hMax (float): h parameter of h-max transform
-
+        method (str): Method to use for projection. "max" or "min".
+        mask (array): Optional binary image to use as a mask.
     """
 
     def __init__(self):
-        self.method   = 'max'
+        self.method = 'max'
         self.mask = None
         super().__init__()
 
@@ -43,7 +45,6 @@ class Project(FilterBase):
             return sink
 
         if method == 'min':
-
             max_v = np.iinfo(self.input.dtype).max
             sink = np.full(self.input.shape[1:], max_v, dtype=self.input.dtype)
             if self.mask:
@@ -62,8 +63,4 @@ class Project(FilterBase):
             sink[sink == max_v] = 0
             return sink
 
-
 filter_manager.add_filter(Project())
-
-
-
