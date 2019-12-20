@@ -166,7 +166,13 @@ flow = (
 
 The rest of the file contains parameters that are specific to the data downsampling and registration operations. In general, these should not be modified.
 
-The parameter file is now ready. The process file will not be modified for this tutorial; however, see below for a brief description of how the process file works.
+The parameter file is now ready. For the process file, we will only change the line that points to the parameter file. This line is important as it tells BrainQuant3D which parameter file to use.
+
+```python
+exec(open("/mnt/ssd/bq3d-tutorial/parameter.py").read())
+```
+
+For this tutorial, we will not be making any other changes to the process file. In general, the process file will not need to be modified unless you want to exclude certain routines (e.g. warping/registration) from the analysis. In that case, simply comment out the block of code you want to exclude. See below for a brief description of each block in the process file.
 
 1.	Cells detection is performed first. This is the block of code that will execute the filter pipeline we created and assigned to the “flow” field. The output of this block will be the absolute coordinates for each detected cell.
 2.	After cell detection, the signal and autofluorescence channels will be downsampled to a more manageable size. The channels will then be registered to each other to correct for any misalignment during acquisition. Finally, the autofluorescence channel will be registered to the Atlas.
@@ -174,4 +180,31 @@ The parameter file is now ready. The process file will not be modified for this 
 4.	A heatmap containing all transformed cell coordinates will be written onto the Atlas so that cells can be localized to brain regions.
 5.	A CSV file will be generated that contains cell density properties for each brain region.
 
-In general, the process file will not need to be modified unless you want to exclude certain routines (e.g. warping/registration) from the analysis. In that case, simply comment out the block of code you want to exclude
+At this point, you are ready to run BrainQuant3D. Make sure the **process.py** and **parameter.py** files are in the **BaseDirectory**. Now you simply run the **process.py** script.
+
+```
+python3 /mnt/ssd/bq3d-tutorial/process.py
+```
+
+If everything was done correctly, you should being seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, length of each can vary quite a lot. For a typical typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
+
+When complete, the **BaseDirectory** should contain the following new files and directories:
+
+```
+ants_auto_to_atlas/
+ants_signal_to_auto/
+autofluo_resampled_12.tif
+autofluo_resampled_25.tif
+cells_atlas.csv
+cells_atlas.tif
+cells_corr.tif
+cells_ds.tif
+cells.json
+cells_transformed.json
+labels/
+probs/
+signal_resampled_12.tif
+signal_resampled_25.tif
+```
+
+**Ricardo description of output**
