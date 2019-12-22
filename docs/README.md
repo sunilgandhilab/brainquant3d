@@ -2,23 +2,23 @@
 
 ## Installation
 
-Download and Install
+Download and install the main package
 
 ```
 $ pip3 install --user https://github.com/sunilgandhilab/brainquant3d
 ```
 
-Download Allen Brain Atlas datasets
+Download the Allen Brain Atlas datasets. This data is very large (30+ GB) so it will take some time.
 
 ```
-$ placeholder
+https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 ```
 
 Create directory to hold Atlas datasets and move them into the new directory
 
 ```
 $ mkdir /home/<user>/atlas-data
-$ mv <Atlas-Download> /home/<user>/atlas-data
+$ mv <Atlas-Download>/* /home/<user>/atlas-data
 ```
 
 Now you need to set up the configuration file. This file will tell brainquant3d where to place temp data and where to find the atlas data. The configuration template file (default.conf) can be found in the package install location. On Linux, this should be:
@@ -71,11 +71,17 @@ If the import succeeds with no warnings, you are ready to go. If you see any war
 
 ## Tutorial
 
-BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The dimensions are 800 x 10000 x 10000 (Z x Y x X).
+BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The data has been further downsampled to a manageable size: 800 x 10000 x 10000 (Z x Y x X).
 
 In BrainQuant3D, a pipeline is created by editing two files. The first file is the parameter file, **parameter.py**. The user will use this file to specify which filters to use, which order to run them in, and the various parameters for each filter. The second file is the process file, **process.py**. The process file is used to specify which analysis routines to run (e.g. cell detection, brain-to-atlas warping).
 
-Let's edit the parameter file.
+First download the dataset
+
+```
+https://drive.google.com/open?id=15AyqviyDIvvBo0DsLjNRi-0I6ocB5dYd
+```
+
+Now let's edit the parameter file. 
 
 The first field to edit is the **BaseDirectory**. This is the path to where the analysis results will be stored:
 
@@ -87,6 +93,12 @@ Next field is the “DataDirectory”. This is the path to where the directory w
 
 ```python
 DataDirectory = "/mnt/ssd/bq3d-tutorial/raw-data"
+```
+
+Now move the downloaded dataset into this location
+
+```
+$ mv <downloaded-dataset>/* /mnt/ssd/bq3d-tutorial/raw-data/
 ```
 
 Now we edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheed_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
@@ -215,4 +227,4 @@ signal_resampled_12.tif
 signal_resampled_25.tif
 ```
 
-**Ricardo description of output**
+This completes the tutorial. If you have any questions or need assistance, reach out to **jzeitoun@uci.edu**.
