@@ -5,7 +5,7 @@
 Download and install the main package
 
 ```
-$ pip3 install --user https://github.com/sunilgandhilab/brainquant3d
+$ pip3 install --user git+https://github.com/sunilgandhilab/brainquant3d.git
 ```
 
 Download the Allen Brain Atlas datasets. This data is very large (30+ GB) so it will take some time.
