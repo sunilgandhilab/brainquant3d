@@ -208,7 +208,7 @@ At this point, you are ready to run BrainQuant3D. Make sure the **process.py** a
 $ python3 /mnt/ssd/bq3d-tutorial/process.py
 ```
 
-If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, the runtime is quite variable. For a typical typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
+If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, the runtime is quite variable. For a typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
 
 When complete, the **BaseDirectory** should contain the following new files and directories:
 
