@@ -40,6 +40,8 @@ Open the new file and edit the following paths:
 
 **Rigid_default**, **Affine_default**, **BSpline_default**, **Labeled_default**, **Annotations_default**: These are the paths to the Allen Brain Atlas datasets downloaded earlier.
 
+**Processing_cores**, **Thread_ram_max_Gb**: These parameters specify how many processing cores to use and how much RAM to user per core. For example, if your system has 10 cores and 256 GB of RAM, you would set "Processing_cores" to 10 and "Thread_ram_max_Gb" to a value such as 22. This would use 10 x 22 = 220 GB of total RAM. It's a good idea to leave a little available RAM so as to not overload the system.
+
 An example configuration is provided below:
 
 ```yaml
@@ -56,8 +58,8 @@ user:
         Labeled_default:     '/home/<user>/atlas-data/warping/ARA2/annotation_25_right.tif'
         Annotations_default: '/home/<user>/atlas-data/warping/ARA2_annotation_info_collapse.csv'
         Console_level:       'verbose'
-        Processing_cores:    1
-        Thread_ram_max_Gb:   2
+        Processing_cores:    10
+        Thread_ram_max_Gb:   22
 ```
 
 Now open a python shell and try to import brainquant3d:
