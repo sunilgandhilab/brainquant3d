@@ -96,7 +96,7 @@ The first field to edit is the **BaseDirectory**. This is the path to where the 
 BaseDirectory = "/mnt/ssd/bq3d-tutorial"
 ```
 
-Next field is the “DataDirectory”. This is the path to where the directory where the raw data is stored. 
+Next field is the **DataDirectory**. This is the path to where the directory where the raw data is stored. 
 
 ```python
 DataDirectory = "/mnt/ssd/bq3d-tutorial/raw-data"
