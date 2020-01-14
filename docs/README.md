@@ -75,7 +75,10 @@ If the import succeeds with no warnings, you are ready to go. If you see any war
 
 BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The original size was 768 x 10500 x 5320 (Z x Y x X), but has been downsampled to a manageable size: 521 x 1050 x 532.
 
-![alt text](https://github.com/sunilgandhilab/brainquant3d/blob/master/common/sample.jpg "Sample Plane")
+
+<p align="center">
+  <img src="https://github.com/sunilgandhilab/brainquant3d/blob/master/common/sample.jpg"/>
+</p>
 
 In BrainQuant3D, a pipeline is created by editing two files. The first file is the parameter file, **parameter.py**. The user will use this file to specify which filters to use, which order to run them in, and the various parameters for each filter. The second file is the process file, **process.py**. The process file is used to specify which analysis routines to run (e.g. cell detection, brain-to-atlas warping).
 
