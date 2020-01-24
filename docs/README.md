@@ -1,5 +1,9 @@
 # Quickstart Guide
 
+## Requirements
+
+- Python 3.6+
+
 ## Installation
 
 Download and install the main package
