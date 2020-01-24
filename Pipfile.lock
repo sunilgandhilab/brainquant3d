@@ -337,7 +337,7 @@
                 "sha256:ef6be704ae2bc8ad0ebc5cb850ee9139493b0fc4e81abcc240fb392a63ebc808",
                 "sha256:f8dc19d92896558f9c4317ee365729ead9d7bbcf2052a9a19a3ef17abbb8ac5b"
             ],
-            "version": "==6.1.0"
+            "version": ">=6.2.0"
         },
         "pyparsing": {
             "hashes": [
