@@ -92,6 +92,11 @@ if USE_CYTHON:
                   sources=["bq3d/image_filters/filters/label/util/_nonzero_coords.pyx"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
+                  ),
+        Extension("bq3d.image_filters.filters._standardize",
+                  sources=["bq3d/image_filters/filters/_standardize.pyx"],
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
                   )
     ])
     cmdclass['build_ext'] = build_ext
@@ -137,6 +142,11 @@ else:
                   ),
         Extension("bq3d.image_filters.filters.label.util._nonzero_coords",
                   sources=["bq3d/image_filters/filters/label/util/_nonzero_coords.cpp"],
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
+                  ),
+        Extension("bq3d.image_filters.filters._standardize",
+                  sources=["bq3d/image_filters/filters/_standardize.cpp"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   )

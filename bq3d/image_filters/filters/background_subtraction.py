@@ -40,9 +40,6 @@ class RollingBackgroundSubtract(FilterBase):
 
         img = self.input
 
-        if img.dtype != np.uint8:
-            raise ValueError(f'Input image of type "{img.dtype}" not supported. Must be "np.uint8".')
-
         orig_shape = img.shape
         if len(orig_shape) < 3:
             img = img[np.newaxis, ...]

@@ -1,5 +1,9 @@
 # Quickstart Guide
 
+## Requirements
+
+- Python 3.6+
+
 ## Installation
 
 Download and install the main package
@@ -40,6 +44,8 @@ Open the new file and edit the following paths:
 
 **Rigid_default**, **Affine_default**, **BSpline_default**, **Labeled_default**, **Annotations_default**: These are the paths to the Allen Brain Atlas datasets downloaded earlier.
 
+**Processing_cores**, **Thread_ram_max_Gb**: These parameters specify how many processing cores to use and how much RAM to user per core. For example, if your system has 10 cores and 256 GB of RAM, you would set "Processing_cores" to 10 and "Thread_ram_max_Gb" to a value such as 22. This would use 10 x 22 = 220 GB of total RAM. It's a good idea to leave a little available RAM so as to not overload the system.
+
 An example configuration is provided below:
 
 ```yaml
@@ -56,8 +62,8 @@ user:
         Labeled_default:     '/home/<user>/atlas-data/warping/ARA2/annotation_25_right.tif'
         Annotations_default: '/home/<user>/atlas-data/warping/ARA2_annotation_info_collapse.csv'
         Console_level:       'verbose'
-        Processing_cores:    1
-        Thread_ram_max_Gb:   2
+        Processing_cores:    10
+        Thread_ram_max_Gb:   22
 ```
 
 Now open a python shell and try to import brainquant3d:
@@ -71,7 +77,12 @@ If the import succeeds with no warnings, you are ready to go. If you see any war
 
 ## Tutorial
 
-BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The data has been further downsampled to a manageable size: 800 x 10000 x 10000 (Z x Y x X).
+BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The original size was 768 x 10500 x 5320 (Z x Y x X), but has been downsampled to a manageable size: 521 x 1050 x 532.
+
+
+<p align="center">
+  <img src="https://github.com/sunilgandhilab/brainquant3d/blob/master/common/sample.jpg"/>
+</p>
 
 In BrainQuant3D, a pipeline is created by editing two files. The first file is the parameter file, **parameter.py**. The user will use this file to specify which filters to use, which order to run them in, and the various parameters for each filter. The second file is the process file, **process.py**. The process file is used to specify which analysis routines to run (e.g. cell detection, brain-to-atlas warping).
 
@@ -89,7 +100,7 @@ The first field to edit is the **BaseDirectory**. This is the path to where the 
 BaseDirectory = "/mnt/ssd/bq3d-tutorial"
 ```
 
-Next field is the “DataDirectory”. This is the path to where the directory where the raw data is stored. 
+Next field is the **DataDirectory**. This is the path to where the directory where the raw data is stored. 
 
 ```python
 DataDirectory = "/mnt/ssd/bq3d-tutorial/raw-data"
@@ -206,7 +217,7 @@ At this point, you are ready to run BrainQuant3D. Make sure the **process.py** a
 $ python3 /mnt/ssd/bq3d-tutorial/process.py
 ```
 
-If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, the runtime is quite variable. For a typical typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
+If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, the runtime is quite variable. For a typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
 
 When complete, the **BaseDirectory** should contain the following new files and directories:
 
