@@ -97,8 +97,8 @@ Inside, you should see two directories: **C01** and **C02**. These contain chann
 Next, create a folder to serve as the working directory:
 
 ```
-cd /mnt/ssd
-mkdir bq3d-tutorial
+$ cd /mnt/ssd
+$ mkdir bq3d-tutorial
 ```
 
 Download the **parameter.py** and **process.py** template files and place them in the newly created working directory (**bq3d-tutorial**). They can be found in the **common** directory in the root of this repository.
