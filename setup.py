@@ -27,7 +27,10 @@ if sys.platform == 'linux':
     try:
         from pip._internal.main import main
     except:
-        from pip import main
+        try:
+            from pip._internal import main
+        except:
+            from pip import main
     opencv_libs = '.lib-linux'
 elif sys.platform == 'darwin':
     from pip._internal import main
