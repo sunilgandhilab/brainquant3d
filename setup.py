@@ -11,6 +11,7 @@ import shutil
 import tarfile
 import urllib.request as request
 
+from glob import glob
 from pathlib import Path
 from setuptools import setup
 from setuptools import find_packages
@@ -160,7 +161,9 @@ class install(_install):
     def run(self):
 
         #  download external programs required by package to install directory.
-        dest = Path(os.getcwd()) / 'bq3d/.external'
+        cwd = os.getcwd()
+        build_dir = glob(os.path.join(cwd, 'build/lib.linux*'))[0]
+        dest = Path(build_dir) / 'bq3d/.external'
 
         print('installing elastik')
         url = 'https://github.com/SuperElastix/elastix/releases/download/5.0.0/elastix-5.0.0-linux.tar.bz2'
