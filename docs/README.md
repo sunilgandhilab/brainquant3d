@@ -126,7 +126,7 @@ $ mv tutorial/C01 tutorial/C02 /mnt/ssd/bq3d-tutorial/data/
 Now we edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheed_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
 
 ```python
-SignalFile = os.path.join(DataDirectory, "lightsheet_data_Z\d{4}_C01.tif")
+SignalFile = os.path.join(DataDirectory, "C01/lightsheet_data_Z\d{4}_C01.tif")
 ```
 
 The **\d{4}** means the filename will contain a number with 4 digits. If there are more or less digits in the filename, simply change the value in the curly brackets to match.
@@ -134,7 +134,7 @@ The **\d{4}** means the filename will contain a number with 4 digits. If there a
 The next field is the **AutoFluoFile**, which specifies the path to the autofluorescence channel. This channel is used for image registration to the Allen Brain Atlas. It will use the same format as the “SignalFile” field.
 
 ```python
-AutoFluoFile = os.path.join(DataDirectory, "lightsheet_data_Z\d{4}_C02.tif")
+AutoFluoFile = os.path.join(DataDirectory, "C02/lightsheet_data_Z\d{4}_C02.tif")
 ```
 
 Next we will specify the voxel dimensions. The value for this field will be a tuple containing the Z sampling distance between slices followed by the Y and then X pixel dimensions. Units are in microns.
