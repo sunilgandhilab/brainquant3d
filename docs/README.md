@@ -9,7 +9,7 @@
 Download and install the main package
 
 ```
-$ pip3 install -vvv --user git+https://github.com/sunilgandhilab/brainquant3d.git
+$ pip3 install --user git+https://github.com/sunilgandhilab/brainquant3d.git
 ```
 
 From the following link, download **Warping.zip**, which contains the Allen Brain Atlas datasets.
