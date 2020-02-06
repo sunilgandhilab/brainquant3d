@@ -166,7 +166,7 @@ class install(_install):
         dest = Path(build_dir) / 'bq3d/.external'
 
         print('installing elastik')
-        url = 'https://github.com/SuperElastix/elastix/releases/download/5.0.0/elastix-5.0.0-linux.tar.bz2'
+        url = 'https://glams.bio.uci.edu/elastix-5.0.0-linux.tar.bz2'
         tmp = Path(url).name
         sink = dest / 'elastix-5.0.0-linux'
         with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
@@ -176,7 +176,7 @@ class install(_install):
             tar.close()
 
         print('installing ilastik')
-        url = 'https://files.ilastik.org/ilastik-1.3.3-Linux.tar.bz2'
+        url = 'https://glams.bio.uci.edu/ilastik-1.3.3-Linux-noGurobi.tar.bz2'
         tmp = Path(url).name
 
         sink = dest
