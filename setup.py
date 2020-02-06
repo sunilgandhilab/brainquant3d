@@ -10,6 +10,7 @@ import pkgutil
 import shutil
 import tarfile
 import urllib.request as request
+import ssl
 
 from glob import glob
 from pathlib import Path
@@ -159,6 +160,9 @@ else:
 
 class install(_install):
     def run(self):
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
 
         #  download external programs required by package to install directory.
         cwd = os.getcwd()
@@ -169,7 +173,7 @@ class install(_install):
         url = 'https://glams.bio.uci.edu/elastix-5.0.0-linux.tar.bz2'
         tmp = Path(url).name
         sink = dest / 'elastix-5.0.0-linux'
-        with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+        with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
             tar.extractall(sink)
@@ -180,7 +184,7 @@ class install(_install):
         tmp = Path(url).name
 
         sink = dest
-        with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+        with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
             tar.extractall(sink)
