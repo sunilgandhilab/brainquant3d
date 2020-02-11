@@ -111,7 +111,7 @@ The first field to edit is the **BaseDirectory**. This is the path to where the 
 BaseDirectory = "/mnt/ssd/bq3d-tutorial/analysis"
 ```
 
-Next field is the **DataDirectory**. This is the path to where the directory where the raw data is stored:
+The next field is the **DataDirectory**. This is the path to where the raw data is stored:
 
 ```python
 DataDirectory = "/mnt/ssd/bq3d-tutorial/data"
@@ -123,7 +123,7 @@ Now move the downloaded dataset into this location:
 $ mv tutorial/C01 tutorial/C02 /mnt/ssd/bq3d-tutorial/data/
 ```
 
-Now we edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheed_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
+Now we will edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheet_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
 
 ```python
 SignalFile = os.path.join(DataDirectory, "C01/lightsheet_data_Z\d{4}_C01.tif")
