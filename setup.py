@@ -9,7 +9,9 @@ import numpy
 import shutil
 import tarfile
 import urllib.request as request
+import ssl
 
+from glob import glob
 from pathlib import Path
 from setuptools import find_packages
 from setuptools.command.install import install as _install
@@ -25,7 +27,10 @@ if sys.platform == 'linux':
     try:
         from pip._internal.main import main
     except:
-        from pip import main
+        try:
+            from pip._internal import main
+        except:
+            from pip import main
     opencv_libs = '.lib-linux'
 elif sys.platform == 'darwin':
     from pip._internal import main
@@ -100,6 +105,11 @@ if USE_CYTHON:
                   sources=["bq3d/io/cfunc/TIF.pyx"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
+                  ),
+        Extension("bq3d.image_filters.filters._standardize",
+                  sources=["bq3d/image_filters/filters/_standardize.pyx"],
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
                   )
     ])
     cmdclass['build_ext'] = build_ext
@@ -157,32 +167,42 @@ else:
                   sources=["bq3d/io/cfunc/TIF.cpp"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
+                  ),
+        Extension("bq3d.image_filters.filters._standardize",
+                  sources=["bq3d/image_filters/filters/_standardize.cpp"],
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
                   )
     ]
 
 
 class install(_install):
     def run(self):
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
 
         #  download external programs required by package to install directory.
-        dest = Path(os.getcwd()) / 'bq3d/.external'
+        cwd = os.getcwd()
+        build_dir = glob(os.path.join(cwd, 'build/lib.linux*'))[0]
+        dest = Path(build_dir) / 'bq3d/.external'
 
         print('installing elastik')
-        url = 'https://github.com/SuperElastix/elastix/releases/download/5.0.0/elastix-5.0.0-linux.tar.bz2'
+        url = 'https://glams.bio.uci.edu/elastix-5.0.0-linux.tar.bz2'
         tmp = Path(url).name
         sink = dest / 'elastix-5.0.0-linux'
-        with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+        with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
             tar.extractall(sink)
             tar.close()
 
         print('installing ilastik')
-        url = 'https://files.ilastik.org/ilastik-1.3.3-Linux.tar.bz2'
+        url = 'https://glams.bio.uci.edu/ilastik-1.3.3-Linux-noGurobi.tar.bz2'
         tmp = Path(url).name
 
         sink = dest
-        with request.urlopen(url) as response, open(tmp, 'wb') as out_file:
+        with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
             tar.extractall(sink)

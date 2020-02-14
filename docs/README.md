@@ -1,5 +1,9 @@
 # Quickstart Guide
 
+## Requirements
+
+- Python 3.6+
+
 ## Installation
 
 Download and install the main package
@@ -8,20 +12,20 @@ Download and install the main package
 $ pip3 install --user git+https://github.com/sunilgandhilab/brainquant3d.git
 ```
 
-Download the Allen Brain Atlas datasets. This data is very large (30+ GB) so it will take some time.
+From the following link, download **Warping.zip**, which contains the Allen Brain Atlas datasets.
 
 ```
 https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 ```
 
-Create directory to hold Atlas datasets and move them into the new directory
+Unzip and move the downloaded **Warping** directory to a location you will remember (e.g. home folder).
 
 ```
-$ mkdir /home/<user>/atlas-data
-$ mv <Atlas-Download>/* /home/<user>/atlas-data
+$ unzip Warping.zip
+$ mv Warping /home/<user>/Warping
 ```
 
-Now you need to set up the configuration file. This file will tell brainquant3d where to place temp data and where to find the atlas data. The configuration template file (default.conf) can be found in the package install location. On Linux, this should be:
+Now you need to set up the configuration file. This file will tell brainquant3d where to place temp data and where to find the atlas data. The configuration template file, **default.conf**, can be found in the package install location. On Linux, this should be:
 
 ```
 /home/<user>/.local/lib/python3.x/site-packages/bq3d
@@ -30,15 +34,17 @@ Now you need to set up the configuration file. This file will tell brainquant3d 
 Copy this file and change the name
 
 ```
-$ mv /home/<user>/.local/lib/python3.x/site-packages/bq3d
+$ cd /home/<user>/.local/lib/python3.x/site-packages/bq3d
 $ cp default.conf brainquant3d.conf
 ```
 
-Open the new file and edit the following paths:
+Open the new file, **brainquant3d.conf**, and edit the following paths:
 
 **Temp_path**: This is the location where temp data will be stored. It should be on a high-performance SSD. Preferably an NVMe. If the path does not exist, it will be created.
 
 **Rigid_default**, **Affine_default**, **BSpline_default**, **Labeled_default**, **Annotations_default**: These are the paths to the Allen Brain Atlas datasets downloaded earlier.
+
+**Processing_cores**, **Thread_ram_max_Gb**: These parameters specify how many processing cores to use and how much RAM to user per core. For example, if your system has 10 cores and 256 GB of RAM, you would set "Processing_cores" to 10 and "Thread_ram_max_Gb" to a value such as 22. This would use 10 x 22 = 220 GB of total RAM. It's a good idea to leave a little available RAM so as to not overload the system.
 
 An example configuration is provided below:
 
@@ -50,14 +56,14 @@ user:
         Elastix_path:        !pkg_path '.external/elastix-5.0.0-linux'
         Temp_path:           ‘/mnt/ssd/brainquant3d-tmp’
 
-        Rigid_default:       '/home/<user>/atlas-data/warping/ParRigid.txt'
-        Affine_default:      '/home/<user>/atlas-data/warping/ParAffine.txt'
-        BSpline_default:     '/home/<user>/atlas-data/warping/ParBSpline.txt'
-        Labeled_default:     '/home/<user>/atlas-data/warping/ARA2/annotation_25_right.tif'
-        Annotations_default: '/home/<user>/atlas-data/warping/ARA2_annotation_info_collapse.csv'
+        Rigid_default:       '/home/<user>/Warping/ParRigid.txt'
+        Affine_default:      '/home/<user>/Warping/ParAffine.txt'
+        BSpline_default:     '/home/<user>/Warping/ParBSpline.txt'
+        Labeled_default:     '/home/<user>/Warping/ARA2/annotation_25_right.tif'
+        Annotations_default: '/home/<user>/Wrping/ARA2_annotation_info_collapse.csv'
         Console_level:       'verbose'
-        Processing_cores:    1
-        Thread_ram_max_Gb:   2
+        Processing_cores:    10
+        Thread_ram_max_Gb:   22
 ```
 
 Now open a python shell and try to import brainquant3d:
@@ -71,40 +77,56 @@ If the import succeeds with no warnings, you are ready to go. If you see any war
 
 ## Tutorial
 
-BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The data has been further downsampled to a manageable size: 800 x 10000 x 10000 (Z x Y x X).
+BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The original size was 768 x 10500 x 5320 (Z x Y x X), but has been downsampled to a manageable size: 521 x 1050 x 532.
+
+
+<p align="center">
+  <img src="https://github.com/sunilgandhilab/brainquant3d/blob/master/common/sample.jpg"/>
+</p>
 
 In BrainQuant3D, a pipeline is created by editing two files. The first file is the parameter file, **parameter.py**. The user will use this file to specify which filters to use, which order to run them in, and the various parameters for each filter. The second file is the process file, **process.py**. The process file is used to specify which analysis routines to run (e.g. cell detection, brain-to-atlas warping).
 
-First download the dataset
+First download and unzip **tutorial.zip** from the following link:
 
 ```
-https://drive.google.com/open?id=15AyqviyDIvvBo0DsLjNRi-0I6ocB5dYd
+https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 ```
 
-Now let's edit the parameter file. 
+Inside, you should see two directories: **C01** and **C02**. These contain channels 1 and 2 of the data.
+
+Next, create a folder to serve as the working directory:
+
+```
+$ cd /mnt/ssd
+$ mkdir bq3d-tutorial
+```
+
+Download the **parameter.py** and **process.py** template files and place them in the newly created working directory (**bq3d-tutorial**). They can be found in the **common** directory in the root of this repository.
+
+Now we will edit the **parameter.py** file.
 
 The first field to edit is the **BaseDirectory**. This is the path to where the analysis results will be stored:
 
 ```python
-BaseDirectory = "/mnt/ssd/bq3d-tutorial"
+BaseDirectory = "/mnt/ssd/bq3d-tutorial/analysis"
 ```
 
-Next field is the “DataDirectory”. This is the path to where the directory where the raw data is stored. 
+The next field is the **DataDirectory**. This is the path to where the raw data is stored:
 
 ```python
-DataDirectory = "/mnt/ssd/bq3d-tutorial/raw-data"
+DataDirectory = "/mnt/ssd/bq3d-tutorial/data"
 ```
 
-Now move the downloaded dataset into this location
+Now move the downloaded dataset into this location:
 
 ```
-$ mv <downloaded-dataset>/* /mnt/ssd/bq3d-tutorial/raw-data/
+$ mv tutorial/C01 tutorial/C02 /mnt/ssd/bq3d-tutorial/data/
 ```
 
-Now we edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheed_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
+Now we will edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheet_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
 
 ```python
-SignalFile = os.path.join(DataDirectory, "lightsheet_data_Z\d{4}_C01.tif")
+SignalFile = os.path.join(DataDirectory, "C01/lightsheet_data_Z\d{4}_C01.tif")
 ```
 
 The **\d{4}** means the filename will contain a number with 4 digits. If there are more or less digits in the filename, simply change the value in the curly brackets to match.
@@ -112,7 +134,7 @@ The **\d{4}** means the filename will contain a number with 4 digits. If there a
 The next field is the **AutoFluoFile**, which specifies the path to the autofluorescence channel. This channel is used for image registration to the Allen Brain Atlas. It will use the same format as the “SignalFile” field.
 
 ```python
-AutoFluoFile = os.path.join(DataDirectory, "lightsheet_data_Z\d{4}_C02.tif")
+AutoFluoFile = os.path.join(DataDirectory, "C02/lightsheet_data_Z\d{4}_C02.tif")
 ```
 
 Next we will specify the voxel dimensions. The value for this field will be a tuple containing the Z sampling distance between slices followed by the Y and then X pixel dimensions. Units are in microns.
@@ -142,7 +164,7 @@ CorrectionResolution = (12, 12, 12)
 The next three fields will tell BrainQuant3D which atlas datasets to use. These fields should point to the location that we set up for the Atlases during the installation.
 
 ```python
-PathReg = "/home/<user>/atlas-data/warping/ARA2"
+PathReg = "/home/<user>/Warping/ARA2"
 AtlasFile = os.path.join(PathReg, "average_template_25_right.tif")
 AnnotationFile = os.path.join(PathReg, "annotation_25_right.tif")
 ```
@@ -166,9 +188,9 @@ flow = (
     {
         'filter'             : 'PixelClassification',
         'processes'          : 10,
-        "project"            : "/mnt/swap/npas/NPAS_v4.ilp",
+        "project"            : "/mnt/ssd/classifiers/<name>.ilp",
         "classindex"         : 0,
-        "save"               : os.path.join(BaseDirectory, 'probs/Z\d{4}.ome.tif'),
+        "save"               : os.path.join(BaseDirectory, 'probs/Z\d{4}.tif'),
     },
     {
         'filter'             : 'Label',
@@ -179,7 +201,7 @@ flow = (
         'max_size2'          : 1500,
         'high_threshold'     : .30,
         'low_threshold'      : .1,
-        "save"               : os.path.join(BaseDirectory, 'labels/Z\d{4}.ome.tif'),
+        "save"               : os.path.join(BaseDirectory, 'labels/Z\d{4}.tif'),
     }
 )
 ```
@@ -206,7 +228,7 @@ At this point, you are ready to run BrainQuant3D. Make sure the **process.py** a
 $ python3 /mnt/ssd/bq3d-tutorial/process.py
 ```
 
-If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, the runtime is quite variable. For a typical typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
+If everything was done correctly, you should begin seeing a log print to the screen. The runtime for this tutorial should be approximately 1-2 hours, though this will depend on your computing infrastrucure. For full-sized datasets, the runtime is quite variable. For a typical dataset with 2-300GB per channel, the runtime is somewhere between 12 - 24 hours.
 
 When complete, the **BaseDirectory** should contain the following new files and directories:
 
