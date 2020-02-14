@@ -6,13 +6,11 @@
 import os
 import sys
 import numpy
-import pkgutil
 import shutil
 import tarfile
 import urllib.request as request
 
 from pathlib import Path
-from setuptools import setup
 from setuptools import find_packages
 from setuptools.command.install import install as _install
 from distutils.core import setup
@@ -88,8 +86,18 @@ if USE_CYTHON:
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("bq3d.image_filters.filters.label.util._nonzero_coords",
-                  sources=["bq3d/image_filters/filters/label/util/_nonzero_coords.pyx"],
+        Extension("bq3d.image_filters.filters.diffusion_correction._diffuse",
+                  sources=["bq3d/image_filters/filters/diffusion_correction/_diffuse.pyx"],
+                  include_dirs=[numpy.get_include()],
+                  language="c++"
+                  ),
+        Extension("bq3d.image_filters.filters.helpers._nonzero_coords",
+                  sources=["bq3d/image_filters/filters/helpers/_nonzero_coords.pyx"],
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
+                  ),
+        Extension("bq3d.io.cfunc.TIFF",
+                  sources=["bq3d/io/cfunc/TIF.pyx"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   )
@@ -135,8 +143,18 @@ else:
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("bq3d.image_filters.filters.label.util._nonzero_coords",
-                  sources=["bq3d/image_filters/filters/label/util/_nonzero_coords.cpp"],
+        Extension("bq3d.image_filters.filters.diffusion_correction._diffuse",
+                  sources=["bq3d/image_filters/filters/diffusion_correction/_diffuse.cpp"],
+                  include_dirs=[numpy.get_include()],
+                  language="c++"
+                  ),
+        Extension("bq3d.image_filters.filters.helpers._nonzero_coords",
+                  sources=["bq3d/image_filters/filters/helpers/_nonzero_coords.cpp"],
+                  include_dirs=[numpy.get_include()],
+                  language='c++'
+                  ),
+        Extension("bq3d.io.cfunc.TIFF",
+                  sources=["bq3d/io/cfunc/TIF.cpp"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   )

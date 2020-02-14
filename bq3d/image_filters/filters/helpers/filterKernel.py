@@ -28,7 +28,7 @@ Type            Descrition
 import numpy
 import math
 
-from bq3d.image_filters.filters.helpers.structureElement  import structureElementOffsets
+from bq3d.image_filters.filters.helpers.structure_element import structure_element_offsets
 
 import logging
 

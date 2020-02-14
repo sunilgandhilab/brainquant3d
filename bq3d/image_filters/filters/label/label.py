@@ -11,9 +11,10 @@ from .connect import connect
 from .threshold import threshold
 from .filter import size_filter, label_by_size
 from .overlap import overlap
-from .util.nonzero_coords import nonzero_coords
+from bq3d.image_filters.filters.helpers.nonzero_coords import nonzero_coords
 from .watershed.watershed import watershed
-from .watershed._util import _validate_connectivity, _offsets_to_raveled_neighbors
+from bq3d.image_filters.filters.helpers.structure_element import structure_element_binary, \
+    _offsets_to_raveled_neighbors
 
 from bq3d._version import __version__
 __author__     = 'Jack Zeitoun, Ricardo Azevedo'
@@ -159,7 +160,7 @@ class Label(FilterBase):
             marker_locations_filename = os.path.join(self.temp_dir, 'marker_locations.mmap')
             marker_locations = nonzero_coords(labeled_1_img, marker_locations_filename)
 
-            connectivity, offset = _validate_connectivity(raw_img.ndim, connectivity=None,
+            connectivity, offset = structure_element_binary(raw_img.ndim, connectivity=1,
                                                           offset=None)
 
             flat_neighborhood = _offsets_to_raveled_neighbors(

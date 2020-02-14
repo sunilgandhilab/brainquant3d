@@ -25,4 +25,4 @@ cdef inline int smaller(Heapitem *a, Heapitem *b) nogil:
     return a.age < b.age
 
 
-include "heap_general.pxi"
+include "../../helpers/heap/heap_general.pxi"

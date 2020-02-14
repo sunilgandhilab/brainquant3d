@@ -10,3 +10,4 @@ from .label.label import Label, LabelBySize
 from .erosion import Erode
 from .surface_extraction import ExtractSurface
 from .projection import Project
+from .diffusion_correction.diffusion_correction import DiffusionCorr
