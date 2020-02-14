@@ -4,10 +4,36 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes">
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/_diffuse.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/diffuse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/diffusion_correction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/heap_diffuse.pxi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/_nonzero_coords.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/_nonzero_coords.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/heap/heap_general.pxi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/nonzero_coords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/structure_element.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bq3d/io/cfunc/TIF.pyx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/alignment/resampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/alignment/resampling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/filterKernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/filterKernel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/structureElement.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/_nonzero_coords.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/_nonzero_coords.pyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/nonzero_coords.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/extrema.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/extrema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_general.pxi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_watershed.pxi" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_watershed.pxi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/slots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/utils/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +58,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../software/python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../software/python/timelapse_analysis" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -46,17 +72,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/clearmap3/stack_processing" />
-      <recent name="$PROJECT_DIR$/clearmap3/.lib" />
-      <recent name="$PROJECT_DIR$/clearmap3" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/include" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/image_filters/filters" />
       <recent name="$PROJECT_DIR$/../ClearMap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bq3d/io/cfunc" />
+      <recent name="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction" />
+      <recent name="$PROJECT_DIR$/bq3d/image_filters/filters" />
+      <recent name="$PROJECT_DIR$/bq3d/image_filters/filters/background_correction/diffusion_correction" />
+      <recent name="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/heap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -71,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch">
+  <component name="RunManager" selected="Python.diffusion_model">
     <configuration name="2p_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,7 +214,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="condition comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="diffusion_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BrainQuant3D" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,7 +222,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches/image_filter_dev" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -208,9 +234,9 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" />
         </ENTRIES>
       </EXTENSION>
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/condition comparison.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/image_filter_dev/diffusion_model.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -247,19 +273,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.condition comparison" />
       <item itemvalue="Python.2p_analysis" />
       <item itemvalue="Python.axon_segmentation" />
       <item itemvalue="Python.scratch" />
       <item itemvalue="Python.cell_detection" />
+      <item itemvalue="Python.diffusion_model" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.diffusion_model" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.2p_analysis" />
         <item itemvalue="Python.cell_detection" />
         <item itemvalue="Python.axon_segmentation" />
-        <item itemvalue="Python.condition comparison" />
       </list>
     </recent_temporary>
   </component>
@@ -292,14 +318,12 @@
       <workItem from="1574275210826" duration="8412000" />
       <workItem from="1574304872679" duration="8088000" />
       <workItem from="1574727029503" duration="290000" />
-      <workItem from="1575424911363" duration="102000" />
-    </task>
-    <task id="LOCAL-00024" summary="fixed setup.py">
-      <created>1565373902990</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1565373902990</updated>
+      <workItem from="1575424911363" duration="198000" />
+      <workItem from="1578599823440" duration="5006000" />
+      <workItem from="1579108196963" duration="47084000" />
+      <workItem from="1580282750148" duration="280000" />
+      <workItem from="1581639629810" duration="3020000" />
+      <workItem from="1581649096192" duration="277000" />
     </task>
     <task id="LOCAL-00025" summary="fixed setup.py">
       <created>1565374039238</created>
@@ -637,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574314333838</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="- fixed bug causing resampling to not work correctly">
+      <created>1575425042146</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1575425042146</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +691,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed include form cython" />
     <MESSAGE value="updated lib" />
     <MESSAGE value="fixed setup.py" />
     <MESSAGE value="debugging setup.py" />
@@ -685,7 +715,8 @@
     <MESSAGE value="- fixewd tempfile behavior so it properly deletes folder" />
     <MESSAGE value="- fixed dumb error" />
     <MESSAGE value="- fixed bug when label code receives blank mage" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixed bug when label code receives blank mage" />
+    <MESSAGE value="- fixed bug causing resampling to not work correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed bug causing resampling to not work correctly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,13 +748,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bq3d/utils/chunking.py</url>
-          <line>147</line>
+          <line>157</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bq3d/io/io.py</url>
           <line>419</line>
           <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/diffuse.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bq3d/utils/logger.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/diffuse.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/image_filter_dev/diffusion_model.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/image_filter_dev/diffusion_model.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="270" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -736,8 +792,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/brainquant3d$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574307285279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/brainquant3d$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1578614722162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$cell_detection.coverage" NAME="cell_detection Coverage Results" MODIFIED="1572906449696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clearmap3/stack_processing" />
+    <SUITE FILE_PATH="coverage/brainquant3d$diffusion_model.coverage" NAME="diffusion_model Coverage Results" MODIFIED="1580173983999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches/image_filter_dev" />
     <SUITE FILE_PATH="coverage/BrainQuant3D$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574304139931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1574220377457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/clearmap3$axon_segmentation.coverage" NAME="axon_segmentation Coverage Results" MODIFIED="1569969334405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />

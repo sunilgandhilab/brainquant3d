@@ -15,7 +15,7 @@ from scipy import ndimage as ndi
 from ..util import dtype_limits, invert, crop
 from .._shared.utils import warn
 from . import greyreconstruct
-from ._util import _offsets_to_raveled_neighbors
+from bq3d.image_filters.filters.helpers.structure_element import _offsets_to_raveled_neighbors
 from ._extrema_cy import _local_maxima
 
 from bq3d._version import __version__

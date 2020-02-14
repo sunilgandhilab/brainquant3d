@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import numpy as np
 import shutil
 from abc import ABC, abstractmethod
 
@@ -150,6 +151,11 @@ class FilterBase(ABC):
 
         for key,value in self.__dict__.items():
             if key not in ['output', 'input', 'log']:
+                if isinstance(value, np.ndarray):
+                    try:
+                        value = '<array> ' + value.filename
+                    except AttributeError:
+                        value = '<array>'
                 self.log.verbose(f'{self.name}| {key}: {value}')
 
     def set_temp_dir(self, root=None):

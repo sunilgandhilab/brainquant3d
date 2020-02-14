@@ -4,6 +4,8 @@ import logging.config
 import yaml
 import inspect
 
+import numpy as np
+
 from bq3d._version import __version__
 __author__     = 'Ricardo Azevedo, Jack Zeitoun'
 __copyright__  = "Copyright 2019, Gandhi Lab"
@@ -67,6 +69,7 @@ def enable_run_file_handler(file):
         log = logging.getLogger(__name__)
         log.warning('Unable to set up run log or file not defined')
 
+
 def get_logger_config(file = None):
     """Get config from file and return as dict"""
 
@@ -98,6 +101,7 @@ def add_verbose_level(LEVEL = 15):
 
     return LEVEL
 
+
 def set_console_level(level):
     """changes level of console handler"""
 
@@ -121,7 +125,7 @@ def set_console_level(level):
 # Formatted logging output
 ##############################################################################
 
-def log_parameters(head=True, **args):
+def log_parameters(head=True, **kwargs):
     """Writes parameter settings in a formatted way
 
     Arguments:
@@ -143,7 +147,17 @@ def log_parameters(head=True, **args):
     vals = list(args.values())
     parsize = max([len(x) for x in keys])
 
-    s = [prefix + '| ' + keys[i].ljust(parsize) + ': ' + str(vals[i]) for i in range(len(keys))]
+    s = []
+    for i in range(len(keys)):
+        if isinstance(vals[i], np.ndarray):
+            try:
+                val = '<array>' + vals[i].filename
+            except AttributeError:
+                val = '<array>'
+        else:
+            val = str(vals[i])
+        s.append(prefix + '| ' + keys[i].ljust(parsize) + ': ' + val)
+
     log = logging.getLogger(__name__)
     for i in s:
         log.info(i)
