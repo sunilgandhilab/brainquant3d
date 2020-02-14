@@ -4,36 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes">
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/_diffuse.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/diffuse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/diffusion_correction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/diffusion_correction/heap_diffuse.pxi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/_nonzero_coords.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/_nonzero_coords.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/heap/heap_general.pxi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/nonzero_coords.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/structure_element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bq3d/io/cfunc/TIF.pyx" afterDir="false" />
+    <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/filterKernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/filterKernel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/helpers/structureElement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/_nonzero_coords.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/_nonzero_coords.pyx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/util/nonzero_coords.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/_watershed.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/extrema.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/extrema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_general.pxi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_watershed.pxi" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/label/watershed/heap_watershed.pxi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/slots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/utils/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/utils/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -323,14 +295,7 @@
       <workItem from="1579108196963" duration="47084000" />
       <workItem from="1580282750148" duration="280000" />
       <workItem from="1581639629810" duration="3020000" />
-      <workItem from="1581649096192" duration="277000" />
-    </task>
-    <task id="LOCAL-00025" summary="fixed setup.py">
-      <created>1565374039238</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1565374039238</updated>
+      <workItem from="1581649096192" duration="3907000" />
     </task>
     <task id="LOCAL-00026" summary="fixed setup.py">
       <created>1565374344059</created>
@@ -668,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575425042146</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes">
+      <created>1581649389639</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1581649389640</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -691,7 +663,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated lib" />
     <MESSAGE value="fixed setup.py" />
     <MESSAGE value="debugging setup.py" />
     <MESSAGE value="modified dependency ssetup" />
@@ -716,7 +687,8 @@
     <MESSAGE value="- fixed dumb error" />
     <MESSAGE value="- fixed bug when label code receives blank mage" />
     <MESSAGE value="- fixed bug causing resampling to not work correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixed bug causing resampling to not work correctly" />
+    <MESSAGE value="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
