@@ -39,27 +39,16 @@ class Config(object):
     """Object to hold global settings and configure package environment"""
 
     def __init__(self):
-        path = _get_brainquant3dPath()
-        self.brainquant3d_path = path
-        # setup Clearmap_path yal constructor
-        yaml.add_constructor('!pkg_path', _prepend_brainquant3d_path)
-
-        # get config file
-        conf_file = os.path.join(path, 'brainquant3d.conf')
-        if os.path.isfile(conf_file):
-            with open(os.path.join(path, 'brainquant3d.conf'), 'rt') as f:
-                conf = yaml.load(f.read(), Loader=yaml.Loader)
-        else:
-            with open(os.path.join(path, 'default.conf'), 'rt') as f:
-                conf = yaml.load(f.read(), Loader=yaml.Loader)
+        self.brainquant3d_path = _get_brainquant3dPath()
+        self._conf = read_config(self.brainquant3d_path)
 
         # get user specific config
         hostname = socket.gethostname()
-        if hostname in conf['user']:
-            user_conf = conf['user'][hostname]
+        if hostname in self._conf['user']:
+            user_conf = self._conf['user'][hostname]
         else:
-            user_conf = conf['user']['default']
-        default_conf = conf['user']['default']
+            user_conf = self._conf['user']['default']
+        default_conf = self._conf['user']['default']
 
         #setup logger
         self.console_level = _choose_valid_value(user_conf, default_conf, 'Console_level')
@@ -134,6 +123,24 @@ def _choose_valid_value(user: dict, default: dict, param: str, path: bool = Fals
         raise RuntimeError(param +' not defined in brainquant3d.conf')
 
 
+def read_config(path):
+    """ read YAML config given path"""
+
+    # setup path yaml constructor
+    yaml.add_constructor('!pkg_path', _prepend_brainquant3d_path)
+
+    # get config file
+    conf_file = os.path.join(path, 'brainquant3d.conf')
+    if os.path.isfile(conf_file):
+        with open(os.path.join(path, 'brainquant3d.conf'), 'rt') as f:
+            conf = yaml.load(f.read(), Loader=yaml.Loader)
+    else:
+        with open(os.path.join(path, 'default.conf'), 'rt') as f:
+            conf = yaml.load(f.read(), Loader=yaml.Loader)
+
+    return conf
+
+
 def _check_exists(path, create = True):
     """Checks if path exists and creates it if create is True."""
 
@@ -153,6 +160,7 @@ def _check_exists(path, create = True):
     else:
         log.warning('Path {} does not exist'.format(path))
         return None
+
 
 def _prepend_brainquant3d_path(loader, node):
     """joins Config.brainquant3d_path to a path in response to the !brainquant3d_path constructor """

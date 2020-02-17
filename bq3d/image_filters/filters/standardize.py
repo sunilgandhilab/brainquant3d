@@ -35,17 +35,12 @@ class Standardize(FilterBase):
         if original_ndim == 2:
             self.input = self.input[np.newaxis, ...]
 
-        output = io.empty(self.temp_dir / f'standardized.tif', dtype='float32', shape=self.input.shape)
-
-        _standardize(self.input, output)
+        _standardize(self.input, self.input)
 
         if original_ndim == 2:
             self.input.shape = self.input.shape[1:]
 
-        if original_out_ndim == 2:
-            output.shape = output.shape[1:]
-
-        return output
+        return self.input
 
 
 filter_manager.add_filter(Standardize())

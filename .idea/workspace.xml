@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/standardize.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/standardize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -297,14 +297,7 @@
       <workItem from="1579108196963" duration="47084000" />
       <workItem from="1580282750148" duration="280000" />
       <workItem from="1581639629810" duration="3020000" />
-      <workItem from="1581649096192" duration="5098000" />
-    </task>
-    <task id="LOCAL-00027" summary="fixed setup.py">
-      <created>1565374485660</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1565374485661</updated>
+      <workItem from="1581649096192" duration="8789000" />
     </task>
     <task id="LOCAL-00028" summary="fixed setup.py">
       <created>1565374958745</created>
@@ -642,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581665720841</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="converted standardize to an ImageFilter">
+      <created>1581904610443</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1581904610443</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +665,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed setup.py" />
     <MESSAGE value="debugging setup.py" />
     <MESSAGE value="modified dependency ssetup" />
     <MESSAGE value="fixed lib" />
@@ -690,7 +689,8 @@
     <MESSAGE value="- fixed bug when label code receives blank mage" />
     <MESSAGE value="- fixed bug causing resampling to not work correctly" />
     <MESSAGE value="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes" />
+    <MESSAGE value="converted standardize to an ImageFilter" />
+    <option name="LAST_COMMIT_MESSAGE" value="converted standardize to an ImageFilter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
