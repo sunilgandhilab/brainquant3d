@@ -1,8 +1,9 @@
 import numpy as np
-import tifffile as tif
-
 from pathlib import Path
 
+from bq3d import io
+from bq3d.image_filters import filter_manager
+from bq3d.image_filters.filter import FilterBase
 from ._standardize import _standardize
 
 from bq3d._version import __version__
@@ -15,37 +16,36 @@ __email__      = 'ricardo-re-azevedo@gmail.com'
 __status__     = "Development"
 
 
-def standardize(image, output=None):
-    """Performs a simple threshold on 'image'.
+class Standardize(FilterBase):
+    """Applies (I-mean) / SD to standardize data
 
     Parameters
     ----------
-    image: ndarray (2-D, 3-D, ...) of integers
-        Input image.
+    self.input: ndarray (2-D, 3-D, ...) of integers
+        Input self.input.
     output: ndarray
-        Standardized image. If provided as argument, must be of datatype "float".
+        Standardized self.input. If provided as argument, must be of datatype "float".
     """
 
-    original_ndim = image.ndim
-    if original_ndim == 2:
-        image = image[np.newaxis, ...]
+    def __init__(self):
+        super().__init__()
 
-    if not isinstance(output, np.ndarray):
-        pfilename = Path(image.filename)
-        out_filename = pfilename.parent.joinpath(pfilename.stem + '_standardized').with_suffix(pfilename.suffix) 
-        output = tif.memmap(out_filename, dtype='float32', shape=image.shape)
-        original_out_ndim = original_ndim
-    else:
-        original_out_ndim = output.ndim
+    def _generate_output(self):
+        original_ndim = original_out_ndim = self.input.ndim
+        if original_ndim == 2:
+            self.input = self.input[np.newaxis, ...]
+
+        output = io.empty(self.temp_dir / f'standardized.tif', dtype='float32', shape=self.input.shape)
+
+        _standardize(self.input, output)
+
+        if original_ndim == 2:
+            self.input.shape = self.input.shape[1:]
+
         if original_out_ndim == 2:
-            output.shape = image.shape
+            output.shape = output.shape[1:]
 
-    _standardize(image, output)
+        return output
 
-    if original_ndim == 2:
-        image.shape = image.shape[1:]
 
-    if original_out_ndim == 2:
-        output.shape = output.shape[1:]
-
-    return output
+filter_manager.add_filter(Standardize())

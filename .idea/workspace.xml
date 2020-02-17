@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b14c2bb4-e818-441a-a2ec-535a7d871c97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bq3d/image_filters/filters/standardize.py" beforeDir="false" afterPath="$PROJECT_DIR$/bq3d/image_filters/filters/standardize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -295,14 +297,7 @@
       <workItem from="1579108196963" duration="47084000" />
       <workItem from="1580282750148" duration="280000" />
       <workItem from="1581639629810" duration="3020000" />
-      <workItem from="1581649096192" duration="3907000" />
-    </task>
-    <task id="LOCAL-00026" summary="fixed setup.py">
-      <created>1565374344059</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1565374344059</updated>
+      <workItem from="1581649096192" duration="5098000" />
     </task>
     <task id="LOCAL-00027" summary="fixed setup.py">
       <created>1565374485660</created>
@@ -640,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581649389640</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="- reorganized label.utils to helpers folder&#10;- _nonzero_coords not accepts more dtypes">
+      <created>1581665720841</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1581665720841</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
