@@ -158,7 +158,7 @@ Next we will specify the voxel dimensions. The value for this field will be a tu
 OriginalResolution = (9, 9, 9)
 ```
 
-Now, we may need to flip the data across one or more axes so that it matches the orientation of the atlas. To this, we will provide another tuple that will contain 3 values. If the image does not need to be adjusted, the value will be `(1, 2, 3)`. This indicates that the dimensions are in the correct order and no inverting is necessary. If we need to invert 1 or more axes, simply change the value to a negative. For example, if the image needed to be inverted across the Y axis, the value would be `(1, -2, 3)`. If we needed to invert both the Y and X axes, the value would be `(1, -2, -3)`. We can also transpose axes by changing the order of the tuple. By inputting `(1, 3, 2)`, the Y and X axes would be transposed. For this tutorial, we will only be inverting the Z axis.
+Now, we may need to flip the data across one or more axes so that it matches the orientation of the atlas. To this, we will provide another tuple that will contain 3 values. These 3 values represent each dimensions of the data and are in the order (Z, Y, X). If the image does not need to be adjusted, the value will be `(1, 2, 3)`. This indicates that the dimensions are in the correct order and no inverting is necessary. If we need to invert 1 or more axes, simply change the value to a negative. For example, if the image needed to be inverted across the Y axis, the value would be `(1, -2, 3)`. If we needed to invert both the Y and X axes, the value would be `(1, -2, -3)`. We can also transpose axes by changing the order of the tuple. By inputting `(1, 3, 2)`, the Y and X axes would be transposed. For this tutorial, we will only be inverting the Z axis.
 
 ```python
 FinalOrientation = (-1, 2, 3)
@@ -167,7 +167,7 @@ FinalOrientation = (-1, 2, 3)
 The next field is the Atlas resolution. For this tutorial, the Atlas is at a resolution of 20x20x20 um.
 
 ```python
-AtlasResolution = (20, 20, 20)
+AtlasResolution = (25, 25, 25)
 ```
 
 The following field specifies the resolution to downsample the data for misalignment correction between the signal and autofluorescence channels. 12 microns is a safe value for all axes.
@@ -179,7 +179,7 @@ CorrectionResolution = (12, 12, 12)
 The next three fields will tell BrainQuant3D which atlas datasets to use. These fields should point to the location that we set up for the Atlases during the installation.
 
 ```python
-PathReg = "/home/<user>/Warping/ARA2"
+PathReg = "/mnt/ssd/Warping/ARA2"
 AtlasFile = os.path.join(PathReg, "average_template_25_right.tif")
 AnnotationFile = os.path.join(PathReg, "annotation_25_right.tif")
 ```
@@ -201,21 +201,19 @@ The next field is where the actual pipeline is built. This field is a tuple of P
 ```python
 flow = (
     {
-        'filter'             : 'PixelClassification',
-        'processes'          : 10,
-        "project"            : "/mnt/ssd/classifiers/<name>.ilp",
-        "classindex"         : 0,
-        "save"               : os.path.join(BaseDirectory, 'probs/Z\d{4}.tif'),
+        'filter'             : 'RollingBackgroundSubtract',
+        'size'          	 : 5,
+        "save"               : os.path.join(BaseDirectory, 'bkgrdsub/Z\d{4}.tif'),
     },
     {
         'filter'             : 'Label',
-        'mode'               : 3,
-        'min_size'           : 20,
-        'max_size'           : 1200,
-        'min_size2'          : 40,
-        'max_size2'          : 1500,
-        'high_threshold'     : .30,
-        'low_threshold'      : .1,
+        'mode'               : 1,
+        'min_size'           : 3,
+        'max_size'           : 50,
+        'min_size2'          : 3,
+        'max_size2'          : 50,
+        'high_threshold'     : 450,
+        'low_threshold'      : 450,
         "save"               : os.path.join(BaseDirectory, 'labels/Z\d{4}.tif'),
     }
 )
