@@ -69,7 +69,7 @@ CellDetectionParams = {
     'z' : None,
 
     # chunking args.
-    'processes'    : 1,           # number of physical cores to use
+    #'processes'    : 1,           # number of physical cores to use, will override config value
     'min_sizes'    : (30,30,30),  # min substack size along each axis in pixels
     'overlap'      : 10,          # amount of overlap in pixels between substacks
     'aspect_ratio' : (1,10,10),   # ratio bewtween axes to maintain in substacks
