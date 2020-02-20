@@ -7,29 +7,29 @@ import os
 ######################### Data parameters
 
 #Directory to save all the results, usually containing the data for one sample
-BaseDirectory = '/mnt/ssd/working_directory/analysis'
-DataDirectory = '/mnt/ssd/working_directory/data'
+BaseDirectory = '/mnt/e/jack-temp/brainquant3d-tutorial/analysis'
+DataDirectory = '/mnt/e/jack-temp/brainquant3d-tutorial/data'
 
 #Data File and Reference channel File, usually as a sequence of files from the microscope
-SignalFile = os.path.join(DataDirectory, 'C01/lightsheet_data_Z\d{3,4}_C01.tif')
-AutofluoFile = os.path.join(DataDirectory, 'C02/lightsheet_data_Z\d{3,4}_C02.tif')
+SignalFile = os.path.join(DataDirectory, 'C01_9/lightsheet_data_Z\d{3,4}_C01.tif')
+AutofluoFile = os.path.join(DataDirectory, 'C02_9/lightsheet_data_Z\d{3,4}_C02.tif')
 
 #Resolution of the Raw Data (in um / pixel)
-OriginalResolution = (5.32, .91, .91);
+OriginalResolution = (9, 9, 9);
 
 #Orientation: 1,2,3 means the same orientation as the reference and atlas files.
 #Flip axis with - sign (eg. (-1,2,3) flips z). 3D Rotate by swapping numbers. (eg. (2,1,3) swaps x and y)
-FinalOrientation = (-1, 2, 3);
+FinalOrientation = (-1, 2, -3);
 
 #Resolution of the Atlas (in um/ pixel)
-AtlasResolution = (20, 20, 20);
+AtlasResolution = (25, 25, 25);
 #Resolution to downsample to for correction between channels (in um/ pixel)
 CorrectionResolution =  (12, 12, 12);
 
 #Path to registration parameters and atlases
-PathReg        = '/home/<user>/Warping/ARA3';
-AtlasFile      = os.path.join(PathReg, 'template_10_sphinx_horoz.tif');
-AnnotationFile = os.path.join(PathReg, 'annotation_10_sphinx_horoz.tif');
+PathReg        = '/mnt/e/warping/ARA2';
+AtlasFile      = os.path.join(PathReg, 'average_template_25_right.tif');
+AnnotationFile = os.path.join(PathReg, 'annotation_25_right.tif');
 
 #Files to save cell info too.
 # Coordinates and properties will be saved to this file
@@ -44,21 +44,19 @@ transformedCellsFile = os.path.join(BaseDirectory, 'cells_transformed.json')
 
 flow = (
     {
-        'filter'             : 'PixelClassification',
-        'processes'          : 10,
-        "project"            : "/mnt/ssd/classifiers/microglia.ilp",
-        "classindex"         : 0,
-        "save"               : os.path.join(BaseDirectory, 'probs/Z\d{4}.tif'),
+        'filter'             : 'RollingBackgroundSubtract',
+        'size'          	 : 5,
+        "save"               : os.path.join(BaseDirectory, 'bkgrdsub/Z\d{4}.tif'),
     },
     {
         'filter'             : 'Label',
         'mode'               : 1,
-        'min_size'           : 1000,
-        'max_size'           : 5000,
-        'min_size2'          : 40,
-        'max_size2'          : 1500,
-        'high_threshold'     : 1200,
-        'low_threshold'      : 1200,
+        'min_size'           : 3,
+        'max_size'           : 50,
+        'min_size2'          : 3,
+        'max_size2'          : 50,
+        'high_threshold'     : 450,
+        'low_threshold'      : 450,
         "save"               : os.path.join(BaseDirectory, 'labels/Z\d{4}.tif'),
     }
 )
@@ -71,17 +69,17 @@ CellDetectionParams = {
     'z' : None,
 
     # chunking args.
-    #'processes'    : 1,           # number of physical cores to use
+    'processes'    : 1,           # number of physical cores to use
     'min_sizes'    : (30,30,30),  # min substack size along each axis in pixels
-    'overlap'      : 10,          # amountof overlap in pixels between substacks
+    'overlap'      : 10,          # amount of overlap in pixels between substacks
     'aspect_ratio' : (1,10,10),   # ratio bewtween axes to maintain in substacks
 
     # general args. These do not normally need to be modified.
-    'source'      : SignalFile,
-    'flow'        : flow,
-    'sink'        : sink,
+    'source'            : SignalFile,
+    'flow'              : flow,
+    'sink'              : sink,
     'output_properties' : OutputProperties,
-    'log_level'    : 'verbose', # how much info to log in console
+    'log_level'         : 'verbose', # how much info to log in console
 }
 
 ######################### Registration and Resampling Parameters
@@ -134,7 +132,7 @@ CorrectionAlignmentParam = {
 RegistrationAlignmentParam = {
     #moving and reference images
     "fixedImage"   : AtlasFile,
-    "movingImage"  : CorrectionResamplingParamAuto["sink"],
+    "movingImage"  : RegistrationResamplingParamAuto["sink"],
 
     #ants parameter files for alignment. see ants docs for definitions
     'type_of_transform' : 'SyNRA',
@@ -151,7 +149,7 @@ RegistrationAlignmentParam = {
 
 voxelizeParameter = {
     "method" : 'Spherical', # Spherical,'Rectangular, Gaussian'
-    "size" : (15,15,15) # Define size of each voxelized point in pixels
+    "size" : (3, 3, 3) # Define size of each voxelized point in pixels
 };
 
 ######################### Detected Cells Transformation Parameters
@@ -166,11 +164,15 @@ CorrectionResamplingPointsParam = {
 }
 
 CorrectionResamplingPointsInverseParam = {
-    **CorrectionResamplingPointsParam,
-    'dataSizeSource'     : CorrectionResamplingParamAuto['sink']
+    'dataSizeSource'    : CorrectionResamplingParamAuto['sink'],
+    'dataSizeSink'      : SignalFile,
+    'resolutionSource'  : CorrectionResolution,
+    'resolutionSink'    : OriginalResolution,
+    'orientation'       : FinalOrientation
 }
 
 RegistrationResamplingPointParam = {
     **CorrectionResamplingPointsParam,
     'resolutionSink'    : AtlasResolution,
+    'dataSizeSink'      : RegistrationResamplingParamAuto['sink']
 }
