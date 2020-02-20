@@ -9,20 +9,27 @@
 Download and install the main package
 
 ```
-$ pip3 install --user git+https://github.com/sunilgandhilab/brainquant3d.git
+$ python3 -m pip install --user git+https://github.com/sunilgandhilab/brainquant3d-dev.git
 ```
 
-From the following link, download **Warping.zip**, which contains the Allen Brain Atlas datasets.
+Download **Warping.zip**, which contains the Allen Brain Atlas datasets:
+
+Option 1 - Download from Google Drive:
 
 ```
 https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 ```
 
-Unzip and move the downloaded **Warping** directory to a location you will remember (e.g. home folder).
+Option 2 - Download using the following command:
+```
+wget https://glams.bio.uci.edu/Warping.zip
+```
+
+Unzip and move the downloaded **Warping** directory to a location you will remember (e.g. SSD drive).
 
 ```
 $ unzip Warping.zip
-$ mv Warping /home/<user>/Warping
+$ mv Warping /mnt/ssd/
 ```
 
 Now you need to set up the configuration file. This file will tell brainquant3d where to place temp data and where to find the atlas data. The configuration template file, **default.conf**, can be found in the package install location. On Linux, this should be:
@@ -56,11 +63,11 @@ user:
         Elastix_path:        !pkg_path '.external/elastix-5.0.0-linux'
         Temp_path:           ‘/mnt/ssd/brainquant3d-tmp’
 
-        Rigid_default:       '/home/<user>/Warping/ParRigid.txt'
-        Affine_default:      '/home/<user>/Warping/ParAffine.txt'
-        BSpline_default:     '/home/<user>/Warping/ParBSpline.txt'
-        Labeled_default:     '/home/<user>/Warping/ARA2/annotation_25_right.tif'
-        Annotations_default: '/home/<user>/Wrping/ARA2_annotation_info_collapse.csv'
+        Rigid_default:       '/mnt/ssd/Warping/ParRigid.txt'
+        Affine_default:      '/mnt/ssd/Warping/ParAffine.txt'
+        BSpline_default:     '/mnt/ssd/Warping/ParBSpline.txt'
+        Labeled_default:     '/mnt/ssd/Warping/ARA2/annotation_25_right.tif'
+        Annotations_default: '/mnt/ssd/Wrping/ARA2_annotation_info_collapse.csv'
         Console_level:       'verbose'
         Processing_cores:    10
         Thread_ram_max_Gb:   22
@@ -77,8 +84,7 @@ If the import succeeds with no warnings, you are ready to go. If you see any war
 
 ## Tutorial
 
-BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The original size was 768 x 10500 x 5320 (Z x Y x X), but has been downsampled to a manageable size: 521 x 1050 x 532.
-
+BrainQuant3D is a toolkit for image processing. It provides numerous resources designed to aid users in processing large-scale microscopy data. For this tutorial, we will provide an example of how to use BrainQuant3D to set up a pipeline that will segment target cells and generate a plot of cell densities by brain region. The input data was acquired on a Zeiss Z.1 microscope and has been stitched and converted to TIFF format. The original size was 768 x 10500 x 5320 (Z x Y x X), but has been downsampled to a manageable size: 692 x 1400 x 709.
 
 <p align="center">
   <img src="https://github.com/sunilgandhilab/brainquant3d/blob/master/common/sample.jpg"/>
@@ -86,19 +92,34 @@ BrainQuant3D is a toolkit for image processing. It provides numerous resources d
 
 In BrainQuant3D, a pipeline is created by editing two files. The first file is the parameter file, **parameter.py**. The user will use this file to specify which filters to use, which order to run them in, and the various parameters for each filter. The second file is the process file, **process.py**. The process file is used to specify which analysis routines to run (e.g. cell detection, brain-to-atlas warping).
 
-First download and unzip **tutorial.zip** from the following link:
+First, create the folder that will serve as the working directory and a subfolder to hold the raw data:
+```
+$ cd /mnt/ssd
+$ mkdir bq3d-tutorial
+$ mkdir bq3d-tutorial/data
+```
 
+Next, download **tutorial.zip**:
+
+Option 1 - Download from Google Drive:
 ```
 https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 ```
 
-Inside, you should see two directories: **C01** and **C02**. These contain channels 1 and 2 of the data.
-
-Next, create a folder to serve as the working directory:
-
+Option 2 - Download using the following command:
 ```
-$ cd /mnt/ssd
-$ mkdir bq3d-tutorial
+wget https://glams.bio.uci.edu/tutorial.zip
+```
+
+Unzip **tutorial.zip**:
+```
+$ unzip tutorial.zip
+```
+
+Inside, you should see two directories: **C01** and **C02**. These contain channels 1 and 2 of the data.
+Move **C01** and **C02** into the **data** folder of the working directory:
+```
+$ mv tutorial/* /mnt/ssd/bq3d-tutorial/data/
 ```
 
 Download the **parameter.py** and **process.py** template files and place them in the newly created working directory (**bq3d-tutorial**). They can be found in the **common** directory in the root of this repository.
@@ -137,10 +158,10 @@ The next field is the **AutoFluoFile**, which specifies the path to the autofluo
 AutoFluoFile = os.path.join(DataDirectory, "C02/lightsheet_data_Z\d{4}_C02.tif")
 ```
 
-Next we will specify the voxel dimensions. The value for this field will be a tuple containing the Z sampling distance between slices followed by the Y and then X pixel dimensions. Units are in microns.
+Next we will specify the voxel dimensions. The value for this field will be a tuple containing the Z sampling distance between slices followed by the Y and then X pixel dimensions. Units are in microns. For the purpose of this tutorial, the data was downsampled to a resolution of 9um in each dimension.
 
 ```python
-OriginalResolution = (6.88, .91, .91)
+OriginalResolution = (9, 9, 9)
 ```
 
 Now, we may need to flip the data across one or more axes so that it matches the orientation of the atlas. To this, we will provide another tuple that will contain 3 values. If the image does not need to be adjusted, the value will be `(1, 2, 3)`. This indicates that the dimensions are in the correct order and no inverting is necessary. If we need to invert 1 or more axes, simply change the value to a negative. For example, if the image needed to be inverted across the Y axis, the value would be `(1, -2, 3)`. If we needed to invert both the Y and X axes, the value would be `(1, -2, -3)`. We can also transpose axes by changing the order of the tuple. By inputting `(1, 3, 2)`, the Y and X axes would be transposed. For this tutorial, we will only be inverting the Z axis.

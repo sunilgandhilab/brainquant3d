@@ -4,7 +4,7 @@ script to run the processing pipeline
 """
 
 #load the parameters:
-exec(open("/mnt/ssd/working_directory/parameter.py").read())
+exec(open("/mnt/e/jack-temp/brainquant3d-tutorial/parameter.py").read())
 
 #Cell detection:
 ################
@@ -30,7 +30,6 @@ alignData(**CorrectionAlignmentParam)
 #alignment to the Atlas:
 alignData(**RegistrationAlignmentParam)
 
-
 # Transform point coordinates
 ############################
 from bq3d import io
@@ -51,7 +50,7 @@ points = resamplePoints(points, **CorrectionResamplingPointsInverseParam);
 #vox = voxelize(points, SignalFile , sink = os.path.join(BaseDirectory, 'cells_full.tif'), **voxelizeParameter);
 # downsample to atlas resolution
 points = resamplePoints(points, **RegistrationResamplingPointParam);
-vox = voxelize(points, AtlasFile , sink = os.path.join(BaseDirectory, 'cells_ds.tif'), **voxelizeParameter);
+vox = voxelize(points, RegistrationResamplingParamAuto['sink'], sink = os.path.join(BaseDirectory, 'cells_ds.tif'), **voxelizeParameter);
 # warp to atlas
 points = transformPoints(points, RegistrationAlignmentParam["resultDirectory"], invert = True);
 # write out heatmap and transformed points
