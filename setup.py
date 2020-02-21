@@ -32,9 +32,13 @@ if sys.platform == 'linux':
         except:
             from pip import main
     opencv_libs = '.lib-linux'
+    elastix_URL = 'elastix-5.0.0-linux.tar.bz2'
+    ilastik_URL = 'ilastik-1.3.3-Linux-noGurobi.tar.bz2'
 elif sys.platform == 'darwin':
     from pip._internal import main
     opencv_libs = '.lib-osx'
+    elastix_URL = 'elastix-5.0.0-mac.tar.gz'
+    ilastik_URL = 'ilastik-1.3.3post2-OSX.tar.bz2'
 
 USE_CYTHON = 'auto'
 
@@ -184,13 +188,14 @@ class install(_install):
 
         #  download external programs required by package to install directory.
         cwd = os.getcwd()
-        build_dir = glob(os.path.join(cwd, 'build/lib.linux*'))[0]
+        print(os.listdir())
+        build_dir = glob(os.path.join(cwd, 'build/lib.*'))[0]
         dest = Path(build_dir) / 'bq3d/.external'
 
         print('installing elastik')
-        url = 'https://glams.bio.uci.edu/elastix-5.0.0-linux.tar.bz2'
+        url = 'https://glams.bio.uci.edu/' + elastix_URL
         tmp = Path(url).name
-        sink = dest / 'elastix-5.0.0-linux'
+        sink = dest / 'elastix-5.0.0'
         with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
@@ -198,10 +203,10 @@ class install(_install):
             tar.close()
 
         print('installing ilastik')
-        url = 'https://glams.bio.uci.edu/ilastik-1.3.3-Linux-noGurobi.tar.bz2'
+        url = 'https://glams.bio.uci.edu/' + ilastk_URL
         tmp = Path(url).name
 
-        sink = dest
+        sink = dest / 'ilastik-1.3.3'
         with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
@@ -220,7 +225,7 @@ class install(_install):
             try:
                 main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
             except:
-                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.2.0/antspyx-0.2.2-cp37-cp37m-macosx_10_15_x86_64.whl"])
+                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.8/antspyx-0.1.8-cp37-cp37m-macosx_10_14_x86_64.whl"])
 
 
 cmdclass['install'] = install
