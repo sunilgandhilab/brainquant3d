@@ -138,12 +138,15 @@ def transformPoints(points_source, transformDirectory, sink = None, invert = Fal
 def _compose_transforms(transformDirectory, invert = False):
     """Strings together transofrm files in the correct order to apply a transform.
     """
-
     transforms = []
     if not invert:
         if '1Warp.nii.gz' in os.listdir(transformDirectory):
             SyN_file = os.path.join(transformDirectory, '1Warp.nii.gz')
-            transforms.append(ants.transform_from_displacement_field(ants.image_read(SyN_file)))
+            field = ants.image_read(SyN_file)
+            transform = ants.transform_from_displacement_field(field)
+            if transform is None: # Adds compatibility with ANTsPy 2.0+
+                transform = _transform_from_displacement_field(field)
+            transforms.append(transform)
         if '0GenericAffine.mat' in os.listdir(transformDirectory):
             affine_file = os.path.join(transformDirectory, '0GenericAffine.mat')
             transforms.append(ants.read_transform(affine_file))
@@ -153,6 +156,19 @@ def _compose_transforms(transformDirectory, invert = False):
             transforms.append(ants.read_transform(affine_file).invert())
         if '1InverseWarp.nii.gz' in os.listdir(transformDirectory):
             inv_file = os.path.join(transformDirectory, '1InverseWarp.nii.gz')
-            transforms.append(ants.transform_from_displacement_field(ants.image_read(inv_file)))
-
+            field = ants.image_read(inv_file)
+            transform = ants.transform_from_displacement_field(field)
+            if transform is None: # Adds compatibility with ANTsPy 2.0+
+                transform = _transform_from_displacement_field(field)
+            transforms.append(transform)
     return ants.compose_ants_transforms(transforms)
+
+def _transform_from_displacement_field(field):
+    """Replacement function for ANTsPY 2.0+"""
+    field = ants.image_read(field)
+    libfn = ants.utils.get_lib_fn('antsTransformFromDisplacementFieldF%i'%field.dimension)
+    field = field.clone('float')
+    txptr = libfn(field.pointer)
+
+    return ants.ants_transform.ANTsTransform(pointer=txptr)
+

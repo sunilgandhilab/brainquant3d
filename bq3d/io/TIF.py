@@ -147,7 +147,7 @@ def writeData(filename, data, rgb = False, substack = None, returnMemmap = True)
         return filename
 
 
-def copyData(source, sink, x=None, y=None, z=None, returnMemmap = True):
+def copyData(source, sink, x=None, y=None, z=None, returnMemmap=False):
     """Copy a data file from source to sink
     
     Arguments:
@@ -167,8 +167,8 @@ def copyData(source, sink, x=None, y=None, z=None, returnMemmap = True):
             Xsize = io.toDataSize(Xsize, r=x)
             Ysize = io.toDataSize(Ysize, r=y)
             Zsize = io.toDataSize(Zsize, r=z)
-            im = io.readData(source, x = x, y= y, z= z)
-            out = io.writeData(sink, im, returnMemmap = returnMemmap)
+            im = io.readData(source, x=x, y=y, z=z)
+            out = io.writeData(sink, im, returnMemmap=returnMemmap)
 
         if returnMemmap:
             return io.readData(sink)
