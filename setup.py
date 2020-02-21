@@ -198,7 +198,10 @@ class install(_install):
         sink = dest / 'elastix-5.0.0'
         with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
-            tar = tarfile.open(tmp, "r:bz2")
+            try:
+                tar = tarfile.open(tmp, "r:bz2") # Linux
+            except:
+                tar = tarfile.open(tmp, "r:gz") # MacOS
             tar.extractall(sink)
             tar.close()
 
