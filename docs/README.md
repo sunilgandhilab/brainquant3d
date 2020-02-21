@@ -22,7 +22,7 @@ https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 
 Option 2 - Download using the following command:
 ```
-wget https://glams.bio.uci.edu/Warping.zip
+$ wget https://glams.bio.uci.edu/Warping.zip
 ```
 
 Unzip and move the downloaded **Warping** directory to a location you will remember (e.g. SSD drive).
@@ -108,7 +108,7 @@ https://drive.google.com/drive/u/2/folders/1JjUxW3k2foIB2LBOa5LrtnCTofHToVho
 
 Option 2 - Download using the following command:
 ```
-wget https://glams.bio.uci.edu/tutorial.zip
+$ wget https://glams.bio.uci.edu/tutorial.zip
 ```
 
 Unzip **tutorial.zip**:
