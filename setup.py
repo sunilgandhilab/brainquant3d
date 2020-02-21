@@ -192,7 +192,7 @@ class install(_install):
         build_dir = cwd if len(matches) == 0 else matches[0]
         dest = Path(build_dir) / 'bq3d/.external'
 
-        print('installing elastik')
+        print('installing elastix')
         url = 'https://glams.bio.uci.edu/' + elastix_URL
         tmp = Path(url).name
         sink = dest / 'elastix-5.0.0'
