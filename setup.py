@@ -216,9 +216,8 @@ class install(_install):
             tar.extractall(sink)
             tar.close()
 
-        _install.run(self)
-
-        # install antspy
+        # Install ANTsPy
+        print('installing ants')
         if sys.platform == 'linux':
             try:
                 main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
@@ -230,6 +229,7 @@ class install(_install):
             except:
                 main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.8/antspyx-0.1.8-cp37-cp37m-macosx_10_14_x86_64.whl"])
 
+        _install.run(self)
 
 cmdclass['install'] = install
 
