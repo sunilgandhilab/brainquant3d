@@ -95,11 +95,6 @@ if USE_CYTHON:
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
-        Extension("bq3d.image_filters.filters.diffusion_correction._diffuse",
-                  sources=["bq3d/image_filters/filters/diffusion_correction/_diffuse.pyx"],
-                  include_dirs=[numpy.get_include()],
-                  language="c++"
-                  ),
         Extension("bq3d.image_filters.filters.helpers._nonzero_coords",
                   sources=["bq3d/image_filters/filters/helpers/_nonzero_coords.pyx"],
                   include_dirs=[numpy.get_include()],
@@ -154,11 +149,6 @@ else:
                   ),
         Extension("bq3d.image_filters.filters.label.watershed._watershed",
                   sources=["bq3d/image_filters/filters/label/watershed/_watershed.cpp"],
-                  include_dirs=[numpy.get_include()],
-                  language="c++"
-                  ),
-        Extension("bq3d.image_filters.filters.diffusion_correction._diffuse",
-                  sources=["bq3d/image_filters/filters/diffusion_correction/_diffuse.cpp"],
                   include_dirs=[numpy.get_include()],
                   language="c++"
                   ),
