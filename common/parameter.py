@@ -7,8 +7,8 @@ import os
 ######################### Data parameters
 
 #Directory to save all the results, usually containing the data for one sample
-BaseDirectory = '/mnt/e/jack-temp/brainquant3d-tutorial/analysis'
-DataDirectory = '/mnt/e/jack-temp/brainquant3d-tutorial/data'
+BaseDirectory = '/mnt/ssd/working-directory/analysis'
+DataDirectory = '/mnt/ssd/working-directory/data'
 
 #Data File and Reference channel File, usually as a sequence of files from the microscope
 SignalFile = os.path.join(DataDirectory, 'C01/lightsheet_data_Z\d{3,4}_C01.tif')
@@ -27,7 +27,7 @@ AtlasResolution = (25, 25, 25);
 CorrectionResolution =  (12, 12, 12);
 
 #Path to registration parameters and atlases
-PathReg        = '/mnt/e/warping/ARA2';
+PathReg        = '/mnt/ssd/warping/ARA2';
 AtlasFile      = os.path.join(PathReg, 'average_template_25_right.tif');
 AnnotationFile = os.path.join(PathReg, 'annotation_25_right.tif');
 
@@ -40,9 +40,9 @@ sink = os.path.join(BaseDirectory, 'cells.json')
 transformedCellsFile = os.path.join(BaseDirectory, 'cells_transformed.json')
 
 ######################### Cell Detection Parameters
-# flow is a series of dictionaries containing which filters to run
+# flow is a series of dictionaries containing which filters to run; must be a list (not a tuple)
 
-flow = (
+flow = [
     {
         'filter'             : 'RollingBackgroundSubtract',
         'size'          	 : 5,
@@ -59,7 +59,7 @@ flow = (
         'low_threshold'      : 450,
         "save"               : os.path.join(BaseDirectory, 'labels/Z\d{4}.tif'),
     }
-)
+]
 
 CellDetectionParams = {
     # Specify the cropped range for the cell detection. If None will not crop.
