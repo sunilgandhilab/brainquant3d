@@ -203,7 +203,7 @@ flow = (
     {
         'filter'             : 'RollingBackgroundSubtract',
         'size'          	 : 5,
-        "save"               : os.path.join(BaseDirectory, 'bkgrdsub/Z\d{4}.tif'),
+        "save"               : os.path.join(BaseDirectory, 'bkgrdsub/Z\d{3}.tif'),
     },
     {
         'filter'             : 'Label',
@@ -214,7 +214,7 @@ flow = (
         'max_size2'          : 50,
         'high_threshold'     : 450,
         'low_threshold'      : 450,
-        "save"               : os.path.join(BaseDirectory, 'labels/Z\d{4}.tif'),
+        "save"               : os.path.join(BaseDirectory, 'labels/Z\d{3}.tif'),
     }
 )
 ```
