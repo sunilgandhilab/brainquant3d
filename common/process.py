@@ -17,11 +17,11 @@ detect_cells(**CellDetectionParams);
 ################
 # Downsampling for the correction of stage movements during the acquisition between channels:
 from bq3d.alignment.resampling import resampleData;
-resampleData(**CorrectionResamplingParamSignal);
-resampleData(**CorrectionResamplingParamAuto);
+resampleData(**CorrectionResamplingParamSignal, cleanup=False);
+resampleData(**CorrectionResamplingParamAuto, cleanup=False);
 # Downsampling for alignment to the Atlas:
-resampleData(**RegistrationResamplingParamSignal);
-resampleData(**RegistrationResamplingParamAuto);
+resampleData(**RegistrationResamplingParamSignal, cleanup=False);
+resampleData(**RegistrationResamplingParamAuto, cleanup=False);
 
 ################
 ## Alignment:
