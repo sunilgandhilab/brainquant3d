@@ -130,7 +130,7 @@ def log_parameters(head=True, **kwargs):
 
     Arguments:
         head (Bool): prefix of each line. If True will use the function that called it
-        **args: the parameter values as key=value arguments
+        **kargs: the parameter values as key=value arguments
 
     Returns:
         str or None: a formated string with parameter info
@@ -143,8 +143,8 @@ def log_parameters(head=True, **kwargs):
     else:
         prefix = ''
 
-    keys = list(args.keys())
-    vals = list(args.values())
+    keys = list(kwargs.keys())
+    vals = list(kwargs.values())
     parsize = max([len(x) for x in keys])
 
     s = []
