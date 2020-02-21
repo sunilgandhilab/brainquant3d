@@ -32,9 +32,13 @@ if sys.platform == 'linux':
         except:
             from pip import main
     opencv_libs = '.lib-linux'
+    elastix_URL = 'elastix-5.0.0-linux.tar.bz2'
+    ilastik_URL = 'ilastik-1.3.3-Linux-noGurobi.tar.bz2'
 elif sys.platform == 'darwin':
     from pip._internal import main
     opencv_libs = '.lib-osx'
+    elastix_URL = 'elastix-5.0.0-mac.tar.gz'
+    ilastik_URL = 'ilastik-1.3.3post2-OSX.tar.bz2'
 
 USE_CYTHON = 'auto'
 
@@ -188,9 +192,9 @@ class install(_install):
         dest = Path(build_dir) / 'bq3d/.external'
 
         print('installing elastik')
-        url = 'https://glams.bio.uci.edu/elastix-5.0.0-linux.tar.bz2'
+        url = 'https://glams.bio.uci.edu/' + elastix_URL
         tmp = Path(url).name
-        sink = dest / 'elastix-5.0.0-linux'
+        sink = dest / 'elastix-5.0.0'
         with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
@@ -198,10 +202,10 @@ class install(_install):
             tar.close()
 
         print('installing ilastik')
-        url = 'https://glams.bio.uci.edu/ilastik-1.3.3-Linux-noGurobi.tar.bz2'
+        url = 'https://glams.bio.uci.edu/' + ilastk_URL
         tmp = Path(url).name
 
-        sink = dest
+        sink = dest / 'ilastik-1.3.3'
         with request.urlopen(url, context=ctx) as response, open(tmp, 'wb') as out_file:
             shutil.copyfileobj(response, out_file)
             tar = tarfile.open(tmp, "r:bz2")
