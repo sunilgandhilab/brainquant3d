@@ -220,7 +220,7 @@ class install(_install):
             try:
                 main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
             except:
-                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.2.0/antspyx-0.2.2-cp37-cp37m-macosx_10_15_x86_64.whl"])
+                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.8/antspyx-0.1.8-cp37-cp37m-macosx_10_14_x86_64.whl"])
 
 
 cmdclass['install'] = install
