@@ -165,7 +165,6 @@ def _compose_transforms(transformDirectory, invert = False):
 
 def _transform_from_displacement_field(field):
     """Replacement function for ANTsPY 2.0+"""
-    field = ants.image_read(field)
     libfn = ants.utils.get_lib_fn('antsTransformFromDisplacementFieldF%i'%field.dimension)
     field = field.clone('float')
     txptr = libfn(field.pointer)
