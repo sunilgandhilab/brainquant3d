@@ -203,7 +203,7 @@ class install(_install):
             tar.close()
 
         print('installing ilastik')
-        url = 'https://glams.bio.uci.edu/' + ilastk_URL
+        url = 'https://glams.bio.uci.edu/' + ilastik_URL
         tmp = Path(url).name
 
         sink = dest / 'ilastik-1.3.3'
