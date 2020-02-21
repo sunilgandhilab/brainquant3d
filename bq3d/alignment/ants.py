@@ -55,8 +55,8 @@ def alignData(fixedImage, movingImage, resultDirectory = None, type_of_transform
     log_parameters(fixedImage = fixedImage, movingImage = movingImage, resultDirectory = resultDirectory, type_of_transform = type_of_transform)
 
     # setup input
-    mi = ants.from_numpy(io.readData(movingImage))
-    fi = ants.from_numpy(io.readData(fixedImage))
+    mi = ants.from_numpy(io.readData(movingImage).astype('float32'))
+    fi = ants.from_numpy(io.readData(fixedImage).astype('float32'))
 
     # setup output directory
     if not resultDirectory:
@@ -95,8 +95,8 @@ def transformImage(image, reference, transformDirectory, sink = None, invert = F
     log.info ('invert: {}'.format(invert))
 
     # get image and tranform
-    im = ants.from_numpy(io.readData(image))
-    ref = ants.from_numpy(io.readData(reference))
+    im = ants.from_numpy(io.readData(image).astype('float32'))
+    ref = ants.from_numpy(io.readData(reference).astype('float32'))
     composite_trans = _compose_transforms(transformDirectory, invert = invert)
     # apply transforms
     res = composite_trans.apply_to_image(im, ref, interpolation = interpolation)
