@@ -100,11 +100,6 @@ if USE_CYTHON:
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   ),
-        Extension("bq3d.io.cfunc.TIFF",
-                  sources=["bq3d/io/cfunc/TIF.pyx"],
-                  include_dirs=[numpy.get_include()],
-                  language='c++'
-                  ),
         Extension("bq3d.image_filters.filters._standardize",
                   sources=["bq3d/image_filters/filters/_standardize.pyx"],
                   include_dirs=[numpy.get_include()],
@@ -154,11 +149,6 @@ else:
                   ),
         Extension("bq3d.image_filters.filters.helpers._nonzero_coords",
                   sources=["bq3d/image_filters/filters/helpers/_nonzero_coords.cpp"],
-                  include_dirs=[numpy.get_include()],
-                  language='c++'
-                  ),
-        Extension("bq3d.io.cfunc.TIFF",
-                  sources=["bq3d/io/cfunc/TIF.cpp"],
                   include_dirs=[numpy.get_include()],
                   language='c++'
                   ),
