@@ -188,8 +188,7 @@ class install(_install):
 
         #  download external programs required by package to install directory.
         cwd = os.getcwd()
-        os.listdir()
-        os.listdir('build')
+        print(os.listdir())
         build_dir = glob(os.path.join(cwd, 'build/lib.*'))[0]
         dest = Path(build_dir) / 'bq3d/.external'
 
