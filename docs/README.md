@@ -141,15 +141,15 @@ DataDirectory = "/mnt/ssd/bq3d-tutorial/data"
 Now we will edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheet_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
 
 ```python
-SignalFile = os.path.join(DataDirectory, "C01/lightsheet_data_Z\d{4}_C01.tif")
+SignalFile = os.path.join(DataDirectory, "C01/lightsheet_data_Z\d{3}_C01.tif")
 ```
 
-The **\d{4}** means the filename will contain a number with 4 digits. If there are more or less digits in the filename, simply change the value in the curly brackets to match.
+The **\d{3}** means the filename will contain a number with 3 digits. If there are more or less digits in the filename, simply change the value in the curly brackets to match.
 
 The next field is the **AutoFluoFile**, which specifies the path to the autofluorescence channel. This channel is used for image registration to the Allen Brain Atlas. It will use the same format as the “SignalFile” field.
 
 ```python
-AutoFluoFile = os.path.join(DataDirectory, "C02/lightsheet_data_Z\d{4}_C02.tif")
+AutoFluoFile = os.path.join(DataDirectory, "C02/lightsheet_data_Z\d{3}_C02.tif")
 ```
 
 Next we will specify the voxel dimensions. The value for this field will be a tuple containing the Z sampling distance between slices followed by the Y and then X pixel dimensions. Units are in microns. For the purpose of this tutorial, the data was downsampled to a resolution of 9um in each dimension.
@@ -161,7 +161,7 @@ OriginalResolution = (9, 9, 9)
 Now, we may need to flip the data across one or more axes so that it matches the orientation of the atlas. To this, we will provide another tuple that will contain 3 values. These 3 values represent each dimensions of the data and are in the order (Z, Y, X). If the image does not need to be adjusted, the value will be `(1, 2, 3)`. This indicates that the dimensions are in the correct order and no inverting is necessary. If we need to invert 1 or more axes, simply change the value to a negative. For example, if the image needed to be inverted across the Y axis, the value would be `(1, -2, 3)`. If we needed to invert both the Y and X axes, the value would be `(1, -2, -3)`. We can also transpose axes by changing the order of the tuple. By inputting `(1, 3, 2)`, the Y and X axes would be transposed. For this tutorial, we will only be inverting the Z axis.
 
 ```python
-FinalOrientation = (-1, 2, 3)
+FinalOrientation = (-1, 2, -3)
 ```
 
 The next field is the Atlas resolution. For this tutorial, the Atlas is at a resolution of 20x20x20 um.
