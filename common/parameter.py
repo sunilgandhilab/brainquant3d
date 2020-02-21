@@ -11,8 +11,8 @@ BaseDirectory = '/mnt/e/jack-temp/brainquant3d-tutorial/analysis'
 DataDirectory = '/mnt/e/jack-temp/brainquant3d-tutorial/data'
 
 #Data File and Reference channel File, usually as a sequence of files from the microscope
-SignalFile = os.path.join(DataDirectory, 'C01_9/lightsheet_data_Z\d{3,4}_C01.tif')
-AutofluoFile = os.path.join(DataDirectory, 'C02_9/lightsheet_data_Z\d{3,4}_C02.tif')
+SignalFile = os.path.join(DataDirectory, 'C01/lightsheet_data_Z\d{3,4}_C01.tif')
+AutofluoFile = os.path.join(DataDirectory, 'C02/lightsheet_data_Z\d{3,4}_C02.tif')
 
 #Resolution of the Raw Data (in um / pixel)
 OriginalResolution = (9, 9, 9);
@@ -69,7 +69,7 @@ CellDetectionParams = {
     'z' : None,
 
     # chunking args.
-    'processes'    : 1,           # number of physical cores to use
+    #'processes'    : 1,           # number of physical cores to use, will override config value
     'min_sizes'    : (30,30,30),  # min substack size along each axis in pixels
     'overlap'      : 10,          # amount of overlap in pixels between substacks
     'aspect_ratio' : (1,10,10),   # ratio bewtween axes to maintain in substacks

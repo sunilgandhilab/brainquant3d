@@ -187,13 +187,13 @@ AnnotationFile = os.path.join(PathReg, "annotation_25_right.tif")
 Next, we specify where to save the absolute cell coordinates after cell detection is complete.
 
 ```python
-sink = (os.path.join(BaseDiretory, "cells.npy"), os.path.join(BaseDirectory, "properties.npy"))
+sink = os.path.join(BaseDirectory, 'cells.json')
 ```
 
 The following line will specify where to save the cell coordinates that have been transformed into Atlas space.
 
 ```python
-transformedCellsFile = os.path.join(BaseDirectory, "cells_transformed.npy")
+transformedCellsFile = os.path.join(BaseDirectory, "cells_transformed.json")
 ```
 
 The next field is where the actual pipeline is built. This field is a tuple of Python dictionaries where each dictionary represents a filter and the corresponding parameters. When you run the pipeline, BrainQuant3D will pass the data through each of these filters in the order they are specified. This tutorial will employ a basic pipeline that first segments all cells using a machine-learning classifier that has been trained to work with this dataset (see Ilastik) and then labels all cells by assigning a unique integer value to each cell.
