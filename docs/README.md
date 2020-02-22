@@ -138,7 +138,7 @@ The next field is the **DataDirectory**. This is the path to where the raw data 
 DataDirectory = "/mnt/ssd/bq3d-tutorial/data"
 ```
 
-Now we will edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, lightsheet_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
+Now we will edit the **SignalFile** field. This is the path to the data containing the signal channel. Typically, data will be split into a single file for each plane with a naming scheme similar to *lightsheet_data_Z0001_C01.tif*, *lightsheet_data_Z0002_C01.tif*, and so on. In order for BrainQuant3D to know which part of the filename is variable, we must specify full the path using a regular expression.
 
 ```python
 SignalFile = os.path.join(DataDirectory, "C01/lightsheet_data_Z\d{3}_C01.tif")
@@ -158,7 +158,7 @@ Next we will specify the voxel dimensions. The value for this field will be a tu
 OriginalResolution = (9, 9, 9)
 ```
 
-Now, we may need to flip the data across one or more axes so that it matches the orientation of the atlas. To this, we will provide another tuple that will contain 3 values. These 3 values represent each dimensions of the data and are in the order (Z, Y, X). If the image does not need to be adjusted, the value will be `(1, 2, 3)`. This indicates that the dimensions are in the correct order and no inverting is necessary. If we need to invert 1 or more axes, simply change the value to a negative. For example, if the image needed to be inverted across the Y axis, the value would be `(1, -2, 3)`. If we needed to invert both the Y and X axes, the value would be `(1, -2, -3)`. We can also transpose axes by changing the order of the tuple. By inputting `(1, 3, 2)`, the Y and X axes would be transposed. For this tutorial, we will only be inverting the Z axis.
+Now, we may need to flip the data across one or more axes so that it matches the orientation of the atlas. To this, we will provide another tuple that will contain 3 values. These 3 values represent each dimensions of the data and are in the order (Z, Y, X). If the image does not need to be adjusted, the value will be `(1, 2, 3)`. This indicates that the dimensions are in the correct order and no inverting is necessary. If we need to invert 1 or more axes, simply change the value to a negative. For example, if the image needed to be inverted across the Y axis, the value would be `(1, -2, 3)`. If we needed to invert both the Y and X axes, the value would be `(1, -2, -3)`. We can also transpose axes by changing the order of the tuple. By inputting `(1, 3, 2)`, the Y and X axes would be transposed. For this tutorial, we will only be inverting the Z axis and X axis.
 
 ```python
 FinalOrientation = (-1, 2, -3)
@@ -196,14 +196,14 @@ The following line will specify where to save the cell coordinates that have bee
 transformedCellsFile = os.path.join(BaseDirectory, "cells_transformed.json")
 ```
 
-The next field is where the actual pipeline is built. This field is a tuple of Python dictionaries where each dictionary represents a filter and the corresponding parameters. When you run the pipeline, BrainQuant3D will pass the data through each of these filters in the order they are specified. This tutorial will employ a basic pipeline that first segments all cells using a machine-learning classifier that has been trained to work with this dataset (see Ilastik) and then labels all cells by assigning a unique integer value to each cell.
+The next field is where the actual pipeline is built. This field is a list of Python dictionaries where each dictionary represents a filter and the corresponding parameters. When you run the pipeline, BrainQuant3D will pass the data through each of these filters in the order they are specified. This tutorial will employ a basic pipeline that first segments all cells using a machine-learning classifier that has been trained to work with this dataset (see Ilastik) and then labels all cells by assigning a unique integer value to each cell.
 
 ```python
-flow = (
+flow = [
     {
         'filter'             : 'RollingBackgroundSubtract',
-        'size'          	 : 5,
-        "save"               : os.path.join(BaseDirectory, 'bkgrdsub/Z\d{3}.tif'),
+        'size'               : 5,
+        'save'               : os.path.join(BaseDirectory, 'bkgrdsub/Z\d{3}.tif'),
     },
     {
         'filter'             : 'Label',
@@ -216,7 +216,7 @@ flow = (
         'low_threshold'      : 450,
         "save"               : os.path.join(BaseDirectory, 'labels/Z\d{3}.tif'),
     }
-)
+]
 ```
 
 The rest of the file contains parameters that are specific to the data downsampling and registration operations. In general, these should not be modified.
