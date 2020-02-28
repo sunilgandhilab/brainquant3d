@@ -2452,6 +2452,7 @@ static const char __pyx_k_enter[] = "__enter__";
 static const char __pyx_k_error[] = "error";
 static const char __pyx_k_flags[] = "flags";
 static const char __pyx_k_image[] = "image";
+static const char __pyx_k_int64[] = "int64";
 static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_shape[] = "shape";
@@ -2632,6 +2633,7 @@ static PyObject *__pyx_n_s_image_fd;
 static PyObject *__pyx_n_s_image_val;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_int32_t;
+static PyObject *__pyx_n_u_int64;
 static PyObject *__pyx_n_s_itemsize;
 static PyObject *__pyx_kp_s_itemsize_0_for_cython_array;
 static PyObject *__pyx_n_s_kind;
@@ -4063,7 +4065,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
  *             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
@@ -4239,7 +4241,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   /* "bq3d/image_filters/filters/helpers/_nonzero_coords.pyx":63
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file             # <<<<<<<<<<<<<<
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_27, __pyx_n_s_np); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -4254,10 +4256,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   PyTuple_SET_ITEM(__pyx_t_27, 0, __pyx_v_coords_filename);
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_26 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_dtype); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_26);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_26) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_27, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -4837,7 +4836,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
  *             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
@@ -5013,7 +5012,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   /* "bq3d/image_filters/filters/helpers/_nonzero_coords.pyx":63
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file             # <<<<<<<<<<<<<<
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_27, __pyx_n_s_np); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -5028,10 +5027,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   PyTuple_SET_ITEM(__pyx_t_27, 0, __pyx_v_coords_filename);
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_26 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_dtype); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_26);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_26) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_27, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -5611,7 +5607,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
  *             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
@@ -5787,7 +5783,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   /* "bq3d/image_filters/filters/helpers/_nonzero_coords.pyx":63
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file             # <<<<<<<<<<<<<<
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_27, __pyx_n_s_np); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -5802,10 +5798,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   PyTuple_SET_ITEM(__pyx_t_27, 0, __pyx_v_coords_filename);
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_26 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_dtype); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_26);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_26) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_27, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -6385,7 +6378,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
  *             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
@@ -6561,7 +6554,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   /* "bq3d/image_filters/filters/helpers/_nonzero_coords.pyx":63
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file             # <<<<<<<<<<<<<<
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_27, __pyx_n_s_np); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -6576,10 +6569,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   PyTuple_SET_ITEM(__pyx_t_27, 0, __pyx_v_coords_filename);
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_26 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_dtype); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_26);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_26) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_27, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7159,7 +7149,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
  *             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
@@ -7335,7 +7325,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   /* "bq3d/image_filters/filters/helpers/_nonzero_coords.pyx":63
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file             # <<<<<<<<<<<<<<
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_27, __pyx_n_s_np); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -7350,10 +7340,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   PyTuple_SET_ITEM(__pyx_t_27, 0, __pyx_v_coords_filename);
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_26 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_dtype); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_26);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_26) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_27, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7933,7 +7920,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
  *             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))             # <<<<<<<<<<<<<<
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
  */
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_2);
@@ -8109,7 +8096,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   /* "bq3d/image_filters/filters/helpers/_nonzero_coords.pyx":63
  *             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
- *     return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file             # <<<<<<<<<<<<<<
+ *     return np.memmap(coords_filename, dtype='int64') # Return handle to coords file             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_27, __pyx_n_s_np); if (unlikely(!__pyx_t_27)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -8124,10 +8111,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_7helpers_15_nonzero_coo
   PyTuple_SET_ITEM(__pyx_t_27, 0, __pyx_v_coords_filename);
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_26 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_dtype); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_26);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_26) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_26); __pyx_t_26 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_n_u_int64) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_t_26 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_27, __pyx_t_2); if (unlikely(!__pyx_t_26)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_26);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -24168,6 +24152,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_image_val, __pyx_k_image_val, sizeof(__pyx_k_image_val), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_int32_t, __pyx_k_int32_t, sizeof(__pyx_k_int32_t), 0, 0, 1, 1},
+  {&__pyx_n_u_int64, __pyx_k_int64, sizeof(__pyx_k_int64), 0, 1, 0, 1},
   {&__pyx_n_s_itemsize, __pyx_k_itemsize, sizeof(__pyx_k_itemsize), 0, 0, 1, 1},
   {&__pyx_kp_s_itemsize_0_for_cython_array, __pyx_k_itemsize_0_for_cython_array, sizeof(__pyx_k_itemsize_0_for_cython_array), 0, 0, 1, 0},
   {&__pyx_n_s_kind, __pyx_k_kind, sizeof(__pyx_k_kind), 0, 0, 1, 1},
