@@ -60,4 +60,4 @@ def _nonzero_coords(cnp.ndarray[INPUT_DTYPE, ndim=3] image, coords_filename):
             munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
             munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
 
-    return np.memmap(coords_filename, dtype=image.dtype) # Return handle to coords file
+    return np.memmap(coords_filename, dtype='int64') # Return handle to coords file
