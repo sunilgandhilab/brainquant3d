@@ -189,10 +189,10 @@ def _watershed(cnp.ndarray[INPUT_DTYPE, ndim=3] image,
     mmapped_output += output.offset
     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
 
-    cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+    #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
     ######################################################################
 
-    cdef INPUT_DTYPE factor = -1 if invert else 1
+    cdef int factor = -1 if invert else 1
 
     cdef long marker_size = marker_locations.size
 

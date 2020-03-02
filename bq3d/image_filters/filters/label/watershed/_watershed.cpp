@@ -2423,9 +2423,6 @@ static CYTHON_INLINE char __Pyx_PyInt_As_char(PyObject *);
 /* ObjectToMemviewSlice.proto */
 static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_unsigned_char(PyObject *, int writable_flag);
 
-/* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(PyObject *, int writable_flag);
-
 /* CheckBinaryVersion.proto */
 static int __Pyx_check_binary_version(void);
 
@@ -2542,7 +2539,6 @@ static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t = { "int64_t", NU
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint8_t = { "uint8_t", NULL, sizeof(__pyx_t_5numpy_uint8_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint8_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint8_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int32_t = { "int32_t", NULL, sizeof(__pyx_t_5numpy_int32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_int32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_int32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_unsigned_char = { "unsigned char", NULL, sizeof(unsigned char), { 0 }, 0, IS_UNSIGNED(unsigned char) ? 'U' : 'I', IS_UNSIGNED(unsigned char), 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t = { "DTYPE_INT32_t", NULL, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t = { "float64_t", NULL, sizeof(__pyx_t_5numpy_float64_t), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint16_t = { "uint16_t", NULL, sizeof(__pyx_t_5numpy_uint16_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint16_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint16_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_uint32_t = { "uint32_t", NULL, sizeof(__pyx_t_5numpy_uint32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_uint32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_uint32_t), 0 };
@@ -2673,7 +2669,6 @@ static const char __pyx_k_stringsource[] = "stringsource";
 static const char __pyx_k_mmapped_image[] = "mmapped_image";
 static const char __pyx_k_pyx_getbuffer[] = "__pyx_getbuffer";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
-static const char __pyx_k_memview_output[] = "memview_output";
 static const char __pyx_k_mmapped_output[] = "mmapped_output";
 static const char __pyx_k_neighbor_index[] = "neighbor_index";
 static const char __pyx_k_View_MemoryView[] = "View.MemoryView";
@@ -2819,7 +2814,6 @@ static PyObject *__pyx_n_s_mask;
 static PyObject *__pyx_n_s_mask_fd;
 static PyObject *__pyx_n_s_memview;
 static PyObject *__pyx_n_s_memview_mask;
-static PyObject *__pyx_n_s_memview_output;
 static PyObject *__pyx_n_s_mmapped_image;
 static PyObject *__pyx_n_s_mmapped_image_offset;
 static PyObject *__pyx_n_s_mmapped_marker_locations;
@@ -5012,8 +5006,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   PyObject *__pyx_v_mask_fd = NULL;
   PyObject *__pyx_v_output_fd = NULL;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_mask = { 0, 0, { 0 }, { 0 }, { 0 } };
-  CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_output = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_float32_t __pyx_v_factor;
+  int __pyx_v_factor;
   long __pyx_v_marker_size;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_image;
   __Pyx_Buffer __pyx_pybuffer_image;
@@ -5033,15 +5026,13 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   Py_ssize_t __pyx_t_6;
   struct __pyx_array_obj *__pyx_t_7 = NULL;
   __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_float32_t __pyx_t_10;
-  long __pyx_t_11;
-  long __pyx_t_12;
-  int __pyx_t_13;
+  long __pyx_t_9;
+  long __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
-  Py_ssize_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
   __Pyx_RefNannySetupContext("__pyx_fuse_0_watershed", 0);
   __pyx_pybuffer_image.pybuffer.buf = NULL;
   __pyx_pybuffer_image.refcount = 0;
@@ -5581,67 +5572,36 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+ *     #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
   __pyx_v_mmapped_output_offset = ((__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
-
-  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":192
- *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
- * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
- *     ######################################################################
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!__pyx_v_mmapped_output_offset) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 192, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
-  if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
-  __pyx_v_memview_output = __pyx_t_9;
-  __pyx_t_9.memview = NULL;
-  __pyx_t_9.data = NULL;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":195
  *     ######################################################################
  * 
- *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
+ *     cdef int factor = -1 if invert else 1             # <<<<<<<<<<<<<<
  * 
  *     cdef long marker_size = marker_locations.size
  */
   if ((__pyx_v_invert != 0)) {
-    __pyx_t_10 = -1.0;
+    __pyx_t_5 = -1;
   } else {
-    __pyx_t_10 = 1.0;
+    __pyx_t_5 = 1;
   }
-  __pyx_v_factor = __pyx_t_10;
+  __pyx_v_factor = __pyx_t_5;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":197
- *     cdef INPUT_DTYPE factor = -1 if invert else 1
+ *     cdef int factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
  * 
  *     with nogil:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_11 = __Pyx_PyInt_As_long(__pyx_t_1); if (unlikely((__pyx_t_11 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_marker_size = __pyx_t_11;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_9 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_marker_size = __pyx_t_9;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  *     cdef long marker_size = marker_locations.size
@@ -5665,9 +5625,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  */
-        __pyx_t_11 = __pyx_v_marker_size;
-        __pyx_t_12 = __pyx_t_11;
-        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
+        __pyx_t_9 = __pyx_v_marker_size;
+        __pyx_t_10 = __pyx_t_9;
+        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_10; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
@@ -5733,8 +5693,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  */
         while (1) {
-          __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
-          if (!__pyx_t_13) break;
+          __pyx_t_11 = ((__pyx_v_hp->items > 0) != 0);
+          if (!__pyx_t_11) break;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":209
  * 
@@ -5753,9 +5713,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                 neighbor_index = structure[i] + elem.index
  */
           __pyx_t_6 = __pyx_v_nneighbors;
-          __pyx_t_14 = __pyx_t_6;
-          for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
-            __pyx_v_i = __pyx_t_15;
+          __pyx_t_12 = __pyx_t_6;
+          for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+            __pyx_v_i = __pyx_t_13;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":213
  *             for i in range(nneighbors):
@@ -5764,8 +5724,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:
  */
-            __pyx_t_16 = __pyx_v_i;
-            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
+            __pyx_t_14 = __pyx_v_i;
+            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_14)) ))) + __pyx_v_elem.index);
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":215
  *                 neighbor_index = structure[i] + elem.index
@@ -5774,8 +5734,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  */
-            __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":218
  *                     # this branch includes basin boundaries, aka watershed lines
@@ -5802,8 +5762,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue
  */
-            __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":222
  *                 if mmapped_output_offset[neighbor_index]:
@@ -5875,8 +5835,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 heappush(hp, &new_elem)
  */
-            __pyx_t_17 = __pyx_v_elem.source;
-            __pyx_v_new_elem.source = __pyx_t_17;
+            __pyx_t_15 = __pyx_v_elem.source;
+            __pyx_v_new_elem.source = __pyx_t_15;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":233
  *                 new_elem.source = elem.source
@@ -5917,10 +5877,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":236
@@ -5930,22 +5890,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":237
@@ -5955,14 +5915,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_marker_locations -= marker_locations.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
@@ -5989,18 +5949,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
@@ -6014,14 +5974,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":243
@@ -6031,10 +5991,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":244
@@ -6044,22 +6004,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":245
@@ -6069,14 +6029,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_output -= output.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
@@ -6103,18 +6063,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
@@ -6128,14 +6088,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":251
@@ -6162,7 +6122,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(((PyObject *)__pyx_t_7));
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -6186,7 +6145,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_v_mask_fd);
   __Pyx_XDECREF(__pyx_v_output_fd);
   __PYX_XDEC_MEMVIEW(&__pyx_v_memview_mask, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_memview_output, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_structure, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_strides, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -6387,8 +6345,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   PyObject *__pyx_v_mask_fd = NULL;
   PyObject *__pyx_v_output_fd = NULL;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_mask = { 0, 0, { 0 }, { 0 }, { 0 } };
-  CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_output = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_float64_t __pyx_v_factor;
+  int __pyx_v_factor;
   long __pyx_v_marker_size;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_image;
   __Pyx_Buffer __pyx_pybuffer_image;
@@ -6408,15 +6365,13 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   Py_ssize_t __pyx_t_6;
   struct __pyx_array_obj *__pyx_t_7 = NULL;
   __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_float64_t __pyx_t_10;
-  long __pyx_t_11;
-  long __pyx_t_12;
-  int __pyx_t_13;
+  long __pyx_t_9;
+  long __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
-  Py_ssize_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
   __Pyx_RefNannySetupContext("__pyx_fuse_1_watershed", 0);
   __pyx_pybuffer_image.pybuffer.buf = NULL;
   __pyx_pybuffer_image.refcount = 0;
@@ -6956,67 +6911,36 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+ *     #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
   __pyx_v_mmapped_output_offset = ((__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
-
-  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":192
- *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
- * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
- *     ######################################################################
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!__pyx_v_mmapped_output_offset) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 192, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
-  if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
-  __pyx_v_memview_output = __pyx_t_9;
-  __pyx_t_9.memview = NULL;
-  __pyx_t_9.data = NULL;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":195
  *     ######################################################################
  * 
- *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
+ *     cdef int factor = -1 if invert else 1             # <<<<<<<<<<<<<<
  * 
  *     cdef long marker_size = marker_locations.size
  */
   if ((__pyx_v_invert != 0)) {
-    __pyx_t_10 = -1.0;
+    __pyx_t_5 = -1;
   } else {
-    __pyx_t_10 = 1.0;
+    __pyx_t_5 = 1;
   }
-  __pyx_v_factor = __pyx_t_10;
+  __pyx_v_factor = __pyx_t_5;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":197
- *     cdef INPUT_DTYPE factor = -1 if invert else 1
+ *     cdef int factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
  * 
  *     with nogil:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_11 = __Pyx_PyInt_As_long(__pyx_t_1); if (unlikely((__pyx_t_11 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_marker_size = __pyx_t_11;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_9 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_marker_size = __pyx_t_9;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  *     cdef long marker_size = marker_locations.size
@@ -7040,9 +6964,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  */
-        __pyx_t_11 = __pyx_v_marker_size;
-        __pyx_t_12 = __pyx_t_11;
-        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
+        __pyx_t_9 = __pyx_v_marker_size;
+        __pyx_t_10 = __pyx_t_9;
+        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_10; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
@@ -7108,8 +7032,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  */
         while (1) {
-          __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
-          if (!__pyx_t_13) break;
+          __pyx_t_11 = ((__pyx_v_hp->items > 0) != 0);
+          if (!__pyx_t_11) break;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":209
  * 
@@ -7128,9 +7052,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                 neighbor_index = structure[i] + elem.index
  */
           __pyx_t_6 = __pyx_v_nneighbors;
-          __pyx_t_14 = __pyx_t_6;
-          for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
-            __pyx_v_i = __pyx_t_15;
+          __pyx_t_12 = __pyx_t_6;
+          for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+            __pyx_v_i = __pyx_t_13;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":213
  *             for i in range(nneighbors):
@@ -7139,8 +7063,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:
  */
-            __pyx_t_16 = __pyx_v_i;
-            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
+            __pyx_t_14 = __pyx_v_i;
+            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_14)) ))) + __pyx_v_elem.index);
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":215
  *                 neighbor_index = structure[i] + elem.index
@@ -7149,8 +7073,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  */
-            __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":218
  *                     # this branch includes basin boundaries, aka watershed lines
@@ -7177,8 +7101,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue
  */
-            __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":222
  *                 if mmapped_output_offset[neighbor_index]:
@@ -7250,8 +7174,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 heappush(hp, &new_elem)
  */
-            __pyx_t_17 = __pyx_v_elem.source;
-            __pyx_v_new_elem.source = __pyx_t_17;
+            __pyx_t_15 = __pyx_v_elem.source;
+            __pyx_v_new_elem.source = __pyx_t_15;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":233
  *                 new_elem.source = elem.source
@@ -7292,10 +7216,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":236
@@ -7305,22 +7229,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float64_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float64_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":237
@@ -7330,14 +7254,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_marker_locations -= marker_locations.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float64_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_float64_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
@@ -7364,18 +7288,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
@@ -7389,14 +7313,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":243
@@ -7406,10 +7330,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":244
@@ -7419,22 +7343,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":245
@@ -7444,14 +7368,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_output -= output.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
@@ -7478,18 +7402,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
@@ -7503,14 +7427,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":251
@@ -7537,7 +7461,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(((PyObject *)__pyx_t_7));
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -7561,7 +7484,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_v_mask_fd);
   __Pyx_XDECREF(__pyx_v_output_fd);
   __PYX_XDEC_MEMVIEW(&__pyx_v_memview_mask, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_memview_output, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_structure, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_strides, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -7762,8 +7684,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   PyObject *__pyx_v_mask_fd = NULL;
   PyObject *__pyx_v_output_fd = NULL;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_mask = { 0, 0, { 0 }, { 0 }, { 0 } };
-  CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_output = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_uint8_t __pyx_v_factor;
+  int __pyx_v_factor;
   long __pyx_v_marker_size;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_image;
   __Pyx_Buffer __pyx_pybuffer_image;
@@ -7783,15 +7704,13 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   Py_ssize_t __pyx_t_6;
   struct __pyx_array_obj *__pyx_t_7 = NULL;
   __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_uint8_t __pyx_t_10;
-  long __pyx_t_11;
-  long __pyx_t_12;
-  int __pyx_t_13;
+  long __pyx_t_9;
+  long __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
-  Py_ssize_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
   __Pyx_RefNannySetupContext("__pyx_fuse_2_watershed", 0);
   __pyx_pybuffer_image.pybuffer.buf = NULL;
   __pyx_pybuffer_image.refcount = 0;
@@ -8331,67 +8250,36 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+ *     #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
   __pyx_v_mmapped_output_offset = ((__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
-
-  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":192
- *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
- * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
- *     ######################################################################
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!__pyx_v_mmapped_output_offset) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 192, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
-  if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
-  __pyx_v_memview_output = __pyx_t_9;
-  __pyx_t_9.memview = NULL;
-  __pyx_t_9.data = NULL;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":195
  *     ######################################################################
  * 
- *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
+ *     cdef int factor = -1 if invert else 1             # <<<<<<<<<<<<<<
  * 
  *     cdef long marker_size = marker_locations.size
  */
   if ((__pyx_v_invert != 0)) {
-    __pyx_t_10 = -1;
+    __pyx_t_5 = -1;
   } else {
-    __pyx_t_10 = 1;
+    __pyx_t_5 = 1;
   }
-  __pyx_v_factor = __pyx_t_10;
+  __pyx_v_factor = __pyx_t_5;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":197
- *     cdef INPUT_DTYPE factor = -1 if invert else 1
+ *     cdef int factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
  * 
  *     with nogil:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_11 = __Pyx_PyInt_As_long(__pyx_t_1); if (unlikely((__pyx_t_11 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_marker_size = __pyx_t_11;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_9 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_marker_size = __pyx_t_9;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  *     cdef long marker_size = marker_locations.size
@@ -8415,9 +8303,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  */
-        __pyx_t_11 = __pyx_v_marker_size;
-        __pyx_t_12 = __pyx_t_11;
-        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
+        __pyx_t_9 = __pyx_v_marker_size;
+        __pyx_t_10 = __pyx_t_9;
+        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_10; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
@@ -8483,8 +8371,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  */
         while (1) {
-          __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
-          if (!__pyx_t_13) break;
+          __pyx_t_11 = ((__pyx_v_hp->items > 0) != 0);
+          if (!__pyx_t_11) break;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":209
  * 
@@ -8503,9 +8391,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                 neighbor_index = structure[i] + elem.index
  */
           __pyx_t_6 = __pyx_v_nneighbors;
-          __pyx_t_14 = __pyx_t_6;
-          for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
-            __pyx_v_i = __pyx_t_15;
+          __pyx_t_12 = __pyx_t_6;
+          for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+            __pyx_v_i = __pyx_t_13;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":213
  *             for i in range(nneighbors):
@@ -8514,8 +8402,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:
  */
-            __pyx_t_16 = __pyx_v_i;
-            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
+            __pyx_t_14 = __pyx_v_i;
+            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_14)) ))) + __pyx_v_elem.index);
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":215
  *                 neighbor_index = structure[i] + elem.index
@@ -8524,8 +8412,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  */
-            __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":218
  *                     # this branch includes basin boundaries, aka watershed lines
@@ -8552,8 +8440,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue
  */
-            __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":222
  *                 if mmapped_output_offset[neighbor_index]:
@@ -8625,8 +8513,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 heappush(hp, &new_elem)
  */
-            __pyx_t_17 = __pyx_v_elem.source;
-            __pyx_v_new_elem.source = __pyx_t_17;
+            __pyx_t_15 = __pyx_v_elem.source;
+            __pyx_v_new_elem.source = __pyx_t_15;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":233
  *                 new_elem.source = elem.source
@@ -8667,10 +8555,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":236
@@ -8680,22 +8568,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint8_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint8_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":237
@@ -8705,14 +8593,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_marker_locations -= marker_locations.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint8_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint8_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
@@ -8739,18 +8627,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
@@ -8764,14 +8652,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":243
@@ -8781,10 +8669,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":244
@@ -8794,22 +8682,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":245
@@ -8819,14 +8707,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_output -= output.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
@@ -8853,18 +8741,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
@@ -8878,14 +8766,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":251
@@ -8912,7 +8800,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(((PyObject *)__pyx_t_7));
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -8936,7 +8823,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_v_mask_fd);
   __Pyx_XDECREF(__pyx_v_output_fd);
   __PYX_XDEC_MEMVIEW(&__pyx_v_memview_mask, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_memview_output, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_structure, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_strides, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -9137,8 +9023,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   PyObject *__pyx_v_mask_fd = NULL;
   PyObject *__pyx_v_output_fd = NULL;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_mask = { 0, 0, { 0 }, { 0 }, { 0 } };
-  CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_output = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_uint16_t __pyx_v_factor;
+  int __pyx_v_factor;
   long __pyx_v_marker_size;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_image;
   __Pyx_Buffer __pyx_pybuffer_image;
@@ -9158,15 +9043,13 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   Py_ssize_t __pyx_t_6;
   struct __pyx_array_obj *__pyx_t_7 = NULL;
   __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_uint16_t __pyx_t_10;
-  long __pyx_t_11;
-  long __pyx_t_12;
-  int __pyx_t_13;
+  long __pyx_t_9;
+  long __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
-  Py_ssize_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
   __Pyx_RefNannySetupContext("__pyx_fuse_3_watershed", 0);
   __pyx_pybuffer_image.pybuffer.buf = NULL;
   __pyx_pybuffer_image.refcount = 0;
@@ -9706,67 +9589,36 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+ *     #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
   __pyx_v_mmapped_output_offset = ((__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
-
-  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":192
- *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
- * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
- *     ######################################################################
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!__pyx_v_mmapped_output_offset) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 192, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
-  if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
-  __pyx_v_memview_output = __pyx_t_9;
-  __pyx_t_9.memview = NULL;
-  __pyx_t_9.data = NULL;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":195
  *     ######################################################################
  * 
- *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
+ *     cdef int factor = -1 if invert else 1             # <<<<<<<<<<<<<<
  * 
  *     cdef long marker_size = marker_locations.size
  */
   if ((__pyx_v_invert != 0)) {
-    __pyx_t_10 = -1;
+    __pyx_t_5 = -1;
   } else {
-    __pyx_t_10 = 1;
+    __pyx_t_5 = 1;
   }
-  __pyx_v_factor = __pyx_t_10;
+  __pyx_v_factor = __pyx_t_5;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":197
- *     cdef INPUT_DTYPE factor = -1 if invert else 1
+ *     cdef int factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
  * 
  *     with nogil:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_11 = __Pyx_PyInt_As_long(__pyx_t_1); if (unlikely((__pyx_t_11 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_marker_size = __pyx_t_11;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_9 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_marker_size = __pyx_t_9;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  *     cdef long marker_size = marker_locations.size
@@ -9790,9 +9642,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  */
-        __pyx_t_11 = __pyx_v_marker_size;
-        __pyx_t_12 = __pyx_t_11;
-        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
+        __pyx_t_9 = __pyx_v_marker_size;
+        __pyx_t_10 = __pyx_t_9;
+        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_10; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
@@ -9858,8 +9710,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  */
         while (1) {
-          __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
-          if (!__pyx_t_13) break;
+          __pyx_t_11 = ((__pyx_v_hp->items > 0) != 0);
+          if (!__pyx_t_11) break;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":209
  * 
@@ -9878,9 +9730,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                 neighbor_index = structure[i] + elem.index
  */
           __pyx_t_6 = __pyx_v_nneighbors;
-          __pyx_t_14 = __pyx_t_6;
-          for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
-            __pyx_v_i = __pyx_t_15;
+          __pyx_t_12 = __pyx_t_6;
+          for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+            __pyx_v_i = __pyx_t_13;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":213
  *             for i in range(nneighbors):
@@ -9889,8 +9741,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:
  */
-            __pyx_t_16 = __pyx_v_i;
-            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
+            __pyx_t_14 = __pyx_v_i;
+            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_14)) ))) + __pyx_v_elem.index);
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":215
  *                 neighbor_index = structure[i] + elem.index
@@ -9899,8 +9751,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  */
-            __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":218
  *                     # this branch includes basin boundaries, aka watershed lines
@@ -9927,8 +9779,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue
  */
-            __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":222
  *                 if mmapped_output_offset[neighbor_index]:
@@ -10000,8 +9852,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 heappush(hp, &new_elem)
  */
-            __pyx_t_17 = __pyx_v_elem.source;
-            __pyx_v_new_elem.source = __pyx_t_17;
+            __pyx_t_15 = __pyx_v_elem.source;
+            __pyx_v_new_elem.source = __pyx_t_15;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":233
  *                 new_elem.source = elem.source
@@ -10042,10 +9894,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":236
@@ -10055,22 +9907,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint16_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint16_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":237
@@ -10080,14 +9932,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_marker_locations -= marker_locations.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint16_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint16_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
@@ -10114,18 +9966,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
@@ -10139,14 +9991,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":243
@@ -10156,10 +10008,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":244
@@ -10169,22 +10021,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":245
@@ -10194,14 +10046,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_output -= output.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
@@ -10228,18 +10080,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
@@ -10253,14 +10105,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":251
@@ -10287,7 +10139,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(((PyObject *)__pyx_t_7));
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -10311,7 +10162,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_v_mask_fd);
   __Pyx_XDECREF(__pyx_v_output_fd);
   __PYX_XDEC_MEMVIEW(&__pyx_v_memview_mask, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_memview_output, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_structure, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_strides, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -10512,8 +10362,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   PyObject *__pyx_v_mask_fd = NULL;
   PyObject *__pyx_v_output_fd = NULL;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_mask = { 0, 0, { 0 }, { 0 }, { 0 } };
-  CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_output = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_int32_t __pyx_v_factor;
+  int __pyx_v_factor;
   long __pyx_v_marker_size;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_image;
   __Pyx_Buffer __pyx_pybuffer_image;
@@ -10533,15 +10382,13 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   Py_ssize_t __pyx_t_6;
   struct __pyx_array_obj *__pyx_t_7 = NULL;
   __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_int32_t __pyx_t_10;
-  long __pyx_t_11;
-  long __pyx_t_12;
-  int __pyx_t_13;
+  long __pyx_t_9;
+  long __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
-  Py_ssize_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
   __Pyx_RefNannySetupContext("__pyx_fuse_4_watershed", 0);
   __pyx_pybuffer_image.pybuffer.buf = NULL;
   __pyx_pybuffer_image.refcount = 0;
@@ -11081,67 +10928,36 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+ *     #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
   __pyx_v_mmapped_output_offset = ((__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
-
-  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":192
- *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
- * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
- *     ######################################################################
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!__pyx_v_mmapped_output_offset) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 192, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
-  if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
-  __pyx_v_memview_output = __pyx_t_9;
-  __pyx_t_9.memview = NULL;
-  __pyx_t_9.data = NULL;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":195
  *     ######################################################################
  * 
- *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
+ *     cdef int factor = -1 if invert else 1             # <<<<<<<<<<<<<<
  * 
  *     cdef long marker_size = marker_locations.size
  */
   if ((__pyx_v_invert != 0)) {
-    __pyx_t_10 = -1;
+    __pyx_t_5 = -1;
   } else {
-    __pyx_t_10 = 1;
+    __pyx_t_5 = 1;
   }
-  __pyx_v_factor = __pyx_t_10;
+  __pyx_v_factor = __pyx_t_5;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":197
- *     cdef INPUT_DTYPE factor = -1 if invert else 1
+ *     cdef int factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
  * 
  *     with nogil:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_11 = __Pyx_PyInt_As_long(__pyx_t_1); if (unlikely((__pyx_t_11 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_marker_size = __pyx_t_11;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_9 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_marker_size = __pyx_t_9;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  *     cdef long marker_size = marker_locations.size
@@ -11165,9 +10981,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  */
-        __pyx_t_11 = __pyx_v_marker_size;
-        __pyx_t_12 = __pyx_t_11;
-        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
+        __pyx_t_9 = __pyx_v_marker_size;
+        __pyx_t_10 = __pyx_t_9;
+        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_10; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
@@ -11233,8 +11049,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  */
         while (1) {
-          __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
-          if (!__pyx_t_13) break;
+          __pyx_t_11 = ((__pyx_v_hp->items > 0) != 0);
+          if (!__pyx_t_11) break;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":209
  * 
@@ -11253,9 +11069,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                 neighbor_index = structure[i] + elem.index
  */
           __pyx_t_6 = __pyx_v_nneighbors;
-          __pyx_t_14 = __pyx_t_6;
-          for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
-            __pyx_v_i = __pyx_t_15;
+          __pyx_t_12 = __pyx_t_6;
+          for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+            __pyx_v_i = __pyx_t_13;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":213
  *             for i in range(nneighbors):
@@ -11264,8 +11080,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:
  */
-            __pyx_t_16 = __pyx_v_i;
-            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
+            __pyx_t_14 = __pyx_v_i;
+            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_14)) ))) + __pyx_v_elem.index);
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":215
  *                 neighbor_index = structure[i] + elem.index
@@ -11274,8 +11090,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  */
-            __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":218
  *                     # this branch includes basin boundaries, aka watershed lines
@@ -11302,8 +11118,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue
  */
-            __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":222
  *                 if mmapped_output_offset[neighbor_index]:
@@ -11375,8 +11191,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 heappush(hp, &new_elem)
  */
-            __pyx_t_17 = __pyx_v_elem.source;
-            __pyx_v_new_elem.source = __pyx_t_17;
+            __pyx_t_15 = __pyx_v_elem.source;
+            __pyx_v_new_elem.source = __pyx_t_15;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":233
  *                 new_elem.source = elem.source
@@ -11417,10 +11233,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":236
@@ -11430,22 +11246,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_int32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_int32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":237
@@ -11455,14 +11271,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_marker_locations -= marker_locations.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_int32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_int32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
@@ -11489,18 +11305,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
@@ -11514,14 +11330,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":243
@@ -11531,10 +11347,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":244
@@ -11544,22 +11360,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":245
@@ -11569,14 +11385,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_output -= output.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
@@ -11603,18 +11419,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
@@ -11628,14 +11444,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":251
@@ -11662,7 +11478,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(((PyObject *)__pyx_t_7));
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -11686,7 +11501,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_v_mask_fd);
   __Pyx_XDECREF(__pyx_v_output_fd);
   __PYX_XDEC_MEMVIEW(&__pyx_v_memview_mask, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_memview_output, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_structure, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_strides, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -11887,8 +11701,7 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   PyObject *__pyx_v_mask_fd = NULL;
   PyObject *__pyx_v_output_fd = NULL;
   CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_mask = { 0, 0, { 0 }, { 0 }, { 0 } };
-  CYTHON_UNUSED __Pyx_memviewslice __pyx_v_memview_output = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_uint32_t __pyx_v_factor;
+  int __pyx_v_factor;
   long __pyx_v_marker_size;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_image;
   __Pyx_Buffer __pyx_pybuffer_image;
@@ -11908,15 +11721,13 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   Py_ssize_t __pyx_t_6;
   struct __pyx_array_obj *__pyx_t_7 = NULL;
   __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_5numpy_uint32_t __pyx_t_10;
-  long __pyx_t_11;
-  long __pyx_t_12;
-  int __pyx_t_13;
+  long __pyx_t_9;
+  long __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
-  Py_ssize_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
   __Pyx_RefNannySetupContext("__pyx_fuse_5_watershed", 0);
   __pyx_pybuffer_image.pybuffer.buf = NULL;
   __pyx_pybuffer_image.refcount = 0;
@@ -12456,67 +12267,36 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     mmapped_output += output.offset
  *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output             # <<<<<<<<<<<<<<
  * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
+ *     #cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset
  */
   __pyx_v_mmapped_output_offset = ((__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t *)__pyx_v_mmapped_output);
-
-  /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":192
- *     mmapped_output_offset = <DTYPE_INT32_t *> mmapped_output
- * 
- *     cdef DTYPE_INT32_t[::1] memview_output = <DTYPE_INT32_t [:output.size]> mmapped_output_offset             # <<<<<<<<<<<<<<
- *     ######################################################################
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!__pyx_v_mmapped_output_offset) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 192, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_6));
-  if (unlikely(!__pyx_t_1 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_1))) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __pyx_array_new(__pyx_t_2, sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t), PyBytes_AS_STRING(__pyx_t_1), (char *) "c", (char *) __pyx_v_mmapped_output_offset);
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_9 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_9.memview)) __PYX_ERR(1, 192, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_7)); __pyx_t_7 = 0;
-  __pyx_v_memview_output = __pyx_t_9;
-  __pyx_t_9.memview = NULL;
-  __pyx_t_9.data = NULL;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":195
  *     ######################################################################
  * 
- *     cdef INPUT_DTYPE factor = -1 if invert else 1             # <<<<<<<<<<<<<<
+ *     cdef int factor = -1 if invert else 1             # <<<<<<<<<<<<<<
  * 
  *     cdef long marker_size = marker_locations.size
  */
   if ((__pyx_v_invert != 0)) {
-    __pyx_t_10 = -1;
+    __pyx_t_5 = -1;
   } else {
-    __pyx_t_10 = 1;
+    __pyx_t_5 = 1;
   }
-  __pyx_v_factor = __pyx_t_10;
+  __pyx_v_factor = __pyx_t_5;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":197
- *     cdef INPUT_DTYPE factor = -1 if invert else 1
+ *     cdef int factor = -1 if invert else 1
  * 
  *     cdef long marker_size = marker_locations.size             # <<<<<<<<<<<<<<
  * 
  *     with nogil:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_11 = __Pyx_PyInt_As_long(__pyx_t_1); if (unlikely((__pyx_t_11 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_marker_size = __pyx_t_11;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = __Pyx_PyInt_As_long(__pyx_t_2); if (unlikely((__pyx_t_9 == (long)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_marker_size = __pyx_t_9;
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":199
  *     cdef long marker_size = marker_locations.size
@@ -12540,9 +12320,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *             index = mmapped_marker_locations_offset[i]
  *             elem.value = factor * mmapped_image_offset[index]
  */
-        __pyx_t_11 = __pyx_v_marker_size;
-        __pyx_t_12 = __pyx_t_11;
-        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_12; __pyx_t_6+=1) {
+        __pyx_t_9 = __pyx_v_marker_size;
+        __pyx_t_10 = __pyx_t_9;
+        for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_10; __pyx_t_6+=1) {
           __pyx_v_i = __pyx_t_6;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":201
@@ -12608,8 +12388,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  */
         while (1) {
-          __pyx_t_13 = ((__pyx_v_hp->items > 0) != 0);
-          if (!__pyx_t_13) break;
+          __pyx_t_11 = ((__pyx_v_hp->items > 0) != 0);
+          if (!__pyx_t_11) break;
 
           /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":209
  * 
@@ -12628,9 +12408,9 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                 neighbor_index = structure[i] + elem.index
  */
           __pyx_t_6 = __pyx_v_nneighbors;
-          __pyx_t_14 = __pyx_t_6;
-          for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
-            __pyx_v_i = __pyx_t_15;
+          __pyx_t_12 = __pyx_t_6;
+          for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+            __pyx_v_i = __pyx_t_13;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":213
  *             for i in range(nneighbors):
@@ -12639,8 +12419,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 if not mmapped_mask_offset[neighbor_index]:
  */
-            __pyx_t_16 = __pyx_v_i;
-            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_16)) ))) + __pyx_v_elem.index);
+            __pyx_t_14 = __pyx_v_i;
+            __pyx_v_neighbor_index = ((*((__pyx_t_5numpy_intp_t *) ( /* dim=0 */ ((char *) (((__pyx_t_5numpy_intp_t *) __pyx_v_structure.data) + __pyx_t_14)) ))) + __pyx_v_elem.index);
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":215
  *                 neighbor_index = structure[i] + elem.index
@@ -12649,8 +12429,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # this branch includes basin boundaries, aka watershed lines
  *                     # neighbor is not in mask
  */
-            __pyx_t_13 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((!((__pyx_v_mmapped_mask_offset[__pyx_v_neighbor_index]) != 0)) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":218
  *                     # this branch includes basin boundaries, aka watershed lines
@@ -12677,8 +12457,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *                     # pre-labeled neighbor is not added to the queue.
  *                     continue
  */
-            __pyx_t_13 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
-            if (__pyx_t_13) {
+            __pyx_t_11 = ((__pyx_v_mmapped_output_offset[__pyx_v_neighbor_index]) != 0);
+            if (__pyx_t_11) {
 
               /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":222
  *                 if mmapped_output_offset[neighbor_index]:
@@ -12750,8 +12530,8 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *                 heappush(hp, &new_elem)
  */
-            __pyx_t_17 = __pyx_v_elem.source;
-            __pyx_v_new_elem.source = __pyx_t_17;
+            __pyx_t_15 = __pyx_v_elem.source;
+            __pyx_v_new_elem.source = __pyx_t_15;
 
             /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":233
  *                 new_elem.source = elem.source
@@ -12792,10 +12572,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image, image.size * sizeof(INPUT_DTYPE) + image.offset)
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_image = (__pyx_v_mmapped_image - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":236
@@ -12805,22 +12585,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_image_offset, image.size * sizeof(INPUT_DTYPE))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_image, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":237
@@ -12830,14 +12610,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_marker_locations -= marker_locations.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_image), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_5numpy_uint32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 237, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_image_offset, __pyx_t_4));
@@ -12864,18 +12644,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 240, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 240, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations, __pyx_t_4));
@@ -12889,14 +12669,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_marker_locations), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(long))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_marker_locations_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":243
@@ -12906,10 +12686,10 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask, mask.size * sizeof(unsigned char) + mask.offset)
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mmapped_mask = (__pyx_v_mmapped_mask - __pyx_t_6);
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":244
@@ -12919,22 +12699,22 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  *     munmap(mmapped_mask_offset, mask.size * sizeof(unsigned char))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Add(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_mask, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":245
@@ -12944,14 +12724,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  * 
  *     mmapped_output -= output.offset
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_mask), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(unsigned char))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 245, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Multiply(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_mask_offset, __pyx_t_4));
@@ -12978,18 +12758,18 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_offset); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 248, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_3); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   (void)(munmap(__pyx_v_mmapped_output, __pyx_t_4));
@@ -13003,14 +12783,14 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_output), __pyx_n_s_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t((sizeof(__pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_1); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyInt_As_size_t(__pyx_t_2); if (unlikely((__pyx_t_4 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   (void)(munmap(__pyx_v_mmapped_output_offset, __pyx_t_4));
 
   /* "bq3d/image_filters/filters/label/watershed/_watershed.pyx":251
@@ -13037,7 +12817,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(((PyObject *)__pyx_t_7));
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -13061,7 +12840,6 @@ static PyObject *__pyx_pf_4bq3d_13image_filters_7filters_5label_9watershed_10_wa
   __Pyx_XDECREF(__pyx_v_mask_fd);
   __Pyx_XDECREF(__pyx_v_output_fd);
   __PYX_XDEC_MEMVIEW(&__pyx_v_memview_mask, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_memview_output, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_structure, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_strides, 1);
   __Pyx_XGIVEREF(__pyx_r);
@@ -29428,7 +29206,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_mask_fd, __pyx_k_mask_fd, sizeof(__pyx_k_mask_fd), 0, 0, 1, 1},
   {&__pyx_n_s_memview, __pyx_k_memview, sizeof(__pyx_k_memview), 0, 0, 1, 1},
   {&__pyx_n_s_memview_mask, __pyx_k_memview_mask, sizeof(__pyx_k_memview_mask), 0, 0, 1, 1},
-  {&__pyx_n_s_memview_output, __pyx_k_memview_output, sizeof(__pyx_k_memview_output), 0, 0, 1, 1},
   {&__pyx_n_s_mmapped_image, __pyx_k_mmapped_image, sizeof(__pyx_k_mmapped_image), 0, 0, 1, 1},
   {&__pyx_n_s_mmapped_image_offset, __pyx_k_mmapped_image_offset, sizeof(__pyx_k_mmapped_image_offset), 0, 0, 1, 1},
   {&__pyx_n_s_mmapped_marker_locations, __pyx_k_mmapped_marker_locations, sizeof(__pyx_k_mmapped_marker_locations), 0, 0, 1, 1},
@@ -29814,10 +29591,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                       cnp.ndarray[cnp.int64_t, ndim=1] marker_locations,
  *                       cnp.intp_t[::1] structure,
  */
-  __pyx_tuple__35 = PyTuple_Pack(31, __pyx_n_s_image, __pyx_n_s_marker_locations, __pyx_n_s_structure, __pyx_n_s_mask, __pyx_n_s_strides, __pyx_n_s_output, __pyx_n_s_invert, __pyx_n_s_elem, __pyx_n_s_new_elem, __pyx_n_s_nneighbors, __pyx_n_s_i, __pyx_n_s_age, __pyx_n_s_index, __pyx_n_s_neighbor_index, __pyx_n_s_hp, __pyx_n_s_mmapped_image, __pyx_n_s_mmapped_image_offset, __pyx_n_s_mmapped_marker_locations, __pyx_n_s_mmapped_marker_locations_offset, __pyx_n_s_mmapped_mask, __pyx_n_s_mmapped_mask_offset, __pyx_n_s_mmapped_output, __pyx_n_s_mmapped_output_offset, __pyx_n_s_image_fd, __pyx_n_s_marker_fd, __pyx_n_s_mask_fd, __pyx_n_s_output_fd, __pyx_n_s_memview_mask, __pyx_n_s_memview_output, __pyx_n_s_factor, __pyx_n_s_marker_size); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(1, 92, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(30, __pyx_n_s_image, __pyx_n_s_marker_locations, __pyx_n_s_structure, __pyx_n_s_mask, __pyx_n_s_strides, __pyx_n_s_output, __pyx_n_s_invert, __pyx_n_s_elem, __pyx_n_s_new_elem, __pyx_n_s_nneighbors, __pyx_n_s_i, __pyx_n_s_age, __pyx_n_s_index, __pyx_n_s_neighbor_index, __pyx_n_s_hp, __pyx_n_s_mmapped_image, __pyx_n_s_mmapped_image_offset, __pyx_n_s_mmapped_marker_locations, __pyx_n_s_mmapped_marker_locations_offset, __pyx_n_s_mmapped_mask, __pyx_n_s_mmapped_mask_offset, __pyx_n_s_mmapped_output, __pyx_n_s_mmapped_output_offset, __pyx_n_s_image_fd, __pyx_n_s_marker_fd, __pyx_n_s_mask_fd, __pyx_n_s_output_fd, __pyx_n_s_memview_mask, __pyx_n_s_factor, __pyx_n_s_marker_size); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(1, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(7, 0, 31, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters_label, __pyx_n_s_watershed, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(1, 92, __pyx_L1_error)
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(7, 0, 30, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bq3d_image_filters_filters_label, __pyx_n_s_watershed, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(1, 92, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -36815,29 +36592,6 @@ raise_neg_overflow:
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
                                                  &__Pyx_TypeInfo_unsigned_char, stack,
-                                                 &result, obj);
-    if (unlikely(retcode == -1))
-        goto __pyx_fail;
-    return result;
-__pyx_fail:
-    result.memview = NULL;
-    result.data = NULL;
-    return result;
-}
-
-/* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t(PyObject *obj, int writable_flag) {
-    __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
-    __Pyx_BufFmt_StackElem stack[1];
-    int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
-    int retcode;
-    if (obj == Py_None) {
-        result.memview = (struct __pyx_memoryview_obj *) Py_None;
-        return result;
-    }
-    retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
-                                                 (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_4bq3d_13image_filters_7filters_5label_9watershed_10_watershed_DTYPE_INT32_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
