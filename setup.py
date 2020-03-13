@@ -231,7 +231,8 @@ setup(
         'pyyaml',
         'scipy',
         'opencv-python',
-        'tifffile<=2019.7.26.2',
+        'imagecodecs<=2019.12.31', # versions higher than this fail during wheel build
+        'tifffile',
         'scikit-image',
         'pandas',
         'h5py',
