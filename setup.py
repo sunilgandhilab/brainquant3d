@@ -231,7 +231,7 @@ setup(
         'pyyaml',
         'scipy',
         'opencv-python',
-        'tifffile',
+        'tifffile<=2019.7.26.2',
         'scikit-image',
         'pandas',
         'h5py',
