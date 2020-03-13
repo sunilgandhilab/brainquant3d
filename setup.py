@@ -24,18 +24,10 @@ if sys.platform not in ['linux', 'darwin']:
     raise EnvironmentError(f'Platform {sys.platform} not supported.')
 
 if sys.platform == 'linux':
-    try:
-        from pip._internal.main import main
-    except:
-        try:
-            from pip._internal import main
-        except:
-            from pip import main
     opencv_libs = '.lib-linux'
     elastix_URL = 'elastix-5.0.0-linux.tar.bz2'
     ilastik_URL = 'ilastik-1.3.3-Linux-noGurobi.tar.bz2'
 elif sys.platform == 'darwin':
-    from pip._internal import main
     opencv_libs = '.lib-osx'
     elastix_URL = 'elastix-5.0.0-mac.tar.gz'
     ilastik_URL = 'ilastik-1.3.3post2-OSX-noGurobi.tar.bz2'
@@ -172,7 +164,7 @@ class install(_install):
         build_dir = cwd if len(matches) == 0 else matches[0]
         dest = Path(build_dir) / 'bq3d/.external'
 
-        print('installing elastix')
+        print('Installing elastix')
         url = 'https://glams.bio.uci.edu/' + elastix_URL
         tmp = Path(url).name
         sink = dest / 'elastix-5.0.0'
@@ -185,7 +177,7 @@ class install(_install):
             tar.extractall(sink)
             tar.close()
 
-        print('installing ilastik')
+        print('Installing ilastik')
         url = 'https://glams.bio.uci.edu/' + ilastik_URL
         tmp = Path(url).name
 
@@ -197,17 +189,26 @@ class install(_install):
             tar.close()
 
         # Install ANTsPy
-        print('installing ants')
         if sys.platform == 'linux':
             try:
-                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
+                print('Installing ants')
+                subprocess.check_call([sys.executable, 'pip', '-m', 'install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.4/antspy-0.1.4-cp36-cp36m-linux_x86_64.whl"])
             except:
-                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.2.0/antspyx-0.2.0-cp37-cp37m-linux_x86_64.whl"])
+                try:
+                    print('Attempting alternative ants install')
+                    subprocess.check_call([sys.executable, 'pip', '-m', 'install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.2.0/antspyx-0.2.0-cp37-cp37m-linux_x86_64.whl"])
+                except:
+                    print('Unable to install ants')
         if sys.platform == 'darwin':
             try:
-                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
+                print('Installing ants')
+                subprocess.check_call([sys.executable, 'pip', '-m', 'install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/Weekly/antspy-0.1.4-cp36-cp36m-macosx_10_7_x86_64.whl"])
             except:
-                main(['install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.8/antspyx-0.1.8-cp37-cp37m-macosx_10_14_x86_64.whl"])
+                try:
+                    print('Attempting alternative ants install')
+                    subprocess.check_call([sys.executable, 'pip', '-m', 'install', '--user', "https://github.com/ANTsX/ANTsPy/releases/download/v0.1.8/antspyx-0.1.8-cp37-cp37m-macosx_10_14_x86_64.whl"])
+                except:
+                    print('Unable to install ants')
 
         _install.run(self)
 
@@ -230,6 +231,7 @@ setup(
         'pyyaml',
         'scipy',
         'opencv-python',
+        'imagecodecs<=2019.12.31',
         'tifffile',
         'scikit-image',
         'pandas',
