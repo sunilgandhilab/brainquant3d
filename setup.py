@@ -231,7 +231,7 @@ setup(
         'pyyaml',
         'scipy',
         'opencv-python',
-        'imagecodecs<=2019.12.31',
+        #'imagecodecs<=2019.12.31',
         'tifffile<=2019.26.2',
         'scikit-image',
         'pandas',
