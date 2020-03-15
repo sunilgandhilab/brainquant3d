@@ -232,7 +232,7 @@ setup(
         'scipy',
         'opencv-python',
         'imagecodecs<=2019.12.31',
-        'tifffile',
+        'tifffile<=2019.26.2',
         'scikit-image',
         'pandas',
         'h5py',
