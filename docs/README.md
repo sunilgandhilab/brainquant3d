@@ -59,8 +59,8 @@ An example configuration is provided below:
 user:
     default:
         # Paths
-        Ilastik_path:        !pkg_path '.external/ilastik-1.3.3-Linux/ilastik-1.3.3-Linux-noGurobi'
-        Elastix_path:        !pkg_path '.external/elastix-5.0.0-linux'
+        Ilastik_path:        !pkg_path '.external/ilastik-1.3.3'
+        Elastix_path:        !pkg_path '.external/elastix-5.0.0'
         Temp_path:           ‘/mnt/ssd/brainquant3d-tmp’
 
         Rigid_default:       '/mnt/ssd/Warping/ParRigid.txt'
