@@ -32,7 +32,7 @@ elif sys.platform == 'darwin':
     elastix_URL = 'elastix-5.0.0-mac.tar.gz'
     ilastik_URL = 'ilastik-1.3.3post2-OSX-noGurobi.tar.bz2'
 
-USE_CYTHON = 'False'
+USE_CYTHON = 'auto'
 
 if USE_CYTHON:
     try:
