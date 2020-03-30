@@ -72,8 +72,6 @@ class Median2D(FilterBase):
     def _generate_output(self):
         img = self.input
 
-        import ipdb; ipdb.set_trace()
-
         orig_shape = img.shape
         if len(orig_shape) < 3:
             img = img[np.newaxis, ...]
