@@ -121,3 +121,50 @@ class BackgroundSubtract(FilterBase):
 
 
 filter_manager.add_filter(BackgroundSubtract())
+
+
+class GaussianSubtract(FilterBase):
+    """Subtract a gaussian smoothed image from itself.
+
+    Applied slice-by-slice
+
+    Call using :meth:`filter_image` with 'Gaussian2D' as filter.
+
+    Attributes:
+        input (array): Image to pass through filter. Allowed datatypes are
+            uint8, uint16, int16, float32 or float64.
+        output (array): Filter result.
+        size (tuple): Gaussian kernel size. ksize.width and ksize.height can differ but
+            they both must be an odd integer.
+        sigmaX (scalar): Gaussian kernel standard deviation in X direction.
+        sigmaY (scalar): Gaussian kernel standard deviation in Y direction.
+
+    Notes:
+        See cv2.GaussianBlur
+    """
+
+    def __init__(self):
+        self.size = (51, 51)
+        self.sigmaX = 0
+        self.sigmaY = 0
+        super().__init__()
+
+    def _generate_output(self):
+        img = self.input
+
+        orig_shape = img.shape
+        if len(orig_shape) < 3:
+            img = img[np.newaxis, ...]
+
+        for z in range(img.shape[0]):
+            frame = img[z]
+            blurred = cv2.GaussianBlur(frame, self.size, self.sigmaX, self.sigmaY)
+            sub = np.int32(frame) - blurred
+            sub[sub < 0] = 0
+            img[z] = sub
+
+        img.shape = orig_shape
+
+        return img
+
+filter_manager.add_filter(GaussianSubtract())
