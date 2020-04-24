@@ -71,7 +71,7 @@ class Region(AnyNode):
     
     @property            
     def voxels_nonzero(self):
-        return {k:v for k,v in enumerate(self.voxels) if sum(v) != 0}
+        return {k:v for k,v in self.voxels.items() if sum(v) != 0}
     
     @property
     def voxels_collapsed(self):
