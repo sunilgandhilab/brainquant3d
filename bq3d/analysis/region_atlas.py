@@ -44,7 +44,7 @@ class Region(AnyNode):
         parent_acronym (str): acronym of parent region.
         volume (int): volume of region in voxels
         voxels (dict): voxels making up the region and number of data points within that voxel as {(x,y,z): [points]}. Each position in [points] should be from a different data points group.
-        voxels_collapsed: (dict): same format as :attr:voxels but returns voxels for region and subregions. This is a @property.
+        voxels_collapsed (dict): same format as :attr:voxels but returns voxels for region and subregions. This is a @property.
         voxels_nonzero (dict): same format as :attr:voxels but only returns voxels that have points. This is a @property.
         voxels_collapsed_nonzero (dict): same format as :attr:voxels but returns  only voxels that have points in region and subregions. This is a @property.
         nPoints (list): total number of points in region. Each position in list is from a different data points group.
