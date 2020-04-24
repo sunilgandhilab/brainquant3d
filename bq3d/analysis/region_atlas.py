@@ -44,6 +44,9 @@ class Region(AnyNode):
         parent_acronym (str): acronym of parent region.
         volume (int): volume of region in voxels
         voxels (dict): voxels making up the region and number of data points within that voxel as {(x,y,z): [points]}. Each position in [points] should be from a different data points group.
+        voxels_collapsed: (dict): same format as :attr:voxels but returns voxels for region and subregions. This is a @property.
+        voxels_nonzero (dict): same format as :attr:voxels but only returns voxels that have points. This is a @property.
+        voxels_collapsed_nonzero (dict): same format as :attr:voxels but returns  only voxels that have points in region and subregions. This is a @property.
         nPoints (list): total number of points in region. Each position in list is from a different data points group.
         points_density (list): density of points in region. Each position in list is from a different data points group.
     """
@@ -65,6 +68,24 @@ class Region(AnyNode):
         # get placed in an attribute named after the key
         for key, value in list(kwargs.items()):
             setattr(self, key, value)
+    
+    @property            
+    def voxels_nonzero(self):
+        return {k:v for k,v in enumerate(self.voxels) if sum(v) != 0}
+    
+    @property
+    def voxels_collapsed(self):
+        res = {}
+        for reg in PreOrderIter(self):
+            res.update(reg.voxels)
+        return res
+        
+    @property
+    def voxels_collapsed_nonzero(self):
+        res = {}
+        for reg in PreOrderIter(self):
+            res.update(reg.voxels_nonzero)
+        return res
 
     def add_volume(self, volume):
         """ adds volume info
@@ -467,7 +488,7 @@ class Atlas(object):
         else:
             return data_df
 
-    def get_voxel_info_dataframe(self, columns, sink=None, iterator=PreOrderIter):
+    def get_voxel_info_dataframe(self, columns, ignore_empty = False, sink=None, iterator=PreOrderIter):
         """ format voxel info with corresponding region attributes into a dataframe
 
         If an attribute in column is type list or tuple each member will get its own column in the dataframe
@@ -475,6 +496,7 @@ class Atlas(object):
 
         Arguments:
             columns (str or list): attributes to be included in columns. 'nPoints' will return point counts by voxel.
+            ignore_empty (bool): only return voxels containing points
             sink (str): file to save dataframe too.
             iterator (Object): `anynode` iterator to use when populating dataframe. Will determine order of entries.
         Returns:
@@ -490,7 +512,11 @@ class Atlas(object):
         for region in iterator(self.tree_root):
             print(f'Adding region: {region.id}')
             for vox, points in list(region.voxels.items()):
-
+                
+                if ignore_empty:
+                    if sum(points) == 0:
+                        continue
+                
                 row_labels.append(vox)
                 region_attrs = [vox[0],vox[1],vox[2]]
                 for att in columns:
