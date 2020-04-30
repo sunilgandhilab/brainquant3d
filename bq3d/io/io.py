@@ -426,7 +426,7 @@ def dataToRange(data, x = None, y = None, z = None):
     if d > 0:
         rr.append(toDataRange(shape[-1], r = x))
 
-    return np.squeeze(data[range_to_slices(rr)])
+    return numpy.squeeze(data[range_to_slices(rr)])
 
 
 ##############################################################################
