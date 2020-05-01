@@ -108,7 +108,7 @@ def writeData(filename, data, rgb = False, substack = None, returnMemmap = True)
 
     fn, fe = os.path.splitext(filename) # initial write to partial filename to prevent creating incomplete files
     d = len(data.shape) # fiji wants 'TZCYXS'
-    type = data.flat[0].dtype
+    dtype = data.flat[0].dtype
 
     if substack:
         sub = range_to_slices(substack)
