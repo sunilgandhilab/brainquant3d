@@ -121,8 +121,9 @@ def process_flow(source,
         raise err
 
     # join results
-    results = join_points(results, unique_chunks, overlap_chunks)
-    results = jsonify_points(output_properties, results)
+    if len(output_properties) > 0:
+        results = join_points(results, unique_chunks, overlap_chunks)
+        results = jsonify_points(output_properties, results)
 
     shutil.rmtree(temp_dir, ignore_errors=True)
     if sink:
