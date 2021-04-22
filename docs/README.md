@@ -6,6 +6,14 @@
 
 ## Installation
 
+Download and install dependencis
+
+```
+$ python3 -m pip install numpy
+$ python3 -m pip install Cython
+```
+
+
 Download and install the main package
 
 ```
