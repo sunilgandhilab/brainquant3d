@@ -159,17 +159,17 @@ def colorPValues(pvals, psign, positive = [1,0], negative = [0,1], pcutoff = Non
 
 
 def mean(group, **args):
-    g = self.readGroup(group, **args)
+    g = readDataGroup(group, **args)
     return g.mean(axis = 0)
 
 
 def std(group, **args):
-    g = self.readGroup(group, **args)
+    g = readDataGroup(group, **args)
     return g.std(axis = 0)
 
 
 def var(group, **args):
-    g = self.readGroup(group, **args)
+    g = readDataGroup(group, **args)
     return g.var(axis = 0)
 
 
