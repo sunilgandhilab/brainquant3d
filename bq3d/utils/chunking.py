@@ -148,7 +148,7 @@ def chunk_ranges(source:Union[str, np.ndarray],
                 # from rounding
 
             else:
-                chunk_sizes = [int(max_size)] * (axis / max_size)
+                chunk_sizes = [int(max_size)] * (axis // max_size)
 
             indices.append(ranges_from_sizes(chunk_sizes))
 
