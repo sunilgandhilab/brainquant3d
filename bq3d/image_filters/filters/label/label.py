@@ -144,7 +144,7 @@ class Label(FilterBase):
                 self.log.debug('No components found in second threshold.')
                 return io.readData(labeled_2_img.filename)
 
-            return io.readData(labeled_1_img.filename)
+            return io.readData(labeled_2_img.filename)
 
         # Mode 3 two serial thresholds with identity preservation
         elif self.mode == 3:
