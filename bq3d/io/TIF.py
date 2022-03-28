@@ -22,15 +22,19 @@ def dataSize(filename, **args):
     """Returns size of data in tif file
     
     Arguments:
-        filename (str): file name as regular expression
+        filename (str): file name
         x,y,z (tuple): data range specifications
     
     Returns:
         tuple: data size
     """
 
-    t = tif.tifffile.memmap(filename)
-    s = t.shape
+    try:
+        t = tif.tifffile.memmap(filename)
+        s = t.shape
+    except ValueError:      # not memmap'able
+        data = tif.imread(filename)
+        s = data.shape
 
     return io.dataSizeFromDataRange(s, **args)
 
@@ -74,7 +78,7 @@ def readData(filename, x = None, y = None, z = None, returnMemmap = True, **kwar
     """Read data from a single tif image or stack
     
     Arguments:
-        filename (str): file name as regular expression
+        filename (str): file name
         x,y,z (tuple): data range specifications
     
     Returns:
@@ -91,7 +95,7 @@ def readData(filename, x = None, y = None, z = None, returnMemmap = True, **kwar
 
 def empty(filename, shape, dtype, **kwargs):
 
-    return tif.tifffile.memmap(filename, shape=shape, dtype=dtype, **kwargs)
+    return tif.tifffile.memmap(filename, shape=shape, dtype=dtype, byteorder=None, **kwargs)    # only native byteorder datatype is memmap'able
 
 
 def writeData(filename, data, rgb = False, substack = None, returnMemmap = True):
