@@ -138,6 +138,8 @@ def writeData(filename, data, rgb = False, substack = None, returnMemmap = True)
                 raise RuntimeError('writing {} dimensional data to tif not supported!'.format(len(data.shape)))
 
         data_map[:] = data
+
+        del data_map  # properly close the file. can otherwise get error on accessing the new file after renaming on the next line
         shutil.move(fn, filename)
 
     if returnMemmap:
