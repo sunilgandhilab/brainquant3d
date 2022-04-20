@@ -117,7 +117,7 @@ def process_flow(source,
             results = pool.starmap(processSubStack, argdata)
             pool.close()
     except Exception as err:
-        shutil.rmtree(temp_dir, ignore_errors=True)
+        #shutil.rmtree(temp_dir, ignore_errors=True)
         raise err
 
     # join results
@@ -125,7 +125,7 @@ def process_flow(source,
         results = join_points(results, unique_chunks, overlap_chunks)
         results = jsonify_points(output_properties, results)
 
-    shutil.rmtree(temp_dir, ignore_errors=True)
+    #shutil.rmtree(temp_dir, ignore_errors=True)
     if sink:
         io.writePoints(sink, results)
 
