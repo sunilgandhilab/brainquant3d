@@ -75,7 +75,7 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
 
         # save intermediate output
         if save:
-            log.info(f'Saving output to {save}')
+            log.info(f'Saving output to {save} at {unique_indices} from {overlap_indices}')
             h, ext, dfmt = splitFileExpression(save)
 
             for z in range(*zRng):
@@ -85,6 +85,7 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
 
             unique = filtered_im[unique_slice(overlap_indices, unique_indices)]
             io.writeData(save, unique, substack=unique_indices)
+            log.verbose(f'Done Saving output to {save} at {unique_indices}')
 
     # get label properties and return
     if output_properties:

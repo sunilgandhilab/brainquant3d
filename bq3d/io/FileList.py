@@ -247,7 +247,9 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
         else:
             for i in range(nz):
                 fname = fileheader + (digitfrmt % (i + startIndex)) + fileext
+                log.verbose(f'writing to {fname} at {substack}')
                 io.writeData(fname, data[i], substack=substack)
+                log.verbose(f'done writing to {fname} at {substack}')
             return filename
 
 
