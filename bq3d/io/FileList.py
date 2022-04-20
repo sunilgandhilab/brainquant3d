@@ -170,9 +170,14 @@ def readDataFiles(filename, x = None, y = None, z = None, **args):
     img = io.readData(fn, x = x, y = y, returnMemmap = False)
     nxy = img.shape
     data = numpy.zeros(nxy + (sz,), dtype = img.dtype)
+
+    print('SHANG------data.shape', data.shape)
+
     data[:,:,0] = img
 
     for i in range(rz[0]+1, rz[1]):
+        print(r'SHANG------+++++++++++++++++++++++++*****************************HUGE BUG ACTUALLY USED??')
+        raise RuntimeError
         fn = os.path.join(fpath, fl[i])
         data[:,:,i-rz[0]] = io.readData(fn, x = x, y = y, returnMemmap = False)
 
