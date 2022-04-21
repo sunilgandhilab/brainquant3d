@@ -5,6 +5,7 @@ from bq3d.utils.timer import Timer
 from bq3d import io
 from bq3d.io.FileList import splitFileExpression
 import logging
+import traceback
 
 from bq3d.utils.chunking import unique_slice
 from bq3d.utils.files import unique_temp_dir
@@ -81,7 +82,28 @@ def processSubStack(flow, output_properties, source, overlap_indices, unique_ind
             for z in range(*zRng):
                 fname = h + (dfmt % z) + ext
                 if not os.path.isfile(fname):
-                    io.empty(fname, io.dataSize(source)[1:], filtered_im.dtype)
+                    n_tries = 5
+                    for tries in range(n_tries):   # in case this somehow fails - we can't afford long processes failing near its end. 
+                        try:
+                            io.empty(fname, io.dataSize(source)[1:], filtered_im.dtype)
+                            break
+                        except Exception as err:
+                        #except ValueError as err:
+                            #File "...python3.9/site-packages/numpy/core/memmap.py", line 267, in __new__
+                            # mm = mmap.mmap(fid.fileno(), bytes, access=acc, offset=start)
+                            # ValueError: mmap length is greater than file size
+                            # Somehow this happens very often on one particualr ntfs RAID-configured system during high load
+                            
+                            # printing stack trace
+                            traceback.print_exc()
+                            log.error('Error creating ' + fname)
+                            log.error(err)
+                            if tries==n_tries-1:
+                                raise
+                            if tries>2:
+                                log.error(f'Retrying in {tries} seconds...')
+                                import time
+                                time.sleep(tries)
 
             unique = filtered_im[unique_slice(overlap_indices, unique_indices)]
             io.writeData(save, unique, substack=unique_indices)
