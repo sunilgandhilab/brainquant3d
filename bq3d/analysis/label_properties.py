@@ -87,7 +87,7 @@ def region_props(label_image, intensity_image=None):
         props = RegionProperties(sl, label, label_image, intensity_image)
         regions.append(props)
 
-    log.info(f'Objects Detected: {len(props)} in {len(objects)} label IDs.')
+    log.info(f'Objects Detected: {len(regions)} in {len(objects)} label IDs.')
 
     return regions
 
