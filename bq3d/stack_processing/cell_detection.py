@@ -125,9 +125,10 @@ def process_flow(source,
         results = join_points(results, unique_chunks, overlap_chunks)
         results = jsonify_points(output_properties, results)
 
-    #shutil.rmtree(temp_dir, ignore_errors=True)
     if sink:
         io.writePoints(sink, results)
+
+    shutil.rmtree(temp_dir, ignore_errors=True)
 
     return results
 
