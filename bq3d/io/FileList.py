@@ -173,7 +173,7 @@ def readDataFiles(filename, x = None, y = None, z = None, **args):
     data[0,:,:] = img
 
     for i in range(rz[0]+1, rz[1]):
-        log.info("CAUTION: UNTESTED CODE. Double check the validity of your result if you run into this part of the code.")
+        log.info(f"CAUTION: UNTESTED CODE. Double check validity of your result if you run into this part of the code. - {__file__}")
         fn = os.path.join(fpath, fl[i])
         data[i-rz[0],:,:] = io.readData(fn, x = x, y = y, returnMemmap = False)
 
