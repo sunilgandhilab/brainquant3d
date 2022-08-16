@@ -145,7 +145,7 @@ def getDataType(filename):
     Returns:
         dtype: data type
     """
-    return io.readData(filename, z=0).dtype
+    return io.readData(filename, z=0, returnMemmap=False).dtype  #Tif.readData(returnMemmap)
 
 
 def readDataFiles(filename, x = None, y = None, z = None, **args):
@@ -167,14 +167,15 @@ def readDataFiles(filename, x = None, y = None, z = None, **args):
     rz = io.toDataRange(nz, r = z)
     sz = io.toDataSize(nz, r = z)
     fn = os.path.join(fpath, fl[rz[0]])
-    img = io.readData(fn, x = x, y = y)
+    img = io.readData(fn, x = x, y = y, returnMemmap = False)
     nxy = img.shape
-    data = numpy.zeros(nxy + (sz,), dtype = img.dtype)
-    data[:,:,0] = img
+    data = numpy.zeros((sz,) + nxy, dtype = img.dtype)
+    data[0,:,:] = img
 
     for i in range(rz[0]+1, rz[1]):
+        log.info(f"CAUTION: UNTESTED CODE. Double check validity of your result if you run into this part of the code. - {__file__}")
         fn = os.path.join(fpath, fl[i])
-        data[:,:,i-rz[0]] = io.readData(fn, x = x, y = y)
+        data[i-rz[0],:,:] = io.readData(fn, x = x, y = y, returnMemmap = False)
 
     return data
 
@@ -247,7 +248,9 @@ def writeData(filename, data, startIndex = 0, rgb = False, substack = None, **kw
         else:
             for i in range(nz):
                 fname = fileheader + (digitfrmt % (i + startIndex)) + fileext
+                log.verbose(f'writing to {fname} at {substack}')
                 io.writeData(fname, data[i], substack=substack)
+                log.verbose(f'done writing to {fname} at {substack}')
             return filename
 
 

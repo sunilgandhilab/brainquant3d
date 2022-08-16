@@ -11,14 +11,16 @@ BaseDirectory = '/mnt/ssd/working-directory/analysis'
 DataDirectory = '/mnt/ssd/working-directory/data'
 
 #Data File and Reference channel File, usually as a sequence of files from the microscope
+#Regular expression is currently supported only in the '\d{}' style, for the filename part only. - see io.isFileExpression().
 SignalFile = os.path.join(DataDirectory, 'C01/lightsheet_data_Z\d{3,4}_C01.tif')
 AutofluoFile = os.path.join(DataDirectory, 'C02/lightsheet_data_Z\d{3,4}_C02.tif')
 
 #Resolution of the Raw Data (in um / pixel)
 OriginalResolution = (9, 9, 9);
 
-#Orientation: 1,2,3 means the same orientation as the reference and atlas files.
-#Flip axis with - sign (eg. (-1,2,3) flips z). 3D Rotate by swapping numbers. (eg. (2,1,3) swaps x and y)
+#Orientation: which axes from the input volume map to the output results' ZYXs.
+# 1,2,3 means the same orientation as the reference and atlas files.
+#Flip axis with - sign (eg. (-1,2,3) flips z). 3D Rotate by swapping numbers. (eg. (2,1,3) swaps z and y)
 FinalOrientation = (-1, 2, -3);
 
 #Resolution of the Atlas (in um/ pixel)

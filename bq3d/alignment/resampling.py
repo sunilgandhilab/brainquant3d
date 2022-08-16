@@ -58,7 +58,10 @@ def invert_orientation(orientation: tuple):
     """
 
     if orientation:
-        return tuple(ax * -1 for ax in orientation)
+        signs = numpy.sign(orientation)
+        inv = numpy.array(orientation)
+        inv[abs(inv)-1] = signs * numpy.array(range(1,1+len(orientation)))
+        return tuple(inv)
 
     return None
 

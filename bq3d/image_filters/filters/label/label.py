@@ -27,7 +27,7 @@ __status__     = "Development"
 
 
 class Label(FilterBase):
-    """thresholds image using Ilastik's threshold applet
+    """thresholds image
 
     Attributes:
          input          (array): Image to pass through filter, munt be memmapped.
@@ -41,9 +41,9 @@ class Label(FilterBase):
          low_threshold  (float): Probability threshold for optional second filtering.
          mode           (int): Options are:
                                 1 : High Threshold --> Label --> Size Filter
-                                3 : Mode 1 --> Low Thresh --> Label -->
+                                2 : Mode 1 --> Low Thresh --> Label -->
                                       Compare with size filtered and keep overlap --> Size Filter (2nd Pass)
-                                2 : Mode 1 --> Low Thresh --> Watershed --> Size Filter (2nd Pass)
+                                3 : Mode 1 --> Low Thresh --> Watershed --> Size Filter (2nd Pass)
     """
 
     def __init__(self):
